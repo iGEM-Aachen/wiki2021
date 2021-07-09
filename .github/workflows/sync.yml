@@ -1,4 +1,4 @@
-- name: iGEM WikiSync
+- name: iGEMWikiSync
   uses: igembitsgoa/wikisync-action@v1.1-a4
   with:
     team: 'Aachen'
