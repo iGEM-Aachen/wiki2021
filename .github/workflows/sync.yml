@@ -1,0 +1,9 @@
+- name: iGEM WikiSync
+  uses: igembitsgoa/wikisync-action@v1.1-a4
+  with:
+    team: 'Aachen'
+    source: 'src'
+    build: 'build'
+  env:
+    IGEM_USERNAME: ${{ secrets.IGEM_USERNAME }}
+    IGEM_PASSWORD: ${{ secrets.IGEM_PASSWORD }}
