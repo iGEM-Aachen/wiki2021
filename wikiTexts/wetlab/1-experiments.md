@@ -1,4 +1,4 @@
 # Experiments
-- This section is thought to contain rough explanations of the experiments for each weak. We want to structure it based on the different parts of the experiments (see below)
+This section should contain a summary of the experements we did, why we decided to do them and (roughly) how we did it.
 ## TdT Tailing Reaction
 ## Primer Immobilization
