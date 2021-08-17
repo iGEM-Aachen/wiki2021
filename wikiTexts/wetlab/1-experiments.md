@@ -7,4 +7,5 @@ This section should contain a summary of the experements we did, why we decided 
 ## Cloning + Sanger Sequencing
 ## Nanopore Sequencing
 ## SSBs
-##
+## (Short Oligos)
+## (Unnatural Bases)
