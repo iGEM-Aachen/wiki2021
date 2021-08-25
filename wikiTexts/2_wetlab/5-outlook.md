@@ -4,3 +4,4 @@
 - Photolabile Protection Groups (?)
 - SSBs (?)
 - Homo Oligonucleotides (?)
+- One could add a protease cleavage site to the linker to be able to cut off the synthesized strand
