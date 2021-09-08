@@ -1,2 +1,0 @@
-# TdT Tailing Reaction
-# 

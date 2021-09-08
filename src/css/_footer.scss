@@ -1,0 +1,33 @@
+/**
+ * Footer
+ **/
+
+$background: #2c3e50;
+$background-dark: #375A7F;
+$link: #18bc9c;
+footer {
+    background-color: $background;
+    transition: background-color 0.3s ease;
+    margin: 5rem 0 0 0;
+    padding: 3rem 0 4rem 0;
+    color: white;
+    // font-family: "Lato";
+    font-size: 1rem;
+    p {
+        margin: 0;
+    }
+    a {
+        color: $link;
+        transition: color 0.3s ease;
+        &:hover {
+            color: $link;
+            text-decoration: underline;
+        }
+    }
+}
+
+// body.dark {
+//   footer {
+//     background-color: $background-dark;
+//   }
+// }
