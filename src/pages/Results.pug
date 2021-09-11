@@ -1,0 +1,11 @@
+extends ../templates/contents.pug
+
+block headVars
+    - var title = "Results"
+    - var tagline = "A sample page for the theme."
+    - var requireMathJax = true
+
+block article
+    :markdown-it(html)
+
+        # TdT Tailing Reaction 

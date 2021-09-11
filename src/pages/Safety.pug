@@ -1,0 +1,21 @@
+extends ../templates/contents.pug
+
+block headVars
+    - var title = "Safety"
+    - var tagline = "A sample page for the theme."
+    - var requireMathJax = true
+
+block article
+    :markdown-it(html)
+
+        # Laboratory Safety Measurements
+        - Evacuation
+        - Chemicals and Strains
+        - Transportation
+        - SOPs
+        # Corona Safety
+        - Max People
+        - Distance
+        - Shift system
+        - Desinfection
+        - ...

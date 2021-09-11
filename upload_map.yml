@@ -1,0 +1,206 @@
+assets:
+  assets\fonts\lato-v16-latin\lato-v16-latin-300.eot:
+    link_URL: https://2021.igem.org/wiki/images/c/c0/T--Aachen--fonts--lato-v16-latin--lato-v16-latin-300.eot
+    md5: 1b8f8afa9b4ba60fbcf9936eae918ec6
+    upload_filename: T--Aachen--fonts--lato-v16-latin--lato-v16-latin-300.eot
+  assets\fonts\lato-v16-latin\lato-v16-latin-300.ttf:
+    link_URL: https://2021.igem.org/wiki/images/b/b5/T--Aachen--fonts--lato-v16-latin--lato-v16-latin-300.ttf
+    md5: 483a27c988018f92133995b7d1453248
+    upload_filename: T--Aachen--fonts--lato-v16-latin--lato-v16-latin-300.ttf
+  assets\fonts\lato-v16-latin\lato-v16-latin-300.woff:
+    link_URL: https://2021.igem.org/wiki/images/4/44/T--Aachen--fonts--lato-v16-latin--lato-v16-latin-300.woff
+    md5: 656963c4beb814e754e38478fcaa0439
+    upload_filename: T--Aachen--fonts--lato-v16-latin--lato-v16-latin-300.woff
+  assets\fonts\lato-v16-latin\lato-v16-latin-700.eot:
+    link_URL: https://2021.igem.org/wiki/images/0/0b/T--Aachen--fonts--lato-v16-latin--lato-v16-latin-700.eot
+    md5: f9203469f750b4284c62aa49f9496cb0
+    upload_filename: T--Aachen--fonts--lato-v16-latin--lato-v16-latin-700.eot
+  assets\fonts\lato-v16-latin\lato-v16-latin-700.svg:
+    link_URL: https://2021.igem.org/wiki/images/2/2d/T--Aachen--fonts--lato-v16-latin--lato-v16-latin-700.svg
+    md5: 7470c61a3f6f46a7f1c36e4766fcf30c
+    upload_filename: T--Aachen--fonts--lato-v16-latin--lato-v16-latin-700.svg
+  assets\fonts\lato-v16-latin\lato-v16-latin-700.ttf:
+    link_URL: https://2021.igem.org/wiki/images/9/9f/T--Aachen--fonts--lato-v16-latin--lato-v16-latin-700.ttf
+    md5: fe7d53e4cac8f5b946a9e25f004efc8c
+    upload_filename: T--Aachen--fonts--lato-v16-latin--lato-v16-latin-700.ttf
+  assets\fonts\lato-v16-latin\lato-v16-latin-700.woff:
+    link_URL: https://2021.igem.org/wiki/images/5/59/T--Aachen--fonts--lato-v16-latin--lato-v16-latin-700.woff
+    md5: 874b8e7bc7e8d1507b50f56bc6c9b536
+    upload_filename: T--Aachen--fonts--lato-v16-latin--lato-v16-latin-700.woff
+  assets\fonts\lato-v16-latin\lato-v16-latin-regular.eot:
+    link_URL: https://2021.igem.org/wiki/images/c/c4/T--Aachen--fonts--lato-v16-latin--lato-v16-latin-regular.eot
+    md5: 056a373d808ada4f12a2d6538e88823c
+    upload_filename: T--Aachen--fonts--lato-v16-latin--lato-v16-latin-regular.eot
+  assets\fonts\lato-v16-latin\lato-v16-latin-regular.svg:
+    link_URL: https://2021.igem.org/wiki/images/e/e9/T--Aachen--fonts--lato-v16-latin--lato-v16-latin-regular.svg
+    md5: 3c4b940f8af36c147efecdc82bbee391
+    upload_filename: T--Aachen--fonts--lato-v16-latin--lato-v16-latin-regular.svg
+  assets\fonts\lato-v16-latin\lato-v16-latin-regular.ttf:
+    link_URL: https://2021.igem.org/wiki/images/3/3b/T--Aachen--fonts--lato-v16-latin--lato-v16-latin-regular.ttf
+    md5: d1d5e30aa8bb081cad8f409f27861672
+    upload_filename: T--Aachen--fonts--lato-v16-latin--lato-v16-latin-regular.ttf
+  assets\fonts\lato-v16-latin\lato-v16-latin-regular.woff:
+    link_URL: https://2021.igem.org/wiki/images/c/cb/T--Aachen--fonts--lato-v16-latin--lato-v16-latin-regular.woff
+    md5: b8ee546acd6cc0c49f42ad3d48ef244f
+    upload_filename: T--Aachen--fonts--lato-v16-latin--lato-v16-latin-regular.woff
+  assets\fonts\louis-george-cafe\Louis_George_Cafe.ttf:
+    link_URL: https://2021.igem.org/wiki/images/b/be/T--Aachen--fonts--louis-george-cafe--Louis_George_Cafe.ttf
+    md5: a617b62cd8089465865a37c676da00e2
+    upload_filename: T--Aachen--fonts--louis-george-cafe--Louis_George_Cafe.ttf
+  assets\fonts\montserrat-v14-latin\montserrat-v14-latin-600.eot:
+    link_URL: https://2021.igem.org/wiki/images/e/e4/T--Aachen--fonts--montserrat-v14-latin--montserrat-v14-latin-600.eot
+    md5: 86f6cbd269e0c5a26f038a4d5ffc9cf1
+    upload_filename: T--Aachen--fonts--montserrat-v14-latin--montserrat-v14-latin-600.eot
+  assets\fonts\montserrat-v14-latin\montserrat-v14-latin-600.svg:
+    link_URL: https://2021.igem.org/wiki/images/1/11/T--Aachen--fonts--montserrat-v14-latin--montserrat-v14-latin-600.svg
+    md5: 3deb98efed1dd9b67b0ab0ae1c69ab5c
+    upload_filename: T--Aachen--fonts--montserrat-v14-latin--montserrat-v14-latin-600.svg
+  assets\fonts\montserrat-v14-latin\montserrat-v14-latin-600.ttf:
+    link_URL: https://2021.igem.org/wiki/images/a/a7/T--Aachen--fonts--montserrat-v14-latin--montserrat-v14-latin-600.ttf
+    md5: acb878a397bf674d7baa32a3267e5a3c
+    upload_filename: T--Aachen--fonts--montserrat-v14-latin--montserrat-v14-latin-600.ttf
+  assets\fonts\montserrat-v14-latin\montserrat-v14-latin-600.woff:
+    link_URL: https://2021.igem.org/wiki/images/8/82/T--Aachen--fonts--montserrat-v14-latin--montserrat-v14-latin-600.woff
+    md5: 7c839d15a6f54e7025ba8c0c4b333e8f
+    upload_filename: T--Aachen--fonts--montserrat-v14-latin--montserrat-v14-latin-600.woff
+  assets\fonts\montserrat-v14-latin\montserrat-v14-latin-regular.eot:
+    link_URL: https://2021.igem.org/wiki/images/7/78/T--Aachen--fonts--montserrat-v14-latin--montserrat-v14-latin-regular.eot
+    md5: 5cc74ef8a4c422084726eb9dd1163b82
+    upload_filename: T--Aachen--fonts--montserrat-v14-latin--montserrat-v14-latin-regular.eot
+  assets\fonts\montserrat-v14-latin\montserrat-v14-latin-regular.svg:
+    link_URL: https://2021.igem.org/wiki/images/8/88/T--Aachen--fonts--montserrat-v14-latin--montserrat-v14-latin-regular.svg
+    md5: cf4574fbce791ed7debe1dee7f816283
+    upload_filename: T--Aachen--fonts--montserrat-v14-latin--montserrat-v14-latin-regular.svg
+  assets\fonts\montserrat-v14-latin\montserrat-v14-latin-regular.ttf:
+    link_URL: https://2021.igem.org/wiki/images/f/fe/T--Aachen--fonts--montserrat-v14-latin--montserrat-v14-latin-regular.ttf
+    md5: 6a9e85ac9247f5848db957b873c62e0c
+    upload_filename: T--Aachen--fonts--montserrat-v14-latin--montserrat-v14-latin-regular.ttf
+  assets\fonts\montserrat-v14-latin\montserrat-v14-latin-regular.woff:
+    link_URL: https://2021.igem.org/wiki/images/7/70/T--Aachen--fonts--montserrat-v14-latin--montserrat-v14-latin-regular.woff
+    md5: 8102c4838f9e3d08dad644290a9cb701
+    upload_filename: T--Aachen--fonts--montserrat-v14-latin--montserrat-v14-latin-regular.woff
+  assets\icons\link-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/5/50/T--Aachen--icons--link-solid.svg
+    md5: 6af56728888d9074aaf4d8261a3eceda
+    upload_filename: T--Aachen--icons--link-solid.svg
+  assets\img\Description--josh-withers.jpg:
+    link_URL: https://2021.igem.org/wiki/images/6/6f/T--Aachen--img--Description--josh-withers.jpg
+    md5: 6aee9d03f9e9db58c63912b539f9b66c
+    upload_filename: T--Aachen--img--Description--josh-withers.jpg
+  assets\img\Home--design.jpeg:
+    link_URL: https://2021.igem.org/wiki/images/5/52/T--Aachen--img--Home--design.jpeg
+    md5: 45be7036097413b923aca6551c358056
+    upload_filename: T--Aachen--img--Home--design.jpeg
+  assets\img\Home--human-practices.jpg:
+    link_URL: https://2021.igem.org/wiki/images/5/5d/T--Aachen--img--Home--human-practices.jpg
+    md5: 7769138369667068b47db266e23c535e
+    upload_filename: T--Aachen--img--Home--human-practices.jpg
+  assets\img\Home--model.jpeg:
+    link_URL: https://2021.igem.org/wiki/images/c/c1/T--Aachen--img--Home--model.jpeg
+    md5: 8beabd61d7aa41fed7e64af68f6d9ed5
+    upload_filename: T--Aachen--img--Home--model.jpeg
+  assets\img\Team--member.jpeg:
+    link_URL: https://2021.igem.org/wiki/images/f/f7/T--Aachen--img--Team--member.jpeg
+    md5: f4b3107cfb552a9833abc502053161ec
+    upload_filename: T--Aachen--img--Team--member.jpeg
+  assets\img\Team.jpg:
+    link_URL: https://2021.igem.org/wiki/images/e/e1/T--Aachen--img--Team.jpg
+    md5: a52d246023c7fe0cce262229ce7d74e2
+    upload_filename: T--Aachen--img--Team.jpg
+  assets\img\teamlogo_2021.svg:
+    link_URL: https://2021.igem.org/wiki/images/1/14/T--Aachen--img--teamlogo_2021.svg
+    md5: 270c98aebd8b7a63f0da28972857eff6
+    upload_filename: T--Aachen--img--teamlogo_2021.svg
+css:
+  css\content.css:
+    link_URL: https://2021.igem.org/Template:Aachen/css/contentCSS?action=raw&ctype=text/css
+    md5: 8bbac867f1aa5be26286a8de89a27a64
+  css\index.css:
+    link_URL: https://2021.igem.org/Template:Aachen/css/indexCSS?action=raw&ctype=text/css
+    md5: f90a4d3d3a47b9eda184d1c364a94b3c
+  css\team.css:
+    link_URL: https://2021.igem.org/Template:Aachen/css/teamCSS?action=raw&ctype=text/css
+    md5: 7e00cd20322a3f24c71a2a8d8dac9e7d
+html:
+  Attributions\index.html:
+    link_URL: https://2021.igem.org/Team:Aachen/Attributions
+    md5: 1946003aad0e6605bbf811022b953834
+  Communication\index.html:
+    link_URL: https://2021.igem.org/Team:Aachen/Communication
+    md5: d2a7e718c34a3ee14bfe8c6b16198159
+  Contribution\index.html:
+    link_URL: https://2021.igem.org/Team:Aachen/Contribution
+    md5: 0bbc843dc6cf8e08e5f90ab454f9d83d
+  Description\index.html:
+    link_URL: https://2021.igem.org/Team:Aachen/Description
+    md5: 57c49c54a9ae3e131f8ac89593c60067
+  Education\index.html:
+    link_URL: https://2021.igem.org/Team:Aachen/Education
+    md5: f54949475378b53ed265789780c86e38
+  Engineering\index.html:
+    link_URL: https://2021.igem.org/Team:Aachen/Engineering
+    md5: 30ba72e29ab79e5752be906456c9104f
+  Experiments\index.html:
+    link_URL: https://2021.igem.org/Team:Aachen/Experiments
+    md5: d28f50e1c6224ffd38d5ee3094c2eb26
+  Hardware\index.html:
+    link_URL: https://2021.igem.org/Team:Aachen/Hardware
+    md5: 8ce5f31d134ed62b023145cf4bc9a1ec
+  Implementation\index.html:
+    link_URL: https://2021.igem.org/Team:Aachen/Implementation
+    md5: 9dbba3a9f8e87de7678d895997224ffa
+  Integrated_Human_Practices\index.html:
+    link_URL: https://2021.igem.org/Team:Aachen/Integrated_Human_Practices
+    md5: 3275be74c74a30b43a51eaec5d13effa
+  Members\index.html:
+    link_URL: https://2021.igem.org/Team:Aachen/Members
+    md5: 97b3cfe145eea89faf7e001554c99593
+  Modeling\index.html:
+    link_URL: https://2021.igem.org/Team:Aachen/Modeling
+    md5: adb35660e845c07dd06178cc3e350a9b
+  Notebook\index.html:
+    link_URL: https://2021.igem.org/Team:Aachen/Notebook
+    md5: b2ec955ab036e973e3fcf712b66c132f
+  Outlook\index.html:
+    link_URL: https://2021.igem.org/Team:Aachen/Outlook
+    md5: 40bffedcf4d649d0e198137073a5325d
+  Partnership\index.html:
+    link_URL: https://2021.igem.org/Team:Aachen/Partnership
+    md5: c064d73d76a0b9bbbb68c7c4ced75778
+  Proof_of_Concept\index.html:
+    link_URL: https://2021.igem.org/Team:Aachen/Proof_of_Concept
+    md5: b74a743e72518e4f166fef7d070eac59
+  Protocols\index.html:
+    link_URL: https://2021.igem.org/Team:Aachen/Protocols
+    md5: 5bae2e6fd118c2821ea3c5703e38281c
+  Results\index.html:
+    link_URL: https://2021.igem.org/Team:Aachen/Results
+    md5: b3c362b566784b818a3cee66ad3d9ff1
+  Safety\index.html:
+    link_URL: https://2021.igem.org/Team:Aachen/Safety
+    md5: cf30771bcdd43547e7dfaf562f2633ef
+  Sample\index.html:
+    link_URL: https://2021.igem.org/Team:Aachen/Sample
+    md5: bd5a9b54800cead6d1bada0164f3abdc
+  Software\index.html:
+    link_URL: https://2021.igem.org/Team:Aachen/Software
+    md5: 4efbd7d82e5e96b1ce353b5d9939fb4f
+  Sponsors\index.html:
+    link_URL: https://2021.igem.org/Team:Aachen/Sponsors
+    md5: dc45f54942d29b1b001e567567abe667
+  Team\index.html:
+    link_URL: https://2021.igem.org/Team:Aachen/Team
+    md5: 889328bdf89c287b558bfeea39aac540
+  index.html:
+    link_URL: https://2021.igem.org/Team:Aachen
+    md5: ff0f7228808bebf8931d81ce6d4a9d0b
+js:
+  content.bundle.js:
+    link_URL: https://2021.igem.org/Template:Aachen/content-bundleJS?action=raw&ctype=text/javascript
+    md5: 703407c993c7b1b9ea2db9f6a854efe5
+  index.bundle.js:
+    link_URL: https://2021.igem.org/Template:Aachen/index-bundleJS?action=raw&ctype=text/javascript
+    md5: 0a8069ac228495413d320d999290cf0d
+  team.bundle.js:
+    link_URL: https://2021.igem.org/Template:Aachen/team-bundleJS?action=raw&ctype=text/javascript
+    md5: c29822cd47247bba4bf4401302f0446b

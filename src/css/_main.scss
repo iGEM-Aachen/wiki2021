@@ -1,0 +1,54 @@
+@import "~bootstrap-reboot";
+@import "igem-reset.scss";
+@import "~bootstrap/scss/bootstrap";
+@import "fix-bootstrap.scss";
+@import "_fonts.scss";
+@import "_media_queries.scss";
+@import "_nav.scss";
+@import "_footer.scss";
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    transition: background-color 0.3s ease-out;
+}
+
+// button from
+// https://codepen.io/kathykato/pen/rZRaNe
+$darkBlue: #2c3e50;
+$darkerBlue: #1E2B37;
+$darkBody: #222222;
+// AACHEN COLORS
+$igem-dark: #182632;
+$igem-orange: #F2A13F;
+$igem-straw-brown: #E8ECD7;
+$igem-straw-brown-1: #999b90;
+$igem-straw-brown-light: #ecefde;
+$igem-green: #2ED265;
+$igem-spring-green: #34E08F;
+$igem-cyan: #3CF4CC;
+$igem-red: #F55656;
+$igem-blue: #38A0F5;
+
+a.btn-primary {
+    background: $igem-spring-green;
+    border-color: $igem-spring-green;
+    color: $igem-dark;
+    &:hover,
+    &:focus,
+    &:not(:disabled):not(.disabled):active {
+        background: $igem-green;
+        outline: none !important;
+        border-color: $igem-green;
+    }
+}
+
+body {
+    background-color: $igem-dark;
+    color: $igem-straw-brown;
+    font-family: "Louis George Cafe";
+}
