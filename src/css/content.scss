@@ -24,7 +24,6 @@ $tableBorder: #dee2e6;
 // dark mode
 $dark-body: #313131;
 $tableBorder-dark: #4e4e4e;
-
 // AACHEN COLORS
 $igem-dark: #182632;
 $igem-orange: #F2A13F;
@@ -36,7 +35,6 @@ $igem-spring-green: #34E08F;
 $igem-cyan: #3CF4CC;
 $igem-red: #F55656;
 $igem-blue: #38A0F5;
-
 ::selection {
     background-color: $selection-color;
 }
@@ -45,6 +43,7 @@ header {
     margin: 10rem 0 0 0;
     // font-family: "Lato", sans-serif;
     h1 {
+        color: $igem-straw-brown;
         font-weight: 300;
         font-size: 4.5rem;
         margin-bottom: 1.7rem;
@@ -83,6 +82,7 @@ header {
     margin-top: 1rem;
     padding: 2rem 5rem 0 1rem;
     h5 {
+        color: $igem-straw-brown;
         // font-family: "Lato", sans-serif;
         font-weight: 700;
         font-size: 1rem;
@@ -178,6 +178,7 @@ header {
     h1,
     h2,
     h3 {
+        color: $igem-straw-brown;
         // font-family: "Lato", sans-serif;
     }
     $h1size: 2.15; // rem
@@ -209,7 +210,6 @@ header {
         font-size: $h1size * 1rem;
         margin: 2rem 0 1rem 0;
         word-spacing: 0.3rem;
-        color: $igem-straw-brown;
         &:first-of-type {
             margin-top: 0;
         }
