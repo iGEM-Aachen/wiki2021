@@ -2,7 +2,19 @@
 * Navbar 
 **/
 
-$navBG: #2c3e50;
+// AACHEN COLORS
+$igem-dark: #182632;
+$igem-orange: #F2A13F;
+$igem-straw-brown: #E8ECD7;
+$igem-straw-brown-1: #999b90;
+$igem-straw-brown-light: #ecefde;
+$igem-green: #2ED265;
+$igem-spring-green: #34E08F;
+$igem-cyan: #3CF4CC;
+$igem-red: #F55656;
+$igem-blue: #38A0F5;
+//
+$navBG: #212529;
 $navItem: white;
 $navItemHover: #18bc9c;
 $navBG-dark: #375A7F;
@@ -33,9 +45,9 @@ $dropdown-border-dark: rgb(68, 68, 68);
             color: white;
         }
     }
-    .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    }
+    // .navbar-toggler-icon {
+    //     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    // }
     .navbar-collapse {
         background-color: $navBG;
         transition: all 0.3s ease, transform 0.5s ease;
@@ -46,17 +58,18 @@ $dropdown-border-dark: rgb(68, 68, 68);
     a {
         // font-family: "Lato", sans-serif;
         font-size: 1.1rem;
-        color: $navItem;
+        color: rgba(255, 255, 255, 0.75);
         &:hover {
             color: $navItemHover;
         }
     }
     .dropdown-menu {
+        background-color: $igem-straw-brown;
         a {
             color: $navBG;
             &:hover {
-                background-color: $navBG;
-                color: white;
+                background-color: $igem-straw-brown;
+                font-weight: bold;
             }
         }
     }
