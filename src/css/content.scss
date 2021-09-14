@@ -177,6 +177,7 @@ header {
         // added for "paper-style"
         border-radius: 40px;
         background-color: $igem-straw-brown-light;
+        color: $igem-dark;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
         padding: 50px;
         margin-top: 50px;
@@ -186,7 +187,8 @@ header {
         p {
             color: $igem-dark;
         }
-        p {
+        p,
+        li {
             font-family: 'Computer Modern Serif Roman';
         }
     }
@@ -277,6 +279,7 @@ header {
     }
     ul {
         padding-left: 25px;
+        // color: black;
     }
     mark {
         background: $selection-color;
