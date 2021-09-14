@@ -26,8 +26,8 @@ jobs:
         uses: igembitsgoa/wikisync-action@v0.2
         with:
           team: 'Aachen'
-          source: 'src'
-          build: 'build'
+          source: 'dist'
+          build: 'igem'
         env:
           IGEM_USERNAME: ${{ secrets.IGEM_USERNAME }}
           IGEM_PASSWORD: ${{ secrets.IGEM_PASSWORD }}
