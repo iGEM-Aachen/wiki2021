@@ -31,7 +31,8 @@ header {
 main {
     margin-top: 4rem;
     .card {
-        background: white;
+        background: $igem-straw-brown;
+        color: $igem-dark;
         margin: 1.5rem 0.5rem;
         .row {
             scroll-margin-top: 150px;
