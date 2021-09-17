@@ -33,7 +33,6 @@ $igem-spring-green: #34E08F;
 $igem-cyan: #3CF4CC;
 $igem-red: #F55656;
 $igem-blue: #38A0F5;
-
 a.btn-primary {
     background: $igem-spring-green;
     border-color: $igem-spring-green;
@@ -51,4 +50,5 @@ body {
     background-color: $igem-dark;
     color: $igem-straw-brown;
     font-family: "Louis George Cafe";
+    position: relative;
 }

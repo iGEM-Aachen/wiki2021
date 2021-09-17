@@ -2,17 +2,17 @@ import "../css/content.scss";
 import "./main";
 
 // format links
-$('.content h1, .content h2').each(function () {
+$('.content h1, .content h2').each(function() {
     var text = $(this).text();
     $(this).text(text + ' ');
     var id = text.trim().replace(/ /g, '');
-    
+
     if ($(this).prop('tagName') == 'H2') {
         id = $(this).prevAll('h1:first').attr('id') + "-" + id;
     }
-    
+
     $(this).attr('id', id);
-    
+
     var height = $(this).height();
     var link = document.createElement('a');
     link.classList.add('anchor');
@@ -28,8 +28,9 @@ $('.content h1, .content h2').each(function () {
         icon.classList.add("fas");
         icon.classList.add("fa-chevron-right");
         item.append(icon);
-        
+
         var a = document.createElement('a');
+        a.classList.add("nav-link");
         $(a).attr('href', '#' + id);
         $(a).text(text);
 
@@ -42,7 +43,7 @@ $('.content h1, .content h2').each(function () {
 
 
 // format in-text citations
-$('.content a').each(function () {
+$('.content a').each(function() {
     var link = $(this).prop('href');
     var matches = link.match('#citation(.*)')
     console.log(matches);
@@ -55,7 +56,7 @@ $('.content a').each(function () {
 });
 
 // format definitions
-$('dfn').each(function () {
+$('dfn').each(function() {
     var text = $(this).text();
     var matches = text.match('(.*)(~)(.*)');
     $(this).text(matches[1].trim());
