@@ -24,12 +24,12 @@ html(lang="en")
                 .card
                   .card-img-top
                     a.tile
-                      img(src=require('../assets/img/members/'+member.name+'.jpg')['default'])
+                      img(src=require('../assets/img/members/'+member.name+" "+member.surname+'.jpg')['default'])
                       .details
                         // span.title Lorem Ipsum Dolor
                         span.info= member.motivation
                   .card-body
-                    h4.card-title= member.name+", "+member.age
+                    h4.card-title= member.name+" "+member.surname+", "+member.age
                     h5.card-subtitle= member.course
             //-   .card
             //-     .card-img-top
