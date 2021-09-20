@@ -43,4 +43,97 @@ main {
         display: block;
         /* remove extra space below image */
     }
+    .card-img-top {
+        position: relative;
+        img {
+            width: 100%;
+        }
+    }
+    h5 {
+        font-size: 1.2rem;
+    }
+    .card-body {
+        height: 120px;
+    }
+}
+
+// variables
+$anim-speed: 0.3s;
+// main styles
+.tiles {
+    .tile {
+        display: inline-block;
+        margin: 3px;
+        text-align: left;
+        overflow: hidden;
+        position: relative;
+        border-radius: 3px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, .05);
+        &:before {
+            content: '';
+            background: linear-gradient( to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+            width: 100%;
+            height: 70%;
+            opacity: 0;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 2;
+            transition-property: top, opacity;
+            transition-duration: $anim-speed;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+        }
+        .details {
+            font-size: 16px;
+            padding: 20px;
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 3;
+            span {
+                display: block;
+                opacity: 0;
+                position: relative;
+                top: 100px;
+                transition-property: top, opacity;
+                transition-duration: $anim-speed;
+                transition-delay: 0s;
+            }
+            .title {
+                line-height: 1;
+                font-weight: 600;
+                font-size: 18px;
+            }
+            .info {
+                line-height: 1.2;
+                margin-top: 5px;
+                font-size: 20px;
+            }
+        }
+        &:focus,
+        &:hover {
+            &:before,
+            span {
+                opacity: 1;
+            }
+            &:before {
+                top: 30%;
+            }
+            span {
+                top: 0;
+            }
+            .title {
+                transition-delay: 0.15s;
+            }
+            .info {
+                transition-delay: 0.25s;
+            }
+        }
+    }
 }
