@@ -38,9 +38,11 @@ def main():
 
     # print(line)
 
-    with open('./src/templates/nav_list.pug', 'w') as file:
-        file.write(line)
-        file.write('\n\nmixin fakemixin()\n    p')
+
+    # No idea what that should be good for, but i brakes notation in nav_list.pug in unwanted ways
+    # with open('./src/templates/nav_list.pug', 'w') as file:
+    #     file.write(line)
+    #     file.write('\n\nmixin fakemixin()\n    p')
 
 
 if __name__ == "__main__":
