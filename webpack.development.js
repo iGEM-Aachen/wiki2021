@@ -4,19 +4,17 @@ const merge = require('webpack-merge');
 const ExtractCssChunks = require('extract-css-chunks-webpack-plugin');
 
 module.exports = merge(common, {
-    devtool: "none",                            // avoid eval statements
+    devtool: "none", // avoid eval statements
     mode: "development",
     plugins: [new ExtractCssChunks()],
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.scss$/i,
                 use: [ExtractCssChunks.loader, 'css-loader', 'sass-loader'],
             },
             {
                 test: /\.(svg|png|jpg|jpeg|gif|ttf|woff2|woff|eot)$/i,
-                use: [
-                    {
+                use: [{
                         loader: "file-loader",
                         options: {
                             name: "[path][name].[ext]",
