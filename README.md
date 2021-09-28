@@ -1,5 +1,18 @@
 # iGEM Aachen 2021 
 
+- [iGEM Aachen 2021](#igem-aachen-2021)
+  - [How to work with GitHub and all this stuff](#how-to-work-with-github-and-all-this-stuff)
+    - [Folder structure](#folder-structure)
+      - [Where can I find the actual text files?](#where-can-i-find-the-actual-text-files)
+      - [Where should I put images?](#where-should-i-put-images)
+    - [Git/GitHub](#gitgithub)
+      - [Overview/What is all this branch- and commit-stuff about?](#overviewwhat-is-all-this-branch--and-commit-stuff-about)
+      - [Should I create a new Branch for the text I am writing?](#should-i-create-a-new-branch-for-the-text-i-am-writing)
+      - [How do I change a file?](#how-do-i-change-a-file)
+      - [How do I create a new Branch?](#how-do-i-create-a-new-branch)
+      - [How do I create a Pull Request?](#how-do-i-create-a-pull-request)
+      - [How do I continue my work on a branch other than main?](#how-do-i-continue-my-work-on-a-branch-other-than-main)
+
 Built using [the iGEM Wiki Starter Pack](https://igem-wiki-starter.readthedocs.io) v0.1.2 by iGEM BITS Goa.
 
 ## How to work with GitHub and all this stuff
