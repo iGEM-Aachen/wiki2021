@@ -12,6 +12,11 @@
       - [How do I create a new Branch?](#how-do-i-create-a-new-branch)
       - [How do I create a Pull Request?](#how-do-i-create-a-pull-request)
       - [How do I continue my work on a branch other than main?](#how-do-i-continue-my-work-on-a-branch-other-than-main)
+      - [Ahh, someone wants me to review his pull request. What do I do now?](#ahh-someone-wants-me-to-review-his-pull-request-what-do-i-do-now)
+        - [Requesting changes](#requesting-changes)
+        - [Directly making suggestions](#directly-making-suggestions)
+        - [Doing an actual review](#doing-an-actual-review)
+      - [Ahh, someone approved my pull request. What now?](#ahh-someone-approved-my-pull-request-what-now)
 
 Built using [the iGEM Wiki Starter Pack](https://igem-wiki-starter.readthedocs.io) v0.1.2 by iGEM BITS Goa.
 
@@ -126,3 +131,50 @@ As mentioned above, often you want to continue your work on a branch before merg
 - Click on that icon to switch to another branch.
 - Now you can see the current status on that branch and also make changes to it.
 - When you now commit some changes, they will be commited to the selected branch instead of `main`.
+
+#### Ahh, someone wants me to review his pull request. What do I do now?
+
+Your task now is to look at the changes the author has made and then either approve the PR, request changes, or just comment on it.
+
+- Go to `Pull requests` and click on the one you want to review.
+- Now you could simply write a comment or just merge the pull request, but obviously that is not what you should do.
+- First, have a look at the changes made in this PR.
+- To do so, click on the tab `Files changed` on top of the page.
+- Now you can see all insertions (marked in green) and deletions (red) the author has made.
+- In the upper right corner, you can see a dropdown where you can comment, approve, or request changes.
+  If everything is fine with the PR, you can just approve it here.
+- If you want the author to change something, you can also write your comment here.
+
+##### Requesting changes
+
+- **However**, what's even better is to write comments or even suggestions right into the files changed.
+- To do so, hover over a line in a file.
+  You will see a `+`-symbol which can be used to write comments to this specific line.
+- Using drag and drop, you can also comment on a block of multiple lines.
+
+##### Directly making suggestions
+
+- When you opened a comment block here, you will find a small inconspicuous button looking like a sheet of paper with a "+-"-symbol on it.
+- Click on this symbol to directly make suggestions for changes.
+  These suggestions can also be commited directly, which is pretty convenient.
+
+##### Doing an actual review
+
+- If you plan to write multiple comments, you should now click on `Start a review`.
+  This makes all your comments appear together.
+  Also, otherwise the author would receive one email for every comment you make.
+- When writing your next comment, the same button will be called `Add review comment`.
+- Keep doing this until you have written all your comments and change requests.
+- When you are done with your review, you should go to the top of the page again and click on `Finish your review`.
+- Now, you can again choose if you want to comment, approve, or request changes (it does not make any sense to approve if you requested changes).
+
+#### Ahh, someone approved my pull request. What now?
+
+Congratulations, now you can merge your pull request.
+
+- Go to the main page of your pull request.
+- You will find a big green button `Merge pull request`.
+- Click on that button to do exactly that.
+- Now you can rename the merge and also give it a comment, if you want to.
+- Then click `Confirm merge`.
+- No idea what happens next, I need to try it out.
