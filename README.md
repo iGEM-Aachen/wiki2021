@@ -17,6 +17,7 @@
         - [Directly making suggestions](#directly-making-suggestions)
         - [Doing an actual review](#doing-an-actual-review)
       - [Ahh, someone approved my pull request. What now?](#ahh-someone-approved-my-pull-request-what-now)
+        - [When to not delete an old branch after merge](#when-to-not-delete-an-old-branch-after-merge)
 
 Built using [the iGEM Wiki Starter Pack](https://igem-wiki-starter.readthedocs.io) v0.1.2 by iGEM BITS Goa.
 
@@ -177,4 +178,12 @@ Congratulations, now you can merge your pull request.
 - Click on that button to do exactly that.
 - Now you can rename the merge and also give it a comment, if you want to.
 - Then click `Confirm merge`.
-- No idea what happens next, I need to try it out.
+- After clicking, another button `Delete branch` will appear.
+  Usually, you want to delete an old branch after working on it, so click it.
+
+##### When to not delete an old branch after merge
+
+- If you want to work on the same branch for some reason, you can do that.
+- However, you could also just create a new branch with the same name.
+- **Or** you could give your branches more meaningful names, so that doesn't make any sense to do more work on a branch already merged.
+- Usually, the last approach is the best one: Use the branch name to clearly describe what you will be doing on it.
