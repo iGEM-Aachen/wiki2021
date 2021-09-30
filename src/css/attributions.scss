@@ -41,6 +41,12 @@ attr-main {
         .row {
             scroll-margin-top: 150px;
         }
+        h1,
+        h4,
+        h5 {
+            font-family: "Louis George Cafe";
+            color: $igem-straw-brown;
+        }
     }
     img {
         max-width: 50%;
@@ -103,6 +109,18 @@ attr-main {
             max-width: 70%;
             padding-top: 35px;
         }
+        h1,
+        h4,
+        h5 {
+            font-family: "Louis George Cafe";
+            color: $igem-dark;
+        }
+    }
+    h1,
+    h4,
+    h5 {
+        font-family: "Louis George Cafe";
+        color: $igem-straw-brown;
     }
 }
 

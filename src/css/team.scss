@@ -56,6 +56,15 @@ main {
     .card-body {
         height: 120px;
     }
+    h4,
+    h5 {
+        font-family: "Louis George Cafe";
+        color: $igem-dark;
+    }
+    span {
+        font-family: "Louis George Cafe";
+        color: $igem-straw-brown;
+    }
 }
 
 // variables
