@@ -35,25 +35,25 @@ module.exports = {
         new HTMLWebpackPlugin({
             filename: "index.html",
             template: "./src/index.pug",
-            excludeChunks: ["content", "team"],
+            excludeChunks: ["content", "team", "attributions"],
         }),
         ...pages.map(
             (page) =>
             new HTMLWebpackPlugin({
                 template: "./src/pages/" + page,
                 filename: page.slice(0, -4) + "/index.html",
-                excludeChunks: ["index", "team"],
+                excludeChunks: ["index", "team", "attributions"],
             })
         ),
         new HTMLWebpackPlugin({
             filename: "Team/index.html",
             template: "./src/pages/Team.pug",
-            excludeChunks: ["index", "content"],
+            excludeChunks: ["index", "content", "attributions"],
         }),
         new HTMLWebpackPlugin({
             filename: "Attributions/index.html",
             template: "./src/pages/Attributions.pug",
-            excludeChunks: ["index", "content"],
+            excludeChunks: ["index", "content", "team"],
         }),
     ],
     module: {
