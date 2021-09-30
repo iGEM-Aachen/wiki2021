@@ -5,6 +5,7 @@
     - [Folder structure](#folder-structure)
       - [Where can I find the actual text files?](#where-can-i-find-the-actual-text-files)
       - [Where should I put images?](#where-should-i-put-images)
+      - [How should I link images in texts?](#how-should-i-link-images-in-texts?)
     - [Git/GitHub](#gitgithub)
       - [Overview/What is all this branch- and commit-stuff about?](#overviewwhat-is-all-this-branch--and-commit-stuff-about)
       - [Should I create a new Branch for the text I am writing?](#should-i-create-a-new-branch-for-the-text-i-am-writing)
@@ -46,7 +47,7 @@ Right now, there are almost no subfolders in there, but feel free to create one 
 Images can be linked in texts with these two lines:
 
 ```
-- var imgpath = "" + require("../assets/img/example-image-1.jpg")["Alternative Text"]
+- var imgpath = "" + require("../assets/img/example-image-1.jpg")["default"]
 +image(1, imgpath, "Description of the image")
 ```
 
@@ -55,9 +56,8 @@ If your image is stored in the `img` folder as described above, just change the 
 If you use subfolders under `img`, add the path your image as `../assets/img/subfolder/your-image.jpg`.
 Note that `../assets/img/` should always stay the same, as all images should be stored in this folder.
 
-`Alternative Text` is, obviously, the alternative text that will be shown when the image cannot be loaded.
-So also change this text to briefly descripe your image.
-Similarly, change `Description of the image` to the description you want to be shown under your image.
+In the second line, the `1` must be updated so that all images are numbered in order of appearance.
+Change `Description of the image` to the description you want to be shown under your image.
 
 ##### Formatting of images
 
