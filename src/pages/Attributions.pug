@@ -17,7 +17,7 @@ html(lang="en")
         // p.text-center Photo by Naassom Azevedo on Unsplash
 
 
-    main
+    attr-main
       .container
         h1.title= "Team Members"
         .row.d-flex.justify-content-center.tiles
@@ -25,7 +25,7 @@ html(lang="en")
                 if index%2 == 0
                     .col-xl-7.col-lg-7.col-md-7.col-xs-12
                         .card
-                            .card-img-top.img-left
+                            .card-img-top.attr-img.img-left
                                 // a.tile
                                 img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
                                 h4.title= member.name + " " + member.surname
@@ -36,7 +36,7 @@ html(lang="en")
                     .col-xl-5.col-lg-5.col-md-5.col-xs-12
                     .col-xl-7.col-lg-7.col-md-7.col-xs-12
                         .card
-                            .card-img-top.img-right
+                            .card-img-top.attr-img.img-right
                                 // a.tile
                                 h4.title= member.name + " " + member.surname
                                 img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
