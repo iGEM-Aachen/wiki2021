@@ -1,37 +1,58 @@
-extends ../templates/contents.pug
+include ../templates/mixins
+include ../templates/member_list
+include ../templates/attributor_list
+include ../templates/nav_list
 
-block headVars
-    - var title = "Attributions"
-    - var tagline = "Describe how and why you chose your iGEM project."
-    - var requireMathJax = false
-
-block article
-    :markdown-it(html)
-
-        # What should this page contain?
-
-        * A clear and concise description of your project.
-        * A detailed explanation of why your team chose to work on this particular project.
-        * References and sources to document your research.
-        * Use illustrations and other visual resources to explain your project.
-
-        # Advice on writing your Project Description
-        
-        We encourage you to put up a lot of information and content on your wiki, but we also encourage
-        you to include summaries as much as possible. If you think of the sections in your project 
-        description as the sections in a publication, you should try to be concise, accurate, and
-        unambiguous in your achievements. Your Project Description should include more information 
-        than your project abstract.
-
-    - var imgpath = "" + require("../assets/img/Description--josh-withers.jpg")["default"]
-    +image(1, imgpath, "Picture by Josh Withers on Unsplash")
-
-    :markdown-it
-        # Recording References
-
-        iGEM teams are encouraged to record references you use during the course of your research. They
-        should be posted somewhere on your wiki so that judges and other visitors can see how you thought 
-        about your project and what works inspired you.
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Attributions | iGEM Aachen
+  body
+    include ../templates/nav.pug
+    header.d-flex.justify-content-center.align-items-center
+      .container
+        h1 Attributions
+        // img(src=require('../assets/img/Team.jpg')['default'])
+        // p.text-center Photo by Naassom Azevedo on Unsplash
 
 
-//- DO NOT MODIFY THIS LINE AND ANYTHING BEYOND.
+    main
+      .container
+        h1.title= "Team Members"
+        .row.d-flex.justify-content-center.tiles
+            each member, index in team_members
+                if index%2 == 0
+                    .col-xl-7.col-lg-7.col-md-7.col-xs-12
+                        .card
+                            .card-img-top.img-left
+                                // a.tile
+                                img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
+                                h4.title= member.name + " " + member.surname
+                            .card-body
+                                h5.card-subtitle= member.motivation
+                    .col-xl-5.col-lg-5.col-md-5.col-xs-12
+                else
+                    .col-xl-5.col-lg-5.col-md-5.col-xs-12
+                    .col-xl-7.col-lg-7.col-md-7.col-xs-12
+                        .card
+                            .card-img-top.img-right
+                                // a.tile
+                                h4.title= member.name + " " + member.surname
+                                img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
+                            .card-body
+                                h5.card-subtitle= member.motivation
+        .container
+            each category in attributors
+                h1.category= category.category
+                .row.d-flex.justify-content-center.tiles
+
+                each person in category.persons
+                    .attributor
+                        .person
+                            h4.title= person.name
+                            h5.title= person.institution
+                        .attribution
+                            p= person.attribution
+
+    include ../templates/footer.pug
