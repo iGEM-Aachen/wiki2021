@@ -41,6 +41,51 @@ These are generated automatically from our `.pug`-files.
 Images belong in the folder `src/assets/img`.
 Right now, there are almost no subfolders in there, but feel free to create one for better clarity.
 
+#### How should I link images in texts?
+
+Images can be linked in texts with these two lines:
+
+```
+- var imgpath = "" + require("../assets/img/example-image-1.jpg")["Alternative Text"]
++image(1, imgpath, "Description of the image")
+```
+
+The first line descripes the path to the image.
+If your image is stored in the `img` folder as described above, just change the name from `example-image-1.jpg` to the name of your image.
+If you use subfolders under `img`, add the path your image as `../assets/img/subfolder/your-image.jpg`.
+Note that `../assets/img/` should always stay the same, as all images should be stored in this folder.
+
+`Alternative Text` is, obviously, the alternative text that will be shown when the image cannot be loaded.
+So also change this text to briefly descripe your image.
+Similarly, change `Description of the image` to the description you want to be shown under your image.
+
+##### Formatting of images
+
+Note that these two lines should not be inserted *inside* of a markdown-block.
+Instead, it should be inserted under a block, so on the same level of indentation.
+If you want to write more text under the image, just create a new markdown-block.
+This could look something like this:
+
+```
+block article
+    :markdown-it(html)
+
+        # First Markdown-Block with very interesting content.
+
+        Add some text here.
+
+    - var imgpath = "" + require("../assets/img/Description--josh-withers.jpg")["default"]
+    +image(1, imgpath, "Picture by Josh Withers on Unsplash")
+
+    :markdown-it
+        # Second Markdown-Block with even more interesting content.
+        
+        More Text
+```
+
+In general, it is very important that you get the indentation right.
+`:markdown-it(html)` should be indented four spaces (or one tab), while its content should be indented eight spaces.
+
 ### Git/GitHub
 
 #### Overview/What is all this branch- and commit-stuff about?
