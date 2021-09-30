@@ -113,7 +113,7 @@ header {
                 padding-bottom: 6px;
                 transition: color 0.5s;
                 color: $igem-straw-brown;
-                transition: font-size 0.3s, color 0.3s !important;
+                transition: font-size 0.3s, color 0.3s, font-weight 0.3s !important;
                 // from https://codepen.io/devilishalchemist/pen/ZYLZay
                 $duration: 0.2s;
                 $distance: 6px;
@@ -162,7 +162,8 @@ header {
 .active {
     color: $igem-spring-green !important;
     font-size: 20px !important;
-    transition: font-size 0.3s, color 0.3s !important;
+    // font-weight: bold;
+    transition: font-size 0.3s, color 0.3s, font-weight 0.3s !important;
 }
 
 @keyframes target-fade {
