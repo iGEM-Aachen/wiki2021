@@ -27,12 +27,12 @@
         "persons": [{
                 "name": "Steven Benner",
                 "institution": "The Westheimer Institute of Science and Technology (ret.)",
-                "attribution": ""
+                "attribution": "It was an honour for us to meet Professor Benner, who is such an important person in the field of synthetic biology. He was interested in and optimistic about our ideas and particularly helped us assess the use of unnatural base pairs in our project. We are grateful he took the time to meet with us and gave us new perspectives."
             },
             {
                 "name": "George Church",
                 "institution": "Wyss Institute, Harvard University",
-                "attribution": ""
+                "attribution": "Professor Church is the inspiration for our project. Our ideas are based on his research and we are honoured, that he accepted to meet with us. He helped us with various aspects of our project and gave us unique input for our storytelling. We want to thank him for his feedback, new perspectives and an unforgettable meeting."
             },
             {
                 "name": "Alexander Heckel",
@@ -62,7 +62,7 @@
             {
                 "name": "Dörte Rother, Thorsten Sehl, Jan-Dirk Spöring",
                 "institution": "Institute for Biotechnology, FZ Jülich",
-                "attribution": ""
+                "attribution": "Professor Rother and her team are experts in enzyme immobilization systems and helped us consider, which system could work for our project. We are thankful for their time and input."
             },
             {
                 "name": "Elmar Weinhold",
@@ -79,29 +79,14 @@
     {
         "category": "Lab Support",
         "persons": [{
-                "name": "Maximilian Schmidt",
-                "institution": "Institute for Bioinformatics, FZ Jülich",
-                "attribution": "Maximilian is a nanopore sequencing expert and gave us the unique possibility to try sequencing a sample with one of his MinIONs. He even came to our lab to guide us through the whole process. We want to thank him for his time and patience."
+                "name": "Hendrik Ballerstedt",
+                "institution": "Institute for Applied Microbiology, RWTH Aachen University",
+                "attribution": ""
             },
             {
                 "name": "Marian Bienstein",
                 "institution": "Institute for Biotechnology, RWTH Aachen University",
-                "attribution": ""
-            },
-            {
-                "name": "Ursula Holter",
-                "institution": "Institute for Biotechnology, RWTH Aachen University",
-                "attribution": ""
-            },
-            {
-                "name": "Christian Simons",
-                "institution": "Institute for Biotechnology, RWTH Aachen University",
-                "attribution": ""
-            },
-            {
-                "name": "Yi Lu",
-                "institution": "Institute for Biotechnology, RWTH Aachen University",
-                "attribution": ""
+                "attribution": "Marian spontaneously gave us an introduction to the S1 Lab in the institute of biotechnology and took his time to answer all our beginner’s questions and assist us with our first attempts at gel electrophoresis. Furthermore, he provided us with a PCR mastermix and loading dye at a time where we had not mastered the timing with our ordering process. We are grateful for his help in getting started in the lab."
             },
             {
                 "name": "Isabell Hofmann",
@@ -109,9 +94,9 @@
                 "attribution": ""
             },
             {
-                "name": "Hendrik Ballerstedt",
-                "institution": "Institute for Applied Microbiology, RWTH Aachen University",
-                "attribution": ""
+                "name": "Ursula Holter",
+                "institution": "Institute for Biotechnology, RWTH Aachen University",
+                "attribution": "Ursula made our time in the Schwaneberg Lab enjoyable. We could laugh about the everyday lab failures with her, which brightened our mood and saved us from desperation. She would always take the time to troubleshoot with us and we could ask her anything. We want to thank her for reminding us, that such problems and failures are normal and no reason for giving up."
             },
             {
                 "name": "Kalle Hüser",
@@ -119,8 +104,23 @@
                 "attribution": ""
             },
             {
-                "name": "",
-                "institution": "Institute for Applied Microbiology, RWTH Aachen University",
+                "name": "Yi Lu",
+                "institution": "Institute for Biotechnology, RWTH Aachen University",
+                "attribution": "Yi provided us with M13 primers for our cloning experiment on short notice and thus saved us some time. Thank you!"
+            },
+            {
+                "name": "Maximilian Schmidt",
+                "institution": "Institute for Bioinformatics, FZ Jülich",
+                "attribution": "Maximilian is a nanopore sequencing expert and gave us the unique possibility to try sequencing a sample with one of his MinIONs. He even came to our lab to guide us through the whole process. We want to thank him for his time and patience."
+            },
+            {
+                "name": "Christian Simons",
+                "institution": "Institute for Biotechnology, RWTH Aachen University",
+                "attribution": "Christian gave us the safety introduction for the S1 Lab in the institute of biotechnology. He also helped us at short notice with getting access to the lab for our promotion video shoot."
+            },
+            {
+                "name": "All other lab members",
+                "institution": "Institute for Applied Microbiology, Institute for Biotechnology, RWTH Aachen University",
                 "attribution": ""
             }
         ]
