@@ -15,43 +15,18 @@
                 "institution": "Institute for Biotechnology, FZ Jülich",
                 "attribution": ""
             }
+            {
+                "name": "Alexander Boes",
+                "institution": "Institute for Biotechnology, RWTH Aachen University",
+                "attribution": ""
+            },
         ]
     },
     {
         "category": "Experts",
         "persons": [{
-                "name": "Sebastian Palluk",
-                "institution": "Ansa Biotechnologies",
-                "attribution": ""
-            },
-            {
-                "name": "Elmar Weinhold",
-                "institution": "Institute of Organic Chemistry, RWTH Aachen University",
-                "attribution": ""
-            },
-            {
-                "name": "Alexander Heckel",
-                "institution": "Göthe-University Frankfurt",
-                "attribution": ""
-            },
-            {
-                "name": "Jost Muth, Lena Julie Freund",
-                "institution": "Fraunhofer Institute for Molecular Biology and Applied Ecology",
-                "attribution": ""
-            },
-            {
                 "name": "Steven Benner",
                 "institution": "The Westheimer Institute of Science and Technology (ret.)",
-                "attribution": ""
-            },
-            {
-                "name": "Jörn Kalinowski, Christian Rückert",
-                "institution": "Center for Biotechnology, University Bielefeld",
-                "attribution": ""
-            },
-            {
-                "name": "Martin Zimmermann",
-                "institution": "Institute for Applied Microbiology, RWTH Aachen University",
                 "attribution": ""
             },
             {
@@ -60,17 +35,13 @@
                 "attribution": ""
             },
             {
-                "name": "Dörte Rother, Thorsten Sehl, Jan-Dirk Spöring",
-                "institution": "Institute for Biotechnology, FZ Jülich",
-                "attribution": ""
-            }
-        ]
-    },
-    {
-        "category": "Lab Support",
-        "persons": [{
-                "name": "Maximilian Schmidt",
-                "institution": "Institute for Bioinformatics, FZ Jülich",
+                "name": "Alexander Heckel",
+                "institution": "Göthe-University Frankfurt",
+                "attribution": "Professor Heckel helped us with his expertise about photolabile protecting groups and even offered to provide us with photolabile protected bases. As our project moved in a different direction, we were not able to use this unique opportunity, however, we are extremely grateful for it."
+            },
+            {
+                "name": "Jörn Kalinowski, Christian Rückert",
+                "institution": "Center for Biotechnology, University Bielefeld",
                 "attribution": ""
             },
             {
@@ -79,9 +50,38 @@
                 "attribution": ""
             },
             {
-                "name": "Alexander Boes",
-                "institution": "Institute for Biotechnology, RWTH Aachen University",
+                "name": "Jost Muth, Lena Julie Freund",
+                "institution": "Fraunhofer Institute for Molecular Biology and Applied Ecology",
+                "attribution": "Dr. Muth and Ms. Freund were our contacts for the capillary electrophoresis and kindly analyzed some samples for us. Furthermore, they tried to answer all our questions and helped us with troubleshooting for our very unconventional samples. We are thankful for their commitment."
+            },
+            {
+                "name": "Sebastian Palluk",
+                "institution": "Ansa Biotechnologies",
+                "attribution": "Sebastian is an expert in DNA synthesis with TdT and participated in the iGEM competition himself. He gave some really good advice about the implementation of our experiments and shared his experience with first tries and failures with this topic. We want to thank him for his time, his input, and his encouragement."
+            },
+            {
+                "name": "Dörte Rother, Thorsten Sehl, Jan-Dirk Spöring",
+                "institution": "Institute for Biotechnology, FZ Jülich",
                 "attribution": ""
+            },
+            {
+                "name": "Elmar Weinhold",
+                "institution": "Institute of Organic Chemistry, RWTH Aachen University",
+                "attribution": "Professor Weinhold is an expert in nucleotide chemistry. He helped us understand the theory of DNA synthesis and discuss the feasibility of our experiments on several occasions. We want to thank him for his enthusiasm that motivated us."
+            },
+            {
+                "name": "Martin Zimmermann",
+                "institution": "Institute for Applied Microbiology, RWTH Aachen University",
+                "attribution": "Dr. Zimmermann has long-standing experience with working in the lab and particularly helped us finding the right conditions for a denaturing PAGE for our unconventional samples. Furthermore, he encouraged us to assess the health risks associated with the applied methods. We are thankful for his advice, especially concerning the things that are too often neglected."
+            },
+        ]
+    },
+    {
+        "category": "Lab Support",
+        "persons": [{
+                "name": "Maximilian Schmidt",
+                "institution": "Institute for Bioinformatics, FZ Jülich",
+                "attribution": "Maximilian is a nanopore sequencing expert and gave us the unique possibility to try sequencing a sample with one of his MinIONs. He even came to our lab to guide us through the whole process. We want to thank him for his time and patience."
             },
             {
                 "name": "Marian Bienstein",
