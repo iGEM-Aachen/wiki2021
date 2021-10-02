@@ -57,7 +57,7 @@
             {
                 "name": "Sebastian Palluk",
                 "institution": "Ansa Biotechnologies",
-                "attribution": "Sebastian is an expert in DNA synthesis with TdT and participated in the iGEM competition himself. He gave some really good advice about the implementation of our experiments and shared his experience with first tries and failures with this topic. We want to thank him for his time, his input, and his encouragement."
+                "attribution": "Dr. Palluk is an expert in DNA synthesis with TdT and participated in the iGEM competition himself. He gave some really good advice about the implementation of our experiments and shared his experience with first tries and failures with this topic. We want to thank him for his time, his input, and his encouragement."
             },
             {
                 "name": "Dörte Rother, Thorsten Sehl, Jan-Dirk Spöring",
@@ -121,15 +121,30 @@
             {
                 "name": "All other lab members",
                 "institution": "Institute for Applied Microbiology, Institute for Biotechnology, RWTH Aachen University",
-                "attribution": ""
+                "attribution": "We want to thank everyone for welcoming us and helping us finding our way in the lab."
             }
         ]
     },
     {
         "category": "Project Support",
         "persons": [{
-                "name": "Annette Schreer",
-                "institution": "Institute for Applied Microbiology, RWTH Aachen University",
+                "name": "Julia Gehrmann",
+                "institution": "iGEM Team Aachen 2020",
+                "attribution": ""
+            },
+            {
+                "name": "Antje Gent",
+                "institution": "Promega GmbH",
+                "attribution": ""
+            },
+            {
+                "name": "Vanessa Krämer",
+                "institution": "iGEM Team Bielefeld-CeBiTec 2018",
+                "attribution": ""
+            }
+            {
+                "name": "Lina Schmidt",
+                "institution": "iGEM Team Aachen 2020",
                 "attribution": ""
             },
             {
@@ -142,27 +157,12 @@
                 "institution": "iGEM Team Aachen 2020",
                 "attribution": ""
             },
-            {
-                "name": "Julia Gehrmann",
-                "institution": "iGEM Team Aachen 2020",
-                "attribution": ""
-            },
-            {
-                "name": "Vanessa Krämer",
-                "institution": "iGEM Team Bielefeld-CeBiTec 2018",
-                "attribution": ""
-            }
         ]
     },
     {
         "category": "Fundraising",
         "persons": [{
-                "name": "Manja Kropp",
-                "institution": "Institute for Applied Microbiology, RWTH Aachen University",
-                "attribution": ""
-            },
-            {
-                "name": "Helen Rosenkranz",
+                "name": "Manja Kropp, Helen Rosenkranz",
                 "institution": "Institute for Applied Microbiology, RWTH Aachen University",
                 "attribution": ""
             },
@@ -171,16 +171,6 @@
                 "institution": "proRWTH e.V.",
                 "attribution": ""
             },
-            {
-                "name": "Antje Gent",
-                "institution": "Promega GmbH",
-                "attribution": ""
-            },
-            {
-                "name": "Lina Schmidt",
-                "institution": "iGEM Team Aachen 2020",
-                "attribution": ""
-            }
         ]
     },
     {
@@ -191,6 +181,16 @@
                 "attribution": ""
             },
             {
+                "name": "Nicole Eßmajor, Nurşen Sözer",
+                "institution": "Institute for Biotechnology, RWTH Aachen University",
+                "attribution": ""
+            },
+            {
+                "name": "Daniel Knoll, Simon --",
+                "institution": "Knoll Media UG",
+                "attribution": ""
+            },
+            {
                 "name": "Chiara Nenninger",
                 "institution": "Institute for Biotechnology, RWTH Aachen University",
                 "attribution": ""
@@ -198,16 +198,6 @@
             {
                 "name": "Nicole Tabaka, Hannah Reichel",
                 "institution": "Institute for Applied Microbiology, RWTH Aachen University",
-                "attribution": ""
-            },
-            {
-                "name": "Nurşen Sözer",
-                "institution": "Institute for Biotechnology, RWTH Aachen University",
-                "attribution": ""
-            },
-            {
-                "name": "Nicole Eßmajor",
-                "institution": "Institute for Biotechnology, RWTH Aachen University",
                 "attribution": ""
             },
             {
