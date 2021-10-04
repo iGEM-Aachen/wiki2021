@@ -107,6 +107,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/e/e1/T--Aachen--img--Team.jpg
     md5: 27c3c08e50f1660e2c10cb1288ba91a8
     upload_filename: T--Aachen--img--Team.jpg
+  assets\img\all_sponsors.png:
+    link_URL: https://2021.igem.org/wiki/images/a/af/T--Aachen--img--all_sponsors.png
+    md5: e5fc1e5a16c5b2d0cd553a85996610f4
+    upload_filename: T--Aachen--img--all_sponsors.png
   assets\img\contribution\Benchling_Structure.jpg:
     link_URL: https://2021.igem.org/wiki/images/3/35/T--Aachen--img--contribution--Benchling_Structure.jpg
     md5: 324fccc7be1c10d867228ac9b3cd06f7
@@ -143,6 +147,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/b/be/T--Aachen--img--contribution--Verf%C3%BCgbarkeiten.jpg
     md5: bb61a26e660a653a7dbb72accbe2625c
     upload_filename: "T--Aachen--img--contribution--Verf\xFCgbarkeiten.jpg"
+  assets\img\discussion_city_archive.jpg:
+    link_URL: https://2021.igem.org/wiki/images/b/b2/T--Aachen--img--discussion_city_archive.jpg
+    md5: 6cef9e660fc4a357a13d03cff8f8c6ee
+    upload_filename: T--Aachen--img--discussion_city_archive.jpg
   assets\img\members\Alina Frank.jpg:
     link_URL: https://2021.igem.org/wiki/images/9/98/T--Aachen--img--members--Alina_Frank.jpg
     md5: e2551113e26730b62e16190b71416aa6
@@ -318,50 +326,50 @@ assets:
 css:
   css\attributions.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/attributionsCSS?action=raw&ctype=text/css
-    md5: 558d78299dd1f9118c76084df4e53d04
+    md5: 5e40b5d86bc916551f34a516dbeea79b
   css\content.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/contentCSS?action=raw&ctype=text/css
-    md5: d2da8ee90f610dff215d61b7c9b5ae6c
+    md5: 607d7804edecdead1481c0ed2abe0a1f
   css\index.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/indexCSS?action=raw&ctype=text/css
-    md5: 95902bb143ada47048d2047577478211
+    md5: fc2bf437cfaed56de9e1d01a158c4c86
   css\team.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/teamCSS?action=raw&ctype=text/css
-    md5: c8ee0d8c507b695bff55dd4257f034d5
+    md5: c7e0e64b6a7aaa902755d64dde05f836
 html:
   Attributions\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Attributions
-    md5: 3a001dc5b66bde18b0c65b358e0d00bf
+    md5: b42d8969ab4af91f8557f92b175514f9
   Collaborations\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Collaborations
-    md5: 458d6ee81a6b14f10c19401a9d1fb731
+    md5: efcec93b38dfb54eabb4425feabcb46b
   Communication\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Communication
-    md5: 8fd31f5cbca4a952660cc9fd5f9643b5
+    md5: 3192f0a07f4dc914cfea20f4074b32ee
   Contribution\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Contribution
-    md5: 498fa28fc9065bdb3b4369fe9536e3e7
+    md5: 024ba3492ea5f6178159c3923d61ffd7
   Description\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Description
-    md5: b13bc38552ed0df2efd503d9a10b6aa4
+    md5: c2b49f97304919602e13a9a9e799f273
   Education\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Education
-    md5: 86d56bbb4200e048ad05ef590b0a6e4a
+    md5: a950bbb30a06a0eebfb5302d3682e965
   Engineering\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Engineering
-    md5: e2cc565d8dfd2323458130a97324b64c
+    md5: 1562419c1e71225dd274836d1e96492c
   Experiments\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Experiments
-    md5: 9d3d6ec1f1e0dcddd5810a4539f928eb
+    md5: 2536e4069ecb96c2d028bc359feea07f
   Hardware\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Hardware
-    md5: fecf527eeca46f5c1c28c84dcd964e28
+    md5: 915fa1ab55e039398be0474f3a878651
   Human_Practices\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Human_Practices
-    md5: e2bdf68282d0a9bb306b9d93b7053ec5
+    md5: add694d9d50cd9431dc45f7ca06eed4e
   Implementation\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Implementation
-    md5: 3a69a0dfc52228ebda28b7423b8f2e1b
+    md5: 656fd2ff87c8e6c14c5fe07ab7e6322d
   Integrated_Human_Practices\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Integrated_Human_Practices
     md5: 3275be74c74a30b43a51eaec5d13effa
@@ -370,52 +378,52 @@ html:
     md5: 97b3cfe145eea89faf7e001554c99593
   Memes\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Memes
-    md5: 3c012fd4617d391a69ea602fc6310f0d
+    md5: 4c51f5500bef5b33212b9935690c137b
   Model\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Model
-    md5: 01cbe6b35bf377383dcf5939881553e6
+    md5: 36613fbac0ef109bf8ebe4c5420a99ae
   Modeling\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Modeling
     md5: adb35660e845c07dd06178cc3e350a9b
   Notebook\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Notebook
-    md5: 48bc1e330c9a4161db12b35df9da99b2
+    md5: 344e52fdb5bc4e69e7f3ea39fa2a7345
   Outlook\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Outlook
-    md5: a771d999f7c4f0371133687dcd47e299
+    md5: 1c6364a5256c76060114e261f100ea39
   Partnership\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Partnership
     md5: c064d73d76a0b9bbbb68c7c4ced75778
   Proof_Of_Concept\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Proof_Of_Concept
-    md5: 4ccecff2f6fcdaa165c2a468d1185ec2
+    md5: 89b26363d719992315be37647e9f91db
   Proof_of_Concept\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Proof_of_Concept
     md5: 0a86009cc190d722215cf32ff8973a8d
   Protocols\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Protocols
-    md5: 4dec1b2cb437c986485656f7fac09115
+    md5: b840e956ac31ce1bd58521f46f8543f8
   Results\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Results
-    md5: ad59a89dc53279f51339267f70853884
+    md5: 3ae3651a7245a76f0aa61a36f1ead9cd
   Safety\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Safety
-    md5: 23b74448de00592d28a9c189145b88d3
+    md5: ca89ea54c695219eb22f5feb3ca7223b
   Sample\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Sample
-    md5: f6ec01b56f431a26014a59b2edceaa1e
+    md5: 0ba5d0725c84c2dad4c72618fdb07412
   Software\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Software
-    md5: 01f7e2b8b017eaea1eed083b96e98744
+    md5: 61114cdfb47f4729ec78db181af0fa84
   Sponsors\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Sponsors
     md5: f464f5298441d70051db7fd15f9c3e32
   Team\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Team
-    md5: 9219dc950308869a06b12c73eb9de9b5
+    md5: 9ad124ff0217d48b7f4cd97dfce6df8d
   index.html:
     link_URL: https://2021.igem.org/Team:Aachen
-    md5: ab77b6ec000683f669a0d2d55e995792
+    md5: 5c7fae7d6ac406b30dcd3afab7c4e465
 js:
   attributions.bundle.js:
     link_URL: https://2021.igem.org/Template:Aachen/attributions-bundleJS?action=raw&ctype=text/javascript
