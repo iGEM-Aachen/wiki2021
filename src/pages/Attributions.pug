@@ -53,8 +53,13 @@ html(lang="en")
                         .col-xl-7.col-lg-7.col-md-7.col-xs-12
                             .card
                                 .card-img-top.img-left
-                                    // a.tile
                                     img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
+                                    .icon.icon13
+                                        img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
+                                    .icon.icon23
+                                        img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
+                                    .icon.icon33
+                                        img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
                                     h4.title= member.name + " " + member.surname
                                 .card-body
                                     h5.card-subtitle= member.motivation
@@ -64,8 +69,13 @@ html(lang="en")
                         .col-xl-7.col-lg-7.col-md-7.col-xs-12
                             .card
                                 .card-img-top.img-right
-                                    // a.tile
                                     h4.title= member.name + " " + member.surname
+                                    .icon.icon13
+                                        img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
+                                    .icon.icon23
+                                        img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
+                                    .icon.icon33
+                                        img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
                                     img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
                                 .card-body
                                     h5.card-subtitle= member.motivation
