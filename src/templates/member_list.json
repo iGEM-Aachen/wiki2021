@@ -4,7 +4,10 @@
         "age": "22",
         "course": "B.Sc. Biotechnology ",
         "motivation": "With iGEM I am eager to learn as much as possible about working on a scientific project together with many motivated people and possibly leave a mark in the world of biotechnology. ",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "one", "two", "three"
+        ]
     },
     {
         "name": "Alina",
@@ -12,7 +15,10 @@
         "age": "21",
         "course": "B.Sc. Biology",
         "motivation": "I see iGEM as an opportunity to challenge myself, meet new people and gain some new experiences. ",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "one", "two", "three"
+        ]
     },
     {
         "name": "Anna Maria",
@@ -20,7 +26,10 @@
         "age": "23",
         "course": "M.Sc. Biotechnology",
         "motivation": "I want to make the experience of developing a new field with our own project as a team in synthetic biology and go through highs and lows together on our way to the goal: a functioning project. Therefore, fun and teamwork with nice teammates is/are(?!) the top priority for me. ",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "one", "two", "three"
+        ]
     },
     {
         "name": "Tobias",
@@ -28,7 +37,10 @@
         "age": "20",
         "course": "B.Sc. Biotechnology",
         "motivation": "With iGEM I want to gather experiences while exploring new fields of synthetic biology as an interdisciplinary team. ",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "one", "two", "three"
+        ]
     },
     {
         "name": "Kim",
@@ -36,7 +48,10 @@
         "age": "21",
         "course": "B.Sc. Biotechnology",
         "motivation": "I would like to attain knowledge and bring my experiences to an application while teaming up to solve scientific problems. This is my first time working in a larger team and building up a project from the bottom. ",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "one", "two", "three"
+        ]
     },
     {
         "name": "Marie",
@@ -44,7 +59,10 @@
         "age": "21",
         "course": "B.Sc. Biology",
         "motivation": "In my eyes iGEM is a chance to challenge myself in interdisciplinary fields, to gain experience in planning an own project and to meet interesting and ambitious people from all over the world. I am looking forward to a great time with my new team here in Aachen. ",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "one", "two", "three"
+        ]
     },
     {
         "name": "Clemens",
@@ -52,7 +70,10 @@
         "age": "23",
         "course": "B.Sc Computer Science",
         "motivation": "iGEM gives me the chance to get insights in Biotechnology and get to know new people from different disciplines. I like the idea to apply my skills in Computer Science in this area to support my team on this project.",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "one", "two", "three"
+        ]
     },
     {
         "name": "Hannah",
@@ -60,7 +81,10 @@
         "age": "21",
         "course": "B.Sc. Biotechnology",
         "motivation": "I am looking forward to get to know other students from Aachen and around the world while working on a project in synthetic biology – a research topic that fascinates all of us. ",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "one", "two", "three"
+        ]
     },
     {
         "name": "Dominic",
@@ -68,7 +92,10 @@
         "age": "25",
         "course": "M.Sc. Biotechnology",
         "motivation": "To get practical experience, meet new people, and connect more with the science world ",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "one", "two", "three"
+        ]
     },
     {
         "name": "Marie",
@@ -76,7 +103,10 @@
         "age": "21",
         "course": "B.Sc. Biotechnology",
         "motivation": "With iGEM I hope to gain experience in teamwork; I want to challenge myself as I believe trying something new is a great foundation for one’s self-development ",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "one", "two", "three"
+        ]
     },
     {
         "name": "Daniel",
@@ -84,7 +114,10 @@
         "age": "26",
         "course": "M.Sc. Biotechnology",
         "motivation": "For me, participating in the iGEM is an opportunity to make my contribution to science. It is also a challenge, because this  project requires a lot of patience in addition to creativity and teamwork.",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "one", "two", "three"
+        ]
     },
     {
         "name": "Amir",
@@ -92,7 +125,10 @@
         "age": "24",
         "course": "B.Sc. Chemical Engineering",
         "motivation": "Gaining practical experience in the field of biotechnology with an interdisciplinary team is a great way to meet new people who share the same interests.   ",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "one", "two", "three"
+        ]
     },
     {
         "name": "Matthias",
@@ -100,7 +136,10 @@
         "age": "20",
         "course": "B.Sc Biotechnology",
         "motivation": "I am fascinated by seeing Ideas develop and thrive through the work one puts in them. I am hoping to experience that in IGem.",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "one", "two", "three"
+        ]
     },
     {
         "name": "Willy",
@@ -108,7 +147,10 @@
         "age": "20",
         "course": "B.Sc. Biology and Computer Science",
         "motivation": "Learning, sharing knowledge, meeting new people and developing new interests is my personal way of life, and I believe working on a project with interesting people in an incredibly fascinating field, provides exactly that.  ",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "one", "two", "three"
+        ]
     },
     {
         "name": "Polina",
@@ -116,7 +158,10 @@
         "age": "20",
         "course": "B.Sc. Biotechnology ",
         "motivation": "I love seeing ideas grow into visions and finally turning them into project. ",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "one", "two", "three"
+        ]
     },
     {
         "name": "Marijke",
@@ -124,7 +169,10 @@
         "age": "20",
         "course": "B.Sc. Biotechnology",
         "motivation": "When I heard of iGEM I was fascinated by the idea of turning a theoretical idea into a working project and I knew I wanted to be a part of it. ",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "one", "two", "three"
+        ]
     },
     {
         "name": "Malte",
@@ -132,7 +180,10 @@
         "age": "23",
         "course": "M.Sc. Computer Science",
         "motivation": "I love the idea of working together with other highly motivated students on a very interesting project that could one day change the world. ",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "one", "two", "three"
+        ]
     },
     {
         "name": "Alina",
@@ -140,7 +191,10 @@
         "age": "20",
         "course": "B.Sc. Biology",
         "motivation": "Especially during the Covid-19 Pandemic, connecting to other people has become really difficult. I see IGEM as an opportunity to work as a team, gain experience in lab work and taking another step towards becoming a Biotechnologist. ",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "one", "two", "three"
+        ]
     },
     {
         "name": "Zeynep",
@@ -148,7 +202,10 @@
         "age": "25",
         "course": "M.Sc. Biology ",
         "motivation": "I am looking forward to learn more about synthetic biology, also gaining the experience of working together as an interdisciplinary team on our own idea. ",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "one", "two", "three"
+        ]
     },
     {
         "name": "Theresia",
@@ -156,7 +213,10 @@
         "age": "20",
         "course": "B.Sc Business Administration and Engineering",
         "motivation": "With iGEM, I can learn more about synthetic biology and also connect with people who share the same interests",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "one", "two", "three"
+        ]
     },
     {
         "name": "Martin",
@@ -164,6 +224,9 @@
         "age": "21",
         "course": "B.Sc Biotechnology",
         "motivation": "I was looking for an opportunity to apply the academic knowledge, to get in touch with ambitious people, and to work together on an innovative project. ",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "one", "two", "three"
+        ]
     }
 ]

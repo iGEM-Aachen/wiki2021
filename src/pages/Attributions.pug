@@ -54,12 +54,21 @@ html(lang="en")
                             .card
                                 .card-img-top.img-left
                                     img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
-                                    .icon.icon13
-                                        img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
-                                    .icon.icon23
-                                        img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
-                                    .icon.icon33
-                                        img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
+                                    if member.categories.length == 1
+                                        .icon.icon23
+                                            img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
+                                    if member.categories.length == 2
+                                        .icon.icon12
+                                            img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
+                                        .icon.icon22
+                                            img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
+                                    if member.categories.length == 3
+                                        .icon.icon13
+                                            img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
+                                        .icon.icon23
+                                            img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
+                                        .icon.icon33
+                                            img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
                                     h4.title= member.name + " " + member.surname
                                 .card-body
                                     h5.card-subtitle= member.motivation
@@ -70,12 +79,21 @@ html(lang="en")
                             .card
                                 .card-img-top.img-right
                                     h4.title= member.name + " " + member.surname
-                                    .icon.icon13
-                                        img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
-                                    .icon.icon23
-                                        img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
-                                    .icon.icon33
-                                        img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
+                                    if member.categories.length == 1
+                                        .icon.icon23
+                                            img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
+                                    if member.categories.length == 2
+                                        .icon.icon12
+                                            img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
+                                        .icon.icon22
+                                            img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
+                                    if member.categories.length == 3
+                                        .icon.icon13
+                                            img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
+                                        .icon.icon23
+                                            img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
+                                        .icon.icon33
+                                            img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
                                     img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
                                 .card-body
                                     h5.card-subtitle= member.motivation
