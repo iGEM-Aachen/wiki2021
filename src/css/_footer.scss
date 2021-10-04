@@ -9,8 +9,8 @@ footer {
     background-color: $background;
     transition: background-color 0.3s ease;
     margin: 5rem 0 0 0;
-    padding: 3rem 0 4rem 0;
-    color: white;
+    // padding: 3rem 0 0 0;
+    color: $igem-straw-brown;
     // font-family: "Lato";
     font-size: 1rem;
     p {
@@ -24,10 +24,31 @@ footer {
             text-decoration: underline;
         }
     }
+    .us {
+        width: 50%;
+        padding: 3rem 0 3rem 0;
+        margin: auto;
+        h1,
+        h3 {
+            text-align: center;
+        }
+        h3 {
+            font-size: 1.5rem;
+        }
+        .socialmedia {
+            width: max-content;
+            margin: 0 auto;
+            padding-bottom: 30px;
+            a {
+                padding: 10px;
+            }
+        }
+    }
+    .sponsors {
+        background-color: white;
+        padding: 3rem 0 5rem 0;
+        img {
+            width: 100%;
+        }
+    }
 }
-
-// body.dark {
-//   footer {
-//     background-color: $background-dark;
-//   }
-// }

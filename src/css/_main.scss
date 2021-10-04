@@ -17,6 +17,10 @@ body {
     transition: background-color 0.3s ease-out;
 }
 
+.container {
+    max-width: 1400px;
+}
+
 // button from
 // https://codepen.io/kathykato/pen/rZRaNe
 $darkBlue: #2c3e50;
