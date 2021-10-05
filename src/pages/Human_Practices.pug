@@ -8,9 +8,65 @@ block headVars
 block article
     :markdown-it(html)
     
+        # Conversation at the city archive in Aachen
+        
+        In order to be able to adapt our ideas to the later application, we got into contact with a potential user of our DNA data storage.
+        We visited the city archive in Aachen to discuss long-term storage. 
+        Archive manager Dr. René Rohrkamp revealed to us that the primary task of an archive is the disposal of information.
+        Only 1-2% of the local information is stored in a city archive.
+        The goal of Dr. Rohrkamp and the employees is to store data in such a way that even after a long time it is possible to recognize what everyday life in Aachen used to be like.
+        The city archive is currently in the process of digitalizing many documents and storing them in a long-term repository (server archive) in Cologne.
+        But this includes many problems: First, extremely high costs are involved. 
+        Second, the current data storage devices are magnetic tapes with data decay and lack of robustness.
+        These storage units must be regularly renewed.
+        Third, for security, the electronic signature of the memories must be changed every few years, as a seal of quality and a warning signal in case of hacker attacks.
+        During our discussion, we also addressed the topic of data loss.
+        Today much is clarified via email and not signed, stamped and stored, which is why data is lost and a black hole of information is created.
+        Furthermore, we wanted to know if the value of a document is diminished by digital storage.
+        Digitalization is desirable, as this makes the documents available to the general public on the Internet.
+        In a conclusion, the city archive is looking for cheaper, uniform and safe data storage.
+        
+        How we integrated this information into our project can be observed in [integrated human practices](TODO).
+        Based on the proposals and expectations of the archive manager and employees of the city archive in Aachen we developed a guideline of information storage.
+        
+         [//]: # (# Es fehlt noch ein Link zu integrated human practices, falls es diese Seite geben wird.)
+
+    - var imgpath = "" + require("../assets/img/discussion_city_archive.jpg")["default"]
+    +image(1, imgpath, "Conversation at the city archive in Aachen")
+    
+    :markdown-it(html)
+        
+        # Meeting with Steven Benner
+        
+        Steven Benner, PhD is one of the pioneers in the field of synthetic biology and an expert in artificial genetic systems.
+        We had the honor to present our topic to him and discuss the integration of unnatural base pairs into our DNA.
+        
+        Mr. Benner and his colleagues have developed a six-letter Artificially Expanded Genetic Information System (AEGIS) which includes two additional nonstandard nucleotides in addition to the four standard nucleotides [1](#citation1).
+        According to Mr. Benner, integrating unnatural nucleotides like Z and P could have two main effects on our storage system: 
+        A larger number of available nucleotides opens up new possibilities in coding and increases the storage capacity of the DNA. 
+        A second effect is the decrease of secondary structure formation, due to less equal sequences. 
+        But this could also have some negative impacts on the analysis of DNA, as unnatural nucleotides are not recognized in nanopore sequencing. 
+        Therefore, we have made efforts to find other methods of analysis (more information here)[TODO]. 
+        Additionally, unnatural nucleotides are not available on the market, so we have dealt with this issue mainly theoretically (read link to get more information). 
+        
+        Due to his many years of laboratory experience, Mr. Benner was also able to provide us with some additional recommendations. 
+        Despite the view that the TdT can also accept unnatural nucleotides, this must be observed for our specific kind of TdT and reaction buffer [2](#citation2). 
+        Mr. Benner also advised us not to use nucleotides with photolabile groups as their size probably prevents the incorporation by the TdT into ssDNA strands. 
+        Based on these considerations, we have rethought our hardware and developed a new system, which is less oriented towards already known systems. 
+        Mr. Benner also confirmed that the application of SSBs to avoid secondary structures is worth a try.
+        
+        In summary, we had a particularly enriching conversation with some useful tips and tricks for the implementation of our project. 
+        
+        [//]: # (# Die Quellen müssen später in richtiger Reihenfolge am Seitenende aufgelistet werden. Es fehlt noch einige Links.)
+       
+    - var imgpath = "" + require("../assets/img/meeting_benner.jpeg")["default"]
+    +image(1, imgpath, "Meeting with Steven Benner")
+        
+    :markdown-it(html)
+    
         # Meeting with Jost Muth and Lena Julie Freund from the Fraunhofer IME Aachen (28.04.21)
 
-        In order to analyze analyze our samples far more in detail Sebastian Palluk suggested us to talk to the cappilary electrophoresis (CE) experts from the Fraunhofer IME in Aachen.
+        In order to analyze our samples far more in detail Sebastian Palluk suggested us to talk to the cappilary electrophoresis (CE) experts from the Fraunhofer IME in Aachen.
         At the IME institute they use a ABI3730 Genetic Analyzer to measure the length of for example PCR products.
         For the analysis the samples have to be labeled with a fluorescent dye.
         Mrs. Freund suggested us the 6FAM dye, because they made good experiences with it and the cost of these labeled primers are affordable.
@@ -29,3 +85,9 @@ block article
         It was very interesting to learn about the sequence method of the MinION and it was a great opportunity to ask as many questions about it as we want. 
         Maximilian was very committed sharing his experiences with us and was very helpful.
         At the end of the day, sequencing was successful and we had a lot of new data for our project progress. 
+        
+    - var imgpath = "" + require("../assets/img/Max Schmidt Bild.jpg")["default"]
+    +image(3, imgpath, "Meeting Maximilian Schmidt in the lab in Aachen")
+
+prepend citations
+    - var citations = [{"authors": "Yang, Z., Hutter, D., Sheng, P., Sismour, A. M., & Benner, S. A. (2006)", "doi": "https://doi.org/10.1093/nar/gkl633", "journal": "Nucleic Acids Research", "numbers": "34(21), 6095–6101", "title": "Artificially expanded genetic information system: A new base pair with an alternative hydrogen bonding pattern", "type": "article"}, {"authors": "Tauraitė, D., Jakubovska, J., Dabužinskaitė, J., Bratchikov, M., & Meškys, R. (2017)", "doi": "https://doi.org/10.3390/molecules22040672", "journal": "Molecules (Basel, Switzerland)", "numbers": "22(4)", "title": "Modified Nucleotides as Substrates of Terminal Deoxynucleotidyl Transferase", "type": "article"}]
