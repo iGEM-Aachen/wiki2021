@@ -129,6 +129,10 @@ attr-main {
         .institution {
             font-size: 18px;
         }
+        .card-body {
+            min-height: 210px;
+            padding: 0;
+        }
     }
     .mentor-description {
         margin: 0 10px 0 10px;
