@@ -6,7 +6,7 @@ import yaml
 
 def main():
 
-    with open('./src/nav.yml', 'r') as file:
+    with open('./src/nav.yml', 'r', encoding="utf-8") as file:
         nav = yaml.safe_load(file)
 
     nav_json = []
