@@ -17,15 +17,17 @@ block article
         * Proving that this semi-specific synthesis works and that data can be encoded and recovered in this way by sequencing the created fragments
 
         Our lab notebook is available [here](https://2021.igem.org/Team:Aachen/Notebook).
+        
         Detailed protocols can be found [here](https://2021.igem.org/Team:Aachen/Protocols).
+        
         The results are summarized [here](https://2021.igem.org/Team:Aachen/Results).
 
         # TdT Tailing Reaction
         The first step was to test whether TdT binds nucleotides to an ssDNA primer. 
-        A standard TdT tailing reaction was performed and verified by [gel electrophoresis](#gel-electrophoresis). 
+        A standard TdT tailing reaction was performed and verified by [gel electrophoresis](#Gelelectrophoresis). 
         To better characterize the reaction, many parameters such as incubation time and temperature as well as nucleotide, primer, cofactor, and enzyme concentration were varied. 
         Different nucleotides and combinations of those were tried to reveal significant differences in incorporation speed. This information was crucial for building hardware that can attach a roughly equal amount of each nucleotide, following the principle of: “As little as possible and as much as necessary“. 
-        This means that the goal is to find conditions where each strand is elongated as little as possible, but with at least one nucleotide in each cycle (see [modeling](https://2021.igem.org/Team:Aachen/Modeling)). For this purpose, the length distribution of the synthesized fragments was analyzed by [capillary electrophoresis](#capillary-electrophoresis).
+        This means that the goal is to find conditions where each strand is elongated as little as possible, but with at least one nucleotide in each cycle (see [modeling](https://2021.igem.org/Team:Aachen/Modeling)). For this purpose, the length distribution of the synthesized fragments was analyzed by [capillary electrophoresis](#Capillaryelectrophoresis).
         
         Furthermore, different TdTs were tested. In the first experiments, we used a recombinant TdT from NEB, but all other experiments were performed with a recombinant TdT from Thermo Fischer Scientific. They use very different reaction buffers, which significantly changed the incorporation speed and nucleotide preferences of TdT. All our summarized results concern the Thermo Fisher TdT.
         
@@ -42,13 +44,13 @@ block article
         # Gel electrophoresis
         For first sample analysis, our method of choice was the agarose gel electrophoresis because of easy handling and fast results. The final target was to sequence our self-generated DNA fragments, but sequencing methods had to be established first. 
         As the first samples were generated with only one type of nucleotide, length determination was most important. 
-        For our samples (low concentrated very short ssDNA fragments, ~20-1000 nt), the best length analysis method (apart from [capillary electrophoresis](#capillary-electrophoresis)) would typically be a denaturing PAGE, which was tried but rejected because of inconsistent results and performance difficulties. 
+        For our samples (low concentrated very short ssDNA fragments, ~20-1000 nt), the best length analysis method (apart from [capillary electrophoresis](#Capillaryelectrophoresis)) would typically be a denaturing PAGE, which was tried but rejected because of inconsistent results and performance difficulties. 
         We lost a lot of time at the beginning of our project due to the optimization attempts, as making our DNA strands visible was the first critical step. At last, we found conditions for an agarose gel electrophoresis that enabled us to clearly see ssDNA samples (see [engineering success]( https://2021.igem.org/Team:Aachen/Engineering)). 
         A 2.5% agarose solution in TBE buffer was used. 
         The gel was stained with SYBR gold solution for 20 min. A dsDNA ladder was used because we did not need a precise length determination. 
         These conditions were not optimal but sufficed for a first rough assessment of the samples, which would then undergo other analysis steps.
        
-        # Capillary Electrophoresis
+        # Capillary electrophoresis
         We had the possibility to let our samples be analyzed with a fragment analyzer at Fraunhofer Institute IME. 
         This analysis method has several advantages over gel electrophoresis: Fragments from 35bp to 500bp can be sized to within 1bp resolution and can be polymorphic in their lengths. [1](https://www.ime.fraunhofer.de/en/Research_Divisions/business_fields_MB/services/dna_fragmentanalyse.html) 
         In addition, ssDNA can be analyzed.
