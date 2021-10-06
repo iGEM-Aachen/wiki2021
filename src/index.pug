@@ -10,7 +10,9 @@ html(lang="en")
     
     .custom
       .jumbotron.home-card
-        img(src="./assets/img/project_logo.svg", alt="")
+        .container
+          .header
+            img(src=require('./assets/img/project_logo.svg')['default'])
       .jumbotron.home-card.home-bg-light
         .container
       .jumbotron.home-card
