@@ -40,13 +40,17 @@ $igem-blue: #38A0F5;
 }
 
 header {
-    margin: 10rem 0 0 0;
+    position: relative;
+    padding-top: 80px;
+    height: 60%;
     // font-family: "Lato", sans-serif;
     h1 {
         color: $igem-straw-brown;
         font-weight: 300;
         font-size: 4.5rem;
-        margin-bottom: 1.7rem;
+        margin: 200px 0 200px 0;
+        text-align: center;
+        position: absolute;
     }
     p.lead {
         // font-family: "Lato", sans-serif;
@@ -56,6 +60,15 @@ header {
     hr {
         background: #e2e2e3;
     }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        opacity: 70%;
+    }
+    // background-image: url("../assets/img/headers/software_header.jpg");
+    // background-size: 100%;
 }
 
 @include respond-below(lg) {

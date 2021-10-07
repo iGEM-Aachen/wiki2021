@@ -16,10 +16,8 @@ html(lang="en")
     include nav.pug
     header.d-flex.justify-content-center.align-items-center
       block header
-        .container
-          h1= title
-          p.lead.pl-1= tagline
-          hr.my-4
+        img(src=require('../assets/img/headers/' + title.toLowerCase() + '.jpg')['default']).header-image
+        img(src=require('../assets/img/headers/header_texts/' + title + '.svg')['default']).header-text
     block main
       nav#contentnav
         .container
@@ -27,7 +25,6 @@ html(lang="en")
             .sidebar.col-lg-3
               .nav#contents
                 h5 Contents
-                
                 ul
                   //- Filled automatically from js
             .content.col-lg-9
