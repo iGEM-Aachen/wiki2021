@@ -47,7 +47,7 @@
             {
                 "name": "Dr. Florian Kraft",
                 "institution": "Uniklinikum Aachen",
-                "attribution": ""
+                "attribution": "Dr. Kraft helped us understand nanopore sequencing and advised us on how to prepare our samples. He also sequenced some samples for us. We want to thank him for providing us with the results for our proof of concept."
             },
             {
                 "name": "Dr. Jost Muth, Lena Julie Freund",
@@ -188,12 +188,12 @@
             {
                 "name": "Nicole Eßmajor, Dr. Nurşen Sözer",
                 "institution": "Institute for Biotechnology, RWTH Aachen University",
-                "attribution": ""
+                "attribution": "Ms. Eßmajor and Dr. Sözer were our contact persons for everything not lab-related in the Institute of Biotechnology, e.g. helping us schedule meetings with Prof. Schwaneberg. We want to thank them for their assistance."
             },
             {
-                "name": "Daniel Knoll, Simon --",
+                "name": "Daniel Knoll, Simon Orth",
                 "institution": "Knoll Media UG",
-                "attribution": ""
+                "attribution": "Daniel and Simon produced our wonderful promotion video. They taught us amateurs how to look good on camera and were very patient, putting a lot of time and energy into the final touches. We had a lot of fun with the video shoot and are grateful for their support."
             },
             {
                 "name": "Chiara Nenninger",
@@ -208,7 +208,7 @@
             {
                 "name": "All Members of the iGEM Team Aachen 2020",
                 "institution": "",
-                "attribution": ""
+                "attribution": "We want to thank all members of the iGEM Team Aachen 2020 for introducing us to the competition, giving helpful advice, and answering all our questions."
             }
         ]
     }
