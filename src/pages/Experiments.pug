@@ -102,7 +102,7 @@ block article
         The first PCR primers we designed were suboptimal because they were very short and thus had a low annealing temperature. 
         We later designed longer primers, namely a 50 nt poly-T primer and a 25 nt forward primer, which then had a similar melting temperature and an annealing temperature of 63°C.
 
-        # Cloning + Sanger Sequencing
+        # Cloning and Sanger Sequencing
         As our synthesized DNA fragments are polymorphic, Sanger sequencing did not seem to be an option at first. 
         But as it is fast, cost-effective, and easy to evaluate for short DNA fragments, we developed a system that enabled us to sequence random individual fragments out of the polymorphic batch.
         
@@ -135,6 +135,34 @@ block article
         Unfortunately, we did not have the chance to properly try them in the lab.
         
         # Oligo Sequences
+        We designed most of the primers and oligos for our purposes ourselves. Here are the sequences:
+        ## TdT Reaction Primers
+        Our very first TdT reactions were performed with small leftover ssDNA primers from the lab.
+        
+        GALI fwd: 5’-ATTTTCGGTTTGTATTACTTC-3‘
+        
+        GALI rev: 5’-GTTCTTAATACTAACATAACT-3‘
+        
+        GALI0 fwd: 5’-GGTGGTAATGCCATGTAATATG-3‘
+        
+        GALI0 rev: 5’-GGCAAGGTAGACAAGCCGACAAC-3‘
+        
+        We then originally designed two different TdT Reaction Primers, one with an AT-rich sequence and the other with a GC-rich sequence, to investigate the formation of secondary structures because a high amount of complementary bases favors secondary structure formation [citation needed]. 
+        The sequences are completely random. We also ordered these oligos with different 5’-modifications for analysis and immobilization purposes.
+        
+        AT-rich Primer: 5‘-ACAATTCATCTTAGACTGACTATTATAAATCACACAGAGAAATCTATCAGAATTCTAGATATTCATTAAGTAATTTGAGTAGTTAATTTAAGCTTAATAA-3‘
+        
+        GC-rich Primer: 5’-GGACTTTTGCGCGTAGGCGGCGCGCGGCGGCCGCGGCCCGGGCCGCGGCCCGGGCCGGCTGGGTGGAGAGCCTACGGAGAGCTAATGCTAGCGTGCTGTAG-3‘
+        
+        Modifications: 5‘ 6-FAM for capillary electrophoresis, 5‘ Amino Modifier C6 for immobilization, 5‘ Maleinimid for immobilization, 5‘ Biotin-TEG for immobilization.
+        
+        As we were not able to perform many experiments concerning secondary structures and also had problems with the PCR reaction, we later designed a new primer with 50% GC-content and also a random sequence. 
+        We only ordered this primer with the 5‘ Biotin-TEG modification for immobilization.
+        
+        Normal Primer: 5‘-ACAATTCATCTTAGTGCCAGACTACTGTACTGTCCCAGAGAATAGACTTGCTTCGTGCGCACCCGTATGCCGCTCGATATGCGTAGCCGTCCATGTTGAT-3‘
+
+        ## PCR Primers
+        ## Short Oligos for Hybridization
         
 prepend citations
     - var citations = [{"authors": "1Lee, H., Wiegand, D.J., Griswold, K. et al. (2020)", "doi": "https://doi.org/10.1038/s41467-020-18681-5", "journal": "Nature Communications", "numbers": "11, 5246", "title": "Photon-directed multiplexed enzymatic DNA synthesis for molecular digital data storage", "type": "article"}, {"authors": "2", "doi": "https://www.ime.fraunhofer.de/en/Research_Divisions/business_fields_MB/services/dna_fragmentanalyse.html", "journal": "", "numbers": "", "title": "", "type": ""}, {"authors": "3", "doi": "https://www.bio-rad.com/de-de/applications-technologies/pcr-troubleshooting?ID=LUSO3HC4S#:~:text=Annealing%20temperature%20was%20too%20low,Tm%20of%20the%20primer", "journal": "", "numbers": "", "title": "", "type": ""}, {"authors": "4", "doi": "", "journal": "", "numbers": "", "title": "", "type": ""}, {"authors": "5Zhang, Y., Zhou, H., & Ou-Yang, Z.-C. (2001)", "doi": "10.1016/s0006-3495(01)75770-0 ", "journal": "Biophysical Journal", "numbers": "81(2), 1133–1143", "title": "Stretching Single-Stranded DNA: Interplay of Electrostatic, Base-Pairing, and Base-Pair Stacking Interactions", "type": "article"}, {"authors": "6", "doi": "", "journal": "", "numbers": "", "title": "", "type": ""}, {"authors": "7Shishmarev, D., Wang, Y., Mason, C. E., Su, X.-C., Oakley, A. J., Graham, B., … Otting, G. (2013)", "doi": "10.1093/nar/gkt1238", "journal": "Nucleic Acids Research", "numbers": "42(4), 2750–2757", "title": "Intramolecular binding mode of the C-terminus of Escherichia coli single-stranded DNA binding protein determined by nuclear magnetic resonance spectroscopy", "type": "article"}]
