@@ -102,6 +102,8 @@ block article
         The first PCR primers we designed were suboptimal because they were very short and thus had a low annealing temperature. 
         We later designed longer primers, namely a 50 nt poly-T primer and a 25 nt forward primer, which then had a similar melting temperature and an annealing temperature of 63°C.
 
+        We worked with the proofreading Phusion High-Fidelity DNA Polymerase from Thermo Fisher Scientific.
+        
         # Cloning and Sanger Sequencing
         As our synthesized DNA fragments are polymorphic, Sanger sequencing did not seem to be an option at first. 
         But as it is fast, cost-effective, and easy to evaluate for short DNA fragments, we developed a system that enabled us to sequence random individual fragments out of the polymorphic batch.
@@ -162,7 +164,30 @@ block article
         Normal Primer: 5‘-ACAATTCATCTTAGTGCCAGACTACTGTACTGTCCCAGAGAATAGACTTGCTTCGTGCGCACCCGTATGCCGCTCGATATGCGTAGCCGTCCATGTTGAT-3‘
 
         ## PCR Primers
+        Our first PCR primers were very short and had a low annealing temperature; they did not work well. 
+        We designed them with an overhang that contains restriction cut sites for SacI (forward primer) and KpnI (reverse Primer) for both the AT-rich and GC-rich TdT reaction primers.
+        
+        AT SacI fwd: 5’-GAGCTCACAATTCATCTTAG-3’
+        
+        AT KpnI rev: 5’-GGTACCTTTTTTTTTTTTTTTTT-3’
+        
+        GC SacI fwd: 5’-GAGCTCGGACTTTTGCG-3’
+        
+        GC KpnI rev: 5’-GGTACCTTTTTTTTTTTTTTTTT-3’
+        
+        After consulting Sebastian Palluk, who worked with this kind of PCR before, we decided to design longer primers, with different lengths, so that they have a similar melting temperature and a high annealing temperature. We designed these primers for our “Normal Primer”. They have an overhang with the same restriction cut sites as well, but we added a few bases, which should enable better hold for the restriction enzymes.
+        
+        N_fwd: 5’-TTTTGAGCTC ACAATTCATCTTAGTGCCAGACTAC-3’
+        
+        N_rev: 5’-TTTTGGTACCTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT-3’
+
         ## Short Oligos for Hybridization
+        We also designed short oligos with a ddNTP at the 3’-end to stabilize the single-strand during elongation, but we could not properly test them in the lab (see [outlook]().
+
+        3A3C: 5’-AAACC/ddC/-3’
+
+        5A5C: 5’-AAAAACCCC/ddC/-3’
+
         
 prepend citations
     - var citations = [{"authors": "1Lee, H., Wiegand, D.J., Griswold, K. et al. (2020)", "doi": "https://doi.org/10.1038/s41467-020-18681-5", "journal": "Nature Communications", "numbers": "11, 5246", "title": "Photon-directed multiplexed enzymatic DNA synthesis for molecular digital data storage", "type": "article"}, {"authors": "2", "doi": "https://www.ime.fraunhofer.de/en/Research_Divisions/business_fields_MB/services/dna_fragmentanalyse.html", "journal": "", "numbers": "", "title": "", "type": ""}, {"authors": "3", "doi": "https://www.bio-rad.com/de-de/applications-technologies/pcr-troubleshooting?ID=LUSO3HC4S#:~:text=Annealing%20temperature%20was%20too%20low,Tm%20of%20the%20primer", "journal": "", "numbers": "", "title": "", "type": ""}, {"authors": "4", "doi": "", "journal": "", "numbers": "", "title": "", "type": ""}, {"authors": "5Zhang, Y., Zhou, H., & Ou-Yang, Z.-C. (2001)", "doi": "10.1016/s0006-3495(01)75770-0 ", "journal": "Biophysical Journal", "numbers": "81(2), 1133–1143", "title": "Stretching Single-Stranded DNA: Interplay of Electrostatic, Base-Pairing, and Base-Pair Stacking Interactions", "type": "article"}, {"authors": "6", "doi": "", "journal": "", "numbers": "", "title": "", "type": ""}, {"authors": "7Shishmarev, D., Wang, Y., Mason, C. E., Su, X.-C., Oakley, A. J., Graham, B., … Otting, G. (2013)", "doi": "10.1093/nar/gkt1238", "journal": "Nucleic Acids Research", "numbers": "42(4), 2750–2757", "title": "Intramolecular binding mode of the C-terminus of Escherichia coli single-stranded DNA binding protein determined by nuclear magnetic resonance spectroscopy", "type": "article"}]
