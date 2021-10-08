@@ -2,7 +2,7 @@ import "../css/content.scss";
 import "./main";
 
 // format links
-$('.content h1, .content h2').each(function() {
+$('.content h1, .content h2, .content summary').each(function() {
     var text = $(this).text();
     $(this).text(text + ' ');
     var id = text.trim().replace(/ /g, '');
@@ -21,7 +21,7 @@ $('.content h1, .content h2').each(function() {
     $(this).prepend(link);
 
     // add to table of contents if h1
-    if ($(this).prop('tagName') == 'H1') {
+    if ($(this).prop('tagName') == 'H1' || $(this).prop('tagName') == "SUMMARY") {
         var item = document.createElement('li');
 
         var icon = document.createElement('i');
