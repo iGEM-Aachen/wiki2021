@@ -11,10 +11,10 @@ block article
         The goals of our experiments were the following:
 
         * Characterizing the terminal transferase (TdT) reaction and showing that TdT can incorporate nucleotides to ssDNA primers
-        * Investigating the problem of secondary structures during strand elongation
         * Immobilizing our ssDNA primers
         * Performing a cyclic semi-specific synthesis, in which an unknown number of one nucleotide type is attached in each reaction cycle 
         * Proving that this semi-specific synthesis works and that data can be encoded and recovered in this way by sequencing the created fragments
+        * Investigating the problem of secondary structures during strand elongation
 
         Our lab notebook is available [here](https://2021.igem.org/Team:Aachen/Notebook).
         
@@ -36,13 +36,25 @@ block article
         Hence, it is not ensured that the added nucleotide is also the incorporated nucleotide and synthesis errors accumulate.
         
         Therefore, the sample would have to be purified after each step to isolate the extended ssDNA strands and lose excess nucleotides.
+        Unfortunately, after purification with standard purification kits, another TdT tailing reaction does not work (see [results](https://2021.igem.org/Team:Aachen/Results)).
         
         Immobilizing the primers can solve this problem and is the basis for a cyclic synthesis of longer strands. 
-        Current techniques involve a flowcell with different master mixes (citation needed). For our purpose, the primers were immobilized on a stick and dipped into the reaction solutions with the different nucleotides. 
+        Current techniques involve immobilization on a streptavidin-coated surface, for instance in a flowcell with different mastermixes. [1](#citation1) 
+        For our purpose, a novel and simple method was developed: For our purpose, the primers were immobilized on a stick and dipped into the reaction solutions with the different nucleotides. 
         Various immobilization systems were tried: 
+        
+        1. Primers with amino modification and anchor peptide LCI
+        2. Primers with maleimid modification and anchor peptide LCI
+        3. Biotinylated primers and streptavidin-coated magnetic beads
        
     - var imgpath = "" + require("../assets/img/Description--josh-withers.jpg")["default"]
     +image(1, imgpath, "Picture by Josh Withers on Unsplash")
+    
+    - var imgpath = "" + require("../assets/img/Description--josh-withers.jpg")["default"]
+    +image(2, imgpath, "Picture by Josh Withers on Unsplash")
+    
+    - var imgpath = "" + require("../assets/img/Description--josh-withers.jpg")["default"]
+    +image(3, imgpath, "Picture by Josh Withers on Unsplash")
 
     :markdown-it
         # Gel Electrophoresis
@@ -56,7 +68,7 @@ block article
        
         # Capillary Electrophoresis
         We had the possibility to let our samples be analyzed with a fragment analyzer at Fraunhofer Institute IME. 
-        This analysis method has several advantages over gel electrophoresis: Fragments from 35bp to 500bp can be sized to within 1bp resolution and can be polymorphic in their lengths. [1](https://www.ime.fraunhofer.de/en/Research_Divisions/business_fields_MB/services/dna_fragmentanalyse.html) 
+        This analysis method has several advantages over gel electrophoresis: Fragments from 35bp to 500bp can be sized to within 1bp resolution and can be polymorphic in their lengths. [2](#citation2) 
         In addition, ssDNA can be analyzed.
         
         So this was the perfect method to detect small differences in length and establish the length distribution for different nucleotides and conditions. 
@@ -79,20 +91,51 @@ block article
         Now we only have to make sure, that a poly-A sequence is attached at the end of the strand. 
         Furthermore, we designed the PCR primers with an overhang that contains a restriction site for cloning purposes.
         
-    - var imgpath = "" + require("../assets/img/Description--josh-withers.jpg")["default"]
-    +image(1, imgpath, "Picture by Josh Withers on Unsplash")
+    - var imgpath = "" + require("../assets/img/Experiments/Experiments--PCR.gif")["default"]
+    +image(4, imgpath, "Operating principle of a PCR with a single-stranded template and poly-T reverse primer")
 
     :markdown-it
         Problems with this system are that the poly-T primer not only binds to the very end of, but to any poly-A sequence in the strand. 
         One could avoid using dATP to elongate the strand and only use it for poly-A tailing, but this would limit the data capacity for encoding information. 
-        Furthermore, the poly-T primer has a low annealing temperature, favoring unspecific PCR products (citation needed?).
+        Furthermore, the poly-T primer has a low annealing temperature, favoring unspecific PCR products. [3](#citation3)
+        
+        The first PCR primers we designed were suboptimal because they were very short and thus had a low annealing temperature. 
+        We later designed longer primers, namely a 50 nt poly-T primer and a 25 nt forward primer, which then had a similar melting temperature and an annealing temperature of 63°C.
 
         # Cloning + Sanger Sequencing
+        As our synthesized DNA fragments are polymorphic, Sanger sequencing did not seem to be an option at first. 
+        But as it is fast, cost-effective, and easy to evaluate for short DNA fragments, we developed a system that enabled us to sequence random individual fragments out of the polymorphic batch.
+        
+        A PCR was performed and the product was treated as an insert for a cloning reaction. 
+        We used E. coli Top10 and E. coli DH10B (NEB 10-beta) and tried the GeneArt Seamless Cloning and Assembly Kit with the GeneArt pMA Vector, the Promega pGEM-T Easy Vector System, and the Invitrogen TOPO TA Cloning Kit. 
+        10-20 colonies were picked and a colony PCR was performed. 
+        The PCR product was then purified to obtain one sample strand from the polymorphic batch. 
+        Several strands were analyzed to provide an overview of the synthesized fragments.
+
         # Nanopore Sequencing
+        Nanopore sequencing is typically not used for short DNA fragments and is especially not suited for strands containing many homopolymeric regions (citation?). 
+        But it is particularly suitable for polymorphic DNA fragments, which is why we choose it to sequence the synthesized strands. 
+        It generates large amounts of data, which were difficult to evaluate, but enabled us to build a proof of concept.
+        
         # Preventing Secondary Structures
+        Single-stranded DNA is prone to form secondary structures such as hairpins [5](#citation5). 
+        TdT accessibility to the 3’-OH end can be restricted. Since TdT always needs at least a three-nucleotide overhang to be able to attach nucleotides, synthesis can be inhibited or come to a halt if unfavorable secondary structures form [citation needed].
+
+        We thought of new methods to prevent the formation of secondary structures.
+
         ## SSBs
+        One idea was to add single-strand DNA-binding proteins (SSBs) to the TdT reaction. 
+        SSBs are proteins that bind to ssDNA, normally during replication, recombination, or repair processes, stabilizing it and preventing reannealing. [7](#citation7) 
+        For our purpose, it was important that the SSB stabilizes the ssDNA strand, but also does not inhibit the TdT reaction by binding too tightly. 
+        
+        We used the Single-Stranded DNA Binding Protein from Thermo Fisher Scientific and applied different concentrations in our reactions. There are various SSBs from different organisms with different properties. Due to a lack of time and because only few are commercially available, we did not get to try other SSBs.
+
         ## Other Methods
+        Other methods included adding short homopolymers to stabilize the strand by random local hybridizations and using unnatural bases. 
+        Unfortunately, we did not have the chance to properly try them in the lab.
+        
+        # Oligo Sequences
         
 prepend citations
-    - var citations = [{"authors": "Yang, Z., Hutter, D., Sheng, P., Sismour, A. M., & Benner, S. A. (2006)", "doi": "https://doi.org/10.1093/nar/gkl633", "journal": "Nucleic Acids Research", "numbers": "34(21), 6095–6101", "title": "Artificially expanded genetic information system: A new base pair with an alternative hydrogen bonding pattern", "type": "article"}, {"authors": "Tauraitė, D., Jakubovska, J., Dabužinskaitė, J., Bratchikov, M., & Meškys, R. (2017)", "doi": "https://doi.org/10.3390/molecules22040672", "journal": "Molecules (Basel, Switzerland)", "numbers": "22(4)", "title": "Modified Nucleotides as Substrates of Terminal Deoxynucleotidyl Transferase", "type": "article"}]
+    - var citations = [{"authors": "1Lee, H., Wiegand, D.J., Griswold, K. et al. (2020)", "doi": "https://doi.org/10.1038/s41467-020-18681-5", "journal": "Nature Communications", "numbers": "11, 5246", "title": "Photon-directed multiplexed enzymatic DNA synthesis for molecular digital data storage", "type": "article"}, {"authors": "2", "doi": "https://www.ime.fraunhofer.de/en/Research_Divisions/business_fields_MB/services/dna_fragmentanalyse.html", "journal": "", "numbers": "", "title": "", "type": ""}, {"authors": "3", "doi": "https://www.bio-rad.com/de-de/applications-technologies/pcr-troubleshooting?ID=LUSO3HC4S#:~:text=Annealing%20temperature%20was%20too%20low,Tm%20of%20the%20primer", "journal": "", "numbers": "", "title": "", "type": ""}, {"authors": "4", "doi": "", "journal": "", "numbers": "", "title": "", "type": ""}, {"authors": "5Zhang, Y., Zhou, H., & Ou-Yang, Z.-C. (2001)", "doi": "10.1016/s0006-3495(01)75770-0 ", "journal": "Biophysical Journal", "numbers": "81(2), 1133–1143", "title": "Stretching Single-Stranded DNA: Interplay of Electrostatic, Base-Pairing, and Base-Pair Stacking Interactions", "type": "article"}, {"authors": "6", "doi": "", "journal": "", "numbers": "", "title": "", "type": ""}, {"authors": "7Shishmarev, D., Wang, Y., Mason, C. E., Su, X.-C., Oakley, A. J., Graham, B., … Otting, G. (2013)", "doi": "10.1093/nar/gkt1238", "journal": "Nucleic Acids Research", "numbers": "42(4), 2750–2757", "title": "Intramolecular binding mode of the C-terminus of Escherichia coli single-stranded DNA binding protein determined by nuclear magnetic resonance spectroscopy", "type": "article"}]
 
