@@ -42,7 +42,7 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
     
-   - name: iGEM WikiSync
+    - name: iGEM WikiSync
       uses: igembitsgoa/wikisync-action@v0.2
       with:
         team: 'Aachen'
@@ -52,19 +52,19 @@ jobs:
         IGEM_USERNAME: ${{ secrets.IGEM_USERNAME }}
         IGEM_PASSWORD: ${{ secrets.IGEM_PASSWORD }}
         
-  - name: Add Changes to Git
-        run: git add upload_map.yml wikisync.log dist igem
-        # It is recommended that you add the source and 
-        # the build folder along with the upload map and
-        # log file. Read note below.
+    - name: Add Changes to Git
+      run: git add upload_map.yml wikisync.log dist igem
+      # It is recommended that you add the source and 
+      # the build folder along with the upload map and
+      # log file. Read note below.
 
-  - name: Commit Changes
-    run: |
-      git config --local user.email "action@github.com"
-      git config --local user.name "GitHub Action"
-      git commit -m "Successfully built and deployed to iGEM [no-ci]" || echo "No changes to commit"
+    - name: Commit Changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "Successfully built and deployed to iGEM [no-ci]" || echo "No changes to commit"
 
-  - name: Push Changes to Github
-    uses: ad-m/github-push-action@master
-    with:
-      github_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Push Changes to Github
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
