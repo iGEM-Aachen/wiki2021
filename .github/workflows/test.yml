@@ -34,6 +34,7 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm test
+      - run: npm cache verify
 
       - name: Github Fix
         run: sh utils/github.io_fix.sh
