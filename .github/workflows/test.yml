@@ -32,7 +32,7 @@ jobs:
         with:
           node-version: 14.x
           cache: 'npm'
-      - run: npm cache clean
+      - run: npm cache verify
       - run: npm ci
       - run: npm test
 
