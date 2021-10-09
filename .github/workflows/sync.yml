@@ -1,5 +1,5 @@
 
-name: Build and Deploy
+name: Upload existing Build to iGEM
 
 on:
   push:
@@ -39,4 +39,18 @@ jobs:
         env:
           IGEM_USERNAME: ${{ secrets.IGEM_USERNAME }}
           IGEM_PASSWORD: ${{ secrets.IGEM_PASSWORD }}
+          
+      - name: Add Changes to Git
+        run: git add upload_map.yml wikisync.log dist igem
+      
+      - name: Commit Changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "Successfully built and deployed to iGEM [no-cli]" || echo "No changes to commit"
+          
+      - name: Push Changes to Github
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
