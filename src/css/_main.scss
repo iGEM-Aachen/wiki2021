@@ -56,3 +56,8 @@ body {
     font-family: "Louis George Cafe";
     position: relative;
 }
+
+// Override iGEM Rule
+#HQ_page h1, h2, h3, h4, h5 {
+    font-family: "Louis George Cafe", "Arial", Gadget, sans-serif;
+}
