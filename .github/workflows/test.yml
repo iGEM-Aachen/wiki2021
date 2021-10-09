@@ -1,9 +1,12 @@
- name: Integration Test
+name: Integration Test
 
 on:
-  - pull_request
-  - push
-  
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
