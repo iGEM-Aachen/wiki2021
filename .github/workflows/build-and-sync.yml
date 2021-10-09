@@ -1,0 +1,66 @@
+# This workflow will do a clean install of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Build wiki and sync to iGEM
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x] #excluded 12.x and 16.x because wiki starter is too old and needs only one version
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Set up Python 3.7
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.7
+        
+    - name: Python Dependency Installation
+      uses: py-actions/py-dependency-install@v2.1.0
+
+    
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run build --if-present
+    - run: npm test
+    
+    - name: iGEM WikiSync
+      uses: igembitsgoa/wikisync-action@v0.2
+      with:
+        team: 'Aachen'
+        source: 'dist'
+        build: 'igem'
+      env:
+        IGEM_USERNAME: ${{ secrets.IGEM_USERNAME }}
+        IGEM_PASSWORD: ${{ secrets.IGEM_PASSWORD }}
+        
+    - name: Add Changes to Git
+      run: git add upload_map.yml wikisync.log dist igem
+      # It is recommended that you add the source and 
+      # the build folder along with the upload map and
+      # log file. Read note below.
+
+    - name: Commit Changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "Successfully built and deployed to iGEM [no-ci]" || echo "No changes to commit"
+
+    - name: Push Changes to Github
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
