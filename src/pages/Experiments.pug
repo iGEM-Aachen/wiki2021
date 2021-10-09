@@ -31,7 +31,8 @@ block article
         
         Furthermore, different TdTs were tested. In the first experiments, we used a recombinant TdT from NEB, but all other experiments were performed with a recombinant TdT from Thermo Fischer Scientific. They use very different reaction buffers, which significantly changed the incorporation speed and nucleotide preferences of TdT. All our summarized results concern the Thermo Fisher TdT.
         
-        # Primer Immobilization
+        # Cyclic Synthesis and Primer Immobilization
+        A cyclic synthesis in solution was tried by just adding the next type of nucleotide to the solution after each elongation.
         For the semi-specific synthesis, the TdT reaction in solution has the decisive disadvantage that the different nucleotides mix after the first few reaction cycles because there still is a nucleotide excess after each reaction step with that specific nucleotide. 
         Hence, it is not ensured that the added nucleotide is also the incorporated nucleotide and synthesis errors accumulate.
         
@@ -53,10 +54,19 @@ block article
     - var imgpath = "" + require("../assets/img/Experiments--maleimid.png")["default"]
     +image(2, imgpath, "Immobilization of maleimide-labeled TdT reaction primers via anchor peptide fusion protein construct.")
     
+    :markdown-it
+        For the first two methods, we used fusion proteins from the Leibniz Institute of Interactive Materials (DWI). 
+        The amino oligo can bind to a carboxyl functional group in the fusion protein in an EDC mediated reaction and the maleimide oligo binds to the thiol functional group of a cysteine in the fusion protein (see figure [1] and [2]). 
+        Those conjugates, consisting of the modified primer and the anchor peptide fusion protein, were bound to a polystyrene stick.
+    
     - var imgpath = "" + require("../assets/img/Experiments--straptavidin-biotin.png")["default"]
     +image(3, imgpath, "Immobilization of biotin-TEG-labeled TdT reaction primers via streptavidin-coated magnetic beads on rod magnet.")
-
+    
     :markdown-it
+        For the third method, we incubated our biotinylated primers with streptavidin-coated magnetic beads. 
+        We used biotin with the spacer TEG to minimize steric hindrance (see figure [3]). 
+        The beads were immobilized with a rod magnet.
+
         # Gel Electrophoresis
         For first sample analysis, our method of choice was the agarose gel electrophoresis because of easy handling and fast results. The final target was to sequence our self-generated DNA fragments, but sequencing methods had to be established first. 
         As the first samples were generated with only one type of nucleotide, length determination was most important. 
@@ -78,7 +88,7 @@ block article
         It was therefore not possible to analyze immobilized DNA because it was already labeled with the immobilization group.
         
         The TdT reaction with the fluorescent-labeled primers was performed in the same way as with the unlabeled primers. 
-        We used primers labeled with 6FAM.
+        We used primers labeled with 6-FAM.
 
         # PCR
         It is difficult to sequence ssDNA strands, in particular those with polymorphic length. 
@@ -135,7 +145,7 @@ block article
 
         ## Other Methods
         Other methods included adding short oligos to stabilize the strand by random local hybridizations and using unnatural bases. 
-        Unfortunately, we did not have the chance to properly try them in the lab.
+        Unfortunately, we did not have the chance to properly try them in the lab. (see [outlook](https://2021.igem.org/Team:Aachen/Outlook))
         
         # Oligo Sequences
         We designed most of the primers and oligos for our purposes ourselves. Here are the sequences:
@@ -183,7 +193,7 @@ block article
         N_rev: 5’-TTTTGGTACCTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT-3’
 
         ## Short Oligos for Hybridization
-        We also designed short oligos with a ddNTP at the 3’-end to stabilize the single-strand during elongation, but we could not properly test them in the lab (see [outlook]().
+        We also designed short oligos with a ddNTP at the 3’-end to stabilize the single-strand during elongation, but we could not properly test them in the lab. 
 
         3A3C: 5’-AAACC/ddC/-3’
 
