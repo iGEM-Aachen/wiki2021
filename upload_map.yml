@@ -89,7 +89,7 @@ assets:
     upload_filename: T--Aachen--img--Description--josh-withers.jpg
   assets/img/Experiments/Experiments--Amino-C6.png:
     link_URL: https://2021.igem.org/wiki/images/7/75/T--Aachen--img--Experiments--Experiments--Amino-C6.png
-    md5: 5c86652e952301c931b4af0a94752511
+    md5: 745027528d4889fa1213d53a5c8879f0
     upload_filename: T--Aachen--img--Experiments--Experiments--Amino-C6.png
   assets/img/Experiments/Experiments--PCR.gif:
     link_URL: https://2021.igem.org/wiki/images/f/f6/T--Aachen--img--Experiments--Experiments--PCR.gif
@@ -97,8 +97,12 @@ assets:
     upload_filename: T--Aachen--img--Experiments--Experiments--PCR.gif
   assets/img/Experiments/Experiments--maleimid.png:
     link_URL: https://2021.igem.org/wiki/images/e/e4/T--Aachen--img--Experiments--Experiments--maleimid.png
-    md5: 820dfef7935f11b641e25c5b6f337edd
+    md5: 67c801784947f46cf77644130409d696
     upload_filename: T--Aachen--img--Experiments--Experiments--maleimid.png
+  assets/img/Experiments/Experiments--streptavidin-biotin.png:
+    link_URL: https://2021.igem.org/wiki/images/c/cf/T--Aachen--img--Experiments--Experiments--streptavidin-biotin.png
+    md5: f785c9da1d5d78200417cf1139926449
+    upload_filename: T--Aachen--img--Experiments--Experiments--streptavidin-biotin.png
   assets/img/Home--design.jpeg:
     link_URL: https://2021.igem.org/wiki/images/5/52/T--Aachen--img--Home--design.jpeg
     md5: 8060957fc55d20104e816a7ca6792f45
@@ -753,7 +757,7 @@ html:
     md5: 1562419c1e71225dd274836d1e96492c
   Experiments/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Experiments
-    md5: 2b088c1b60ac8ee01e4f9cb54728ceeb
+    md5: 84c4cffe3351420f3e0a306ac34aa4f7
   Experiments\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Experiments
     md5: 2536e4069ecb96c2d028bc359feea07f
