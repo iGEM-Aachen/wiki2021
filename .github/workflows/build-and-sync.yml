@@ -6,8 +6,6 @@ name: Build wiki and sync to iGEM
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 jobs:
   build:
