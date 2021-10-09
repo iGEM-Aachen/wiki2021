@@ -32,9 +32,9 @@ jobs:
         with:
           node-version: 14.x
           cache: 'npm'
-      - run: npm cache clean –-force
       - run: npm ci
       - run: npm test
+      - run: npm cache verify
 
       - name: Github Fix
         run: sh utils/github.io_fix.sh
