@@ -27,10 +27,9 @@ jobs:
       with:
         python-version: 3.7
         
-    - name: Install Pip requirements
-      uses: BSFishy/pip-action@v1
-      with:
-        requirements: requirements.txt
+    - name: Python Dependency Installation
+      uses: py-actions/py-dependency-install@v2.1.0
+
     
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
