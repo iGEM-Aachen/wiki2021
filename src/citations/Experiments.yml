@@ -21,11 +21,6 @@
 # 5
 - doi: https://doi.org/10.1016/s0006-3495(01)75770-0
 # 6
-- article:
-    authors: "Deshpande, S., Yang, Y., Chilkoti, A., & Zauscher, S."
-    year_published: 2019
-    title: "Enzymatic synthesis and modification of high molecular weight DNA using terminal deoxynucleotidyl transferase."
-    journal: "Enzymatic Polymerizations"
-    numbers: "163–188."
+- doi: https://doi.org/10.1093/emboj/21.3.427
 # 7
 - doi: https://doi.org/10.1093/nar/gkt1238
