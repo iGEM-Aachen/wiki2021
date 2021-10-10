@@ -45,18 +45,18 @@ block article
         Various immobilization systems were tried: 
         
         1. Primers with amino modification and anchor peptide LCI
-        2. Primers with maleimid modification and anchor peptide LCI
+        2. Primers with maleimide modification and anchor peptide LCI
         3. Biotinylated primers and streptavidin-coated magnetic beads
        
     - var imgpath = "" + require("../assets/img/Experiments/Experiments--Amino-C6.png")["default"]
-    +image(1, imgpath, "Picture by Josh Withers on Unsplash")
+    +image(1, imgpath, "Immobilization of amino-labeled primers via anchor peptide fusion protein.")
     
     - var imgpath = "" + require("../assets/img/Experiments/Experiments--maleimid.png")["default"]
-    +image(2, imgpath, "Picture by Josh Withers on Unsplash")
+    +image(2, imgpath, "Immobilization of maleimide-labeled primers via anchor peptide fusion protein.")
     
     :markdown-it
         For the first two methods, we used fusion proteins from the Leibniz Institute of Interactive Materials (DWI). 
-        The amino oligo can bind to a carboxyl functional group in the fusion protein in an EDC mediated reaction and the maleimide oligo binds to the thiol functional group of a cysteine in the fusion protein (see figure [1] and [2]). 
+        The amino oligo can bind to a carboxyl functional group in the fusion protein in an EDC mediated reaction and the maleimide oligo binds to the thiol functional group of a cysteine in the fusion protein (see figure 1 and 2). 
         Those conjugates, consisting of the modified primer and the anchor peptide fusion protein, were bound to a polystyrene stick.
     
     - var imgpath = "" + require("../assets/img/Experiments/Experiments--streptavidin-biotin.png")["default"]
@@ -64,7 +64,7 @@ block article
     
     :markdown-it
         For the third method, we incubated our biotinylated primers with streptavidin-coated magnetic beads. 
-        We used biotin with the spacer TEG to minimize steric hindrance (see figure [3]). 
+        We used biotin with the spacer TEG to minimize steric hindrance (see figure 3). 
         The beads were immobilized with a rod magnet.
 
         # Gel Electrophoresis
@@ -78,7 +78,7 @@ block article
        
         # Capillary Electrophoresis
         We had the possibility to let our samples be analyzed with a fragment analyzer at Fraunhofer Institute IME. 
-        This analysis method has several advantages over gel electrophoresis: Fragments from 35bp to 500bp can be sized to within 1bp resolution and can be polymorphic in their lengths. [2](#citation2) 
+        This analysis method has several advantages over gel electrophoresis: Fragments from 35 bp to 500 bp can be sized to within 1 bp resolution and can be polymorphic in their lengths. [2](#citation2) 
         In addition, ssDNA can be analyzed.
         
         So this was the perfect method to detect small differences in length and establish the length distribution for different nucleotides and conditions. 
@@ -110,7 +110,7 @@ block article
         Furthermore, the poly-T primer has a low annealing temperature, favoring unspecific PCR products. [3](#citation3)
         
         The first PCR primers we designed were suboptimal because they were very short and thus had a low annealing temperature. 
-        We later designed longer primers, namely a 50 nt poly-T primer and a 25 nt forward primer, which then had a similar melting temperature and an annealing temperature of 63°C.
+        We later designed longer primers, namely a 50 nt poly-T primer and a 25 nt forward primer, which then had a similar melting temperature and an annealing temperature of 63 °C.
 
         We worked with the proofreading Phusion High-Fidelity DNA Polymerase from Thermo Fisher Scientific.
         
@@ -132,11 +132,11 @@ block article
         
         # Preventing Secondary Structures
         Single-stranded DNA is prone to form secondary structures such as hairpins [5](#citation5). 
-        TdT accessibility to the 3’-OH end can be restricted. Since TdT always needs at least a three-nucleotide overhang to be able to attach nucleotides, synthesis can be inhibited or come to a halt if unfavorable secondary structures form [citation needed].
+        TdT accessibility to the 3’-OH end can be restricted. Since TdT always needs at least a three-nucleotide overhang to be able to attach nucleotides, synthesis can be inhibited or come to a halt if unfavorable secondary structures form. [6](#citation6)
 
         We thought of new methods to prevent the formation of secondary structures.
 
-        ## Single-Strand DNA-Binding Proteins
+        ## Single-Strand DNA-Binding Proteins (SSBs)
         One idea was to add single-strand DNA-binding proteins (SSBs) to the TdT reaction. 
         SSBs are proteins that bind to ssDNA, normally during replication, recombination, or repair processes, stabilizing it and preventing reannealing. [7](#citation7) 
         For our purpose, it was important that the SSB stabilizes the ssDNA strand, but also does not inhibit the TdT reaction by binding too tightly. 
