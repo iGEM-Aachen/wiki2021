@@ -62,7 +62,7 @@ block main
                                     h4.title= member.name + " " + member.surname
                                     img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
                                 .card-body
-                                    h5.card-subtitle= member.motivation
+                                    h5.card-subtitle= member.attribution
         .container.category
             each category in attributors
                 if category.category != "Mentors"
