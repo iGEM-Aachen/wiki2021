@@ -22,7 +22,7 @@ block main
                                 .col-xl-6.col-lg-6.col-md-6.col-xs-12
                                     .mentor
                                         .mentor-top.img-left
-                                            img(src=require('../assets/img/mentors/'+mentor.name+'.jpg')['default'])
+                                            img(src=require('../assets/img/mentors/'+mentor.picturename+'.jpg')['default'])
                                             .mentor-description
                                                 h4= mentor.name
                                                 h5= mentor.institution
@@ -35,7 +35,7 @@ block main
                                             .mentor-description
                                                 h4= mentor.name
                                                 h5= mentor.institution
-                                            img(src=require('../assets/img/mentors/'+mentor.name+'.jpg')['default'])
+                                            img(src=require('../assets/img/mentors/'+mentor.picturename+'.jpg')['default'])
                                         .card-body
                                             h5.card-subtitle= mentor.attribution
 
