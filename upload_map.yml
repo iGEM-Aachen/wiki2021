@@ -123,6 +123,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/e/e1/T--Aachen--img--Team.jpg
     md5: 90a18079bd21036036f56f6dca72c308
     upload_filename: T--Aachen--img--Team.jpg
+  assets/img/Wiki_Background_Draft_Blank.png:
+    link_URL: https://2021.igem.org/wiki/images/f/f0/T--Aachen--img--Wiki_Background_Draft_Blank.png
+    md5: 0b835d771faefd1ff7f135c0a612cf75
+    upload_filename: T--Aachen--img--Wiki_Background_Draft_Blank.png
   assets/img/all_sponsors.png:
     link_URL: https://2021.igem.org/wiki/images/a/af/T--Aachen--img--all_sponsors.png
     md5: 503b87f7dd95dec3653be7b916d1d7db
@@ -690,16 +694,16 @@ assets:
 css:
   css/attributions.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/attributionsCSS?action=raw&ctype=text/css
-    md5: 0c5d389e2ceb110c9107e6b590d744d1
+    md5: 8680bd0c1aee5d5a4c5b2c3c0b5c784e
   css/content.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/contentCSS?action=raw&ctype=text/css
-    md5: 8284a59fb45709bc13e5e1fc4f126ac6
+    md5: 08fcd52524dea5ffb6ebae8fc2a8c489
   css/index.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/indexCSS?action=raw&ctype=text/css
-    md5: 2f6a03b83a31c35671a4dca6c1067f52
+    md5: 26c251a6a5ac801f794058099f2840b5
   css/team.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/teamCSS?action=raw&ctype=text/css
-    md5: 27ca02afc6a7185dd2744ae6ea1e4710
+    md5: cf72b39756e1d24c5b60dfae424304ef
   css\attributions.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/attributionsCSS?action=raw&ctype=text/css
     md5: 5e40b5d86bc916551f34a516dbeea79b
@@ -757,7 +761,7 @@ html:
     md5: 1562419c1e71225dd274836d1e96492c
   Experiments/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Experiments
-    md5: 84c4cffe3351420f3e0a306ac34aa4f7
+    md5: 8759799d8d12652e107cb8a699b4b2ce
   Experiments\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Experiments
     md5: 2536e4069ecb96c2d028bc359feea07f
