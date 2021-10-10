@@ -1,21 +1,15 @@
-include ../templates/mixins
-include ../templates/member_list
-include ../templates/attributor_list
-include ../templates/nav_list
+extends ../templates/contents.pug
 
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title Attributions | iGEM Aachen
-  body
-    include ../templates/nav.pug
-    header.d-flex.justify-content-center.align-items-center
-      .container
+block header 
+    .container 
         h1 Attributions
         // img(src=require('../assets/img/Team.jpg')['default'])
         // p.text-center Photo by Naassom Azevedo on Unsplash
 
+block main
+    include ../templates/member_list
+    include ../templates/attributor_list
+    include ../templates/nav_list
 
     attr-main
         .container.category
@@ -83,4 +77,3 @@ html(lang="en")
                             .attribution
                                 p= person.attribution
 
-    include ../templates/footer.pug
