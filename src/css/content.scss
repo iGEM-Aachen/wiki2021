@@ -40,6 +40,7 @@ $igem-blue: #38A0F5;
 }
 
 header {
+    background-color: $igem-dark;
     position: relative;
     padding-top: 80px;
     height: 60%;
@@ -202,7 +203,9 @@ header {
         h2,
         h3,
         p,
-        li, details, summary {
+        li,
+        details,
+        summary {
             color: $igem-dark;
             // font-family: 'Louis George Cafe';
         }
@@ -237,7 +240,8 @@ header {
             opacity: 100;
         }
     }
-    h1, summary {
+    h1,
+    summary {
         font-weight: 400;
         font-size: $h1size * 1rem;
         margin: 2rem 0 1rem 0;
