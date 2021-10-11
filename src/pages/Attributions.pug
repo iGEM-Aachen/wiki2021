@@ -1,8 +1,9 @@
 extends ../templates/contents.pug
 
-block header 
-    img(src=require('../assets/img/headers/attributions.jpg')['default']).header-image
-    img(src=require('../assets/img/headers/header_texts/attributions.svg')['default']).header-text
+block headVars
+    - var title = "Attributions"
+    - var tagline = ""
+    - var requireMathJax = true
 
 block main
     include ../templates/member_list
