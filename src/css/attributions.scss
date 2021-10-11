@@ -223,3 +223,16 @@ attr-main {
         }
     }
 }
+
+
+.teamlabel {
+    display: inline-block;
+    border: 1px solid $igem-green;
+    border-radius: 2em;
+    white-space: nowrap;
+
+    font-size: 12px;
+    color: $igem-green;
+
+    padding: 0 7px;
+}
