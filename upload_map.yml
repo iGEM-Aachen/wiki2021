@@ -694,16 +694,16 @@ assets:
 css:
   css/attributions.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/attributionsCSS?action=raw&ctype=text/css
-    md5: 8680bd0c1aee5d5a4c5b2c3c0b5c784e
+    md5: 28a9c92dda5a9d16859f1fc0f0a3ca39
   css/content.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/contentCSS?action=raw&ctype=text/css
-    md5: 08fcd52524dea5ffb6ebae8fc2a8c489
+    md5: e2cd9c3661132f32866bebd9fe9c0f56
   css/index.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/indexCSS?action=raw&ctype=text/css
-    md5: 26c251a6a5ac801f794058099f2840b5
+    md5: 6a5009a717be4a68d2b8bd81f7d7e614
   css/team.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/teamCSS?action=raw&ctype=text/css
-    md5: cf72b39756e1d24c5b60dfae424304ef
+    md5: 11f721786e2e7bb2885a77c9efee5221
   css\attributions.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/attributionsCSS?action=raw&ctype=text/css
     md5: 5e40b5d86bc916551f34a516dbeea79b
