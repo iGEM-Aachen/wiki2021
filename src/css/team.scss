@@ -33,7 +33,7 @@ header {
 }
 
 main {
-    margin-top: 4rem;
+    margin-top: 100px;
     .card {
         background: $igem-straw-brown;
         color: $igem-dark;
@@ -74,6 +74,7 @@ main {
 $anim-speed: 0.3s;
 // main styles
 .tiles {
+    padding-top: 100px;
     .tile {
         display: inline-block;
         margin: 3px;

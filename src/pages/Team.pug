@@ -1,47 +1,26 @@
-include ../templates/mixins
-include ../templates/member_list
-include ../templates/nav_list
+extends ../templates/contents.pug
 
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title Team | iGEM Aachen
-  body
-    include ../templates/nav.pug
-    //- header.d-flex.justify-content-center.align-items-center
-    //-   .container
-    //-     h1 Meet the Team
-    //-     img(src=require('../assets/img/Team.jpg')['default'])
-    //-     // p.text-center Photo by Naassom Azevedo on Unsplash
-
-    header.d-flex.justify-content-center.align-items-center
-      img(src=require('../assets/img/headers/team.jpg')['default']).header-image
-      img(src=require('../assets/img/headers/header_texts/team.svg')['default']).header-text
+block header 
+  img(src=require('../assets/img/headers/team.jpg')['default']).header-image
+  img(src=require('../assets/img/headers/header_texts/team.svg')['default']).header-text
 
 
-    main
-      .container
-        .row.d-flex.justify-content-center.tiles
-            each member in team_members
-              .col-xl-4.col-lg-4.col-md-6.col-xs-12
-                .card
-                  .card-img-top
-                    a.tile
-                      img(src=require('../assets/img/members/'+member.name+" "+member.surname+'.jpg')['default'])
-                      .details
-                        // span.title Lorem Ipsum Dolor
-                        span.info= member.motivation
-                  .card-body
-                    h4.card-title= member.name+" "+member.surname+", "+member.age
-                    h5.card-subtitle= member.course
-            //-   .card
-            //-     .card-img-top
-            //-       img(src=require('../assets/img/members/'+member.name+'.jpg')['default'])
-            //-       h1.card-img-text= "Hallo Welt"
+block main
+  include ../templates/member_list
+  include ../templates/attributor_list
+  include ../templates/nav_list
 
-                .card-body
-                  h4.card-title= member.name+", "+member.age
-                  h5.card-subtitle= member.course
-
-    include ../templates/footer.pug
+  .container
+    .row.d-flex.justify-content-center.tiles
+      each member in team_members
+        .col-xl-4.col-lg-4.col-md-6.col-xs-12
+          .card
+            .card-img-top
+              a.tile
+                img(src=require('../assets/img/members/'+member.name+" "+member.surname+'.jpg')['default'])
+                .details
+                  // span.title Lorem Ipsum Dolor
+                  span.info= member.motivation
+            .card-body
+              h4.card-title= member.name+" "+member.surname+", "+member.age
+              h5.card-subtitle= member.course
