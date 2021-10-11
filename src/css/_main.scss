@@ -52,6 +52,7 @@ a.btn-primary {
 
 body {
     background: url("../assets/img/Wiki_Background_Draft_Blank.png");
+    background-position: 0 50%;
     background-color: $igem-dark;
     color: $igem-straw-brown;
     font-family: "Louis George Cafe";
@@ -59,6 +60,15 @@ body {
 }
 
 // Override iGEM Rule
-#HQ_page h1, h2, h3, h4, h5, h6, p, a, li, span {
+#HQ_page h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+span {
     font-family: "Louis George Cafe", "Arial", Gadget, sans-serif;
 }
