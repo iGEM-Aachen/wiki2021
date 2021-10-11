@@ -9,11 +9,16 @@ html(lang="en")
     title Team | iGEM Aachen
   body
     include ../templates/nav.pug
+    //- header.d-flex.justify-content-center.align-items-center
+    //-   .container
+    //-     h1 Meet the Team
+    //-     img(src=require('../assets/img/Team.jpg')['default'])
+    //-     // p.text-center Photo by Naassom Azevedo on Unsplash
+
     header.d-flex.justify-content-center.align-items-center
-      .container
-        h1 Meet the Team
-        img(src=require('../assets/img/Team.jpg')['default'])
-        // p.text-center Photo by Naassom Azevedo on Unsplash
+      img(src=require('../assets/img/headers/team.jpg')['default'])
+      // img(src=require('../assets/img/headers/software.jpg')['default'])
+      h1= "Team"
 
 
     main

@@ -43,7 +43,6 @@ header {
     position: relative;
     padding-top: 80px;
     height: 60%;
-    // font-family: "Lato", sans-serif;
     h1 {
         color: $igem-straw-brown;
         font-weight: 300;
@@ -53,7 +52,6 @@ header {
         position: absolute;
     }
     p.lead {
-        // font-family: "Lato", sans-serif;
         font-weight: 400;
         font-size: 1.4rem;
     }
@@ -67,8 +65,6 @@ header {
         display: block;
         opacity: 70%;
     }
-    // background-image: url("../assets/img/headers/software_header.jpg");
-    // background-size: 100%;
 }
 
 @include respond-below(lg) {
