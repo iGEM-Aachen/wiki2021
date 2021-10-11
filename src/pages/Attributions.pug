@@ -50,22 +50,22 @@ block main
                                     img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
                                     if member.categories.length == 1
                                         .icon.icon23
-                                            img(src=require('../assets/icons/attributions/'+member.categories[0]+'.jpg')['default'])
+                                            img(src=require('../assets/icons/attributions/'+member.categories[0]+'.svg')['default'])
                                     if member.categories.length == 2
                                         .icon.icon12
-                                            img(src=require('../assets/icons/attributions/'+member.categories[0]+'.jpg')['default'])
+                                            img(src=require('../assets/icons/attributions/'+member.categories[0]+'.svg')['default'])
                                         .icon.icon22
-                                            img(src=require('../assets/icons/attributions/'+member.categories[1]+'.jpg')['default'])
+                                            img(src=require('../assets/icons/attributions/'+member.categories[1]+'.svg')['default'])
                                     if member.categories.length == 3
                                         .icon.icon13
-                                            img(src=require('../assets/icons/attributions/'+member.categories[0]+'.jpg')['default'])
+                                            img(src=require('../assets/icons/attributions/'+member.categories[0]+'.svg')['default'])
                                         .icon.icon23
-                                            img(src=require('../assets/icons/attributions/'+member.categories[1]+'.jpg')['default'])
+                                            img(src=require('../assets/icons/attributions/'+member.categories[1]+'.svg')['default'])
                                         .icon.icon33
-                                            img(src=require('../assets/icons/attributions/'+member.categories[2]+'.jpg')['default'])
+                                            img(src=require('../assets/icons/attributions/'+member.categories[2]+'.svg')['default'])
                                     h4.title= member.name + " " + member.surname
                                 .card-body
-                                    h5.card-subtitle= member.motivation
+                                    h5.card-subtitle= member.attribution
                         .col-xl-5.col-lg-5.col-md-5.col-xs-12
                     else
                         .col-xl-5.col-lg-5.col-md-5.col-xs-12
@@ -74,19 +74,19 @@ block main
                                 .card-img-top.img-right
                                     if member.categories.length == 1
                                         .icon.icon23
-                                            img(src=require('../assets/icons/attributions/'+member.categories[0]+'.jpg')['default'])
+                                            img(src=require('../assets/icons/attributions/'+member.categories[0]+'.svg')['default'])
                                     if member.categories.length == 2
                                         .icon.icon12
-                                            img(src=require('../assets/icons/attributions/'+member.categories[0]+'.jpg')['default'])
+                                            img(src=require('../assets/icons/attributions/'+member.categories[0]+'.svg')['default'])
                                         .icon.icon22
-                                            img(src=require('../assets/icons/attributions/'+member.categories[1]+'.jpg')['default'])
+                                            img(src=require('../assets/icons/attributions/'+member.categories[1]+'.svg')['default'])
                                     if member.categories.length == 3
                                         .icon.icon13
-                                            img(src=require('../assets/icons/attributions/'+member.categories[0]+'.jpg')['default'])
+                                            img(src=require('../assets/icons/attributions/'+member.categories[0]+'.svg')['default'])
                                         .icon.icon23
-                                            img(src=require('../assets/icons/attributions/'+member.categories[1]+'.jpg')['default'])
+                                            img(src=require('../assets/icons/attributions/'+member.categories[1]+'.svg')['default'])
                                         .icon.icon33
-                                            img(src=require('../assets/icons/attributions/'+member.categories[2]+'.jpg')['default'])
+                                            img(src=require('../assets/icons/attributions/'+member.categories[2]+'.svg')['default'])
                                     img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
                                     h4.title= member.name + " " + member.surname
                                 .card-body
