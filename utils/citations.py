@@ -13,7 +13,7 @@ def main():
     # load cache
     cache_file = 'src/citations/cache.yml'
     if os.path.exists(cache_file):
-        with open(cache_file, 'r') as file:
+        with open(cache_file, 'r', encoding='utf-8') as file:
             cache = yaml.safe_load(file)
     else:
         cache = {}
@@ -38,7 +38,7 @@ def main():
             if not os.path.exists(pugfile):
                 continue
 
-            with open(root + '/' + filename, 'r') as file:
+            with open(root + '/' + filename, 'r', encoding='utf-8') as file:
                 citations = yaml.safe_load(file)
 
             parsed_citations = []
@@ -68,11 +68,11 @@ def main():
 
                 parsed_citations.append(parsed_citation)
 
-            with open(pugfile, 'r') as file:
+            with open(pugfile, 'r', encoding='utf-8') as file:
                 lines = file.readlines()
 
             # write file with updated citations
-            with open(pugfile, 'w') as file:
+            with open(pugfile, 'w', encoding='utf-8') as file:
                 for line in lines:
                     stripped = line.rstrip()
 
@@ -83,11 +83,11 @@ def main():
                             "\nprepend citations\n    - var citations = ")
                         break
 
-            with open(pugfile, 'a') as file:
+            with open(pugfile, 'a', encoding='utf-8') as file:
                 json.dump(parsed_citations, file, sort_keys=True)
 
     # write cache
-    with open('src/citations/cache.yml', 'w') as file:
+    with open('src/citations/cache.yml', 'w', encoding='utf-8') as file:
         yaml.safe_dump(cache, file, default_flow_style=False)
 
 
