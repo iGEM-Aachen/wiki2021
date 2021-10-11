@@ -53,8 +53,9 @@ attr-main {
         display: flex;
         align-items: center;
         margin-bottom: 20px;
+        height: 20%;
         h4 {
-            margin: 10px;
+            margin: 20px 0 20px 0;
             font-size: 2rem;
         }
         img {
@@ -102,6 +103,9 @@ attr-main {
             margin-left: 165px;
             margin-top: 120px;
         }
+        .teamlabel {
+            margin-right: 7px;
+        }
     }
     .img-right {
         justify-content: right;
@@ -137,9 +141,28 @@ attr-main {
             margin-right: 165px;
             margin-top: 120px;
         }
+        .teamlabel {
+            margin-left: 7px;
+        }
     }
     h5 {
         font-size: 1.2rem;
+    }
+    .description {
+        display: flex;
+        flex-direction: column;
+        .img-left {
+            align-items: flex-start;
+        }
+        .img-right {
+            align-items: flex-end;
+        }
+        .teamlabels {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
     }
     .card-body {
         height: auto;

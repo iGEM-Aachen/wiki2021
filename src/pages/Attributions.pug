@@ -64,6 +64,11 @@ block main
                                         .icon.icon33
                                             img(src=require('../assets/icons/attributions/'+member.categories[2]+'.svg')['default'])
                                     h4.title= member.name + " " + member.surname
+                                    .description
+                                        h4.title= member.name + " " + member.surname
+                                        .teamlabels 
+                                            each category in member.categories
+                                                +teamlabel(category)
                                 .card-body
                                     h5.card-subtitle= member.attribution
                         .col-xl-5.col-lg-5.col-md-5.col-xs-12
@@ -88,7 +93,11 @@ block main
                                         .icon.icon33
                                             img(src=require('../assets/icons/attributions/'+member.categories[2]+'.svg')['default'])
                                     img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
-                                    h4.title= member.name + " " + member.surname
+                                    .description
+                                        h4.title= member.name + " " + member.surname
+                                        .teamlabels 
+                                            each category in member.categories
+                                                +teamlabel(category)
                                 .card-body
                                     h5.card-subtitle= member.attribution
         .container.category
