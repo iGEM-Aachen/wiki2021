@@ -74,6 +74,12 @@ header {
         display: block;
         opacity: 70%;
     }
+    .header-effect {
+        margin-bottom: 0;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
 }
 
 @include respond-below(lg) {
