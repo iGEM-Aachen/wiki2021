@@ -102,11 +102,10 @@ header {
             list-style: none;
             display: flex;
             svg {
-                margin-top: 4px;
-                height: 15px;
+                margin-top: 15px;
+                height: 12px;
             }
             a {
-                margin-left: 10px;
                 font-size: 1.1rem;
                 position: relative;
                 text-decoration: none;
@@ -193,11 +192,9 @@ header {
         h2,
         h3,
         p,
-        li {
+        li, details, summary {
             color: $igem-dark;
-        }
-        p {
-            font-family: 'Computer Modern Serif Roman';
+            // font-family: 'Louis George Cafe';
         }
     }
     h1,
@@ -230,7 +227,7 @@ header {
             opacity: 100;
         }
     }
-    h1 {
+    h1, summary {
         font-weight: 400;
         font-size: $h1size * 1rem;
         margin: 2rem 0 1rem 0;

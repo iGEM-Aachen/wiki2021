@@ -74,6 +74,7 @@ attr-main {
         }
     }
     .img-left {
+        flex-direction: row;
         img {
             margin-right: 70px;
         }
@@ -104,6 +105,7 @@ attr-main {
     }
     .img-right {
         justify-content: right;
+        flex-direction: row-reverse;
         h4,
         h5 {
             text-align: right;
@@ -192,6 +194,10 @@ attr-main {
         }
         .institution {
             font-size: 18px;
+        }
+        .card-body {
+            min-height: 230px;
+            padding: 0;
         }
     }
     .mentor-description {

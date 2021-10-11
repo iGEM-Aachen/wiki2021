@@ -1,23 +1,27 @@
 [{
         "category": "Mentors",
         "persons": [{
-                "name": "Lars Blank",
+                "picturename": "Lars Blank",
+                "name": "Prof. Dr. Lars Blank",
                 "institution": "Institute for Applied Microbiology, RWTH Aachen University",
                 "attribution": "Professor Blank, head of the Institute of Applied Microbiology (iAMB), has been primary PI for the iGEM Teams from RWTH Aachen University since 2014. He helped us evaluate our project ideas and encouraged us to choose an unconventional futuristic subject for our research. He casually gave us an idea that changed the whole concept for our hardware and immobilization plans and proved to be brilliant because of its simplicity. By providing lab space and helping us acquire funding, he enabled us to realize our project. We want to thank him for his feedback and ideas, which have made our project what it is."
             },
             {
-                "name": "Ulrich Schwaneberg",
+                "picturename": "_Ulrich Schwaneberg",
+                "name": "Prof. Dr. Ulrich Schwaneberg",
                 "institution": "Institute for Biotechnology, RWTH Aachen University",
                 "attribution": "As head of the Institute of Biotechnology, Professor Schwaneberg not only provided us with lab space and supplies, he also introduced us to members of his team who could help us with certain issues. Furthermore, he helped us find a great instructor, Dr. Alexander Boes, who supported us through our daily lab routine. Professor Schwaneberg’s expertise in adhesion peptides inspired us to try new and innovative immobilization systems and we had the unique opportunity to try them at the Leibnitz Institute for Interactive Materials (DWI). We are grateful for his commitment and advice."
             },
             {
-                "name": "Wolfgang Wiechert",
+                "picturename": "Wolfgang Wiechert",
+                "name": "Prof. Dr. Wolfgang Wiechert",
                 "institution": "Institute for Biotechnology, FZ Jülich",
                 "attribution": "Professor Wiechert is the head of Systems Biotechnology (IBG-1) at the FZ Jülich. In addition to providing fundraising assistance for all Aachen iGEM Teams, his constructive criticism helped us switch our focus from what we dreamed of doing to what we could realistically achieve. Especially in the finding phase, this was very important for our project selection process because his advice always gave us a clear picture of possibilities. He also guided our modeling team to find the right questions to investigate. We want to thank him for his brutal honesty and for keeping us grounded when we needed it most."
             },
             {
-                "name": "Alexander Boes",
-                "institution": "Leibnitz Institute for Interactive Materials, RWTH Aachen University",
+                "picturename": "Alexander Boes",
+                "name": "Dr. Alexander Boes",
+                "institution": "Leibniz Institute for Interactive Materials, RWTH Aachen University",
                 "attribution": "Alex was the best instructor we could have wished for. He really made an effort to immerse himself in the unconventional topic of DNA synthesis and helped us perform our immobilization experiments in the DWI lab. We met weekly to discuss lab results and troubleshoot, exchanging ideas and finding solutions. Guiding us on our way, he remained relaxed when problems arose and gave advice when we did not know what to do next. We are grateful for his dedication to our team and we would not have come this far without him."
             }
         ]
@@ -25,52 +29,52 @@
     {
         "category": "Experts",
         "persons": [{
-                "name": "Steven Benner",
+                "name": "Prof. Steven Benner, PhD.",
                 "institution": "The Westheimer Institute of Science and Technology (ret.)",
                 "attribution": "It was an honor for us to meet Professor Benner, who is such an important person in the field of synthetic biology. He was interested in and optimistic about our ideas and particularly helped us assess the use of unnatural base pairs in our project. We are grateful he took the time to meet with us and gave us new perspectives."
             },
             {
-                "name": "George Church",
+                "name": "Prof. George Church, PhD.",
                 "institution": "Wyss Institute, Harvard University",
                 "attribution": "Professor Church is the inspiration for our project. Our ideas are based on his research and we are honored, that he accepted to meet with us. He helped us with various aspects of our project and gave us unique input for our storytelling. We want to thank him for his feedback, new perspectives, and an unforgettable meeting."
             },
             {
-                "name": "Alexander Heckel",
+                "name": "Prof. Dr. Alexander Heckel",
                 "institution": "Göthe-University Frankfurt",
                 "attribution": "Professor Heckel helped us with his expertise about photolabile protecting groups and even offered to provide us with photolabile protected bases. As our project moved in a different direction, we were not able to use this unique opportunity, however, we are extremely grateful for it."
             },
             {
-                "name": "Jörn Kalinowski, Christian Rückert",
+                "name": "Prof. Dr. Jörn Kalinowski, Dr. Christian Rückert",
                 "institution": "Center for Biotechnology, University Bielefeld",
                 "attribution": ""
             },
             {
-                "name": "Florian Kraft",
+                "name": "Dr. Florian Kraft",
                 "institution": "Uniklinikum Aachen",
-                "attribution": ""
+                "attribution": "Dr. Kraft helped us understand nanopore sequencing and advised us on how to prepare our samples. He also sequenced some samples for us. We want to thank him for providing us with the results for our proof of concept."
             },
             {
-                "name": "Jost Muth, Lena Julie Freund",
+                "name": "Dr. Jost Muth, Lena Julie Freund",
                 "institution": "Fraunhofer Institute for Molecular Biology and Applied Ecology",
                 "attribution": "Dr. Muth and Ms. Freund were our contacts for the capillary electrophoresis and kindly analyzed some samples for us. Furthermore, they tried to answer all our questions and helped us with troubleshooting for our very unconventional samples. We are thankful for their commitment."
             },
             {
-                "name": "Sebastian Palluk",
+                "name": "Dr. Sebastian Palluk",
                 "institution": "Ansa Biotechnologies",
-                "attribution": "Dr. Palluk is an expert in DNA synthesis with TdT and participated in the iGEM competition himself. He gave some really good advice about the implementation of our experiments and shared his experience with first tries and failures with this topic. We want to thank him for his time, his input, and his encouragement."
+                "attribution": "Sebastian is an expert in DNA synthesis with TdT and participated in the iGEM competition himself. He gave some really good advice about the implementation of our experiments and shared his experience with first tries and failures with this topic. We want to thank him for his time, his input, and his encouragement."
             },
             {
-                "name": "Dörte Rother, Thorsten Sehl, Jan-Dirk Spöring",
+                "name": "Prof. Dr. Dörte Rother, Dr. Thorsten Sehl, Jan-Dirk Spöring",
                 "institution": "Institute for Biotechnology, FZ Jülich",
                 "attribution": "Professor Rother and her team are experts in enzyme immobilization systems and helped us consider, which system could work for our project. We are thankful for their time and input."
             },
             {
-                "name": "Elmar Weinhold",
+                "name": "Prof. Dr. Elmar Weinhold",
                 "institution": "Institute of Organic Chemistry, RWTH Aachen University",
                 "attribution": "Professor Weinhold is an expert in nucleotide chemistry. He helped us understand the theory of DNA synthesis and discuss the feasibility of our experiments on several occasions. We want to thank him for his enthusiasm that motivated us."
             },
             {
-                "name": "Martin Zimmermann",
+                "name": "Dr. Martin Zimmermann",
                 "institution": "Institute for Applied Microbiology, RWTH Aachen University",
                 "attribution": "Dr. Zimmermann has long-standing experience with working in the lab and particularly helped us finding the right conditions for a denaturing PAGE for our unconventional samples. Furthermore, he encouraged us to assess the health risks associated with the applied methods. We are thankful for his advice, especially concerning the things that are too often neglected."
             }
@@ -79,7 +83,7 @@
     {
         "category": "Lab Support",
         "persons": [{
-                "name": "Hendrik Ballerstedt",
+                "name": "Dr. Hendrik Ballerstedt",
                 "institution": "Institute for Applied Microbiology, RWTH Aachen University",
                 "attribution": "Hendrik gave us the safety introduction for the S1 lab in the Institute of Applied Microbiology and showed us the lab. He helped us find the right person for our questions on several occasions and gave us access to the lab for our promotion video shoot. We want to thank him for being there for us."
             },
@@ -133,9 +137,9 @@
                 "attribution": "Julia introduced us to the world of iGEM and managed the transition from the 2020 to the 2021 team. She was always the first person we approached for questions about the competition or general issues. We want to thank her for taking the time to share her experience with us. "
             },
             {
-                "name": "Antje Gent",
+                "name": "Dr. Antje Gent",
                 "institution": "Promega GmbH",
-                "attribution": ""
+                "attribution": "Dr. Antje Gent was a great help in advising on the selection of the required laboratory materials."
             },
             {
                 "name": "Vanessa Krämer",
@@ -162,19 +166,19 @@
     {
         "category": "Fundraising Support",
         "persons": [{
-                "name": "Manja Kropp, Helen Rosenkranz",
+                "name": "Manja Kropp, Dr. Helen Rosenkranz",
                 "institution": "Institute for Applied Microbiology, RWTH Aachen University",
                 "attribution": "Ms. Kropp and Dr. Rosenkranz were our contact persons concerning legal issues and fundraising questions. Furthermore, they managed our university bank account. We want to thank them for their time and good advice."
             },
             {
                 "name": "Jeanette Schwerdt",
                 "institution": "proRWTH e.V.",
-                "attribution": ""
+                "attribution": "We want to thank Jeannette Schwerdt as the contact person to proRWTH - the sponsoring association of RWTH Aachen University - for her help with fundraising and good communication."
             },
             {
-                "name": "Carin Jansen",
+                "name": "Dr. Carin Jansen",
                 "institution": "Profile Area Molecular Science & Engineering (MSE), RWTH Aachen University",
-                "attribution": ""
+                "attribution": "Dr. Jansen was our contact from the profile area Molecular Science & Engineering (MSE). It was her first time managing the sponsorship with the iGEM team and she did an excellent job, being very helpful and courteous. We want to thank her for her commitment."
             }
         ]
     },
@@ -186,29 +190,29 @@
                 "attribution": "In times of the Covid-19 pandemic it was very hard for our team members to meet in person, especially because the university was closed, and we could not use the seminar rooms. Therefore, we are very thankful for the possibility to use the meeting rooms of the Collective Incubator. Working together was much easier and we made a lot of progress in those meetings."
             },
             {
-                "name": "Nicole Eßmajor, Nurşen Sözer",
+                "name": "Nicole Eßmajor, Dr. Nursen Sözer",
                 "institution": "Institute for Biotechnology, RWTH Aachen University",
-                "attribution": ""
+                "attribution": "Ms. Eßmajor and Dr. Sözer were our contact persons for everything not lab-related in the Institute of Biotechnology, e.g. helping us schedule meetings with Prof. Schwaneberg. We want to thank them for their assistance."
             },
             {
-                "name": "Daniel Knoll, Simon --",
+                "name": "Daniel Knoll, Simon Orth",
                 "institution": "Knoll Media UG",
-                "attribution": ""
+                "attribution": "Daniel and Simon produced our wonderful promotion video. They taught us amateurs how to look good on camera and were very patient, putting a lot of time and energy into the final touches. We had a lot of fun with the video shoot and are grateful for their support."
             },
             {
                 "name": "Chiara Nenninger",
                 "institution": "Institute for Biotechnology, RWTH Aachen University",
-                "attribution": ""
+                "attribution": "Chiara helped us access the lab for our promotion video shoot. She was working on the weekend we filmed and kindly opened the door for us. Without her, we would not have been able to have a scene take place inside the Institute of Biotechnology. Thank you!"
             },
             {
                 "name": "Nicole Tabaka, Hannah Reichel",
                 "institution": "Institute for Applied Microbiology, RWTH Aachen University",
-                "attribution": ""
+                "attribution": "In times with limited working space, Nicole and Hannah kindly proposed to share their lab space with us, which enabled us to perform some experiments in the Institute of Applied Microbiology. We are very grateful for that."
             },
             {
                 "name": "All Members of the iGEM Team Aachen 2020",
                 "institution": "",
-                "attribution": ""
+                "attribution": "We want to thank all members of the iGEM Team Aachen 2020 for introducing us to the competition, giving helpful advice, and answering all our questions."
             }
         ]
     }

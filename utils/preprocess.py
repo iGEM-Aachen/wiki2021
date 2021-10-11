@@ -15,7 +15,7 @@ for root, _, files in os.walk('src/pages'):
 
         filepath = Path(root) / Path(filename)
 
-        with open(filepath, 'r') as file:
+        with open(filepath, 'r', encoding="utf-8") as file:
             contents = file.readlines()
 
         templines = []
@@ -69,7 +69,7 @@ for root, _, files in os.walk('src/pages'):
             else:
                 templines.append(line)
         
-        with open(filepath, 'w') as file:
+        with open(filepath, 'w', encoding="utf-8") as file:
             for line in templines:
                 file.write(line)
 

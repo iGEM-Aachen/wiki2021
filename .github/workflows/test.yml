@@ -1,9 +1,13 @@
- 
 name: Integration Test
 
 on:
+  push:
+    branches:
+      - main
   pull_request:
-    branches: [ master ]
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
   main:
@@ -13,11 +17,24 @@ jobs:
         uses: actions/checkout@v2.3.1
         with:
           persist-credentials: false
-      
-      - name: Install and Test
-        run: |
-          npm install
-          npm run test
+
+      - name: Set up Python 3.7
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
+
+      - name: Python Dependency Installation
+        uses: py-actions/py-dependency-install@v2.1.0
+
+
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+          cache: 'npm'
+      - run: npm ci
+      - run: npm test
+      - run: npm cache verify
 
       - name: Github Fix
         run: sh utils/github.io_fix.sh
@@ -26,4 +43,4 @@ jobs:
         run: npm run prestart
 
       - name: Build
-        run: npm run build
+        run: npm run-script build
