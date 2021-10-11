@@ -1,21 +1,25 @@
 [{
         "category": "Mentors",
         "persons": [{
+                "picturename": "Lars Blank",
                 "name": "Prof. Dr. Lars Blank",
                 "institution": "Institute for Applied Microbiology, RWTH Aachen University",
                 "attribution": "Professor Blank, head of the Institute of Applied Microbiology (iAMB), has been primary PI for the iGEM Teams from RWTH Aachen University since 2014. He helped us evaluate our project ideas and encouraged us to choose an unconventional futuristic subject for our research. He casually gave us an idea that changed the whole concept for our hardware and immobilization plans and proved to be brilliant because of its simplicity. By providing lab space and helping us acquire funding, he enabled us to realize our project. We want to thank him for his feedback and ideas, which have made our project what it is."
             },
             {
+                "picturename": "_Ulrich Schwaneberg",
                 "name": "Prof. Dr. Ulrich Schwaneberg",
                 "institution": "Institute for Biotechnology, RWTH Aachen University",
                 "attribution": "As head of the Institute of Biotechnology, Professor Schwaneberg not only provided us with lab space and supplies, he also introduced us to members of his team who could help us with certain issues. Furthermore, he helped us find a great instructor, Dr. Alexander Boes, who supported us through our daily lab routine. Professor Schwaneberg’s expertise in adhesion peptides inspired us to try new and innovative immobilization systems and we had the unique opportunity to try them at the Leibnitz Institute for Interactive Materials (DWI). We are grateful for his commitment and advice."
             },
             {
+                "picturename": "Wolfgang Wiechert",
                 "name": "Prof. Dr. Wolfgang Wiechert",
                 "institution": "Institute for Biotechnology, FZ Jülich",
                 "attribution": "Professor Wiechert is the head of Systems Biotechnology (IBG-1) at the FZ Jülich. In addition to providing fundraising assistance for all Aachen iGEM Teams, his constructive criticism helped us switch our focus from what we dreamed of doing to what we could realistically achieve. Especially in the finding phase, this was very important for our project selection process because his advice always gave us a clear picture of possibilities. He also guided our modeling team to find the right questions to investigate. We want to thank him for his brutal honesty and for keeping us grounded when we needed it most."
             },
             {
+                "picturename": "Alexander Boes",
                 "name": "Dr. Alexander Boes",
                 "institution": "Leibniz Institute for Interactive Materials, RWTH Aachen University",
                 "attribution": "Alex was the best instructor we could have wished for. He really made an effort to immerse himself in the unconventional topic of DNA synthesis and helped us perform our immobilization experiments in the DWI lab. We met weekly to discuss lab results and troubleshoot, exchanging ideas and finding solutions. Guiding us on our way, he remained relaxed when problems arose and gave advice when we did not know what to do next. We are grateful for his dedication to our team and we would not have come this far without him."

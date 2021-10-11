@@ -64,9 +64,12 @@ attr-main {
             margin: 10px
         }
     }
-    .img-left {}
+    .img-left {
+        flex-direction: row;
+    }
     .img-right {
         justify-content: right;
+        flex-direction: row-reverse;
         h4,
         h5 {
             text-align: right;

@@ -1,21 +1,15 @@
-include ../templates/mixins
-include ../templates/member_list
-include ../templates/attributor_list
-include ../templates/nav_list
+extends ../templates/contents.pug
 
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title Attributions | iGEM Aachen
-  body
-    include ../templates/nav.pug
-    header.d-flex.justify-content-center.align-items-center
-      .container
+block header 
+    .container 
         h1 Attributions
         // img(src=require('../assets/img/Team.jpg')['default'])
         // p.text-center Photo by Naassom Azevedo on Unsplash
 
+block main
+    include ../templates/member_list
+    include ../templates/attributor_list
+    include ../templates/nav_list
 
     attr-main
         .container.category
@@ -28,7 +22,7 @@ html(lang="en")
                                 .col-xl-6.col-lg-6.col-md-6.col-xs-12
                                     .mentor
                                         .mentor-top.img-left
-                                            img(src=require('../assets/img/mentors/'+mentor.name+'.jpg')['default'])
+                                            img(src=require('../assets/img/mentors/'+mentor.picturename+'.jpg')['default'])
                                             .mentor-description
                                                 h4= mentor.name
                                                 h5= mentor.institution
@@ -41,7 +35,7 @@ html(lang="en")
                                             .mentor-description
                                                 h4= mentor.name
                                                 h5= mentor.institution
-                                            img(src=require('../assets/img/mentors/'+mentor.name+'.jpg')['default'])
+                                            img(src=require('../assets/img/mentors/'+mentor.picturename+'.jpg')['default'])
                                         .card-body
                                             h5.card-subtitle= mentor.attribution
 
@@ -65,10 +59,10 @@ html(lang="en")
                             .card
                                 .card-img-top.img-right
                                     // a.tile
-                                    h4.title= member.name + " " + member.surname
                                     img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
+                                    h4.title= member.name + " " + member.surname
                                 .card-body
-                                    h5.card-subtitle= member.motivation
+                                    h5.card-subtitle= member.attribution
         .container.category
             each category in attributors
                 if category.category != "Mentors"
@@ -83,4 +77,3 @@ html(lang="en")
                             .attribution
                                 p= person.attribution
 
-    include ../templates/footer.pug
