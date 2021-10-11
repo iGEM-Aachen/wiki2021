@@ -74,8 +74,6 @@ header {
         display: block;
         opacity: 70%;
     }
-    // background-image: url("../assets/img/headers/software_header.jpg");
-    // background-size: 100%;
 }
 
 @include respond-below(lg) {

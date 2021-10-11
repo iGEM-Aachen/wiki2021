@@ -30,6 +30,13 @@ header {
         position: absolute;
         bottom: 0;
     }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        opacity: 70%;
+    }
 }
 
 main {
