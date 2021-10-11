@@ -1,10 +1,9 @@
 extends ../templates/contents.pug
 
 block header 
-    .container 
-        h1 Attributions
-        // img(src=require('../assets/img/Team.jpg')['default'])
-        // p.text-center Photo by Naassom Azevedo on Unsplash
+    header.d-flex.justify-content-center.align-items-center
+      img(src=require('../assets/img/headers/attributions.jpg')['default']).header-image
+      img(src=require('../assets/img/headers/header_texts/attributions.svg')['default']).header-text
 
 block main
     include ../templates/member_list
