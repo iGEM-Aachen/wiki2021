@@ -16,7 +16,7 @@ html(lang="en")
     include nav.pug
     header.d-flex.justify-content-center.align-items-center
       block header
-        img(src=require('../assets/img/headers/' + title.toLowerCase() + '.jpg')['default']).header-image
+        img(src=require('../assets/img/headers/' + title + '.jpg')['default']).header-image
         img(src=require('../assets/img/headers/header_texts/' + title + '.svg')['default']).header-text
     block main
       nav#contentnav
