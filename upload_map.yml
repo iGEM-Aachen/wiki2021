@@ -259,6 +259,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/7/74/T--Aachen--img--members--Zeynep_T%C3%BCrkyilmaz.jpg
     md5: 1f124d0b708f1e893da5168da2fe3412
     upload_filename: "T--Aachen--img--members--Zeynep T\xFCrkyilmaz.jpg"
+  assets/img/memes/harvard-eliminated.jpeg:
+    link_URL: https://2021.igem.org/wiki/images/c/c4/T--Aachen--img--memes--harvard-eliminated.jpeg
+    md5: c546e1eae850a7d3c862ca1aaa1849fe
+    upload_filename: T--Aachen--img--memes--harvard-eliminated.jpeg
   assets/img/mentors/Alexander Boes.jpg:
     link_URL: https://2021.igem.org/wiki/images/3/36/T--Aachen--img--mentors--Alexander_Boes.jpg
     md5: f044c84e23719cb517682af11f745289
@@ -703,7 +707,7 @@ css:
     md5: 6a5009a717be4a68d2b8bd81f7d7e614
   css/memes.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/memesCSS?action=raw&ctype=text/css
-    md5: e2cd9c3661132f32866bebd9fe9c0f56
+    md5: 3f107e00c54e445c2f007edd3f281e0e
   css/team.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/teamCSS?action=raw&ctype=text/css
     md5: 11f721786e2e7bb2885a77c9efee5221
@@ -794,7 +798,7 @@ html:
     md5: 97b3cfe145eea89faf7e001554c99593
   Memes/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Memes
-    md5: e643996a431d4bb84991b8b06095aa99
+    md5: 54ff2e60e0616ab27402d25c2d00e540
   Memes\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Memes
     md5: 4c51f5500bef5b33212b9935690c137b
