@@ -23,7 +23,8 @@ module.exports = {
         index: "./src/index.js",
         content: "./src/js/content.js",
         team: "./src/js/team.js",
-        attributions: "./src/js/attributions.js"
+        attributions: "./src/js/attributions.js",
+        memes: "./src/js/memes.js"
     },
     output: {
         filename: "[name].bundle.js",
@@ -35,26 +36,31 @@ module.exports = {
         new HTMLWebpackPlugin({
             filename: "index.html",
             template: "./src/index.pug",
-            excludeChunks: ["content", "team", "attributions"],
+            excludeChunks: ["content", "team", "attributions", "memes"],
         }),
         ...pages.map(
             (page) =>
             new HTMLWebpackPlugin({
                 template: "./src/pages/" + page,
                 filename: page.slice(0, -4) + "/index.html",
-                excludeChunks: ["index", "team", "attributions"],
+                excludeChunks: ["index", "team", "attributions", "memes"],
             })
         ),
         new HTMLWebpackPlugin({
             filename: "Team/index.html",
             template: "./src/pages/Team.pug",
-            excludeChunks: ["index", "content", "attributions"],
+            excludeChunks: ["index", "content", "attributions", "memes"],
         }),
         new HTMLWebpackPlugin({
             filename: "Attributions/index.html",
             template: "./src/pages/Attributions.pug",
-            excludeChunks: ["index", "content", "team"],
+            excludeChunks: ["index", "content", "team", "memes"],
         }),
+        new HTMLWebpackPlugin({
+            filename: "Memes/index.html",
+            template: "./src/pages/Memes.pug",
+            excludeChunks: ["index", "content", "team", "attributions"]
+        })
     ],
     module: {
         rules: [{
