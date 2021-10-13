@@ -1,9 +1,9 @@
 @import "_main.scss";
-
 body {
     background-image: none;
     background-color: $igem-dark;
 }
+
 
 /******************************
  * Header
@@ -99,11 +99,6 @@ article {
     }
 }
 
-.card {
-    background: $igem-straw-brown;
-    color: $igem-dark;
-}
-
 .custom {
     margin-top: 60px;
 }
@@ -111,7 +106,38 @@ article {
 .home-card {
     background-color: $igem-dark;
     min-height: 400px;
-    text-align: center;
+    p {
+        font-size: 1.5rem;
+    }
+    h1 {
+        text-align: center;
+    }
+    .fade {
+        color: $igem-straw-brown;
+        font-size: 1.3rem;
+        opacity: 1;
+        transition: opacity 1s;
+        font-family: monospace;
+    }
+    .fade1 {
+        transition-delay: 0s;
+    }
+    .fade2 {
+        transition-delay: 0.2s;
+    }
+    .fade3 {
+        transition-delay: 0.4s;
+    }
+    .fade4 {
+        transition-delay: 0.6s;
+    }
+    .line {
+        white-space: nowrap;
+        p,
+        pre {
+            display: inline-block;
+        }
+    }
 }
 
 .home-bg-light {
