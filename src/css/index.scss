@@ -1,5 +1,10 @@
 @import "_main.scss";
 
+body {
+    background-image: none;
+    background-color: $igem-dark;
+}
+
 /******************************
  * Header
  ******************************/
@@ -106,11 +111,14 @@ article {
 .home-card {
     background-color: $igem-dark;
     min-height: 400px;
+    text-align: center;
 }
 
 .home-bg-light {
     min-height: 500px;
-    background-image: url("../assets/img/homepage/home_background.svg#svgView(preserveAspectRatio(none))");
+    color: $igem-dark;
+    // background-image: url("../assets/img/homepage/home_background.svg#svgView(preserveAspectRatio(none))");
+    background-color: $igem-straw-brown;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
