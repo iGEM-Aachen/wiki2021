@@ -40,21 +40,45 @@ $igem-blue: #38A0F5;
 }
 
 header {
-    margin: 10rem 0 0 0;
-    // font-family: "Lato", sans-serif;
-    h1 {
+    background-color: $igem-dark;
+    position: relative;
+    padding-top: 80px;
+    height: 80vh;
+    transition: all 0.5s ease-in-out;
+    .header-text {
         color: $igem-straw-brown;
         font-weight: 300;
         font-size: 4.5rem;
-        margin-bottom: 1.7rem;
+        top: 40%;
+        text-align: center;
+        position: absolute;
+        height: 80px;
     }
-    p.lead {
-        // font-family: "Lato", sans-serif;
-        font-weight: 400;
-        font-size: 1.4rem;
+    .header-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        opacity: 70%;
     }
-    hr {
-        background: #e2e2e3;
+    .header-effect {
+        margin-bottom: 0;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+    .header-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        opacity: 70%;
+    }
+    .header-effect {
+        margin-bottom: 0;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
     }
 }
 
@@ -63,6 +87,7 @@ header {
         h1 {
             font-size: 4rem;
         }
+        height: 65vh;
     }
 }
 
@@ -70,6 +95,7 @@ header {
     header {
         margin-bottom: 4rem;
         min-height: unset !important;
+        height: 50vh;
     }
 }
 
@@ -192,7 +218,9 @@ header {
         h2,
         h3,
         p,
-        li, details, summary {
+        li,
+        details,
+        summary {
             color: $igem-dark;
             // font-family: 'Louis George Cafe';
         }
@@ -227,7 +255,8 @@ header {
             opacity: 100;
         }
     }
-    h1, summary {
+    h1,
+    summary {
         font-weight: 400;
         font-size: $h1size * 1rem;
         margin: 2rem 0 1rem 0;
