@@ -1,4 +1,5 @@
 # iGEM Aachen 2021 
+[![Builds without Errors](https://github.com/iGEM-Aachen/wiki2021/actions/workflows/test.yml/badge.svg?branch=main&event=push)](https://github.com/iGEM-Aachen/wiki2021/actions/workflows/test.yml)
 
 - [iGEM Aachen 2021](#igem-aachen-2021)
   - [How to work with GitHub and all this stuff](#how-to-work-with-github-and-all-this-stuff)
