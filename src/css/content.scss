@@ -43,12 +43,13 @@ header {
     background-color: $igem-dark;
     position: relative;
     padding-top: 80px;
-    height: 80%;
+    height: 80vh;
+    transition: all 0.5s ease-in-out;
     .header-text {
         color: $igem-straw-brown;
         font-weight: 300;
         font-size: 4.5rem;
-        margin-bottom: 15%;
+        top: 40%;
         text-align: center;
         position: absolute;
         height: 80px;
@@ -73,6 +74,7 @@ header {
         h1 {
             font-size: 4rem;
         }
+        height: 65vh;
     }
 }
 
@@ -80,6 +82,7 @@ header {
     header {
         margin-bottom: 4rem;
         min-height: unset !important;
+        height: 50vh;
     }
 }
 
