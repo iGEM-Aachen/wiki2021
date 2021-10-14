@@ -4,7 +4,10 @@
         "age": "22",
         "course": "B.Sc. Biotechnology ",
         "motivation": "With iGEM I am eager to learn as much as possible about working on a scientific project together with many motivated people and possibly leave a mark in the world of biotechnology. ",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "HP", "design", "fundraising"
+        ]
     },
     {
         "name": "Alina",
@@ -12,7 +15,10 @@
         "age": "21",
         "course": "B.Sc. Biology",
         "motivation": "I saw iGEM as an opportunity to challenge myself, meet new people and gain some new experiences. Finally, I learned much about planning and performing experiments in the lab and about communicating with companies, organizations and experts. ",
-        "attribution": "Alina was part of the fundraising team, which included establishing contact with foundations and potential industrial partners as well as planning the funding of the project. She also supported the wet lab team by spending time in the laboratory performing and planning experiments as well as analyzing the generated results."
+        "attribution": "Alina was part of the fundraising team, which included establishing contact with foundations and potential industrial partners as well as planning the funding of the project. She also supported the wet lab team by spending time in the laboratory performing and planning experiments as well as analyzing the generated results.",
+        "categories": [
+            "lab", "fundraising"
+        ]
     },
     {
         "name": "Anna Maria",
@@ -20,7 +26,10 @@
         "age": "24",
         "course": "M.Sc. Biotechnology",
         "motivation": "I would like to have the experience of developing a new field as a team with our own project in synthetic biology and to go through ups and downs together on the way to the goal, a functioning project. Therefore, fun and teamwork with nice teammates are my first priority. ",
-        "attribution": "Anna Maria was part of the subgroups organization, laboratory and social media. Her task was to support Marie L. in managing the team, to organize meetings, and to keep an eye on deadlines and email traffic. Since Anna Maria worked from home most of the time, she took over few lab shifts, but was heavily involved in research and could contribute her ideas in meetings. For social media, she created posts and took care of the exchange with other iGEM teams."
+        "attribution": "Anna Maria was part of the subgroups organization, laboratory and social media. Her task was to support Marie L. in managing the team, to organize meetings, and to keep an eye on deadlines and email traffic. Since Anna Maria worked from home most of the time, she took over few lab shifts, but was heavily involved in research and could contribute her ideas in meetings. For social media, she created posts and took care of the exchange with other iGEM teams.",
+        "categories": [
+            "organization", "social", "lab"
+        ]
     },
     {
         "name": "Tobias",
@@ -28,7 +37,10 @@
         "age": "20",
         "course": "B.Sc. Biotechnology",
         "motivation": "My Aim of participating at iGEM was to work in a motivated Team and explore together new fields of synthetic biology. I gained many new experiences in the practical lab work and the analysis of results. I also became aware of how practical lab work and modeling the results can improve each other. It was a great experience to exchange ideas about the project or solving problems with other team members and experts. ",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "IT", "modeling", "hardware"
+        ]
     },
     {
         "name": "Kim",
@@ -36,7 +48,10 @@
         "age": "21",
         "course": "B.Sc. Biotechnology",
         "motivation": "I would like to attain knowledge and bring my experiences to an application while teaming up to solve scientific problems. This is my first time working in a larger team and building up a project from the bottom. ",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "HP", "lab", "design"
+        ]
     },
     {
         "name": "Marie",
@@ -44,7 +59,10 @@
         "age": "21",
         "course": "B.Sc. Biology",
         "motivation": "I joined the iGEM Team to get practical experience in planning an own project and working in the lab. I learned throughout this journey that you have to focus on the basics when sometimes problems seem to be insolvable and that you always have to appreciate the little achievements. ",
-        "attribution": "Marie started the project by being part of the fundraising team, which included initiating contact with companies and organizations, ongoing communication, and managing the teams' finances. She was involved in all things regarding design and creativity, e.g. logo- and wiki-design, science communication, and video conceptualization. However, her main focus was bringing the project forward in the wet lab by spending countless hours in the laboratory and experimental planning. "
+        "attribution": "Marie started the project by being part of the fundraising team, which included initiating contact with companies and organizations, ongoing communication, and managing the teams' finances. She was involved in all things regarding design and creativity, e.g. logo- and wiki-design, science communication, and video conceptualization. However, her main focus was bringing the project forward in the wet lab by spending countless hours in the laboratory and experimental planning. ",
+        "categories": [
+            "lab", "fundraising", "design"
+        ]
     },
     {
         "name": "Clemens",
@@ -52,7 +70,10 @@
         "age": "23",
         "course": "B.Sc. Computer Science",
         "motivation": "iGEM gives me the chance to get insights in Biotechnology and get to know new people from different disciplines. I like the idea to apply my skills in Computer Science in this area to support my team on this project.",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "IT", "design"
+        ]
     },
     {
         "name": "Hannah",
@@ -60,7 +81,10 @@
         "age": "21",
         "course": "B.Sc. Biotechnology",
         "motivation": "I am looking forward to get to know other students from Aachen and around the world while working on a project in synthetic biology – a research topic that fascinates all of us. ",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "fundraising", "HP", "lab"
+        ]
     },
     {
         "name": "Dominic",
@@ -68,7 +92,10 @@
         "age": "25",
         "course": "M.Sc. Biotechnology",
         "motivation": "For me, iGEM was an opportunity to gather independent lab work experience and learn about the process of building a project from scratch. The project taught me the importance of standardizing every possible aspect of workflows and the necessity for proper communication. ",
-        "attribution": "Dominic managed the lab organization and always made sure that people got things done. Planning and performing experiments, he also spent a lot of time in the lab himself and came up with a standardized format for protocols as well as an inventory. He was very invested in planning the promotion and presentation video and contributed to various design-related projects such as postcards, presentations, and our wiki. Furthermore, his ideas for structuring and writing the wiki plus checking all texts for mistakes made it something we can be proud of. "
+        "attribution": "Dominic managed the lab organization and always made sure that people got things done. Planning and performing experiments, he also spent a lot of time in the lab himself and came up with a standardized format for protocols as well as an inventory. He was very invested in planning the promotion and presentation video and contributed to various design-related projects such as postcards, presentations, and our wiki. Furthermore, his ideas for structuring and writing the wiki plus checking all texts for mistakes made it something we can be proud of. ",
+        "categories": [
+            "lab", "design", "organization"
+        ]
     },
     {
         "name": "Marie",
@@ -76,7 +103,10 @@
         "age": "21",
         "course": "B.Sc. Biotechnology",
         "motivation": "With iGEM I wanted to challenge myself and develop qualities for good leadership. The key things I learned are: Mistakes are an important part of progress. Sometimes you have to change your focus to reach your goals. And, most importantly, you have to be willing to compromise.",
-        "attribution": "Marie was our team leader and the mastermind behind the organization of our project. She managed to keep every important deadline and detail on her radar, schedule meetings, prepare agendas, hold presentations, and communicate with our mentors and experts. Apart from the organization, she took a major part in the wet lab through experimental planning and practical work and was involved in the production of our promotion and presentation video. As Marie's organizational work required a basic understanding of the progress in each sub-group, she significantly contributed to planning, designing, and writing our wiki. It would probably be easier to list the few things she was not involved in. "
+        "attribution": "Marie was our team leader and the mastermind behind the organization of our project. She managed to keep every important deadline and detail on her radar, schedule meetings, prepare agendas, hold presentations, and communicate with our mentors and experts. Apart from the organization, she took a major part in the wet lab through experimental planning and practical work and was involved in the production of our promotion and presentation video. As Marie's organizational work required a basic understanding of the progress in each sub-group, she significantly contributed to planning, designing, and writing our wiki. It would probably be easier to list the few things she was not involved in. ",
+        "categories": [
+            "organization", "lab", "IT"
+        ]
     },
     {
         "name": "Daniel",
@@ -84,7 +114,10 @@
         "age": "26",
         "course": "M.Sc. Biotechnology",
         "motivation": "For me, participating in the iGEM is an opportunity to make my contribution to science. It is also a challenge, because this  project requires a lot of patience in addition to creativity and teamwork.",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "lab"
+        ]
     },
     {
         "name": "Amir",
@@ -92,15 +125,21 @@
         "age": "24",
         "course": "B.Sc. Chemical Engineering",
         "motivation": "Gaining practical experience in the field of biotechnology with an interdisciplinary team is a great way to meet new people who share the same interests.   ",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "hardware", "modeling"
+        ]
     },
     {
         "name": "Matthias",
         "surname": "Monissen",
         "age": "20",
         "course": "B.Sc. Biotechnology",
-        "motivation": "I really wanted to work in a team on a project of our own. iGEM gave me the opportunity to do so and develop useful skills while doing it. ",
-        "attribution": ""
+        "motivation": "I really wanted to work in a team on a project of our own. iGEM gave me the opportunity to do so and develop useful skills while doing it.",
+        "attribution": "",
+        "categories": [
+            "modeling", "storytelling"
+        ]
     },
     {
         "name": "Willy",
@@ -108,7 +147,10 @@
         "age": "20",
         "course": "B.Sc. Biology and Computer Science",
         "motivation": "Learning, sharing knowledge, meeting new people and developing new interests is my personal way of life, and I believe working on a project with interesting people in an incredibly fascinating field, provides exactly that.  ",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "hardware", "IT", "modeling"
+        ]
     },
     {
         "name": "Polina",
@@ -116,7 +158,10 @@
         "age": "20",
         "course": "B.Sc. Biotechnology ",
         "motivation": "I love seeing ideas grow into visions and finally turning them into project. ",
-        "attribution": "Polina was the subgroup leader of the human practices team and a member of the story subgroup. She pursued many important tasks like managing the communication with experts, writing the story script for our presentation video, planning meetings, and having an overview of all human practices projects. Furthermore, Polina was a key participant of the wetlab team and spent many hours experimenting and implementing her own ideas which significantly brought the project forward."
+        "attribution": "Polina was the subgroup leader of the human practices team and a member of the story subgroup. She pursued many important tasks like managing the communication with experts, writing the story script for our presentation video, planning meetings, and having an overview of all human practices projects. Furthermore, Polina was a key participant of the wetlab team and spent many hours experimenting and implementing her own ideas which significantly brought the project forward.",
+        "categories": [
+            "HP", "lab", "storytelling"
+        ]
     },
     {
         "name": "Marijke",
@@ -124,7 +169,10 @@
         "age": "20",
         "course": "B.Sc. Biotechnology",
         "motivation": "When I heard of iGEM I was fascinated by the idea of turning a theoretical idea into a working project. During my participation, I learned that this is a rocky road with many unexpected obstacles that can only be overcome as a team. ",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "HP", "hardware"
+        ]
     },
     {
         "name": "Malte",
@@ -132,7 +180,10 @@
         "age": "23",
         "course": "M.Sc. Computer Science",
         "motivation": "I love the idea of working together with other highly motivated students on a very interesting project that could one day change the world. ",
-        "attribution": "As a Computer Science student, Malte mainly focused on the wiki and software. He set up our wiki, customized it to our needs, and was heavily involved in its design. He also helped other team members work with GitHub to make the whole writing process as seamless as possible. In addition, Malte developed our software tool for encoding and decoding information in DNA. As support in the lab, he helped analyze the data generated with nanopore sequencing. Malte also supervised the graphic design team, so he was involved in all kinds of creative decisions. This included creating our logos and color scheme, social media posts, and especially the design of our wiki. Besides that, he appeared in both our promotion video and presentation video as a speaker and also helped write the script for the former."
+        "attribution": "As a Computer Science student, Malte mainly focused on the wiki and software. He set up our wiki, customized it to our needs, and was heavily involved in its design. He also helped other team members work with GitHub to make the whole writing process as seamless as possible. In addition, Malte developed our software tool for encoding and decoding information in DNA. As support in the lab, he helped analyze the data generated with nanopore sequencing. Malte also supervised the graphic design team, so he was involved in all kinds of creative decisions. This included creating our logos and color scheme, social media posts, and especially the design of our wiki. Besides that, he appeared in both our promotion video and presentation video as a speaker and also helped write the script for the former.",
+        "categories": [
+            "IT", "design", "social"
+        ]
     },
     {
         "name": "Alina",
@@ -140,7 +191,10 @@
         "age": "20",
         "course": "B.Sc. Biology",
         "motivation": "Especially during the Covid-19 Pandemic, connecting to other people has become really difficult. I see IGEM as an opportunity to work as a team, gain experience in lab work and taking another step towards becoming a Biotechnologist. ",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "lab", "HP", "storytelling"
+        ]
     },
     {
         "name": "Zeynep",
@@ -148,7 +202,10 @@
         "age": "25",
         "course": "M.Sc. Biology ",
         "motivation": "I am looking forward to learn more about synthetic biology, also gaining the experience of working together as an interdisciplinary team on our own idea. ",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "HP", "design", "lab"
+        ]
     },
     {
         "name": "Theresia",
@@ -156,7 +213,10 @@
         "age": "20",
         "course": "B.Sc. Business Administration and Engineering",
         "motivation": "With iGEM, I can learn more about synthetic biology and also connect with people who share the same interests",
-        "attribution": ""
+        "attribution": "",
+        "categories": [
+            "fundraising", "HP"
+        ]
     },
     {
         "name": "Martin",
@@ -164,6 +224,9 @@
         "age": "21",
         "course": "B.Sc. Biotechnology",
         "motivation": "I was looking for an opportunity to apply my academic knowledge, get in touch with ambitious people, and work together on an innovative project. Besides, I gained valuable experience in the wet lab, in programming, in modeling, and in management. Further through the project, I met interesting people and improved my scientific language skills.",
-        "attribution": "Martin started in the Fundraising team by contacting and presenting our team to companies and foundations to gain financial support. Furthermore, he took care of legal and organizational questions concerning our funding. As part of the laboratory team, he performed weekly experiments, got in contact with experts to solve technical challenges, and managed material orders. With the generated data in the lab, Martin helped to establish a kinetic model and worked on molecular illustrations and animations."
+        "attribution": "Martin started in the Fundraising team by contacting and presenting our team to companies and foundations to gain financial support. Furthermore, he took care of legal and organizational questions concerning our funding. As part of the laboratory team, he performed weekly experiments, got in contact with experts to solve technical challenges, and managed material orders. With the generated data in the lab, Martin helped to establish a kinetic model and worked on molecular illustrations and animations.",
+        "categories": [
+            "fundraising", "lab", "modeling"
+        ]
     }
 ]

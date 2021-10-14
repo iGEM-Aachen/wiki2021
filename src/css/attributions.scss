@@ -51,7 +51,6 @@ attr-main {
         }
     }
     img {
-        max-width: 50%;
         display: block;
     }
     .card-img-top {
@@ -59,8 +58,9 @@ attr-main {
         display: flex;
         align-items: center;
         margin-bottom: 20px;
+        height: 20%;
         h4 {
-            margin: 10px;
+            margin-bottom: 20px;
             font-size: 2rem;
         }
         img {
@@ -71,6 +71,12 @@ attr-main {
     }
     .img-left {
         flex-direction: row;
+        img {
+            margin-right: 30px;
+        }
+        .teamlabel {
+            margin-right: 7px;
+        }
     }
     .img-right {
         justify-content: right;
@@ -79,13 +85,39 @@ attr-main {
         h5 {
             text-align: right;
         }
+        img {
+            margin-left: 30px;
+        }
+        .teamlabel {
+            margin-left: 7px;
+        }
+        .teamlabels {
+            flex-direction: row-reverse !important;
+        }
     }
     h5 {
         font-size: 1.2rem;
     }
+    .description {
+        display: flex;
+        flex-direction: column;
+        .img-left {
+            align-items: flex-start;
+        }
+        .img-right {
+            align-items: flex-end;
+        }
+        .teamlabels {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+    }
     .card-body {
         height: auto;
         padding: 0;
+        text-align: justify;
     }
     h1.title {
         margin-bottom: 20px;
@@ -163,4 +195,14 @@ attr-main {
             border-radius: 50%;
         }
     }
+}
+
+.teamlabel {
+    display: inline-block;
+    border: 1px solid $igem-green;
+    border-radius: 2em;
+    white-space: nowrap;
+    font-size: 12px;
+    color: $igem-green;
+    padding: 0 7px;
 }
