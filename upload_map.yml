@@ -87,6 +87,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/f/fa/T--Aachen--img--Background_Pattern_Blank.svg
     md5: 35c780ca83ff7a815f20cadaa7ede3bb
     upload_filename: T--Aachen--img--Background_Pattern_Blank.svg
+  assets/img/Collaborations/Eindhoven.png:
+    link_URL: https://2021.igem.org/wiki/images/6/6f/T--Aachen--img--Collaborations--Eindhoven.png
+    md5: 0850af07b68099d9dd575a17986eb978
+    upload_filename: T--Aachen--img--Collaborations--Eindhoven.png
   assets/img/Description--josh-withers.jpg:
     link_URL: https://2021.igem.org/wiki/images/6/6f/T--Aachen--img--Description--josh-withers.jpg
     md5: 9912bbabc38bd4f8b7aae1752b432070
@@ -944,7 +948,7 @@ html:
     md5: c2b49f97304919602e13a9a9e799f273
   Education/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Education
-    md5: e7a79ca601c579c8d07f56e62dc081ba
+    md5: 93aece95a6695ce8dfe75492882eaaea
   Education\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Education
     md5: a950bbb30a06a0eebfb5302d3682e965
