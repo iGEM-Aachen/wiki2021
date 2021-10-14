@@ -4,26 +4,31 @@
 }
 
 header {
-    margin: 10rem 0 0 0;
-    h1 {
+    background-color: $igem-dark;
+    position: relative;
+    padding-top: 80px;
+    height: 80%;
+    .header-text {
+        color: $igem-straw-brown;
         font-weight: 300;
         font-size: 4.5rem;
-        margin-bottom: 100px;
-        color: $igem-straw-brown;
+        margin-bottom: 15%;
+        text-align: center;
+        position: absolute;
+        height: 80px;
     }
-    p.lead {
-        font-weight: 400;
-        font-size: 1.4rem;
-    }
-    img {
+    .header-image {
         width: 100%;
-        margin-bottom: 1.5rem;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        opacity: 70%;
     }
-    p {
-        font-size: 1.1rem;
-    }
-    hr {
-        // background: #e2e2e3;
+    .header-effect {
+        margin-bottom: 0;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
     }
 }
 

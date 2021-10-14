@@ -85,6 +85,15 @@ mixin citation_book(citation, count)
 
 // # TODO: #7 Fix citations links font size
 
+mixin meme(filename, caption, width)
+    - var memepath = "" + require("../assets/img/memes/" + filename)["default"]
+    .meme.d-flex.justify-content-center.align-items-center
+        if width
+            img(src=memepath alt=caption style="width: " + width + "%")
+        else
+            img(src=memepath alt=caption)
+    hr
+
 mixin teamlabel(type)
     .teamlabel
         case type 

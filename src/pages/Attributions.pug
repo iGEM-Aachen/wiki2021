@@ -1,10 +1,9 @@
 extends ../templates/contents.pug
 
-block header 
-    .container 
-        h1 Attributions
-        // img(src=require('../assets/img/Team.jpg')['default'])
-        // p.text-center Photo by Naassom Azevedo on Unsplash
+block headVars
+    - var title = "Attributions"
+    - var tagline = ""
+    - var requireMathJax = true
 
 block main
     include ../templates/member_list
