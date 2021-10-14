@@ -18,6 +18,21 @@ jobs:
         with:
           persist-credentials: false
 
+      - uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - uses: actions/cache@v2
+        if: startsWith(runner.os, 'Linux')
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
       - name: Set up Python 3.7
         uses: actions/setup-python@v2
         with:
@@ -32,7 +47,7 @@ jobs:
         with:
           node-version: 14.x
           cache: 'npm'
-      - run: npm ci
+      - run: npm i
       - run: npm test
       - run: npm cache verify
 
