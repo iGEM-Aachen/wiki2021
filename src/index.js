@@ -1,8 +1,9 @@
 import "./css/index.scss";
 import "./js/main";
 
-var fadeElements = document.getElementsByClassName("fade");
+// Fancy fade animation
 
+var fadeElements = document.getElementsByClassName("fade");
 
 function fadeOutOnScroll(element, offset) {
     if (!element) {
@@ -15,15 +16,12 @@ function fadeOutOnScroll(element, offset) {
 
     var opacity = window.getComputedStyle(element).getPropertyValue("opacity");
 
-    console.log(element.opacity)
     if (scrollTop > (distanceToTop - offset) && opacity == 1) {
         element.style.opacity = 0;
-        console.log("make " + element.id + " invisible");
     }
 
     if (scrollTop <= (distanceToTop - offset) && opacity == 0) {
         element.style.opacity = 1;
-        console.log("make " + element.id + " visible");
     }
 }
 
@@ -34,3 +32,40 @@ function scrollHandler() {
 }
 
 window.addEventListener('scroll', scrollHandler);
+
+// Scrolling rocket
+
+var window_width = $(window).width() - $('#rocket').width();
+
+console.log($(document).height())
+console.log(window.innerHeight)
+
+var document_height = $(document).height() - window.innerHeight;
+
+console.log(window_width);
+console.log(document_height);
+
+var rocket_offset = 500;
+
+function scrollRocket() {
+    var rocket = document.getElementById('rocket');
+    var rocket_container = document.getElementById('rocket-container');
+    var distanceToTop = window.pageYOffset + rocket_container.getBoundingClientRect().top;
+    var elementHeight = rocket.offsetHeight;
+    var scrollTop = document.getElementById('scrollable').scrollTop;
+
+    var rocket_left = scrollTop - distanceToTop + rocket_offset;
+    var rocket_top = rocket_offset + 400 - rocket_left;
+
+    console.log("left: " + rocket_left);
+    console.log("top: " + rocket_top);
+
+    if (rocket_left >= 0 && rocket_top >= 0 && rocket_top < 900) {
+        $('#rocket').css({
+            'margin-left': rocket_left,
+            'margin-top': rocket_top
+        });
+    }
+};
+
+window.addEventListener('scroll', scrollRocket);
