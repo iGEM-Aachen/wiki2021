@@ -47,22 +47,6 @@ block main
                             .card
                                 .card-img-top.img-left
                                     img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
-                                    if member.categories.length == 1
-                                        .icon.icon23
-                                            img(src=require('../assets/icons/attributions/'+member.categories[0]+'.svg')['default'])
-                                    if member.categories.length == 2
-                                        .icon.icon12
-                                            img(src=require('../assets/icons/attributions/'+member.categories[0]+'.svg')['default'])
-                                        .icon.icon22
-                                            img(src=require('../assets/icons/attributions/'+member.categories[1]+'.svg')['default'])
-                                    if member.categories.length == 3
-                                        .icon.icon13
-                                            img(src=require('../assets/icons/attributions/'+member.categories[0]+'.svg')['default'])
-                                        .icon.icon23
-                                            img(src=require('../assets/icons/attributions/'+member.categories[1]+'.svg')['default'])
-                                        .icon.icon33
-                                            img(src=require('../assets/icons/attributions/'+member.categories[2]+'.svg')['default'])
-                                    h4.title= member.name + " " + member.surname
                                     .description
                                         h4.title= member.name + " " + member.surname
                                         .teamlabels 
@@ -76,21 +60,6 @@ block main
                         .col-xl-7.col-lg-7.col-md-7.col-xs-12
                             .card
                                 .card-img-top.img-right
-                                    if member.categories.length == 1
-                                        .icon.icon23
-                                            img(src=require('../assets/icons/attributions/'+member.categories[0]+'.svg')['default'])
-                                    if member.categories.length == 2
-                                        .icon.icon12
-                                            img(src=require('../assets/icons/attributions/'+member.categories[0]+'.svg')['default'])
-                                        .icon.icon22
-                                            img(src=require('../assets/icons/attributions/'+member.categories[1]+'.svg')['default'])
-                                    if member.categories.length == 3
-                                        .icon.icon13
-                                            img(src=require('../assets/icons/attributions/'+member.categories[0]+'.svg')['default'])
-                                        .icon.icon23
-                                            img(src=require('../assets/icons/attributions/'+member.categories[1]+'.svg')['default'])
-                                        .icon.icon33
-                                            img(src=require('../assets/icons/attributions/'+member.categories[2]+'.svg')['default'])
                                     img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
                                     .description
                                         h4.title= member.name + " " + member.surname
