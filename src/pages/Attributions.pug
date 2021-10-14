@@ -1,10 +1,9 @@
 extends ../templates/contents.pug
 
-block header 
-    .container 
-        h1 Attributions
-        // img(src=require('../assets/img/Team.jpg')['default'])
-        // p.text-center Photo by Naassom Azevedo on Unsplash
+block headVars
+    - var title = "Attributions"
+    - var tagline = ""
+    - var requireMathJax = true
 
 block main
     include ../templates/member_list
@@ -47,20 +46,26 @@ block main
                         .col-xl-7.col-lg-7.col-md-7.col-xs-12
                             .card
                                 .card-img-top.img-left
-                                    // a.tile
                                     img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
-                                    h4.title= member.name + " " + member.surname
+                                    .description
+                                        h4.title= member.name + " " + member.surname
+                                        .teamlabels 
+                                            each category in member.categories
+                                                +teamlabel(category)
                                 .card-body
-                                    h5.card-subtitle= member.motivation
+                                    h5.card-subtitle= member.attribution
                         .col-xl-5.col-lg-5.col-md-5.col-xs-12
                     else
                         .col-xl-5.col-lg-5.col-md-5.col-xs-12
                         .col-xl-7.col-lg-7.col-md-7.col-xs-12
                             .card
                                 .card-img-top.img-right
-                                    // a.tile
                                     img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
-                                    h4.title= member.name + " " + member.surname
+                                    .description
+                                        h4.title= member.name + " " + member.surname
+                                        .teamlabels 
+                                            each category in member.categories
+                                                +teamlabel(category)
                                 .card-body
                                     h5.card-subtitle= member.attribution
         .container.category

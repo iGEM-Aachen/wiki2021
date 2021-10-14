@@ -18,6 +18,7 @@ body {
 }
 
 .container {
+    width: 70%;
     max-width: 1400px;
 }
 
@@ -51,8 +52,10 @@ a.btn-primary {
 }
 
 body {
+    background-position: 0 50%;
     background: url("../assets/img/Background_Pattern_Blank.svg");
     background-size: 100%;
+    background-position: 0 50%;
     background-color: $igem-dark;
     color: $igem-straw-brown;
     font-family: "Louis George Cafe";
@@ -60,6 +63,15 @@ body {
 }
 
 // Override iGEM Rule
-#HQ_page h1, h2, h3, h4, h5, h6, p, a, li, span {
+#HQ_page h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+span {
     font-family: "Louis George Cafe", "Arial", Gadget, sans-serif;
 }

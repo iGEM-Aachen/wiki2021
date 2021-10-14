@@ -93,3 +93,27 @@ mixin meme(filename, caption, width)
         else
             img(src=memepath alt=caption)
     hr
+
+mixin teamlabel(type)
+    .teamlabel
+        case type 
+            when "HP"
+                span Human Practices
+            when "IT"
+                span IT & Wiki
+            when "design"
+                span Design
+            when "fundraising"
+                span Fundraising
+            when "hardware"
+                span Hardware
+            when "lab"
+                span Lab
+            when "modeling"
+                span Modeling
+            when "organization"
+                span Organization
+            when "social"
+                span Social Media
+            when "storytelling"
+                span Storytelling
