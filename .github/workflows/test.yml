@@ -18,20 +18,18 @@ jobs:
         with:
           persist-credentials: false
 
-      - uses: actions/cache@v2
+      - name: Cache Node Modules
+        uses: actions/cache@v2
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          path: node_modules
+          key: node-modules-${{ hashFiles('**/package-lock.json') }}
 
-      - uses: actions/cache@v2
+      - name: Cache Python
+        uses: actions/cache@v2
         if: startsWith(runner.os, 'Linux')
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
 
       - name: Set up Python 3.7
         uses: actions/setup-python@v2
@@ -47,7 +45,11 @@ jobs:
         with:
           node-version: 14.x
           cache: 'npm'
-      - run: npm i
+
+      - name: Install Dependencies
+        if: steps.node-cache.outputs.cache-hit != 'true'
+        run: npm i
+
       - run: npm test
       - run: npm cache verify
 
