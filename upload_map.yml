@@ -1,4 +1,108 @@
 assets:
+  assets/documents/protocols/00_01_10_percent-APS-recipe.pdf:
+    link_URL: https://2021.igem.org/wiki/images/6/64/T--Aachen--documents--protocols--00_01_10_percent-APS-recipe.pdf
+    md5: dd77ecef3466490a7391907c97f11ff5
+    upload_filename: T--Aachen--documents--protocols--00_01_10_percent-APS-recipe.pdf
+  assets/documents/protocols/00_02_10x-TBE-buffer-recipe.pdf:
+    link_URL: https://2021.igem.org/wiki/images/0/0f/T--Aachen--documents--protocols--00_02_10x-TBE-buffer-recipe.pdf
+    md5: 0207c571138dc9f44aba8018ad0264d1
+    upload_filename: T--Aachen--documents--protocols--00_02_10x-TBE-buffer-recipe.pdf
+  assets/documents/protocols/00_03_1x-TAE-buffer-recipe.pdf:
+    link_URL: https://2021.igem.org/wiki/images/6/62/T--Aachen--documents--protocols--00_03_1x-TAE-buffer-recipe.pdf
+    md5: 89dd173211955e119fa00bf950958da3
+    upload_filename: T--Aachen--documents--protocols--00_03_1x-TAE-buffer-recipe.pdf
+  assets/documents/protocols/00_04_10x-PBS-buffer-recipe.pdf:
+    link_URL: https://2021.igem.org/wiki/images/4/46/T--Aachen--documents--protocols--00_04_10x-PBS-buffer-recipe.pdf
+    md5: 7712db9c9247b6ab61f55186a8e11ba4
+    upload_filename: T--Aachen--documents--protocols--00_04_10x-PBS-buffer-recipe.pdf
+  assets/documents/protocols/00_05_dNTP-Mix-recipe.pdf:
+    link_URL: https://2021.igem.org/wiki/images/2/2c/T--Aachen--documents--protocols--00_05_dNTP-Mix-recipe.pdf
+    md5: 227de91c925e750748274e07e8e3e9d9
+    upload_filename: T--Aachen--documents--protocols--00_05_dNTP-Mix-recipe.pdf
+  assets/documents/protocols/03_01_NEB-protocol-for-TdT-tailing-reaction.pdf:
+    link_URL: https://2021.igem.org/wiki/images/b/bf/T--Aachen--documents--protocols--03_01_NEB-protocol-for-TdT-tailing-reaction.pdf
+    md5: 50404b4806111dd1172d24dbbe7081d0
+    upload_filename: T--Aachen--documents--protocols--03_01_NEB-protocol-for-TdT-tailing-reaction.pdf
+  assets/documents/protocols/03_01_Thermofisher-protocol-for-TdT-tailing-reaction.pdf:
+    link_URL: https://2021.igem.org/wiki/images/e/e4/T--Aachen--documents--protocols--03_01_Thermofisher-protocol-for-TdT-tailing-reaction.pdf
+    md5: 225281aec8688bc82cf139d9fbb6cfc7
+    upload_filename: T--Aachen--documents--protocols--03_01_Thermofisher-protocol-for-TdT-tailing-reaction.pdf
+  assets/documents/protocols/03_02_Heat-inactivation-of-TdT-reaction.pdf:
+    link_URL: https://2021.igem.org/wiki/images/9/9f/T--Aachen--documents--protocols--03_02_Heat-inactivation-of-TdT-reaction.pdf
+    md5: 926b5ee7705cd4150525a8f035e900c8
+    upload_filename: T--Aachen--documents--protocols--03_02_Heat-inactivation-of-TdT-reaction.pdf
+  assets/documents/protocols/03_03_EDTA-inactivation-of-TdT-reaction.pdf:
+    link_URL: https://2021.igem.org/wiki/images/5/55/T--Aachen--documents--protocols--03_03_EDTA-inactivation-of-TdT-reaction.pdf
+    md5: de5fdacc530bd6e1b08656ab024de29a
+    upload_filename: T--Aachen--documents--protocols--03_03_EDTA-inactivation-of-TdT-reaction.pdf
+  assets/documents/protocols/03_04_Phusion-PCR-reaction.pdf:
+    link_URL: https://2021.igem.org/wiki/images/a/a1/T--Aachen--documents--protocols--03_04_Phusion-PCR-reaction.pdf
+    md5: ecce211802abfd895f9277c5ce3688b8
+    upload_filename: T--Aachen--documents--protocols--03_04_Phusion-PCR-reaction.pdf
+  assets/documents/protocols/04_01_Spectralphotometer-Nanodrop.pdf:
+    link_URL: https://2021.igem.org/wiki/images/7/78/T--Aachen--documents--protocols--04_01_Spectralphotometer-Nanodrop.pdf
+    md5: c808a8e4bf26ae8355fe82b7122e7dd1
+    upload_filename: T--Aachen--documents--protocols--04_01_Spectralphotometer-Nanodrop.pdf
+  assets/documents/protocols/04_02_Autoclaving.pdf:
+    link_URL: https://2021.igem.org/wiki/images/c/c1/T--Aachen--documents--protocols--04_02_Autoclaving.pdf
+    md5: 0d74792482b419d56750c2b69a0f99d6
+    upload_filename: T--Aachen--documents--protocols--04_02_Autoclaving.pdf
+  assets/documents/protocols/04_03_PeakScanner_capillar-electrophoresis.pdf:
+    link_URL: https://2021.igem.org/wiki/images/c/cd/T--Aachen--documents--protocols--04_03_PeakScanner_capillar-electrophoresis.pdf
+    md5: 7d328af86df67bcf1e56f47c02a0b5a7
+    upload_filename: T--Aachen--documents--protocols--04_03_PeakScanner_capillar-electrophoresis.pdf
+  assets/documents/protocols/04_04_Nanopore-sequencing-with-MinION.pdf:
+    link_URL: https://2021.igem.org/wiki/images/d/d2/T--Aachen--documents--protocols--04_04_Nanopore-sequencing-with-MinION.pdf
+    md5: 9b8dfbaf970680c248bca5a6c133d5e4
+    upload_filename: T--Aachen--documents--protocols--04_04_Nanopore-sequencing-with-MinION.pdf
+  assets/documents/protocols/04_05_QubitFluorometer.pdf:
+    link_URL: https://2021.igem.org/wiki/images/7/79/T--Aachen--documents--protocols--04_05_QubitFluorometer.pdf
+    md5: 06902a5d6272cd0f27ac2a920c90733c
+    upload_filename: T--Aachen--documents--protocols--04_05_QubitFluorometer.pdf
+  assets/documents/protocols/04_06_Washing-of-the-Flow-Cell.pdf:
+    link_URL: https://2021.igem.org/wiki/images/3/37/T--Aachen--documents--protocols--04_06_Washing-of-the-Flow-Cell.pdf
+    md5: 113b28f68eafb55fd59ef78e48f084fa
+    upload_filename: T--Aachen--documents--protocols--04_06_Washing-of-the-Flow-Cell.pdf
+  assets/documents/protocols/04_07_Documentation-with-BioRad-Photographer.pdf:
+    link_URL: https://2021.igem.org/wiki/images/a/a5/T--Aachen--documents--protocols--04_07_Documentation-with-BioRad-Photographer.pdf
+    md5: ee097632088b7ad8b06a5137d2fe37d2
+    upload_filename: T--Aachen--documents--protocols--04_07_Documentation-with-BioRad-Photographer.pdf
+  assets/documents/protocols/05_01_Preparation-of-S.O.C.-medium.pdf:
+    link_URL: https://2021.igem.org/wiki/images/1/1c/T--Aachen--documents--protocols--05_01_Preparation-of-S.O.C.-medium.pdf
+    md5: d96b79607101d51b52fbae09e3a4aeb4
+    upload_filename: T--Aachen--documents--protocols--05_01_Preparation-of-S.O.C.-medium.pdf
+  assets/documents/protocols/05_02_Digest-a-vector.pdf:
+    link_URL: https://2021.igem.org/wiki/images/4/48/T--Aachen--documents--protocols--05_02_Digest-a-vector.pdf
+    md5: 28bc6bbf11dda353184ff5ceb875dbf2
+    upload_filename: T--Aachen--documents--protocols--05_02_Digest-a-vector.pdf
+  assets/documents/protocols/05_03_Seamless-cloning-reaction.pdf:
+    link_URL: https://2021.igem.org/wiki/images/5/52/T--Aachen--documents--protocols--05_03_Seamless-cloning-reaction.pdf
+    md5: bbc1456d31e400693a9865edfac777be
+    upload_filename: T--Aachen--documents--protocols--05_03_Seamless-cloning-reaction.pdf
+  assets/documents/protocols/05_04_pGEM-T-Easy-Vector-System.pdf:
+    link_URL: https://2021.igem.org/wiki/images/8/86/T--Aachen--documents--protocols--05_04_pGEM-T-Easy-Vector-System.pdf
+    md5: fbff9ac0ec9b0f40a49c738e9afacaed
+    upload_filename: T--Aachen--documents--protocols--05_04_pGEM-T-Easy-Vector-System.pdf
+  assets/documents/protocols/05_05_Colony-PCR.pdf:
+    link_URL: https://2021.igem.org/wiki/images/9/99/T--Aachen--documents--protocols--05_05_Colony-PCR.pdf
+    md5: 42ad4646a181722e3ad8c9155d6bd50b
+    upload_filename: T--Aachen--documents--protocols--05_05_Colony-PCR.pdf
+  assets/documents/protocols/06_01_Preparation-of-LB-medium.pdf:
+    link_URL: https://2021.igem.org/wiki/images/6/65/T--Aachen--documents--protocols--06_01_Preparation-of-LB-medium.pdf
+    md5: 9b60ef067934b8a79b246ce3dd10ea5d
+    upload_filename: T--Aachen--documents--protocols--06_01_Preparation-of-LB-medium.pdf
+  assets/documents/protocols/06_01_Preparation-of-an-ampicillin-stock.pdf:
+    link_URL: https://2021.igem.org/wiki/images/3/31/T--Aachen--documents--protocols--06_01_Preparation-of-an-ampicillin-stock.pdf
+    md5: 420b2d2c0b3300bbfe70d4421442bf2a
+    upload_filename: T--Aachen--documents--protocols--06_01_Preparation-of-an-ampicillin-stock.pdf
+  assets/documents/protocols/06_02_Sterile-filter-a-solution.pdf:
+    link_URL: https://2021.igem.org/wiki/images/a/a1/T--Aachen--documents--protocols--06_02_Sterile-filter-a-solution.pdf
+    md5: 61b1e9738072c597543541635a49d9cf
+    upload_filename: T--Aachen--documents--protocols--06_02_Sterile-filter-a-solution.pdf
+  assets/documents/protocols/06_03_Casting-agar-plates.pdf:
+    link_URL: https://2021.igem.org/wiki/images/8/88/T--Aachen--documents--protocols--06_03_Casting-agar-plates.pdf
+    md5: 39810f6910cb38bab9abbc32c716d3f2
+    upload_filename: T--Aachen--documents--protocols--06_03_Casting-agar-plates.pdf
   assets/fonts/lato-v16-latin/lato-v16-latin-300.eot:
     link_URL: https://2021.igem.org/wiki/images/c/c0/T--Aachen--fonts--lato-v16-latin--lato-v16-latin-300.eot
     md5: 1b8f8afa9b4ba60fbcf9936eae918ec6
@@ -890,19 +994,19 @@ assets:
 css:
   css/attributions.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/attributionsCSS?action=raw&ctype=text/css
-    md5: b4fc0d4af24e5ca2772b7c5ca3bae610
+    md5: 88bd003d8ce903d42ff059f331fd0079
   css/content.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/contentCSS?action=raw&ctype=text/css
-    md5: 0bbd89d8e226e60a6fbf3cc907951c04
+    md5: 9ff77945f09dc7b80e79219fd6e03c6d
   css/index.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/indexCSS?action=raw&ctype=text/css
-    md5: 2160d27c7a4193d2273b8290faf1e474
+    md5: 296fcb4ae299fc6710dbd4392c75d6b8
   css/memes.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/memesCSS?action=raw&ctype=text/css
-    md5: 28333afed4270e03384e8ba8daed5771
+    md5: 27f9477896e0cb17e826a08e2b06f202
   css/team.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/teamCSS?action=raw&ctype=text/css
-    md5: 69f24c4045ef281a39dfa6cff9ed0a98
+    md5: a865bb3b6e64c292dcce47faab800b25
   css\attributions.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/attributionsCSS?action=raw&ctype=text/css
     md5: 5e40b5d86bc916551f34a516dbeea79b
@@ -1032,7 +1136,7 @@ html:
     md5: 0a86009cc190d722215cf32ff8973a8d
   Protocols/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Protocols
-    md5: 876613b6306ce03b2776d78971fa02b6
+    md5: 4fff4039f2ca636f3340f91b6d3db32a
   Protocols\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Protocols
     md5: b840e956ac31ce1bd58521f46f8543f8
