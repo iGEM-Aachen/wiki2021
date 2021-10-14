@@ -31,7 +31,7 @@ Built using [the iGEM Wiki Starter Pack](https://igem-wiki-starter.readthedocs.i
 All text files that should be manually edited are located under `src/pages`.
 There you will find `.pug`-files for all pages in the wiki.
 Most of these contain a block of text written in Markdown.
-Others, like `Team.pug`, look rather cryptic.
+Others, like `Members.pug`, look rather cryptic.
 The corresponding pages are generated in such a way that layout and content are separated much better.
 
 You do not need to work with any files in the folders `igem` or `dist`.

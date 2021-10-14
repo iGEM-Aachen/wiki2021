@@ -1,3 +1,3 @@
-import "../css/team.scss";
+import "../css/members.scss";
 import "./main";
 
