@@ -886,7 +886,7 @@ assets:
 css:
   css/attributions.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/attributionsCSS?action=raw&ctype=text/css
-    md5: 34d4c718c6ec6d1751d02e86487b436f
+    md5: b4fc0d4af24e5ca2772b7c5ca3bae610
   css/content.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/contentCSS?action=raw&ctype=text/css
     md5: 0bbd89d8e226e60a6fbf3cc907951c04
@@ -914,7 +914,7 @@ css:
 html:
   Attributions/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Attributions
-    md5: 260c976c0a0b2ce5ec53166a97fec4db
+    md5: 9954d57952a378b22b813abae9dcfe7e
   Attributions\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Attributions
     md5: b42d8969ab4af91f8557f92b175514f9
