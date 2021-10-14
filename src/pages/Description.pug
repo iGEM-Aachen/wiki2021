@@ -8,25 +8,32 @@ block headVars
 block article
     :markdown-it(html)
 
-        # What should this page contain?
+        # Selection of the project 
+        We started our project with many ideas backed up by research to use synthetic biology for innovation. On the shortlist were resource-saving fuel from cyanobacteria, adhesion peptides for antibacterial surfaces, and synthesizing DNA enzymatically for DNA data storage. However, the idea of using the astonishing capacities and properties of DNA to store data fascinated us the most. Its remarkable properties are information density, longevity, and also stability [1](#citation1)[2](#citation2). Our project is based on the work of George Church, a world-renowned scientist in the field of synthetic biology and genome engineering. His idea of enzymatic DNA synthesis for storing digital information got our attention. However, his photon-directed method requires a laser, a very costly acquisition with complex handling. [3](#citation3) Therefore, we further developed the idea by our DIP method, where immobilized primer on a magnetic stick is dipped into a solution with TdT and respective nucleotides.
+         
+        ## Characteristics about the terminal deoxynucleotidyl transferase
+        Terminal deoxynucleotidyltransferase (TdT) is an enzyme that catalyzes the addition of nucleotides to the 3'-terminal end of DNA. It is one of a few DNA polymerases that does not require a double-stranded template for synthesis. Instead, the TdT can extend single-stranded DNA by randomly adding nucleotides to the strand. Another unique feature of the TdT is its ability to use a wide range of cofactors, unlike many other DNA polymerases. The catalytic activity of TdT depends on the cofactor and the added nucleotide. Like other enzymatic reactions, DNA polymerase (TdT) must bind to DNA and dNTP substrates to fulfill its role as a catalyst. For efficient polymerization, it is more advantageous to bind the DNA substrate first and then the dNTP. Template-dependent polymerases follow this mechanism. A conversed binding order would result in a 75% probability of an extension error. Since not every DNA polymerase can proofread, this error is not optimal for synthesis. Therefore, the use of TdT is helpful because the correct base pair order will not be determined by the lack of a template or the random insertion of nucleotides.
+         
+        ## TdT tailing reaction and analytic methods
+        To understand the TdT in more detail and estimate how long it takes to incorporate nucleotides, we first had to characterize the enzyme in the initial experiments. For this purpose, we first performed experiments in which the TdT extended a primer with only one nucleotide. To find the best conditions, we varied the reaction time, temperature, nucleotide, primer, buffer, and enzyme concentration. This allowed us to learn about and assess the TdT. We chose the conditions so that the TdT would add as few nucleotides to the primer as possible. Once this was done, we began to attempt cyclic synthesis in solution. For this, a TdT reaction was started with one nucleotide at a low concentration, and after a certain incubation time, the next nucleotide was added at a slightly higher concentration. This was repeated in the same way with the other two nucleotides.
+         
+        To be sure that these experiments would work, we had to develop appropriate analytical methods. Initially, this was mainly gel electrophoresis, since it was easy to use and gave fast results. Gel electrophoresis showed how long the synthesized DNA strand was. Using a primer reference, we were able to determine the approximate length of the synthesized strand at the beginning. However, even with the cyclic synthesis in solution, gel electrophoresis provided the necessary evidence that the experiment was successful, as as a higher band was seen after the addition of each nucleotide. Capillary electrophoresis provided more accurate results, as it could analyze the length of the DNA strands to within 1 bp. Unfortunately, since electrophoresis methods could not determine how many base transitions had occurred, we sequenced our samples using nanopore sequencing or cloning followed by Sanger sequencing.
+         
+        For extending the DNA strand in a controlled manner, we considered an immobilized version of the cyclic synthesis in solution. Therefore, we used magnetic beads coated with streptavidin. These interacted with biotinylated primers to which the TdT attached nucleotides. With this setup, we developed the DIP method. For this purpose, four different Eppendorf tubes were provided with buffer, the TdT, and the respective nucleotide. The beads were added to the first tube so that a TdT reaction could proceed. The reaction time was varied in different experiments to find out how many nucleotides were attached and at what time. Then, a strong bar magnet surrounded by a plastic envelope was dipped into the vessel. The magnetic beads, together with the biotinylated primer and the extended strand, are thus bound to the plastic envelope of the bar magnet. This construct was removed, washed, and dipped into the next tube containing the next nucleotide. The bar magnet was removed from the plastic envelope so that the magnet beads were again floating in the solution. After the reaction, the bar magnet was placed back into the plastic envelope, and the above steps were repeated until the strand reached the desired length.
+         
+        ## SSBs (Daniel)
 
-        * A clear and concise description of your project.
-        * A detailed explanation of why your team chose to work on this particular project.
-        * References and sources to document your research.
-        * Use illustrations and other visual resources to explain your project.
+        In nature, single-strand binding proteins (SSBs) help to stabilize single-stranded DNA during replication. In addition to its affinity for chemical and nucleolytic attack, ssDNA is thermodynamically more unstable than dsDNA, resulting in the formation of duplex secondary structures. SSBs minimize these processes during replication. By using SSBs, we aim to exploit these advantages, with a particular focus on avoiding secondary structures (hairpins, etc.).
+         
+        We used an SSB from the company Thermo Fisher Scientific. The protein is a monomer consisting of 4 identical subunits, each with a size of 18.9 kDa. 8 - 16 nucleotides are bound per monomer. The protein has sufficient thermostability for the experiment (stable at 65 °C for 20 minutes). 
+         
+        The starting point for the SSB approaches were the values of the optimized TDT experiments. Since in the TDT experiments strands were no longer elongated above a certain length (20-300 bp) due to secondary structures, approaches using SSBs were intended to show that the addition of the protein allows the strand to be elongated. To prove this, the same approaches were run with and without SSBs and then sequenced. 
 
-        # Advice on writing your Project Description
-        
-        We encourage you to put up a lot of information and content on your wiki, but we also encourage
-        you to include summaries as much as possible. If you think of the sections in your project 
-        description as the sections in a publication, you should try to be concise, accurate, and
-        unambiguous in your achievements. Your Project Description should include more information 
-        than your project abstract.
 
     - var imgpath = "" + require("../assets/img/Description--josh-withers.jpg")["default"]
     +image(1, imgpath, "Picture by Josh Withers on Unsplash")
 
-    :markdown-it
+    :markdown-it(html)
         # Recording References
 
         iGEM teams are encouraged to record references you use during the course of your research. They
@@ -35,3 +42,5 @@ block article
 
 
 //- DO NOT MODIFY THIS LINE AND ANYTHING BEYOND.
+prepend citations
+    - var citations = [{"authors": "Palluk, S., Arlow, D., de Rond, T. et al. (2018). ", "doi": "https://doi.org/10.1038/nbt.4173", "journal": "Nat Biotechnol", "numbers": "36, 645–650. ", "title": "De novo DNA synthesis using polymerase-nucleotide conjugates.", "type": "article"}, {"authors": "Lee, H.H., Kalhor, R., Goela, N. et al. (2019). ", "doi": "https://doi.org/10.1038/s41467-019-10258-1", "journal": "Nature Communications", "numbers": "11, Article number: 5246", "title": "Terminator-free template-independent enzymatic DNA synthesis for digital information storage.", "type": "article"}, {"authors": "Lee, H., Wiegand, D. J., Griswold, K., Punthambaker, S., Chun, H., Kohman, R. E., & Church, G. M. (2020). ", "doi": "https://doi.org/10.1038/s41467-020-18681-5", "journal": "Nature Communications", "numbers": "11(1).", "title": "Photon-directed multiplexed enzymatic DNA synthesis for molecular digital data storage.", "type": "article"}]
