@@ -38,7 +38,7 @@ var rocket_offset = 500;
 var rocket_max_margin = 700;
 
 $('#rocket-container').css({
-    'height': rocket_max_margin + 400
+    'height': rocket_max_margin + 100
 })
 
 function scrollRocket() {
