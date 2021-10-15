@@ -57,12 +57,16 @@ function scrollRocket() {
     var rocket_left = scrollTop - distanceToTop + rocket_offset;
     var rocket_top = rocket_offset + 400 - rocket_left;
 
-    console.log("left: " + rocket_left);
+    // console.log("left: " + rocket_left);
     console.log("top: " + rocket_top);
 
-    if (rocket_left >= 0 && rocket_top >= 0 && rocket_top < 900) {
+    if (rocket_top >= 0 && rocket_top < 900) {
         $('#rocket').css({
             'margin-top': rocket_top
+        });
+    } else {
+        $('#rocket').css({
+            'margin-top': 900
         });
     }
 };
