@@ -1,6 +1,54 @@
 extends ../templates/contents.pug
 
 block headVars
-    - var title = "Engineering"
+    - var title = "Engineering Success"
     - var tagline = "A sample page for the theme."
     - var requireMathJax = true
+    
+    
+block article
+    :markdown-it(html)
+    
+        # Overview 
+
+        In our project, we had to take multiple hurdles and therefore performed multiple engineering cycles. 
+        The main goal of the project is to encode information into DNA. 
+        To reach that goal, we had to establish analytical methods for different purposes like coarse and detailed length analysis. 
+        Concerning the prevention of secondary structures, we examined the use of single-stranded binding proteins and small oligonucleotides. 
+        Lastly, we had to immobilize primers to synthesize a pre-set DNA sequence.
+        
+        # Analysis 
+        Due to our unconventional samples, concerning small size, low concentrations, and the nature of single-stranded DNA (ssDNA) we could not run standard protocols of nucleic acid analysis.
+
+        ## Electrophoresis
+        Coarse electrophoresis like agarose and polyacrylamide (PAA) is fast and easy methods. However, there are many different parameters to change like percentage of Agarose and PAA, dying method, time, voltage, or buffer. 
+        First, we tried the commonly used TRIS-Acetate-EDTA (TAE) buffer with a 1% Agarose gel and the Roti GelRed stain. 
+        With these parameters, we did not manage to visualize our first synthesized DNA. 
+        After some research and advice from experts, we tried out TRIS-Borate/EDTA (TBE) buffer and raised the agarose concentration to 2.5%. 
+        With these parameters, we were able to see smaller fragments but could not observe lower concentrations. 
+        Through research on the GelRed stain and our partners at ThermoFisher, we decided to continue our work with the SYBR Gold stain, which suited us because of its high sensitivity even for single-stranded samples. 
+        With the new stain, it was possible to see our primers (GALI) but it was impossible to compare samples, because of their low length (21 nt). 
+        To compare our reactions we ordered a 100 nt primer (AT-rich, GC-rich) and by adjusting other parameters like time and voltage we got relative sharp bands with a resolution of around +/- 20 nt. 
+        In consideration of this resolution, we studied the reaction conditions of our enzyme, like cofactor dependency, preferred nucleotide, reaction time, reaction temperature, and many more. 
+        But we weren’t able to visualize small differences of 1-3 nucleotides, which would be important concerning the efficient and material-saving synthesis of many nucleotide transitions.
+        
+        [//]:Bild von erfolgreicher Gelelektrophorese
+         
+        To tackle this problem we wanted to establish the PAA-electrophoresis. 
+        Through research, we decided to try a 15% PAA Gel with GelRed post-staining. 
+        This method has been proven to be more difficult and time-consuming than agarose gel electrophoresis. 
+        Regarding this method, the GelRed stain also did not work. 
+        Concerning voltage and running time through trial and error, we found out that 100 V and 1 hour suited the best for our samples. 
+        By researching and meeting with Dr. Zimmermann we performed a Silver Staining, but this time-intensive and hard experiment did not work with our samples. 
+        Because of its hazardous ingredients and lengthy experiment procedure, we stopped pursuing this method further. 
+        After the successful Agarose gels, we also tested here the SYBR Gold, which worked well on our samples and we managed to visualize even the GALI primer. 
+        Additionally, we were able to examine differences around 5 nt.
+        
+        [//]:Bild von erfolgreicher Gelelektrophorese
+        
+        
+        # Immobilisation
+        
+        
+        
+    
