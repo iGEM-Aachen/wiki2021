@@ -35,26 +35,31 @@ window.addEventListener('scroll', scrollHandler);
 
 // Scrolling rocket
 var rocket_offset = 500;
+var rocket_max_margin = 700;
+
+$('#rocket-container').css({
+    'height': rocket_max_margin + 400
+})
 
 function scrollRocket() {
     var rocket_container = document.getElementById('rocket-container');
     var distanceToTop = window.pageYOffset + rocket_container.getBoundingClientRect().top;
     var scrollTop = document.getElementById('scrollable').scrollTop;
 
-    var rocket_top = - scrollTop + distanceToTop + rocket_offset;
+    var rocket_top = -scrollTop + distanceToTop + rocket_offset;
 
     console.log("scrollTop: " + scrollTop);
     console.log("distanceToTop: " + distanceToTop);
     console.log("rocket_offset: " + rocket_offset);
     console.log("top: " + rocket_top);
 
-    if (rocket_top >= 0 && rocket_top < 600) {
+    if (rocket_top >= 0 && rocket_top < rocket_max_margin) {
         $('#rocket').css({
             'margin-top': rocket_top
         });
-    } else if (rocket_top > 600) {
+    } else if (rocket_top > rocket_max_margin) {
         $('#rocket').css({
-            'margin-top': 600
+            'margin-top': rocket_max_margin
         });
     } else {
         $('#rocket').css({
