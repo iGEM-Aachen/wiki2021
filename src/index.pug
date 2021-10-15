@@ -102,17 +102,21 @@ html(lang="en")
               .col-xl-1.col-lg-1
               .col-xl-8.col-lg-8.col-md-6.col-xs-12
                 img(src=require("./assets/img/homepage/dna_advantages.png")["default"])
-      .jumbotron.home-card
-        .container
-          h1 The Whole Internet Could be Stored in a Bucket Full of DNA
       .jumbotron.home-card.home-bg-light
+        .container
+          .row.d-flex.justify-content-center.tiles
+            .col-xl-6.col-lg-6.col-md-6.col-xs-12
+              img(src=require('./assets/img/homepage/bucket.svg')['default'])
+            .col-xl-6.col-lg-6.col-md-6.col-xs-12
+              h1 The Whole Internet Could be Stored in a Bucket Full of DNA
+      .jumbotron.home-card
         .container
           h1 With Greater Data Storage Capacities, Mankind Could Make Astonishing Progress
           h2 The Health Sector Could Profit From the Possibility of Storing Large Amounts of Data
-      .jumbotron.home-card.home-bg-light
+      .jumbotron.home-card
         .container
           h2 All Knowledge from Research is Stored
-      .jumbotron.home-card.home-bg-light
+      .jumbotron.home-card
         .container.rocket-container#rocket-container
           h2 Efficient Data Transport for Colonialization of Planets
           img(src=require("./assets/img/homepage/dna_rocket.svg")["default"])#rocket
