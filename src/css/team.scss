@@ -32,42 +32,37 @@ header {
     }
 }
 
-main {
-    margin-top: 100px;
-    .card {
-        background: $igem-straw-brown;
-        color: $igem-dark;
-        margin: 1.5rem 0.5rem;
-        .row {
-            scroll-margin-top: 150px;
-        }
+.card {
+    background: $igem-straw-brown;
+    color: $igem-dark;
+    margin: 1.5rem 0.5rem;
+    .row {
+        scroll-margin-top: 150px;
     }
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+.card-img-top {
+    position: relative;
     img {
-        max-width: 100%;
-        display: block;
-        /* remove extra space below image */
+        width: 100%;
     }
-    .card-img-top {
-        position: relative;
-        img {
-            width: 100%;
-        }
-    }
-    h5 {
-        font-size: 1.2rem;
-    }
-    .card-body {
-        height: 120px;
-    }
-    h4,
-    h5 {
-        font-family: "Louis George Cafe";
-        color: $igem-dark;
-    }
-    span {
-        font-family: "Louis George Cafe";
-        color: $igem-straw-brown;
-    }
+}
+h5 {
+    font-size: 1.2rem;
+}
+.card-body {
+}
+h4,
+h5 {
+    font-family: "Louis George Cafe";
+    color: $igem-dark;
+}
+span {
+    font-family: "Louis George Cafe";
+    color: $igem-straw-brown;
 }
 
 // variables
