@@ -681,7 +681,7 @@ assets:
     upload_filename: "T--Aachen--img--portraits--Tobias J\xFClich.jpg"
   assets/img/portraits/Viktor Doychev.jpg:
     link_URL: https://2021.igem.org/wiki/images/3/38/T--Aachen--img--portraits--Viktor_Doychev.jpg
-    md5: 26e9835656a9ec2e35ef42f1976c441e
+    md5: 76c5d9093ee894a7341439251815af47
     upload_filename: T--Aachen--img--portraits--Viktor Doychev.jpg
   assets/img/portraits/Willy Mroczowski.jpg:
     link_URL: https://2021.igem.org/wiki/images/a/a1/T--Aachen--img--portraits--Willy_Mroczowski.jpg
@@ -1050,7 +1050,7 @@ css:
 html:
   Attributions/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Attributions
-    md5: 851726bc545ead8353d766643a3bb571
+    md5: 1315e5cc9122819c0baf21d370e60c20
   Attributions\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Attributions
     md5: b42d8969ab4af91f8557f92b175514f9
