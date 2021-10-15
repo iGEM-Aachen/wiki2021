@@ -195,6 +195,14 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/6/6f/T--Aachen--img--Collaborations--Eindhoven.png
     md5: 0850af07b68099d9dd575a17986eb978
     upload_filename: T--Aachen--img--Collaborations--Eindhoven.png
+  assets/img/Collaborations/Maastricht_all.png:
+    link_URL: https://2021.igem.org/wiki/images/e/e5/T--Aachen--img--Collaborations--Maastricht_all.png
+    md5: 51138147dc28c19c54b7834de24c93f6
+    upload_filename: T--Aachen--img--Collaborations--Maastricht_all.png
+  assets/img/Collaborations/Maastricht_all_2.png:
+    link_URL: https://2021.igem.org/wiki/images/0/06/T--Aachen--img--Collaborations--Maastricht_all_2.png
+    md5: 57cdd716c1aa35e46bc60a667bfbbf8b
+    upload_filename: T--Aachen--img--Collaborations--Maastricht_all_2.png
   assets/img/Description--josh-withers.jpg:
     link_URL: https://2021.igem.org/wiki/images/6/6f/T--Aachen--img--Description--josh-withers.jpg
     md5: 9912bbabc38bd4f8b7aae1752b432070
@@ -1028,7 +1036,7 @@ html:
     md5: b42d8969ab4af91f8557f92b175514f9
   Collaborations/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Collaborations
-    md5: 6cc8ad72dbc4e479ca6ccdf5f79092c8
+    md5: 83f1b54e84693a5700546e4f47c72a66
   Collaborations\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Collaborations
     md5: efcec93b38dfb54eabb4425feabcb46b
