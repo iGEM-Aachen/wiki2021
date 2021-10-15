@@ -34,39 +34,31 @@ function scrollHandler() {
 window.addEventListener('scroll', scrollHandler);
 
 // Scrolling rocket
-
-var window_width = $(window).width() - $('#rocket').width();
-
-console.log($(document).height())
-console.log(window.innerHeight)
-
-var document_height = $(document).height() - window.innerHeight;
-
-console.log(window_width);
-console.log(document_height);
-
 var rocket_offset = 500;
 
 function scrollRocket() {
-    var rocket = document.getElementById('rocket');
     var rocket_container = document.getElementById('rocket-container');
     var distanceToTop = window.pageYOffset + rocket_container.getBoundingClientRect().top;
-    var elementHeight = rocket.offsetHeight;
     var scrollTop = document.getElementById('scrollable').scrollTop;
 
-    var rocket_left = scrollTop - distanceToTop + rocket_offset;
-    var rocket_top = rocket_offset + 400 - rocket_left;
+    var rocket_top = - scrollTop + distanceToTop + rocket_offset;
 
-    // console.log("left: " + rocket_left);
+    console.log("scrollTop: " + scrollTop);
+    console.log("distanceToTop: " + distanceToTop);
+    console.log("rocket_offset: " + rocket_offset);
     console.log("top: " + rocket_top);
 
-    if (rocket_top >= 0 && rocket_top < 900) {
+    if (rocket_top >= 0 && rocket_top < 600) {
         $('#rocket').css({
             'margin-top': rocket_top
         });
+    } else if (rocket_top > 600) {
+        $('#rocket').css({
+            'margin-top': 600
+        });
     } else {
         $('#rocket').css({
-            'margin-top': 900
+            'margin-top': 0
         });
     }
 };
