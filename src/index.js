@@ -62,7 +62,6 @@ function scrollRocket() {
 
     if (rocket_left >= 0 && rocket_top >= 0 && rocket_top < 900) {
         $('#rocket').css({
-            'margin-left': rocket_left,
             'margin-top': rocket_top
         });
     }
