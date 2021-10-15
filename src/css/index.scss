@@ -162,12 +162,23 @@ article {
 }
 
 #rocket {
-    width: 300px;
-    margin-top: 900;
+    height: 300px;
+    margin-top: 700;
 }
 
 .rocket-container {
     height: 1000px;
+    background-image: url(../assets/img/homepage/planet.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center top;
+    img {
+        margin: 50px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%
+    }
 }
 
 .header {
