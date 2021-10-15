@@ -43,8 +43,9 @@ block article
         They just need to choose from a collection of experiments.        
 
     - var pdfpath = "" + require("../assets/documents/collaborations/Lesson-plan-Aachen-x-Eindhoven-x-others.pdf")["default"]
-    a(href=pdfpath) Here you can find them
-
+    a(href=pdfpath) Here you can find the lesson plan
+    - var pdfpath = "" + require("../assets/documents/collaborations/Presentation Eindhoven.pdf")["default"]
+    a(href=pdfpath) and here our Presentation we used at school
     - var imgpath = "" + require("../assets/img/Collaborations/Eindhoven.png")["default"]
     +image(1, imgpath, "Picture of the meeting with Eindhoven")
 
