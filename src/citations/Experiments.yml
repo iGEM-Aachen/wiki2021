@@ -19,8 +19,16 @@
 # 4
 - doi: https://doi.org/10.1038/s41467-020-20340-8
 # 5
-- doi: https://doi.org/10.1016/s0006-3495(01)75770-0
+- doi: https://doi.org/10.1007/978-1-62703-032-8_1
 # 6
 - doi: https://doi.org/10.1093/emboj/21.3.427
 # 7
 - doi: https://doi.org/10.1093/nar/gkt1238
+# 8
+- webpage:
+    published: ""
+    authors: ""
+    title: "Single-Stranded DNA Binding Protein (SSB)"
+    accessed: "October 15, 2021"
+    site_name: "Thermo Fisher Scientific"
+    url: 'https://www.thermofisher.com/order/catalog/product/70032Z500UG#/70032Z500UG'
