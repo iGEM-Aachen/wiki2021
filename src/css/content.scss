@@ -223,14 +223,20 @@ header {
         details,
         summary {
             color: $igem-dark;
-            // font-family: 'Louis George Cafe';
+            margin: 0;
+        }
+        .pdflink {
+            margin-left: 35px;
+        }
+        .links {
+            margin-top: -20px;
+            margin-bottom: 30px;
         }
     }
     h1,
     h2,
     h3 {
         color: $igem-straw-brown;
-        // font-family: "Lato", sans-serif;
     }
     $h1size: 2.15; // rem
     h1,
@@ -424,7 +430,6 @@ header {
         color: inherit;
         font-size: 0.9rem;
     }
-
 }
 
 .tooltip {

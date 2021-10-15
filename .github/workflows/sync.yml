@@ -12,6 +12,7 @@ on:
         default: 'warning'
       tags:
         description: 'run sync manually' 
+        required: false
 
 jobs:
   main:
