@@ -38,6 +38,7 @@ block article
         
         # Cyclic Synthesis and Primer Immobilization
         A cyclic synthesis in solution was tried by just adding the next type of nucleotide to the solution after each elongation.
+        We used a higher primer concentration than in our standard reaction and increased the nucleotide concentration in each reaction step.
         For the semi-specific synthesis, the TdT reaction in solution has the decisive disadvantage that the different nucleotides mix after the first few reaction cycles because there still is a nucleotide excess after each reaction step with that specific nucleotide.
         Hence, it is not ensured that the added nucleotide is also the incorporated nucleotide and synthesis errors accumulate.
         
@@ -45,8 +46,9 @@ block article
         Unfortunately, after purification with standard purification kits, another TdT tailing reaction does not work (see [results](https://2021.igem.org/Team:Aachen/Results)).
         
         Immobilizing the primers can solve this problem and is the basis for a cyclic synthesis of longer strands.
-        Current techniques involve immobilization on a streptavidin-coated surface, for instance in a flowcell with different mastermixes. [1](#citation1)
-        For our purpose, a novel and simple method was developed: For our purpose, the primers were immobilized on a stick and dipped into the reaction solutions with the different nucleotides.
+        Current techniques involve immobilization on a streptavidin-coated surface, for instance in a flowcell with different mastermixes [1](#citation1).
+        For our purpose, a novel and simple method was developed: 
+        The primers were immobilized on a stick and dipped into the reaction solutions with the different nucleotides.
         Various immobilization systems were tried:
         
         1. Primers with amino modification and anchor peptide LCI
@@ -71,6 +73,18 @@ block article
         For the third method, we incubated our biotinylated primers with streptavidin-coated magnetic beads.
         We used biotin with the spacer TEG to minimize steric hindrance (see figure 3).
         The beads were immobilized with a rod magnet.
+        
+        ## The DIP Method
+        To elongate the DNA strand in a controlled manner, we used the third immobilization system with the streptavidin-coated magnetic beads and the rod magnet and developed the DIP method:
+        
+        Four different Eppendorf tubes containing the TdT reaction mixture and one nucleotide were prepared. 
+        Another tube contained the biotinylated primer. The beads were added to the latter so that the primer could bind to them. 
+        Then, a strong bar magnet surrounded by a plastic envelope was dipped into the tube. 
+        The magnetic beads with the biotinylated primer could now be transferred to the first reaction tube. 
+        The bar magnet was removed from the plastic envelope so that the magnet beads were released into the reaction solution. 
+        After the reaction, the bar magnet was placed back into the plastic envelope, transferring the beads to a wash tube with water to lose excess nucleotides. 
+        It was then dipped into the next reaction solution and the above steps were repeated until the strand reached the desired length and sequence. 
+        The reaction time was varied in different experiments to find out how many nucleotides were attached.
 
         # Gel Electrophoresis
         For first sample analysis, our method of choice was the agarose gel electrophoresis because of easy handling and fast results. The final target was to sequence our self-generated DNA fragments, but sequencing methods had to be established first.
@@ -83,7 +97,7 @@ block article
        
         # Capillary Electrophoresis
         We had the possibility to let our samples be analyzed with a fragment analyzer at Fraunhofer Institute IME.
-        This analysis method has several advantages over gel electrophoresis: Fragments from 35 bp to 500 bp can be sized to within 1 bp resolution and can be polymorphic in their lengths. [2](#citation2)
+        This analysis method has several advantages over gel electrophoresis: Fragments from 35 bp to 500 bp can be sized to within 1 bp resolution and can be polymorphic in their lengths [2](#citation2).
         In addition, ssDNA can be analyzed.
         
         So this was the perfect method to detect small differences in length and establish the length distribution for different nucleotides and conditions.
@@ -112,7 +126,7 @@ block article
     :markdown-it
         Problems with this system are that the poly-T primer not only binds to the very end of, but to any poly-A sequence in the strand.
         One could avoid using dATP to elongate the strand and only use it for poly-A tailing, but this would limit the data capacity for encoding information. 
-        Furthermore, the poly-T primer has a low annealing temperature, favoring unspecific PCR products. [3](#citation3)
+        Furthermore, the poly-T primer has a low annealing temperature, favoring unspecific PCR products [3](#citation3).
         
         The first PCR primers we designed were suboptimal because they were very short and thus had a low annealing temperature.
         We later designed longer primers, namely a 50 nt poly-T primer and a 25 nt forward primer, which then had a similar melting temperature and an annealing temperature of 63 °C.
@@ -131,22 +145,28 @@ block article
         Several strands were analyzed to provide an overview of the synthesized fragments.
 
         ## Nanopore Sequencing
-        Nanopore sequencing is typically not used for short DNA fragments and is especially not suited for strands containing many homopolymeric regions due to its error rate. [4](#citation4)
+        Nanopore sequencing is typically not used for short DNA fragments and is especially not suited for strands containing many homopolymeric regions due to its error rate [4](#citation4).
         But it is particularly suitable for polymorphic DNA fragments, which is why we choose it to sequence the synthesized strands.
         It generates large amounts of data, which were difficult to evaluate, but enabled us to build a proof of concept.
         
         # Preventing Secondary Structures
-        Single-stranded DNA is prone to form secondary structures such as hairpins [5](#citation5). 
-        TdT accessibility to the 3’-OH end can be restricted. Since TdT always needs at least a three-nucleotide overhang to be able to attach nucleotides, synthesis can be inhibited or come to a halt if unfavorable secondary structures form. [6](#citation6)
+        In addition to its affinity for chemical and nucleolytic attack, ssDNA is thermodynamically more unstable than dsDNA, resulting in the formation of duplex secondary structures such as hairpins [5](#citation5). 
+        TdT accessibility to the 3’-OH end can be restricted. Since TdT always needs at least a three-nucleotide overhang to be able to attach nucleotides, synthesis can be inhibited or come to a halt if unfavorable secondary structures form [6](#citation6).
 
         We thought of new methods to prevent the formation of secondary structures.
 
         ## Single-Strand DNA-Binding Proteins (SSBs)
         One idea was to add single-strand DNA-binding proteins (SSBs) to the TdT reaction.
-        SSBs are proteins that bind to ssDNA, normally during replication, recombination, or repair processes, stabilizing it and preventing reannealing. [7](#citation7)
+        SSBs are proteins that bind to ssDNA, normally during replication, recombination, or repair processes, stabilizing it and preventing reannealing [7](#citation7).
         For our purpose, it was important that the SSB stabilizes the ssDNA strand, but also does not inhibit the TdT reaction by binding too tightly.
         
-        We used the Single-Stranded DNA Binding Protein from Thermo Fisher Scientific and applied different concentrations in our reactions. There are various SSBs from different organisms with different properties. Due to a lack of time and because only few are commercially available, we did not get to try other SSBs.
+        We used the Single-Stranded DNA Binding Protein from Thermo Fisher Scientific, which is a monomer consisting of 4 identical subunits, each with a size of 18.9 kDa. 
+        8 - 16 nucleotides are bound per monomer. [8](#citation8)
+        Different SSB concentration were applied to TdT reactions. 
+        Strands synthesized with and without SSBs were sequenced to find out if longer strands are generated with SSBs.
+        
+        There are various other SSBs from different organisms with different properties. 
+        Due to a lack of time and because only few are commercially available, we did not get to try other SSBs.
 
         ## Other Methods
         Other methods included adding short oligos to stabilize the strand by random local hybridizations and using unnatural bases.
