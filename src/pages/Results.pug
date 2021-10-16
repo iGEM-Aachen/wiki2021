@@ -87,22 +87,22 @@ block article
         Or this still could be a small rest of free primer that survived the purification and the washing steps and was now elongated to reach a visible concentration.
         
         To illuminate the cause, we wanted to examine these samples further for the presence of protein. 
-        Assuming the strands were very long, a 1% agarose gel with a 1 kb Ladder was used. 
+        Assuming the strands were very long, a 1% agarose gel with GeneRuler 1 kb DNA Ladder was used. 
         We also tried performing a PCR reaction with those samples but forgot the poly-A tailing.
+        But the PCR samples are not relevant for this experiment.
         
     - var imgpath = "" + require("../assets/img/teamlogo_2021.svg")["default"]
-    +image(5, imgpath, "Picture by Josh Withers on Unsplash")
+    +image(5, imgpath, "TdT reaction solution samples from immobilization experiment (figure x, lanes 11, 19, 27, 35) and PCR with those samples (not relevant). 2.5% Agarose with TBE, 90 V, 49 min, SYBR Gold staining. M: GeneRuler 50 bp DNA Ladder 1: AT-M primer reference 2: PCR with AT-M 3: 12.5x GC TdT reaction solution 4: PCR with 12.5x GC TdT reaction solution 5: 5x GC TdT reaction solution 6: PCR with 5x GC TdT reaction solution 7: 2x GC TdT reaction solution 8: PCR with 2x GC TdT reaction solution 9: 12.5x AT TdT reaction solution 10: PCR with 12.5x AT TdT reaction solution.")
         
     :markdown-it
-        The reference bands are visible. (The PCR samples show bands to some extent, even if there was no poly-A tail for the reverse primer to bind to. 
-        We later found out, that we used a much too low annealing temperature so unspecific products arose.) 
+        The reference bands are visible.
         The reaction bands ran even higher than the Ladder and there still seems to be some of the sample stuck in the pocket. 
         The bands from lanes 3, 5, 7, 9 as well as the bands in the respective pockets were excised. 
         The assumption was, that the lower band could be free elongated primer and the band in the pocket could be the elongated conjugate that was stuck there because of the protein. 
-        The samples were purified and a dot blot (immunoblot) was performed to confirm or falsify the presence of protein.
+        The samples were dissolved in agarose dissolving buffer, one part was purified and a dot blot (immunoblot) was performed to confirm or falsify the presence of protein.
         
-    - var imgpath = "" + require("../assets/img/teamlogo_2021.svg")["default"]
-    +image(6, imgpath, "Picture by Josh Withers on Unsplash")
+    - var imgpath = "" + require("../assets/img/Results/2021-09-09_blot.png")["default"]
+    +image(6, imgpath, "Purified TdT reaction solution samples from gel (figure x). Trans-Blot Turbo membrane, Penta·His HRP Conjugate Kit (Qiagen), 1:2500 dilution in BSA, incubation for 1 h. A1: 12.5x GC TdT reaction solution lower band dissolved A2: 12.5x GC TdT reaction solution lower band purified B1: 12.5x GC TdT reaction solution upper band dissolved B2: 12.5x GC TdT reaction solution upper band purified C1: 12.5x AT TdT reaction solution lower band dissolved C2: 12.5x AT TdT reaction solution lower band purified D1: 12.5x AT TdT reaction solution upper band dissolved D2: 12.5x AT TdT reaction solution upper band purified E1: His-C-DZ-LCI (positive control) E2: empty.")
         
     :markdown-it
         The positive control is visible, but no other dots. 
