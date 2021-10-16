@@ -134,6 +134,48 @@ block article
         
     - var imgpath = "" + require("../assets/img/Human Practices/2021-06-11_Meeting-Rother.png")["default"]
     +image(4, imgpath, "Description of the image")
+    
+     :markdown-it(html)
+     
+        # Meeting with Dr. Martin Zimmermann
+        
+        Especially at the beginning of our project, we had severe problems with our analytics. Gels did not run well, samples were not visible and many members of our team had little to no lab experience.
+        Dr. Martin Zimmermann is both the study coordinator of the Biological Sciences faculty and an expert in many biological fields including biological analysis methods.
+        During the whole project, we repeatedly exchanged E-Mails and Dr. Zimmermann examined our issues detailly. 
+        We met with Dr. Zimmermann at the end of May. He introduced us to denaturated Polyacrylamide gels and helped us establish the right analytics for our unconventional samples. Among other things, we discussed gel runtime, gel thickness, the right voltage and staining methods of our gels.
+        To get a better resolution Dr. Zimmermann advised us to use TBE buffer, which has a higher buffer capacity.
+        Furthermore, he suggested silver staining as a sustainable method to stain PAA gels and longer primers to establish better reaction conditions for our enzyme, which we implemented rapidly.
+        At the end of our Meeting, Dr. Zimmermann once more drew attention to Polyacrylamide. He advised us to be extra careful when handling the neurotoxic chemical. Click here to see our safety guidelines.
 
+    :markdown-it(html)
+    
+        # Meeting with Dr. Sebastian Palluk
+    
+        Dr. Palluk is co-founder and CTO of Ansa Biotechnologies, a startup developing enzymatic DNA synthesis technologies. He himself participated in the iGEM competition himself and experienced that synthesizing DNA on your own was challenging. 
+        Now he works with a genetically modified TdT for biological applications and aims to improve the synthesis system for future implications.
+        Mr. Palluk was probably one of our most important supporters. 
+        We met with him three times in total and had frequent E-Mail contact during the whole project.
+        In our first meeting, we started off by presenting our ideas and two approaches to encode data on DNA.
+        Furthermore, we discussed four different ideas to prevent the formation of secondary structure of ssDNA and the affinity of the TdT for 3´OH base modifications.
+        Mr. Palluk commented on our ideas on immobilization and explained briefly streptavidin immobilization on magnetic beads as well as sequencing techniques like Nanopore sequencing and capillary-electrophorese to view the length distribution.
+        To conclude our first meeting, Mr. Palluk gave us a great overview of many important tasks we have to tackle in the future and encouraged us to give our best for the project. 
+        He belived that our unique interdisciplinary team will create a great  project, but implementing everything we thought of would be harder than we thought.
+
+        In our second meeting with Mr. Palluk, at the beginning of May, we presented our possibilities to hinder secondary structures.
+        He recommended starting our first experiments in solution with purification steps to establish our methods.
+        Furthermore, he emphasized that it would be efficient to start working on the immobilization while conducting our first experiments.
+        Mr. Palluk advised us to analyze the length of strands with gel electrophoresis and explained that driving PCR reaction beforehand is not necessary. 
+        Afterward, we discussed the possibilities for sequencing our strands, where he explained that sanger sequencing would only be possible if we would do a vector cloning beforehand.
+
+        In our third meeting, at the beginning of September, we discussed our ideas for building a hardware and explained the Maleimid-Cysteine binding system. Additionally, we examined the problem we have faced with our immobilization.
+         With our current system, we would lose lots of Maleimid, which is too expensive for us. 
+         Mr. Palluk suggested using a Peptide-tag which would be immobilized the whole time and bind oligos with homologous sequences and overhangs. 
+         The TdT would bind at the overhangs and heat would remove it.
+        Together, we thought of a „plan B“ for the immobilization.
+        To create base transitions in solution we should add primer in excess, let the reaction finish until all nucleotides incorporated and add another nucleotide.
+        To put it in a nutshell, Mr. Palluk was a very important expert for us who helped us create many solutions to our problem. Nobody knows the TdT better than he does. Thank you again Mr. Palluk for answering all our questions and E-Mails!
+
+    - var imgpath = "" + require("../assets/img/Human Practices/2021-09-07_Meeting Palluk.png")["default"]
+    +image(5, imgpath, "Description of the image")
 prepend citations
     - var citations = [{"authors": "Yang, Z., Hutter, D., Sheng, P., Sismour, A. M., & Benner, S. A. (2006)", "doi": "https://doi.org/10.1093/nar/gkl633", "journal": "Nucleic Acids Research", "numbers": "34(21), 6095–6101", "title": "Artificially expanded genetic information system: A new base pair with an alternative hydrogen bonding pattern", "type": "article"}, {"authors": "Tauraitė, D., Jakubovska, J., Dabužinskaitė, J., Bratchikov, M., & Meškys, R. (2017)", "doi": "https://doi.org/10.3390/molecules22040672", "journal": "Molecules (Basel, Switzerland)", "numbers": "22(4)", "title": "Modified Nucleotides as Substrates of Terminal Deoxynucleotidyl Transferase", "type": "article"}]
