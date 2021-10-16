@@ -19,6 +19,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/6/64/T--Aachen--documents--protocols--00_01_10_percent-APS-recipe.pdf
     md5: dd77ecef3466490a7391907c97f11ff5
     upload_filename: T--Aachen--documents--protocols--00_01_10_percent-APS-recipe.pdf
+  assets/documents/protocols/00_01_10percent-APS-recipe.pdf:
+    link_URL: https://2021.igem.org/wiki/images/2/29/T--Aachen--documents--protocols--00_01_10percent-APS-recipe.pdf
+    md5: ca573294b0311a82db7b20477c6b98e6
+    upload_filename: T--Aachen--documents--protocols--00_01_10percent-APS-recipe.pdf
   assets/documents/protocols/00_02_10x-TBE-buffer-recipe.pdf:
     link_URL: https://2021.igem.org/wiki/images/0/0f/T--Aachen--documents--protocols--00_02_10x-TBE-buffer-recipe.pdf
     md5: 54a783292ffa0921f433364c6acadd38
@@ -1225,7 +1229,7 @@ css:
 html:
   Attributions/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Attributions
-    md5: 5f7264f12f7af119e9ecc95c0121fe9d
+    md5: 05b93c4f5b3502ade945fe749b38f4be
   Attributions\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Attributions
     md5: b42d8969ab4af91f8557f92b175514f9
@@ -1342,7 +1346,7 @@ html:
     md5: 0a86009cc190d722215cf32ff8973a8d
   Protocols/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Protocols
-    md5: 2484f7ef24e7c8493fffdc679aece290
+    md5: edd943614af5512967d5732fe1e4dba0
   Protocols\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Protocols
     md5: b840e956ac31ce1bd58521f46f8543f8
