@@ -4,3 +4,86 @@ block headVars
     - var title = "Model"
     - var tagline = "A sample page for the theme."
     - var requireMathJax = true
+block article
+    :markdown-it(html)
+    
+        # Our Idea and Goal
+        
+        When we started thinking about a model we had the aspiration that it could contribute to our project in a meaningful way.
+        Since the key to our synthesis is a chemical reaction we started by constructing a model simulating the elongation of our primer. 
+        Using this model we can predict concentrations of DNA strands of different lengths in dependence on parameters like time, nucleotide concentration or enzyme concentration.
+        We aspired to go through a complete modeling process.
+        From constructing a reaction network to evaluating the model with experimental data and finally applying it to gain knowledge about certain kinetic parameters, like e.g. the length of the synthesis cycle, to support our wet-lab work.
+        
+        # Fundamentals of kinetics modeling
+        
+        The fundamental idea behind a reaction network is that the concentration of each component in the network is represented by a so-called pool.
+        When one component reacts to become another one, the pools are connected.
+        This connection is called flux and represents the change of substance a and b.
+        Since the fluxes are not constant and depend on the pool sizes, they need to be integrated over time in order to know the concentration at a certain timepoint.
+
+        
+        # Michaelis-Menten
+        
+        The first approach was to model the reaction according to the Michaelis-Menten kinetics.
+        Therefore the nucleotide that would be incorporated was the Substrate and the DNA strands were assumed to be present in excess.
+        Thereby the reaction velocity could be calculated by the Michaelis-Menten equation with a value for the dNTP affinity from literature.
+        For each length of the resulting DNA strands, a new pool was created and the flux from one pool to the next was modeled as explained.
+        As Result, the concentrations of the different lengths of the DNA strands were obtained as a function of the time.
+        The most interesting part here was the concentration of strands that were not elongated at all, since these would lead to an error in the encoded information.
+        
+        This approach however was flawed.
+        As we found out later that the enzyme was not saturated with DNA strands in our lab conditions, a new kinetic model was to be made.
+        Since the Tdt catalyzes reactions in a substrate, two product random order mechanism [1] a corresponding equation was used.
+        The affinity constants were taken from NEB, one of our suppliers.
+        
+        $$\frac{dDNA}{dt} = \frac{v_{max} \cdot c_{DNA} \cdot c_{dNTP}}{K_{DNA} \cdot K_{dNTP}+K_{DNA} \cdot c_{dNTP}+K_{dNTP} \cdot c_{DNA} +c_{DNA} \cdot c_{dNTP}}$$
+        
+        # First Results
+        
+        To gain an understanding of the reaction we plotted the pool sizes of DNA strands of different length over the time and the length distribution at different timestamps.
+        A delayed rise and fall in concentrations can be seen.
+        This is explained by the dependency of the flux to DNA1 of the pool size of DNA0.
+        With increasing time the mean of the strand length distribution rises and the distribution becomes broader.
+        This shows that the reaction time should be as short as possible, not only to shorten synthesis cycles, but also to avoid longer strands.
+        
+    - var imgpath = "" + require("../assets/img/modeling Bilder/concentrations.png")["default"]
+    +image(1,imgpath,"Concentrations of DNA pools over time")
+    
+    - var imgpath = "" + require("../assets/img/modeling Bilder/strand-length-distribution.png")["default"]
+    +image(2,imgpath,"Distribution of DNA lengths at different timestamps")
+    
+    :markdown-it
+        
+        # Optimization
+        
+        To not only gain an understanding of the reaction, but also find the ideal reaction conditions.
+        In order to calculate these reaction parameters we varied the nucleotide concentration and plotted the course of the reaction for each concentration to get a 3 dimensional plot.
+        The same procedure was performed with time and nucleotide concentration as independent parameters.
+        Because we are facing an optimization problem in our system, we need data like this to find the ideal reaction conditions.
+        
+    - var imgpath = "" * require("../assets/img/modeling Bilder/optimization.png")["default"]
+    +image(3,imgpath,"optimization problem of our system")
+    
+    - var imgpath = "" + require("../assets/img/modeling Bilder/3D_colourmap.png")["default"]
+    +image(4,imgpath,"Percentage of strands with atleast one elongation in dependance of time and dNTP starting concentration")
+    
+    - var imgpath = ""+require("../assets/img/modeling Bilder/3D_colourmap.png")["default"]
+    +image(5,imgpath,"Percentage of strands with atleast one elongation in dependance of time and amount of enzyme")
+    
+    :markdown-it
+    
+        # Applying Wet Lab Data
+        
+        To evaluate our simulation results we compared them with the experimental data gained from the capillary electrophoresis.
+        Since our network consists of coupled differential equations, we wrote a nonlinear regression program in MATLAB. 
+        This way we could also compare the kinetic parameters which were assumed from NEB (Referenz).
+        The “lsqcurvefit” command of matlab was used for this whole process.
+        This solved our nonlinear curve-fitting problem in least-squares sense.
+   
+        
+        
+//- DO NOT MODIFY THIS LINE AND ANYTHING BEYOND. 
+
+prepend citations
+    - var citations = [{"Google_Books_URL": "https://books.google.de/books/about/Kinetics_of_Enzyme_Action.html?id=ExSO1bla1CwC&redir_esc=y", "authors": "Ross L. Stein.", "publisher": "Wiley.", "title": "Kinetics of Enzyme Action: Essential Principles for Drug Hunters.", "type": "book", "year_published": "(2011)."}, {"authors": "Ken-Ichi Kato, J. Moura Goncalves, G. E. Houts, and F. J. Bollum. (1967).", "journal": "The Journal of Biological Chemistry.", "numbers": "2787.", "title": "Deoxynucleotide-polymerizing Enzymes of Calf Thymus Gland.", "type": "article", "year_published": 1967}, {"authors": "Deibel, M. R., & Coleman, M. S. (1980). ", "doi": "https://doi.org/10.1016/S0021-9258(19)85653-3", "journal": "Journal of Biological Chemistry", "numbers": "255(9), 4206-4212. ", "title": "Biochemical properties of purified human terminal deoxynucleotidyltransferase..", "type": "article"}]
