@@ -4,3 +4,15 @@
 - doi: https://doi.org/10.1038/s41467-019-10258-1
 # 3
 - doi: https://doi.org/10.1038/s41467-020-18681-5
+# 4
+- doi: https://doi.org/10.1016/j.bbapap.2009.06.030
+# 5
+- doi: https://doi.org/10.1073/pnas.65.4.1041
+# 6
+- webpage:
+    published: "2020"
+    authors: "Pitzschke, A."
+    title: "Großes Potenzial, aber noch viele Fragezeichen: Enzymatische DNA-Synthese"
+    accessed: "October 16, 2021"
+    site_name: "Laborjournal"
+    url: 'https://www.laborjournal.de/rubric/methoden/methoden/v227.php'
