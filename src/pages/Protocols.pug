@@ -6,7 +6,14 @@ block headVars
     - var requireMathJax = true
 
 block article
-
+    :markdown-it(html)
+        # Overview
+        To ensure that the experiments could be carried out efficiently and safely and reproduced accordingly, we introduced the following standard operation procedures (SOPs).
+        This was necessary since we were working with 13 people in the laboratory.
+        These SOPs contain detailed information on the chemicals and devices needed, bullet point manuals, and information on risk factors and proper disposal.
+        At the beginning, there was a lot of questioning about how to perform the experiments.
+        We were able to reduce this through the SOPs, as the standardization helped to enable each member of our laboratory team to work independently, reproducibly and - most importantly - safely.
+         
     <details>
     <summary>Buffers and Solutions</summary>
     <br>
@@ -40,6 +47,7 @@ block article
 
     <details>
     <summary>TdT Tailing Reaction</summary>
+    p After initial testing with the TdT, a standard TdT reaction was established from which reactions could be varied to characterize the TdT even further. It was also documented that the TdT can be inactivated with heat and EDTA.
     <br>
     .links
         a.pdflink(href=require("../assets/documents/protocols/03_01_NEB-protocol-for-TdT-tailing-reaction.pdf")["default"]) NEB Protocol for TdT Tailing Reaction <br>
@@ -51,6 +59,7 @@ block article
 
     <details>
     <summary>Devices</summary>
+    p The use of some devices in the laboratory was not trivial. Thus, we wrote protocols to enable simple and safe operation of the devices without having to ask a laboratory supervisor.
     <br>
     .links
         a.pdflink(href=require("../assets/documents/protocols/04_01_Spectralphotometer-NanoDrop3.pdf")["default"]) Spectralphotometer NanoDrop <br>
@@ -64,6 +73,7 @@ block article
 
     <details>
     <summary>Cloning</summary>
+    p Preparation for Sanger sequencing included digestion of a vector, cloning of a vector, and a colony polymerase chain reaction. The protocols serve to ensure that everyone in the laboratory team was able to perform these preparations.
     <br>
     .links
         a.pdflink(href=require("../assets/documents/protocols/05_01_Preparation-of-S.O.C.-medium.pdf")["default"]) Preparation of S.O.C. Medium <br>
