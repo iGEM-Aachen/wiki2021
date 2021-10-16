@@ -3,7 +3,7 @@ extends ../templates/contents.pug
 block headVars
     - var title = "Project Description"
     - var tagline = "Describe how and why you chose your iGEM project."
-    - var requireMathJax = false
+    - var requireMathJax = true
 
 block article
     :markdown-it(html)
@@ -33,17 +33,28 @@ block article
     :markdown-it
         # Characteristics about the Terminal Deoxynucleotidyl Transferase
         The terminal deoxynucleotidyltransferase (TdT) is an enzyme that possesses the unusual ability to incorporate nucleotides in a template-independent manner using only single-stranded DNA as the nucleic acid substrate. 
+         
         Like all DNA polymerases, the TdT also requires divalent metal ions for catalysis of the phosphoryl transfer reaction associated with nucleotide incorporation. 
-        However, the TdT is uniquely capable to use a variety of divalent cations such as Co<sup>2+</sup>, Mn<sup>2+</sup>, Zn<sup>2+</sup>, and Mg<sup>2+</sup>. 
+        However, the TdT is uniquely capable to use a variety of divalent cations such as $Co^{2+}$, $Mn^{2+}$, $Zn^{2+}$, and $Mg^{2+}$. 
+         
         Another advantage of using the TdT is that the enzyme utilizes a wide variety of nucleotide analogs such as 2′,3′-dideoxynucleotides, p-nitrophenylethyl triphosphate, p-nitrophenyl triphosphate, 2′-deoxy-L-ribonucleoside 5′-triphosphates, and dinucleoside 5′,5′-tetraphosphates [4](#citation4). 
         This can be used for increasing the data capacity even further for DNA data storage, [see Outlook](https://2021.igem.org/Team:Aachen/Outlook). 
+         
         Since we wanted to deliberately incorporate nucleotides, we had to interrupt the reaction in the standard TdT reactions. 
         Heat and many different metal chelators can be used for inhibiting the TdT activity, such as: o-phenanthroline, EDTA, triethylene-tetramine, α:α'-bipyridyl, and cysteine [5](#citation5). 
  
         # DNA Synthesis Methods to Date
         Without synthetic DNA or RNA, almost nothing would work in the laboratory: no PCR, no adapters, no linkers and other cloning elements, no CRISPR-Cas - not to mention synthetic genes [6](#citation6). 
-        Currently, DNA is still synthesized using decades-old chemical phosphoramidite methods, which involve expensive and hard reactions in many time-consuming steps [3](#citation3). The synthesized DNA is usually only a few hundred nucleotides long because, on the one hand, not every step is one hundred percent efficient and, on the other hand, long sequences form secondary structures that interfere with further construction [6](#citation6). This limits the chemical synthesis as the demand for longer and larger quantities of DNA oligonucleotides increases [3](#citation3). 
-        Church’s team developed an enzymatic DNA synthesis method for DNA data storage using the TdT and the cofactor Co<sup>2+</sup>. The photolabile chelator DMNP-EDTA locks the cation in place and releases it only after irradiation with UV light, activating TdT. The light beams precisely target individual positions on a chip where enzymatic DNA synthesis is to occur by attaching to a short oligo anchor. Even if the entire chip is flooded with dATP, for example, only the TdT enzymes at the points just illuminated can do anything with the nucleotide. Subsequently, the excess dATP is flushed away, and the TdT incorporates the next dNTP at the illuminated positions of the chip [6](#citation6). 
+         
+        Currently, DNA is still synthesized using decades-old chemical phosphoramidite methods, which involve expensive and hard reactions in many time-consuming steps [3](#citation3). 
+        The synthesized DNA is usually only a few hundred nucleotides long because, on the one hand, not every step is one hundred percent efficient and, on the other hand, long sequences form secondary structures that interfere with further construction [6](#citation6). 
+        This limits the chemical synthesis as the demand for longer and larger quantities of DNA oligonucleotides increases [3](#citation3). 
+         
+        Church’s team developed an enzymatic DNA synthesis method for DNA data storage using the TdT and the cofactor $Co^{2+}$. 
+        The photolabile chelator DMNP-EDTA locks the cation in place and releases it only after irradiation with UV light, activating TdT. 
+        The light beams precisely target individual positions on a chip where enzymatic DNA synthesis is to occur by attaching to a short oligo anchor.
+        Even if the entire chip is flooded with dATP, for example, only the TdT enzymes at the points just illuminated can do anything with the nucleotide. 
+        Subsequently, the excess dATP is flushed away, and the TdT incorporates the next dNTP at the illuminated positions of the chip [6](#citation6). 
 
        
 //- DO NOT MODIFY THIS LINE AND ANYTHING BEYOND.
