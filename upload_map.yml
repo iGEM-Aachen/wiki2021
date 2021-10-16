@@ -355,6 +355,26 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/5/5e/T--Aachen--img--Max_Schmidt_Bild.jpg
     md5: 62af5cfe42154662795009b7894d326f
     upload_filename: T--Aachen--img--Max Schmidt Bild.jpg
+  assets/img/Results/2021-08-19_01.png:
+    link_URL: https://2021.igem.org/wiki/images/b/b2/T--Aachen--img--Results--2021-08-19_01.png
+    md5: fff7ef73957a3f2da5d0e627860f9d6a
+    upload_filename: T--Aachen--img--Results--2021-08-19_01.png
+  assets/img/Results/2021-08-25_02.png:
+    link_URL: https://2021.igem.org/wiki/images/f/f8/T--Aachen--img--Results--2021-08-25_02.png
+    md5: f0bf8f54d2e6149ded9d5a5e5d41633b
+    upload_filename: T--Aachen--img--Results--2021-08-25_02.png
+  assets/img/Results/2021-08-26_01.png:
+    link_URL: https://2021.igem.org/wiki/images/1/1b/T--Aachen--img--Results--2021-08-26_01.png
+    md5: 59179b469d2dc06177e029af5079066a
+    upload_filename: T--Aachen--img--Results--2021-08-26_01.png
+  assets/img/Results/2021-08-27_01.png:
+    link_URL: https://2021.igem.org/wiki/images/4/42/T--Aachen--img--Results--2021-08-27_01.png
+    md5: 7d715ff056b9a0b8d984180a58b86a88
+    upload_filename: T--Aachen--img--Results--2021-08-27_01.png
+  assets/img/Results/2021-09-09_blot.png:
+    link_URL: https://2021.igem.org/wiki/images/5/5b/T--Aachen--img--Results--2021-09-09_blot.png
+    md5: 3ab39bb88eafb309ecfa2f056fb154f2
+    upload_filename: T--Aachen--img--Results--2021-09-09_blot.png
   assets/img/Team.jpg:
     link_URL: https://2021.igem.org/wiki/images/e/e1/T--Aachen--img--Team.jpg
     md5: 90a18079bd21036036f56f6dca72c308
@@ -1300,7 +1320,7 @@ html:
     md5: b840e956ac31ce1bd58521f46f8543f8
   Results/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Results
-    md5: c0f6b2dac69ab32e834df7a1b86d2dfd
+    md5: cb95d29b893fe99812cec0d125921190
   Results\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Results
     md5: 3ae3651a7245a76f0aa61a36f1ead9cd
