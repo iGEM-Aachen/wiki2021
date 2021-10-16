@@ -315,6 +315,18 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/2/26/T--Aachen--img--Collaborations--Postcard_Front.png
     md5: 3d979c3f33a8ad6a04b9b67dec98eccb
     upload_filename: T--Aachen--img--Collaborations--Postcard_Front.png
+  assets/img/Collaborations/rosalindChronicles1.jpg:
+    link_URL: https://2021.igem.org/wiki/images/a/ae/T--Aachen--img--Collaborations--rosalindChronicles1.jpg
+    md5: c112e5257906f41a08b48dfa2a407a84
+    upload_filename: T--Aachen--img--Collaborations--rosalindChronicles1.jpg
+  assets/img/Collaborations/rosalindChronicles2.jpg:
+    link_URL: https://2021.igem.org/wiki/images/9/9d/T--Aachen--img--Collaborations--rosalindChronicles2.jpg
+    md5: 55fc468906de0c128c1be2c5a4357669
+    upload_filename: T--Aachen--img--Collaborations--rosalindChronicles2.jpg
+  assets/img/Collaborations/rosalindChronicles3.png:
+    link_URL: https://2021.igem.org/wiki/images/c/c1/T--Aachen--img--Collaborations--rosalindChronicles3.png
+    md5: f6c028e28a726b937e67003296897d7d
+    upload_filename: T--Aachen--img--Collaborations--rosalindChronicles3.png
   assets/img/Description--josh-withers.jpg:
     link_URL: https://2021.igem.org/wiki/images/6/6f/T--Aachen--img--Description--josh-withers.jpg
     md5: 9912bbabc38bd4f8b7aae1752b432070
@@ -1235,7 +1247,7 @@ html:
     md5: b42d8969ab4af91f8557f92b175514f9
   Collaborations/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Collaborations
-    md5: f919de13cf72ed785d577d5336fffdc5
+    md5: 583b4606d13c743f70c743d434e5f1d0
   Collaborations\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Collaborations
     md5: efcec93b38dfb54eabb4425feabcb46b
