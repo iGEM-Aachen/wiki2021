@@ -48,7 +48,7 @@ block article
         As result, the concentrations of the different lengths of the DNA strands were obtained as a function of the time. 
         The most interesting part here was the concentration of strands that were not elongated at all since these would lead to an error in the encoded information.
         This approach however could be improved. As we found out later that the enzyme was not saturated with DNA strands in our lab conditions, a new kinetic model elaborated. 
-        Since the TdT catalyzes reactions in two substrates, two product random order mechanisms [1] (#citation1) a corresponding equation was used.
+        Since the TdT catalyzes reactions in two substrates, two product random order mechanisms [1](#citation1) a corresponding equation was used.
 
         $$\frac{dDNA}{dt} = \frac{v_{max} \cdot c_{DNA} \cdot c_{dNTP}}{K_{DNA} \cdot K_{dNTP}+K_{DNA} \cdot c_{dNTP}+K_{dNTP} \cdot c_{DNA} +c_{DNA} \cdot c_{dNTP}}$$
         
@@ -70,7 +70,7 @@ block article
     
         With increasing time the mean of the strand length distribution rises and the distribution becomes broader. 
         Although this result was not surprising, it is still valuable, because it shows that the reaction time should be as short as possible, not only to shorten synthesis cycles but also to avoid longer strands. 
-        The gained data from the capillary electrophoresis confirms our model [Results capillary electrophoresis] (https://2021.igem.org/Team:Aachen/Results). 
+        The gained data from the capillary electrophoresis confirms our model [Results capillary electrophoresis](https://2021.igem.org/Team:Aachen/Results). 
         The concentration decreases along with an increasing strand length distribution.
         
         # Optimization
@@ -91,7 +91,7 @@ block article
     - var imgpath = "" + require("../assets/img/modeling Bilder/3D_colourmap.png")["default"]
     +image(5,imgpath,"Percentage of strands with atleast one elongation in dependence of time and dNTP starting concentration")
     
-    - var imgpath = ""+require("../assets/img/modeling Bilder/3D_colourmap.png")["default"]
+    - var imgpath = ""+require("../assets/img/modeling Bilder/vmax-3D-pot-colourmap.png")["default"]
     +image(6,imgpath,"Percentage of strands with atleast one elongation in dependence of time and enzyme units")
     
     :markdown-it(html)
@@ -108,7 +108,7 @@ block article
         Since our network consists of coupled differential equations, we wrote a nonlinear regression program in MATLAB. 
         Biochemical reaction networks are usually described with systems of coupled ordinary equations (ODE). 
         These reaction networks are normally time-dependent so time is the only variable in our model. 
-        Since our system consists of three kinetic parameters, we compared our used parameters [2] (#citation2), with the calculated ones from the regression program. 
+        Since our system consists of three kinetic parameters, we compared our used parameters [2](#citation2), with the calculated ones from the regression program. 
         This way we could validate our model and compare the differences between literature, our model, and the experimental results. 
         All of the above-mentioned was done with the “lsqcurvefit” command of Matlab. 
         This is a nonlinear curve-fitting solver that solves the defined problem in a least-squares sense. 
