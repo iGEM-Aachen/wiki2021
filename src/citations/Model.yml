@@ -1,0 +1,18 @@
+# 1
+- book:
+    authors: "Ross L. Stein"
+    year_published: 2011
+    title: "Kinetics of Enzyme Action: Essential Principles for Drug Hunters"
+    publisher: "Wiley"
+    Google_Books_URL: "https://books.google.de/books/about/Kinetics_of_Enzyme_Action.html?id=ExSO1bla1CwC&redir_esc=y"
+
+# 2
+- article:
+    authors: "Ken-Ichi Kato, J. Moura Goncalves, G. E. Houts, and F. J. Bollum"
+    year_published: 1967
+    title: "Deoxynucleotide-polymerizing Enzymes of Calf Thymus Gland"
+    journal: "The Journal of Biological Chemistry"
+    numbers: "2787"
+
+# 3
+- doi: https://doi.org/10.1016/S0021-9258(19)85653-3
