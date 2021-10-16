@@ -10,15 +10,18 @@ block article
         # Our Idea and Goal
         
         When we started thinking about a model we had the aspiration that it could contribute to our project in a meaningful way.
-        Since the key to our synthesis is a chemical reaction we started by constructing a model simulating this reaction so that we can predict concentrations of DNA strands of different lengths in dependence on parameters like time or nucleotide concentration.
-        We wanted to go through a complete modeling process, from constructing a biochemical network, to evaluating the model with experimental data and finally applying it to gain knowledge about certain issues, like f.e. the length of the synthesis cycle, to help with our lab work.
+        Since the key to our synthesis is a chemical reaction we started by constructing a model simulating the elongation of our primer. 
+        Using this model we can predict concentrations of DNA strands of different lengths in dependence on parameters like time, nucleotide concentration or enzyme concentration.
+        We aspired to go through a complete modeling process.
+        From constructing a reaction network to evaluating the model with experimental data and finally applying it to gain knowledge about certain kinetic parameters, like e.g. the length of the synthesis cycle, to support our wet-lab work.
         
         # Fundamentals of kinetics modeling
         
-        The fundamental idea behind a reacion network is that the concentration of each component in the network is represented by a so called pool.
-        When one component reacts to become another one the pools are connected.
-        This connection is called a flux and represents the change ob substance a and b.
+        The fundamental idea behind a reaction network is that the concentration of each component in the network is represented by a so-called pool.
+        When one component reacts to become another one, the pools are connected.
+        This connection is called flux and represents the change of substance a and b.
         Since the fluxes are not constant and depend on the pool sizes, they need to be integrated over time in order to know the concentration at a certain timepoint.
+
         
         # Michaelis-Menten
         
@@ -34,13 +37,14 @@ block article
         Since the Tdt catalyzes reactions in a substrate, two product random order mechanism [1] a corresponding equation was used.
         The affinity constants were taken from NEB, one of our suppliers.
         
-        $\frac{vmax\cdotC(DNA)\cdotC(dNTP)}{KDNA\cdotKdNTP+KDNA\cdotC(dNTP)+KdNTP\cdotC(DNA)+C(DNA)\cdotC(dNTP)}$
+        $$\frac{dDNA}{dt} = \frac{v_{max} \cdot c_{DNA} \cdot c_{dNTP}}{K_{DNA} \cdot K_{dNTP}+K_{DNA} \cdot c_{dNTP}+K_{dNTP} \cdot c_{DNA} +c_{DNA} \cdot c_{dNTP}}$$
         
         # First Results
-        To gain an understanding of the reaction we plotted the Pool sizes of DNA strands of different length over the time and the length distribution at different timestamps.
+        
+        To gain an understanding of the reaction we plotted the pool sizes of DNA strands of different length over the time and the length distribution at different timestamps.
         A delayed rise and fall in concentrations can be seen.
-        This is explained by the dependancy of the flux to DNA1 of the pool size of DNA0.
-        With increasing time the mean of the strand length distribution gets bigger and the distribution becomes broader.
+        This is explained by the dependency of the flux to DNA1 of the pool size of DNA0.
+        With increasing time the mean of the strand length distribution rises and the distribution becomes broader.
         This shows that the reaction time should be as short as possible, not only to shorten synthesis cycles, but also to avoid longer strands.
         
     - var imgpath = "" + require("../assets/img/modeling Bilder/concentrations.png")["default"]
@@ -52,7 +56,9 @@ block article
     :markdown-it
         
         # Optimization
-        To not only gain an understanding of the reaction, but also find the ideal reaction conditions, we varied the nucleotide concentration and plottet the course of the reaction for each concentration to get a 3 dimensional plot.
+        
+        To not only gain an understanding of the reaction, but also find the ideal reaction conditions.
+        In order to calculate these reaction parameters we varied the nucleotide concentration and plotted the course of the reaction for each concentration to get a 3 dimensional plot.
         The same procedure was performed with time and nucleotide concentration as independent parameters.
         Because we are facing an optimization problem in our system, we need data like this to find the ideal reaction conditions.
         
@@ -68,8 +74,10 @@ block article
     :markdown-it
     
         # Applying Wet Lab Data
+        
         To evaluate our simulation results we compared them with the experimental data gained from the capillary electrophoresis.
-        Since our network consists of coupled differential equations, we wrote a nonlinear regression program in MATLAB. This way we could also compare the kinetic parameters which were assumed from NEB (Referenz).
+        Since our network consists of coupled differential equations, we wrote a nonlinear regression program in MATLAB. 
+        This way we could also compare the kinetic parameters which were assumed from NEB (Referenz).
         The “lsqcurvefit” command of matlab was used for this whole process.
         This solved our nonlinear curve-fitting problem in least-squares sense.
    
