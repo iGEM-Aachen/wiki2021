@@ -79,6 +79,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/a/a1/T--Aachen--documents--protocols--03_04_Phusion-PCR-reaction.pdf
     md5: ecce211802abfd895f9277c5ce3688b8
     upload_filename: T--Aachen--documents--protocols--03_04_Phusion-PCR-reaction.pdf
+  assets/documents/protocols/04_01_Spectralphotometer-NanoDrop3.pdf:
+    link_URL: https://2021.igem.org/wiki/images/f/f2/T--Aachen--documents--protocols--04_01_Spectralphotometer-NanoDrop3.pdf
+    md5: 45fbc51ef89bf489703888c39a1f5cf5
+    upload_filename: T--Aachen--documents--protocols--04_01_Spectralphotometer-NanoDrop3.pdf
   assets/documents/protocols/04_01_Spectralphotometer-Nanodrop.pdf:
     link_URL: https://2021.igem.org/wiki/images/7/78/T--Aachen--documents--protocols--04_01_Spectralphotometer-Nanodrop.pdf
     md5: 98c410bc70922a770c4e4d2c273497eb
@@ -95,6 +99,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/d/d2/T--Aachen--documents--protocols--04_04_Nanopore-sequencing-with-MinION.pdf
     md5: 9b8dfbaf970680c248bca5a6c133d5e4
     upload_filename: T--Aachen--documents--protocols--04_04_Nanopore-sequencing-with-MinION.pdf
+  assets/documents/protocols/04_04_Nanopore-sequencing-with-MinION2.pdf:
+    link_URL: https://2021.igem.org/wiki/images/4/48/T--Aachen--documents--protocols--04_04_Nanopore-sequencing-with-MinION2.pdf
+    md5: 940543f3cd2d65b4a0cbf735d1dfc6ee
+    upload_filename: T--Aachen--documents--protocols--04_04_Nanopore-sequencing-with-MinION2.pdf
   assets/documents/protocols/04_05_QubitFluorometer.pdf:
     link_URL: https://2021.igem.org/wiki/images/7/79/T--Aachen--documents--protocols--04_05_QubitFluorometer.pdf
     md5: 06902a5d6272cd0f27ac2a920c90733c
@@ -115,18 +123,34 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/4/48/T--Aachen--documents--protocols--05_02_Digest-a-vector.pdf
     md5: 28bc6bbf11dda353184ff5ceb875dbf2
     upload_filename: T--Aachen--documents--protocols--05_02_Digest-a-vector.pdf
+  assets/documents/protocols/05_02_Digest-a-vector2.pdf:
+    link_URL: https://2021.igem.org/wiki/images/2/2f/T--Aachen--documents--protocols--05_02_Digest-a-vector2.pdf
+    md5: ac460dd3e4943e8f156cc2d17d572090
+    upload_filename: T--Aachen--documents--protocols--05_02_Digest-a-vector2.pdf
   assets/documents/protocols/05_03_Seamless-cloning-reaction.pdf:
     link_URL: https://2021.igem.org/wiki/images/5/52/T--Aachen--documents--protocols--05_03_Seamless-cloning-reaction.pdf
     md5: bbc1456d31e400693a9865edfac777be
     upload_filename: T--Aachen--documents--protocols--05_03_Seamless-cloning-reaction.pdf
+  assets/documents/protocols/05_03_Seamless-cloning-reaction2.pdf:
+    link_URL: https://2021.igem.org/wiki/images/1/1e/T--Aachen--documents--protocols--05_03_Seamless-cloning-reaction2.pdf
+    md5: dfcf36429b097f3daa408c8aa93918ff
+    upload_filename: T--Aachen--documents--protocols--05_03_Seamless-cloning-reaction2.pdf
   assets/documents/protocols/05_04_pGEM-T-Easy-Vector-System.pdf:
     link_URL: https://2021.igem.org/wiki/images/8/86/T--Aachen--documents--protocols--05_04_pGEM-T-Easy-Vector-System.pdf
     md5: fbff9ac0ec9b0f40a49c738e9afacaed
     upload_filename: T--Aachen--documents--protocols--05_04_pGEM-T-Easy-Vector-System.pdf
+  assets/documents/protocols/05_04_pGEM-T-Easy-Vector-System2.pdf:
+    link_URL: https://2021.igem.org/wiki/images/0/05/T--Aachen--documents--protocols--05_04_pGEM-T-Easy-Vector-System2.pdf
+    md5: 80a2af7886b7d7ee51a76828a55c9030
+    upload_filename: T--Aachen--documents--protocols--05_04_pGEM-T-Easy-Vector-System2.pdf
   assets/documents/protocols/05_05_Colony-PCR.pdf:
     link_URL: https://2021.igem.org/wiki/images/9/99/T--Aachen--documents--protocols--05_05_Colony-PCR.pdf
     md5: 42ad4646a181722e3ad8c9155d6bd50b
     upload_filename: T--Aachen--documents--protocols--05_05_Colony-PCR.pdf
+  assets/documents/protocols/05_05_Colony-PCR2.pdf:
+    link_URL: https://2021.igem.org/wiki/images/0/0e/T--Aachen--documents--protocols--05_05_Colony-PCR2.pdf
+    md5: 0bc1344a2fa6ebf03011d7280c80cc36
+    upload_filename: T--Aachen--documents--protocols--05_05_Colony-PCR2.pdf
   assets/documents/protocols/06_01_Preparation-of-LB-medium.pdf:
     link_URL: https://2021.igem.org/wiki/images/6/65/T--Aachen--documents--protocols--06_01_Preparation-of-LB-medium.pdf
     md5: 9b60ef067934b8a79b246ce3dd10ea5d
@@ -1195,7 +1219,7 @@ html:
     md5: 1562419c1e71225dd274836d1e96492c
   Experiments/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Experiments
-    md5: 4811a819beb8abed6e109cd9ba508dd0
+    md5: 21655cf8a8ec8c67b46583a7ebeffc28
   Experiments\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Experiments
     md5: 2536e4069ecb96c2d028bc359feea07f
@@ -1234,7 +1258,7 @@ html:
     md5: 4c51f5500bef5b33212b9935690c137b
   Model/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Model
-    md5: 1338cb497f5e320878a55428f533e8d4
+    md5: 6297799248ae30312c539dbf2415ce2a
   Model\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Model
     md5: 36613fbac0ef109bf8ebe4c5420a99ae
@@ -1270,7 +1294,7 @@ html:
     md5: 0a86009cc190d722215cf32ff8973a8d
   Protocols/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Protocols
-    md5: e4312576873247cc9899ecef4e94df2a
+    md5: aa928cd4047d980e9328df225366fe04
   Protocols\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Protocols
     md5: b840e956ac31ce1bd58521f46f8543f8
