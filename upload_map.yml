@@ -361,19 +361,19 @@ assets:
     upload_filename: T--Aachen--img--Max Schmidt Bild.jpg
   assets/img/Results/2021-08-19_01.png:
     link_URL: https://2021.igem.org/wiki/images/b/b2/T--Aachen--img--Results--2021-08-19_01.png
-    md5: fff7ef73957a3f2da5d0e627860f9d6a
+    md5: 59071cb6d5677062784a551cca893101
     upload_filename: T--Aachen--img--Results--2021-08-19_01.png
   assets/img/Results/2021-08-25_02.png:
     link_URL: https://2021.igem.org/wiki/images/f/f8/T--Aachen--img--Results--2021-08-25_02.png
-    md5: 0eca8f6167ec11dd5ee68da6462cd185
+    md5: 49842cdc5a5034c54f4f7b7547f63b06
     upload_filename: T--Aachen--img--Results--2021-08-25_02.png
   assets/img/Results/2021-08-26_01.png:
     link_URL: https://2021.igem.org/wiki/images/1/1b/T--Aachen--img--Results--2021-08-26_01.png
-    md5: 59179b469d2dc06177e029af5079066a
+    md5: 03d30a021a77509927112d9a59f0534a
     upload_filename: T--Aachen--img--Results--2021-08-26_01.png
   assets/img/Results/2021-08-27_01.png:
     link_URL: https://2021.igem.org/wiki/images/4/42/T--Aachen--img--Results--2021-08-27_01.png
-    md5: 7d715ff056b9a0b8d984180a58b86a88
+    md5: f70fb7dddf580231ba74bbd47762c196
     upload_filename: T--Aachen--img--Results--2021-08-27_01.png
   assets/img/Results/2021-09-09_blot.png:
     link_URL: https://2021.igem.org/wiki/images/5/5b/T--Aachen--img--Results--2021-09-09_blot.png
@@ -763,6 +763,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/a/a2/T--Aachen--img--modeling_Bilder--strand-length-distribution.png
     md5: d74c486c0114fce27dd92b10f713cdb5
     upload_filename: T--Aachen--img--modeling Bilder--strand-length-distribution.png
+  assets/img/modeling Bilder/vmax-3D-pot-colourmap.png:
+    link_URL: https://2021.igem.org/wiki/images/9/9b/T--Aachen--img--modeling_Bilder--vmax-3D-pot-colourmap.png
+    md5: bd2a7a508ffb69ec21e5e6020f56e344
+    upload_filename: T--Aachen--img--modeling Bilder--vmax-3D-pot-colourmap.png
   assets/img/portraits/Alina Frank.jpg:
     link_URL: https://2021.igem.org/wiki/images/c/c3/T--Aachen--img--portraits--Alina_Frank.jpg
     md5: bd224c0f2309b5eddf55a257099cd4a5
@@ -1294,7 +1298,7 @@ html:
     md5: 4c51f5500bef5b33212b9935690c137b
   Model/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Model
-    md5: 9afafefec0300aa4b13d6690f1225d24
+    md5: a8d0c3df53ddf9e2bd6e638a6a937e41
   Model\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Model
     md5: 36613fbac0ef109bf8ebe4c5420a99ae
