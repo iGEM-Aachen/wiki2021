@@ -1,4 +1,8 @@
 assets:
+  assets/description/Hardware.svg:
+    link_URL: https://2021.igem.org/wiki/images/6/68/T--Aachen--description--Hardware.svg
+    md5: 07cfcdb3f25c7db96fded3efe19daa72
+    upload_filename: T--Aachen--description--Hardware.svg
   assets/documents/collaborations/Lesson-plan-Aachen-x-Eindhoven-x-others.pdf:
     link_URL: https://2021.igem.org/wiki/images/b/ba/T--Aachen--documents--collaborations--Lesson-plan-Aachen-x-Eindhoven-x-others.pdf
     md5: 9d0b9a270e1c545709cdbc2660019720
@@ -1221,7 +1225,7 @@ html:
     md5: 024ba3492ea5f6178159c3923d61ffd7
   Description/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Description
-    md5: 5510e4d6b6fb46449e1a26025c97eeca
+    md5: e11e74805bac181db348f9121ef4da73
   Description\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Description
     md5: c2b49f97304919602e13a9a9e799f273
