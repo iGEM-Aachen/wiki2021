@@ -219,6 +219,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/9/97/T--Aachen--img--Collaborations--MonumentChallenge3.jpg
     md5: a7254a88bae73aa5111fc28936e5277e
     upload_filename: T--Aachen--img--Collaborations--MonumentChallenge3.jpg
+  assets/img/Collaborations/MonumentChallengePost.jpg:
+    link_URL: https://2021.igem.org/wiki/images/1/10/T--Aachen--img--Collaborations--MonumentChallengePost.jpg
+    md5: ce0e163d546f63d9f6a2be332ea31615
+    upload_filename: T--Aachen--img--Collaborations--MonumentChallengePost.jpg
   assets/img/Collaborations/OSUMeetUp.jpg:
     link_URL: https://2021.igem.org/wiki/images/6/6c/T--Aachen--img--Collaborations--OSUMeetUp.jpg
     md5: 2f5f85385fdbb980127ee0df4ade7eb8
@@ -1096,7 +1100,7 @@ html:
     md5: b42d8969ab4af91f8557f92b175514f9
   Collaborations/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Collaborations
-    md5: c33ecefc7c7f3399741594961455788d
+    md5: 00a6122ff15ca0d570990da7bf534478
   Collaborations\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Collaborations
     md5: efcec93b38dfb54eabb4425feabcb46b
