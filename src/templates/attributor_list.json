@@ -46,7 +46,7 @@
             {
                 "name": "Prof. Dr. Jörn Kalinowski, Dr. Christian Rückert",
                 "institution": "Center for Biotechnology, University Bielefeld",
-                "attribution": ""
+                "attribution": "Professor Kalinowski and Dr. Rückert explained the principles of Nanoporesequencing and pointed out difficulites we could be facing. We greatly appreciate their time and input."
             },
             {
                 "name": "Dr. Florian Kraft",
@@ -139,17 +139,12 @@
             {
                 "name": "Dr. Antje Gent",
                 "institution": "Promega GmbH",
-                "attribution": "Dr. Antje Gent was a great help in advising on the selection of the required laboratory materials."
+                "attribution": "As our contact person from Promega, she gave us advice and proposed products to improve our project and solve some technical problems. We want to thank Dr. Gent for her competent advice and support."
             },
             {
                 "name": "Theresa Heckenbücker, Bernd Seibert",
                 "institution": "Kölner Jugendwerkzentrum",
                 "attribution": "Theresa and Bernd provided us materials and tools to complete the hardware and gave us tipps on how to build it. We want to thank them for their help and assistance."
-            },
-            {
-                "name": "Vanessa Krämer",
-                "institution": "iGEM Team Bielefeld-CeBiTec 2018",
-                "attribution": ""
             },
             {
                 "name": "Lina Schmidt",
@@ -190,8 +185,8 @@
     {
         "category": "Special Thanks",
         "persons": [{
-                "name": "",
-                "institution": "Collective Incubator",
+                "name": "Collective Incubator",
+                "institution": "",
                 "attribution": "In times of the Covid-19 pandemic it was very hard for our team members to meet in person, especially because the university was closed, and we could not use the seminar rooms. Therefore, we are very thankful for the possibility to use the meeting rooms of the Collective Incubator. Working together was much easier and we made a lot of progress in those meetings."
             },
             {
