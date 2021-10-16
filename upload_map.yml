@@ -323,6 +323,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/2/22/T--Aachen--img--Human_Practices--2021-06-11_Meeting-Rother.png
     md5: 93b9b0c9b3de55f08fdc0f61d5e62e86
     upload_filename: T--Aachen--img--Human Practices--2021-06-11_Meeting-Rother.png
+  assets/img/Human Practices/2021-09-07_Meeting Palluk.png:
+    link_URL: https://2021.igem.org/wiki/images/5/5e/T--Aachen--img--Human_Practices--2021-09-07_Meeting_Palluk.png
+    md5: c1d6bb987f81f89c03d57fecb566f992
+    upload_filename: T--Aachen--img--Human Practices--2021-09-07_Meeting Palluk.png
   assets/img/Max Schmidt Bild.jpg:
     link_URL: https://2021.igem.org/wiki/images/5/5e/T--Aachen--img--Max_Schmidt_Bild.jpg
     md5: 62af5cfe42154662795009b7894d326f
@@ -1203,7 +1207,7 @@ html:
     md5: 915fa1ab55e039398be0474f3a878651
   Human_Practices/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Human_Practices
-    md5: 46a8db7d0d706ed233cdcc7f553da00b
+    md5: 5d8b80c711c9100cad8ef14f339b1c92
   Human_Practices\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Human_Practices
     md5: add694d9d50cd9431dc45f7ca06eed4e
