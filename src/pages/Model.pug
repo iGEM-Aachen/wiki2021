@@ -43,7 +43,7 @@ block article
         
         The first approach was to model the reaction according to the Michaelis-Menten kinetics. 
         Therefore the nucleotide that would be incorporated was considered as the substrate and the DNA strands were assumed to be present in excess. 
-        Thereby the reaction velocity could be calculated by the Michaelis-Menten equation with a value for the dNTP affinity from the literature [2] (#citation2). 
+        Thereby the reaction velocity could be calculated by the Michaelis-Menten equation with a value for the dNTP affinity from the literature [2](#citation2). 
         For each length of the resulting DNA strands, a new pool was created and the flux from one pool to the next was modeled as explained. 
         As result, the concentrations of the different lengths of the DNA strands were obtained as a function of the time. 
         The most interesting part here was the concentration of strands that were not elongated at all since these would lead to an error in the encoded information.
@@ -57,8 +57,6 @@ block article
         To gain an understanding of the reactions we plotted the pool sizes of DNA strands of different lengths over time (figure 1) and the length distribution at different timestamps (figure 2). 
         In figure 1, a delayed rise in concentrations can be seen. 
         This is explained by the dependency of the flux towards DNA1 to the pool size of DNA0 et cetera. 
-        With increasing time the mean of the strand length distribution rises and the distribution becomes broader.
-        This shows that the reaction time should be as short as possible, not only to shorten synthesis cycles, but also to avoid longer strands.
         
     - var imgpath = "" + require("../assets/img/modeling Bilder/concentrations.png")["default"]
     +image(2,imgpath,"Concentrations of DNA pools over time")
@@ -75,7 +73,7 @@ block article
         
         # Optimization
         
-        To not only gain an understanding of the reaction, but also find the ideal reaction conditions.
+        To not only gain an understanding of the reaction, but also find the ideal reaction conditions, we did a parameter analysis.
         Because we are facing an optimization problem for our system (Error rate, time, concentration) we want to find the ideal operating point for our DNA synthesis. 
         The independent parameters are enzyme- and nucleotide concentration and reaction time. The repercussions of a change of these parameters are shown in figure  4.
         
@@ -105,9 +103,8 @@ block article
         
         To evaluate our simulation results we compared them with the experimental data gained from the capillary electrophoresis. 
         This experiment is particularly suitable because a large amount of data is available in digital form. 
-        Since our network consists of coupled differential equations, we wrote a nonlinear regression program in MATLAB. 
-        Biochemical reaction networks are usually described with systems of coupled ordinary equations (ODE). 
-        These reaction networks are normally time-dependent so time is the only variable in our model. 
+        Since our network consists of coupled differential equations, we wrote a nonlinear regression program in MATLAB.  
+        These reaction networks are normally time-dependent so time is the only variable during a reaction in the same reaction setup. 
         Since our system consists of three kinetic parameters, we compared our used parameters [2](#citation2), with the calculated ones from the regression program. 
         This way we could validate our model and compare the differences between literature, our model, and the experimental results. 
         All of the above-mentioned was done with the “lsqcurvefit” command of Matlab. 
