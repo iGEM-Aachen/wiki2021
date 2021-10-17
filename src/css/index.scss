@@ -1,4 +1,9 @@
 @import "_main.scss";
+body {
+    background-image: none;
+    background-color: $igem-dark;
+}
+
 
 /******************************
  * Header
@@ -72,9 +77,6 @@ article {
     .col {
         padding: 1.5rem;
     }
-    .card {
-        margin: 0 0 1.5rem 0;
-    }
     .card-img-top {
         position: relative;
         img {
@@ -94,9 +96,111 @@ article {
     }
 }
 
-.card {
-    background: $igem-straw-brown;
-    color: $igem-dark;
+.custom {
+    margin-top: 60px;
 }
 
-// }
+.home-card {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    border-radius: 0;
+    margin: 0;
+    background-color: $igem-dark;
+    // height: 70%;
+    position: relative;
+    p {
+        font-size: 1.5rem;
+    }
+    h1 {
+        margin-bottom: 3rem;
+    }
+    h1,
+    h2 {
+        text-align: center;
+    }
+    .fade {
+        color: $igem-straw-brown;
+        font-size: 1.3rem;
+        opacity: 1;
+        transition: opacity 1s;
+        font-family: monospace;
+    }
+    .fade1 {
+        transition-delay: 0s;
+    }
+    .fade2 {
+        transition-delay: 0.2s;
+    }
+    .fade3 {
+        transition-delay: 0.4s;
+    }
+    .fade4 {
+        transition-delay: 0.6s;
+    }
+    .line {
+        width: auto;
+        white-space: nowrap;
+        p,
+        pre {
+            display: inline-block;
+        }
+    }
+    img {
+        max-width: 100%;
+    }
+    .highlight {
+        font-size: 2rem;
+        color: $igem-green;
+    }
+}
+
+.home-bg-light {
+    color: $igem-dark;
+    // background-image: url("../assets/img/homepage/home_background.svg#svgView(preserveAspectRatio(none))");
+    background-color: $igem-straw-brown;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.home-bg-blue {
+    color: $igem-straw-brown;
+    // background-image: url("../assets/img/homepage/home_background.svg#svgView(preserveAspectRatio(none))");
+    background-color: $darkBlue;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#rocket {
+    height: 300px;
+    // margin-top: 600;
+}
+
+.rocket-container {
+    // height: 100%;
+    background-image: url(../assets/img/homepage/planet.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center top;
+    img {
+        margin: 50px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%
+    }
+}
+
+.rocket-text {
+    padding-top: 120px;
+}
+
+.header {
+    height: 70%;
+    img {
+        margin: 50px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%
+    }
+}

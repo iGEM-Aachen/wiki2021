@@ -1,4 +1,5 @@
 @import "_main.scss";
+@import "header.scss";
 
 /******************************
  * Header
@@ -39,66 +40,7 @@ $igem-blue: #38A0F5;
     background-color: $selection-color;
 }
 
-header {
-    background-color: $igem-dark;
-    position: relative;
-    padding-top: 80px;
-    height: 80vh;
-    transition: all 0.5s ease-in-out;
-    .header-text {
-        color: $igem-straw-brown;
-        font-weight: 300;
-        font-size: 4.5rem;
-        top: 40%;
-        text-align: center;
-        position: absolute;
-        height: 80px;
-        filter: drop-shadow(4px 4px 1px $igem-dark);
-    }
-    .header-image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-        opacity: 70%;
-    }
-    .header-effect {
-        margin-bottom: 0;
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-    }
-    .header-image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-        opacity: 70%;
-    }
-    .header-effect {
-        margin-bottom: 0;
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-    }
-}
 
-@include respond-below(lg) {
-    header {
-        h1 {
-            font-size: 4rem;
-        }
-        height: 65vh;
-    }
-}
-
-@include respond-below(md) {
-    header {
-        margin-bottom: 4rem;
-        min-height: unset !important;
-        height: 50vh;
-    }
-}
 
 
 /******************************
@@ -223,7 +165,6 @@ header {
         details,
         summary {
             color: $igem-dark;
-            margin: 0;
         }
         .pdflink {
             margin-left: 35px;

@@ -1,3 +1,19 @@
+https://doi.org/10.1002/adhm.201500132:
+  authors: 'Puddu, M., Stark, W. J., & Grass, R. N. (2015). '
+  doi: https://doi.org/10.1002/adhm.201500132
+  journal: Advanced Healthcare Materials
+  numbers: '4(9), 1332-1338. '
+  title: Silica Microcapsules for Long-Term, Robust, and Reliable Room Temperature
+    RNA Preservation.
+  type: article
+https://doi.org/10.1007/978-1-62703-032-8_1:
+  authors: 'Marceau, A. H. (2012). '
+  doi: https://doi.org/10.1007/978-1-62703-032-8_1
+  journal: Single-Stranded DNA Binding Proteins
+  numbers: '1-21. '
+  title: Functions of Single-Strand DNA-Binding Proteins in DNA Replication, Recombination,
+    and Repair.
+  type: article
 https://doi.org/10.1007/s00484-015-1117-4:
   authors: 'Allen, M. J., & Sheridan, S. C. (2015). '
   doi: https://doi.org/10.1007/s00484-015-1117-4
@@ -5,6 +21,13 @@ https://doi.org/10.1007/s00484-015-1117-4:
   numbers: '62(1), 57-67. '
   title: Mortality risks during extreme temperature events (ETEs) using a distributed
     lag non-linear model.
+  type: article
+https://doi.org/10.1016/S0021-9258(19)85653-3:
+  authors: 'Deibel, M. R., & Coleman, M. S. (1980). '
+  doi: https://doi.org/10.1016/S0021-9258(19)85653-3
+  journal: Journal of Biological Chemistry
+  numbers: '255(9), 4206-4212. '
+  title: Biochemical properties of purified human terminal deoxynucleotidyltransferase..
   type: article
 https://doi.org/10.1016/j.ijid.2019.08.003:
   authors: 'Rosano, A., Bella, A., Gesualdo, F., Acampora, A., Pezzotti, P., Marchetti,

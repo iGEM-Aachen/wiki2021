@@ -1,0 +1,93 @@
+extends ../templates/contents.pug
+
+block headVars
+    - var title = "Science Communication"
+    - var tagline = "A sample page for the theme."
+    - var requireMathJax = true
+    
+block article
+    :markdown-it(html)
+        
+        # Fact of the week
+        
+        With the social media posts called “fact of the week”, we want to explain complex topics in synthetic biology in a simple way and thus engage in science communication.
+        The aim is to get people interested in the topics addressed, some of which are special.
+        The following topics were covered:
+        - Biotechnology
+        - CRISPR/Cas9
+        - Bioflavors
+        - Escherichia coli
+        - Genetic code
+        - Bioluminescence
+        - Biolistics
+        - Bioleaching
+        - Astrobiology
+        - Microbial nanowires
+        - 3D Bioprinting
+
+        # Collaboration with iGEM Eindhoven
+        In March we wrote iGEM Tue a message if they would like to meet sometime. In our first meeting, we decided to cooperate in the field of science communication. 
+        At first, we collected easy experiments for younger children and made lesson plans and PowerPoint presentations in English, German and Dutch for each experiment. 
+        We conducted them in elementary schools in both countries. In Germany, we paid a visit to the Don-Bosco-School in Wolsfeld and performed two experiments with a small group of students.  
+        First, we briefly introduced iGEM and our team and explained what kind of project we are working on in a way that was appropriate for children. 
+        Then we went straight into the first experiment and built a lava lamp using simple home remedies. All materials were provided by our team. 
+        The elementary school students were able to take all information from a presentation we created and were able to perform every step by themselves. 
+        The second experiment was to separate the pigments of different felt-tip pens to demonstrate the mixture of colors. Finally, we had a short discussion with the students and made sure that they learned something from the experiments. 
+        Due to the enthusiasm of the students and on our part, as well as good experiences in the schools on the Dutch and German side, we started a call on slack to collect more school experiments. 
+        The iGEM teams Bielefeld, Boku-Vienna, KU Leuven, Unizar, and Wageningen_UR send us their writings and we put them all together into one big handbook. 
+        It should make doing experiments with pupils easier for the teacher or other iGEM teams. 
+        They just need to choose from a collection of experiments.        
+
+    - var pdfpath = "" + require("../assets/documents/collaborations/Lesson-plan-Aachen-x-Eindhoven-x-others.pdf")["default"]
+    a(href=pdfpath) Here you can find the lesson plan 
+    - var pdfpath = "" + require("../assets/documents/collaborations/Presentation Eindhoven.pdf")["default"]
+    p and
+    a(href=pdfpath) here our Presentation we used at school.
+    - var imgpath = "" + require("../assets/img/Collaborations/Eindhoven.png")["default"]
+    +image(1, imgpath, "Picture of the meeting with Eindhoven")
+
+    :markdown-it
+        # Welcome Week
+        With the start of the new semester, our university allowed us to present our project and the iGEM competition to the newly arrived international students.
+        We got a booth, where we did the DNA extraction as an icebreaker to discuss with the students about our project. This was interesting because most of them do not know much about synthetic biology and working with DNA. 
+        They had a lot of fears, like synthesizing DNA would be dangerous. So we cleared a lot of prejudices up and arouse interest in biology.
+        
+    :markdown-it
+        # High-Tech Forum 2021
+
+        On July 21st, a few members of our team met online to watch the live stream of the results report of the „High-Tech-forum 2021“ by the German federal ministry of education and research. 
+        In a 3 hour long conference, scientists, people from the economy, and politicians talked about several topics regarding innovative technologies. 
+        We heard speeches, dealing with the technological independence of Germany and/or Europe and listened to debates about citizen participation in the digital world. 
+        A main part of the conference dealt with strengthening innovative forces in society and coming up with sustainable solutions for problems that affect us all.
+        It is important for Germany – or even humankind – to maintain crisis-proof technological security of supply.
+        We very much appreciated that politics start to recognize the problematics of digital storage insecurity and taking steps into a new direction with innovative ideas like DNA data storage. 
+        One goal of the High-Tech forum was the advice of the German government on the convergence of bio, information, and communication technologies
+        A transcript of the result report was stored on DNA beforehand in cooperation with the research cluster MOSLAU (Molecular Storage for Longterm Archiving) of the University of Marburg and handed to Anja Karliczek – Germany‘s federal research minister.
+        More vials with the synthetic DNA were distributed to the public as well as part of a research program by the University of Marburg.
+        The DNA vials are stored in people‘s homes for 5 years and then sent back to the research group.
+        A few people from our team managed to sign up for the vials and received them a few days later.
+        Being very excited about this we contacted the group leader of MOSLA Dominik Heider in Marburg and had an informative meeting with him and Anke Becker about our project and DNA data storage as such.
+        You can read more about this (see [Meeting with Dominik Heider and Anke Becker](https://2021.igem.org/Team:Aachen/Human_Practices#MeetingwithDominikHeiderandAnkeBecker)).
+
+    - var imgpath = "" + require("../assets/img/communication/hightechforum1.jpg")["default"]
+    +image(2, imgpath, "Four members of our team attending the High-Tech-forum") 
+
+    - var imgpath = "" + require("../assets/img/communication/hightechforum2.jpg")["default"]
+    +image(3, imgpath, "The results report stored in DNA") 
+
+    :markdown-it(html)
+        # Welcome Week
+        With the start of the new semester, we presented our project and the iGEM competition to the newly arrived international students at RWTH Aachen.
+        In our booth, we first raised interest for our project by conducting a simple DNA extraction experiment with the newcoming students. We then had an exiting detabte with them about our project.```
+        Since they did not know a lot about synthetic biology, they had multiple concerns, for example that synthesizing DNA could be dangerous. So we cleared up a lot of prejudices up and arouse interest in biology.
+        
+        # Article In Magazine "BIOSpektrum"
+        As part of science communication, we also reached in an article at the magazine "BIOSpektrum", where we explained our project. 
+        BIOSpektrum is a magazine with a scientific audience. 
+        This allowed us to explain our topic, the enzymatic DNA synthesis for DNA data storage, in more detail. 
+        Even though some readers might have already heard about this topic our approach is completely unique.
+        
+        # techdive Podcast
+        Podcasts are becoming more and more popular, especially among young people, so we could not miss the opportunity of reaching out to that audience.
+        Hence we participated in the podcast "techdive", which features students’ thesis’ and student project groups to present them to a broader audience.
+        It was a challenging experience to explain the topic of DNA synthesis and storage to someone who is not familiar with the biological basics, but we ultimately could simplify it to the point where listeners from every background, scientific or not, could understand it.

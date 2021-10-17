@@ -4,3 +4,25 @@
 - doi: https://doi.org/10.1038/s41467-019-10258-1
 # 3
 - doi: https://doi.org/10.1038/s41467-020-18681-5
+# 4
+- article:
+    authors: "Motea, E. A., Berdis, A. J."
+    year_published: 2010
+    title: "Terminal deoxynucleotidyl transferase: The story of a misguided DNA polymerase"
+    journal: "Biochimica et Biophysica Acta (BBA) - Proteins and Proteomics"
+    numbers: "1804 (5) 1151-1166"
+# 5
+- article:
+    authors: "Chang, L. M. S. and Bollum, F. J."
+    year_published: 1970
+    title: "Deoxynucleotide-Polymerizing Enzymes of Calf Thymus Gland, IV. Inhibition of Terminal Deoxynucleotidyl Transferase by Metal Ligands"
+    journal: "Proceedings of the National Academy of Sciences"
+    numbers: "65 (4) 1041-1048"
+# 6
+- webpage:
+    published: "2020"
+    authors: "Pitzschke, A."
+    title: "Großes Potenzial, aber noch viele Fragezeichen: Enzymatische DNA-Synthese"
+    accessed: "October 16, 2021"
+    site_name: "Laborjournal"
+    url: 'https://www.laborjournal.de/rubric/methoden/methoden/v227.php'

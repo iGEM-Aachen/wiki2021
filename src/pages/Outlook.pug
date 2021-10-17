@@ -14,14 +14,27 @@ block article
         Because of the limitation of time and resources, we could not put each of our ideas into effective practice.
         However, the limitation of this competition shall not hold us back from expressing our concepts. 
         Once the fundamental framework for DNA data storage is established, we hope that our research can push DNA synthesis further, making it more effective.   
+        
+        # Long-term Storage of DNA 
+        
+        The correct storage of DNA is a crucial aspect of data saving systems.
+        DNA degrades fast after contact with UV light, high temperatures and nucleases. 
+        That causes gaps in the code and thus retrieval of false information. 
+        A suitable method for keeping the molecule undamaged and storing information for millennia is the usage of silica microcapsules.
+        Those are tiny glass particles, up to 10 000 times thinner than a sheet of paper.
+        This method, researched by the two scientists Robert Grass and Wendelin Stark, is inspired by nature: fossil bones store genetic information safely for centuries.
+        The capsules can be treated with a fluoride solution that dissolves the glass but does not harm the code.   
+        The next step in our project would be the encapsulation and retrieval of our synthesized DNA to make our DNA data storage system complete. [1](#citation1)[2](#citation1)
+
 
         # Prevention of secondary structures 
         
         One of the biggest problems in enzymatic DNA synthesis is the formation of secondary structures in single-stranded DNA.
         The ssDNA synthesized by our semi-specific synthesis method consists of fragments with the same nucleotide making it more likely to form secondary structures.
         Once the single strand forms a hairpin, the elongation is hindered.   
-        Therefore, we elaborated ideas on the prevention of secondary structures.    
+        Therefore, we elaborated ideas on the prevention of secondary structures.
         
+
         ## Single-stranded binding proteins
         
         We believe that the solutions in synthetic biology lay in nature.
@@ -30,6 +43,9 @@ block article
         Nevertheless, both our team and Palluk, concluded that the commercially available SSBs do not work for our purposes because those bind too stronlgy to the strand and cannot be deatached after the reaction.
         Still, we believe that SSB’s have a huge potential to prevent secondary structures and improve the synthesis. 
         
+    - var imgpath = "" + require("../assets/img/Outlook/SSBs.svg")["default"]
+    +image(1, imgpath, "Single-stranded binding proteins")
+    :markdown-it
         ## Hybridization with short oligonucleotides
         
         Another method for preventing secondary structures is adding short oligonucleotides with 3’ddNTP to our reaction so that these molecules can hybridize with the arising strand. 
@@ -38,12 +54,18 @@ block article
         Unfortunately, it is not finally resolved whether the TdT can attach short oligonucleotides to the initial primer.
         This would be a problem because after attaching the oligo a further elongation is not possible.
         
+    - var imgpath = "" + require("../assets/img/Outlook/short oligos.svg")["default"]
+    +image(2, imgpath, "Hybridization with short oligonucleotides")
+    :markdown-it
         ## Photolabile protection groups
         
         Another approach for the prevention of secondary structures is the use of photolabile protecting groups.
         Those can be attached to a triphosphate and detached by a laser as soon as the DNA synthesis reaction is finished
         Nevertheless, we chose not to pursue this approach since those photolabile groups are synthesized with hazardous chemicals, which is not compatible with our principle of establishing a sustainable DNA synthesis system. 
         
+    - var imgpath = "" + require("../assets/img/Outlook/photolabile (1).svg")["default"]
+    +image(3, imgpath, "Phtolabile protecting groups")
+    :markdown-it
         # Increase of the data capacity
         
         ## Unnatural base pairs
@@ -83,3 +105,8 @@ block article
         Besides that, an electromagnetic metal stick could replace the problem with the cover. 
         If one can switch the magnetic behavior of the stick, it would be staightforward to bring the magnetic beads back into solution after the immobilization.   
 
+
+//- DO NOT MODIFY THIS LINE AND ANYTHING BEYOND.
+
+prepend citations
+    - var citations = [{"authors": "Puddu, M., Stark, W. J., & Grass, R. N. (2015). ", "doi": "https://doi.org/10.1002/adhm.201500132", "journal": "Advanced Healthcare Materials", "numbers": "4(9), 1332-1338. ", "title": "Silica Microcapsules for Long-Term, Robust, and Reliable Room Temperature RNA Preservation.", "type": "article"}, {"details": "Retrieved on October 16, 2021. from ", "title": "DNA data storage innovators Robert Grass and Wendelin Stark receive European Inventor Award 2021 in the \u201cResearch\u201d category. EPO.", "type": "webpage", "url": "https://www.epo.org/news-events/press/releases/archive/2021/20210617a.html"}]

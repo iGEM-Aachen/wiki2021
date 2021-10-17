@@ -1,35 +1,8 @@
 @import "_main.scss";
+@import "header.scss";
+
 #themeSwitchWrapper {
     display: none !important;
-}
-
-header {
-    background-color: $igem-dark;
-    position: relative;
-    padding-top: 80px;
-    height: 80%;
-    .header-text {
-        color: $igem-straw-brown;
-        font-weight: 300;
-        font-size: 4.5rem;
-        margin-bottom: 15%;
-        text-align: center;
-        position: absolute;
-        height: 80px;
-    }
-    .header-image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-        opacity: 70%;
-    }
-    .header-effect {
-        margin-bottom: 0;
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-    }
 }
 
 attr-main {
