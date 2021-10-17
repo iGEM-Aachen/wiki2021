@@ -28,22 +28,22 @@ block article
     <div id="carouselExampleControls" class="carousel slide igem-carousel" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            img(src="../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-01.png", alt="").d-block.w-100
+            img(src=require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-01.png"), alt="").d-block.w-100
         </div>
         <div class="carousel-item">
-            img(src="../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-02.png", alt="").d-block.w-100
+            img(src=require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-02.png"), alt="").d-block.w-100
         </div>
         <div class="carousel-item">
-            img(src="../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-03.png", alt="").d-block.w-100
+            img(src=require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-03.png"), alt="").d-block.w-100
         </div>
-        <div class="carousel-item active">
-            img(src="../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-04.png", alt="").d-block.w-100
+        <div class="carousel-item">
+            img(src=require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-04.png"), alt="").d-block.w-100
         </div>
-        <div class="carousel-item active">
-            img(src="../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-05.png", alt="").d-block.w-100
+        <div class="carousel-item">
+            img(src=require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-05.png"), alt="").d-block.w-100
         </div>
-        <div class="carousel-item active">
-            img(src="../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-06.png", alt="").d-block.w-100
+        <div class="carousel-item">
+            img(src=require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-06.png"), alt="").d-block.w-100
         </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -97,10 +97,10 @@ block article
         You can read more about this (see [Meeting with Dominik Heider and Anke Becker](https://2021.igem.org/Team:Aachen/Human_Practices#MeetingwithDominikHeiderandAnkeBecker)).
 
     - var imgpath = "" + require("../assets/img/communication/hightechforum1.jpg")["default"]
-    +image(3, imgpath, "Four members of our team attending the High-Tech-forum") 
+    +image(2, imgpath, "Four members of our team attending the High-Tech-forum") 
 
     - var imgpath = "" + require("../assets/img/communication/hightechforum2.jpg")["default"]
-    +image(4, imgpath, "The results report stored in DNA") 
+    +image(3, imgpath, "The results report stored in DNA") 
 
     :markdown-it(html)
         # Welcome Week
@@ -214,7 +214,11 @@ block article
         Thus, we believe that we helped young people to find their passion and hope that one day we will work side by side on a project that may change the world.
     - var imgpath = "" + require("../assets/img/Education/91.DeutschesGymnasiumSofia.jpg")["default"]
 <<<<<<< HEAD
+<<<<<<< HEAD
     +image(16, imgpath, "91. Deutsches Gymnasium Sofia.")
 =======
     +image(5, imgpath, "91. Deutsches Gymnasium Sofia.")
 >>>>>>> 7e0310d (first draft for carousel)
+=======
+    +image(4, imgpath, "91. Deutsches Gymnasium Sofia.")
+>>>>>>> 4f25b33 (fix carousel)
