@@ -23,16 +23,16 @@ block article
         When Sabastian Palluk as well told us about his bad experiences with the flow cell, it was clear to us that we had to take a completely new approach. 
         Fortunately, a comment from Prof. Blank gave us the idea of the DIP method. 
         The DIP method allowed us to take a whole new approach to automate DNA synthesis. 
-        To make it easy to replicate, we kept the setup as basic as possible. 
-        The simplest way to automate the DIP method is to work with a revolver containing reaction vessels with the enzyme solutions and one nucleotide each, as well as two reaction vessels with wash solution. 
-        The DNA primers are immobilized on a rod, which can be dipped into the various solutions via an arm.
+        To make it easy to replicate, we kept the setup as basic as possible.
         
         To implement our idea of the hardware, we used standardized aluminum profiles as a base, to which the individual components were movably attached. 
         Both the turret and the moving arm are driven by a stepper motor via a toothed belt. 
         These motors are controlled by a computer to match the desired DNA sequence. 
         Most of the components are commercially available. 
         The revolver and the holder of the rod were printed with a 3D printer. 
-        The four reaction vessels with the finished reaction solution and one nucleotide each are placed in the turret, as well as two reaction vessels with wash solution; the arrangement looks as follows:
+        The four reaction vessels with the finished reaction solution and one nucleotide each are placed in the turret, as well as two reaction vessels with wash solution.
+        The DNA primers are immobilized on a rod, which can be dipped into the various solutions via an arm.
+        The arrangement is shown in figure 1.
         
         This arrangement of the reaction vessels ensures that the incorporation of the nucleotides happens efficiently. 
         Each nucleotide incorporation must be followed by a wash step, the two opposing reaction vessels with wash solution ensure that each reaction solution has a direct neighbor for washing, while the number of holes for the reaction vessels has been kept as small as possible. 
@@ -52,6 +52,6 @@ block article
         
         We were able to build a device with which the method developed in this project for enzymatic DNA synthesis can run fully automatically. 
         A network connection was also implemented through which digital data can be directly compiled into a base sequence and synthesized into a DNA strand. 
-        Of course, much can be improved on this fundamental design of the hardware. For example, the overall design could be made even more compact, and casing with cooling would be beneficial. 
+        Of course, much can be improved on this fundamental design of the hardware. For example, the overall design could be made even more compact, and a casing with cooling would be beneficial. 
         Furthermore, use could be made easier with LCD displays showing status. Data would be sent to the device, it would calibrate itself and the status of the operation would be read on the display. 
         This handling would be made even easier by a REST API (Standardized Programming Interface), which would directly link the software and hardware code.  
