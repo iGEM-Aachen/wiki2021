@@ -66,10 +66,36 @@ ul {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  color: unset;
   border: 0px !important;
   overflow: visible;
 }
 
+pre {
+  padding: unset;
+  border: unset;
+  color: unset;
+  background-color: unset;
+  line-height: unset;
+}
+
+// Override iGEM Rule
+.mw-body h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+span {
+    font-family: "Louis George Cafe", "Arial", Gadget, sans-serif;
+}
+
+// #top_menu_inside * {
+//     font-family: 'arial',sans-serif !important;
+// }
 /* https://gist.github.com/thedeerchild/3893094 */
 // #globalWrapper {
 //   background-color: transparent;
