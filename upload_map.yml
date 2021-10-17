@@ -927,6 +927,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/5/5a/T--Aachen--img--modeling_Bilder--reaction_system.PNG
     md5: ab5cd1f766c51d09ec03bccb8670213e
     upload_filename: T--Aachen--img--modeling Bilder--reaction_system.PNG
+  assets/img/modeling Bilder/regression_of_CE-data.jpg:
+    link_URL: https://2021.igem.org/wiki/images/1/16/T--Aachen--img--modeling_Bilder--regression_of_CE-data.jpg
+    md5: e51b9cdd90b536bfe24f6f409764ac86
+    upload_filename: T--Aachen--img--modeling Bilder--regression_of_CE-data.jpg
   assets/img/modeling Bilder/strand-length-distribution.png:
     link_URL: https://2021.igem.org/wiki/images/a/a2/T--Aachen--img--modeling_Bilder--strand-length-distribution.png
     md5: d74c486c0114fce27dd92b10f713cdb5
@@ -1474,7 +1478,7 @@ html:
     md5: 4c51f5500bef5b33212b9935690c137b
   Model/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Model
-    md5: 80e5d0f7cf1df3fc265deaeaf0793adc
+    md5: 1eb48b58657f82cdef973ef1ea51da98
   Model\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Model
     md5: 36613fbac0ef109bf8ebe4c5420a99ae
