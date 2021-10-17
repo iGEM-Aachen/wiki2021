@@ -399,6 +399,18 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/5/5e/T--Aachen--img--Human_Practices--2021-09-07_Meeting_Palluk.png
     md5: c1d6bb987f81f89c03d57fecb566f992
     upload_filename: T--Aachen--img--Human Practices--2021-09-07_Meeting Palluk.png
+  assets/img/Human Practices/Group picture.jpg:
+    link_URL: https://2021.igem.org/wiki/images/0/00/T--Aachen--img--Human_Practices--Group_picture.jpg
+    md5: a0eb27e37fe46c2799e8e160b269e369
+    upload_filename: T--Aachen--img--Human Practices--Group picture.jpg
+  assets/img/Human Practices/Old document.jpg:
+    link_URL: https://2021.igem.org/wiki/images/4/4f/T--Aachen--img--Human_Practices--Old_document.jpg
+    md5: 8bbff2e4680e4411562cc9522478d828
+    upload_filename: T--Aachen--img--Human Practices--Old document.jpg
+  assets/img/Human Practices/city archive.jpg:
+    link_URL: https://2021.igem.org/wiki/images/4/42/T--Aachen--img--Human_Practices--city_archive.jpg
+    md5: 786683aecfd4893b7a2bb50f6b58db92
+    upload_filename: T--Aachen--img--Human Practices--city archive.jpg
   assets/img/Max Schmidt Bild.jpg:
     link_URL: https://2021.igem.org/wiki/images/5/5e/T--Aachen--img--Max_Schmidt_Bild.jpg
     md5: 62af5cfe42154662795009b7894d326f
@@ -727,6 +739,34 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/8/83/T--Aachen--img--headers--iGEM_Memes.jpg
     md5: 878341a5f09e0c2a265e7597d88f5463
     upload_filename: T--Aachen--img--headers--iGEM Memes.jpg
+  assets/img/homepage/DNA_text.svg:
+    link_URL: https://2021.igem.org/wiki/images/7/79/T--Aachen--img--homepage--DNA_text.svg
+    md5: 33464786f0d9bd26f740cfced1594ab1
+    upload_filename: T--Aachen--img--homepage--DNA_text.svg
+  assets/img/homepage/artificial_intelligence.png:
+    link_URL: https://2021.igem.org/wiki/images/b/b4/T--Aachen--img--homepage--artificial_intelligence.png
+    md5: 1c222b2af1c562b091083969e1728792
+    upload_filename: T--Aachen--img--homepage--artificial_intelligence.png
+  assets/img/homepage/bucket.svg:
+    link_URL: https://2021.igem.org/wiki/images/9/97/T--Aachen--img--homepage--bucket.svg
+    md5: 1679a6b1ad6d340abd40e1da83b0202f
+    upload_filename: T--Aachen--img--homepage--bucket.svg
+  assets/img/homepage/dna_four_colors.svg:
+    link_URL: https://2021.igem.org/wiki/images/f/f2/T--Aachen--img--homepage--dna_four_colors.svg
+    md5: 839d2f8a7d9f5fe1bb79af21425b5996
+    upload_filename: T--Aachen--img--homepage--dna_four_colors.svg
+  assets/img/homepage/dna_rocket.svg:
+    link_URL: https://2021.igem.org/wiki/images/c/c8/T--Aachen--img--homepage--dna_rocket.svg
+    md5: f8d2d44bae72f33dbb54f2d439d49472
+    upload_filename: T--Aachen--img--homepage--dna_rocket.svg
+  assets/img/homepage/planet.svg:
+    link_URL: https://2021.igem.org/wiki/images/1/18/T--Aachen--img--homepage--planet.svg
+    md5: 3b51ed7a7ea95874fff46a82afff1cc5
+    upload_filename: T--Aachen--img--homepage--planet.svg
+  assets/img/homepage/server.svg:
+    link_URL: https://2021.igem.org/wiki/images/6/69/T--Aachen--img--homepage--server.svg
+    md5: 581b9af108a66cb3b48c14eaa36b2d0d
+    upload_filename: T--Aachen--img--homepage--server.svg
   assets/img/meeting_benner.jpeg:
     link_URL: https://2021.igem.org/wiki/images/c/c5/T--Aachen--img--meeting_benner.jpeg
     md5: a67f7ec9559b62eaa4839202ed329367
@@ -959,6 +999,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/9/9b/T--Aachen--img--portraits--Zeynep_T%C3%BCrkyilmaz.jpg
     md5: 5e8ce040ef43f1fabacfdb077fd9f617
     upload_filename: "T--Aachen--img--portraits--Zeynep T\xFCrkyilmaz.jpg"
+  assets/img/project_logo.svg:
+    link_URL: https://2021.igem.org/wiki/images/c/c4/T--Aachen--img--project_logo.svg
+    md5: 6df869f3d5b644d583ed900de0ea7346
+    upload_filename: T--Aachen--img--project_logo.svg
   assets/img/teamlogo_2021.svg:
     link_URL: https://2021.igem.org/wiki/images/1/14/T--Aachen--img--teamlogo_2021.svg
     md5: 270c98aebd8b7a63f0da28972857eff6
@@ -1296,7 +1340,7 @@ css:
     md5: fb977ea379b7ea87b5c93fca6399e158
   css/index.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/indexCSS?action=raw&ctype=text/css
-    md5: 296fcb4ae299fc6710dbd4392c75d6b8
+    md5: 3152b1e9ee38d76a09876da265278355
   css/members.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/membersCSS?action=raw&ctype=text/css
     md5: 36075a2673104a6f4306e3d1593e4253
@@ -1375,7 +1419,7 @@ html:
     md5: 915fa1ab55e039398be0474f3a878651
   Human_Practices/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Human_Practices
-    md5: 54be7c8421c017044241ee9c6fa9847c
+    md5: a2fd17af08d82d609ee9888652c1cc9b
   Human_Practices\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Human_Practices
     md5: add694d9d50cd9431dc45f7ca06eed4e
@@ -1462,7 +1506,7 @@ html:
     md5: 0ba5d0725c84c2dad4c72618fdb07412
   Science_Communication/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Science_Communication
-    md5: da2f6a312739c53e4423084808f965bc
+    md5: a3d1e2c946065323fbc30df0bc0d7405
   Software/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Software
     md5: 19b4b308df13b73d20f6221280310af7
@@ -1480,7 +1524,7 @@ html:
     md5: 9ad124ff0217d48b7f4cd97dfce6df8d
   index.html:
     link_URL: https://2021.igem.org/Team:Aachen
-    md5: e87b6b66e7a395a808da62ba5b5b484d
+    md5: 7f5529d78fb8659586eeb05496200a0e
 js:
   attributions.bundle.js:
     link_URL: https://2021.igem.org/Template:Aachen/attributions-bundleJS?action=raw&ctype=text/javascript
@@ -1490,7 +1534,7 @@ js:
     md5: 7a1f1da84c0e806e0a99e4c8b2303582
   index.bundle.js:
     link_URL: https://2021.igem.org/Template:Aachen/index-bundleJS?action=raw&ctype=text/javascript
-    md5: 90fa76ee8790fee1450167027c563da3
+    md5: fb164a3bb5192160f7df69d0556dca57
   members.bundle.js:
     link_URL: https://2021.igem.org/Template:Aachen/members-bundleJS?action=raw&ctype=text/javascript
     md5: f57384e28b20ef024cd9c384707694fa
