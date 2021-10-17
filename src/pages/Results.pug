@@ -64,7 +64,7 @@ block article
         Additionally, the reaction time is an adjustable parameter that does not slow down the reaction but restricts the number of dNTPs added according to time. 
         
     - var imgpath = "" + require("../assets/img/Results/2021-06-23_02.png")["default"]
-    +image(3, imgpath, "TdT tailing reaction of an AT-rich ssDNA primer with dTTP and various reaction times ranging from 1-90 min at RT (24 °C). 2.5% Agarose with TBE, SYBR Gold staining, 90 V, 51 min,. M: GeneRuler 50 bp DNA Ladder 1: AT-rich primer reference 2: 1 min incubation 3: 5 min incubation 4: 15 min incubation 5: 30 min incubation 6: 60 min incubation 7: 90 min incubation.")
+    +image(3, imgpath, "TdT tailing reaction of an AT-rich ssDNA primer with dTTP and various reaction times ranging from 1-90 min at RT (24 °C). 2.5% Agarose with TBE, SYBR Gold staining, 90 V, 51 min,. M: GeneRuler 50 bp DNA Ladder 1: AT-rich primer reference 2: 1 min incubation 3: 5 min incubation 4: 15 min incubation 5: 30 min incubation 6: 60 min incubation 7: 90 min incubation.", 80)
         
     :markdown-it
         The depicted slope was obtained by preparing a 400 µL batch of the reaction, followed by initiation of the reaction through the addition of TdT, and subsequent withdrawal of 10 µL samples at the pre-set time points. 
@@ -91,7 +91,7 @@ block article
         We measured the absorbance at its maximum of 450 nm (table X).
         
     - var imgpath = "" + require("../assets/img/Results/2021-07-01_01.png")["default"]
-    +image(4, imgpath, "Samples after incubation with polystyrene stick and protein constructs. Immunoassay with the Penta-His-HRP-Antibodies and TMB as substrate. The yellow color quantifies the presence of antibodies and, therefore the presence of the anchor peptide. 1: His-eGFP (negative control), 2: His-C-DZ-LCI, 3: contains His-C-DZ-MacHis.")
+    +image(4, imgpath, "Samples after incubation with polystyrene stick and protein constructs. Immunoassay with the Penta-His-HRP-Antibodies and TMB as substrate. The yellow color quantifies the presence of antibodies and, therefore the presence of the anchor peptide. 1: His-eGFP (negative control), 2: His-C-DZ-LCI, 3: contains His-C-DZ-MacHis.", 80)
     
     - var imgpath = "" + require("../assets/img/Results/2021-07-01_table.png")["default"]
     +image(5, imgpath, "Absorbance at 450 nm of the protein samples after immunoassay. The negative control was 25 times more concentrated, so this factor has to be considered.")
@@ -101,9 +101,15 @@ block article
         Also, figure x shows that the absorbance of sample 2 and 3 is higher.
         This illustrates that the anchor peptides can bind almost 34 times better to the polystyrene sticks as the negative control and that they do not wash off.
         It can be said, that both anchor peptides bind to the stick with similar intensity because the absorbance does not differ significantly.
+        
+        ### Immobilization with Amino-Primer
+        The next step was to link our Amino C6-primer (AC6-primer) to the anchor peptide. 
+        We used a slightly different protein construct, also provided by our instructor (see [experiments]( https://2021.igem.org/Team:Aachen/Experiments)). 
+        For this, we used 1-Ethyl-3-(3-dimethylaminopropyl)carbodiimide (EDC) as the initializer of the linking reaction and incubated the components for 24 hours. 
+        To check whether the conjugation was successful, our instructor performed an SDS-PAGE to compare the protein before and after the reaction (figure X).
               
     - var imgpath = "" + require("../assets/img/Results/2021-07-22_SDS.png")["default"]
-    +image(6, imgpath, "Conjugation of AC6 AT-rich ssDNA Primer with the fusion protein. NuSep Tris-Glycine protein gel, Neo Biotech Quick Coomassie Stain overnight, 140 V, 70 min. The samples were heated to 95 °C for 10 min. M: PageRuler Prestained Protein Ladder 1: protein before conjugation (negative control), 2: protein after conjugation with AT-rich ssDNA primer.")
+    +image(6, imgpath, "Conjugation of AC6 AT-rich ssDNA Primer with the fusion protein. NuSep Tris-Glycine protein gel, Neo Biotech Quick Coomassie Stain overnight, 140 V, 70 min. The samples were heated to 95 °C for 10 min. M: PageRuler Prestained Protein Ladder 1: protein before conjugation (negative control), 2: protein after conjugation with AT-rich ssDNA primer.", 50)
         
     :markdown-it
         It was expected that the conjugate runs significantly higher than the negative control because the primer is 100 nt long and increases the molecular weight, which should impact the running behavior. 
@@ -124,22 +130,15 @@ block article
     +image(7, imgpath, "Standard TdT reaction (dTTP 15 min) with the conjugate and elutions of immobilizations with AC6 primer and AC6 primer-peptide conjugate. 2.5% Agarose with TBE, SYBR Gold, staining, 90 V, 60 min. M: GeneRuler 50 bp DNA Ladder 1: AC6 primer 2: AC6 primer after TdT reaction 3: AC6-primer-peptide conjugate 4: heated AC6-primer-peptide conjugate 5: AC6-primer-peptide conjugate after TdT reaction 6: elution of AC6-primer after immobilization 7: elution of AC6-primer after immobilization and TdT reaction 8: elution of AC6-primer-peptide conjugate after immobilization 9: elution of AC6-primer-peptide conjugate after immobilization and TdT reaction.")
         
     :markdown-it
-        Lane 2 shows, that the AC6-primer itself can be elongated by the TdT.
+        Lane 2 shows that the AC6-primer itself can be elongated by the TdT.
         Lane 1 serves as a reference for this reaction.
         Compared to that, the AC6-primer-peptide conjugate was elongated in lane five.
         The bands are approximately at the same height, which is an indication of the failure of the conjugation:
         As described above, the anchor peptide should influence the running behavior and we would expect a higher band if the conjugation had worked.
         Additionally, the references of the conjugation sample in lanes 3 and 4 also do not show a significant difference to the band of the pure AC6-primer.
         
-        The fact that we cannot see anything in lanes 6 and 7 illustrates, that the AC6-primer cannot bind to the polystyrene stick without the anchor peptide.
+        The fact that we cannot see anything in lanes 6 and 7 illustrates the AC6-primer cannot bind to the polystyrene stick without the anchor peptide.
         Against expectation, there are also no bands visible in lanes 8 and 9. So, these results support the guess that the conjugation did not work.
-        
-        ### Immobilization with Amino-Primer
-        The next step was to link our Amino C6-primer (AC6-primer) to the anchor peptide. 
-        We used a slightly different protein construct, also provided by our instructor (see [experiments]( https://2021.igem.org/Team:Aachen/Experiments)). 
-        For this, we used 1-Ethyl-3-(3-dimethylaminopropyl)carbodiimide (EDC) as the initializer of the linking reaction and incubated the components for 24 hours. 
-        To check whether the conjugation was successful, our instructor performed an SDS-PAGE to compare the protein before and after the reaction (figure X).
-        
         
         ### Immobilization with Maleimide-Primer
         The maleimide-cysteine-bond was more likely to work than the amino bond because it was already shown to work with maleimide-labeled proteins [4](#citation4). 
@@ -171,7 +170,7 @@ block article
     +image(10, imgpath, "**Standard TdT reactions with dTTP with purified conjugates of LCI-fusion-protein and ssDNA primers.** 2.5% Agarose with TBE, 90 V, 49 min, SYBR Gold staining. M: GeneRuler 50 bp DNA Ladder 1: AT-rich primer reference 2: GC-rich primer reference, 3: Conjugation with 12.5x GC-rich primer excess 4: TdT reaction with 12.5x-GC-conjugate 5: Conjugation with 5x GC-rich primer excess 6: TdT reaction with 5x-GC-conjugate 7: Conjugation with 2x GC-rich primer excess 8: TdT reaction with 2x-GC-conjugate 9: Conjugation with 12.5x AT-rich primer excess 10: TdT reaction with 12.5x-AT-conjugate 11: Conjugation with PEG (positive control for protein gel) 12: TdT reaction with PEG-Conjugation (negative control).")
         
     :markdown-it
-        Here one can see, that the conjugates produce a band approximately at the same height as the reference. 
+        Here one can see that the conjugates produce a band approximately at the same height as the reference. 
         They were expected to be higher than the reference because the protein should increase the molecular weight. 
         But because of the smear in the GC reference sample, it is hard to say if the GC conjugates are on the same height.
         
@@ -180,7 +179,7 @@ block article
         Lane 6 and 8 show higher bands because these were the samples with lower oligo excess. 
         Less DNA leads to further elongation because there are more nucleotides available for each strand.
         Taking a closer look, there are two bands visible in the smears. 
-        This could either mean, that the conjugation worked and what we see is only conjugated elongated primer, or what we see is only free primer that has not been washed away in the purification. We have shown, that even very small concentrations of primer are visible on the gel after elongation with TdT (link). 
+        This could either mean that the conjugation worked and what we see is only conjugated elongated primer, or what we see is only free primer that has not been washed away in the purification. We have shown, that even very small concentrations of primer are visible on the gel after elongation with TdT (link). 
         Most likely, it is a combination of the two assumptions: 
         There is conjugated primer as well as free primer, which would explain the faint double bands. 
         
@@ -197,7 +196,7 @@ block article
         The primer reference is visible the negative control shows no band in the second washing step or elution step. 
         This could mean that the primer does not bind to the stick without the anchor peptide, but we cannot exclude the possibility because gel electrophoresis is not very sensitive and there are barely bands visible in the samples. 
         The conjugates are again not visible, but an elution band can be seen in lanes 8, 16, and 32. These are the samples with the conjugates with higher primer excess and also the samples without TdT reaction. 
-        This could confirm, that the immobilization works, the conjugate is not washed off and can be eluted.
+        This could confirm that the immobilization works, the conjugate is not washed off and can be eluted.
         
         The results with the TdT reaction samples are not as expected because there are no bands visible in the elution step. 
         However, there are bands in the lanes before the elution steps that seem to be stuck in the pocket. 
@@ -217,11 +216,11 @@ block article
         The reference bands are visible.
         The reaction bands ran even higher than the Ladder and there still seems to be some of the sample stuck in the pocket. 
         The bands from lanes 3, 5, 7, 9 as well as the bands in the respective pockets were excised. 
-        The assumption was, that the lower band could be free elongated primer and the band in the pocket could be the elongated conjugate that was stuck there because of the protein. 
+        The assumption was that the lower band could be free elongated primer and the band in the pocket could be the elongated conjugate that was stuck there because of the protein. 
         The samples were dissolved in agarose dissolving buffer, one part was purified and a dot blot (immunoblot) was performed to confirm or falsify the presence of protein.
         
     - var imgpath = "" + require("../assets/img/Results/2021-09-09_blot.png")["default"]
-    +image(13, imgpath, "Purified TdT reaction solution samples from gel (figure x). Trans-Blot Turbo membrane, Penta·His HRP Conjugate Kit (Qiagen), 1:2500 dilution in BSA, incubation for 1 h. A1: 12.5x GC TdT reaction solution lower band dissolved A2: 12.5x GC TdT reaction solution lower band purified B1: 12.5x GC TdT reaction solution upper band dissolved B2: 12.5x GC TdT reaction solution upper band purified C1: 12.5x AT TdT reaction solution lower band dissolved C2: 12.5x AT TdT reaction solution lower band purified D1: 12.5x AT TdT reaction solution upper band dissolved D2: 12.5x AT TdT reaction solution upper band purified E1: His-C-DZ-LCI (positive control) E2: empty.")
+    +image(13, imgpath, "Purified TdT reaction solution samples from gel (figure x). Trans-Blot Turbo membrane, Penta·His HRP Conjugate Kit (Qiagen), 1:2500 dilution in BSA, incubation for 1 h. A1: 12.5x GC TdT reaction solution lower band dissolved A2: 12.5x GC TdT reaction solution lower band purified B1: 12.5x GC TdT reaction solution upper band dissolved B2: 12.5x GC TdT reaction solution upper band purified C1: 12.5x AT TdT reaction solution lower band dissolved C2: 12.5x AT TdT reaction solution lower band purified D1: 12.5x AT TdT reaction solution upper band dissolved D2: 12.5x AT TdT reaction solution upper band purified E1: His-C-DZ-LCI (positive control) E2: empty.", 50)
         
     :markdown-it
         The positive control is visible, but no other dots. 
@@ -243,7 +242,7 @@ block article
         The binding seems to be strong enough because there was no detectible DNA in the two wash rests.
         A controlled elution of the primers was possible, indicated by a band at primer height.
         
-    - var imgpath = "" + require("../assets/img/teamlogo_2021.svg")["default"]
+    - var imgpath = "" + require("../assets/img/Results/2021-10-05.png")["default"]
     +image(14, imgpath, "<b>Permanent immobilization using biotin-streptavidin binding.</b> A) Magnet beads and primer were conjugated first, and the magnet stick was added afterwards. B) Magnet beads were attached to the magnet stick and primer was added afterwards. 2.5% Agarose TBE, SYBR Gold, 90V, 45 min. M: GeneRuler 50 bp DNA Ladder 1: Biotin-labelled N-Primer 2: Conjugation rest 3: Wash rest 4: Wash rest 5: Elution.")        
         
     :markdown-it
