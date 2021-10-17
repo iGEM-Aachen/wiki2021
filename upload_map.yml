@@ -441,7 +441,7 @@ assets:
     upload_filename: T--Aachen--img--Human Practices--city archive.jpg
   assets/img/Max Schmidt Bild.jpg:
     link_URL: https://2021.igem.org/wiki/images/5/5e/T--Aachen--img--Max_Schmidt_Bild.jpg
-    md5: 62af5cfe42154662795009b7894d326f
+    md5: 537bfd8014ae15213719402f656c02d6
     upload_filename: T--Aachen--img--Max Schmidt Bild.jpg
   assets/img/Outlook/SSBs.svg:
     link_URL: https://2021.igem.org/wiki/images/d/d6/T--Aachen--img--Outlook--SSBs.svg
@@ -1417,7 +1417,7 @@ html:
     md5: 024ba3492ea5f6178159c3923d61ffd7
   Description/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Description
-    md5: 25d4c6e52cef6e8ed12b800ea7c3dbe6
+    md5: 61323f241dac8699e517d21a5329782c
   Description\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Description
     md5: c2b49f97304919602e13a9a9e799f273
