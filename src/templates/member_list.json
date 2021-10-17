@@ -124,8 +124,8 @@
         "surname": "Mirmoini",
         "age": "24",
         "course": "B.Sc. Chemical Engineering",
-        "motivation": "Gaining practical experience in the field of biotechnology with an interdisciplinary team is a great way to meet new people who share the same interests.",
-        "attribution": "",
+        "motivation": "Gaining practical experience in the field of biotechnology with an interdisciplinary team is a great way to meet new people who share the same interests. In hindsight I can truly say that I am glad that I participated in this years IGEM-project because it was everything I hoped for and I met many cool people",
+        "attribution": "As an engineer Amir could provide useful insight for the hardware and modeling subgroup because those are his main area of expertise. Especially in terms of modeling he could help to constuct a dynamic model, implement it and evaluate the simulative data with the help of the experimental results.",
         "categories": [
             "hardware", "modeling"
         ]
