@@ -53,6 +53,8 @@ block article
     - var imgpath = "" + require("../assets/img/modeling/Mich-Men_stranglängen_verteilung.png")["default"]
     +image(2, imgpath, "Concentrations of the DNA length over time. LX: DNA was elongated by X nucleotides.")
 
+    :markdown-it(html)
+
         $$\frac{dDNA}{dt} = \frac{v_{max} \cdot c_{DNA} \cdot c_{dNTP}}{K_{DNA} \cdot K_{dNTP}+K_{DNA} \cdot c_{dNTP}+K_{dNTP} \cdot c_{DNA} +c_{DNA} \cdot c_{dNTP}}$$
         
         # First Results
