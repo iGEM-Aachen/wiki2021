@@ -11,6 +11,18 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/9/95/T--Aachen--documents--collaborations--Presentation_Eindhoven.pdf
     md5: 5333455e6f3d1f2cc6d619c8e97d58be
     upload_filename: T--Aachen--documents--collaborations--Presentation Eindhoven.pdf
+  assets/documents/communication/extractionKitMaterials.pdf:
+    link_URL: https://2021.igem.org/wiki/images/f/f7/T--Aachen--documents--communication--extractionKitMaterials.pdf
+    md5: f1aae2e7d6058aee5d6479737fde40ef
+    upload_filename: T--Aachen--documents--communication--extractionKitMaterials.pdf
+  assets/documents/communication/extractionKitStudents.pdf:
+    link_URL: https://2021.igem.org/wiki/images/b/b0/T--Aachen--documents--communication--extractionKitStudents.pdf
+    md5: 569a11fea5c0c26e4efcd5c9941012a8
+    upload_filename: T--Aachen--documents--communication--extractionKitStudents.pdf
+  assets/documents/communication/extractionKitTeacherBackgroundInformation.pdf:
+    link_URL: https://2021.igem.org/wiki/images/4/43/T--Aachen--documents--communication--extractionKitTeacherBackgroundInformation.pdf
+    md5: 5a3029088b75ecd4633fe78e1f7ecccd
+    upload_filename: T--Aachen--documents--communication--extractionKitTeacherBackgroundInformation.pdf
   assets/documents/protocols/00_01_10%-APS-recipe.pdf:
     link_URL: https://2021.igem.org/wiki/images/d/d4/T--Aachen--documents--protocols--00_01_10%25-APS-recipe.pdf
     md5: ca573294b0311a82db7b20477c6b98e6
@@ -519,6 +531,54 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/a/af/T--Aachen--img--all_sponsors.png
     md5: 503b87f7dd95dec3653be7b916d1d7db
     upload_filename: T--Aachen--img--all_sponsors.png
+  assets/img/communication/extractionKit1.jpg:
+    link_URL: https://2021.igem.org/wiki/images/0/0b/T--Aachen--img--communication--extractionKit1.jpg
+    md5: ce68314ce3f98cefd4f0f0d16b6df3ce
+    upload_filename: T--Aachen--img--communication--extractionKit1.jpg
+  assets/img/communication/extractionKit10.jpg:
+    link_URL: https://2021.igem.org/wiki/images/2/22/T--Aachen--img--communication--extractionKit10.jpg
+    md5: 51f9396ffddeb31417013c6d14afea39
+    upload_filename: T--Aachen--img--communication--extractionKit10.jpg
+  assets/img/communication/extractionKit11.jpg:
+    link_URL: https://2021.igem.org/wiki/images/c/c9/T--Aachen--img--communication--extractionKit11.jpg
+    md5: 9376082ff16352b3f324247d763803ee
+    upload_filename: T--Aachen--img--communication--extractionKit11.jpg
+  assets/img/communication/extractionKit12.jpg:
+    link_URL: https://2021.igem.org/wiki/images/f/f5/T--Aachen--img--communication--extractionKit12.jpg
+    md5: f49c414d726d96a61582703533083402
+    upload_filename: T--Aachen--img--communication--extractionKit12.jpg
+  assets/img/communication/extractionKit2.jpg:
+    link_URL: https://2021.igem.org/wiki/images/a/ab/T--Aachen--img--communication--extractionKit2.jpg
+    md5: 8e3147d430b11c635ca12650ded267b8
+    upload_filename: T--Aachen--img--communication--extractionKit2.jpg
+  assets/img/communication/extractionKit3.jpg:
+    link_URL: https://2021.igem.org/wiki/images/a/ad/T--Aachen--img--communication--extractionKit3.jpg
+    md5: ce7956388e5a59a22efec90621caf4e5
+    upload_filename: T--Aachen--img--communication--extractionKit3.jpg
+  assets/img/communication/extractionKit4.jpg:
+    link_URL: https://2021.igem.org/wiki/images/2/2d/T--Aachen--img--communication--extractionKit4.jpg
+    md5: f919164c035cbef7631547ca4a454327
+    upload_filename: T--Aachen--img--communication--extractionKit4.jpg
+  assets/img/communication/extractionKit5.jpg:
+    link_URL: https://2021.igem.org/wiki/images/3/39/T--Aachen--img--communication--extractionKit5.jpg
+    md5: 36fba8c33566c43cb0750b285c957607
+    upload_filename: T--Aachen--img--communication--extractionKit5.jpg
+  assets/img/communication/extractionKit6.jpg:
+    link_URL: https://2021.igem.org/wiki/images/3/38/T--Aachen--img--communication--extractionKit6.jpg
+    md5: 024ce4828b726d484eff4986f763fecf
+    upload_filename: T--Aachen--img--communication--extractionKit6.jpg
+  assets/img/communication/extractionKit7.jpg:
+    link_URL: https://2021.igem.org/wiki/images/9/90/T--Aachen--img--communication--extractionKit7.jpg
+    md5: f1dcb124d9064b8cd5cfd99a2b2e8f45
+    upload_filename: T--Aachen--img--communication--extractionKit7.jpg
+  assets/img/communication/extractionKit8.jpg:
+    link_URL: https://2021.igem.org/wiki/images/a/a8/T--Aachen--img--communication--extractionKit8.jpg
+    md5: 83ce7bf3eeb882dd15510002b1350019
+    upload_filename: T--Aachen--img--communication--extractionKit8.jpg
+  assets/img/communication/extractionKit9.jpg:
+    link_URL: https://2021.igem.org/wiki/images/d/d2/T--Aachen--img--communication--extractionKit9.jpg
+    md5: 5dcb9c759d09897c93084303cfa2495d
+    upload_filename: T--Aachen--img--communication--extractionKit9.jpg
   assets/img/communication/hightechforum1.jpg:
     link_URL: https://2021.igem.org/wiki/images/8/82/T--Aachen--img--communication--hightechforum1.jpg
     md5: f8577a42802973fa9677bd3343410d0d
@@ -1538,7 +1598,7 @@ html:
     md5: 0ba5d0725c84c2dad4c72618fdb07412
   Science_Communication/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Science_Communication
-    md5: b94dd8f78f2d10383f7a3fc36715ca6d
+    md5: 7bd175b5177740dd3437d0cdf7c4b474
   Software/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Software
     md5: 19b4b308df13b73d20f6221280310af7
