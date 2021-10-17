@@ -8,12 +8,33 @@ block headVars
 block article
     :markdown-it(html)
     
+        # Meeting with George Church
+        
+        George Church, PhD is a Professor at Harvard University, coinventor of nanopore sequencing, and of course expert for digital data storage using DNA.
+        He was involved in the first genomic sequencing, the Human Genome Project, optimization of CRISPR/Cas9, and many more projects concerning synthetic biology.
+        
+        We started into the meeting with a sheet full of questions considering our project implementation. 
+        The first plans of our teams were to use a laser to control the TdT reaction in a flow cell. 
+        This system was inspired by a publication of George Church himself. 
+        He recommended not to use this system due to complexity and high costs and advised to focus on the immobilization of primers. 
+        Mr. Church was also able to help us with other problems in our project, which can be read about at [integrated human practices](https://2021.igem.org/Team:Aachen/Human_Practices).
+        
+        Our discussion also focused on the content and meaning of data storage on DNA. 
+        When asked what he would store on DNA, Mr. Church replied that the recreation of technology should be stored because humanity got “[…] to a point where nobody really knows how to do things from scratch”. 
+        He is convinced that data storage on DNA will be used in the future and revealed that he prefers in vivo storage. 
+        Considering the implementation of long-time storage, he suggested storing DNA cold and dry, e.g. on the moon. 
+        Based on our surprised reaction about his futuristic ideas, he replied: “The future sometimes arrives faster than you think, sometimes slower.”
+        
+        We are very grateful that Mr. Church would like to have more meetings with us and that he was able to enrich us with his ideas. 
+        We think this was one of the most inspiring meetings we had.
+    
         # Conversation at the city archive in Aachen
         
         In order to be able to adapt our ideas to the later application, we got into contact with a potential user of our DNA data storage.
         We visited the city archive in Aachen to discuss long-term storage. 
         Archive manager Dr. René Rohrkamp revealed to us that the primary task of an archive is the disposal of information.
         Only 1-2% of the local information is stored in a city archive.
+        
         The goal of Dr. Rohrkamp and the employees is to store data in such a way that even after a long time, it is possible to recognize what everyday life in Aachen used to be like.
         The city archive is currently in the process of digitalizing many documents and storing them in a long-term repository (server archive) in Cologne.
         However, this includes many problems: First, extremely high costs are involved. 
@@ -22,19 +43,16 @@ block article
         Third, for security, the electronic signature of the memories must be changed every few years as a seal of quality and a warning signal in case of hacker attacks.
         During our discussion, we also addressed the topic of data loss.
         Today much is clarified via email and not signed, stamped, and stored, which is why data is lost and a black hole of information is created.
+        
         Furthermore, we wanted to know if the value of a document is diminished by digital storage.
         Digitalization is desirable, as this makes the documents available to the general public on the Internet.
         In conclusion, the city archive is looking for cheaper, uniform, and safe data storage.
-        
-        How we integrated this information into our project can be observed in [integrated human practices](TODO).
-        Based on the proposals and expectations of the archive manager and employees of the city archive in Aachen we developed a guideline of information storage.
-        
-         [//]: # (# Es fehlt noch ein Link zu integrated human practices, falls es diese Seite geben wird.)
+        How we integrated this information into our project can be observed at [integrated human practices](https://2021.igem.org/Team:Aachen/Human_Practices).
 
     - var imgpath = "" + require("../assets/img/discussion_city_archive.jpg")["default"]
     +image(1, imgpath, "Conversation at the city archive in Aachen")
     
-    :markdown-it(html)
+    :markdown-it
         
         # Meeting with Steven Benner
         
@@ -45,24 +63,16 @@ block article
         According to Mr. Benner, integrating unnatural nucleotides like Z and P could have two main effects on our storage system: 
         A larger number of available nucleotides opens up new possibilities in coding and increases the storage capacity of the DNA. 
         A second effect is the decrease of secondary structure formation due to less equal sequences. 
-        But, this could also have some negative impacts on the analysis of DNA, as unnatural nucleotides are not recognized in nanopore sequencing. 
-        Therefore, we have made efforts to find other methods of analysis (more information here)[TODO]. 
-        Additionally, unnatural nucleotides are not available on the market, so we have dealt with this issue mainly theoretically (read link to get more information). 
         
         Due to his many years of laboratory experience, Mr. Benner could also provide us with some additional recommendations. 
+        Read how we implemented these information into our project at [integrated human practices](https://2021.igem.org/Team:Aachen/Human_Practices).
         Despite the view that the TdT can also accept unnatural nucleotides, this must be observed for our specific kind of TdT and reaction buffer [2](#citation2). 
-        Mr. Benner also advised us not to use nucleotides with photolabile groups as their size probably prevents the incorporation by the TdT into ssDNA strands. 
-        Based on these considerations, we have rethought our hardware and developed a new system, which is less oriented towards already known systems. 
-        Mr. Benner also confirmed that the application of SSBs to avoid secondary structures is worth a try.
-        
         In summary, we had a particularly enriching conversation with some valuable tips and tricks for the implementation of our project. 
-        
-        [//]: # (# Die Quellen müssen später in richtiger Reihenfolge am Seitenende aufgelistet werden. Es fehlt noch einige Links.)
        
     - var imgpath = "" + require("../assets/img/meeting_benner.jpeg")["default"]
     +image(2, imgpath, "Meeting with Steven Benner")
     
-    :markdown-it(html)
+    :markdown-it
     
         # Meeting with Jost Muth and Lena Julie Freund from the Fraunhofer IME Aachen 
 
@@ -91,12 +101,13 @@ block article
     - var imgpath = "" + require("../assets/img/Max Schmidt Bild.jpg")["default"]
     +image(3, imgpath, "Meeting Maximilian Schmidt in the lab in Aachen")
     
-    :markdown-it(html)
+    :markdown-it
     
-        # Meetings with Prof. Weinhold 
+        # Meetings with Elmar Weinhold 
         
         Prof. Weinhold accompanied us on our path from the very beginning of our journey in February where we were still figuring out our topic. 
         He is an organic chemist focusing on tools for genomics and proteomics. 
+        
         Weinhold directly was enthusiastic about our project. 
         He pointed out a few challenges we might be facing in course of our work in the wet lab. 
         On our second meeting in March, we discussed the prevention of secondary structures and he advised us to use photolabile protecting groups (read more about it in the outlook). 
@@ -106,12 +117,13 @@ block article
         He advised us to try out the Streptavidin-Biotin magnetic immobilization, which ended up being our preferred system. 
         Weinhold always met us with lots of positivity and enthusiasm and motivated us throughout the competition.  
         
-    :markdown-it(html)
+    :markdown-it
 
         # Meeting with Dr. Florian Kraft
     
         Next-generation sequencing is a modern sequencing method, which enables massively parallel sequencing of numerous genes and has thus revolutionized genetic diagnostics in recent years. 
         Dr. Florian Kraft, post-doc at the Institut for human genetic in the uni hospital in Aachen, deals precisely with New Sequencing techniques, especially Nanopore sequencing, which is our preferrable method to analyze our synthesized sequences.
+        
         Before our meeting and towards the end of our project we exchanged a lot of E-Mail’s and asked Dr. Kraft many questions about our samples for Nanopore sequencing,  which he was always happy to answer. 
         During our meeting in the middle of April, he explained the requirements for Nanopore-sequencing, such as the right primer length for Nanopore-sequencing. 
         He raised the issue that using Homopolymers may be difficult because the nanopore could not detect the length of the polymer. 
@@ -119,13 +131,14 @@ block article
         Eventually, he proposed the opportunity to sequence our samples at the uni hospital at a low cost.
         We gladly accepted his offer and want to thank Dr. Kraft again for the great opportunity!
         
-    :markdown-it(html)
+    :markdown-it
     
         # Meeting with Dominik Heider and Anke Becker 
         
         DNA data storages is a topical subject and attracts the attention of scientists from different fields.
         To drive innovation forward we believe it is crucial to meet and exchange ideas with people working on the same topic.
         For this reason, we met with Dominic Heider and Anke Becker, who are both involved in the project MOSLA (Molecular Storage for Longterm Archiving), at the beginning of June. 
+        
         The project is designated to research of a DNA data storage. 
         Dominic Heider is a bioinformatician working on Coding and especially on Error correction. 
         Anke Becker is a Professor for Biology woking on the integration of unnatural bases in the storage code and on DNA-based Cloud-storages in different in vitro and in vivo formats. 
@@ -135,7 +148,7 @@ block article
         Furthermore, she advised us to integrate an unnatural base pair to increase the data density and avoid secondary structures. 
         It was a great opportunity to discuss our project with people working on the same subject.
 
-    :markdown-it(html)
+    :markdown-it
         
         # Meeting with Prof. Kalinowski and Dr. Rückert
          
@@ -151,7 +164,8 @@ block article
         
         In June we met with Prof. Doerte Rother, Dr. Thorsten Sehl and Jan Dirk-Spöring from FZ Jülich from the group of Biocatalysis. 
         Dörte Rother is an expert in the field of enzyme immobilization and showed us possibilities which suit our purposes. 
-        Back then, we haven’t decided whether we should immobilize a biotinylated primer on a Streptavidin plate, which is inspired by George Church, or use the new “Dip method”. 
+        
+        Back then, we have not decided whether we should immobilize a biotinylated primer on a Streptavidin plate, which is inspired by George Church, or use the new “Dip method”. 
         Prof. Rother elaborated every immobilization method with us, showing us advantages and challenges. 
         For the case that we choose the first approach, she warned us that immobilizing the enzyme by dialysis or any other kind of membrane could be disadvantageous because it can be blocked by the material fast. 
         For the dipping method she advised us to immobilize biotinylated primer on a Streptavidin-coated magnetic bead and to use a magnetic stick. 
@@ -161,11 +175,11 @@ block article
     - var imgpath = "" + require("../assets/img/Human Practices/2021-06-11_Meeting-Rother.png")["default"]
     +image(4, imgpath, "Description of the image")
     
-     :markdown-it(html)
+     :markdown-it
      
         # Meeting with Dr. Martin Zimmermann
         
-        Especially at the beginning of our project, we had severe problems with our analytics. Gels did not run well, samples were not visible and many members of our team had little to no lab experience.
+        At the beginning of our project, we had severe problems with our analytics. Gels did not run well, samples were not visible and many members of our team had little to no lab experience.
         Dr. Martin Zimmermann is both the study coordinator of the Biological Sciences faculty and an expert in many biological fields including biological analysis methods.
         During the whole project, we repeatedly exchanged E-Mails and Dr. Zimmermann examined our issues detailly. 
         We met with Dr. Zimmermann at the end of May. He introduced us to denaturated Polyacrylamide gels and helped us establish the right analytics for our unconventional samples. Among other things, we discussed gel runtime, gel thickness, the right voltage and staining methods of our gels.
@@ -173,13 +187,14 @@ block article
         Furthermore, he suggested silver staining as a sustainable method to stain PAA gels and longer primers to establish better reaction conditions for our enzyme, which we implemented rapidly.
         At the end of our Meeting, Dr. Zimmermann once more drew attention to Polyacrylamide. He advised us to be extra careful when handling the neurotoxic chemical. Click here to see our safety guidelines.
 
-    :markdown-it(html)
+    :markdown-it
     
         # Meeting with Dr. Sebastian Palluk
     
         Dr. Palluk is co-founder and CTO of Ansa Biotechnologies, a startup developing enzymatic DNA synthesis technologies. He himself participated in the iGEM competition himself and experienced that synthesizing DNA on your own was challenging. 
         Now he works with a genetically modified TdT for biological applications and aims to improve the synthesis system for future implications.
         Mr. Palluk was probably one of our most important supporters. 
+        
         We met with him three times in total and had frequent E-Mail contact during the whole project.
         In our first meeting, we started off by presenting our ideas and two approaches to encode data on DNA.
         Furthermore, we discussed four different ideas to prevent the formation of secondary structure of ssDNA and the affinity of the TdT for 3´OH base modifications.
