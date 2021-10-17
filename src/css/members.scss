@@ -51,14 +51,15 @@ $anim-speed: 0.3s;
         position: relative;
         border-radius: 3px;
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, .05);
+        text-size-adjust: relative;
         &:before {
             content: '';
-            background: linear-gradient( to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+            background: linear-gradient( to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%);
             width: 100%;
-            height: 70%;
+            height: 100%;
             opacity: 0;
             position: absolute;
-            top: 100%;
+            top: 0%;
             left: 0;
             z-index: 2;
             transition-property: top, opacity;
@@ -95,7 +96,7 @@ $anim-speed: 0.3s;
             .info {
                 line-height: 1.2;
                 margin-top: 5px;
-                font-size: 20px;
+                font-size: medium;
             }
         }
         &:focus,
@@ -105,7 +106,7 @@ $anim-speed: 0.3s;
                 opacity: 1;
             }
             &:before {
-                top: 30%;
+                top: 0%;
             }
             span {
                 top: 0;
