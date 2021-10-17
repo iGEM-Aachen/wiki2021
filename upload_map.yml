@@ -415,6 +415,14 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/a/af/T--Aachen--img--all_sponsors.png
     md5: 503b87f7dd95dec3653be7b916d1d7db
     upload_filename: T--Aachen--img--all_sponsors.png
+  assets/img/communication/hightechforum1.jpg:
+    link_URL: https://2021.igem.org/wiki/images/8/82/T--Aachen--img--communication--hightechforum1.jpg
+    md5: f8577a42802973fa9677bd3343410d0d
+    upload_filename: T--Aachen--img--communication--hightechforum1.jpg
+  assets/img/communication/hightechforum2.jpg:
+    link_URL: https://2021.igem.org/wiki/images/6/6e/T--Aachen--img--communication--hightechforum2.jpg
+    md5: bd772bc86c8d318dae72f6225985f151
+    upload_filename: T--Aachen--img--communication--hightechforum2.jpg
   assets/img/contribution/Benchling_Structure.jpg:
     link_URL: https://2021.igem.org/wiki/images/3/35/T--Aachen--img--contribution--Benchling_Structure.jpg
     md5: 3634c48b9c6f6af2d03214edeb400110
@@ -1386,7 +1394,7 @@ html:
     md5: 0ba5d0725c84c2dad4c72618fdb07412
   Science_Communication/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Science_Communication
-    md5: 9667733898eb2959993fb0fc1480bf51
+    md5: b57f76ef3918cb62ac45cd3025b1f977
   Software/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Software
     md5: bedea13721b50851c1475598f389c53f
