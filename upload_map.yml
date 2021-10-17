@@ -1366,19 +1366,19 @@ assets:
 css:
   css/attributions.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/attributionsCSS?action=raw&ctype=text/css
-    md5: 49a1e579e0258a7526a2d8f3bc019923
+    md5: f1f10fae920e1abaac57dba648305186
   css/content.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/contentCSS?action=raw&ctype=text/css
-    md5: d10929a2e546e7f37bad0ac3ccadb40e
+    md5: 3a06047cd8e1c83729cf5053c9ab7972
   css/index.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/indexCSS?action=raw&ctype=text/css
-    md5: 64d21929bf1a555541a66613e4906ebe
+    md5: ddf39d139d0ebf28c3b2a71c7b2bc072
   css/members.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/membersCSS?action=raw&ctype=text/css
-    md5: 20cf4e6d0880e128b182c1e9715068e7
+    md5: 59244a8a196e91ac4c661a28b37051e5
   css/memes.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/memesCSS?action=raw&ctype=text/css
-    md5: 377afc69cbd9c822730f94a85e414bc3
+    md5: efa9529aa31bdfbb843635468caf5fe5
   css/team.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/teamCSS?action=raw&ctype=text/css
     md5: 63b9a397ff247388fa1c8892544a5f6a
