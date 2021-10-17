@@ -6,8 +6,17 @@ block headVars
     - var requireMathJax = true
 block article
     :markdown-it(html)
-        # Motivation
-        
+        #Motivation
+        This year the project aimed to construct an enzymatic de novo DNA-Synthesis for data storage. 
+        Since our motivation is using it for the long-term storage of huge amounts of data, a high level of automation is crucial. 
+        Of course, there are already existing devices for DNA synthesis, 
+        but the already well-engineered devices for the traditional phosphoramidite synthesis rely on a fundamentally different principle while newer approaches for enzymatical DNA syntheses have major drawbacks when it comes to the synthesis of long strands. 
+        Due to these reasons, we decided to construct a new hardware from scratch that is specially adapted to our needs.
+        For the commercial application, also an optimization towards a fast and cheap operation should remain possible.
+
+        The DIP method allowed us to take a completely new approach to automate DNA synthesis. We wanted to keep it as simple as possible so that it could be easily replicated. 
+        The simplest way to automate the DIP method is to work with a revolver containing reaction vessels with the enzyme solutions and one nucleotide each, as well as two reaction vessels with wash solution.
+        # DIPsy
         Initially, our work was very much based on George Church's paper on DNA synthesis for data storage. 
         We wanted to replicate the flow cell with light pulses to control the reaction. 
         However, we discarded the idea of the light-driven reaction after Church shared his experience with us and advised against it. 
