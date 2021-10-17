@@ -6,14 +6,14 @@
 - doi: https://doi.org/10.1038/s41467-020-18681-5
 # 4
 - article:
-    authors: "Edward A. Motea, Anthony J. Berdis"
+    authors: "Motea, E. A., Berdis, A. J."
     year_published: 2010
     title: "Terminal deoxynucleotidyl transferase: The story of a misguided DNA polymerase"
     journal: "Biochimica et Biophysica Acta (BBA) - Proteins and Proteomics"
     numbers: "1804 (5) 1151-1166"
 # 5
 - article:
-    authors: "L. M. S. Chang and F. J. Bollum"
+    authors: "Chang, L. M. S. and Bollum, F. J."
     year_published: 1970
     title: "Deoxynucleotide-Polymerizing Enzymes of Calf Thymus Gland, IV. Inhibition of Terminal Deoxynucleotidyl Transferase by Metal Ligands"
     journal: "Proceedings of the National Academy of Sciences"
