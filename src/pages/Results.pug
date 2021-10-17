@@ -7,7 +7,6 @@ block headVars
 
 block article
     :markdown-it(html)
-
         # Introduction
         # Materials and Methods
         Detailed SOPs (standard operating procedures) can be found [here](https://2021.igem.org/Team:Aachen/Protocols).
@@ -77,7 +76,71 @@ block article
         ### Comparison of Thermo Fisher Scientific and NEB TdT
         ## Primer Immobilization
         ### Testing the Immobilization System
+        In this assay, we wanted to test if we could bind an anchor peptide to a polystyrene stick as the first experiment for our immobilization system. 
+        For this, we used two different anchor peptides, provided to us by the Institute for Interactive Materials (DWI): 
+        LCI and MacHis, which are attached to a domain Z (DZ), a Cysteine (C), and a His-Tag (His) (see [experiments]( https://2021.igem.org/Team:Aachen/Experiments)). 
+        As a negative control, His-eGFP was used. There is no anchor peptide in this construct, so it should not significantly bind to the stick.
+        
+        For binding the anchor peptides to the polystyrene sticks, we incubated the sticks in the different fusion protein solutions. 
+        It has to be said that the negative control was 25 times more concentrated.
+        
+        To make the binding visible, we used Penta-His-HRP-Antibodies, which can attach to the His-Tag of the fusion proteins. 
+        These antibodies are bound to the enzyme horseradish peroxidase (HRP), which catalyzes the oxidation of organic substrates by hydrogen peroxide. 
+        1-Step Ultra TMB-ELISA substrate solution contains 3,3',5,5'-Tetramethylbenzidine (TMB), which acts as a substrate for the HRP and turns blue in the reaction. 
+        After adding 2 M sulfuric acid stop solution, the color changes to yellow (figure X). 
+        We measured the absorbance at its maximum of 450 nm (table X).
+        
+    - var imgpath = "" + require("../assets/img/Results/2021-07-01_01.png")["default"]
+    +image(4, imgpath, "Samples after incubation with polystyrene stick and protein constructs. Immunoassay with the Penta-His-HRP-Antibodies and TMB as substrate. The yellow color quantifies the presence of antibodies and, therefore the presence of the anchor peptide. 1: His-eGFP (negative control), 2: His-C-DZ-LCI, 3: contains His-C-DZ-MacHis.")
+    
+    - var imgpath = "" + require("../assets/img/Results/2021-07-01_table.png")["default"]
+    +image(5, imgpath, "Absorbance at 450 nm of the protein samples after immunoassay. The negative control was 25 times more concentrated, so this factor has to be considered.")
+    
+    :markdown-it
+        In figure X, one can see that the coloring in samples 2 and 3 with the anchor peptides is more intensive than in sample 1, even if the concentration of the anchor peptide constructs was much lower than the negative control. 
+        Also, figure x shows that the absorbance of sample 2 and 3 is higher.
+        This illustrates that the anchor peptides can bind almost 34 times better to the polystyrene sticks as the negative control and that they do not wash off.
+        It can be said, that both anchor peptides bind to the stick with similar intensity because the absorbance does not differ significantly.
+              
+    - var imgpath = "" + require("../assets/img/Results/2021-07-22_SDS.png")["default"]
+    +image(6, imgpath, "Conjugation of AC6 AT-rich ssDNA Primer with the fusion protein. NuSep Tris-Glycine protein gel, Neo Biotech Quick Coomassie Stain overnight, 140 V, 70 min. The samples were heated to 95 °C for 10 min. M: PageRuler Prestained Protein Ladder 1: protein before conjugation (negative control), 2: protein after conjugation with AT-rich ssDNA primer.")
+        
+    :markdown-it
+        It was expected that the conjugate runs significantly higher than the negative control because the primer is 100 nt long and increases the molecular weight, which should impact the running behavior. 
+        Additionally, the anchor peptide has five binding sites in its structure. 
+        It was expected to see more than one band because a different number of primers could bind to one protein construct. 
+        As only one band approximately at the same height as the negative control is visible, we assumed that the conjugation did not work correctly. 
+        The reason for that could be a wrong ratio of primer and anchor peptide or a wrong concentration of EDC.
+        
+        Even though the conjugation seemed to be unsuccessful, we tried to immobilize the conjugates on a polystyrene stick. 
+        The sticks were incubated in the conjugate as well as in pure AC6-primer solution as negative control and then washed in 1x PBS. 
+        To break the binding between the anchor peptide and the stick we cooked the sticks for 15 minutes at 70 °C. 
+        The anchor peptide should denature at this temperature and the conjugate should be in solution again. 
+        The negative control was treated in the same way. 
+        Additionally, we tried a standard TdT reaction with the pure AC6-primer and the conjugate to analyze whether the peptide influences elongation. 
+        To analyze these reactions, we performed an agarose gel electrophoresis (figure X).  
+        
+    - var imgpath = "" + require("../assets/img/Results/2021-08-03_01.png")["default"]
+    +image(7, imgpath, "Standard TdT reaction (dTTP 15 min) with the conjugate and elutions of immobilizations with AC6 primer and AC6 primer-peptide conjugate. 2.5% Agarose with TBE, SYBR Gold, staining, 90 V, 60 min. M: GeneRuler 50 bp DNA Ladder 1: AC6 primer 2: AC6 primer after TdT reaction 3: AC6-primer-peptide conjugate 4: heated AC6-primer-peptide conjugate 5: AC6-primer-peptide conjugate after TdT reaction 6: elution of AC6-primer after immobilization 7: elution of AC6-primer after immobilization and TdT reaction 8: elution of AC6-primer-peptide conjugate after immobilization 9: elution of AC6-primer-peptide conjugate after immobilization and TdT reaction.")
+        
+    :markdown-it
+        Lane 2 shows, that the AC6-primer itself can be elongated by the TdT.
+        Lane 1 serves as a reference for this reaction.
+        Compared to that, the AC6-primer-peptide conjugate was elongated in lane five.
+        The bands are approximately at the same height, which is an indication of the failure of the conjugation:
+        As described above, the anchor peptide should influence the running behavior and we would expect a higher band if the conjugation had worked.
+        Additionally, the references of the conjugation sample in lanes 3 and 4 also do not show a significant difference to the band of the pure AC6-primer.
+        
+        The fact that we cannot see anything in lanes 6 and 7 illustrates, that the AC6-primer cannot bind to the polystyrene stick without the anchor peptide.
+        Against expectation, there are also no bands visible in lanes 8 and 9. So, these results support the guess that the conjugation did not work.
+        
         ### Immobilization with Amino-Primer
+        The next step was to link our Amino C6-primer (AC6-primer) to the anchor peptide. 
+        We used a slightly different protein construct, also provided by our instructor (see [experiments]( https://2021.igem.org/Team:Aachen/Experiments)). 
+        For this, we used 1-Ethyl-3-(3-dimethylaminopropyl)carbodiimide (EDC) as the initializer of the linking reaction and incubated the components for 24 hours. 
+        To check whether the conjugation was successful, our instructor performed an SDS-PAGE to compare the protein before and after the reaction (figure X).
+        
+        
         ### Immobilization with Maleimide-Primer
         The maleimide-cysteine-bond was more likely to work than the amino bond because it was already shown to work with maleimide-labeled proteins [citation schwaneberg paper]. 
         Thus, we switched methods as soon as the maleimide-labeled oligos arrived and performed the conjugation of the oligos with the fusion protein construct LCI-DZ-C-His6 (see Experiments). 
@@ -85,7 +148,7 @@ block article
         Assuming that successfully binding the protein construct to the oligo would change its running behavior, we performed an agarose gel electrophoresis with the conjugates.
     
     - var imgpath = "" + require("../assets/img/Results/2021-08-19_01.png")["default"]
-    +image(4, imgpath, "**Conjugations of LCI-fusion-protein with AT-rich and GC-rich maleimide-labeled ssDNA primers and different primer excesses.** 2.5% Agarose with TBE, 90 V, 60 min, SYBR Gold staining. M: GeneRuler 50 bp DNA Ladder 1: GC-rich primer reference 2: AT-rich primer reference, 3: Conjugation with 12.5x GC-rich primer excess 4: Conjugation with 5x GC-rich primer excess 5: Conjugation with 2x GC-rich primer excess 6: Conjugation with 12.5x AT-rich primer excess.")
+    +image(8, imgpath, "**Conjugations of LCI-fusion-protein with AT-rich and GC-rich maleimide-labeled ssDNA primers and different primer excesses.** 2.5% Agarose with TBE, 90 V, 60 min, SYBR Gold staining. M: GeneRuler 50 bp DNA Ladder 1: GC-rich primer reference 2: AT-rich primer reference, 3: Conjugation with 12.5x GC-rich primer excess 4: Conjugation with 5x GC-rich primer excess 5: Conjugation with 2x GC-rich primer excess 6: Conjugation with 12.5x AT-rich primer excess.")
     
     :markdown-it
         Figure # shows clear primer bands as reference. The GC-rich oligo runs lower than the AT-rich oligo because of secondary structure formation in the native gel. 
@@ -97,7 +160,7 @@ block article
         Unfortunately, the blot did not work and we did not have enough of the samples to try again.
         
     - var imgpath = "" + require("../assets/img/Results/2021-08-25_02.png")["default"]
-    +image(5, imgpath, "**Standard TdT reactions with dTTP with purified conjugations of LCI-fusion-protein and ssDNA primers.** 2.5% Agarose with TBE, 90 V, 60 min, SYBR Gold staining. M: GeneRuler 50 bp DNA Ladder 1: AT-rich primer reference 2: GC-rich primer reference, 3: Conjugation with 12.5x GC-rich primer excess 4: TdT reaction with 12.5x-GC-conjugate 5: Conjugation with 5x GC-rich primer excess 6: TdT reaction with 5x-GC-conjugate 7: Conjugation with 2x GC-rich primer excess 8: TdT reaction with 2x-GC-conjugate 9: Conjugation with 12.5x AT-rich primer excess 10: TdT reaction with 12.5x-AT-conjugate 11: Conjugation with PEG (positive control for protein gel) 12: TdT reaction with PEG-Conjugation (negative control).")
+    +image(9, imgpath, "**Standard TdT reactions with dTTP with purified conjugations of LCI-fusion-protein and ssDNA primers.** 2.5% Agarose with TBE, 90 V, 60 min, SYBR Gold staining. M: GeneRuler 50 bp DNA Ladder 1: AT-rich primer reference 2: GC-rich primer reference, 3: Conjugation with 12.5x GC-rich primer excess 4: TdT reaction with 12.5x-GC-conjugate 5: Conjugation with 5x GC-rich primer excess 6: TdT reaction with 5x-GC-conjugate 7: Conjugation with 2x GC-rich primer excess 8: TdT reaction with 2x-GC-conjugate 9: Conjugation with 12.5x AT-rich primer excess 10: TdT reaction with 12.5x-AT-conjugate 11: Conjugation with PEG (positive control for protein gel) 12: TdT reaction with PEG-Conjugation (negative control).")
         
     :markdown-it
         The gel electrophoresis reveals inconclusive results: The purified conjugates are not visible. The concentration is most likely too low to be detected. 
@@ -105,7 +168,7 @@ block article
         This gel was replicated and the conjugates were applied in a higher concentration.
         
     - var imgpath = "" + require("../assets/img/Results/2021-08-26_01.png")["default"]
-    +image(6, imgpath, "**Standard TdT reactions with dTTP with purified conjugates of LCI-fusion-protein and ssDNA primers.** 2.5% Agarose with TBE, 90 V, 49 min, SYBR Gold staining. M: GeneRuler 50 bp DNA Ladder 1: AT-rich primer reference 2: GC-rich primer reference, 3: Conjugation with 12.5x GC-rich primer excess 4: TdT reaction with 12.5x-GC-conjugate 5: Conjugation with 5x GC-rich primer excess 6: TdT reaction with 5x-GC-conjugate 7: Conjugation with 2x GC-rich primer excess 8: TdT reaction with 2x-GC-conjugate 9: Conjugation with 12.5x AT-rich primer excess 10: TdT reaction with 12.5x-AT-conjugate 11: Conjugation with PEG (positive control for protein gel) 12: TdT reaction with PEG-Conjugation (negative control).")
+    +image(10, imgpath, "**Standard TdT reactions with dTTP with purified conjugates of LCI-fusion-protein and ssDNA primers.** 2.5% Agarose with TBE, 90 V, 49 min, SYBR Gold staining. M: GeneRuler 50 bp DNA Ladder 1: AT-rich primer reference 2: GC-rich primer reference, 3: Conjugation with 12.5x GC-rich primer excess 4: TdT reaction with 12.5x-GC-conjugate 5: Conjugation with 5x GC-rich primer excess 6: TdT reaction with 5x-GC-conjugate 7: Conjugation with 2x GC-rich primer excess 8: TdT reaction with 2x-GC-conjugate 9: Conjugation with 12.5x AT-rich primer excess 10: TdT reaction with 12.5x-AT-conjugate 11: Conjugation with PEG (positive control for protein gel) 12: TdT reaction with PEG-Conjugation (negative control).")
         
     :markdown-it
         Here one can see, that the conjugates produce a band approximately at the same height as the reference. 
@@ -127,7 +190,7 @@ block article
         Furthermore, a TdT reaction was performed in the immobilized state.
         
     - var imgpath = "" + require("../assets/img/Results/2021-08-27_01.png")["default"]
-    +image(7, imgpath, "**Immobilization of purified conjugates of LCI-fusion-protein and ssDNA primers on polystyrene stick. Washing steps with 1x PBS buffer, TdT reaction with dTTP, elution by heating to 95 °C.** 2.5% Agarose with TBE, 90 V, 49 min, SYBR Gold staining. M: GeneRuler 50 bp DNA Ladder 1: AT-rich maleimide primer (AT-M) reference 2: AT-M 1st wash solution 3: AT-M 2nd wash solution 4: AT-M elution 5: 12.5x GC-conjugate reference 6: 12.5x GC 1st wash solution 7: 12.5x GC 2nd wash solution 8: 12.5x GC elution 9: 12.5x GC 1st wash solution 10: 12.5x GC 2nd wash solution 11: 12.5x GC TdT reaction solution 12: 12.5x GC TdT elution 13: 5x GC-conjugate reference 14: 5x GC 1st wash solution 15: 5x GC 2nd wash solution 16: 5x GC elution 17: 5x GC 1st wash solution 18: 5x GC 2nd wash solution 19: 5x GC TdT reaction solution 20: 5x GC TdT elution 21: 2x GC-conjugate reference 22: 2x GC 1st wash solution 23: 2x GC 2nd wash solution 24: 2x GC elution 25: 2x GC 1st wash solution 26: 2x GC 2nd wash solution 27: 2x GC TdT reaction solution 28: 2x GC TdT elution 29: 12.5x AT-conjugate reference 30: 12.5x AT 1st wash solution 31: 12.5x AT 2nd wash solution 32: 12.5x AT elution 33: 12.5x AT 1st wash solution 34: 12.5x AT 2nd wash solution 35: 12.5x AT TdT reaction solution 36: 12.5x AT TdT elution.")
+    +image(11, imgpath, "**Immobilization of purified conjugates of LCI-fusion-protein and ssDNA primers on polystyrene stick. Washing steps with 1x PBS buffer, TdT reaction with dTTP, elution by heating to 95 °C.** 2.5% Agarose with TBE, 90 V, 49 min, SYBR Gold staining. M: GeneRuler 50 bp DNA Ladder 1: AT-rich maleimide primer (AT-M) reference 2: AT-M 1st wash solution 3: AT-M 2nd wash solution 4: AT-M elution 5: 12.5x GC-conjugate reference 6: 12.5x GC 1st wash solution 7: 12.5x GC 2nd wash solution 8: 12.5x GC elution 9: 12.5x GC 1st wash solution 10: 12.5x GC 2nd wash solution 11: 12.5x GC TdT reaction solution 12: 12.5x GC TdT elution 13: 5x GC-conjugate reference 14: 5x GC 1st wash solution 15: 5x GC 2nd wash solution 16: 5x GC elution 17: 5x GC 1st wash solution 18: 5x GC 2nd wash solution 19: 5x GC TdT reaction solution 20: 5x GC TdT elution 21: 2x GC-conjugate reference 22: 2x GC 1st wash solution 23: 2x GC 2nd wash solution 24: 2x GC elution 25: 2x GC 1st wash solution 26: 2x GC 2nd wash solution 27: 2x GC TdT reaction solution 28: 2x GC TdT elution 29: 12.5x AT-conjugate reference 30: 12.5x AT 1st wash solution 31: 12.5x AT 2nd wash solution 32: 12.5x AT elution 33: 12.5x AT 1st wash solution 34: 12.5x AT 2nd wash solution 35: 12.5x AT TdT reaction solution 36: 12.5x AT TdT elution.")
         
     :markdown-it
         Unfortunately, the concentrations are so low that it is hard to see bands. 
@@ -148,7 +211,7 @@ block article
         But the PCR samples are not relevant for this experiment.
         
     - var imgpath = "" + require("../assets/img/teamlogo_2021.svg")["default"]
-    +image(8, imgpath, "TdT reaction solution samples from immobilization experiment (figure x, lanes 11, 19, 27, 35) and PCR with those samples (not relevant). 2.5% Agarose with TBE, 90 V, 49 min, SYBR Gold staining. M: GeneRuler 50 bp DNA Ladder 1: AT-M primer reference 2: PCR with AT-M 3: 12.5x GC TdT reaction solution 4: PCR with 12.5x GC TdT reaction solution 5: 5x GC TdT reaction solution 6: PCR with 5x GC TdT reaction solution 7: 2x GC TdT reaction solution 8: PCR with 2x GC TdT reaction solution 9: 12.5x AT TdT reaction solution 10: PCR with 12.5x AT TdT reaction solution.")
+    +image(12, imgpath, "TdT reaction solution samples from immobilization experiment (figure x, lanes 11, 19, 27, 35) and PCR with those samples (not relevant). 2.5% Agarose with TBE, 90 V, 49 min, SYBR Gold staining. M: GeneRuler 50 bp DNA Ladder 1: AT-M primer reference 2: PCR with AT-M 3: 12.5x GC TdT reaction solution 4: PCR with 12.5x GC TdT reaction solution 5: 5x GC TdT reaction solution 6: PCR with 5x GC TdT reaction solution 7: 2x GC TdT reaction solution 8: PCR with 2x GC TdT reaction solution 9: 12.5x AT TdT reaction solution 10: PCR with 12.5x AT TdT reaction solution.")
         
     :markdown-it
         The reference bands are visible.
@@ -158,7 +221,7 @@ block article
         The samples were dissolved in agarose dissolving buffer, one part was purified and a dot blot (immunoblot) was performed to confirm or falsify the presence of protein.
         
     - var imgpath = "" + require("../assets/img/Results/2021-09-09_blot.png")["default"]
-    +image(9, imgpath, "Purified TdT reaction solution samples from gel (figure x). Trans-Blot Turbo membrane, Penta·His HRP Conjugate Kit (Qiagen), 1:2500 dilution in BSA, incubation for 1 h. A1: 12.5x GC TdT reaction solution lower band dissolved A2: 12.5x GC TdT reaction solution lower band purified B1: 12.5x GC TdT reaction solution upper band dissolved B2: 12.5x GC TdT reaction solution upper band purified C1: 12.5x AT TdT reaction solution lower band dissolved C2: 12.5x AT TdT reaction solution lower band purified D1: 12.5x AT TdT reaction solution upper band dissolved D2: 12.5x AT TdT reaction solution upper band purified E1: His-C-DZ-LCI (positive control) E2: empty.")
+    +image(13, imgpath, "Purified TdT reaction solution samples from gel (figure x). Trans-Blot Turbo membrane, Penta·His HRP Conjugate Kit (Qiagen), 1:2500 dilution in BSA, incubation for 1 h. A1: 12.5x GC TdT reaction solution lower band dissolved A2: 12.5x GC TdT reaction solution lower band purified B1: 12.5x GC TdT reaction solution upper band dissolved B2: 12.5x GC TdT reaction solution upper band purified C1: 12.5x AT TdT reaction solution lower band dissolved C2: 12.5x AT TdT reaction solution lower band purified D1: 12.5x AT TdT reaction solution upper band dissolved D2: 12.5x AT TdT reaction solution upper band purified E1: His-C-DZ-LCI (positive control) E2: empty.")
         
     :markdown-it
         The positive control is visible, but no other dots. 
@@ -181,7 +244,7 @@ block article
         A controlled elution of the primers was possible, indicated by a band at primer height.
         
     - var imgpath = "" + require("../assets/img/teamlogo_2021.svg")["default"]
-    +image(10, imgpath, "<b>Permanent immobilization using biotin-streptavidin binding.</b> A) Magnet beads and primer were conjugated first, and the magnet stick was added afterwards. B) Magnet beads were attached to the magnet stick and primer was added afterwards. 2.5% Agarose TBE, SYBR Gold, 90V, 45 min. M: GeneRuler 50 bp DNA Ladder 1: Biotin-labelled N-Primer 2: Conjugation rest 3: Wash rest 4: Wash rest 5: Elution.")        
+    +image(14, imgpath, "<b>Permanent immobilization using biotin-streptavidin binding.</b> A) Magnet beads and primer were conjugated first, and the magnet stick was added afterwards. B) Magnet beads were attached to the magnet stick and primer was added afterwards. 2.5% Agarose TBE, SYBR Gold, 90V, 45 min. M: GeneRuler 50 bp DNA Ladder 1: Biotin-labelled N-Primer 2: Conjugation rest 3: Wash rest 4: Wash rest 5: Elution.")        
         
     :markdown-it
         Another possibility to immobilize primers permanently, was to bind the streptavidin-tagged magnet beads to the magnet stick first and add biotin-labelled primer afterwards.
@@ -202,7 +265,7 @@ block article
         The magnetic binding was apparently not weakened by the envelope because there was no DNA detected in the immobilization rest. 
         
     - var imgpath = "" + require("../assets/img/teamlogo_2021.svg")["default"]
-    +image(11, imgpath, "**Non-permanent primer immobilization using biotin-streptavidin binding.** 2.5% Agarose TBE, SYBR Gold, 90 V, ? min. M: GeneRuler 50 bp DNA Ladder 1: Biotin-labelled N-Primer 2: Immobilization rest 3: Wash rest 4: Wash rest 5: Elution.")        
+    +image(15, imgpath, "**Non-permanent primer immobilization using biotin-streptavidin binding.** 2.5% Agarose TBE, SYBR Gold, 90 V, ? min. M: GeneRuler 50 bp DNA Ladder 1: Biotin-labelled N-Primer 2: Immobilization rest 3: Wash rest 4: Wash rest 5: Elution.")        
         
     :markdown-it
         As a result, the permanent immobilization was more efficient, if biotin-labelled primers are first conjugated to magnetic beads and the magnetic stick is added afterwards.
