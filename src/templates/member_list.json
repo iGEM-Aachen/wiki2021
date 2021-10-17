@@ -146,8 +146,8 @@
         "surname": "Mroczowski",
         "age": "20",
         "course": "B.Sc. Biology and Computer Science",
-        "motivation": "Learning, sharing knowledge, meeting new people and developing new interests is my personal way of life, and I believe working on a project with interesting people in an incredibly fascinating field, provides exactly that.",
-        "attribution": "",
+        "motivation": "Learning, sharing knowledge and meeting new people is my personal way of life, and I believe working on a project with interesting people in an incredibly fascinating field, provides exactly that. In the course of this project I learned a lot about the link between biology and computer science.",
+        "attribution": "Willy contributed to both the IT as well as to the Hardware subgroup. He played a substantial part in the topic selection process and later he did an in depth research on unnatural base parings. Furthermore, he was responsible for structuring the hardware by designing it as well as assembling and programming the electronics behind it",
         "categories": [
             "hardware", "IT", "modeling"
         ]
