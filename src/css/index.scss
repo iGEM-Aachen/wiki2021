@@ -101,7 +101,8 @@ article {
 }
 
 .home-card {
-    padding: 200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     border-radius: 0;
     margin: 0;
     background-color: $igem-dark;
@@ -109,6 +110,9 @@ article {
     position: relative;
     p {
         font-size: 1.5rem;
+    }
+    h1 {
+        margin-bottom: 3rem;
     }
     h1,
     h2 {
@@ -134,6 +138,7 @@ article {
         transition-delay: 0.6s;
     }
     .line {
+        width: auto;
         white-space: nowrap;
         p,
         pre {
