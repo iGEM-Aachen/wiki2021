@@ -120,6 +120,29 @@ block article
         The set of values for the parameters for which the minimum is found is then the end result. 
         This would be the ideal set of kinetic parameters which fit the best with the experimental data. 
        
+        For the regression, we also used previous modeling results to simplify the system, which helped to reduce the computing time and made the model more efficient. 
+        Instead of using a time-dependent pool for the ATPs in the reaction equations, we just used a constant value for the ATP concentration. 
+        This assumption was made because with the three-dimensional plot we found out that the starting concentration of the nucleotides barely influences the kinetics of the reaction network. 
+        This makes sense considering the phenomenon of substrate saturating, which plays a key factor in enzyme kinetics. 
+        So for our examined time interval for the elongation process, we make the assumption that our system is saturated with ATP.
+       
+     - var imgpath = ""+require("../assets/img/modeling Bilder/regression_of_CE-data.jpg")["default"]
+    +image(8,imgpath,"Regression of the capillary electrophoresis data. Results for the first three pools(DNA0: non-elongated DNA strand, DNA1: strand which got elongated by one base pair,DNA2: strand which got elongated by two base pairs)")
+        
+    :markdown-it(html)
+        
+        In the following, the regression results are discussed. 
+        The upper plot shows the results for the first three pools (non-elongated DNA strand, DNA strand which got elongated by one base pair, and the DNA strand which got elongated by two base pairs). 
+        We limited the plot to these three pools because more graphs would make the plot unclear. 
+        Regression analysis is usually a tough task in biological fields because there are way higher measurement errors than in other disciplines.
+        Besides our simulated results fit very well to the wet lab data which is astonishing, considering the fact that we constructed a completely new and multilayered model with our own assumptions. 
+        The new estimated kinetic parameters are:
+        
+        * v_max = 0.00006150 mol/s*g (0.0000083 mol/s*g in literature)
+        * K_DNA = 0.00015318 M (0.001 M in literature)
+        * K_ATP = 0.00021808 M (0.0001 M in literature)
+        
+        
         
         # Conclusion and Outlook
 
@@ -129,10 +152,13 @@ block article
         Furthermore, we evaluated the influences of varying the most important factors and found effective optimization approaches. 
         With the data we generated, we could help the wet lab team to find the most efficient approach to optimize the reaction conditions.
         
+
+        
         Our model could be extended to gain further insights into possible optimization. 
         First, the CE experiment could be repeated to minimize wet-lab data errors. 
         Further, the synthesis could be performed with our hardware to adapt the model to our hardware parameters. 
-        In order to describe especially our hardware. Jet we just studied short elongation with one nucleotide sort. 
+        In order to describe especially our hardware. 
+        Yet we just studied short elongation with one nucleotide sort. 
         Along with this modification effects like secondary structures and other molecular interactions affect the reaction kinetics.
 
 
