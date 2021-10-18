@@ -475,6 +475,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/7/76/T--Aachen--img--Results--2021-06-23_02.png
     md5: 3dcc75455d9cdbdde33cebfaf4e0c7d3
     upload_filename: T--Aachen--img--Results--2021-06-23_02.png
+  assets/img/Results/2021-06-24_01.png:
+    link_URL: https://2021.igem.org/wiki/images/2/27/T--Aachen--img--Results--2021-06-24_01.png
+    md5: f9834864fb8876124fc024e733430e31
+    upload_filename: T--Aachen--img--Results--2021-06-24_01.png
   assets/img/Results/2021-07-01_01.png:
     link_URL: https://2021.igem.org/wiki/images/9/9b/T--Aachen--img--Results--2021-07-01_01.png
     md5: d2635ce77f8668d4f1e3ae80efde3306
@@ -519,6 +523,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/3/3d/T--Aachen--img--Results--2021-10-05.png
     md5: ab1d7c830395a3b2457f144bf6d7c4f2
     upload_filename: T--Aachen--img--Results--2021-10-05.png
+  assets/img/Results/CE_time_reaction_labelled.png:
+    link_URL: https://2021.igem.org/wiki/images/9/95/T--Aachen--img--Results--CE_time_reaction_labelled.png
+    md5: 11569438a74a522507e24dd7e7d0afa5
+    upload_filename: T--Aachen--img--Results--CE_time_reaction_labelled.png
   assets/img/Team.jpg:
     link_URL: https://2021.igem.org/wiki/images/e/e1/T--Aachen--img--Team.jpg
     md5: 90a18079bd21036036f56f6dca72c308
@@ -1584,7 +1592,7 @@ html:
     md5: b840e956ac31ce1bd58521f46f8543f8
   Results/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Results
-    md5: 463113b899ed746c8a26fcbef206abae
+    md5: 62f73a181dd2a0dde8ee68de1c156fc5
   Results\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Results
     md5: 3ae3651a7245a76f0aa61a36f1ead9cd
