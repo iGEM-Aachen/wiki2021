@@ -65,7 +65,10 @@ block article
         Computers work with bytes, so chunks of eight bits.
         Hence, it is natural to first split the string of bits we get from a file into bytes.
         Then, the software converts each byte into trits.
-        Each byte can have $2^8=256$ states.
+        
+        The count of values a number can take is calculated by the formula $b^l$.
+        In this $b$ is the base of the number system, e.g., '2' for the binary system, and$^l$ is the number of digits.
+        Since a byte consists of eight bits with two states each, every byte can have $2^8=256$ states.
         To represent the information of one byte with trits, we need enough trits to represent atleast $256$ different states.
         Five trits can represent $243$ states, since $3^5=243$.
         So obviously, five trits are not enough to encode one byte.
