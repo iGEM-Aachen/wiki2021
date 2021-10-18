@@ -333,9 +333,102 @@ block article
         # Cyclic Synthesis
         ## In Solution
         ## Immobilized
+        
         # Secondary Structures
-        ## GC vs AT Primer
+        As poor elongation with dGTP was shown, further investigations were conducted. 
+        Increasing the amount of enzyme used in the reaction should result in longer strands if the different reactions incubate for the same time. 
+        Three different samples with dGTP and different amounts of TdT were prepared and incubated at RT for 30 min. Gel electrophoresis was performed.
+        
+    - var imgpath = "" + require("../assets/img/Results/2021-06-25_01.png")["default"]
+    +image(20, imgpath, "Standard TdT reaction with dGTP and different amounts of TdT, incubated 30 min at RT. 2.5% Agarose with TBE, SYBR Gold staining, 90 V, 60 min. M: GeneRuler 50 bp DNA Ladder 1: AT-rich primer reference 2: TdT reaction with 0.2 U/µL TdT (standard) 3: TdT reaction with 0.4 U/µL TdT 4: TdT reaction with 0.8 U/µL TdT.") 
+    
+    :markdown-it  
+        It can be seen that all samples have the same length, which indicates that elongation with dGTP is inhibited after some time, most likely due to the formation of secondary structures that make elongation impossible. 
+        This is supported by the CE results in x that show almost no further elongation with dGTP after 60 seconds. 
+        The need for measures that prevent secondary structure formation becomes obvious.
+        
         ## SSBs
+        Using single-stranded DNA binding proteins (SSBs), that stabilize ssDNA in nature, seemed to be a suitable solution. 
+        First experiments with different SSB concentrations in a standard TdT reaction had inconclusive results; the assumption was that the SSBs bound so tightly to the strands that they did not detach after heat treatment at 70 °C and this impacted the running characteristics of our samples. 
+        Thus, we were not able to determine the length of the samples and tell if the reactions with SSBs yielded longer strands. 
+        A sample with SSBs and without nucleotides was also prepared as negative control; if this sample ran higher than the primer reference, we would know that the SSBs are the cause for the high bands, not a TdT reaction. 
+        The same samples were heated to 95°C to denature the SSBs, but subsequent gel electrophoresis yielded the same result as before.
+        
+    - var imgpath = "" + require("../assets/img/Results/2021-07-20_01.png")["default"]
+    +image(21, imgpath, "Standard TdT reactions with dTTP and different SSB concentrations, incubated 10 min at RT. 2.5% Agarose with TBE, SYBR Gold staining, 90 V, 55 min. M: GeneRuler 50 bp DNA Ladder 1: AT-rich primer reference 2: TdT reaction without SSBs (positive control) 3: TdT reaction with 13.2 ng/µL SSBs without nucleotides (negative control) 4: TdT reaction with 1.32 ng/µL SSBs 5: TdT reaction with 2.64 ng/µL SSBs 6: TdT reaction with 6.6 ng/µL SSBs 5: TdT reaction with 13.2 ng/µL SSBs.") 
+    
+    :markdown-it
+        The positive control reaction runs higher than the reference but not as high as in previous reactions with the same conditions; it is unclear why this might be. 
+        In lane 3, an even higher band is visible, but this was the reaction without nucleotides. 
+        This demonstrates, that the SSBs are still attached to the strands and the high band is not a result of a TdT reaction. 
+        SSBs in high concentration bind tightly to the strand and cannot be removed by heating up to 95°C. 
+        The reactions with high SSB concentrations show the same high band (lanes 6 and 7). 
+        With the lowest SSB concentration, two bands are visible. 
+        It is possible that the upper band consists of strands attached to SSBs and the lower band is elongated primer. 
+        However, the upper band is not as high as the other high bands, just as in the reaction with 2.64 ng/µL SSBs. 
+        The SSB is assembled of four identical monomers. 
+        It may be that in very low concentrations, only SSB dimers are formed.
+        
+        This concludes that gel electrophoresis is not an appropriate analysis method for the SSB reactions. 
+        We decided to compare a sample with and without SSBs by performing a PCR and sequencing the samples.
+        
+        Two standard TdT reactions with the GC-rich primer and all nucleotides in higher concentration (50 mM to ensure that the nucleotides cannot be the limiting factor) were incubated for 30 min at 37°C (optimal conditions for TdT). 
+        One sample contained 10 ng/µL SSB (a concentration at which all the strands seem to be attached to an SSB, see figure x) and the other did not. 
+        Gel electrophoresis was performed.
+    
+    - var imgpath = "" + require("../assets/img/Results/SSB_1.png")["default"]
+    +image(22, imgpath, "Standard TdT reactions with nucleotide mix and SSBs, incubated for 30 min at 37 °C. 1% Agarose, SYBR Gold staining, 180 V, 30 min. M: GeneRuler Express DNA Ladder 1: GC-rich primer reference 2: TdT reaction without SSBs 3: TdT reaction with 10 ng/µL SSBs.") 
+    
+    :markdown-it
+        The standard reaction shows a high large smear, so many different lengths of strands are present. 
+        This is most likely due to the usage of all nucleotides because especially C and G quickly form secondary structures, which inhibit TdT. 
+        The sample with SSBs shows a higher band, which was expected from the previous experiment and is most likely a result of SSBs influencing the running behavior of the DNA. 
+        It has to be said that this smear is much higher than the highest bands in the previous SSB experiment (3000 bp instead of 500), which indicates that some elongation must have taken place.
+        
+        Dialysis was performed to be able to attach a clean poly-A tail to the samples for PCR. 
+        6 PCRs per sample were performed to yield more DNA for the subsequent cloning reaction.
+        
+    - var imgpath = "" + require("../assets/img/Results/SSB_2.png")["default"]
+    +image(23, imgpath, "PCR with the TdT reaction samples with and without SSB. 1% Agarose, SYBR Gold staining, 180 V, 30 min. M: GeneRuler Express DNA Ladder 1-6: PCR with TdT reaction samples 7-12: PCR with SSB TdT reaction samples.") 
+    
+    :markdown-it
+        Faint bands are visible at a height of approximately 500 bp, which was the lowest range of the sample before PCR. 
+        This PCR was still performed with the very short PCR primers and low annealing temperature, thus, suboptimal conditions. 
+        That could be why the bands are so faint. The SSB samples show much brighter bands and also a smear that reaches 3000 bp. 
+        But the bands are most intense at 100-500 bp. 
+        So, with both samples, mostly short fragments seem to be amplified.
+        
+        This PCR bias could be due to the difficulty to incorporate dATP in already long strands because more secondary structures occur the longer the strand gets. 
+        This could mean that the PCR product does not reflect the true distribution of ssDNA strands before the PCR.
+        
+        The PCR with the SSB samples still seems to have worked better, which could be due to the fact that SSBs are sometimes used in PCRs to stabilize the single strand.
+        
+        TOPO-cloning was performed with the PCR products as inserts (previous SCL cloning yielded only re-ligands with the samples without SSBs, see figure x), which yielded 800 colonies for the standard sample and 2000 colonies for the SSB sample. 
+        A colony PCR, as well as gel electrophoresis, were performed (figure x).
+        
+    - var imgpath = "" + require("../assets/img/Results/SSB_3.png")["default"]
+    +image(24, imgpath, "Colony PCR of SCL-clones from samples with and without SSBs. 1% Agarose, SYBR Gold staining, 180 V, 30 min. M: GeneRuler Express DNA Ladder 1-23: Colony PCR with clones from sample without SSB 24-39: Colony PCR with clones from sample with SSB.") 
+    - var imgpath = "" + require("../assets/img/Results/SSB_4.png")["default"]
+    +image(25, imgpath, "Colony PCR of TOPO-clones from samples with and without SSBs. 1% Agarose, SYBR Gold staining, 180 V, 30 min. M: GeneRuler Express DNA Ladder 1-16: Colony PCR with clones from sample without SSB 17-32: Colony PCR with clones from sample with SSB.") 
+    
+    :markdown-it
+        The approach without SSBs shows small inserts of approximately 300 bp. 
+        In the approach with SSBs, many different inserts with lengths between 300 bp and 750 bp. 
+        It has to be said that these are just random samples from a batch of countless strands of different lengths and do not function as a representation of the batch. 
+        Nevertheless, this could mean that the samples with SSBs are longer because secondary structures are prevented as the SSB samples have more inserts that are longer than 300 bp. 
+        But it has to be considered that the SSBs seem to improve the outcome of the PCR, so maybe the approach without SSBs also had longer strands (which was seen in the initial reaction, figure x), but these could not be properly amplified.
+        
+        Sanger-sequencing of the SSB sample in figure x, lane 39 proves that the GC-rich primer was elongated by 894 nucleotides, as the GC-rich primer sequence, as well as the poly-A tailing, is apparent, with a random sequence in the middle (figure x). 
+        The sequencing data were of good quality except for the poly-A tail, which complicated the sequencing (figure x, only the M13 forward primer could be used).
+    
+    - var imgpath = "" + require("../assets/img/Results/SSB_5.png")["default"]
+    +image(26, imgpath, "Sanger Sequencing Data of SSB sample in figure x, lane 39. Snapview. Top: Strand overview, Middle: Section with good quality of sequencing data, Bottom: Poly-A tail.") 
+
+    :markdown-it
+        These results do not exclude the strand without SSBs having a similar length, but there is some evidence that could indicate the prevention of secondary structure formation by SSBs and them allowing the TdT to produce longer strands. 
+        Furthermore, it has to be shown if these results apply to the semi-specific synthesis. As it was shown that the SSBs bind tightly to the ssDNA strands, they perhaps not only stabilize the strand but also block elongation by TdT, which would result in sequence gaps. 
+        To summarize, SSBs present a promising method in preventing secondary structures in enzymatic DNA synthesis and other SSBs should be investigated.
+        
         # Conclusion
         # Outlook
         There are many more experiments we would have liked to perform. You can read about our further ideas [here](https://2021.igem.org/Team:Aachen/Outlook).
