@@ -7,10 +7,26 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/6/6e/T--Aachen--Hardware--Bild_beschriftet2.png
     md5: 86ae246638beccff69843c27fade3023
     upload_filename: T--Aachen--Hardware--Bild_beschriftet2.png
+  assets/Hardware/Hardware_Back.JPG:
+    link_URL: https://2021.igem.org/wiki/images/5/51/T--Aachen--Hardware--Hardware_Back.JPG
+    md5: a7bf79216947f8cf2f1b8f6b87fa7fc4
+    upload_filename: T--Aachen--Hardware--Hardware_Back.JPG
+  assets/Hardware/Hardware_Front.JPG:
+    link_URL: https://2021.igem.org/wiki/images/e/e1/T--Aachen--Hardware--Hardware_Front.JPG
+    md5: d6f2192e18eaee46d4fbed140b791a27
+    upload_filename: T--Aachen--Hardware--Hardware_Front.JPG
   assets/Hardware/Schematic.pdf:
     link_URL: https://2021.igem.org/wiki/images/9/9b/T--Aachen--Hardware--Schematic.pdf
     md5: 1ab2bd5d1f611a6423a3c1a8b2b88cb9
     upload_filename: T--Aachen--Hardware--Schematic.pdf
+  assets/Hardware/Video_frontal.mp4:
+    link_URL: https://2021.igem.org/wiki/images/5/53/T--Aachen--Hardware--Video_frontal.mp4
+    md5: 1e4003943367d1d415c28dc1ee16cbf5
+    upload_filename: T--Aachen--Hardware--Video_frontal.mp4
+  assets/Hardware/Video_seitlich.mp4:
+    link_URL: https://2021.igem.org/wiki/images/7/76/T--Aachen--Hardware--Video_seitlich.mp4
+    md5: af1c788802c0e0daeb981ee64d5e543a
+    upload_filename: T--Aachen--Hardware--Video_seitlich.mp4
   assets/description/Hardware.svg:
     link_URL: https://2021.igem.org/wiki/images/6/68/T--Aachen--description--Hardware.svg
     md5: 07cfcdb3f25c7db96fded3efe19daa72
@@ -1553,7 +1569,7 @@ html:
     md5: 2536e4069ecb96c2d028bc359feea07f
   Hardware/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Hardware
-    md5: 664a3de4b26d57d14ba49267333fdb46
+    md5: 4300f26bcd92bf4d8edbb32b425bf7a8
   Hardware\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Hardware
     md5: 915fa1ab55e039398be0474f3a878651
