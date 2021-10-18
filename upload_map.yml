@@ -451,6 +451,14 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/c/cf/T--Aachen--img--Experiments--Experiments--streptavidin-biotin.png
     md5: f785c9da1d5d78200417cf1139926449
     upload_filename: T--Aachen--img--Experiments--Experiments--streptavidin-biotin.png
+  assets/img/Experiments/GC_Oligo_mit_SSB.png:
+    link_URL: https://2021.igem.org/wiki/images/5/50/T--Aachen--img--Experiments--GC_Oligo_mit_SSB.png
+    md5: 0683d453438cb48c2efd10c93fe5b951
+    upload_filename: T--Aachen--img--Experiments--GC_Oligo_mit_SSB.png
+  assets/img/Experiments/GC_oligo_ohne_SSBs.png:
+    link_URL: https://2021.igem.org/wiki/images/4/4f/T--Aachen--img--Experiments--GC_oligo_ohne_SSBs.png
+    md5: f910f8cfd555842fdf1ab4b924b59aa1
+    upload_filename: T--Aachen--img--Experiments--GC_oligo_ohne_SSBs.png
   assets/img/Home--design.jpeg:
     link_URL: https://2021.igem.org/wiki/images/5/52/T--Aachen--img--Home--design.jpeg
     md5: 8060957fc55d20104e816a7ca6792f45
@@ -1557,7 +1565,7 @@ html:
     md5: a950bbb30a06a0eebfb5302d3682e965
   Engineering/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Engineering
-    md5: 14dc4791ee719c45b56bf70a73ba090d
+    md5: 97c394b3f2007756aabf6373985e425d
   Engineering\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Engineering
     md5: 1562419c1e71225dd274836d1e96492c
