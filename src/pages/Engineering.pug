@@ -18,9 +18,7 @@ block article
         
         # Analysis
         
-      Our synthesized strands were small in size, low in concentration, and on top of that were single-stranded DNA (ssDNA), which made it hard to run standard protocols for nucleic acid analysis. We, therefore, had to establish new procedures for our unconventional samples. 
-
-        ## Electrophoresis
+        Our synthesized strands were small in size, low in concentration, and on top of that single-stranded DNA (ssDNA), which made it hard to run standard protocols for nucleic acid analysis. Therefore, we had to establish new procedures for our unconventional samples. 
 
         Coarse electrophoresis like agarose and polyacrylamide (PAA) is a fast and easy method. 
         However, there are many different variable parameters like the concentration of Agarose and PAA, dying method, time, voltage, or buffer. 
@@ -69,6 +67,23 @@ block article
     :markdown-it(html)
 
         # Preventing secondary structures
+
+        Due to the formation of duplex secondary structures, especially with guanine, synthesis of longer strands by the TdT is complicated. 
+        This problem often prevents the extension of all strands to more than 1000 nt. 
+        By adding single-stranded binding proteins (SSBs) from Thermo Fisher Scientific, we were able to show that SSBs can be used to partially prevent the formation of secondary structures. 
+        As a result, significantly longer strands could be amplified.
+    
+    - var imgpath = "" + require("../assets/img/Experiments/GC_oligo_ohne_SSBs.png")["default"]
+    +image(4, imgpath, "Evaluating inserts from the approach without SSBs, it can be seen that on average no more than 200 nucleotides were appended due to secondary structures present. ")
+    
+     - var imgpath = "" + require("../assets/img/Experiments/GC_Oligo_mit_SSB.png")["default"]
+    +image(5, imgpath, "Looking at inserts that were elongated with SSBs, it is clearly visible that extensions of the primer by up to 978 nucleotides were made.")
+
+    :markdown-it(html)
+    
+        As a conclusion from our experiments it can be seen that we were able to reduce the formation of secondary structures in ssDNA by using SSBs. Adding them to our TdT tailing apporaches significantly enhanced the elongation capacity. 
+        
+        [//]: # (Text nicht vollständig)
 
         # Immobilisation Methods
         
