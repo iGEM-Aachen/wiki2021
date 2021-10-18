@@ -15,10 +15,10 @@ block article
         For the commercial application, also an optimization towards a fast and cheap operation should remain possible.
        
         # DIPsy
-    - var imgpath = "" + require("../assets/Hardware/Hardware_Back.jpg")["default"]
-    +image(1, imgpath, "DIPsy Back")
-    - var imgpath = "" + require("../assets/Hardware/Hardware_Front.jpg")["default"]
-    +image(2, imgpath, "DIPsy Front")
+    - var imgpath = "" + require("../assets/Hardware/Hardware_Back.JPG")["default"]
+    +image(1, imgpath, "DIPsy Back.")
+    - var imgpath = "" + require("../assets/Hardware/Hardware_Front.JPG")["default"]
+    +image(2, imgpath, "DIPsy Front.")
     :markdown-it
         Initially, our work was very much based on George Church's paper on DNA synthesis for data storage. 
         We wanted to replicate the flow cell with light pulses to control the reaction. 
@@ -40,9 +40,9 @@ block article
         We prototyped our idea into a 3D model shown in figure 1. 
         During the assembly we noticed that we could build DIPsy more compact, so we did some changes.
     - var imgpath = "" + require("../assets/Hardware/Bild_beschriftet1.png")["default"]
-    +image(3, imgpath, "labeled hardware model front")
+    +image(3, imgpath, "Labeled hardware model front.")
     - var imgpath = "" + require("../assets/Hardware/Bild_beschriftet2.png")["default"]
-    +image(4, imgpath, "labeled hardware model back")
+    +image(4, imgpath, "Labeled hardware model back.")
     :markdown-it
         This arrangement of the reaction vessels ensures that the incorporation of the nucleotides happens efficiently. 
         Each nucleotide incorporation must be followed by a wash step, the two opposing reaction vessels with wash solution ensure that each reaction solution has a direct neighbor for washing, while the number of holes for the reaction vessels has been kept as small as possible. 
@@ -51,11 +51,8 @@ block article
         This is how to operate the hardware:
         
             1. Connect the device to the power
-            
             2. Log in to the WLAN network
-            
             3. Calibrate the device
-            
             4. Enter the base sequence to be synthesized in the text field
             
         # Outlook
