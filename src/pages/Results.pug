@@ -55,6 +55,21 @@ block article
         Nevertheless, this concentration may be subject to change depending on the experiment performed.
         
         ## Varying Primer Concentration
+        With the hardware approach in mind, we aimed to use low primer concentrations.
+        We thought choosing a low primer concentration could save material cost and use the hardware for more cycles before replenishing the dNTPs.
+        Thus, different primer concentrations were tested with dTTP as past experiments showed more easily distinguishable bands than the other dNTPs.
+        
+    - var imgpath = "" + require("../assets/img/Results/2021-10-15_02.png")["default"]
+    +image(4, imgpath, "Figure 3 TdT tailing reaction of an AT-rich ssDNA primer with dTTP and various primer concentrations at RT (23 °C) for 60 min. 1.5% Agarose, SYBR Gold staining, 90 V, 60 min. M: GeneRuler 1 kb DNA Ladder 1: AT-rich primer reference 2: 100 nM  primer 2: 50 nM primer 3: 20 nM primer 4: 15 nM primer 5: 10 nM primer 6: 10 nM primer 7: 5 nM primer 8: 1 nM primer.", 80)
+        
+    :markdown-it
+        The reaction time was increased to 60 min to yield longer strands, making the lowest primer concentrations visible on a gel.
+        Concentrations from 5-20 nM (lanes 4-7) result in large smears, indicating large size distributions.
+        The sharp bands from lanes 2,3, and 8 suggest that using high or low primer concentrations (in this context) is favorable to get strands of similar lengths.
+        For previous experiments, 20 nM primer was always the concentration of choice for two reasons.
+        First, it is a relatively low concentration that supports the idea of saving material. Second, it was the lowest concentration visible on a gel for reaction times of 10-30 min.
+        This experiment shows that primer concentration affects the maximal strand length, and adjusting the primer concentration may be a potent way to change strand length and size distribution.
+        Nevertheless, for our established system, we stuck with a standard primer concentration of 20 nM.
         
         ## Varying Cofactor Concentration
         One attempt to tweak the reaction speed was to adjust the cofactor availability by reducing its concentration.
