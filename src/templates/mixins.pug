@@ -40,6 +40,12 @@ mixin image(n, url, caption, width)
             img(src=url alt=caption)
         p= "Figure " + n + ": " + caption
 
+mixin video(url, caption)
+    video(style="width: 100%;" controls)
+        source(src=url type="video/mp4")
+        span Your browser does not support the video tag. :(
+
+
 mixin imgCitation(name, number)
     p.text-center
         a(href="#citation" + number)= name

@@ -33,7 +33,7 @@ module.exports = merge(common, {
                 ],
             },
             {
-                test: /\.(pdf|svg|gif|ttf|woff2|woff|eot|zip)$/i,
+                test: /\.(mp4|pdf|svg|gif|ttf|woff2|woff|eot|zip)$/i,
                 use: {
                     loader: "file-loader",
                     options: {
