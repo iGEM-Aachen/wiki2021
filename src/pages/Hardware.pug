@@ -44,16 +44,23 @@ block article
     - var imgpath = "" + require("../assets/Hardware/Bild_beschriftet2.png")["default"]
     +image(4, imgpath, "Labeled hardware model back.")
     :markdown-it
+
         This arrangement of the reaction vessels ensures that the incorporation of the nucleotides happens efficiently. 
         Each nucleotide incorporation must be followed by a wash step, the two opposing reaction vessels with wash solution ensure that each reaction solution has a direct neighbor for washing, while the number of holes for the reaction vessels has been kept as small as possible. 
         This keeps the distances between the individual steps as short as possible.
+
+    - var videopath = "" + require("../assets/Hardware/Video_frontal.mp4")["default"]
+    +video(videopath, "")
+    - var videopath = "" + require("../assets/Hardware/Video_seitlich.mp4")["default"]
+    +video(videopath, "")
+    :markdown-it
         
         This is how to operate the hardware:
-        
-            1. Connect the device to the power
-            2. Log in to the WLAN network
-            3. Calibrate the device
-            4. Enter the base sequence to be synthesized in the text field
+    
+        1. Connect the device to the power
+        2. Log in to the WLAN network
+        3. Calibrate the device
+        4. Enter the base sequence to be synthesized in the text field
             
         # Outlook
         
