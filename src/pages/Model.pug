@@ -16,8 +16,11 @@ block article
         From constructing a reaction network to evaluating the model with experimental data and finally applying it to gain knowledge about certain kinetic parameters, like e.g. the length of the synthesis cycle, to support our wet-lab work.
         In the best-case scenario, we would construct a new dynamic model which would also fit with the experimental results. 
         Generally speaking, the most important aspect of modeling is to gain knowledge about certain problems. 
+        So to be useful in our project, we had to construct a model which is complex enough to answer our questions with a certain validity but also simple enough to avoid unnecessary problems like missing parameters or too deep interaction description.
+        Additionally, we created a 3D animation using UCSF Chimera, to visualize the elongation on a molecular level. 
+        This helped us also to understand the molecular interaction interactions during the reaction.
         
-        [//]: # (# Es fehlt noch ein Satz.)
+        [//]: # (@Clemens hier bitte Video einfügen assets - video - TdT_reaction...)
         
         # Fundamentals of kinetics modeling
         
@@ -138,9 +141,9 @@ block article
         Besides our simulated results fit very well to the wet lab data which is astonishing, considering the fact that we constructed a completely new and multilayered model with our own assumptions. 
         The new estimated kinetic parameters are:
         
-        * v_max = 0.00006150 $$\frac{mol}{s \cdot g}$$ (0.0000083 $$\frac{mol}{s \cdot g}$$ in literature)
-        * K_DNA = 0.00015318 M (0.001 M in literature)
-        * K_ATP = 0.00021808 M (0.0001 M in literature)
+        * v_max = 0.00006150 mol/l/s (0.0000083 mol/l/s in literature)
+        * K_DNA = 0.00015318 M (0.001 mol/l in literature)
+        * K_ATP = 0.00021808 M (0.0001 mol/l in literature)
         
         
         
@@ -151,9 +154,11 @@ block article
         After understanding the reaction process in detail, the data we obtained from the Capillary electrophoresis was used to adjust the parameters from the literature to our model. 
         Furthermore, we evaluated the influences of varying the most important factors and found effective optimization approaches. 
         With the data we generated, we could help the wet lab team to find the most efficient approach to optimize the reaction conditions.
+        If you would like to have a more detailled look into our modeling approach or apply it to your own data, feel free to download our Python and MATLAB code.
         
-
-        
+    - var pdfpath = "" + require("../assets/documents/Modeling/modeling_code_igem_aachen_2021.zip")["default"]
+    a(href=pdfpath) Download
+      
         Our model could be extended to gain further insights into possible optimization. 
         First, the CE experiment could be repeated to minimize wet-lab data errors. 
         Further, the synthesis could be performed with our hardware to adapt the model to our hardware parameters. 
