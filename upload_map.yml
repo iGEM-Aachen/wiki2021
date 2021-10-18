@@ -1143,6 +1143,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/1/14/T--Aachen--img--teamlogo_2021.svg
     md5: 270c98aebd8b7a63f0da28972857eff6
     upload_filename: T--Aachen--img--teamlogo_2021.svg
+  assets/videos/TdT_reaction_Video-iGEM-Aachen.mp4:
+    link_URL: https://2021.igem.org/wiki/images/b/bd/T--Aachen--videos--TdT_reaction_Video-iGEM-Aachen.mp4
+    md5: c5df3162e00b564c6397da979d23ea33
+    upload_filename: T--Aachen--videos--TdT_reaction_Video-iGEM-Aachen.mp4
   assets\fonts\lato-v16-latin\lato-v16-latin-300.eot:
     link_URL: https://2021.igem.org/wiki/images/c/c0/T--Aachen--fonts--lato-v16-latin--lato-v16-latin-300.eot
     md5: 1b8f8afa9b4ba60fbcf9936eae918ec6
@@ -1582,7 +1586,7 @@ html:
     md5: 4c51f5500bef5b33212b9935690c137b
   Model/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Model
-    md5: d3ba8f876efd515230db3a15608244d2
+    md5: 930c9400ab3bf47e6271ea3176c1a5c2
   Model\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Model
     md5: 36613fbac0ef109bf8ebe4c5420a99ae
