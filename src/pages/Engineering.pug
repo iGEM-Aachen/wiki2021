@@ -58,7 +58,7 @@ block article
         Sebastian Palluk recommended to consult experts from the Fraunhofer IME in Aachen. 
         After the first meeting with Dr. Muth and Mrs. Freund, we ordered our primers (AT-rich, GC-rich) with the 6FAM fluorescent modification at the 5’ end. 
         Those primers were not suitable for our purspose.
-       Our first CE results showed strong background noise and also the length of the primer could not be analyzed properly, most likely due to insufficient purity of the primers. 
+        Our first CE results showed strong background noise and also the length of the primer could not be analyzed properly, most likely due to insufficient purity of the primers. 
         To solve this problem we ordered new HPLC purified primers and also purified the samples with an ssDNA clean and concentrator kit before sending them in for analysis. 
         After those two steps, we managed to analyze our samples with a resolution of 1 nucleotide. 
         We used this technique to study the reaction rate of the TdT with different nucleotides and adapt our kinetic model.
@@ -71,3 +71,41 @@ block article
         # Preventing secondary structures
 
         # Immobilisation Methods
+        
+        Immobilization of the primer was a key element of our project to establish cyclic synthesis with the DIP method (see also [Hardware](https://2021.igem.org/Team:Aachen/Hardware#DIPsy). 
+        Since we had specific requirements regarding the attachment of the primer on a stick like a functional elongation, we had to work our way through three different methods until we found a suitable design. 
+
+        Our first approach was the use of anchor peptides and primers with Amino C6-modification (AC6-primer) binding to a polystyrene stick. 
+        As you can see on our [Experiments-Page](https://2021.igem.org/Team:Aachen/Experiments#CyclicSynthesisandPrimerImmobilization) the anchor peptide is a fusion protein, where the primer is supposed to bind to a carboxyl functional group of acidic amino acids in the protein. 
+        After designing the system, we started testing this approach in the lab (for more detailed information about the experiments see [here](https://2021.igem.org/Team:Aachen/Results#PrimerImmobilization)).
+        Tackling the first part of the process (immobilizing primers on the stick), we did an ELISA immunoassay, using Penta-His-HRP-Antibodies, which bind to a His-Tag on the anchor peptides. The bound enzyme HRP (Horseradish peroxidase) indicates a successful binding by converting a chromogen into a colored compound.
+        Analyzing the absorbance, we found out that the peptides bind to the sticks and resist washing steps. 
+        Now proceeding to the next part of the immobilization system, we needed to link the AC6-primer to the anchor peptide.
+        Visualizing the conjugation with an SDS-PAGE, we realized that the process was probably unsuccessful.
+        Nevertheless, a TdT reaction with pure primer-solution and the immobilized conjugate approach was performed, to see if the AC6-primer could get elongated by the enzyme and to prove, that also immobilized primers worked.
+        The analysis with gel electrophoresis showed, that AC6-primers could indeed be elongated but the conjugation of primer and peptide failed.
+
+        Because the basic design of this immobilization method (anchor peptides binding to the stick) worked we adapted our system by using custom-made maleimide-tagged primer, which can form covalent bonds with thiol groups in cysteine. 
+        Under the assumption of different running behavior of the conjugates compared to pure primers, we tested two different maleimide-labeled primers at various ratios in gel electrophoresis. 
+        Subsequently, to analyze the binding between primer and peptide a purification of the conjugate out of an agarose gel followed by an SDS-PAGE and western-blot was performed.
+        These experiments sadly did not succeed but because our first gel electrophoreses indicated that the conjugation might have worked, we started TdT tailing reactions.
+        Since an elongation of itself worked, but we did not know whether it was the conjugated or free excess primer, the next step was taken and immobilization of the possible conjugates on the polystyrene sticks was attempted as well as more TdT tailing reactions. 
+        Getting inconclusive results in the electrophoresis, we analyzed the samples further with a dot blot (immunoblot), where we investigated the presence of protein in bands that might be conjugated anchor peptides.
+        The experiments showed that the conjugation was too uncertain to be used for further experiments.
+
+        Turning to streptavidin-biotin-bonds as a third approach, we started using streptavidin-coated magnetic beads and biotinylated primers with a TEG (triethyleneglycol) spacer.
+        Beginning with tests regarding the immobilization of the primers per se, we successfully bound the biotinylated primer to the beads after a few experiments while altering the beads to primer ratio and implementing washing steps.
+        Elution of the primer was also possible, even after binding the beads onto the magnetic rod.
+        Gel electrophoreses proved that the system works. 
+        Throughout the project, we have considered that it was handy to have non-permanent immobilization.
+        Implementing this aspect, we started using an envelope made out of polypropylene for the magnetic rod.
+        While the immobilization was functional with this system as well, we were now also saving material because the magnetic beads did not bind irreversibly to the rod. 
+        Now that the immobilization was working reliably, we could start experimenting with the TdT reaction. 
+        After a few unsuccessful samples, we altered different aspects of the reaction like the order of the steps and incubation time.
+        Rethinking the basic design of the system in detail once more, we realized that the wash buffer probably inhibits the TdT.
+        Repeating the TdT tailing reactions while using water instead of wash buffer, gel electrophoresis finally showed a successful elongation of immobilized primers, which were eluted afterward.
+        Now having a basis for cyclic synthesis we started creating samples with defined base sequences. 
+
+        Experiencing many obstacles during the project towards successful semi-specific cyclic synthesis, we learned that constantly re-thinking ideas and adapting previously tested methods is the key to an effective engineering process.
+
+        
