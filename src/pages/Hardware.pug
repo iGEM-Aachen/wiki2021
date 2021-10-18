@@ -13,8 +13,13 @@ block article
         but the already well-engineered devices for the traditional phosphoramidite synthesis rely on a fundamentally different principle while newer approaches for enzymatical DNA syntheses have major drawbacks when it comes to the synthesis of long strands. 
         Due to these reasons, we decided to construct a new hardware from scratch that is specially adapted to our needs.
         For the commercial application, also an optimization towards a fast and cheap operation should remain possible.
-
-        # DIPsy
+       
+       # DIPsy
+    - var imgpath = "" + require("../assets/Hardware/Hardware_Back.jpg")["default"]
+    +image(1, imgpath, "DIPsy Back")
+    - var imgpath = "" + require("../assets/Hardware/Hardware_Front.jpg")["default"]
+    +image(2, imgpath, "DIPsy Front")
+        
         Initially, our work was very much based on George Church's paper on DNA synthesis for data storage. 
         We wanted to replicate the flow cell with light pulses to control the reaction. 
         However, we discarded the idea of the light-driven reaction after Church shared his experience with us and advised against it. 
