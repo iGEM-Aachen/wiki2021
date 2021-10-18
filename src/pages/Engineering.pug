@@ -18,9 +18,7 @@ block article
         
         # Analysis
         
-      Our synthesized strands were small in size, low in concentration, and on top of that were single-stranded DNA (ssDNA), which made it hard to run standard protocols for nucleic acid analysis. We, therefore, had to establish new procedures for our unconventional samples. 
-
-        ## Electrophoresis
+        Our synthesized strands were small in size, low in concentration, and on top of that were single-stranded DNA (ssDNA), which made it hard to run standard protocols for nucleic acid analysis. We, therefore, had to establish new procedures for our unconventional samples. 
 
         Coarse electrophoresis like agarose and polyacrylamide (PAA) is a fast and easy method. 
         However, there are many different variable parameters like the concentration of Agarose and PAA, dying method, time, voltage, or buffer. 
@@ -69,6 +67,23 @@ block article
     :markdown-it(html)
 
         # Preventing secondary structures
+
+        Due to the formation of duplex secondary structures, especially for guanine, elongation by TDT is enormously complicated. 
+        This problem often prevents the extension of all strands to more than 1000 nt. 
+        By adding a single-stranded binding protein (SSB)  available from Thermo Fisher Scientific, we were able to show that SSBs can be used to partially prevent the formation of secondary structures. 
+        As a result, significantly longer strands could be amplified.
+    
+    - var imgpath = "" + require("../assets/img/Experiments/GC_oligo_ohne_SSBs.png")["default"]
+    +image(4, imgpath, "Evaluation of the sequencing of inserts from the approach without SSBs. It can be seen that very few nucleotides were appended due to the secondary structures present. ")
+    
+     - var imgpath = "" + require("../assets/img/Experiments/GC_Oligo_mit_SSB.png")["default"]
+    +image(3, imgpath, "Analysis of the sequencing of inserts that were elongated with SSBs. It can be seen that here clear extensions have taken place with one primer even by 894 nucleotides.")
+
+    :markdown-it(html)
+    
+        In summary, for secondary structures, SSBs can help to avoid them, which allows GC-rich regions to be extended. 
+        
+        [//]: # (Text nicht vollständig)
 
         # Immobilisation Methods
         
