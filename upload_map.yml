@@ -527,6 +527,14 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/9/95/T--Aachen--img--Results--CE_time_reaction_labelled.png
     md5: 11569438a74a522507e24dd7e7d0afa5
     upload_filename: T--Aachen--img--Results--CE_time_reaction_labelled.png
+  assets/img/Software/decoding.svg:
+    link_URL: https://2021.igem.org/wiki/images/8/81/T--Aachen--img--Software--decoding.svg
+    md5: b11873fd3b81943cbb5c4a8c3072729c
+    upload_filename: T--Aachen--img--Software--decoding.svg
+  assets/img/Software/encoding.svg:
+    link_URL: https://2021.igem.org/wiki/images/5/5d/T--Aachen--img--Software--encoding.svg
+    md5: 0bf7a4bc843c5c7a5d95aa1409af7bb6
+    upload_filename: T--Aachen--img--Software--encoding.svg
   assets/img/Team.jpg:
     link_URL: https://2021.igem.org/wiki/images/e/e1/T--Aachen--img--Team.jpg
     md5: 90a18079bd21036036f56f6dca72c308
@@ -1441,7 +1449,7 @@ css:
     md5: ffa2c985a8b8397d92e088e5a17d8274
   css/content.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/contentCSS?action=raw&ctype=text/css
-    md5: 8d7b64b198466aec24dbeea8b4f7546f
+    md5: 183c00e18b9e2aee678bdca97e223a6d
   css/index.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/indexCSS?action=raw&ctype=text/css
     md5: 1803fe603ab69defde68a69dda04add4
@@ -1450,7 +1458,7 @@ css:
     md5: 19ef80421b44faeffe3af7164ac42cae
   css/memes.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/memesCSS?action=raw&ctype=text/css
-    md5: 39ed8897249430386b63e01a45b3fc54
+    md5: 25ab0c29804cfded3bb0409288808e6a
   css/team.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/teamCSS?action=raw&ctype=text/css
     md5: 63b9a397ff247388fa1c8892544a5f6a
@@ -1592,7 +1600,7 @@ html:
     md5: b840e956ac31ce1bd58521f46f8543f8
   Results/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Results
-    md5: 62f73a181dd2a0dde8ee68de1c156fc5
+    md5: ec8d8092da916cedd5f15025d6e5a341
   Results\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Results
     md5: 3ae3651a7245a76f0aa61a36f1ead9cd
@@ -1613,7 +1621,7 @@ html:
     md5: 622d6724292f1b1f144bb71a8e4f1942
   Software/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Software
-    md5: 09f2db679e19481a3913dbc927581dd4
+    md5: 3cc1468504ea8efc4c22e678f62ecbc4
   Software\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Software
     md5: 61114cdfb47f4729ec78db181af0fa84
