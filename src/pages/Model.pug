@@ -41,30 +41,30 @@ block article
         
         # Michaelis-Menten
         
-        The first approach was to model the reaction according to the Michaelis-Menten kinetics. 
+        The first approach was to calculate the reaction velocities according to the Michaelis-Menten kinetics. 
         Therefore the nucleotide that would be incorporated was considered as the substrate and the DNA strands were assumed to be present in excess. 
         Thereby the reaction velocity could be calculated by the Michaelis-Menten equation with a value for the dNTP affinity from the literature [2](#citation2). 
         For each length of the resulting DNA strands, a new pool was created and the flux from one pool to the next was modeled as explained. 
-        As result, the concentrations of the different lengths of the DNA strands were obtained as a function of the time (figure 1).
+        As result, the concentrations of the different lengths of the DNA strands were obtained as a function of the time (figure 2).
         The most interesting part here was the concentration of strands that were not elongated at all since these would lead to an error in the encoded information.
-        This approach however could be improved. As we found out later that the enzyme was not saturated with DNA strands in our lab conditions, a new kinetic model elaborated. 
-        Since the TdT catalyzes reactions in two substrates, two product random order mechanisms [1](#citation1) a corresponding equation was used.
+        This approach however could be improved. As we found out later that the enzyme was not saturated with DNA strands in our lab conditions, a new kinetic model was elaborated. 
         
     - var imgpath = "" + require("../assets/img/modeling Bilder/Mich-Men_stranglängen_verteilung.jpg")["default"]
-    +image(2, imgpath, "Concentrations of the DNA length over time. LX: DNA was elongated by X nucleotides.")
-
+    +image(2, imgpath, "Concentrations of the DNA length over time according to Michaelis-Menten kinetics. LX: DNA was elongated by X nucleotides.")
+    
     :markdown-it(html)
-
-        $$\frac{dDNA}{dt} = \frac{v_{max} \cdot c_{DNA} \cdot c_{dNTP}}{K_{DNA} \cdot K_{dNTP}+K_{DNA} \cdot c_{dNTP}+K_{dNTP} \cdot c_{DNA} +c_{DNA} \cdot c_{dNTP}}$$
         
-        # First Results
+        # Tow Substrate Model
         
+        Since the TdT catalyzes reactions in two substrates, two product random order mechanisms [1](#citation1) a corresponding equation was used.
         To gain an understanding of the reactions we plotted the pool sizes of DNA strands of different lengths over time (figure 3) and the length distribution at different timestamps (figure 4). 
         In figure 3, a delayed rise in concentrations can be seen. 
         This is explained by the dependency of the flux towards DNA1 to the pool size of DNA0 et cetera. 
         
+        $$\frac{dDNA}{dt} = \frac{v_{max} \cdot c_{DNA} \cdot c_{dNTP}}{K_{DNA} \cdot K_{dNTP}+K_{DNA} \cdot c_{dNTP}+K_{dNTP} \cdot c_{DNA} +c_{DNA} \cdot c_{dNTP}}$$
+        
     - var imgpath = "" + require("../assets/img/modeling Bilder/concentrations.png")["default"]
-    +image(3,imgpath,"Concentrations of DNA pools over time.")
+    +image(3,imgpath,"Concentrations of DNA pools over time according to two substrate model.")
     
     - var imgpath = "" + require("../assets/img/modeling Bilder/strand-length-distribution.png")["default"]
     +image(4,imgpath,"Distribution of DNA lengths at different timestamps.")
