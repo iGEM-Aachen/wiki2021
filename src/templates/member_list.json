@@ -72,7 +72,7 @@
         "motivation": "iGEM gave me the chance to get insights into Biotechnology. I've learned a lot about working in a large team on a project and applying my skills in various areas. It let me get to know international people from different disciplines and form new friendships.",
         "attribution": "Clemens used his expertise in computer science to contribute to the DNA-encoding, a key part of our project. Furthermore, he worked as part of the IT and Wiki team, without which this wiki would not have been possible. But Clemens did not only work on IT-related topics; by participating in an exchange program in Greece he spread the word about iGEM and science in general and contributed his creativity to communicate science in alternative ways. Additionally, his knowledge of design-related topics helped the design team with its work.",
         "categories": [
-            "IT", "design"
+            "IT", "design", "meme"
         ]
     },
     {
@@ -83,7 +83,7 @@
         "motivation": "iGEM gave me the opportunity to learn a lot of things in the lab but most importantly taught me that it is essential to keep track of everything in the project and maintain good communication. I am proud of what our team has achieved together.",
         "attribution": "Hannah was the treasurer of the iGEM Aachen association. She managed the team‘s finances and also helped with general fundraising. As a part of the human practices team, she put a lot of effort into science communication projects like the online escape room collaboration with other German iGEM Teams and the DNA extraction kits for students. Additionally, she has contributed a siginificant part in the presentation video organization and eagerly supported the team in the wet lab whenever help was needed.",
         "categories": [
-            "fundraising", "HP", "lab"
+            "fundraising", "HP", "lab", "meme"
         ]
     },
     {
@@ -138,7 +138,7 @@
         "motivation": "I really wanted to work in a team on a project of our own. iGEM gave me the opportunity to do so and develop useful skills while doing it.",
         "attribution": "Matthias was really invested in the team communication to the public. For that he wrote an article about our project in the magazine BIOspektrum and represented our team in a podcast. His other main focus was the modeling of our reactions. In the modeling subgroup he planned and coded the model simulating the reaction network.",
         "categories": [
-            "modeling", "storytelling"
+            "modeling", "storytelling", "meme"
         ]
     },
     {
@@ -149,7 +149,7 @@
         "motivation": "Learning, sharing knowledge and meeting new people is my personal way of life, and I believe working on a project with interesting people in an incredibly fascinating field, provides exactly that. In the course of this project I learned a lot about the link between biology and computer science.",
         "attribution": "Willy contributed to both the IT as well as to the Hardware subgroup. He played a substantial part in the topic selection process and later he did an in depth research on unnatural base parings. Furthermore, he was responsible for structuring the hardware by designing it as well as assembling and programming the electronics behind it",
         "categories": [
-            "hardware", "IT", "modeling"
+            "hardware", "IT", "meme"
         ]
     },
     {
