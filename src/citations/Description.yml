@@ -26,3 +26,10 @@
     accessed: "October 16, 2021"
     site_name: "Laborjournal"
     url: 'https://www.laborjournal.de/rubric/methoden/methoden/v227.php'
+# 7
+- article:
+    authors: "Lee, C.-C., Snyder, T. M. and Quake, S. R."
+    year_published: 2010
+    title: "A microfluidic oligonucleotide synthesizer"
+    journal: "Nucleic Acids Research,"
+    numbers: "38 (8) 2514–2521"
