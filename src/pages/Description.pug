@@ -25,7 +25,8 @@ block article
         The specific goal of our project “Storagene” is to synthesize DNA enzymatically using the TdT for long-term data storage. 
         Therefore, we developed the DIP method, where immobilized primer on a magnetic stick is dipped into a solution containing TdT and respective nucleotides.
         
-        In the future, everbody will have their own [DIPsy](https://2021.igem.org/Team:Aachen/Hardware) at home, with which DNA can be synthesized and thus personal data can be stored on the DNA in the long term.
+        In the future, everybody will have their own [DIPsy](https://2021.igem.org/Team:Aachen/Hardware) at home, with which DNA can be synthesized and thus personal data can be stored on the DNA in the long term.
+        Thereby, for example, family history can be collected and passed for many generations.
         
     - var imgpath = "" + require("../assets/description/Hardware.svg")["default"]
     +image(1, imgpath, "DIPsy for home application.")
@@ -47,7 +48,7 @@ block article
         Without synthetic DNA or RNA, almost nothing would work in the laboratory: no PCR, no adapters, no linkers and other cloning elements, no CRISPR-Cas - not to mention synthetic genes [6](#citation6). 
          
         Currently, DNA is still synthesized using decades-old chemical phosphoramidite methods, which involve expensive and harsh reactions in many time-consuming steps [3](#citation3). 
-        The synthesized DNA is usually only a few hundred nucleotides long because on the one hand, not every step is one hundred percent efficient and on the other hand, long sequences form secondary structures that interfere with further construction [6](#citation6). 
+        The synthesized DNA is usually only a few hundred nucleotides long because on the one hand, not every step is one hundred percent efficient. On the other hand, long sequences form secondary structures that interfere with further construction [6](#citation6). 
         This limits the chemical synthesis as the demand for longer and larger quantities of DNA oligonucleotides increases [3](#citation3). 
          
         Church’s team developed an enzymatic DNA synthesis method for DNA data storage using the TdT and the cofactor $Co^{2+}$. 
@@ -55,6 +56,37 @@ block article
         The light beams precisely target individual positions on a chip where enzymatic DNA synthesis is to occur by attaching to a short oligo anchor.
         Even if the entire chip is flooded with dATP, for example, only the TdT enzymes at the points currently illuminated can incorporate nucleotides. 
         Subsequently, the excess dATP is flushed away and the TdT incorporates the next dNTP at the illuminated positions of the chip [6](#citation6). 
+        
+        # Our idea of enzymatic DNA synthesis 
+        The project focuses on the enzymatic synthesis of ssDNA strands using the terminal deoxynucleotidyl transferase (TdT). 
+        Our goal is to synthesize DNA strands in which an unspecific number of nucleotides are incorporated in each synthesis cycle. 
+        This should result in as many transitions as possible since our ternary system is based on the encoding and restoring of the information saved on the DNA. 
+        Thus, the information is not stored by a sequence of specific bases but by the transitions between bases. 
+        Therefore, a specific synthesis is not necessary. 
+        This method permits a more accessible and robust system that even allows for the addition of proofreading features, see [Software](https://2021.igem.org/Team:Aachen/Software).
+
+        # The Necessity of Our Project 
+        DNA synthesis is currently implemented using phosphoramidite synthesis. 
+        However, this is not very environmentally friendly due to its harsh reactions, the use of solvents, and toxic by-products. 
+        Enzymatic synthesis eliminates the use of solvents and toxic by-products, which is why the environmental footprint can be significantly reduced. 
+        In addition, only a few hundred nucleotides can be synthesized using the current method because the steps are not as efficient, and secondary structures can form. 
+        Enzymatic synthesis is not limited to the addition of nucleotides to a DNA strand and can enable strand extension of thousands of bases. 
+        In addition, so-called single-strand-binding proteins can be used to avoid secondary structures.
+         
+        The challenges of the phosphoramidite method are to optimize it so that less solvent is used and more extended strand synthesis is possible. 
+        This could be done with a programmable microfluidic synthesis platform containing integrated valves, allowing individual manipulation and product removal [7](#citation7). 
+        However, moving to enzymatic synthesis would make these problems disappear into thin air. Unfortunately, with enzymatic synthesis, other challenges appear.
+         
+        The aim is to create as many transitions as possible so that only a few identical nucleotides are incorporated one after the other to increase the data storage capacity. 
+        For this purpose, standardized reaction conditions must be found since the nucleotides are incorporated differently by the TdT. 
+        For example, the nucleotide thymine is incorporated many times more frequently than the base guanine in a standard TdT reaction, see [Results](https://2021.igem.org/Team:Aachen/Results). 
+        In addition, reaction conditions should be chosen such that DNA strand synthesis is reproducible and all strands receive the same nucleotide sequence. 
+        Furthermore, a system could be developed that synthesizes many different DNA strands on one surface to save time and costs.
+         
+        To facilitate the work in the laboratory, our hardware should be implemented in the laboratory in the future. 
+        Additionally, a dedicated nanopore sequencer to analyze the DNA strands directly after synthesis would be beneficial in the lab. 
+        Looking ahead, a specific synthesis in which a certain number of nucleotides or even only one nucleotide is appended would be more advantageous in the future, as this would allow a much more precise procedure. 
+        In addition, the costs of enzymatic DNA synthesis will be lowered as reaction times are reduced, and the number of nucleotides used decreases.
 
        
 //- DO NOT MODIFY THIS LINE AND ANYTHING BEYOND.
