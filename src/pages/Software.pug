@@ -67,7 +67,10 @@ block article
         Then, the software converts each byte into trits.
         Each byte can have $2^8=256$ states.
         To represent the information of one byte with trits, we need enough trits to represent atleast $256$ different states.
-        So, one byte can represented by six trits, since $3^5=243$, and $3^6=729$.
+        Five trits can represent $243$ states, since $3^5=243$.
+        So obviously, five trits are not enough to encode one byte.
+        Six trits, in contrast, represent $3^6=729$ states.
+        So one byte can be encoded with six trits.
         In the following, we will call a sequence of six trits a tryte.
         However, this also shows that converting one byte into one tryte is extremely inefficient.
         $\frac{256}{729} \approx 35.12$%, so roughly one third of the actual capacity of this code is actually used.
