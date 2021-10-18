@@ -99,7 +99,7 @@ $dropdown-border-dark: rgb(68, 68, 68);
     .navbar {
         .navbar-brand {
             font-size: 1.5rem;
-            margin-left: 3rem;
+            margin-left: 30px;
             a {
                 font-size: 1rem;
             }
@@ -110,7 +110,7 @@ $dropdown-border-dark: rgb(68, 68, 68);
         }
         button {
             height: 100%;
-            margin-right: 5rem;
+            margin-right: 10px;
         }
         .navbar-collapse {
             padding: 0 3rem 1.5rem 3rem;
@@ -125,10 +125,10 @@ $dropdown-border-dark: rgb(68, 68, 68);
 @include respond-below(xs) {
     .navbar {
         .navbar-brand {
-            margin-left: 1rem;
+            margin-left: 0px;
         }
         button {
-            margin-right: 2rem;
+            margin-right: 0px;
         }
         .navbar-collapse {
             padding: 0 1rem 1.5rem 1rem;
@@ -142,7 +142,7 @@ $dropdown-border-dark: rgb(68, 68, 68);
 @include respond-below(xxs) {
     .navbar {
         button {
-            margin-right: 1rem;
+            margin-right: 0px;
         }
     }
     #themeSwitchWrapper {
