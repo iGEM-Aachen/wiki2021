@@ -56,7 +56,23 @@ block article
         Nevertheless, this concentration may be subject to change depending on the experiment performed.
         
         ## Varying Primer Concentration
+        
         ## Varying Cofactor Concentration
+        One attempt to tweak the reaction speed was to adjust the cofactor availability by reducing its concentration.
+        Since the incorporation speed of nucleotide T by far exceeds that of all other nucleotides, we performed TdT reactions with varying concentrations of the TdT reaction buffer containing the cofactor.
+        As the cofactor was inherently present in the buffer, we had to adjust the buffer concentration in total and could not just alter the cofactor concentration itself, which might have unforeseen effects.
+        
+    - var imgpath = "" + require("../assets/img/Results/2021-06-24_01.png")["default"]
+    +image(2, imgpath, "*Figure 3 TdT tailing reaction of an AT-rich ssDNA primer with dTTP and various cofactor concentrations at RT (24 °C) for 30 min.* Cofactor was inherently present in reaction buffer, so that buffer concentration was consequently adjusted as well. 2.5% Agarose with TBE, SYBR Gold staining, 90 V, 60 min. M: GeneRuler 50 bp DNA Ladder 1: AT.rich primer reference 2: 2 mM CoCl2 3: 1.5 mM CoCl2 4: 1.0 mM CoCl2 5: 0.5 mM CoCl2 6: 0.0 mM CoCl2 negative control.")
+        
+    :markdown-it
+        Reducing the cofactor presence results in slower incorporation of nucleotides in the tested range.
+        The standard concentration of cofactor used in all experiments was 2.0 mM (lane 2) and scaled-down from that point.
+        The results suggest that adjusting the cofactor availability may be a reliable way of tuning down the reaction speed.
+        However, as the reaction buffer concentration was changed simultaneously, these results have to be looked at with care.
+        The reaction buffer contains components necessary for the functioning of TdT, so lowering the concentration of the reaction buffer may have additional effects on the activity of the enzyme.
+        No further testing was performed due to time limitations and unavailability of reaction buffer without cofactor.
+    
         ## Time Dependent TdT Reaction
         Thus far, reaction times were chosen to yield a distinguishable band from the primer reference or across samples. 
         However, the goal is to tune down the reaction to a point at which only a few bases are incorporated in each reaction. 
@@ -70,8 +86,27 @@ block article
         The depicted slope was obtained by preparing a 400 µL batch of the reaction, followed by initiation of the reaction through the addition of TdT, and subsequent withdrawal of 10 µL samples at the pre-set time points. 
         However, the obtained results can only be used to get a rough estimate of the speed at which dTTP is incorporated since we still have to compare an ssDNA result against a dsDNA ladder, and four of the six samples exceed the highest ladder reference. 
         Thus, lane 2 constitutes the most relevant band at around 200 nt after 1 min. 
-        It suggests that reaction times in the range of a few seconds will likely be needed to only add a few bases, which is the ultimate goal for our hardware. But, working on the scale of seconds makes reliable sample taking and subsequent inactivation difficult, so no further experimentation was performed with this setup. 
-        Instead, these results helped set the expectation of a possible time scale when later working the immobilized primers in the hardware.
+        It suggests that reaction times in the range of a few seconds will likely be needed to only add a few bases, which is the ultimate goal for our hardware.
+        But, since the resolution of gel electrophoresis is not sufficient to examine differences of only a few nucleotides, we used capillary electrophoresis (CE) to analyze smaller time scales.
+        
+        For this, a new experiment was set up in which each nucleotide was tested separately, with reaction times ranging from 7.5 to 120 seconds.
+        Each reaction took place in a 350 µL batch from which 50 µL samples were withdrawn at the corresponding time points.
+        The samples were inactivated with 0.25 M EDTA. The sample volume of 50 µL was necessary for purification with an ssDNA/RNA Clean&Concentrate kit from Zymo Research Europe GmbH.
+        The samples were analyzed externally by the Fraunhofer Institut IME Aachen.
+        
+    - var imgpath = "" + require("../assets/img/Results/2021-06-23_02.png")["default"]
+    +image(3, imgpath, "*Figure 5 TdT tailing reaction of an AT-rich ssDNA primer  for each nucleotide in a time-dependent manner with reaction times ranging from 7.5-120 s at RT (24 °C).* Time  standard LIZ600. (A) Resulting strand lengths for nucleotide T (B) Resulting strand lengths for nucleotide A (C) Resulting strand lengths for nucleotide C (D) Resulting strand lengths for nucleotide G. Non-elongated primer can be observed as a small bump at around 90 bp (actual primer length: 100 bp). Sample taking as a source of error is not included in this graph.")
+        
+    :markdown-it
+        The CE reveals that the size distribution is smallest at very short reaction times of 7.5 to 20 seconds, except for nucleotide G.
+        It causes a large size distribution with a double peak at 7.5 s, which narrows down between 15-60 seconds, and eventually results in two overlapping broad peaks.
+        Graphs C and D both show an unexpected behavior for the last two time points.
+        In C, the 120 s sample appears to have a shorter ssDNA length than the 90 s sample.
+        In D, the size distribution of the 90 s and 120 s samples is roughly overlapping.
+        Both of these results suggest less optimal incorporation of nucleotides C and G upon reaching a certain ssDNA length, in this case being 110-120 nt.
+        No possible explanation for the double peaks or peak shoulders seen in A, B, and D could be found.
+        Reactions with nucleotide T have the longest resulting strands of around 210 nt after 120 s, compared to A, C, and G with roughly 110-120 nt after 120 s.
+        For comparison, the samples at time point 120 s were additionally analyzed with gel electrophoresis. 
         
         ## Comparison of Thermo Fisher Scientific and NEB TdT
         # Primer Immobilization
