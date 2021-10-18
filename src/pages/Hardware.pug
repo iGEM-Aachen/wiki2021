@@ -33,7 +33,11 @@ block article
         The four reaction vessels with the finished reaction solution and one nucleotide each are placed in the turret, as well as two reaction vessels with wash solution.
         The DNA primers are immobilized on a rod, which can be dipped into the various solutions via an arm.
         The arrangement is shown in figure 1.
-        
+    - var imgpath = "" + require("../assets/Hardware/Bild_beschriftet1.png")["default"]
+    +image(1, imgpath, "labeled hardware model front")
+    - var imgpath = "" + require("../assets/Hardware/Bild_beschriftet2.png")["default"]
+    +image(2, imgpath, "labeld hardware model back")
+    :markdown-it
         This arrangement of the reaction vessels ensures that the incorporation of the nucleotides happens efficiently. 
         Each nucleotide incorporation must be followed by a wash step, the two opposing reaction vessels with wash solution ensure that each reaction solution has a direct neighbor for washing, while the number of holes for the reaction vessels has been kept as small as possible. 
         This keeps the distances between the individual steps as short as possible.
@@ -54,4 +58,7 @@ block article
         A network connection was also implemented through which digital data can be directly compiled into a base sequence and synthesized into a DNA strand. 
         Of course, much can be improved on this fundamental design of the hardware. For example, the overall design could be made even more compact, and a casing with cooling would be beneficial. 
         Furthermore, use could be made easier with LCD displays showing status. Data would be sent to the device, it would calibrate itself and the status of the operation would be read on the display. 
-        This handling would be made even easier by a REST API (Standardized Programming Interface), which would directly link the software and hardware code.  
+        This handling would be made even easier by a REST API (Standardized Programming Interface), which would directly link the software and hardware code. 
+  
+     - var pdfpath = "" + require("../assets/Hardware/Schematic")["default"]
+    a(href=pdfpath) Here you can find our Schematic
