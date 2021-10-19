@@ -123,3 +123,20 @@ mixin teamlabel(type)
                 span Social Media
             when "storytelling"
                 span Storytelling
+
+mixin imgCarousel(id, items)
+    .carousel.slide.igem-carousel(id="carousel-"+id, data-ride="carousel")
+        .carousel-inner
+            each item, index in items
+                if(index === 0)
+                    .carousel-item.active
+                        img(src=item.image).d-block.w-100
+                else
+                    .carousel-item
+                        img(src=item.image).d-block.w-100
+        a.carousel-control-prev(href="#carousel-" + id, role="button", data-slide="prev")
+            span.carousel-control-prev-icon(aria-hidden="true")
+            span.sr-only= Next
+        a.carousel-control-next(href="#carousel-" + id, role="button", data-slide="next")
+            span.carousel-control-next-icon(aria-hidden="true")
+            span.sr-only= Next
