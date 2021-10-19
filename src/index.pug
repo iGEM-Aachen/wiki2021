@@ -17,15 +17,16 @@ html(lang="en")
       .jumbotron.home-card.home-bg-light
         .container
           .row.d-flex.justify-content-center.tiles
-            .col-xl-6.col-lg-6.col-md-6.col-xs-12
-              h1 Humanity Produces Enormous Amounts of Data
+            .col-xl-4.col-lg-4.col-md-6.col-xs-12.align-self-center
+              h2 Humanity Produces Enormous Amounts of Data
               p Soon, it could become too much for todays storage systems.
-            .col-xl-6.col-lg-6.col-md-6.col-xs-12
+            .col-xl-2.col-lg-2.col-md-6.col-xs-12.align-self-center
+            .col-xl-6.col-lg-6.col-md-6.col-xs-12.align-self-center
               img(src=require("./assets/img/homepage/server.svg")["default"])
       .jumbotron.home-card
         .container
           .row.d-flex.justify-content-center.tiles
-            .col-xl-4.col-lg-4.col-md-6.col-xs-12
+            .col-xl-6.col-lg-6.col-md-6.col-xs-12.align-self-center
               .line
                 pre.fade.fade1 0
                 pre.fade.fade2    1
@@ -89,53 +90,59 @@ html(lang="en")
                 pre.fade.fade3   0
                 pre.fade.fade2  1
                 pre.fade.fade2    1
-            .col-xl-2.col-lg-2.col-md-6.col-xs-12
-            .col-xl-6.col-lg-6.col-md-6.col-xs-12
-              h1 Are We About to Face a Digital Dark Age?
+            .col-xl-1.col-lg-1.col-md-6.col-xs-12
+            .col-xl-4.col-lg-4.col-md-6.col-xs-12.align-self-center
+              h2 Are We About to Face a Digital Dark Age?
               p Loss of data poses a serious risk to infrastructure and safety. Whenever new storage technologies emerge, there is a risk that old media will eventually become unreadable.
       .jumbotron.home-card.home-bg-blue
         .container
           .row.d-flex.justify-content-center.tiles
-              .col-xl-3.col-lg-3.col-md-6.col-xs-12
-                h1 The Solution: Storing Data on DNA
+              .col-xl-3.col-lg-3.col-md-6.col-xs-12.align-self-center
+                h2 The Solution: Storing Data on DNA
+                p With the unique properties of DNA and rapidly advancing technologies, we think that DNA data storage will one replace existing solutions.
               .col-xl-1.col-lg-1
-              .col-xl-8.col-lg-8.col-md-6.col-xs-12
+              .col-xl-8.col-lg-8.col-md-6.col-xs-12.align-self-center
                 img(src=require("./assets/img/homepage/DNA_text.svg")["default"])
       .jumbotron.home-card.home-bg-light
         .container
           .row.d-flex.justify-content-center.tiles
-            .col-xl-3.col-lg-3.col-md-6.col-xs-12
+            .col-xl-3.col-lg-3.col-md-6.col-xs-12.align-self-center
               img(src=require('./assets/img/homepage/bucket.svg')['default'])
-            .col-xl-8.col-lg-8.col-md-6.col-xs-12
-              h1 Extremely High Storage Capacity
+            .col-xl-1.col-lg-1
+            .col-xl-6.col-lg-6.col-md-6.col-xs-12.align-self-center
+              h2 Extremely High Storage Capacity
               p 
                 | The information density of DNA is 
                 span.highlight 20000 times 
                 | higher than the capacity of current storage technologies.
+                | With that, you could fit the information of the whole internet into an ordinary bucket.
                 | This could make many data centers obsolete.
       .jumbotron.home-card
         .container
           h1 What Could we Achieve with Better Storage Systems?
           .row.d-flex.justify-content-center.tiles
-            .col-xl-6.col-lg-6.col-md-6.col-xs-12
+            .col-xl-4.col-lg-4.col-md-6.col-xs-12.align-self-center
               h2 Bring Artificial Intelligence to the Next Level
               p 
                 | Training neural networks requires huge amounts of data.
                 | With a larger storage capacity, the development of better system can be accelerated.
-            .col-xl-6.col-lg-6.col-md-6.col-xs-12
-              img(src=require('./assets/img/homepage/artificial_intelligence.png')['default'])
+            .col-xl-2.col-lg-2
+            .col-xl-6.col-lg-6.col-md-6.col-xs-12.align-self-center
+              div
+                include ./assets/img/homepage/artificial_intelligence.svg
       .jumbotron.home-card
         .container
           .row.d-flex.justify-content-center.tiles#rocket-container
-            .col-xl-8.col-lg-8.col-md-6.col-xs-12.rocket-container
+            .col-xl-8.col-lg-8.col-md-6.col-xs-12.align-self-center.rocket-container
               img(src=require("./assets/img/homepage/dna_rocket.svg")["default"])#rocket
             .col-xl-4.col-lg-4.col-md-6.col-xs-12.rocket-text
               h2 Efficient Data Transport for Colonialization of Planets
+              p If humanity one day becomes an interplanetary species, it will be necessary to bring lots of information to space. Since weight is always a huge concern in space, DNA would be an ideal choice as a storage medium for this.
       .jumbotron.home-card
         .container
           h1 We Present Enzymatic DNA Synthesis for a Data Storage System
           .row.d-flex.justify-content-center.tiles
-            .col-xl-8.col-lg-8.col-md-6.col-xs-12
+            .col-xl-8.col-lg-8.col-md-6.col-xs-12.align-self-center
               img(src=require('./assets/img/homepage/dna_four_colors.svg')['default'])
 
     include templates/footer.pug
