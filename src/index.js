@@ -44,11 +44,11 @@ $('#rocket-container').css({
 function scrollRocket() {
     var rocket_container = document.getElementById('rocket-container');
     var distanceToTop = window.pageYOffset + rocket_container.getBoundingClientRect().top;
-    var scrollTop = window.pageYOffset;
+    var pageOffset = window.pageYOffset;
 
-    var rocket_top = -scrollTop + distanceToTop + rocket_offset;
+    var rocket_top = -pageOffset + distanceToTop + rocket_offset;
 
-    console.log("scrollTop: " + scrollTop);
+    console.log("scrollTop: " + pageOffset);
     console.log("distanceToTop: " + distanceToTop);
     console.log("rocket_offset: " + rocket_offset);
     console.log("top: " + rocket_top);
