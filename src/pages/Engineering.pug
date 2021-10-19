@@ -13,7 +13,7 @@ block article
         In our project, we had to overcome multiple obstacles and we therefore performed multiple engineering cycles. 
         The main goal of the project is to encode information into DNA. 
         To achieve that goal, we had to establish analytical methods for different purposes: for broad and detailed length analysis. 
-        Concerning the prevention of secondary structures, we examined the use of single-stranded binding proteins and small oligonucleotides. 
+        Concerning the prevention of secondary structures, we examined the use of single-stranded binding proteins. 
         Lastly, we had to immobilize primers to synthesize a pre-set base sequence.
         
         # Analysis
@@ -69,23 +69,32 @@ block article
 
         # Preventing secondary structures
 
-        Due to the formation of duplex secondary structures, especially with guanine, synthesis of longer strands by the TdT is complicated. 
+        Due to the formation of duplex secondary structures, especially with guanine, the synthesis of longer strands by the TdT is complicated. 
         This problem often prevents the extension of all strands to more than 1000 nt. 
-        By adding single-stranded binding proteins (SSBs) from Thermo Fisher Scientific, we were able to show that SSBs can be used to partially prevent the formation of secondary structures. 
+        To study this context we ordered especially a GC-rich primer with a GC share of 80%.
+        Further, we designed sequences in the primer that tend to form secondary structures.
+        In order to tackle this problem, we established the use of single-stranded binding proteins [(SSBs)](https://2021.igem.org/Team:Aachen/Results#SecondaryStructures-SSBs). 
+        Through the first tests, we had to figure out which concentration of SSBs suits the best for our experiments. 
+        Too high concentrations obstruct the TdT from elongating the primer and too low concentrations showed no significant effects. 
+        After testing various concentrations and finding an optimal one we faced another problem. 
+        In order to analyze the synthesized ssDNA it was crucial to separate the SSBs from the synthesized strand.
+        Following multiple approaches, we found out that running a PCR is the best way to “separate” the DNA from the SSB [(PCR)](https://2021.igem.org/Team:Aachen/Experiments#PCR). 
+        Additionally, we could clone these PCR products and sequence them by [Sanger-Sequencing](https://2021.igem.org/Team:Aachen/Experiments#Sequencing). 
+        This method allowed us to examine the synthesized DNA strands in more detail.  
+        By adding single-stranded binding proteins from Thermo Fisher Scientific, we were able to show that SSBs can be used to partially prevent the formation of secondary structures. 
         As a result, significantly longer strands could be amplified.
     
     - var imgpath = "" + require("../assets/img/Experiments/GC_oligo_ohne_SSBs.png")["default"]
-    +image(4, imgpath, "Evaluating inserts from the approach without SSBs, it can be seen that on average no more than 200 nucleotides were appended due to secondary structures present.",100,0.8)
+    +image(4, imgpath, "Inserts from the approach without SSBs. 9 clones with inserts <150 bp. SeqMan Pro 15 plot.",100,0.8)
     
     - var imgpath = "" + require("../assets/img/Experiments/GC_Oligo_mit_SSB.png")["default"]
-    +image(5, imgpath, "Looking at inserts that were elongated with SSBs, it is clearly visible that extensions of the primer by up to 978 nucleotides were made.",100,0.8)
+    +image(5, imgpath, "Inserts that were elongated with SSBs. 4 clones with inserts >300 bp, A01 clone up showed an insert with 978 nucleotides added to the GC-rich primer. SeqMan Pro 15 plot",100,0.8)
 
     :markdown-it(html)
     
-        As a conclusion from our experiments it can be seen that we were able to reduce the formation of secondary structures in ssDNA by using SSBs. Adding them to our TdT tailing apporaches significantly enhanced the elongation capacity. 
+        As a conclusion from our experiments, it can be seen that we were able to reduce the formation of secondary structures in ssDNA by using SSBs. 
+        Adding them to a TdT tailing approaches with one nucleotide (Adenin) in solution seems to significantly enhance the elongation capacity.
         
-        [//]: # (Text nicht vollständig)
-
         # Immobilisation Methods
         
         Immobilization of the primer was a key element of our project to establish cyclic synthesis with the DIP method (see also [Hardware](https://2021.igem.org/Team:Aachen/Hardware#DIPsy). 
