@@ -39,7 +39,7 @@ mixin image(n, url, caption, width, fontSize)
             p= "Figure " + n + ": " + caption
         else if fontSize && width
             img(src=url alt=caption style="width: " + width + "%")
-            p(style="font-size:" + fontSize + "rem")!= "<b>Figure " + n + "</b>: " + caption
+            p(style="font-size:" + fontSize + "rem; text-align:justify" )!= "<b>Figure " + n + "</b>: " + caption
         else
             img(src=url alt=caption)
             p= "Figure " + n + ": " + caption
