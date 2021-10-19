@@ -51,7 +51,7 @@ block article
     - var imgpath = "" + require("../assets/img/Experiments/2021-05-12_01_inv_paa.jpg")["default"]
     +image(2, imgpath, "15% PAA Gel, 100 V 60 min, SYBR Gold (20 min); M: GeneRuler UltraLowRange DNA Ladder; 1: GALIfor 1:5; 2: GALIfor 1:10; 3: GALIfor 1:15; 4: GALIfor 1:20; 5: GALIfor 1:30; 6: GALIfor 1:40.)",100,0.8)
     
-    
+    :markdown-it(html)
 
         To analyze our samples even more in detail, we tried to use capillary electrophoresis (CE). 
         Sebastian Palluk recommended to consult experts from the Fraunhofer IME in Aachen. 
@@ -87,8 +87,7 @@ block article
     
     - var imgpath = "" + require("../assets/img/Experiments/GC_oligo_ohne_SSBs.png")["default"]
     +image(4, imgpath, "Inserts from the approach without SSBs. 9 clones with inserts < 150 nt. SeqMan Pro 15 plot.",100,0.8)
-    
-    :markdown-it(html)
+   
     
     - var imgpath = "" + require("../assets/img/Experiments/GC_Oligo_mit_SSB.png")["default"]
     +image(5, imgpath, "Inserts that were elongated with SSBs. 4 clones with inserts >300 nt, A01 clone up showed an insert with 978 nucleotides added to the GC-rich primer. SeqMan Pro 15 plot",100,0.8)
