@@ -137,7 +137,7 @@ attr-main {
         border-radius: 30px;
         margin-bottom: 30px;
         padding: 10px 15px 30px 15px;
-        height: 81vh;
+        min-height: 600px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -149,7 +149,7 @@ attr-main {
             font-size: 18px;
         }
         .card-body {
-            min-height: 230px;
+            // min-height: 230px;
             padding: 0;
         }
     }
@@ -197,6 +197,28 @@ attr-main {
     margin-bottom: 7px;
 }
 
+@include respond-below(lg) {
+    attr-main {
+        .mentor {
+            height: unset;
+            min-height: 60vw;
+        }
+        .card-body {
+            h5 {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@include respond-below(md) {
+    attr-main {
+        .mentor {
+            height: unset;
+            min-height: 80vw;
+        }
+    }
+}
 
 @include respond-below(sm) {
     attr-main {
