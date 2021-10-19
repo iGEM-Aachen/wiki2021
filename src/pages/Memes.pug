@@ -7,3 +7,9 @@ block headVars
 
 
 block main
+    - var fs = require('fs')
+    - var memenames = fs.readdirSync('src/assets/img/memes')
+
+    each name in memenames.reverse()
+        +meme(name, "")
+
