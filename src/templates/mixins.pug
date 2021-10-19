@@ -44,10 +44,16 @@ mixin image(n, url, caption, width, fontSize)
             img(src=url alt=caption)
             p= "Figure " + n + ": " + caption
 
-mixin video(url, caption)
-    video(style="width: 100%;" controls)
-        source(src=url type="video/mp4")
-        span Your browser does not support the video tag. :(
+mixin video(url, caption, width)
+    .video
+        if width
+            video(style="width: " + width + "%" controls)
+                source(src=url type="video/mp4")
+                span Your browser does not support the video tag. :(
+        else
+            video(style="width: 100%;" controls)
+                source(src=url type="video/mp4")
+                span Your browser does not support the video tag. :(
 
 
 mixin imgCitation(name, number)
