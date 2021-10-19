@@ -106,6 +106,12 @@ block article
         As can be seen, the nucleotide concentration, here ATP, has a rather small influence on the velocity of the reaction, especially at longer reaction times.
         By contrast, the amount of enzyme naturally has a drastic influence on the reaction's velocity at every reaction time. 
         Since the enzyme is the most expensive component in our system and has the biggest influence on reaction velocity, its optimized use is the top priority.
+        
+        Another thing worth mentioning is the different incorporation of nucleotides. According to $$K_{m}$$ and $$v_{max}$$ values ATP and GTP get incorporated much faster than CTP and TTP (figure 8).
+        This knowledge helped us to choose the right reaction time for each nucleotide and prevent irregularities in length for synthesized strands.
+        
+    - var imgpath = ""+require("../assets/img/modeling Bilder/nucleotides.png")["default"]
+    +image(8,imgpath,"Decrease of DNA0 with different nucleotides of the same concentration.")
 
     
         # Applying Wet Lab Data
@@ -131,7 +137,7 @@ block article
         So for our examined time interval for the elongation process, we make the assumption that our system is saturated with ATP.
        
     - var imgpath = ""+require("../assets/img/modeling Bilder/regression_of_CE-data.jpg")["default"]
-    +image(8,imgpath,"Regression of the capillary electrophoresis data. Results for the first three pools (DNA0: non-elongated DNA strand, DNA1: strand which got elongated by one base pair, DNA2: strand which got elongated by two base pairs).",100, 0.8)
+    +image(9,imgpath,"Regression of the capillary electrophoresis data. Results for the first three pools (DNA0: non-elongated DNA strand, DNA1: strand which got elongated by one base pair, DNA2: strand which got elongated by two base pairs).",100, 0.8)
         
     :markdown-it(html)
         
