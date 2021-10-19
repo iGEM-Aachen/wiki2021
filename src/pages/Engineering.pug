@@ -99,10 +99,27 @@ block article
         Now proceeding to the next part of the immobilization system, we needed to link the AC6-primer to the anchor peptide.
         Visualizing the conjugation with an SDS-PAGE, we realized that the process was probably unsuccessful.
         Nevertheless, a TdT reaction with pure primer-solution and the immobilized conjugate approach was performed, to see if the AC6-primer could get elongated by the enzyme and to prove, that also immobilized primers worked.
-        The analysis with gel electrophoresis showed, that AC6-primers could indeed be elongated but the conjugation of primer and peptide failed.
+       
+               
+    - var imgpath = "" + require("../assets/img/Results/2021-08-03_01.png")["default"]
+    +image(6, imgpath, "<b>Standard TdT reaction (dTTP 15 min) with the conjugate and elutions of immobilizations with AC6 primer and AC6 primer-peptide conjugate.</b> 2.5% Agarose with TBE, SYBR Gold, staining, 90 V, 60 min. M: GeneRuler 50 bp DNA Ladder 1: AC6 primer 2: AC6 primer after TdT reaction 3: AC6-primer-peptide conjugate 4: heated AC6-primer-peptide conjugate 5: AC6-primer-peptide conjugate after TdT reaction 6: elution of AC6-primer after immobilization 7: elution of AC6-primer after immobilization and TdT reaction 8: elution of AC6-primer-peptide conjugate after immobilization 9: elution of AC6-primer-peptide conjugate after immobilization and TdT reaction.", 60,0.8)
+            
+    :markdown-it
+       
+        The analysis with gel electrophoresis showed, that AC6-primers could indeed be elongated but the conjugation of primer and peptide failed. 
+        The anchor peptide should influence the running behavior due to its molecular weight and stop at a higher level if the conjugation had worked.
+        However, possible conjugates and elongated conjugates in lanes 3 and 5 show the same bands as single primer reference (lane 1) and elongated primer (lane 2).
 
         Because the basic design of this immobilization method (anchor peptides binding to the stick) worked we adapted our system by using custom-made maleimide-tagged primer, which can form covalent bonds with thiol groups in cysteine. 
         Under the assumption of different running behavior of the conjugates compared to pure primers, we tested two different maleimide-labeled primers at various ratios in gel electrophoresis. 
+        
+         
+    - var imgpath = "" + require("../assets/img/Results/2021-08-19_01.png")["default"]
+    +image(7, imgpath, "<b>Conjugations of LCI-fusion-protein with AT-rich and GC-rich maleimide-labeled ssDNA primers and different primer excesses.</b> 2.5% Agarose with TBE, 90 V, 60 min, SYBR Gold staining. M: GeneRuler 50 bp DNA Ladder 1: GC-rich primer reference 2: AT-rich primer reference, 3: Conjugation with 12.5x GC-rich primer excess 4: Conjugation with 5x GC-rich primer excess 5: Conjugation with 2x GC-rich primer excess 6: Conjugation with 12.5x AT-rich primer excess.", 60,0.8)
+    
+    :markdown-it
+        
+        As seen in figure 7, lanes 4 to 6 appeared in a bright smear. Therefore it can be concluded that the conjugation was successful
         Subsequently, to analyze the binding between primer and peptide a purification of the conjugate out of an agarose gel followed by an SDS-PAGE and western-blot was performed.
         These experiments sadly did not succeed but because our first gel electrophoreses indicated that the conjugation might have worked, we started TdT tailing reactions.
         Since an elongation of itself worked, but we did not know whether it was the conjugated or free excess primer, the next step was taken and immobilization of the possible conjugates on the polystyrene sticks was attempted as well as more TdT tailing reactions. 
@@ -112,7 +129,16 @@ block article
         Turning to streptavidin-biotin-bonds as a third approach, we started using streptavidin-coated magnetic beads and biotinylated primers with a TEG (triethyleneglycol) spacer.
         Beginning with tests regarding the immobilization of the primers per se, we successfully bound the biotinylated primer to the beads after a few experiments while altering the beads to primer ratio and implementing washing steps.
         Elution of the primer was also possible, even after binding the beads onto the magnetic rod.
+        
+                
+    - var imgpath = "" + require("../assets/img/Results/2021-10-05.png")["default"]
+    +image(8, imgpath, "<b>Permanent immobilization using biotin-streptavidin binding.</b> A) Magnet beads and primer were conjugated first, and the magnet stick was added afterwards. B) Magnet beads were attached to the magnet stick and primer was added afterwards. 2.5% Agarose TBE, SYBR Gold, 90V, 45 min. M: GeneRuler 50 bp DNA Ladder 1: Biotin-labelled N-Primer 2: Conjugation rest 3: Wash rest 4: Wash rest 5: Elution.",100,0.8)        
+        
+    :markdown-it
+        
         Gel electrophoreses proved that the system works. 
+        Conjugation was successful when adding magnet beads to primers in the first step and then the magnet rod.
+        As seen in lane A) 5, the primers could be eluted easily later. When binding the magnetic beads to the magnet first and performing the conjugation step afterward, it is visible in lane B) 2 that the primer did not bind to the immobilized beads.
         Throughout the project, we have considered that it was handy to have non-permanent immobilization.
         Implementing this aspect, we started using an envelope made out of polypropylene for the magnetic rod.
         While the immobilization was functional with this system as well, we were now also saving material because the magnetic beads did not bind irreversibly to the rod. 
