@@ -1,5 +1,6 @@
 @import "_main.scss";
 @import "header.scss";
+@import "content.scss";
 
 #themeSwitchWrapper {
     display: none !important;
@@ -200,7 +201,7 @@ attr-main {
 @include respond-below(sm) {
     attr-main {
         .mentor {
-            height: 65vh;
+            height: unset;
         }
 
 
