@@ -106,6 +106,12 @@ block article
         By contrast, the amount of enzyme naturally has a drastic influence on the reaction's velocity at every reaction time. 
         Since the enzyme is the most expensive component in our system and has the biggest influence on reaction velocity, its optimized use is the top priority.
 
+        Another thing worth mentioning is the different incorporation of nucleotides. According to $$K_{m}$$ and $$v_{max}$$ values ATP and GTP get incorporated much faster than CTP and TTP (figure 8).
+        This knowledge helped us to choose the right reaction time for each nucleotide and prevent irregularities in length for synthesized strands.
+        
+    - var imgpath = ""+require("../assets/img/modeling Bilder/nucleotides.png")["default"]
+    +image(8,imgpath,"Decrease of DNA0 with different nucleotides of the same concentration.")
+        
     
         # Applying Wet Lab Data
         
@@ -113,7 +119,7 @@ block article
         This experiment is particularly suitable because a large amount of data is available in digital form. 
         Since our network consists of coupled differential equations, we wrote a nonlinear regression program in MATLAB.  
         These reaction networks are normally time-dependent so time is the only variable during a reaction in the same reaction setup. 
-        Since our system consists of three kinetic parameters, we compared our used parameters [2](#citation2), with the calculated ones from the regression program. 
+        Because our system consists of three kinetic parameters, we compared our used parameters [2](#citation2), with the calculated ones from the regression program. 
         This way we could validate our model and compare the differences between literature, our model, and the experimental results. 
         All of the above-mentioned was done with the “lsqcurvefit” command of Matlab. 
         This is a nonlinear curve-fitting solver that solves the defined problem in a least-squares sense. 
@@ -130,7 +136,7 @@ block article
         So for our examined time interval for the elongation process, we make the assumption that our system is saturated with ATP.
        
     - var imgpath = ""+require("../assets/img/modeling Bilder/regression_of_CE-data.jpg")["default"]
-    +image(8,imgpath,"Regression of the capillary electrophoresis data. Results for the first three pools (DNA0: non-elongated DNA strand, DNA1: strand which got elongated by one base pair, DNA2: strand which got elongated by two base pairs).")
+    +image(9,imgpath,"Regression of the capillary electrophoresis data. Results for the first three pools (DNA0: non-elongated DNA strand, DNA1: strand which got elongated by one base pair, DNA2: strand which got elongated by two base pairs).")
         
     :markdown-it(html)
         
@@ -141,9 +147,9 @@ block article
         Besides our simulated results fit very well to the wet lab data which is astonishing, considering the fact that we constructed a completely new and multilayered model with our own assumptions. 
         The new estimated kinetic parameters are:
         
-        * v_max = 0.00006150 mol/l/s (0.0000083 mol/l/s in literature)
-        * K_DNA = 0.00015318 M (0.001 mol/l in literature)
-        * K_ATP = 0.00021808 M (0.0001 mol/l in literature)
+        * $$v_{max}$$ = 0.00006150 mol/l/s (0.0000083 mol/l/s in literature)
+        * $$K_{DNA}$$ = 0.00015318 M (0.001 mol/l in literature)
+        * $$K_{ATP}$$ = 0.00021808 M (0.0001 mol/l in literature)
         
         
         
@@ -161,7 +167,7 @@ block article
         First, the CE experiment could be repeated to minimize wet-lab data errors. 
         Further, the synthesis could be performed with our hardware to adapt the model to our hardware parameters. 
         In order to describe especially our hardware. 
-        Yet we just studied short elongation with one nucleotide sort. 
+        Yet we just studied short elongation. 
         Along with this modification effects like secondary structures and other molecular interactions affect the reaction kinetics.
 
 
