@@ -1762,7 +1762,7 @@ js:
     md5: 7a1f1da84c0e806e0a99e4c8b2303582
   index.bundle.js:
     link_URL: https://2021.igem.org/Template:Aachen/index-bundleJS?action=raw&ctype=text/javascript
-    md5: 6272714dff8c3d0b6b503a672e6230a9
+    md5: 4bf5ba37c07188f572c943c8d587951e
   members.bundle.js:
     link_URL: https://2021.igem.org/Template:Aachen/members-bundleJS?action=raw&ctype=text/javascript
     md5: f57384e28b20ef024cd9c384707694fa
