@@ -50,6 +50,7 @@ $igem-blue: #38A0F5;
 .sidebar {
     margin-top: 1rem;
     padding: 2rem 5rem 0 1rem;
+    left: -100px;
     h5 {
         color: $igem-straw-brown;
         // font-family: "Lato", sans-serif;
@@ -64,6 +65,7 @@ $igem-blue: #38A0F5;
         // font-family: "Lato", sans-serif;
         font-weight: 500;
         height: 80vh;
+        width: 30vw;
         overflow-y: auto;
         overflow-x: hidden;
         transition: none;
@@ -81,6 +83,7 @@ $igem-blue: #38A0F5;
                 position: relative;
                 text-decoration: none;
                 padding-bottom: 6px;
+                overflow-wrap: break-word;
                 transition: color 0.5s;
                 color: $igem-straw-brown;
                 transition: font-size 0.3s, color 0.3s, font-weight 0.3s !important;
@@ -491,10 +494,10 @@ footer {
 }
 
 @include respond-below(lg) {
-    main {
+    .container {
         .content {
             article {
-                padding: 0;
+                padding: 10px;
             }
             h1 {
                 font-size: 2rem;
@@ -516,7 +519,7 @@ footer {
             margin-left: 1.75rem;
         }
     }
-    main {
+    .container {
         .sidebar {
             display: none;
         }
@@ -542,7 +545,7 @@ footer {
             margin: 0 15px 15px 0;
         }
     }
-    main {
+    .container {
         .content {
             padding-left: 0;
             padding-right: 0;
@@ -557,7 +560,7 @@ footer {
 }
 
 @include respond-below(xs) {
-    main {
+    .container {
         padding: 0;
         .content {
             article {
