@@ -30,7 +30,7 @@ block article
         When one component reacts to become another one, the pools are connected.
         This connection is called flux and represents the change of substance a and b.
     - var imgpath = "" + require("../assets/img/modeling Bilder/reaction_system.PNG")["default"]
-    +image(1,imgpath,"Pools and fluxes of DNA elongation by the TdT.",100, 0.8)
+    +image(1,imgpath,"Pools and fluxes of DNA elongation by the TdT.",60, 0.8)
     
     :markdown-it(html)
     
@@ -54,7 +54,7 @@ block article
         This approach however could be improved. As we found out later that the enzyme was not saturated with DNA strands in our lab conditions, a new kinetic model was elaborated. 
         
     - var imgpath = "" + require("../assets/img/modeling Bilder/Mich-Men_stranglängen_verteilung.jpg")["default"]
-    +image(2, imgpath, "Concentrations of the DNA pools over time according to Michaelis-Menten kinetics. LX: DNA was elongated by X nucleotides.",100, 0.8)
+    +image(2, imgpath, "Concentrations of the DNA pools over time according to Michaelis-Menten kinetics. LX: DNA was elongated by X nucleotides.",60, 0.8)
     
     :markdown-it(html)
         
@@ -68,11 +68,15 @@ block article
         $$\frac{dDNA}{dt} = \frac{v_{max} \cdot c_{DNA} \cdot c_{dNTP}}{K_{DNA} \cdot K_{dNTP}+K_{DNA} \cdot c_{dNTP}+K_{dNTP} \cdot c_{DNA} +c_{DNA} \cdot c_{dNTP}}$$
         
     - var imgpath = "" + require("../assets/img/modeling Bilder/concentrations.png")["default"]
-    +image(3,imgpath,"Concentrations of DNA pools over time according to two substrate model.",100, 0.8)
+    +image(3,imgpath,"Concentrations of DNA pools over time according to two substrate model.",60, 0.8)
     
     - var imgpath = "" + require("../assets/img/modeling Bilder/strand-length-distribution.png")["default"]
-    +image(4,imgpath,"Distribution of DNA lengths at different timestamps.",100, 0.8)
- 
+    +image(4,imgpath,"Distribution of DNA lengths at different timestamps.",60, 0.8)
+    
+    - var imgpath = "" + require("../assets/img/modeling Bilder/Adenin_CE.png")["default"]
+    +image(5,imgpath,"Length distribution of elongation with Adenin.CE results, fluorescence intensity against strand length for different timestamps",60, 0.8)
+    
+    
     :markdown-it(html)
     
         With increasing time the mean of the strand length distribution rises and the distribution becomes broader. 
@@ -87,7 +91,7 @@ block article
         The independent parameters are enzyme- and nucleotide concentration and reaction time. The repercussions of a change of these parameters are shown in figure  5.
         
     - var imgpath = "" + require("../assets/img/modeling Bilder/optimization.png")["default"]
-    +image(5,imgpath,"Optimization problem of our system.",100, 0.8)
+    +image(6,imgpath,"Optimization problem of our system.",60, 0.8)
     
     :markdown-it(html)
   
@@ -96,10 +100,10 @@ block article
         Because we are facing an optimization problem in our system, we need data like this to find the ideal reaction conditions.
     
     - var imgpath = "" + require("../assets/img/modeling Bilder/3D_colourmap.png")["default"]
-    +image(6,imgpath,"Percentage of strands with atleast one elongation in dependence of time and dNTP starting concentration.",100, 0.8)
+    +image(7,imgpath,"Percentage of strands with atleast one elongation in dependence of time and dNTP starting concentration.",60, 0.8)
     
     - var imgpath = ""+require("../assets/img/modeling Bilder/vmax-3D-pot-colourmap.png")["default"]
-    +image(7,imgpath,"Percentage of strands with atleast one elongation in dependence of time and enzyme units.",100, 0.8)
+    +image(8,imgpath,"Percentage of strands with atleast one elongation in dependence of time and enzyme units.",60, 0.8)
     
     :markdown-it(html)
     
@@ -131,7 +135,7 @@ block article
         So for our examined time interval for the elongation process, we make the assumption that our system is saturated with ATP.
        
     - var imgpath = ""+require("../assets/img/modeling Bilder/regression_of_CE-data.jpg")["default"]
-    +image(8,imgpath,"Regression of the capillary electrophoresis data. Results for the first three pools (DNA0: non-elongated DNA strand, DNA1: strand which got elongated by one base pair, DNA2: strand which got elongated by two base pairs).",100, 0.8)
+    +image(9,imgpath,"Regression of the capillary electrophoresis data. Results for the first three pools (DNA0: non-elongated DNA strand, DNA1: strand which got elongated by one base pair, DNA2: strand which got elongated by two base pairs).",60, 0.8)
         
     :markdown-it(html)
         
