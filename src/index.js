@@ -12,7 +12,7 @@ function fadeOutOnScroll(element, offset) {
 
     var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top;
     var elementHeight = element.offsetHeight;
-    var scrollTop = document.getElementById('scrollable').scrollTop;
+    var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
 
     var opacity = window.getComputedStyle(element).getPropertyValue("opacity");
 
@@ -44,7 +44,7 @@ $('#rocket-container').css({
 function scrollRocket() {
     var rocket_container = document.getElementById('rocket-container');
     var distanceToTop = window.pageYOffset + rocket_container.getBoundingClientRect().top;
-    var scrollTop = document.getElementById('scrollable').scrollTop;
+    var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
 
     var rocket_top = -scrollTop + distanceToTop + rocket_offset;
 
