@@ -42,7 +42,7 @@ jobs:
           IGEM_PASSWORD: ${{ secrets.IGEM_PASSWORD }}
           
       - name: Add Changes to Git
-        run: git add upload_map.yml wikisync.log dist igem
+        run: git add -f upload_map.yml wikisync.log dist igem
       
       - name: Commit Changes
         run: |
