@@ -427,10 +427,10 @@ $igem-blue: #38A0F5;
 
 #references {
     ol {
-        padding-inline-start: 30px;
+        padding-inline-start: 25px;
     }
     li {
-        padding: 0 0 20px 10px;
+        padding: 0 0 20px;
         scroll-margin-top: 100px;
         &:target {
             animation: target-fade 3s 1;
