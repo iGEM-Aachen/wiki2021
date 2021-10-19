@@ -136,6 +136,10 @@ attr-main {
         border-radius: 30px;
         margin-bottom: 30px;
         padding: 10px 15px 30px 15px;
+        height: 81vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         h4,
         h5 {
             color: $igem-dark;
@@ -170,9 +174,11 @@ attr-main {
     .mentor-top {
         position: relative;
         display: flex;
+
         align-items: center;
         padding: 20px;
         img {
+            margin: 0;
             width: 50%;
             border-radius: 50%;
         }
@@ -192,23 +198,30 @@ attr-main {
 
 
 @include respond-below(sm) {
-    .card {
-        margin-bottom: 80px;
-        .card-img-top {
-            img {
-                width:  40%;
+    attr-main {
+        .mentor {
+            height: 65vh;
+        }
+
+
+        .card {
+            margin-bottom: 80px;
+            .card-img-top {
+                img {
+                    width:  40%;
+                }
             }
         }
-    }
-    .attributor {
-        flex-direction: column;
-        .person {
-            width: 100% !important;
-            display: flex;
+        .attributor {
             flex-direction: column;
-        }
-        .attribution {
-            max-width: 100% !important;
+            .person {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            .attribution {
+                max-width: 100%;
+            }
         }
     }
 }
