@@ -12,7 +12,12 @@ html(lang="en")
       .jumbotron.home-card
         .container
           .header
-            img(src=require('./assets/img/project_logo.svg')['default'])
+            - var videopath = require("./assets/img/homepage/projectlogo.mp4")["default"]
+            //- +video(videopath, "", 100) 
+            .video
+                video(style="width: 100%;" autoplay muted)
+                    source(src=videopath type="video/mp4")
+                    span Your browser does not support the video tag. :(
             h2 Using DNA for Digital Long-Term Data Storage
       .jumbotron.home-card.home-bg-light
         .container
