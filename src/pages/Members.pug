@@ -10,16 +10,17 @@ block main
   include ../templates/attributor_list
   include ../templates/nav_list
 
-  .container
-    .row.d-flex.justify-content-center.tiles
-      each member in team_members
-        .col-xl-4.col-lg-4.col-md-6.col-xs-12
-          .card
-            .card-img-top
-              a.tile
-                img(src=require('../assets/img/members/'+member.name+" "+member.surname+'.jpg')['default'])
-                .details
-                  span.info= member.motivation
-            .card-body
-              h4.card-title= member.name+" "+member.surname+", "+member.age
-              h5.card-subtitle= member.course
+  .bg-image
+    .container
+      .row.d-flex.justify-content-center.tiles
+        each member in team_members
+          .col-xl-4.col-lg-4.col-md-6.col-xs-12
+            .card
+              .card-img-top
+                a.tile
+                  img(src=require('../assets/img/members/'+member.name+" "+member.surname+'.jpg')['default'])
+                  .details
+                    span.info= member.motivation
+              .card-body
+                h4.card-title= member.name+" "+member.surname+", "+member.age
+                h5.card-subtitle= member.course
