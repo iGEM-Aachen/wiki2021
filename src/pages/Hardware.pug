@@ -69,6 +69,18 @@ block article
         Of course, much can be improved on this fundamental design of the hardware. For example, the overall design could be made even more compact, and a casing with cooling would be beneficial. 
         Furthermore, use could be made easier with LCD displays showing status. Data would be sent to the device, it would calibrate itself and the status of the operation would be read on the display. 
         This handling would be made even easier by a REST API (Standardized Programming Interface), which would directly link the software and hardware code. 
+
+        # Downloads
+        Here you can download our schematic, CAD files and code
+
   
-    - var pdfpath = "" + require("../assets/Hardware/Schematic.pdf")["default"]
-    a(href=pdfpath) Here you can find our Schematic
+    div(style=" display: table; clear: both; width: 100%; margin-top: 40px;")
+        div(style=" float: left; width: 33.33%; text-align: center;")
+            - var filepath = "" + require("../assets/Hardware/Schematic.pdf")["default"]
+            +extralink("Schematic", filepath)
+        div(style=" float: left; width: 33.33%; text-align: center;")
+            - var filepath = "" + require("../assets/Hardware/Parts.zip")["default"]
+            +extralink("CAD-Files",filepath)
+        div(style=" float: left; width: 33.33%; text-align: center;")
+           - var filepath = "" + require("../assets/Hardware/Code.zip")["default"]
+            +extralink("Code",filepath)
