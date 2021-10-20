@@ -1,7 +1,6 @@
 @import "_main.scss";
 @import "header.scss";
 @import "content.scss";
-
 #themeSwitchWrapper {
     display: none !important;
 }
@@ -106,6 +105,7 @@ attr-main {
         position: relative;
         display: flex;
         .person {
+            margin-right: 1.5rem;
             width: 30%;
             h4 {
                 font-weight: bold;
@@ -175,7 +175,6 @@ attr-main {
     .mentor-top {
         position: relative;
         display: flex;
-
         align-items: center;
         padding: 20px;
         img {
@@ -225,13 +224,11 @@ attr-main {
         .mentor {
             height: unset;
         }
-
-
         .card {
             margin-bottom: 80px;
             .card-img-top {
                 img {
-                    width:  40%;
+                    width: 40%;
                 }
             }
         }
