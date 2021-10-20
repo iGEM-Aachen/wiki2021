@@ -37,10 +37,6 @@ window.addEventListener('scroll', scrollHandler);
 var rocket_offset = 300;
 var rocket_max_margin = 700;
 
-$('#rocket-container').css({
-    'height': rocket_max_margin + 100
-})
-
 function scrollRocket() {
     var rocket_container = document.getElementById('rocket-container');
     var distanceToTop = window.pageYOffset + rocket_container.getBoundingClientRect().top;
