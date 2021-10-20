@@ -1382,6 +1382,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/0/05/T--Aachen--img--memes--WhatsApp_Image_2021-10-19_at_16.50.17.jpeg
     md5: a52555f49efba3e3a150df63bd66b00d
     upload_filename: T--Aachen--img--memes--WhatsApp Image 2021-10-19 at 16.50.17.jpeg
+  assets/img/memes/WhatsApp Image 2021-10-20 at 16.17.03.jpeg:
+    link_URL: https://2021.igem.org/wiki/images/0/09/T--Aachen--img--memes--WhatsApp_Image_2021-10-20_at_16.17.03.jpeg
+    md5: 356c2a13ad6c5e80aed5c96c53bce83b
+    upload_filename: T--Aachen--img--memes--WhatsApp Image 2021-10-20 at 16.17.03.jpeg
   assets/img/memes/WhatsApp Video 2021-08-13 at 23.48.12.mp4:
     link_URL: https://2021.igem.org/wiki/images/7/79/T--Aachen--img--memes--WhatsApp_Video_2021-08-13_at_23.48.12.mp4
     md5: 357f9f831f6365c234b5197600524e55
@@ -2011,7 +2015,7 @@ html:
     md5: 97b3cfe145eea89faf7e001554c99593
   Memes/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Memes
-    md5: 14539c7fcd4944e5d411d1739f19e215
+    md5: 769270c1f7e8bfa24694d42ade9788d3
   Memes\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Memes
     md5: 4c51f5500bef5b33212b9935690c137b
