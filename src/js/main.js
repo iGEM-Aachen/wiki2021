@@ -174,7 +174,7 @@ $("head").append("<link rel='apple-touch-icon' sizes='180x180' href='https://202
 $("head").append("<link rel='icon' type='image/png' sizes='32x32' href='https://2021.igem.org/wiki/images/8/8b/T--Aachen--icons--favicons--favicon-32x32.png'>");
 $("head").append("<link rel='icon' type='image/png' sizes='16x16' href='https://2021.igem.org/wiki/images/7/7a/T--Aachen--icons--favicons--favicon-16x16.png'>");
 $("head").append("<link rel='manifest' href='data:application/manifest+json,{ 'name': 'iGEM Aachen 2021', 'short_name': 'iGEM Aachen 2021', 'icons': [ { 'src': 'https://2021.igem.org/wiki/images/b/ba/T--Aachen--icons--favicons--android-chrome-192x192.png', 'sizes': '192x192', 'type': 'image/png' }, { 'src': 'https://2021.igem.org/wiki/images/e/ea/T--Aachen--icons--favicons--android-chrome-512x512.png', 'sizes': '512x512', 'type': 'image/png' } ], 'theme_color': '#182632', 'background_color': '#182632', 'display': 'standalone' }'/>");
-$("head").append("<link rel='mask-icon' href='https://2021.igem.org/wiki/images/7/7d/T--Aachen--icons--favicons--safari-pinned-tab.svg' color='#182632'>");
+// $("head").append("<link rel='mask-icon' href='https://2021.igem.org/wiki/images/7/7d/T--Aachen--icons--favicons--safari-pinned-tab.svg' color='#182632'>");
 $("head").append("<link rel='shortcut icon' href='https://2021.igem.org/wiki/images/f/f6/T--Aachen--icons--favicons--favicon.png'>");
 $("head").append("<meta name='apple-mobile-web-app-title' content='iGEM Aachen 2021'>");
 $("head").append("<meta name='apple-mobile-web-app-status-bar-style' content='#182632'></meta>");
