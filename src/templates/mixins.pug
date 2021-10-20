@@ -1,5 +1,8 @@
 - urlPrefix = "/"
 
+mixin extralink(title,url)
+    a(class="extraLinks" href=url)= title 
+
 mixin buttonLeft(buttonTitle)
     if buttonTitle.length <= 7
         - var length = "short"

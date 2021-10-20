@@ -610,3 +610,101 @@ footer {
         font-size: 2.5rem;
     }
 }
+
+
+/******************************
+ * Custom CSS for specific Pages
+ ******************************/
+
+//If a Link is not in uniform design, you can use the mixin "extralink"
+a.extraLinks{
+        color: $black;
+        position: relative;
+        text-decoration: none;
+        display: inline-block;
+        padding: 0 1px;
+        transition: color ease 0.3s;
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            background-color: $linkHover;
+            height: 2px;
+        }
+        &:before {
+            width: 0%;
+            left: 0;
+            bottom: 0;
+            transition: width ease 0.4s;
+        }
+        &:after {
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            transition: all ease 0.6s;
+        }
+        &:hover {
+            text-decoration: none;
+            // color: $black;
+            &::before {
+                width: 100%;
+            }
+            &::after {
+                left: 100%;
+                width: 0%;
+                transition: all ease 0.2s;
+            }
+        }
+    }
+
+// body.dark {
+//     header {
+//         color: white;
+//     }
+//     .sidebar {
+//         color: white;
+//         #contents li a {
+//             color: white;
+//         }
+//     }
+//     .content {
+//         h1,
+//         h2,
+//         h3,
+//         h4,
+//         h5,
+//         h6,
+//         li,
+//         a,
+//         strong,
+//         p {
+//             color: white;
+//         }
+//         table {
+//             border-color: $tableBorder-dark;
+//             color: white;
+//             thead {
+//                 th,
+//                 td {
+//                     border-color: $tableBorder-dark;
+//                 }
+//             }
+//             tbody {
+//                 th,
+//                 td {
+//                     border-color: $tableBorder-dark;
+//                 }
+//             }
+//             th,
+//             td {
+//                 border-color: $tableBorder-dark;
+//             }
+//         }
+//     }
+//     #references {
+//         cite,
+//         a {
+//             color: white;
+//         }
+//     }
+// }
