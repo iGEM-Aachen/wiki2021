@@ -36,7 +36,7 @@ block article
     +image(1, imgpath, "2.5% Agarose in TBE with samples from 2021-06-07_table2, 90 V 52 min, SYBR Gold (20 min); M: GeneRuler 50 bp DNA Ladder; 1: P100, 1:1000; 2: P100, 1:1000; 3: P100, 1:2000; 4: P100, 1:5000; 5: P100, 1:10000; M: GeneRuler 50 bp DNA Ladder",60,0.8)
     
     
-    :markdown-it(html)
+    :markdown-it
     
         To tackle this problem, we wanted to establish the PAA-electrophoresis. 
         After some research, we decided to try a 15% PAA Gel with GelRed post-staining. 
@@ -51,7 +51,7 @@ block article
     - var imgpath = "" + require("../assets/img/Experiments/2021-05-12_01_inv_paa.jpg")["default"]
     +image(2, imgpath, "15% PAA Gel resolution test with samples from 2021-05-12_table1, 100 V 60 min, SYBR Gold (20 min); M: GeneRuler UltraLowRange DNA Ladder; 1: GALIfor 1:5; 2: GALIfor 1:10; 3: GALIfor 1:15; 4: GALIfor 1:20; 5: GALIfor 1:30; 6: GALIfor 1:40.)",60,0.8)
     
-    :markdown-it(html)
+    :markdown-it
 
         To analyze our samples even more in detail, we tried to use capillary electrophoresis (CE). 
         Sebastian Palluk recommended to consult experts from the Fraunhofer IME in Aachen. 
@@ -65,7 +65,7 @@ block article
     - var imgpath = "" + require("../assets/img/Experiments/2021-07-08_CE.jpg")["default"]
     +image(3, imgpath, "Elongation of AT-rich primer with Thymin, 60 s; Peak Scanner plot, fluorescence intensity against time",60,0.8)
     
-    :markdown-it(html)
+    :markdown-it
 
         # Preventing secondary structures
 
@@ -90,7 +90,7 @@ block article
     - var imgpath = "" + require("../assets/img/Experiments/GC_Oligo_mit_SSB.png")["default"]
     +image(5, imgpath, "Inserts that were elongated with SSBs. 4 clones with inserts >300 bp, A01 clone up showed an insert with 978 nucleotides added to the GC-rich primer. SeqMan Pro 15 plot.",60,0.8)
 
-    :markdown-it(html)
+    :markdown-it
     
         As a conclusion from our experiments, it can be seen that we were able to reduce the formation of secondary structures in ssDNA by using SSBs. 
         Adding them to a TdT tailing reaction in solution seems to significantly enhance the elongation capacity. 
