@@ -266,7 +266,16 @@ block article
         He also offered us to provide those modified triphosphates for our purposes. 
         We are really glad that we had the opportunity of meeting Mr. Heckel! 
 
-
+    :markdown-it
+        # Newsletter for our Sponsors
+        
+        For the importants Months of May, June, August and September we created newsletters to inform our sponsors and supporters about our prgress.
+        
+    - var pdfpath = "Newsletter May" + require("../assets/documents/communication/Newsletter_May_designed.pdf")["default"]
+    - var pdfpath = "Newsletter June" + require("../assets/documents/communication/Newsletter_June_designed.pdf")["default"]
+    - var pdfpath = "Newsletter August" + require("../assets/documents/communication/Newsletter_August_designed.pdf")["default"]
+    - var pdfpath = "Newsletter September" + require("../assets/documents/communication/Newsletter_September.pdf")["default"]
+    a(href=pdfpath) Here you can find the lesson plan 
 
 prepend citations
     - var citations = [{"authors": "Yang, Z., Hutter, D., Sheng, P., Sismour, A. M., & Benner, S. A. (2006)", "doi": "https://doi.org/10.1093/nar/gkl633", "journal": "Nucleic Acids Research", "numbers": "34(21), 6095–6101", "title": "Artificially expanded genetic information system: A new base pair with an alternative hydrogen bonding pattern", "type": "article"}, {"authors": "Tauraitė, D., Jakubovska, J., Dabužinskaitė, J., Bratchikov, M., & Meškys, R. (2017)", "doi": "https://doi.org/10.3390/molecules22040672", "journal": "Molecules (Basel, Switzerland)", "numbers": "22(4)", "title": "Modified Nucleotides as Substrates of Terminal Deoxynucleotidyl Transferase", "type": "article"}]
