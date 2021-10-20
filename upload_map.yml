@@ -683,6 +683,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/a/af/T--Aachen--img--all_sponsors.png
     md5: 908893e64a98f338f750432aa216aaaa
     upload_filename: T--Aachen--img--all_sponsors.png
+  assets/img/communication/biospektrum.PNG:
+    link_URL: https://2021.igem.org/wiki/images/d/d6/T--Aachen--img--communication--biospektrum.PNG
+    md5: 1960425c9663155fc6860ebc4aea84e1
+    upload_filename: T--Aachen--img--communication--biospektrum.PNG
   assets/img/communication/extractionKit1.jpg:
     link_URL: https://2021.igem.org/wiki/images/0/0b/T--Aachen--img--communication--extractionKit1.jpg
     md5: ce68314ce3f98cefd4f0f0d16b6df3ce
@@ -1037,7 +1041,7 @@ assets:
     upload_filename: T--Aachen--img--headers--header_texts--Sample.svg
   assets/img/headers/header_texts/Science Communication.svg:
     link_URL: https://2021.igem.org/wiki/images/1/1c/T--Aachen--img--headers--header_texts--Science_Communication.svg
-    md5: d8a231392a44108455c90e087e77180b
+    md5: d12c66b41ec360e285b2de344b984fd4
     upload_filename: T--Aachen--img--headers--header_texts--Science Communication.svg
   assets/img/headers/header_texts/Software.svg:
     link_URL: https://2021.igem.org/wiki/images/7/73/T--Aachen--img--headers--header_texts--Software.svg
@@ -1974,19 +1978,19 @@ html:
     md5: 1562419c1e71225dd274836d1e96492c
   Experiments/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Experiments
-    md5: 0767f5c209f344bb1b9dafa1b4be7035
+    md5: ae56610b803bcf99d18f2f78b2952944
   Experiments\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Experiments
     md5: 2536e4069ecb96c2d028bc359feea07f
   Hardware/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Hardware
-    md5: 8287af9f303224afe2cfacbd696bd51d
+    md5: 7328ff11b34b6e3a80b24cbb80e03e50
   Hardware\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Hardware
     md5: 915fa1ab55e039398be0474f3a878651
   Human_Practices/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Human_Practices
-    md5: 1f5ab87a9a37f753b8fe764b6f869725
+    md5: e1d9100af9d6ca143b508ecf5dbc5b9e
   Human_Practices\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Human_Practices
     md5: add694d9d50cd9431dc45f7ca06eed4e
@@ -2037,7 +2041,7 @@ html:
     md5: c064d73d76a0b9bbbb68c7c4ced75778
   Proof_Of_Concept/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Proof_Of_Concept
-    md5: 00574eb72448f5134c3c2ec248089f58
+    md5: 4ea6e06c3bf155662c26a10923452e99
   Proof_Of_Concept\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Proof_Of_Concept
     md5: 89b26363d719992315be37647e9f91db
@@ -2055,7 +2059,7 @@ html:
     md5: b840e956ac31ce1bd58521f46f8543f8
   Results/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Results
-    md5: 2cab897a7c1b4ecab0e1c62d46f92a83
+    md5: d42d7cd3954ec12ac723fe7a4e8d46ec
   Results\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Results
     md5: 3ae3651a7245a76f0aa61a36f1ead9cd
@@ -2073,7 +2077,7 @@ html:
     md5: 0ba5d0725c84c2dad4c72618fdb07412
   Science_Communication/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Science_Communication
-    md5: 20e4403bf4ca26a9c45218ea1733f11a
+    md5: 7aeab970dca175a08247799d6272b683
   Software/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Software
     md5: 931349c08d544f2f83f5e321cd578862
