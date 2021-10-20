@@ -32,6 +32,7 @@ $igem-straw-brown: #E8ECD7;
 $igem-straw-brown-1: #999b90;
 $igem-straw-brown-light: #ecefde;
 $igem-green: #2ED265;
+$igem-green-dark: #179742;
 $igem-spring-green: #34E08F;
 $igem-cyan: #3CF4CC;
 $igem-red: #F55656;
@@ -169,8 +170,12 @@ $igem-blue: #38A0F5;
         summary {
             color: $igem-dark;
         }
+        .pdflink-text {
+            margin-left: 35px;
+        }
         .pdflink {
             margin-left: 35px;
+            display: inline !important;
         }
         .links {
             margin-top: -20px;
@@ -392,7 +397,7 @@ $igem-blue: #38A0F5;
     margin-left: 5px;
 }
 
-.content p,
+.content,
 #references li {
     a:not(.citation) {
         color: $black;
@@ -605,55 +610,3 @@ footer {
         font-size: 2.5rem;
     }
 }
-
-// body.dark {
-//     header {
-//         color: white;
-//     }
-//     .sidebar {
-//         color: white;
-//         #contents li a {
-//             color: white;
-//         }
-//     }
-//     .content {
-//         h1,
-//         h2,
-//         h3,
-//         h4,
-//         h5,
-//         h6,
-//         li,
-//         a,
-//         strong,
-//         p {
-//             color: white;
-//         }
-//         table {
-//             border-color: $tableBorder-dark;
-//             color: white;
-//             thead {
-//                 th,
-//                 td {
-//                     border-color: $tableBorder-dark;
-//                 }
-//             }
-//             tbody {
-//                 th,
-//                 td {
-//                     border-color: $tableBorder-dark;
-//                 }
-//             }
-//             th,
-//             td {
-//                 border-color: $tableBorder-dark;
-//             }
-//         }
-//     }
-//     #references {
-//         cite,
-//         a {
-//             color: white;
-//         }
-//     }
-// }
