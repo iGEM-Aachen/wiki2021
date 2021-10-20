@@ -12,10 +12,13 @@ html(lang="en")
           tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
         });
       script(src="https://2021.igem.org/common/MathJax-2.5-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML")
+      script
+        | function resizeSidebar() {document.getElementById("contents").style.height = (document.getElementById("list").scrollHeight + 100 + "px"); }
   body(
     data-spy='scroll'
     data-target='#contentnav'
     data-offset='150'
+    onload="resizeSidebar()"
   )
     include nav.pug
     header.d-flex.justify-content-center.align-items-center
@@ -28,9 +31,14 @@ html(lang="en")
         .container
           .row
             .sidebar.col-lg-3
-              .nav#contents
-                h5 #{title}
-                ul
+              if title != "Notebook" && title != "Human Practices"
+                .nav#contents(style="flex-direction: column")
+                  h5 #{title}
+                  ul#list
+              else
+                .nav#contents
+                  h5 #{title}
+                  ul
                   //- Filled automatically from js
             .content.col-lg-9
               block content
