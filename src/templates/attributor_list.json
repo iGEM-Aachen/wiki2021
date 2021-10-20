@@ -10,7 +10,7 @@
                 "picturename": "_Ulrich Schwaneberg",
                 "name": "Prof. Dr. Ulrich Schwaneberg",
                 "institution": "Institute for Biotechnology, RWTH Aachen University",
-                "attribution": "As head of the Institute of Biotechnology, Professor Schwaneberg not only provided us with lab space and supplies, he also introduced us to members of his team who could help us with certain issues. Furthermore, he helped us find a great instructor, Dr. Alexander Boes, who supported us through our daily lab routine. Professor Schwaneberg’s expertise in adhesion peptides inspired us to try new and innovative immobilization systems and we had the unique opportunity to try them at the Leibnitz Institute for Interactive Materials (DWI). We are grateful for his commitment and advice."
+                "attribution": "As head of the Institute of Biotechnology, Professor Schwaneberg not only provided us with lab space and supplies, he also introduced us to members of his team who could help us with certain issues. Furthermore, he helped us find a great instructor, Dr. Alexander Boes, who supported us through our daily lab routine. Professor Schwaneberg's expertise in adhesion peptides inspired us to try new and innovative immobilization systems, and we had the unique opportunity to try them at the Leibnitz Institute for Interactive Materials (DWI). We are grateful for his commitment and advice."
             },
             {
                 "picturename": "Wolfgang Wiechert",
@@ -22,7 +22,7 @@
                 "picturename": "Alexander Boes",
                 "name": "Dr. Alexander Boes",
                 "institution": "Leibniz Institute for Interactive Materials, RWTH Aachen University",
-                "attribution": "Alex was the best instructor we could have wished for. He really made an effort to immerse himself in the unconventional topic of DNA synthesis and helped us perform our immobilization experiments in the DWI lab. We met weekly to discuss lab results and troubleshoot, exchanging ideas and finding solutions. Guiding us on our way, he remained relaxed when problems arose and gave advice when we did not know what to do next. We are grateful for his dedication to our team and we would not have come this far without him."
+                "attribution": "Alex was the best instructor we could have wished for. He really made an effort to immerse himself in the unconventional topic of DNA synthesis and helped us perform our immobilization experiments in the DWI lab. We met weekly to discuss lab results and troubleshoot, exchanging ideas and finding solutions. Guiding us on our way, he remained relaxed when problems arose, and gave advice when we did not know what to do next. We are grateful for his dedication to our team and we would not have come this far without him."
             }
         ]
     },
@@ -36,7 +36,7 @@
             {
                 "name": "Prof. George Church, PhD.",
                 "institution": "Wyss Institute, Harvard University",
-                "attribution": "Professor Church is the inspiration for our project. Our ideas are based on his research and we are honored, that he accepted to meet with us. He helped us with various aspects of our project and gave us unique input for our storytelling. We want to thank him for his feedback, new perspectives, and an unforgettable meeting."
+                "attribution": "Professor Church is the inspiration for our project. Our ideas are based on his research, and we are honored that he agreed to meet with us. He helped us with various aspects of our project and gave us unique input for our storytelling. We want to thank him for his feedback, new perspectives, and an unforgettable meeting."
             },
             {
                 "name": "Prof. Dr. Alexander Heckel",
@@ -46,7 +46,7 @@
             {
                 "name": "Prof. Dr. Jörn Kalinowski, Dr. Christian Rückert",
                 "institution": "Center for Biotechnology, University Bielefeld",
-                "attribution": "Professor Kalinowski and Dr. Rückert explained the principles of nanopore sequencing and pointed out difficulites we could be facing. We greatly appreciate their time and input."
+                "attribution": "Professor Kalinowski and Dr. Rückert explained the principles of nanopore sequencing and pointed out difficulties we could be facing. We greatly appreciate their time and input."
             },
             {
                 "name": "Dr. Florian Kraft",
@@ -61,12 +61,12 @@
             {
                 "name": "Dr. Sebastian Palluk",
                 "institution": "Ansa Biotechnologies",
-                "attribution": "Sebastian is an expert in DNA synthesis with TdT and participated in the iGEM competition himself. He gave some really good advice about the implementation of our experiments and shared his experience with first tries and failures with this topic. We want to thank him for his time, his input, and his encouragement."
+                "attribution": "Sebastian is an expert in DNA synthesis with TdT and participated in the iGEM competition himself. He gave some excellent advice about the implementation of our experiments and shared his experience with first tries and failures with this topic. We want to thank him for his time, his input, and his encouragement."
             },
             {
                 "name": "Prof. Dr. Dörte Rother, Dr. Torsten Sehl, Jan-Dirk Spöring",
                 "institution": "Institute for Biotechnology, FZ Jülich",
-                "attribution": "Professor Rother and her team are experts in enzyme immobilization systems and helped us consider, which system could work for our project. We are thankful for their time and input."
+                "attribution": "Professor Rother and her team are experts in enzyme immobilization systems and helped us consider which system could work for our project. We are thankful for their time and input."
             },
             {
                 "name": "Prof. Dr. Elmar Weinhold",
@@ -76,7 +76,7 @@
             {
                 "name": "Dr. Martin Zimmermann",
                 "institution": "Institute for Applied Microbiology, RWTH Aachen University",
-                "attribution": "Dr. Zimmermann has long-standing experience with working in the lab and particularly helped us finding the right conditions for a denaturing PAGE for our unconventional samples. Furthermore, he encouraged us to assess the health risks associated with the applied methods. We are thankful for his advice, especially concerning the things that are too often neglected."
+                "attribution": "Dr. Zimmermann has long-standing experience with working in the lab and particularly helped us find the right conditions for a denaturing PAGE for our unconventional samples. Furthermore, he encouraged us to assess the health risks associated with the applied methods. We are thankful for his advice, especially concerning the things that are too often neglected."
             }
         ]
     },
@@ -90,7 +90,7 @@
             {
                 "name": "Marian Bienstein",
                 "institution": "Institute for Biotechnology, RWTH Aachen University",
-                "attribution": "Marian spontaneously gave us an introduction to the S1 lab in the Institute of Biotechnology and took his time to answer all our beginner’s questions and assist us with our first attempts at gel electrophoresis. Furthermore, he provided us with a PCR mastermix and loading dye at a time where we had not mastered the timing with our ordering process. We are grateful for his help in getting started in the lab."
+                "attribution": "Marian spontaneously gave us an introduction to the S1 lab in the Institute of Biotechnology and took his time to answer all our beginner's questions and assist us with our first attempts at gel electrophoresis. Furthermore, he provided us with a PCR mastermix and loading dye when we had not mastered the timing with our ordering process. We are grateful for his help in getting started in the lab."
             },
             {
                 "name": "Isabell Hofmann",
@@ -100,12 +100,12 @@
             {
                 "name": "Ursula Holter",
                 "institution": "Institute for Biotechnology, RWTH Aachen University",
-                "attribution": "Ursula made our time at the Institute of Biotechnology enjoyable. We could laugh about the everyday lab failures with her, which brightened our mood and saved us from desperation. She would always take the time to troubleshoot with us and we could ask her anything. We want to thank her for reminding us, that such problems and failures are normal and no reason for giving up."
+                "attribution": "Ursula made our time at the Institute of Biotechnology enjoyable. We could laugh about the everyday lab failures with her, which brightened our mood, and saved us from desperation. She would always take the time to troubleshoot with us and we could ask her anything. We want to thank her for reminding us that such problems and failures are normal and no reason for giving up."
             },
             {
                 "name": "Kalle Hüser",
                 "institution": "Institute for Applied Microbiology, RWTH Aachen University",
-                "attribution": "Kalle assisted us on several occasions we worked in the Institute of Applied Microbiology. He showed us the lab equipment and we could always ask for help. We want to thank him for being there for us."
+                "attribution": "Kalle assisted us on several occasions we worked in the Institute of Applied Microbiology. He showed us the lab equipment, and we could always ask for help. We want to thank him for being there for us."
             },
             {
                 "name": "Yi Lu",
@@ -144,7 +144,7 @@
             {
                 "name": "Theresa Heckenbücker, Bernd Seibert",
                 "institution": "Kölner Jugendwerkzentrum",
-                "attribution": "Theresa and Bernd provided us materials and tools to complete the hardware and gave us tipps on how to build it. We want to thank them for their help and assistance."
+                "attribution": "Theresa and Bernd provided us materials and tools to complete the hardware and gave us tips on how to build it. We want to thank them for their help and assistance."
             },
             {
                 "name": "Lina Schmidt",
@@ -178,7 +178,7 @@
             {
                 "name": "Dr. Carin Jansen",
                 "institution": "Profile Area Molecular Science & Engineering (MSE), RWTH Aachen University",
-                "attribution": "Dr. Jansen was our contact from the profile area Molecular Science & Engineering (MSE). It was her first time managing the sponsorship with the iGEM team and she did an excellent job, being very helpful and courteous. We want to thank her for her commitment."
+                "attribution": "Dr. Jansen was our contact from the profile area Molecular Science & Engineering (MSE). It was her first time managing the sponsorship with the iGEM team, and she did an excellent job, being very helpful and courteous. We want to thank her for her commitment."
             }
         ]
     },
