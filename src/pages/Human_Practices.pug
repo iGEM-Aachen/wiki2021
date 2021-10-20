@@ -6,9 +6,6 @@ block headVars
     - var requireMathJax = true
     
 block article
-    - var imgpath = "" + require("../assets/img/Human Practices/ihp_timeline.svg")["default"]
-    +image(1, imgpath, "", 100)
-
     :markdown-it
         # Human Practices 
         
@@ -23,9 +20,11 @@ block article
         Reaching out to the world was a source of inspiration. We integrated new ideas and impulses for wetlab, hardware, modeling, and the usage of data storage systems. 
         That is what made it possible to push our project towards extraordinary success.
         We were amazed by what we could achieve by broadening our horizons and implementing the gained knowledge. 
-        To visualize the progress of integrating new ideas, we put together a timeline. 
-        
-        
+        To visualize the progress of integrating new ideas, we put together a timeline.
+
+    - var imgpath = "" + require("../assets/img/Human Practices/ihp_timeline.svg")["default"]
+    +image(1, imgpath, "", 100)
+
     :markdown-it(html)
         # Conversation at the City Archive in Aachen
         
