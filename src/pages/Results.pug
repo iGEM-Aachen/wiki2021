@@ -4,8 +4,12 @@ block headVars
     - var title = "Results"
     - var tagline = "A sample page for the theme."
     - var requireMathJax = true
+    - var requirePopup = true
 
 block article
+
+    link(rel="stylesheet", href="src/assets/lightbox/glightbox.min.css")
+
     :markdown-it(html)
         # Overview
         Introductory sentence...
@@ -43,7 +47,7 @@ block article
         The first parameter tested was the concentration of dNTP in the reaction mixture to identify potential effects on the reaction speed.
                 
     - var imgpath = "" + require("../assets/img/Results/2021-07-15_01.png")["default"]
-    +image(2, imgpath, "<b>TdT tailing reaction of an AT-rich ssDNA primer with a range of initial dATP concentrations ranging from 1-1000 µM at RT (24 °C) for 10 min.</b) 2.5% Agarose with TBE, SYBR Gold staining, 90 V, 55 min. M: GeneRuler 50 bp DNA Ladder 1: AT-rich primer reference 2: 1000 µM dATP 3: 500 µM dATP 4: 200 µM dATP 5: 100 µM dATP 6: 50 µM dATP 7: 20 µM dATP 8: 10 µM dATP 9: 1 µM dATP.", 80,0.8)
+    +image(2, imgpath, "<b>TdT tailing reaction of an AT-rich ssDNA primer with a range of initial dATP concentrations ranging from 1-1000 µM at RT (24 °C) for 10 min.</b>) 2.5% Agarose with TBE, SYBR Gold staining, 90 V, 55 min. M: GeneRuler 50 bp DNA Ladder 1: AT-rich primer reference 2: 1000 µM dATP 3: 500 µM dATP 4: 200 µM dATP 5: 100 µM dATP 6: 50 µM dATP 7: 20 µM dATP 8: 10 µM dATP 9: 1 µM dATP.", 80,0.8)
         
     :markdown-it
         The gel shows a distortion in the form of a slight curve. However, all samples can be distinguished from the primer reference in lane 1.
@@ -109,7 +113,7 @@ block article
         The samples were analyzed externally by the Fraunhofer Institut IME Aachen.
         
     - var imgpath = "" + require("../assets/img/Results/CE_time_reaction_labelled.png")["default"]
-    +image(6, imgpath, "<b>TdT tailing reaction of an AT-rich ssDNA primer  for each nucleotide in a time-dependent manner with reaction times ranging from 7.5-120 s at RT (24 °C).</b> Time  standard LIZ600. (A) Resulting strand lengths for nucleotide T (B) Resulting strand lengths for nucleotide A (C) Resulting strand lengths for nucleotide C (D) Resulting strand lengths for nucleotide G. Non-elongated primer can be observed as a small bump at around 90 bp (actual primer length: 100 bp). Sample taking as a source of error is not included in this graph.", 100,0.8) 
+    +image(6, imgpath, "<b>TdT tailing reaction of an AT-rich ssDNA primer  for each nucleotide in a time-dependent manner with reaction times ranging from 7.5-120 s at RT (24 °C).</b> Time  standard LIZ600. (A) Resulting strand lengths for nucleotide T (B) Resulting strand lengths for nucleotide A (C) Resulting strand lengths for nucleotide C (D) Resulting strand lengths for nucleotide G. Non-elongated primer can be observed as a small bump at around 90 bp (actual primer length: 100 bp). Sample taking as a source of error is not included in this graph.", 100,0.8, true) 
     :markdown-it
         The CE reveals that the size distribution is smallest at very short reaction times of 7.5 to 20 seconds, except for nucleotide G.
         It causes a large size distribution with a double peak at 7.5 s, which narrows down between 15-60 seconds, and eventually results in two overlapping broad peaks.
@@ -431,6 +435,9 @@ block article
         # Conclusion
         # Outlook
         There are many more experiments we would have liked to perform. You can read about our further ideas [here](https://2021.igem.org/Team:Aachen/Outlook).
+    
+    script(src="src/assets/lightbox/glightbox.min.js")
+    script(src="src/assets/lightbox/gallery.js")
 
 //- DO NOT MODIFY THIS LINE AND ANYTHING BEYOND. 
 
