@@ -41,6 +41,16 @@ $igem-blue: #38A0F5;
     background-color: $selection-color;
 }
 
+body {
+    background-image: none !important;
+    background-color: $igem-dark;
+}
+
+.bg-image {
+    background-image: url("../assets/img/Background_Pattern_Blank.svg");
+    background-size: 100%;
+    background-color: $igem-dark;
+}
 
 /******************************
 * Main
