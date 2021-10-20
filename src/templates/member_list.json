@@ -3,8 +3,8 @@
         "surname": "Doychev",
         "age": "22",
         "course": "B.Sc. Biotechnology",
-        "motivation": "With iGEM I wanted to learn as much as possible about working on a scientific project in a team and possibly leave a mark in the world of biotechnology. Well, I still cannot say about leaving a mark but surely, I had great fun working at various parts of this journey. And the most important lesson for me was that agility and the ability to compromise are key to success in teamwork.",
-        "attribution": "With his creativity and skills in design programs, Viktor helped whenever visualizations were needed. The best example is our team logo, which he designed. He also created the social media layout and visualized our enzyme in a short video. With his passion for photography, Viktor was shooting all team photos. He was responsible for contacting possible sponsors to finance the project. To implement his social skills Viktor did lots of science communication by educating students in Germany and Bulgaria on synthetic biology. He also went to Greece for a project on this topic and surveyed the public image of GMOs together with iGEM Team Maastricht.",
+        "motivation": "With iGEM I wanted to learn as much as possible about working on a scientific project in a team and possibly leave a mark in the world of biotechnology. Well, I still cannot say about leaving a mark, but surely, I had great fun working at various parts of this journey. And the most important lesson for me was that agility and the ability to compromise are key to success in teamwork.",
+        "attribution": "With his creativity and skills in design programs, Viktor helped whenever visualizations were needed. The best example is our team logo, which he designed. He also created the social media layout and visualized our enzyme in a short video. With his passion for photography, Viktor was shooting all team photos. He was responsible for contacting possible sponsors to finance the project. To implement his social skills, Viktor did lots of science communication by educating students in Germany and Bulgaria on synthetic biology. He also went to Greece for a project on this topic and surveyed the public image of GMOs together with iGEM Team Maastricht.",
         "categories": [
             "HP", "design", "fundraising"
         ]
@@ -14,7 +14,7 @@
         "surname": "Frank",
         "age": "21",
         "course": "B.Sc. Biology",
-        "motivation": "I saw iGEM as an opportunity to challenge myself, meet new people and gain some new experiences. Finally, I learned much about planning and performing experiments in the lab and about communicating with companies, organizations and experts.",
+        "motivation": "I saw iGEM as an opportunity to challenge myself, meet new people and gain some new experiences. Finally, I learned much about planning and performing experiments in the lab and about communicating with companies, organizations, and experts.",
         "attribution": "Alina was part of the fundraising team, which included establishing contact with foundations and potential industrial partners as well as planning the funding of the project. She also supported the wet lab team by spending time in the laboratory performing and planning experiments as well as analyzing the generated results.",
         "categories": [
             "lab", "fundraising"
@@ -26,7 +26,7 @@
         "age": "24",
         "course": "M.Sc. Biotechnology",
         "motivation": "For me, iGEM means gaining experience in a new field of research in synthetic biology. Therefore, having fun and working with my teammates is paramount. The journey through the project gave me the experience I was hoping for, and we were able to grow together as a team and make friends.",
-        "attribution": "Anna Maria was part of the subgroups organization, laboratory and social media. Her task was to support Marie L. in managing the team, to organize meetings, and to keep an eye on deadlines and email traffic. Since Anna Maria worked from home most of the time, she took over few lab shifts, but was heavily involved in research and could contribute her ideas in meetings. For social media, she created posts and took care of the exchange with other iGEM teams.",
+        "attribution": "Anna Maria was part of the subgroups organization, laboratory and social media. Her task was to support Marie L. in managing the team, organizing meetings, and keeping an eye on deadlines and email traffic. Since Anna Maria worked from home most of the time, she took over few lab shifts, but was heavily involved in research and could contribute her ideas in meetings. For social media, she created posts and took care of the exchange with other iGEM teams.",
         "categories": [
             "organization", "social", "lab"
         ]
@@ -37,7 +37,7 @@
         "age": "20",
         "course": "B.Sc. Biotechnology",
         "motivation": "My aim of participating at iGEM was to work in a motivated Team and explore together new fields of synthetic biology. I became aware of how practical lab work and modeling the reactions can improve each other. It was a great experience to exchange ideas about the project and solve problems with other team members and experts.",
-        "attribution": "Tobias contributed especially in the first part of the project to the search for possible topics. Therefore, he did a lot of research on the current state of the art and problems in enzymatic DNA synthesis. Tobias came up with ideas for solutions to these. In the modeling team, he achieved first progress by modeling the TdT reaction which gave important insights into the principle of the reaction. He also contributed to the Presentation Video by working on the script.",
+        "attribution": "Tobias contributed especially in the first part of the project to the search for possible topics. Therefore, he did a lot of research on the current state of the art and problems in enzymatic DNA synthesis. Tobias came up with ideas for solutions to these. In the modeling team, he achieved first progress by modeling the TdT reaction, which gave important insights into the reaction principle. He also contributed to the Presentation Video by working on the script.",
         "categories": [
             "IT", "modeling", "hardware"
         ]
@@ -70,7 +70,7 @@
         "age": "23",
         "course": "B.Sc. Computer Science",
         "motivation": "iGEM gave me the chance to get insights into Biotechnology. I've learned a lot about working in a large team on a project and applying my skills in various areas. It let me get to know international people from different disciplines and form new friendships.",
-        "attribution": "Clemens used his expertise in computer science to contribute to the DNA-encoding, a key part of our project. Furthermore, he worked as part of the IT and Wiki team, without which this wiki would not have been possible. But Clemens did not only work on IT-related topics; by participating in an exchange program in Greece he spread the word about iGEM and science in general and contributed his creativity to communicate science in alternative ways. Additionally, his knowledge of design-related topics helped the design team with its work.",
+        "attribution": "Clemens used his expertise in computer science to contribute to the DNA-encoding, a key part of our project. Furthermore, he worked as part of the IT and Wiki team, without which this wiki would not have been possible. But Clemens did not only work on IT-related topics; by participating in an exchange program in Greece, he spread the word about iGEM and science in general and contributed his creativity to communicate science in alternative ways. Additionally, his knowledge of design-related topics helped the design team with its work.",
         "categories": [
             "IT", "design"
         ]
@@ -80,8 +80,8 @@
         "surname": "König",
         "age": "21",
         "course": "B.Sc. Biotechnology",
-        "motivation": "iGEM gave me the opportunity to learn a lot of things in the lab but most importantly taught me that it is essential to keep track of everything in the project and maintain good communication. I am proud of what our team has achieved together.",
-        "attribution": "Hannah was the treasurer of the iGEM Aachen association. She managed the team‘s finances and also helped with general fundraising. As a part of the human practices team, she put a lot of effort into science communication projects like the online escape room collaboration with other German iGEM Teams and the DNA extraction kits for students. Additionally, she has contributed a siginificant part in the presentation video organization and eagerly supported the team in the wet lab whenever help was needed.",
+        "motivation": "iGEM gave me the opportunity to learn a lot of things in the lab and, most importantly taught me that it is essential to keep track of everything in the project and maintain good communication. I am proud of what our team has achieved together.",
+        "attribution": "Hannah was the treasurer of the iGEM Aachen association. She managed the team's finances and also helped with general fundraising. As a part of the human practices team, she put a lot of effort into science communication projects like the online escape room collaboration with other German iGEM Teams and the DNA extraction kits for students. Additionally, she has contributed a significant part in the presentation video organization and eagerly supported the team in the wet lab whenever help was needed.",
         "categories": [
             "fundraising", "HP", "lab"
         ]
@@ -103,7 +103,7 @@
         "age": "21",
         "course": "B.Sc. Biotechnology",
         "motivation": "With iGEM I wanted to challenge myself and develop qualities for good leadership. The key things I learned are: Mistakes are an important part of progress. Sometimes you have to change your focus to reach your goals. And, most importantly, you have to be willing to compromise.",
-        "attribution": "Marie was our team leader and the mastermind behind the organization of our project. She managed to keep every important deadline and detail on her radar, schedule meetings, prepare agendas, hold presentations, and communicate with our mentors and experts. Apart from the organization, she took a major part in the wet lab through experimental planning and practical work and was involved in the production of our promotion and presentation video. As Marie's organizational work required a basic understanding of the progress in each sub-group, she significantly contributed to planning, designing, and writing our wiki. It would probably be easier to list the few things she was not involved in.",
+        "attribution": "Marie was our team leader and the mastermind behind the organization of our project. She managed to keep every important deadline and detail on her radar, schedule meetings, prepare agendas, hold presentations, and communicate with our mentors and experts. Apart from the organization, she took a major part in the wet lab through experimental planning and practical work and was involved in the production of our promotion and presentation video. As Marie's organizational work required a basic understanding of the progress in each sub-group, she significantly contributed to the planning, designing, and writing our wiki. It would probably be easier to list the few things she was not involved in.",
         "categories": [
             "organization", "lab", "IT"
         ]
@@ -114,7 +114,7 @@
         "age": "26",
         "course": "M.Sc. Biotechnology",
         "motivation": "Participating in iGEM has always been a dream during my studies. Though we had little time for such a challenging project, I am very satisfied with the result. The most important experience I made is that there is a solution for every problem and that you should not give up before you have given your best.",
-        "attribution": "Daniel's function in the iGEM team was more of a background organization. For example, Daniel designed the schedule and implementation of the promotion video, took care of ordering the laboratory reagents, designing different primers or establishing new methods (different PCR approaches, cloning strategies, staining reagents). In the lab, Daniel dealt exclusively with the topic of 'SSBs' and whether they were useful for our project.",
+        "attribution": "Daniel's function in the iGEM team was more of a background organization. For example, Daniel designed the schedule and implementation of the promotion video, took care of ordering the laboratory reagents, designing different primers, or establishing new methods (different PCR approaches, cloning strategies, staining reagents). In the lab, Daniel dealt exclusively with the topic of 'SSBs' and whether they were useful for our project.",
         "categories": [
             "lab"
         ]
@@ -124,8 +124,8 @@
         "surname": "Mirmoini",
         "age": "24",
         "course": "B.Sc. Chemical Engineering",
-        "motivation": "Gaining practical experience in the field of biotechnology with an interdisciplinary team is a great way to meet new people who share the same interests. In hindsight I can truly say that I am glad that I participated in this years IGEM-project because it was everything I hoped for and I met many cool people",
-        "attribution": "As an engineer Amir could provide useful insight for the hardware and modeling subgroup because those are his main area of expertise. Especially in terms of modeling he could help to constuct a dynamic model, implement it and evaluate the simulative data with the help of the experimental results.",
+        "motivation": "Gaining practical experience in the field of biotechnology with an interdisciplinary team is a great way to meet new people who share the same interests. In hindsight, I can truly say that I am glad that I participated in this years IGEM-project because it was everything I hoped for and I met many cool people",
+        "attribution": "As an engineer Amir could provide useful insight for the hardware and modeling subgroup because those are his main area of expertise. Especially in terms of modeling, he could help to construct a dynamic model, implement it and evaluate the simulative data with the help of the experimental results.",
         "categories": [
             "hardware", "modeling"
         ]
@@ -136,7 +136,7 @@
         "age": "20",
         "course": "B.Sc. Biotechnology",
         "motivation": "I really wanted to work in a team on a project of our own. iGEM gave me the opportunity to do so and develop useful skills while doing it.",
-        "attribution": "Matthias was really invested in the team communication to the public. For that he wrote an article about our project in the magazine BIOspektrum and represented our team in a podcast. His other main focus was the modeling of our reactions. In the modeling subgroup he planned and coded the model simulating the reaction network.",
+        "attribution": "Matthias was really invested in the team communication to the public. For that he wrote an article about our project in the magazine BIOspektrum and represented our team in a podcast. His other main focus was the modeling of our reactions. In the modeling subgroup, he planned and coded the model simulating the reaction network.",
         "categories": [
             "modeling", "storytelling"
         ]
@@ -146,8 +146,8 @@
         "surname": "Mroczowski",
         "age": "20",
         "course": "B.Sc. Biology and Computer Science",
-        "motivation": "Learning, sharing knowledge and meeting new people is my personal way of life, and I believe working on a project with interesting people in an incredibly fascinating field, provides exactly that. In the course of this project I learned a lot about the link between biology and computer science.",
-        "attribution": "Willy contributed to both the IT as well as to the Hardware subgroup. He played a substantial part in the topic selection process and later he did an in depth research on unnatural base parings. Furthermore, he was responsible for structuring the hardware by designing it as well as assembling and programming the electronics behind it",
+        "motivation": "Learning, sharing knowledge and meeting new people is my personal way of life, and I believe working on a project with interesting people in an incredibly fascinating field provides exactly that. In the course of this project, I learned a lot about the link between biology and computer science.",
+        "attribution": "Willy contributed to both the IT as well as to the Hardware subgroup. He played a substantial part in the topic selection process, and later, he did an in-depth research on unnatural base parings. Furthermore, he was responsible for structuring the hardware by designing it as well as assembling and programming the electronics behind it",
         "categories": [
             "hardware", "IT", "modeling"
         ]
@@ -158,7 +158,7 @@
         "age": "20",
         "course": "B.Sc. Biotechnology ",
         "motivation": "During my journey at iGEM I learned that a team needs perseverance, time and passion to achieve success. ",
-        "attribution": "Polina was the subgroup leader of the human practices team and a member of the story subgroup. She pursued many important tasks like managing the communication with experts, writing the story script for our presentation video, planning meetings, and having an overview of all human practices projects. Furthermore, Polina was a key participant of the wetlab team and spent many hours experimenting and implementing her own ideas which significantly brought the project forward.",
+        "attribution": "Polina was the subgroup leader of the human practices team and a member of the story subgroup. She pursued many important tasks like managing the communication with experts, writing the story script for our presentation video, planning meetings, and overviewing of all human practices projects. Furthermore, Polina was a key participant of the wet lab team and spent many hours experimenting and implementing her own ideas, which significantly brought the project forward.",
         "categories": [
             "HP", "lab", "storytelling"
         ]
@@ -190,8 +190,8 @@
         "surname": "Stefanowski",
         "age": "20",
         "course": "B.Sc. Biology",
-        "motivation": "Especially during the Covid-19 Pandemic, connecting to other people had become really difficult. I saw IGEM as a great opportunity to work as a team, gain experience in lab work and taking another step towards becoming a Biotechnologist. During the project I realized the importance of communication, team work and determiantion to turn such a big project into vision.",
-        "attribution": "Alina was part of the laboratory subgroup and contributed significantly to the team, for example by creating one of the first successful experiments. As a member of the Human Practices subgroup, she would ambitiously text the expert’s assistants, just so we could schedule a meeting with them. In the storytelling subgroup, she would give her creativity free rein and come up with the most impressive ideas. Conclusively, Alina was both, a cheerful person and an engaged and determined team member.",
+        "motivation": "Especially during the Covid-19 Pandemic, connecting to other people had become really difficult. I saw IGEM as a great opportunity to work as a team, gain experience in lab work, and take another step towards becoming a Biotechnologist. During the project, I realized the importance of communication, teamwork and determination to turn such a big project into vision.",
+        "attribution": "Alina was part of the laboratory subgroup and contributed significantly to the team, for example, by creating one of the first successful experiments. As a member of the Human Practices subgroup, she would ambitiously text the expert's assistants, so that we could schedule a meeting with them. In the storytelling subgroup, she would give her creativity free rein and come up with the most impressive ideas. Conclusively, Alina was both a cheerful person and an engaged and determined team member.",
         "categories": [
             "lab", "HP", "storytelling"
         ]
@@ -202,7 +202,7 @@
         "age": "25",
         "course": "M.Sc. Biology ",
         "motivation": "I am looking forward to learn more about synthetic biology, also gaining the experience of working together as an interdisciplinary team on our own idea.",
-        "attribution": "Zeynep was greatly involved in our Human Practices Teams by coordinating the collab with iGEM Eindhoven, promoting iGEM, synthetic Biology and our project to international students. She organized and performed our educational DNA extraction experiment. She introduced our project to experts in data storage and had lively discussions with them about the future of data storage.  As part of the design team, she always gave great input to our talented designers and gained first experience. In addition, she also helped in the lab.",
+        "attribution": "Zeynep was greatly involved in our Human Practices Teams by coordinating the collab with iGEM Eindhoven, promoting iGEM, synthetic Biology, and our project to international students. She organized and performed our educational DNA extraction experiment. She introduced our project to experts in data storage and had lively discussions about the future of data storage with them.  As part of the design team, she always gave great input to our talented designers and gained the first experience. In addition, she also helped in the lab.",
         "categories": [
             "HP", "design", "lab"
         ]
