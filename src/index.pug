@@ -14,7 +14,7 @@ html(lang="en")
           .header
             - var videopath = require("./assets/img/homepage/projectlogo.mp4")["default"]
             .video
-                video(style="width: 80%;" autoplay muted)
+                video(style="width: 80%;" autoplay muted playsinline)
                     source(src=videopath type="video/mp4")
                     span Your browser does not support the video tag. :(
             h2 Using DNA for Digital Long-Term Data Storage
