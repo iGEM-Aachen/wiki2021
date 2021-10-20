@@ -138,6 +138,9 @@ mixin teamlabel(type)
                 span Social Media
             when "storytelling"
                 span Storytelling
+            when "meme"
+                span Memes
+
 
 mixin imgCarousel(id, items)
     .carousel.slide.igem-carousel(id="carousel-"+id, data-ride="carousel")
@@ -155,3 +158,4 @@ mixin imgCarousel(id, items)
         a.carousel-control-next(href="#carousel-" + id, role="button", data-slide="next")
             span.carousel-control-next-icon(aria-hidden="true")
             span.sr-only= Next
+
