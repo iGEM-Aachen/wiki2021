@@ -12,7 +12,7 @@ block article
         
         Detailed SOPs (standard operating procedures) can be found [here](https://2021.igem.org/Team:Aachen/Protocols).
 
-        # TdT Tailing Reaction
+        # 1 TdT Tailing Reaction
         As the Terminal Deoxynucleotidyl Transferase (TdT) is the foundation of our project, characterization of the enzyme was needed. 
         For this, we performed various experiments with altered reaction conditions, such as dNTP concentration, primer concentration, incubation times, temperature, and cofactor concentration. 
 
@@ -20,7 +20,7 @@ block article
         The reason was that no suitable ssDNA marker was available for our purposes. Additionally, some results contain tailing reactions with strand length above the maximal strand length of the marker. 
         Thus, we can only make estimations about the actual ssDNA strand length, and these estimations should be viewed with care.
         
-        ## dNTP Incorporation Preference
+        ## 1.1 dNTP Incorporation Preference
         As the TdT accepts four different divalent metal cations – $Mn^{2+}$, $Mg^{2+}$, and $Co^{2+}$ - as a cofactor [1](#citation1), the initial experiment involved a [standard TdT reaction](https://2021.igem.org/Team:Aachen/Protocols) with the cofactor of choice in this project, $Co^{2+}$. 
         Furthermore, the reaction was performed at room temperature (RT = 24 °C) and 37 °C to compare possible variations in maximal tail length and tail length distribution.
         
@@ -38,7 +38,7 @@ block article
         The same results were obtained in other experiments not listed in these results, verifying the incorporation preference for our reaction conditions. 
         No possible explanation could be found for the deviant behavior in our experiments and the product literature from Thermo Fisher. 
         
-        ## Nucleotide Concentration
+        ## 1.2 Nucleotide Concentration
         With a reproducible gel electrophoresis method and a successful TdT reaction, the following experiments could start focussing on the effect of adjusting various reaction parameters. 
         The first parameter tested was the concentration of dNTP in the reaction mixture to identify potential effects on the reaction speed.
                 
@@ -54,7 +54,7 @@ block article
         However, we chose to continue to work with our standard concentration of 100 µM as they were sufficient for the characterizations.
         Nevertheless, this concentration may be subject to change depending on the experiment performed.
         
-        ## Varying Primer Concentration
+        ## 1.3 Varying Primer Concentration
         With the hardware approach in mind, we aimed to use low primer concentrations.
         We thought choosing a low primer concentration could save material cost and use the hardware for more cycles before replenishing the dNTPs.
         Thus, different primer concentrations were tested with dTTP as past experiments showed more easily distinguishable bands than the other dNTPs.
@@ -71,7 +71,7 @@ block article
         This experiment shows that primer concentration affects the maximal strand length, and adjusting the primer concentration may be a potent way to change strand length and size distribution.
         Nevertheless, for our established system, we stuck with a standard primer concentration of 20 nM.
         
-        ## Varying Cofactor Concentration
+        ## 1.4 Varying Cofactor Concentration
         One attempt to tweak the reaction speed was to adjust the cofactor availability by reducing its concentration.
         Since the incorporation speed of nucleotide T by far exceeds that of all other nucleotides, we performed TdT reactions with varying concentrations of the TdT reaction buffer containing the cofactor.
         As the cofactor was inherently present in the buffer, we had to adjust the buffer concentration in total and could not just alter the cofactor concentration itself, which might have unforeseen effects.
@@ -87,7 +87,7 @@ block article
         The reaction buffer contains components necessary for the functioning of TdT, so lowering the concentration of the reaction buffer may have additional effects on the activity of the enzyme.
         No further testing was performed due to time limitations and unavailability of reaction buffer without cofactor.
         
-        ## Time Dependent TdT Reaction
+        ## 1.5 Time Dependent TdT Reaction
         Thus far, reaction times were chosen to yield a distinguishable band from the primer reference or across samples. 
         However, the goal is to tune down the reaction to a point at which only a few bases are incorporated in each reaction. 
         With adjusting the cofactor concentration, we wanted to slow down the reaction speed. 
@@ -131,8 +131,8 @@ block article
         Hence, for analyses requiring more precise measurements, CE should be the method of choice.
         However, since CE requires fluorescence-labeled primers, it was incompatible with our immobilization approach and could not be used in experiments involving immobilization.
         
-        # Primer Immobilization
-        ## Testing the Immobilization System
+        # 2 Primer Immobilization
+        ## 2.1 Testing the Immobilization System
         In this assay, we wanted to test if we could bind an anchor peptide to a polystyrene stick as the first experiment for our immobilization system. 
         For this, we used two different anchor peptides, provided to us by the Institute for Interactive Materials (DWI): 
         LCI and MacHis, which are attached to a domain Z (DZ), a Cysteine (C), and a His-Tag (His) (see [Experiments]( https://2021.igem.org/Team:Aachen/Experiments)). 
@@ -159,7 +159,7 @@ block article
         This illustrates that the anchor peptides can bind almost 34 times better to the polystyrene sticks as the negative control and that they do not wash off.
         It can be said, that both anchor peptides bind to the stick with similar intensity because the absorbance does not differ significantly.
         
-        ## Immobilization with Amino-Primer
+        ## 2.2 Immobilization with Amino-Primer
         The next step was to link our Amino C6-primer (AC6-primer) to the anchor peptide. 
         We used a slightly different protein construct, also provided by our instructor (see [Experiments]( https://2021.igem.org/Team:Aachen/Experiments)). 
         For this, we used 1-Ethyl-3-(3-dimethylaminopropyl)carbodiimide (EDC) as the initializer of the linking reaction and incubated the components for 24 hours. 
@@ -197,7 +197,7 @@ block article
         The fact that we cannot see anything in lanes 6 and 7 illustrates the AC6-primer cannot bind to the polystyrene stick without the anchor peptide.
         Against expectation, there are also no bands visible in lanes 8 and 9. So, these results support the guess that the conjugation did not work.
         
-        ## Immobilization with Maleimide-Primer
+        ## 2.3 Immobilization with Maleimide-Primer
         The maleimide-cysteine-bond was more likely to work than the amino bond because it was already shown to work with maleimide-labeled proteins [4](#citation4). 
         Thus, we switched methods as soon as the maleimide-labeled oligos arrived and performed the conjugation of the oligos with the fusion protein construct LCI-DZ-C-His6 (see Experiments). 
         The conjugation was performed with the AT-rich oligo and the GC-rich oligo and different oligo excesses were tried. 
@@ -284,13 +284,13 @@ block article
         This concludes, that our fusion protein was not present in the samples and the conjugation did not work well enough to be able to perform a cyclic synthesis with the immobilized primers. 
         We decided to switch to the next immobilization method. 
         
-        ## Immobilization with Biotin-labelled Primer
+        ## 2.4 Immobilization with Biotin-labelled Primer
         
         Our third immobilization method was a combination of streptavidin-tagged magnet beads and biotin-labelled primers.
         The magnet beads in turn are able to bind to a magnet stick.
         This construction allowed a permanent or non-permanent immobilization of primers.
         
-        ### Permanent Immobilization
+        ### 2.4.1 Permanent Immobilization
         
         For the permanent immobilization, the streptavidin-tagged magnet beads were conjugated with biotin-labelled primers.
         After adding the magnet stick to this solution and two washing steps, the immobilized primer could be released using BXT Strep-Tactin®XT elution buffer (IBA Life Science) containing biotin.
@@ -310,7 +310,7 @@ block article
         The primers probably did not bind to the magnet beads due to steric hindrance.
         This is indicated by a band at primer height in the conjugation mixture.
         
-        ### Non-permanent immobilization
+        ### 2.4.2 Non-permanent immobilization
         
         The non-permanent immobilization allows a release of primers into solution to avoid steric hindrance.
         For this, biotin-labelled primers were conjugated with magnet beads.
@@ -328,24 +328,138 @@ block article
         The non-permanent immobilization was able to safely bind the primer as well.
         To further investigate the occurrences, TdT reactions were performed using both successful methods.
         
-        # Cyclic Synthesis
-        ## In Solution
-        ## Immobilized
+        # 3 Cyclic Synthesis
         
-        # Secondary Structures
+        To introduce information into an ssDNA strand, transitions of nucleotides must be created.
+        Our goal was to elongate a given primer with a few nucleotides of one kind.
+        In the second cycle, the next kind of nucleotide is added.
+        This is repeated according to the desired sequence.
+        To evaluate the sequencing output, all sequenced strands were searched for the primer sequence including an error tolerance of 5 nucleotides.
+        Additionally, only strands containing a characteristic sequence of the reverse primer including an error tolerance of 2 nucleotides were selected.
+        These strands containing homonucleotides were then converted into single nucleotide strands using our [software]( https://2021.igem.org/Team:Aachen/Software).
+        The comparison of the original sequence and the encoded sequence was performed using the Needleman-Wunsch algorithm.
+        
+        ## 3.1 In Solution
+        
+        To test that the TdT incorporates different kinds of nucleotides, a cyclic synthesis was performed in solution.
+        For this experiment, the primer:nucleotide ratio was decreased to 1:500 (instead of 1:5000), and the incubation time increased to ensure complete nucleotide incorporation.
+        To create transitions, new nucleotides were added to a mastermix containing the AT-rich primer.
+        This was repeated to create a sequence with the code “TCTA”.
+        After performing an agarose gel electrophoresis, a stepwise increase of ssDNA length could be observed (figure x).
+        This reveals, that the TdT is able to incorporate different kinds of nucleotides.
+        
+    - var imgpath = "" + require("../assets/img/Results/?.png")["default"]
+    +image(20, imgpath, "<b>Cyclic synthesis with AT-rich Primer.</b> 2.5% Agarose with TBE, SYBR Gold staining, 90 V, 45 min. M: GeneRuler 50 bp DNA Ladder 1: Elongation of AT-rich primer with T 2: Elongation of AT-rich primer with TC 3: Elongation of AT-rich primer with TCT 4: Elongation of AT-rich primer with TCTA 5: Elongation of AT-rich primer with TCA (for 1 h).",50,0.8)
+        
+    :markdown-it
+        The above-described experiment was repeated with the normal primer and a Poly A tail was added for PCR and sequencing.
+        After conducting an agarose gel electrophoresis, a stepwise elongation of primer could be observed (figure x).
+        A longer incubation with dATP led to a longer Poly A tail which should ensure amplification through PCR which was performed afterward.
+        
+    - var imgpath = "" + require("../assets/img/Results/?.png")["default"]
+    +image(21, imgpath, "<b>Cyclic synthesis with normal primer.</b> 2.5% Agarose TBE, SYBR Gold staining, 90 V, 47 min. M: GeneRuler 50 bp DNA Ladder 1: Normal primer 2: Elongation of normal primer with T 3: Elongation of normal primer with TC 4: Elongation of normal primer with TCT 5: Elongation of normal primer with TCTA 6: Elongation of normal primer with TCTA (dATP for 2 h).",50,0.8)
+        
+    :markdown-it
+        However, gel electrophoresis of the stands coding "TCTA" showed, that the sample with longer Poly A tail could not be amplified (figure x).
+        This could be due to the poor attachment of the reverse primer to the sample.
+        Because of these results, we tried to create shorter Poly A sequences in the following experiments.
+        Gel electrophoresis after PCR with the sample with shorter Poly A tail revealed a faint band from 200 to over 1000 bp.
+        This is an indication, that this PCR amplified the target ssDNA.
+        
+    - var imgpath = "" + require("../assets/img/Results/?.png")["default"]
+    +image(22, imgpath, '<b>PCR with two different samples encoding "TCTA" with short and long PolyA, respectively.</b> A) PCR: Initial denaturation 98 °C 30 s, denaturation 98 °C 5 s, annealing 63 °C 10 s, elongation 68 °C 90 s, final elongation 72 °C 5 min. 2.5% Agarose with TBE, SYBR Gold staining, 90 V, 45 min. M: GeneRuler 50 bp DNA Ladder 1: Elongation with “TCTA” and short Poly A 2: Elongation with “TCTA” and short Poly A after B) PCR: Initial denaturation 98 °C 30 s, denaturation 98 °C 5 s, annealing 63 °C 10 s, elongation 72 °C 30 s, final elongation 72 °C 5 min. 2.5% Agarose with TBE, SYBR Gold staining, 90 V, 50 min. PCR 1: Elongation with “TCTA” and long Poly A 2: Elongation with “TCTA” and long Poly A after PCR.',60,0.8)
+        
+    :markdown-it
+        The Nanopore sequencing of the “TCTA” sample with shorter Poly A tail revealed that a comparatively high amount of DNA strands could be characterized (figure x).
+        On average, about 2? nucleotides of one kind were incorporated in one transition.
+        The information could be recovered with 80.0% accuracy.
+        However, the sequence could not be fully recreated because the dTTP and dCTP were incorporated irregularly.
+        This leads to the conclusion, that a transition between dTTP and dCTP can not be performed in solution if both kinds of nucleotides are present unless one concentration is not extremely low. 
+        
+    - var imgpath = "" + require("../assets/img/Results/?.png")["default"]
+    +image(23, imgpath, '<b>Analysis of Nanopore sequencing of normal primer with attached sequence "TCTA" which was attached in solution.</b>',60,0.8)
+        
+    :markdown-it
+        ## 3.2 Immobilized
+        
+        In a first test, the elongation of an immobilized primer was tested using both permanent and non-permanent immobilization.
+        The goal was to investigate the incorporation of different kinds of nucleotides.
+        To test the elongation of a given primer with specific nucleotides, the immobilized primer was dipped into different reaction mixtures for elongation using the TdT.
+        An agarose gel electrophoresis of this experiment showed that dTTP is most likely to be attached to immobilized primers (figure x).
+        dCTP was incorporated second most often, then dATP and dGTP.
+        These results are consistent with the findings of elongation in solution.
+        All samples including non-permanent immobilization led to longer strands.
+        Because of these results, we decided to use the non-permanent immobilization for cyclic synthesis in further experiments. 
+        
+    - var imgpath = "" + require("../assets/img/Results/?.png")["default"]
+    +image(24, imgpath, "<b>Elongation with permanent and non-permanent immobilization of primer.</b> 2.5% Agarose with TBE, SYBR Gold staining, 90 V, 45 min. M: GeneRuler 50 bp DNA Ladder 1: Biotin-labelled Normal primer 2: A permanent 3: A non-permanent 4: T permanent 5: T non-permanent 6: C permanent 7: C non-permanent 8: G permanent 9: G non-permanent 10: Positive control 11: Empty.",60,0.8)   
+        
+    :markdown-it
+        In order to incorporate transitions, and thus also information, into the DNA, a sequence with the code “TCTGA” was attached to the normal primer.
+        To do that, the DIP method was performed which is further explained in [experiments](Team:Aachen/Experiments - 2021.igem.org).
+        To ensure a uniform amount of incorporation of different kinds of nucleotides, the incubation time for the TdT reaction was adapted to 15 min for dTTP, 20 min for dCTP and dGTP.
+        The Poly A tail was created by incubation for 10 min in excess of dATP.
+        An agarose gel electrophoresis was performed from which could be observed, that strands of different length up to over 1000 nt were created (data no shown). 
+        
+        The created sequence was amplified using a PCR and sequenced using Nanopore sequencing.
+        After the evaluation of the results, it was found that the sequence could be recreated from the strands with comparably high accuracy.
+        On average, 4? Nucleotides of one kind were incorporated in one transition and the original information could be recovered with 80.0% accuracy.
+        Compared to the sequence “TCTA” created in solution (see chapter 3.1), a longer strand of five transitions could be stored with the same accuracy which leads to the conclusion that an immobilized primer is more suitable for our DIP method.
+        
+    - var imgpath = "" + require("../assets/img/Results/?.png")["default"]
+    +image(25, imgpath, "<b>Analysis of Nanopore sequencing of normal primer with attached sequence “TCTGA” which was attached using the DIP method.</b>",60,0.8)   
+        
+    :markdown-it
+        Our first attempt to encode meaningful information was to store the word “iGEM” and the number “21” into DNA.
+        We created “iGEM” by incubating the non-permanently immobilized primer in the according mastermix for 1 min.
+        The number “21” was created by incubation for 10 min per nucleotide.
+        To follow up with PCR, a poly-A tail was added by incubating the primer in a mastermix containing an excess of dATP for 20 min.
+        Performing an agarose gel electrophoresis showed, that about 100 nt were added to encode “iGEM”.
+        The DNA encoding “21” was elongated with 100 nt as well.
+        
+    - var imgpath = "" + require("../assets/img/Results/?.png")["default"]
+    +image(26, imgpath, "<b>Cyclic synthesis to encode “iGEM” and “21”.</b> 2.5% Agarose with TBE, SYBR Gold staining, 90 V, 45 min. M: GeneRuler 50 bp DNA Ladder 1: “iGEM”2: PCR with “iGEM” 3: Empty 4: “21” 5: PCR with “21” 6: Empty.",60,0.8)
+        
+    :markdown-it
+        The sequence encoding “21” could be recreated from the analyzed samples with % accuracy.
+        On average, ? nucleotides of one kind were incorporated for one transition.
+        The average of the attached sequence missed the dTTP in the 5th position.
+        This could be caused by an insufficient amount of nucleotide and the fact that longer strands are created in lower concentrations (see our [modeling]( https://2021.igem.org/Team:Aachen/Model) for more information).
+        
+    - var imgpath = "" + require("../assets/img/Results/?.png")["default"]
+    +image(27, imgpath, "<b>Analysis of Nanopore sequencing of normal primer with attached sequence encoding “21” which was created using the DIP method.</b> The last A was not part of the actual sequence but was attached for PCR.",60,0.8)       
+        
+    :markdown-it
+        The sample encoding “iGEM” included a comparably high number of strands that included the exact primer sequence (figure x).
+        The accuracy of recreated information was 23.1%.
+        All in all, about ? nucleotides of one kind were incorporated for one transition which is a desirable number to keep the strands short enough and ensure the recovery of the original information.
+        Nevertheless, this data is not sufficient to recover the original sequence.
+        This was to be expected due to the number of transitions and a too short incubation time.
+        
+    - var imgpath = "" + require("../assets/img/Results/?.png")["default"]
+    +image(28, imgpath, "<b>Analysis of Nanopore sequencing of normal primer with attached sequence encoding “iGEM” which was created using the DIP method.</b>",60,0.8)
+    
+    :markdown-it
+        Comparing the incubation for 1 min and for 10 min, the longer incubation yielded a higher accuracy of data recovery.
+        Although we performed comparatively few experiments with cyclic synthesis, the data could be recovered from DNA with up to 80% accuracy.
+        To improve the results, both PCR and the preparation of our samples for Nanopore sequencing should be investigated further.
+        Additionally, this experiment did not consider that nucleotides are incorporated with different probabilities.
+        This could be regulated by adapting the incubation time and the composition of the reaction buffer. 
+        
+        # 4 Secondary Structures
         As poor elongation with dGTP was shown, further investigations were conducted. 
         Increasing the amount of enzyme used in the reaction should result in longer strands if the different reactions incubate for the same time. 
         Three different samples with dGTP and different amounts of TdT were prepared and incubated at RT for 30 min. Gel electrophoresis was performed.
         
     - var imgpath = "" + require("../assets/img/Results/2021-06-25_01.png")["default"]
-    +image(20, imgpath, "<b>Standard TdT reaction with dGTP and different amounts of TdT, incubated 30 min at RT.</b> 2.5% Agarose with TBE, SYBR Gold staining, 90 V, 60 min. M: GeneRuler 50 bp DNA Ladder 1: AT-rich primer reference 2: TdT reaction with 0.2 U/µL TdT (standard) 3: TdT reaction with 0.4 U/µL TdT 4: TdT reaction with 0.8 U/µL TdT.",50,0.8) 
-    
+    +image(29, imgpath, "<b>Standard TdT reaction with dGTP and different amounts of TdT, incubated 30 min at RT.</b> 2.5% Agarose with TBE, SYBR Gold staining, 90 V, 60 min. M: GeneRuler 50 bp DNA Ladder 1: AT-rich primer reference 2: TdT reaction with 0.2 U/µL TdT (standard) 3: TdT reaction with 0.4 U/µL TdT 4: TdT reaction with 0.8 U/µL TdT.",50,0.8) 
+        
     :markdown-it
         It can be seen that all samples have the same length, which indicates that elongation with dGTP is inhibited after some time, most likely due to the formation of secondary structures that make further elongation impossible. 
         This is supported by the CE results in figure 6 that show almost no further elongation with dGTP after 60 seconds. 
         The need for measures that prevent secondary structure formation becomes apparent.
         
-        ## SSBs
+        ## 4.1 SSBs
         Using single-stranded DNA binding proteins (SSBs) that stabilize ssDNA in nature seemed to be a suitable solution. 
         First experiments with different SSB concentrations in a standard TdT reaction had inconclusive results; the assumption was that the SSBs bound so tightly to the strands that they did not detach after heat treatment at 70 °C, and this impacted the running characteristics of our samples. 
         Thus, we could not determine the length of the samples and tell if the reactions with SSBs yielded longer strands. 
@@ -353,7 +467,7 @@ block article
         The same samples were heated to 95 °C to denature the SSBs, but subsequent gel electrophoresis yielded the same result as before.
         
     - var imgpath = "" + require("../assets/img/Results/2021-07-20_01.png")["default"]
-    +image(21, imgpath, "<b>Standard TdT reactions with dTTP and different SSB concentrations, incubated 10 min at RT.</b> 2.5% Agarose with TBE, SYBR Gold staining, 90 V, 55 min. M: GeneRuler 50 bp DNA Ladder 1: AT-rich primer reference 2: TdT reaction without SSBs (positive control) 3: TdT reaction with 13.2 ng/µL SSBs without nucleotides (negative control) 4: TdT reaction with 1.32 ng/µL SSBs 5: TdT reaction with 2.64 ng/µL SSBs 6: TdT reaction with 6.6 ng/µL SSBs 5: TdT reaction with 13.2 ng/µL SSBs.", 60,0.8) 
+    +image(30, imgpath, "<b>Standard TdT reactions with dTTP and different SSB concentrations, incubated 10 min at RT.</b> 2.5% Agarose with TBE, SYBR Gold staining, 90 V, 55 min. M: GeneRuler 50 bp DNA Ladder 1: AT-rich primer reference 2: TdT reaction without SSBs (positive control) 3: TdT reaction with 13.2 ng/µL SSBs without nucleotides (negative control) 4: TdT reaction with 1.32 ng/µL SSBs 5: TdT reaction with 2.64 ng/µL SSBs 6: TdT reaction with 6.6 ng/µL SSBs 5: TdT reaction with 13.2 ng/µL SSBs.", 60,0.8) 
     
     :markdown-it
         The positive control reaction runs higher than the reference but not as high as in previous reactions with the same conditions; it is unclear why this might be. 
@@ -375,7 +489,7 @@ block article
         Gel electrophoresis was performed.
     
     - var imgpath = "" + require("../assets/img/Results/SSB_1.png")["default"]
-    +image(22, imgpath, "<b>Standard TdT reactions with nucleotide mix and SSBs, incubated for 30 min at 37 °C.</b> 1% Agarose, SYBR Gold staining, 180 V, 30 min. M: GeneRuler Express DNA Ladder 1: GC-rich primer reference 2: TdT reaction without SSBs 3: TdT reaction with 10 ng/µL SSBs.",60,0.8) 
+    +image(31, imgpath, "<b>Standard TdT reactions with nucleotide mix and SSBs, incubated for 30 min at 37 °C.</b> 1% Agarose, SYBR Gold staining, 180 V, 30 min. M: GeneRuler Express DNA Ladder 1: GC-rich primer reference 2: TdT reaction without SSBs 3: TdT reaction with 10 ng/µL SSBs.",60,0.8) 
     
     :markdown-it
         The standard reaction shows a high large smear, suggesting that different lengths of strands are present. 
@@ -387,7 +501,7 @@ block article
         6 PCRs per sample were performed to yield more DNA for the subsequent cloning reaction.
         
     - var imgpath = "" + require("../assets/img/Results/SSB_2.png")["default"]
-    +image(23, imgpath, "<b>PCR with the TdT reaction samples with and without SSB.</b> 1% Agarose, SYBR Gold staining, 180 V, 30 min. M: GeneRuler Express DNA Ladder 1-6: PCR with TdT reaction samples 7-12: PCR with SSB TdT reaction samples.",100,0.8) 
+    +image(32, imgpath, "<b>PCR with the TdT reaction samples with and without SSB.</b> 1% Agarose, SYBR Gold staining, 180 V, 30 min. M: GeneRuler Express DNA Ladder 1-6: PCR with TdT reaction samples 7-12: PCR with SSB TdT reaction samples.",100,0.8) 
     
     :markdown-it
         Faint bands are visible at a height of approximately 500 bp, which was the lowest range of the sample before PCR. 
@@ -405,9 +519,9 @@ block article
         A colony PCR, as well as gel electrophoresis, were performed (figure x).
         
     - var imgpath = "" + require("../assets/img/Results/SSB_3.png")["default"]
-    +image(24, imgpath, "<b>Colony PCR of SCL-clones from samples with and without SSBs.</b> 1% Agarose, SYBR Gold staining, 180 V, 30 min. M: GeneRuler Express DNA Ladder 1-23: Colony PCR with clones from sample without SSB 24-39: Colony PCR with clones from sample with SSB.",100,0.8) 
+    +image(33, imgpath, "<b>Colony PCR of SCL-clones from samples with and without SSBs.</b> 1% Agarose, SYBR Gold staining, 180 V, 30 min. M: GeneRuler Express DNA Ladder 1-23: Colony PCR with clones from sample without SSB 24-39: Colony PCR with clones from sample with SSB.",100,0.8) 
     - var imgpath = "" + require("../assets/img/Results/SSB4.png")["default"]
-    +image(25, imgpath, "<b>Colony PCR of TOPO-clones from samples with and without SSBs.</b> 1% Agarose, SYBR Gold staining, 180 V, 30 min. M: GeneRuler Express DNA Ladder 1-16: Colony PCR with clones from sample without SSB 17-32: Colony PCR with clones from sample with SSB.",100,0.8) 
+    +image(34, imgpath, "<b>Colony PCR of TOPO-clones from samples with and without SSBs.</b> 1% Agarose, SYBR Gold staining, 180 V, 30 min. M: GeneRuler Express DNA Ladder 1-16: Colony PCR with clones from sample without SSB 17-32: Colony PCR with clones from sample with SSB.",100,0.8) 
     
     :markdown-it
         The approach without SSBs shows small inserts of approximately 300 bp. 
@@ -420,7 +534,7 @@ block article
         The sequencing data were of good quality except for the poly-A tail, which complicated the sequencing (figure x, only the M13 forward primer could be used).
     
     - var imgpath = "" + require("../assets/img/Results/SSB5.png")["default"]
-    +image(26, imgpath, "<b>Sanger Sequencing Data of SSB sample in figure x, lane 39.</b> Snapview. Top: Strand overview, Middle: Section with good quality of sequencing data, Bottom: Poly-A tail.",100,0.8) 
+    +image(35, imgpath, "<b>Sanger Sequencing Data of SSB sample in figure x, lane 39.</b> Snapview. Top: Strand overview, Middle: Section with good quality of sequencing data, Bottom: Poly-A tail.",100,0.8) 
 
     :markdown-it
         These results do not exclude the strand without SSBs having a similar length, but there is some evidence that could indicate the prevention of secondary structure formation by SSBs and them allowing the TdT to produce longer strands. 
@@ -428,6 +542,11 @@ block article
         To summarize, SSBs present a promising method in preventing secondary structures in enzymatic DNA synthesis, and other SSBs should be investigated.
         
         # Conclusion
+        ...
+        Our results show that data storage in DNA using the DIP method is possible.
+        We are sure that the accuracy can be significantly increased and perfected by adjusting the reaction conditions.
+        Furthermore, our [hardware](https://2021.igem.org/Team:Aachen/Hardware) could provide additional accuracy to synthesize DNA using the DIP method.
+        
         # Outlook
         There are many more experiments we would have liked to perform. You can read about our further ideas [here](https://2021.igem.org/Team:Aachen/Outlook).
 
