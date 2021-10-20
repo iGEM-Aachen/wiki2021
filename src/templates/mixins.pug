@@ -35,14 +35,19 @@ mixin buttonRight(buttonTitle)
             span.icon.arrow
         span.button-text= buttonTitle
 
-mixin image(n, url, caption, width, fontSize)
+mixin image(n, url, caption, width, fontSize, popup)
     .image
         if width && !fontSize
             img(src=url alt=caption style="width: " + width + "%")
             if caption != ""
                 p= "Figure " + n + ": " + caption
-        else if fontSize && width
+        else if fontSize && width && !popup
             img(src=url alt=caption style="width: " + width + "%")
+            if caption != ""
+                p(style="font-size:" + fontSize + "rem; text-align:justify" )!= "<b>Figure " + n + "</b>: " + caption
+        else if fontSize && width && popup
+            a(href=url class="glightbox")
+               img(src=url alt=caption style="width: " + width + "%")
             if caption != ""
                 p(style="font-size:" + fontSize + "rem; text-align:justify" )!= "<b>Figure " + n + "</b>: " + caption
         else
