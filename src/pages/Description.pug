@@ -10,7 +10,7 @@ block article
 
         # Selection of the Project 
         Our journey as a team in this year's iGEM competition began in January. 
-        In order for us to decide on a project as quickly as possible, we first did a lot of brainstorming and compiled all the ideas. 
+        For us to decide on a project as quickly as possible, we first did a lot of brainstorming and compiled all the ideas. 
         In the following meetings, we decided which ideas would be feasible. Three projects emerged, which we divided among ourselves and worked out further. 
         At the end of February, we were able to present the more mature ideas to our supervisors and received good feedback for two of these project ideas. 
         The final decision was made on March 12, 2021, where we chose our project "Storagene" for this year's iGEM competition.
@@ -30,7 +30,7 @@ block article
         The specific goal of our project “Storagene” is to synthesize DNA enzymatically using the TdT for long-term data storage. 
         Therefore, we developed the DIP method, where immobilized primer on a magnetic stick is dipped into a solution containing TdT and respective nucleotides.
         
-        In the future, everybody will have their own [DIPsy](https://2021.igem.org/Team:Aachen/Hardware) at home, with which DNA can be synthesized and thus personal data can be stored on the DNA in the long term.
+        In the future, everybody will have their own [DIPsy](https://2021.igem.org/Team:Aachen/Hardware) at home, with which DNA can be synthesized, and thus personal data can be stored on the DNA in the long term.
         Thereby, for example, family history can be collected and passed for many generations.
         
     - var imgpath = "" + require("../assets/description/Hardware.svg")["default"]
@@ -43,11 +43,11 @@ block article
         Like all DNA polymerases, the TdT also requires divalent metal ions for catalysis of the phosphoryl transfer reaction associated with nucleotide incorporation. 
         However, the TdT is uniquely capable of using a variety of divalent cations such as $Co^{2+}$, $Mn^{2+}$, $Zn^{2+}$, and $Mg^{2+}$ [4](#citation4). 
          
-        Another advantage of using the TdT is that the enzyme utilizes a wide variety of nucleotide analogs such as 2′,3′-dideoxynucleotides, p-nitrophenylethyl triphosphate, p-nitrophenyl triphosphate, 2′-deoxy-L-ribonucleoside 5′-triphosphates, and dinucleoside 5′,5′-tetraphosphates [4](#citation4). 
-        This can be used for increasing the data capacity even further for DNA data storage, see [Outlook](https://2021.igem.org/Team:Aachen/Outlook). 
+        Another advantage of using the TdT is that the enzyme utilizes a wide variety of nucleotide analogues such as 2′,3′-dideoxynucleotides, p-nitrophenylethyl triphosphate, p-nitrophenyl triphosphate, 2′-deoxy-L-ribonucleoside 5′-triphosphates, and dinucleoside 5′,5′-tetraphosphates [4](#citation4). 
+        This can be used for increasing the data capacity even further for DNA data storage, see [Outlook](https://2021.igem.org/Team:Aachen/Outlook#Increaseofthedatacapacity). 
          
         Since we wanted to incorporate nucleotides in a controlled manner, we had to interrupt the reaction in the standard TdT reactions. 
-        Heat and many different metal chelators can be used for inhibiting the TdT activity, such as: o-phenanthroline, EDTA, triethylene-tetramine, α:α'-bipyridyl, and cysteine [5](#citation5). 
+        Heat and many different metal chelators can be used for inhibiting the TdT activity, such as o-phenanthroline, EDTA, triethylene-tetramine, α:α'-bipyridyl, and cysteine [5](#citation5). 
         
         # DNA Synthesis Methods to Date
         Without synthetic DNA or RNA, almost nothing would work in the laboratory: no PCR, no adapters, no linkers and other cloning elements, no CRISPR-Cas - not to mention synthetic genes [6](#citation6). 
@@ -65,8 +65,8 @@ block article
         # Our idea of enzymatic DNA synthesis 
         The project focuses on the enzymatic synthesis of ssDNA strands using the terminal deoxynucleotidyl transferase (TdT). 
         Our goal is to synthesize DNA strands in which an unspecific number of nucleotides are incorporated in each synthesis cycle. 
-        This should result in as many transitions as possible since our ternary system is based on the encoding and restoring of the information saved on the DNA. 
-        Thus, the information is not stored by a sequence of specific bases but by the transitions between bases. 
+        From this, we hope to achieve as many transitions as possible since our ternary system is based on the encoding and restoring of the information saved on the DNA. 
+        Thus, the information is not stored in a sequence of specific bases but in the transitions between bases. 
         Therefore, a specific synthesis is not necessary. 
         This method permits a more accessible and robust system that even allows for the addition of proofreading features, see [Software](https://2021.igem.org/Team:Aachen/Software).
 
@@ -80,16 +80,19 @@ block article
         However, this is not very environmentally friendly due to its harsh reactions, the use of solvents, and toxic by-products. 
         Enzymatic synthesis eliminates the use of solvents and toxic by-products, which is why the environmental footprint can be significantly reduced. 
         In addition, only a few hundred nucleotides can be synthesized using the current method because the steps are not as efficient, and secondary structures can form. 
-        Enzymatic synthesis is not limited to the addition of nucleotides to a DNA strand and can enable strand extension of thousands of bases. 
-        In addition, so-called single-strand-binding proteins can be used to avoid secondary structures.
+        Enzymatic synthesis is not limited to the addition of nucleotides to a DNA strand and can enable strand extension of thousands of bases.
+        Nevertheless, secondary structures can also form by using the enzymatic DNA synthesis. 
+        But there are various methods to avoid them. 
+        On the one hand, temperature increase and variation of the ion concentration of the cofactor can lead to a reduction of secondary structures [7](#citation7).
+        One the other hand, so-called single-strand binding proteins, a hybridization with short oligonucleotides, or photolabile protection groups can be used to avoid secondary structures.
          
         The challenges of the phosphoramidite method are to optimize it so that less solvent is used and more extended strand synthesis is possible. 
-        This could be done with a programmable microfluidic synthesis platform containing integrated valves, allowing individual manipulation and product removal [7](#citation7). 
+        This could be done with a programmable microfluidic synthesis platform containing integrated valves, allowing individual manipulation and product removal [8](#citation8). 
         However, moving to enzymatic synthesis would make these problems disappear into thin air. Unfortunately, with enzymatic synthesis, other challenges appear.
          
         The aim is to create as many transitions as possible so that only a few identical nucleotides are incorporated one after the other to increase the data storage capacity. 
         For this purpose, standardized reaction conditions must be found since the nucleotides are incorporated differently by the TdT. 
-        For example, the nucleotide thymine is incorporated many times more frequently than the base guanine in a standard TdT reaction, see [Results](https://2021.igem.org/Team:Aachen/Results). 
+        For example, the nucleotide thymine is incorporated faster than the base guanine in a standard TdT reaction, see [Results](https://2021.igem.org/Team:Aachen/Results). 
         In addition, reaction conditions should be chosen such that DNA strand synthesis is reproducible and all strands receive the same nucleotide sequence. 
         Furthermore, a system could be developed that synthesizes many different DNA strands on one surface to save time and costs.
          
