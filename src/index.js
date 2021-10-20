@@ -34,7 +34,7 @@ function scrollHandler() {
 window.addEventListener('scroll', scrollHandler);
 
 // Scrolling rocket
-var rocket_offset = 500;
+var rocket_offset = 300;
 var rocket_max_margin = 700;
 
 $('#rocket-container').css({
