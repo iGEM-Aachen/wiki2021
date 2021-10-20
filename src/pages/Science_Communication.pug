@@ -6,6 +6,9 @@ block headVars
     - var requireMathJax = true
     
 block article
+
+    link(rel="stylesheet", href="src/assets/lightbox/glightbox.min.css")
+
     :markdown-it(html)
         
         # Fact of the week
@@ -15,13 +18,13 @@ block article
         These are some of the topics we covered in our posts:
 
     - var imgNames = [{image: require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-01.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-02.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-03.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-04.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-05.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-06.png")["default"]}]
-    +imgCarousel(1, imgNames)
+    +imgCarousel(1, imgNames,gallery)
 
     - var imgNames = [{image: require("../assets/img/communication/fact_of_the_week/Post 06/Genetic Code-01.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 06/Genetic Code-02.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 06/Genetic Code-03.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 06/Genetic Code-04.png")["default"]}]
-    +imgCarousel(2, imgNames)
+    +imgCarousel(2, imgNames,gallery)
 
     - var imgNames = [{image: require("../assets/img/communication/fact_of_the_week/Post 07/Bioluminescence-01.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 07/Bioluminescence-02.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 07/Bioluminescence-03.png")["default"]},{image: require("../assets/img/communication/fact_of_the_week/Post 07/Bioluminescence-04.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 07/Bioluminescence-05.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 07/Bioluminescence-06.png")["default"]}]
-    +imgCarousel(3, imgNames)
+    +imgCarousel(3, imgNames,gallery)
 
     :markdown-it
 
@@ -209,3 +212,6 @@ block article
     - var imgpath = "" + require("../assets/img/Education/91.DeutschesGymnasiumSofia.jpg")["default"]
     +image(17, imgpath, "91. Deutsches Gymnasium Sofia.",100,0.8)
     
+    script(src="src/assets/lightbox/glightbox.min.js")
+    script(src="src/assets/lightbox/gallery.js")
+        
