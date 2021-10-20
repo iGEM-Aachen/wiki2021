@@ -11,8 +11,8 @@ block article
         Since our motivation is using it for the long-term storage of huge amounts of data, a high level of automation is crucial. 
         Of course, there are already existing devices for DNA synthesis, 
         but the already well-engineered devices for the traditional phosphoramidite synthesis rely on a fundamentally different principle while newer approaches for enzymatical DNA syntheses have major drawbacks when it comes to the synthesis of long strands. 
-        Due to these reasons, we decided to construct a new hardware from scratch that is specially adapted to our needs.
-        For the commercial application, also an optimization towards a fast and cheap operation should remain possible.
+        Due to these reasons, we decided to construct new hardware from scratch that is specially adapted to our needs.
+        For the commercial application, an optimization towards a fast and cheap operation should also remain possible.
        
         # DIPsy
     - var imgpath = "" + require("../assets/Hardware/Hardware_Back.JPG")["default"]
@@ -23,7 +23,7 @@ block article
         Initially, our work was very much based on George Church's paper on DNA synthesis for data storage. 
         We wanted to replicate the flow cell with light pulses to control the reaction. 
         However, we discarded the idea of the light-driven reaction after Church shared his experience with us and advised against it. 
-        This would not be the simplest method, but this was our requirement for the hardware. 
+        It would not be the simplest method, but simplicity was the requirement for our hardware. 
         It should be kept as simple as possible so that it can be reproduced well. 
         When Sabastian Palluk as well told us about his bad experiences with the flow cell, it was clear to us that we had to take a completely new approach. 
         Fortunately, a comment from Prof. Blank gave us the idea of the DIP method. 
@@ -32,7 +32,7 @@ block article
         
         To implement our idea of the hardware, we used standardized aluminum profiles as a base, to which the individual components were movably attached. 
         Both the turret and the moving arm are driven by a stepper motor via a toothed belt. 
-        These motors are controlled by a computer to match the desired DNA sequence. 
+        These motors are controlled by a computer, so the desired DNA sequence can be synthesized. 
         Most of the components are commercially available. 
         The revolver and the holder of the rod were printed with a 3D printer. 
         The four reaction vessels with the finished reaction solution and one nucleotide each are placed in the turret, as well as two reaction vessels with wash solution.
@@ -69,6 +69,18 @@ block article
         Of course, much can be improved on this fundamental design of the hardware. For example, the overall design could be made even more compact, and a casing with cooling would be beneficial. 
         Furthermore, use could be made easier with LCD displays showing status. Data would be sent to the device, it would calibrate itself and the status of the operation would be read on the display. 
         This handling would be made even easier by a REST API (Standardized Programming Interface), which would directly link the software and hardware code. 
+
+        # Downloads
+        Here you can download our schematic, CAD files and code
+
   
-    - var pdfpath = "" + require("../assets/Hardware/Schematic.pdf")["default"]
-    a(href=pdfpath) Here you can find our Schematic
+    div(style=" display: table; clear: both; width: 100%; margin-top: 40px;")
+        div(style=" float: left; width: 33.33%; text-align: center;")
+            - var filepath = "" + require("../assets/Hardware/Schematic.pdf")["default"]
+            +extralink("Schematic", filepath)
+        div(style=" float: left; width: 33.33%; text-align: center;")
+            - var filepath = "" + require("../assets/Hardware/Parts.zip")["default"]
+            +extralink("CAD-Files",filepath)
+        div(style=" float: left; width: 33.33%; text-align: center;")
+           - var filepath = "" + require("../assets/Hardware/Code.zip")["default"]
+            +extralink("Code",filepath)

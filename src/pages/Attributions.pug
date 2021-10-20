@@ -11,74 +11,75 @@ block main
     include ../templates/nav_list
 
     attr-main
-        .container.category
-            h1.title= "Mentors"
-            .row.d-flex.justify-content-center
+        .bg-image
+            .container.category
+                h1.title= "Mentors"
+                .row.d-flex.justify-content-center
+                    each category in attributors
+                        if category.category == "Mentors"
+                            each mentor, index in category.persons
+                                if index%2 == 0
+                                    .col-xl-6.col-lg-6.col-md-6.col-xs-12
+                                        .mentor
+                                            .mentor-top.img-left
+                                                img(src=require('../assets/img/mentors/'+mentor.picturename+'.jpg')['default'])
+                                                .mentor-description
+                                                    h4= mentor.name
+                                                    h5= mentor.institution
+                                            .card-body
+                                                h5.card-subtitle= mentor.attribution
+                                else
+                                    .col-xl-6.col-lg-6.col-md-6.col-xs-12
+                                        .mentor
+                                            .mentor-top.img-right
+                                                img(src=require('../assets/img/mentors/'+mentor.picturename+'.jpg')['default'])
+                                                .mentor-description
+                                                    h4= mentor.name
+                                                    h5= mentor.institution
+                                            .card-body
+                                                h5.card-subtitle= mentor.attribution
+
+            .container.category
+                h1.title= "Team Members"
+                .row.d-flex.justify-content-center
+                    each member, index in team_members
+                        if index%2 == 0
+                            .col-xl-7.col-lg-7.col-md-7.col-xs-12
+                                .card
+                                    .card-img-top.img-left
+                                        img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
+                                        .description
+                                            h4.title= member.name + " " + member.surname
+                                            .teamlabels 
+                                                each category in member.categories
+                                                    +teamlabel(category)
+                                    .card-body
+                                        h5.card-subtitle= member.attribution
+                            .col-xl-5.col-lg-5.col-md-5.col-xs-12
+                        else
+                            .col-xl-5.col-lg-5.col-md-5.col-xs-12
+                            .col-xl-7.col-lg-7.col-md-7.col-xs-12
+                                .card
+                                    .card-img-top.img-right
+                                        img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
+                                        .description
+                                            h4.title= member.name + " " + member.surname
+                                            .teamlabels 
+                                                each category in member.categories
+                                                    +teamlabel(category)
+                                    .card-body
+                                        h5.card-subtitle= member.attribution
+            .container.category
                 each category in attributors
-                    if category.category == "Mentors"
-                        each mentor, index in category.persons
-                            if index%2 == 0
-                                .col-xl-6.col-lg-6.col-md-6.col-xs-12
-                                    .mentor
-                                        .mentor-top.img-left
-                                            img(src=require('../assets/img/mentors/'+mentor.picturename+'.jpg')['default'])
-                                            .mentor-description
-                                                h4= mentor.name
-                                                h5= mentor.institution
-                                        .card-body
-                                            h5.card-subtitle= mentor.attribution
-                            else
-                                .col-xl-6.col-lg-6.col-md-6.col-xs-12
-                                    .mentor
-                                        .mentor-top.img-right
-                                            img(src=require('../assets/img/mentors/'+mentor.picturename+'.jpg')['default'])
-                                            .mentor-description
-                                                h4= mentor.name
-                                                h5= mentor.institution
-                                        .card-body
-                                            h5.card-subtitle= mentor.attribution
+                    if category.category != "Mentors"
+                        h1.title= category.category
+                        .row.d-flex.justify-content-center
 
-        .container.category
-            h1.title= "Team Members"
-            .row.d-flex.justify-content-center
-                each member, index in team_members
-                    if index%2 == 0
-                        .col-xl-7.col-lg-7.col-md-7.col-xs-12
-                            .card
-                                .card-img-top.img-left
-                                    img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
-                                    .description
-                                        h4.title= member.name + " " + member.surname
-                                        .teamlabels 
-                                            each category in member.categories
-                                                +teamlabel(category)
-                                .card-body
-                                    h5.card-subtitle= member.attribution
-                        .col-xl-5.col-lg-5.col-md-5.col-xs-12
-                    else
-                        .col-xl-5.col-lg-5.col-md-5.col-xs-12
-                        .col-xl-7.col-lg-7.col-md-7.col-xs-12
-                            .card
-                                .card-img-top.img-right
-                                    img(src=require('../assets/img/portraits/'+member.name+" "+member.surname+'.jpg')['default'])
-                                    .description
-                                        h4.title= member.name + " " + member.surname
-                                        .teamlabels 
-                                            each category in member.categories
-                                                +teamlabel(category)
-                                .card-body
-                                    h5.card-subtitle= member.attribution
-        .container.category
-            each category in attributors
-                if category.category != "Mentors"
-                    h1.title= category.category
-                    .row.d-flex.justify-content-center
-
-                    each person in category.persons
-                        .attributor
-                            .person
-                                h4.title= person.name
-                                h5.title= person.institution
-                            .attribution
-                                p= person.attribution
+                        each person in category.persons
+                            .attributor
+                                .person
+                                    h4.title= person.name
+                                    h5.title= person.institution
+                                .attribution
+                                    p= person.attribution
 

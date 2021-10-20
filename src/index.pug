@@ -12,8 +12,12 @@ html(lang="en")
       .jumbotron.home-card
         .container
           .header
-            img(src=require('./assets/img/project_logo.svg')['default'])
-            h2 Using DNA for a Digital Long-Term Data Storage
+            - var videopath = require("./assets/img/homepage/projectlogo.mp4")["default"]
+            .video
+                video(style="width: 80%;" autoplay muted)
+                    source(src=videopath type="video/mp4")
+                    span Your browser does not support the video tag. :(
+            h2 Using DNA for Digital Long-Term Data Storage
       .jumbotron.home-card.home-bg-light
         .container
           .row.d-flex.justify-content-center.tiles
@@ -107,7 +111,8 @@ html(lang="en")
         .container
           .row.d-flex.justify-content-center.tiles
             .col-xl-3.col-lg-3.col-md-6.col-xs-12.align-self-center
-              img(src=require('./assets/img/homepage/bucket.svg')['default'])
+              a(href="https://2021.igem.org/Team:Aachen/Memes")
+                img(src=require('./assets/img/homepage/bucket.svg')['default'])
             .col-xl-1.col-lg-1
             .col-xl-6.col-lg-6.col-md-6.col-xs-12.align-self-center
               h2 Extremely High Storage Capacity
@@ -130,15 +135,15 @@ html(lang="en")
             .col-xl-6.col-lg-6.col-md-6.col-xs-12.align-self-center
               div
                 include ./assets/img/homepage/artificial_intelligence.svg
-      .jumbotron.home-card
+      .jumbotron.home-card.rocket-card
         .container
-          .row.d-flex.justify-content-center.tiles#rocket-container
+          .row.d-flex.justify-content-center#rocket-container
             .col-xl-8.col-lg-8.col-md-6.col-xs-12.align-self-center.rocket-container
               img(src=require("./assets/img/homepage/dna_rocket.svg")["default"])#rocket
             .col-xl-4.col-lg-4.col-md-6.col-xs-12.rocket-text
               h2 Efficient Data Transport for Colonialization of Planets
               p If humanity one day becomes an interplanetary species, it will be necessary to bring lots of information to space. Since weight is always a huge concern in space, DNA would be an ideal choice as a storage medium for this.
-      .jumbotron.home-card
+      .jumbotron.home-card.below-rocket-card
         .container
           h1 We Present Enzymatic DNA Synthesis for a Data Storage System
           .row.d-flex.justify-content-center.tiles

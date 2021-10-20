@@ -32,6 +32,7 @@ $igem-straw-brown: #E8ECD7;
 $igem-straw-brown-1: #999b90;
 $igem-straw-brown-light: #ecefde;
 $igem-green: #2ED265;
+$igem-green-dark: #179742;
 $igem-spring-green: #34E08F;
 $igem-cyan: #3CF4CC;
 $igem-red: #F55656;
@@ -40,6 +41,16 @@ $igem-blue: #38A0F5;
     background-color: $selection-color;
 }
 
+body {
+    background-image: none !important;
+    background-color: $igem-dark;
+}
+
+.bg-image {
+    background-image: url("../assets/img/Background_Pattern_Blank.svg");
+    background-size: 100%;
+    background-color: $igem-dark;
+}
 
 /******************************
 * Main
@@ -169,8 +180,12 @@ $igem-blue: #38A0F5;
         summary {
             color: $igem-dark;
         }
+        .pdflink-text {
+            margin-left: 35px;
+        }
         .pdflink {
             margin-left: 35px;
+            display: inline !important;
         }
         .links {
             margin-top: -20px;
@@ -285,6 +300,10 @@ $igem-blue: #38A0F5;
             color: $black;
         }
     }
+    .video {
+        text-align: center;
+        margin: 3rem;
+    }
     blockquote {
         font-size: 1.15em;
         width: 75%;
@@ -388,7 +407,7 @@ $igem-blue: #38A0F5;
     margin-left: 5px;
 }
 
-.content p,
+.content,
 #references li {
     a:not(.citation) {
         color: $black;
@@ -601,6 +620,52 @@ footer {
         font-size: 2.5rem;
     }
 }
+
+
+/******************************
+ * Custom CSS for specific Pages
+ ******************************/
+
+//If a Link is not in uniform design, you can use the mixin "extralink"
+a.extraLinks{
+        color: $black;
+        position: relative;
+        text-decoration: none;
+        display: inline-block;
+        padding: 0 1px;
+        transition: color ease 0.3s;
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            background-color: $linkHover;
+            height: 2px;
+        }
+        &:before {
+            width: 0%;
+            left: 0;
+            bottom: 0;
+            transition: width ease 0.4s;
+        }
+        &:after {
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            transition: all ease 0.6s;
+        }
+        &:hover {
+            text-decoration: none;
+            // color: $black;
+            &::before {
+                width: 100%;
+            }
+            &::after {
+                left: 100%;
+                width: 0%;
+                transition: all ease 0.2s;
+            }
+        }
+    }
 
 // body.dark {
 //     header {

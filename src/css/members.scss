@@ -1,6 +1,12 @@
 @import "_main.scss";
 @import "header.scss";
 
+.bg-image {
+    background-image: url("../assets/img/Background_Pattern_Blank.svg");
+    background-size: 100%;
+    background-color: $igem-dark;
+}
+
 #themeSwitchWrapper {
     display: none !important;
 }

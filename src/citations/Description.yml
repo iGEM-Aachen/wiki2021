@@ -28,8 +28,15 @@
     url: 'https://www.laborjournal.de/rubric/methoden/methoden/v227.php'
 # 7
 - article:
+    authors: "Barthel S., Palluk S., Hillson N. J., Keasling J. D., Arlow D. H."
+    year_published: 2020
+    title: "Enhancing Terminal Deoxynucleotidyl Transferase Activity on Substrates with 3' Terminal Structures for Enzymatic De Novo DNA Synthesis"
+    journal: "Genes (Basel)"
+    numbers: "11 (1) 102."
+# 8
+- article:
     authors: "Lee, C.-C., Snyder, T. M. and Quake, S. R."
     year_published: 2010
     title: "A microfluidic oligonucleotide synthesizer"
-    journal: "Nucleic Acids Research,"
+    journal: "Nucleic Acids Research"
     numbers: "38 (8) 2514–2521"

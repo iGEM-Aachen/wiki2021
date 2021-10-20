@@ -24,12 +24,12 @@ html(lang="en")
         img(src=require('../assets/img/headers/header_texts/' + title + '.svg')['default']).header-text
         img(src=require('../assets/img/headers/header_effect.svg')['default']).header-effect
     block main
-      nav#contentnav
+      nav#contentnav.bg-image
         .container
           .row
             .sidebar.col-lg-3
               .nav#contents
-                h5 Contents
+                h5 #{title}
                 ul
                   //- Filled automatically from js
             .content.col-lg-9

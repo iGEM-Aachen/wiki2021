@@ -173,13 +173,26 @@ article {
     background-repeat: no-repeat;
 }
 
+.rocket-card {
+    padding-bottom: 400px;
+}
+
+.below-rocket-card {
+    padding-top: 0;
+}
+
 #rocket {
     height: 300px;
     // margin-top: 600;
 }
 
+#rocket-container {
+    height: 500px;
+}
+
 .rocket-container {
     // height: 100%;
+    height: fit-content;
     min-height: 500px;
     background-image: url(../assets/img/homepage/planet.svg);
     background-repeat: no-repeat;
@@ -206,5 +219,10 @@ article {
         margin-left: auto;
         margin-right: auto;
         width: 70%
+    }
+    video {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
