@@ -185,6 +185,11 @@
     {
         "category": "Special Thanks",
         "persons": [{
+                "name": "Luis Budow",
+                "institution": "on behalf of IMAVIO",
+                "attribution": "Luis produced our presentation video. We want to thank him for his commitment."
+            },
+            {
                 "name": "Collective Incubator",
                 "institution": "",
                 "attribution": "In times of the Covid-19 pandemic it was very hard for our team members to meet in person, especially because the university was closed, and we could not use the seminar rooms. Therefore, we are very thankful for the possibility to use the meeting rooms of the Collective Incubator. Working together was much easier and we made a lot of progress in those meetings."
@@ -214,6 +219,11 @@
                 "institution": "Institute for Applied Microbiology, RWTH Aachen University",
                 "attribution": "In times with limited working space, Nicole and Hannah kindly proposed to share their lab space with us, which enabled us to perform some experiments in the Institute of Applied Microbiology. We are very grateful for that."
             },
+            {
+                "name": "iGEM Team BITSPilani-Goa 2020",
+                "institution": "",
+                "attribution": "We want to thank the iGEM Team BITSPilani-Goa for creating the iGEM WikiSync and Wiki Starter Pack, which facilitated the development of our wiki significantly."
+            }
             {
                 "name": "All Members of the iGEM Team Aachen 2020",
                 "institution": "",
