@@ -44,17 +44,8 @@ block article
         We thought that it was a great idea and took part in it.
         We showed the Karlsbrunnen, Aachen's Cathedral and the Elisenbrunnen. 
         
-    - var imgpath = "" + require("../assets/img/Collaborations/MonumentChallenge1.jpg")["default"]
-    +image(3, imgpath, "Aachen's Cathedral.", 90)
-    
-    - var imgpath = "" + require("../assets/img/Collaborations/MonumentChallenge2.jpg")["default"]
-    +image(4, imgpath, "Karlsbrunnen", 90)
-    
-    - var imgpath = "" + require("../assets/img/Collaborations/MonumentChallenge3.jpg")["default"]
-    +image(5, imgpath, "Elisenbrunnen", 90)
-    
-    - var imgpath = "" + require("../assets/img/Collaborations/MonumentChallengePost.jpg")["default"]
-    +image(6, imgpath, "Our Instagram post.", 50)
+    - var imgNames = [{image: require("../assets/img/Collaborations/MonumentChallenge1.jpg")["default"]}, {image: require("../assets/img/Collaborations/MonumentChallenge2.jpg")["default"]}, {image: require("../assets/img/Collaborations/MonumentChallenge3.jpg")["default"]}]
+    +imgCarousel(1, imgNames)
     
     :markdown-it
        
@@ -109,10 +100,9 @@ block article
         The teams had the one-of-a-kind opportunity to grasp the magic of theatre in the country where it emerged while working together with natives. 
         This boosted their creativity and they managed to combine fun with an important take-home message for the audience. 
         For days they were dedicated to creating their masterpiece through theatre, painting, and music.
-    - var imgpath = "" + require("../assets/img/Collaborations/Greece2.JPG")["default"]
-    +image(10, imgpath, "Preparing the props for the theatre plays.")  
-    - var imgpath = "" + require("../assets/img/Collaborations/Greece3.JPG")["default"]
-    +image(11, imgpath, "Preparing the props for the theatre plays.") 
+
+    - var imgNames = [{image: require("../assets/img/Collaborations/Greece2.JPG")["default"]}, {image: require("../assets/img/Collaborations/Greece3.JPG")["default"]}]
+    +imgCarousel(2, imgNames)
 
     :markdown-it
 
