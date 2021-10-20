@@ -112,6 +112,9 @@ article {
         font-size: 1.5rem;
     }
     h1 {
+        margin-bottom: 10rem;
+    }
+    h2 {
         margin-bottom: 3rem;
     }
     h1,
@@ -177,6 +180,7 @@ article {
 
 .rocket-container {
     // height: 100%;
+    min-height: 500px;
     background-image: url(../assets/img/homepage/planet.svg);
     background-repeat: no-repeat;
     background-size: 50%;

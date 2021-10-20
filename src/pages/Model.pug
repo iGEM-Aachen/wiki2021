@@ -30,7 +30,7 @@ block article
         When one component reacts to become another one, the pools are connected.
         This connection is called flux and represents the change of substance a and b.
     - var imgpath = "" + require("../assets/img/modeling Bilder/reaction_system.PNG")["default"]
-    +image(1,imgpath,"Pools and fluxes of DNA elongation by the TdT.")
+    +image(1,imgpath,"Pools and fluxes of DNA elongation by the TdT.",60, 0.8)
     
     :markdown-it(html)
     
@@ -39,7 +39,7 @@ block article
         In order to be able to apply this model some assumptions need to be made:
         
         * the reverse reaction does not happen
-        * the pool size of DNAn has no influence on the reactions velocity vn
+        * the pool size of DNAn  has no influence on the reactions velocity vn
         * enzyme and DNA dissociate after each reaction
 
         
@@ -49,16 +49,16 @@ block article
         Therefore the nucleotide that would be incorporated was considered as the substrate and the DNA strands were assumed to be present in excess. 
         Thereby the reaction velocity could be calculated by the Michaelis-Menten equation with a value for the dNTP affinity from the literature [2](#citation2). 
         For each length of the resulting DNA strands, a new pool was created and the flux from one pool to the next was modeled as explained. 
-        As result, the concentrations of the different lengths of the DNA strands were obtained as a function of the time (figure 2).
+        As a result, the concentrations of the different DNA pools were obtained as a function of the time (figure 2).
         The most interesting part here was the concentration of strands that were not elongated at all since these would lead to an error in the encoded information.
         This approach however could be improved. As we found out later that the enzyme was not saturated with DNA strands in our lab conditions, a new kinetic model was elaborated. 
         
     - var imgpath = "" + require("../assets/img/modeling Bilder/Mich-Men_stranglängen_verteilung.jpg")["default"]
-    +image(2, imgpath, "Concentrations of the DNA length over time according to Michaelis-Menten kinetics. LX: DNA was elongated by X nucleotides.")
+    +image(2, imgpath, "Concentrations of the DNA pools over time according to Michaelis-Menten kinetics. LX: DNA was elongated by X nucleotides.",80, 0.8)
     
     :markdown-it(html)
         
-        # Tow Substrate Model
+        # Two Substrate Model
         
         Since the TdT catalyzes reactions in two substrates, two product random order mechanisms [1](#citation1) a corresponding equation was used.
         To gain an understanding of the reactions we plotted the pool sizes of DNA strands of different lengths over time (figure 3) and the length distribution at different timestamps (figure 4). 
@@ -68,16 +68,21 @@ block article
         $$\frac{dDNA}{dt} = \frac{v_{max} \cdot c_{DNA} \cdot c_{dNTP}}{K_{DNA} \cdot K_{dNTP}+K_{DNA} \cdot c_{dNTP}+K_{dNTP} \cdot c_{DNA} +c_{DNA} \cdot c_{dNTP}}$$
         
     - var imgpath = "" + require("../assets/img/modeling Bilder/concentrations.png")["default"]
-    +image(3,imgpath,"Concentrations of DNA pools over time according to two substrate model.")
+    +image(3,imgpath,"Concentrations of DNA pools over time according to two substrate model.",60, 0.8)
     
     - var imgpath = "" + require("../assets/img/modeling Bilder/strand-length-distribution.png")["default"]
-    +image(4,imgpath,"Distribution of DNA lengths at different timestamps.")
- 
+    +image(4,imgpath,"Distribution of DNA lengths at different timestamps.",60, 0.8)
+    
+    - var imgpath = "" + require("../assets/img/modeling Bilder/Adenin_CE.png")["default"]
+    +image(5,imgpath,"Length distribution of elongation with Adenin.CE results, fluorescence intensity against strand length for different timestamps.",80, 0.8)
+    
+    
     :markdown-it(html)
     
         With increasing time the mean of the strand length distribution rises and the distribution becomes broader. 
         Although this result was not surprising, it is still valuable, because it shows that the reaction time should be as short as possible, not only to shorten synthesis cycles but also to avoid longer strands. 
-        The gained data from the capillary electrophoresis confirms our model [Results capillary electrophoresis](https://2021.igem.org/Team:Aachen/Results). 
+        As you can see in figure 5 the gained data from the capillary electrophoresis confirms our model [(Results)](https://2021.igem.org/Team:Aachen/Results). 
+        The capillary electrophoresis data shows the same length distribution as our model predicted.
         The concentration decreases along with an increasing strand length distribution.
         
         # Optimization
@@ -87,7 +92,7 @@ block article
         The independent parameters are enzyme- and nucleotide concentration and reaction time. The repercussions of a change of these parameters are shown in figure  5.
         
     - var imgpath = "" + require("../assets/img/modeling Bilder/optimization.png")["default"]
-    +image(5,imgpath,"optimization problem of our system.")
+    +image(6,imgpath,"Optimization problem of our system.",60, 0.8)
     
     :markdown-it(html)
   
@@ -96,17 +101,26 @@ block article
         Because we are facing an optimization problem in our system, we need data like this to find the ideal reaction conditions.
     
     - var imgpath = "" + require("../assets/img/modeling Bilder/3D_colourmap.png")["default"]
-    +image(6,imgpath,"Percentage of strands with atleast one elongation in dependence of time and dNTP starting concentration.")
+    +image(7,imgpath,"Percentage of strands with atleast one elongation in dependence of time and dNTP starting concentration.",60, 0.8)
     
     - var imgpath = ""+require("../assets/img/modeling Bilder/vmax-3D-pot-colourmap.png")["default"]
-    +image(7,imgpath,"Percentage of strands with atleast one elongation in dependence of time and enzyme units.")
+    +image(8,imgpath,"Percentage of strands with atleast one elongation in dependence of time and enzyme units.",60, 0.8)
     
     :markdown-it(html)
     
         As can be seen, the nucleotide concentration, here ATP, has a rather small influence on the velocity of the reaction, especially at longer reaction times.
-        By contrast, the amount of enzyme naturally has a drastic influence on the reaction's velocity at every reaction time. 
+        By contrast, the amount of enzyme naturally has a drastic influence on the reaction's velocity at short reaction times. With longer reaction times this effect becomes less drastic.
         Since the enzyme is the most expensive component in our system and has the biggest influence on reaction velocity, its optimized use is the top priority.
+        Based on this data we decided that our ideal reaction conditions are at 0.4 mol/L ATP and 0.8 enzyme Units following the criteria mentioned in figure 5.
+        While operating at these conditions an error rate of <10% can be achieved with a reaction time of about 100 seconds.
+       
+        Another thing worth mentioning is the different incorporation of nucleotides. According to  $K_{m}$  and  $v_{max}$  values ATP and GTP get incorporated much faster than CTP and TTP (figure 8).
+        This knowledge helped us to choose the right reaction time for each nucleotide and prevent irregularities in length for synthesized strands.
+        
+    - var imgpath = ""+require("../assets/img/modeling Bilder/nucleotides.png")["default"]
+    +image(9,imgpath,"Decrease of DNA0 with different nucleotides of the same concentration.")
 
+    :markdown-it(html)
     
         # Applying Wet Lab Data
         
@@ -131,7 +145,8 @@ block article
         So for our examined time interval for the elongation process, we make the assumption that our system is saturated with ATP.
        
     - var imgpath = ""+require("../assets/img/modeling Bilder/regression_of_CE-data.jpg")["default"]
-    +image(8,imgpath,"Regression of the capillary electrophoresis data. Results for the first three pools (DNA0: non-elongated DNA strand, DNA1: strand which got elongated by one base pair, DNA2: strand which got elongated by two base pairs).")
+    +image(10,imgpath,"Regression of the capillary electrophoresis data. Results for the first three pools (DNA0: non-elongated DNA strand, DNA1: strand which got elongated by one base pair, DNA2: strand which got elongated by two base pairs).",100, 0.8)
+
         
     :markdown-it(html)
         
@@ -142,24 +157,28 @@ block article
         Besides our simulated results fit very well to the wet lab data which is astonishing, considering the fact that we constructed a completely new and multilayered model with our own assumptions. 
         The new estimated kinetic parameters are:
         
-        * v_max = 0.00006150 mol/l/s (0.0000083 mol/l/s in literature)
-        * K_DNA = 0.00015318 M (0.001 mol/l in literature)
-        * K_ATP = 0.00021808 M (0.0001 mol/l in literature)
+        * $v_{max}$ = 0.00006150 $\frac{mol}{l \cdot s}$ (0.0000083  $\frac{mol}{l \cdot s}$  in literature)
+        * $K_{DNA}$ = 0.00015318 $\frac{mol}{l}$ (0.001  $\frac{mol}{l}$  in literature)
+        * $K_{ATP}$ = 0.00021808 $\frac{mol}{l}$ (0.0001  $\frac{mol}{l}$  in literature)
         
         
         
         # Conclusion and Outlook
 
+        Through a discover define design deliver cycle we managed to created a reliable model of our reaction.
         By Modelling the reaction system of the DNA synthesis in silico, we could gain much information about how the system behaves. 
         This helped us to understand the kinetics of the elongation reaction and which are the important factors to be analyzed in more detail.  
         After understanding the reaction process in detail, the data we obtained from the Capillary electrophoresis was used to adjust the parameters from the literature to our model. 
         Furthermore, we evaluated the influences of varying the most important factors and found effective optimization approaches. 
         With the data we generated, we could help the wet lab team to find the most efficient approach to optimize the reaction conditions.
+        Besides all we were very privileged to test and confirm our model by the generated data from the wet-lab.
+        We know that not every team had this year the opportunity to do this additiona step.
         If you would like to have a more detailled look into our modeling approach or apply it to your own data, feel free to download our Python and MATLAB code.
     - var pdfpath = "" + require("../assets/documents/Modeling/modeling_code_igem_aachen_2021.zip")["default"]
     a(href=pdfpath) Download
-      
+    
     :markdown-it(html)
+    
         Our model could be extended to gain further insights into possible optimization. 
         First, the CE experiment could be repeated to minimize wet-lab data errors. 
         Further, the synthesis could be performed with our hardware to adapt the model to our hardware parameters. 

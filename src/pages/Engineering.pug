@@ -18,9 +18,7 @@ block article
         
         # Analysis
         
-      Our synthesized strands were small in size, low in concentration, and on top of that were single-stranded DNA (ssDNA), which made it hard to run standard protocols for nucleic acid analysis. We, therefore, had to establish new procedures for our unconventional samples. 
-
-        ## Electrophoresis
+        Our synthesized strands were small in size, low in concentration, and on top of that single-stranded DNA (ssDNA), which made it hard to run standard protocols for nucleic acid analysis. Therefore, we had to establish new procedures for our unconventional samples. 
 
         Coarse electrophoresis like agarose and polyacrylamide (PAA) is a fast and easy method. 
         However, there are many different variable parameters like the concentration of Agarose and PAA, dying method, time, voltage, or buffer. 
@@ -35,9 +33,10 @@ block article
         But we were not able to visualize small differences of 1-3 nucleotides, which would be important concerning the efficient and material-saving synthesis of many nucleotide transitions.
     
     - var imgpath = "" + require("../assets/img/Experiments/2021-06-08_01_agar.jpg")["default"]
-    +image(1, imgpath, "2.5% Agarose in TBE with samples from 2021-06-07_table2, 90 V 52 min, SYBR Gold (20 min); M: GeneRuler 50 bp DNA Ladder; 1: P100, 1:1000 (08.06.); 2: P100, 1:1000 tdT (08.06); 3: P100, 1:2000 tdT (08.06); 4: P100, 1:5000 tdT (08.06); 5: P100, 1:10000 tdT (08.06); M: GeneRuler 50 bp DNA Ladder")
+    +image(1, imgpath, "2.5% Agarose in TBE with samples from 2021-06-07_table2, 90 V 52 min, SYBR Gold (20 min); M: GeneRuler 50 bp DNA Ladder; 1: P100, 1:1000; 2: P100, 1:1000; 3: P100, 1:2000; 4: P100, 1:5000; 5: P100, 1:10000; M: GeneRuler 50 bp DNA Ladder",60,0.8)
     
-    :markdown-it(html)
+    
+    :markdown-it
     
         To tackle this problem, we wanted to establish the PAA-electrophoresis. 
         After some research, we decided to try a 15% PAA Gel with GelRed post-staining. 
@@ -50,9 +49,9 @@ block article
         Now, we were able to examine differences of around 5 nt. 
     
     - var imgpath = "" + require("../assets/img/Experiments/2021-05-12_01_inv_paa.jpg")["default"]
-    +image(2, imgpath, "15% PAA Gel resolution test with samples from 2021-05-12_table1, 100 V 60 min, SYBR Gold (20 min); M: GeneRuler UltraLowRange DNA Ladder; 1: GALIfor 1:5 (11.05.); 2: GALIfor 1:10 (11.05.); 3: GALIfor 1:15 (11.05.); 4: GALIfor 1:20 (11.05.); 5: GALIfor 1:30 (11.05.); 6: GALIfor 1:40 (11.05.)")
+    +image(2, imgpath, "15% PAA Gel resolution test with samples from 2021-05-12_table1, 100 V 60 min, SYBR Gold (20 min); M: GeneRuler UltraLowRange DNA Ladder; 1: GALIfor 1:5; 2: GALIfor 1:10; 3: GALIfor 1:15; 4: GALIfor 1:20; 5: GALIfor 1:30; 6: GALIfor 1:40.)",80,0.8)
     
-    :markdown-it(html)
+    :markdown-it
 
         To analyze our samples even more in detail, we tried to use capillary electrophoresis (CE). 
         Sebastian Palluk recommended to consult experts from the Fraunhofer IME in Aachen. 
@@ -64,13 +63,40 @@ block article
         We used this technique to study the reaction rate of the TdT with different nucleotides and adapt our kinetic model.
     
     - var imgpath = "" + require("../assets/img/Experiments/2021-07-08_CE.jpg")["default"]
-    +image(3, imgpath, "Elongation of AT-rich primer with Thymin, 60 s; Peak Scanner plot, fluorescence intensity against time")
+    +image(3, imgpath, "Elongation of AT-rich primer with Thymin, 60 s; Peak Scanner plot, fluorescence intensity against time.",80,0.8)
     
-    :markdown-it(html)
+    :markdown-it
 
         # Preventing secondary structures
 
-        # Immobilisation Methods
+        Due to the formation of duplex secondary structures, especially with guanine, the synthesis of longer strands by the TdT is complicated. 
+        This problem often prevents the extension of all strands to more than 1000 nt. 
+        To study this context we ordered especially a GC-rich primer with a GC share of 80%.
+        Further, we designed sequences in the primer that tend to form secondary structures.
+        In order to tackle this problem, we established the use of single-stranded binding proteins [(SSBs)](https://2021.igem.org/Team:Aachen/Results#SecondaryStructures-SSBs). 
+        Through the first tests, we had to figure out which concentration of SSBs suits the best for our experiments. 
+        Too high concentrations obstruct the TdT from elongating the primer and too low concentrations showed no significant effects. 
+        After testing various concentrations and finding an optimal one we faced another problem. 
+        In order to analyze the synthesized ssDNA it was crucial to separate the SSBs from the synthesized strand.
+        Following multiple approaches, we found out that running a PCR is the best way to “separate” the DNA from the SSB [(PCR)](https://2021.igem.org/Team:Aachen/Experiments#PCR). 
+        Additionally, we could clone these PCR products and sequence them by [Sanger-Sequencing](https://2021.igem.org/Team:Aachen/Experiments#Sequencing). 
+        This method allowed us to examine the synthesized DNA strands in more detail.  
+        By adding single-stranded binding proteins from Thermo Fisher Scientific, we were able to show that SSBs can be used to partially prevent the formation of secondary structures. 
+        As a result, significantly longer strands could be amplified.
+        
+    - var imgpath = "" + require("../assets/img/Experiments/GC_oligo_ohne_SSBs.png")["default"]
+    +image(4, imgpath, "Inserts from the approach without SSBs. 9 clones with inserts &lt 150 bp. SeqMan Pro 15 plot.",80,0.8)
+    
+    - var imgpath = "" + require("../assets/img/Experiments/GC_Oligo_mit_SSB.png")["default"]
+    +image(5, imgpath, "Inserts that were elongated with SSBs. 4 clones with inserts &gt 300 bp, A01 clone up showed an insert with 978 nucleotides added to the GC-rich primer. SeqMan Pro 15 plot.",80,0.8)
+
+    :markdown-it
+    
+        As a conclusion from our experiments, it can be seen that we were able to reduce the formation of secondary structures in ssDNA by using SSBs. 
+        Adding them to a TdT tailing reaction in solution seems to significantly enhance the elongation capacity. 
+        
+        
+        # Immobilization Methods
         
         Immobilization of the primer was a key element of our project to establish cyclic synthesis with the DIP method (see also [Hardware](https://2021.igem.org/Team:Aachen/Hardware#DIPsy). 
         Since we had specific requirements regarding the attachment of the primer on a stick like a functional elongation, we had to work our way through three different methods until we found a suitable design. 
@@ -83,10 +109,27 @@ block article
         Now proceeding to the next part of the immobilization system, we needed to link the AC6-primer to the anchor peptide.
         Visualizing the conjugation with an SDS-PAGE, we realized that the process was probably unsuccessful.
         Nevertheless, a TdT reaction with pure primer-solution and the immobilized conjugate approach was performed, to see if the AC6-primer could get elongated by the enzyme and to prove, that also immobilized primers worked.
-        The analysis with gel electrophoresis showed, that AC6-primers could indeed be elongated but the conjugation of primer and peptide failed.
+       
+               
+    - var imgpath = "" + require("../assets/img/Results/2021-08-03_01.png")["default"]
+    +image(6, imgpath, "<b>Standard TdT reaction (dTTP 15 min) with the conjugate and elutions of immobilizations with AC6 primer and AC6 primer-peptide conjugate.</b> 2.5% Agarose with TBE, SYBR Gold, staining, 90 V, 60 min. M: GeneRuler 50 bp DNA Ladder 1: AC6 primer 2: AC6 primer after TdT reaction 3: AC6-primer-peptide conjugate 4: heated AC6-primer-peptide conjugate 5: AC6-primer-peptide conjugate after TdT reaction 6: elution of AC6-primer after immobilization 7: elution of AC6-primer after immobilization and TdT reaction 8: elution of AC6-primer-peptide conjugate after immobilization 9: elution of AC6-primer-peptide conjugate after immobilization and TdT reaction.", 60,0.8)
+            
+    :markdown-it
+       
+        The analysis with gel electrophoresis showed, that AC6-primers could indeed be elongated but the conjugation of primer and peptide failed. 
+        The anchor peptide should influence the running behavior due to its molecular weight and stop at a higher level if the conjugation had worked.
+        However, possible conjugates and elongated conjugates in lanes 3 and 5 show the same bands as single primer reference (lane 1) and elongated primer (lane 2).
 
         Because the basic design of this immobilization method (anchor peptides binding to the stick) worked we adapted our system by using custom-made maleimide-tagged primer, which can form covalent bonds with thiol groups in cysteine. 
         Under the assumption of different running behavior of the conjugates compared to pure primers, we tested two different maleimide-labeled primers at various ratios in gel electrophoresis. 
+        
+         
+    - var imgpath = "" + require("../assets/img/Results/2021-08-19_01.png")["default"]
+    +image(7, imgpath, "<b>Conjugations of LCI-fusion-protein with AT-rich and GC-rich maleimide-labeled ssDNA primers and different primer excesses.</b> 2.5% Agarose with TBE, 90 V, 60 min, SYBR Gold staining. M: GeneRuler 50 bp DNA Ladder 1: GC-rich primer reference 2: AT-rich primer reference, 3: Conjugation with 12.5x GC-rich primer excess 4: Conjugation with 5x GC-rich primer excess 5: Conjugation with 2x GC-rich primer excess 6: Conjugation with 12.5x AT-rich primer excess.", 60,0.8)
+    
+    :markdown-it
+        
+        As seen in figure 7, lanes 4 to 6 appeared in a bright smear. Therefore it can be concluded that the conjugation was successful
         Subsequently, to analyze the binding between primer and peptide a purification of the conjugate out of an agarose gel followed by an SDS-PAGE and western-blot was performed.
         These experiments sadly did not succeed but because our first gel electrophoreses indicated that the conjugation might have worked, we started TdT tailing reactions.
         Since an elongation of itself worked, but we did not know whether it was the conjugated or free excess primer, the next step was taken and immobilization of the possible conjugates on the polystyrene sticks was attempted as well as more TdT tailing reactions. 
@@ -96,7 +139,16 @@ block article
         Turning to streptavidin-biotin-bonds as a third approach, we started using streptavidin-coated magnetic beads and biotinylated primers with a TEG (triethyleneglycol) spacer.
         Beginning with tests regarding the immobilization of the primers per se, we successfully bound the biotinylated primer to the beads after a few experiments while altering the beads to primer ratio and implementing washing steps.
         Elution of the primer was also possible, even after binding the beads onto the magnetic rod.
+        
+                
+    - var imgpath = "" + require("../assets/img/Results/2021-10-05.png")["default"]
+    +image(8, imgpath, "<b>Permanent immobilization using biotin-streptavidin binding.</b> A) Magnet beads and primer were conjugated first, and the magnet stick was added afterwards. B) Magnet beads were attached to the magnet stick and primer was added afterwards. 2.5% Agarose TBE, SYBR Gold, 90V, 45 min. M: GeneRuler 50 bp DNA Ladder 1: Biotin-labelled N-Primer 2: Conjugation rest 3: Wash rest 4: Wash rest 5: Elution.",100,0.8)        
+        
+    :markdown-it
+        
         Gel electrophoreses proved that the system works. 
+        Conjugation was successful when adding magnet beads to primers in the first step and then the magnet rod.
+        As seen in lane A) 5, the primers could be eluted easily later. When binding the magnetic beads to the magnet first and performing the conjugation step afterward, it is visible in lane B) 2 that the primer did not bind to the immobilized beads.
         Throughout the project, we have considered that it was handy to have non-permanent immobilization.
         Implementing this aspect, we started using an envelope made out of polypropylene for the magnetic rod.
         While the immobilization was functional with this system as well, we were now also saving material because the magnetic beads did not bind irreversibly to the rod. 

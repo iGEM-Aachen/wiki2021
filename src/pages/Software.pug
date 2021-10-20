@@ -10,13 +10,13 @@ block article
 
         # Purpose of Our Software
 
-        The goal of Storagene is to store information on DNA.
-        To do this, we first need to encode information in form of a base sequence.
-        Even more importantly, we need to be able to decode a sequenced DNA strand to recover the original information.
+        The goal of Storagene is to store data on DNA.
+        To do this, we first need to encode data in form of a base sequence.
+        Even more importantly, we need to be able to decode a sequenced DNA strand to recover the original data.
         These two tasks are performed by our software.
-        The main focus lies on error correction in the decoding process.
+        The main focus lies in error correction in the decoding process.
         Many errors can occur during DNA synthesis and sequencing.
-        By utilizing the peculiarities of our semi-specific synthesis in combination with the capabilities of nanopore sequencing, we will be able to robustly decode information from DNA.
+        By utilizing the peculiarities of our semi-specific synthesis in combination with the capabilities of nanopore sequencing, we will be able to robustly decode data from DNA.
         This plays an important role in making this technique easier to use and thus accessible to everyone.
         Our software addresses a problem that is not very common today.
         However, it has the potential to become a standard bioinformatics tool when DNA data storage is eventually technically integrated into everyday life.
@@ -24,27 +24,27 @@ block article
         # Overview
 
         Our software is written in Python.
-        Right now, it consists of a program library and a command line tool that utilizes the library.
-        The command line tool makes all the basic functionalities of our library available, namely encoding and decoding information.
+        Right now, it consists of a program library and a command-line tool that utilizes the library.
+        The command-line tool makes all the basic functionalities of our library available, namely encoding and decoding data .
         In addition, it would be possible to implement a graphical user interface, which would make the usage even easier for everyone.
 
         In the following, the two functions of our software encoding and decoding are explained in detail.
-        It will become clear how we are able to store information on DNA, although our synthesis approach is semi-specific.
-        We will also discuss the challenges that arise when decoding information.
+        It will become clear how we can store data on DNA, although our synthesis approach is semi-specific.
+        We will also discuss the challenges that arise when decoding DNA strands.
 
-        # Encoding Information on DNA
+        # Encoding Data on DNA
 
     - var imgpath = "" + require("../assets/img/Software/encoding.svg")["default"]
-    +image(1, imgpath, "Overview over the steps needed for encoding data into DNA.")
+    +image(1, imgpath, "Overview over the steps needed for encoding data into DNA.", 80)
 
     :markdown-it(html)
 
         ## Changes of Nucleotides as Information Carriers
 
         Our DNA synthesis is semi-specific, meaning that we cannot control how many nucleotides are attached in each step.
-        This means that we will always have chunks of unknown length of each nucleotide, e.g. "AAACCCCCAAAAAGGGG".
+        This means that we will always have chunks of an unknown length of each nucleotide, e.g. "AAACCCCCAAAAAGGGG".
         These chunks are also called homonucleotides.
-        Nevertheless, to be able to encode information in this, we are using a rather unusual encoding scheme.
+        Nevertheless, to be able to encode data in this, we are using a rather unusual encoding scheme.
         Instead of encoding one bit of information to each base pair, we are encoding information in each change of bases.
         For example, the change from a homonucleotide of **A**s to a homonucleotide of **C**s could encode a `1`.
 
@@ -59,10 +59,10 @@ block article
         Instead, in our ternary code information is encoded in trits.
         Each trit can have the states `0`, `1`, or `2`.
 
-        ## Converting form Binary to Ternary
+        ## Converting from Binary to Ternary
 
-        Our software is able to encode arbitrary files into DNA strands.
-        Therefore, the first step is to convert binary information into ternary information.
+        Our software can encode arbitrary files into DNA strands.
+        Therefore, the first step is to convert binary data into ternary data.
         Computers work with bytes, so chunks of eight bits.
         Hence, it is natural to first split the string of bits we get from a file into bytes.
         Then, the software converts each byte into trits.
@@ -70,29 +70,29 @@ block article
         The count of values a number can take is calculated by the formula $b^l$.
         In this $b$ is the base of the number system, e.g., '2' for the binary system, and$^l$ is the number of digits.
         Since a byte consists of eight bits with two states each, every byte can have $2^8=256$ states.
-        To represent the information of one byte with trits, we need enough trits to represent atleast $256$ different states.
+        To represent the information of one byte with trits, we need enough trits to represent at least $256$ different states.
         Five trits can represent $243$ states, since $3^5=243$.
         So obviously, five trits are not enough to encode one byte.
         Six trits, in contrast, represent $3^6=729$ states.
         So one byte can be encoded with six trits.
         In the following, we will call a sequence of six trits a tryte.
         However, this also shows that converting one byte into one tryte is extremely inefficient.
-        $\frac{256}{729} \approx 35.12$%, so roughly one third of the actual capacity of this code is actually used.
+        $\frac{256}{729} \approx 35.12$%, so roughly one-third of the actual capacity of this code is used.
 
         ## Converting Number Systems More Efficiently
 
         Instead of converting eight bits into six trits, it is also possible to cut up the original data differently.
         In the best case, this can lead to a more efficient conversion.
         For example, three bits could be converted into two trits.
-        Since $2^3=8$ and $3^2=9$, $\frac{8}{9}$ or 89% of the maximum capacity are actually used.
+        Since $2^3=8$ and $3^2=9$, $\frac{8}{9}$ or 89% of the maximum capacity are used.
         And even more efficient conversion would be from eleven bits to seven trits with a capacity of 94%.
         However, both of these conversions would also require some additional computation.
         Arbitrary bit strings usually cannot be divided into chunks of three or eleven bits.
         Therefore, the last chunk would need to be padded with bits.
-        This means that the encoded information also needs to contain the information of how many bits were padded to the end.
+        This means that the encoded data also needs to contain the information of how many bits were padded to the end.
         Due to this additional complexity, other conversions than from byte to tryte are not implemented in our software right now.
 
-        # Decoding Information from Sequencing Data
+        # Decoding Data from Sequencing Data
 
     - var imgpath = "" + require("../assets/img/Software/decoding.svg")["default"]
-    +image(2, imgpath, "Overview over the steps for retrieving information from DNA.")
+    +image(2, imgpath, "Overview over the steps for retrieving information from DNA.", 80)

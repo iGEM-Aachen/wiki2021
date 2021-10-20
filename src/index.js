@@ -12,7 +12,7 @@ function fadeOutOnScroll(element, offset) {
 
     var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top;
     var elementHeight = element.offsetHeight;
-    var scrollTop = document.getElementById('scrollable').scrollTop;
+    var scrollTop = window.pageYOffset;
 
     var opacity = window.getComputedStyle(element).getPropertyValue("opacity");
 
@@ -34,7 +34,7 @@ function scrollHandler() {
 window.addEventListener('scroll', scrollHandler);
 
 // Scrolling rocket
-var rocket_offset = 500;
+var rocket_offset = 300;
 var rocket_max_margin = 700;
 
 $('#rocket-container').css({
@@ -44,11 +44,11 @@ $('#rocket-container').css({
 function scrollRocket() {
     var rocket_container = document.getElementById('rocket-container');
     var distanceToTop = window.pageYOffset + rocket_container.getBoundingClientRect().top;
-    var scrollTop = document.getElementById('scrollable').scrollTop;
+    var pageOffset = window.pageYOffset;
 
-    var rocket_top = -scrollTop + distanceToTop + rocket_offset;
+    var rocket_top = -pageOffset + distanceToTop + rocket_offset;
 
-    console.log("scrollTop: " + scrollTop);
+    console.log("scrollTop: " + pageOffset);
     console.log("distanceToTop: " + distanceToTop);
     console.log("rocket_offset: " + rocket_offset);
     console.log("top: " + rocket_top);

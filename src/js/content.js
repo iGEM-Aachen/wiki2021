@@ -32,7 +32,12 @@ $('.content h1, .content h2, .content summary').each(function() {
         var a = document.createElement('a');
         a.classList.add("nav-link");
         $(a).attr('href', '#' + id);
-        $(a).text(text);
+        var textarray = text.split(" ");
+        if(textarray.length > 3) {
+            textarray.splice(2, 0, "<wbr>");
+        }
+        text = textarray.join(" ");
+        $(a).append(text);
 
         item.append(a);
 

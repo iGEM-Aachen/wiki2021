@@ -1,5 +1,8 @@
 - urlPrefix = "/"
 
+mixin extralink(title,url)
+    a(class="extraLinks" href=url)= title 
+
 mixin buttonLeft(buttonTitle)
     if buttonTitle.length <= 7
         - var length = "short"
@@ -32,18 +35,31 @@ mixin buttonRight(buttonTitle)
             span.icon.arrow
         span.button-text= buttonTitle
 
-mixin image(n, url, caption, width)
+mixin image(n, url, caption, width, fontSize)
     .image
-        if width
+        if width && !fontSize
             img(src=url alt=caption style="width: " + width + "%")
+            if caption != ""
+                p= "Figure " + n + ": " + caption
+        else if fontSize && width
+            img(src=url alt=caption style="width: " + width + "%")
+            if caption != ""
+                p(style="font-size:" + fontSize + "rem; text-align:justify" )!= "<b>Figure " + n + "</b>: " + caption
         else
             img(src=url alt=caption)
-        p= "Figure " + n + ": " + caption
+            if caption != ""
+                p= "Figure " + n + ": " + caption
 
-mixin video(url, caption)
-    video(style="width: 100%;" controls)
-        source(src=url type="video/mp4")
-        span Your browser does not support the video tag. :(
+mixin video(url, caption, width)
+    .video
+        if width
+            video(style="width: " + width + "%" controls)
+                source(src=url type="video/mp4")
+                span Your browser does not support the video tag. :(
+        else
+            video(style="width: 100%;" controls)
+                source(src=url type="video/mp4")
+                span Your browser does not support the video tag. :(
 
 
 mixin imgCitation(name, number)
@@ -74,7 +90,7 @@ mixin citation_webpage(citation, count)
         cite= citation.title
         p
             span.details= citation.details
-            a.in-text(href=citation.url target="_blank" rel="noopener")= citation.url
+            a.in-text(href=citation.url target="_blank" rel="noopener")= citation.url.substr(0,30) + "..."
         a.in-text(href="#intext" + count) Back to text
 
 mixin citation_book(citation, count)
@@ -98,7 +114,6 @@ mixin meme(filename, caption, width)
             img(src=memepath alt=caption style="width: " + width + "%")
         else
             img(src=memepath alt=caption)
-    hr
 
 mixin teamlabel(type)
     .teamlabel
@@ -125,3 +140,22 @@ mixin teamlabel(type)
                 span Storytelling
             when "meme"
                 span Memes
+
+
+mixin imgCarousel(id, items)
+    .carousel.slide.igem-carousel(id="carousel-"+id, data-ride="carousel")
+        .carousel-inner
+            each item, index in items
+                if(index === 0)
+                    .carousel-item.active
+                        img(src=item.image).d-block.w-100
+                else
+                    .carousel-item
+                        img(src=item.image).d-block.w-100
+        a.carousel-control-prev(href="#carousel-" + id, role="button", data-slide="prev")
+            span.carousel-control-prev-icon(aria-hidden="true")
+            span.sr-only= Next
+        a.carousel-control-next(href="#carousel-" + id, role="button", data-slide="next")
+            span.carousel-control-next-icon(aria-hidden="true")
+            span.sr-only= Next
+

@@ -12,21 +12,21 @@ block article
         
         With the social media posts called “fact of the week”, we want to explain complex topics in synthetic biology in a simple way and thus engage in science communication.
         The aim is to get people interested in the topics addressed, some of which are special.
-        The following topics were covered:
-        - Biotechnology
-        - CRISPR/Cas9
-        - Bioflavors
-        - Escherichia coli
-        - Genetic code
-        - Bioluminescence
-        - Biolistics
-        - Bioleaching
-        - Astrobiology
-        - Microbial nanowires
-        - 3D Bioprinting
+        These are some of the topics we covered in our posts:
+
+    - var imgNames = [{image: require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-01.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-02.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-03.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-04.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-05.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-06.png")["default"]}]
+    +imgCarousel(1, imgNames)
+
+    - var imgNames = [{image: require("../assets/img/communication/fact_of_the_week/Post 06/Genetic Code-01.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 06/Genetic Code-02.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 06/Genetic Code-03.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 06/Genetic Code-04.png")["default"]}]
+    +imgCarousel(2, imgNames)
+
+    - var imgNames = [{image: require("../assets/img/communication/fact_of_the_week/Post 07/Bioluminescence-01.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 07/Bioluminescence-02.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 07/Bioluminescence-03.png")["default"]},{image: require("../assets/img/communication/fact_of_the_week/Post 07/Bioluminescence-04.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 07/Bioluminescence-05.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 07/Bioluminescence-06.png")["default"]}]
+    +imgCarousel(3, imgNames)
+
+    :markdown-it
 
         # Collaboration with iGEM Eindhoven
-        In March we wrote iGEM Tue a message if they would like to meet sometime. In our first meeting, we decided to cooperate in the field of science communication. 
+        In March we wrote [iGEM TU Eindhoven] (https://2021.igem.org/Team:TU_Eindhoven) a message if they would like to meet sometime. In our first meeting, we decided to cooperate in the field of science communication. 
         At first, we collected easy experiments for younger children and made lesson plans and PowerPoint presentations in English, German and Dutch for each experiment. 
         We conducted them in elementary schools in both countries. In Germany, we paid a visit to the Don-Bosco-School in Wolsfeld and performed two experiments with a small group of students.  
         First, we briefly introduced iGEM and our team and explained what kind of project we are working on in a way that was appropriate for children. 
@@ -107,10 +107,10 @@ block article
 
     - var pdfpath = "" + require("../assets/documents/communication/extractionKitMaterials.pdf")["default"]
     a(href=pdfpath) Extraction Kit Materials
-
+    p
     - var pdfpath = "" + require("../assets/documents/communication/extractionKitStudents.pdf")["default"]
     a(href=pdfpath) Student instruction
-
+    p
     - var pdfpath = "" + require("../assets/documents/communication/extractionKitTeacherBackgroundInformation.pdf")["default"]
     a(href=pdfpath) Teacher instructions and Background information
     :markdown-it(html)
@@ -173,8 +173,6 @@ block article
         The simple but illustrative experiment gave students a better understanding of cells and cleared up prejudices against DNA.
         When we told them about our project in the beginning, they were often scared working with DNA would be dangerous but afterward, they were fascinated by the clearly visible DNA extract.
 
-
-
         # Carrer Guidance Event in Bulgaria
         In our team, we believe that iGEM is about never ceasing to learn and therefore feel responsible for educating young people. 
         Therefore, Viktor participated in a career guidance event organized every year at his school in Bulgaria and gave a presentation about the branches of biotechnology, the bachelor's degree program at RWTH Aachen University, and the career opportunities. 
@@ -182,4 +180,6 @@ block article
         А couple of students were intrigued about the world of biotechnology and connected with Viktor for further information about the bachelor program. 
         Thus, we believe that we helped young people to find their passion and hope that one day we will work side by side on a project that may change the world.
     - var imgpath = "" + require("../assets/img/Education/91.DeutschesGymnasiumSofia.jpg")["default"]
+
     +image(16, imgpath, "91. Deutsches Gymnasium Sofia.")
+    
