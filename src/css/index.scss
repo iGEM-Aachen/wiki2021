@@ -211,6 +211,16 @@ article {
     padding-top: 120px;
 }
 
+video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-header {
+    margin-bottom: 5rem !important;
+}
+
 .header {
     height: 70%;
     img {
@@ -219,10 +229,5 @@ article {
         margin-left: auto;
         margin-right: auto;
         width: 70%
-    }
-    video {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
