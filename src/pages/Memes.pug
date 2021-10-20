@@ -9,7 +9,18 @@ block headVars
 block main
     - var fs = require('fs')
     - var memenames = fs.readdirSync('src/assets/img/memes')
+    
+    link(rel="stylesheet", href="src/assets/lightbox/glightbox.min.css")
 
-    each name in memenames.reverse()
-        +meme(name, "")
+    div(class="container")           
+        each name, index in memenames
+            if index % 3 === 0 
+                | <div class="row">
+            div(class="col")
+                +meme(name, "")
+            if index % 3 === 2 || index === memenames.length - 1
+                | </div>
 
+    script(src="src/assets/lightbox/glightbox.min.js")
+    script(src="src/assets/lightbox/gallery.js")
+        

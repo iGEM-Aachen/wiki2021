@@ -9,3 +9,36 @@
 	max-height: 70vh;
 	max-width: 90vw;
 }
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .col {
+	flex: 33%;
+	max-width: 33%;
+  }
+  
+  .col img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+	.col {
+	  flex: 50%;
+	  max-width: 50%;
+	}
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.col {
+	  flex: 100%;
+	  max-width: 100%;
+	}
+  }

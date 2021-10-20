@@ -107,13 +107,16 @@ mixin citation_book(citation, count)
 
 - // # TODO: #7 Fix citations links font size
 
-mixin meme(filename, caption, width)
+mixin meme(filename, caption)
     - var memepath = "" + require("../assets/img/memes/" + filename)["default"]
     .meme.d-flex.justify-content-center.align-items-center
-        if width
-            img(src=memepath alt=caption style="width: " + width + "%")
+        if filename.substring(filename.lastIndexOf('.')+1, filename.length) == "mp4"
+            a(href=memepath class="glightbox" data-gallery="memegallery")
+                video(src=memepath alt=caption class="img-responsive")
         else
-            img(src=memepath alt=caption)
+            a(href=memepath class="glightbox" data-gallery="memegallery")
+                img(src=memepath alt=caption class="img-responsive")
+
 
 mixin teamlabel(type)
     .teamlabel
