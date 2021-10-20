@@ -10,7 +10,7 @@ block article
     
         # Overview
 
-        In our project, we had to overcome multiple obstacles and we therefore performed multiple engineering cycles. 
+        In our project, we had to overcome multiple obstacles and therefore performed multiple engineering cycles. 
         The main goal of the project is to encode information into DNA. 
         To achieve that goal, we had to establish analytical methods for different purposes: for broad and detailed length analysis. 
         Concerning the prevention of secondary structures, we examined the use of single-stranded binding proteins and small oligonucleotides. 
@@ -18,52 +18,64 @@ block article
         
         # Analysis
         
-        Our synthesized strands were small in size, low in concentration, and on top of that single-stranded DNA (ssDNA), which made it hard to run standard protocols for nucleic acid analysis. Therefore, we had to establish new procedures for our unconventional samples. 
-
-        Coarse electrophoresis like agarose and polyacrylamide (PAA) is a fast and easy method. 
-        However, there are many different variable parameters like the concentration of Agarose and PAA, dying method, time, voltage, or buffer. 
-        First, we tried the commonly used TRIS-Acetate-EDTA (TAE) buffer with a 1% Agarose gel and the Roti GelRed stain. 
+        Our synthesized strands were small in size, low in concentration, and on top of that single-stranded DNA (ssDNA), which made it hard to run standard protocols for nucleic acid analysis. 
+        Therefore, we had to establish new procedures for our unconventional samples.
+        
+        Ordinary gel electrophoresis with agarose or polyacrylamide (PAA) is a fast and easy method. 
+        However, there are many different variable parameters like the concentration of agarose and PAA, dying method, time, voltage, and buffer. 
+        First, we tried the commonly used TRIS-Acetate-EDTA (TAE) buffer with a 1% agarose gel and ROTI GelStain Red.
         With these parameters, we did not manage to visualize the synthesized DNA from our first experiments. 
-        After some research and advice from experts, we tried out TRIS-Borate/EDTA (TBE) buffer and raised the agarose concentration to 2.5%. 
+        After some research and advice from experts, we tried out TRIS-Borate-EDTA (TBE) buffer and raised the agarose concentration to 2.5%. 
         With these parameters, we were able to see smaller fragments but could not observe lower concentrations. 
-        Through research on the GelRed stain and our contacts at ThermoFisher, we decided to continue our work with the SYBR Gold stain, which suited our products because of its high sensitivity even for single-stranded samples. 
-        With the new stain, it was possible to see our primers (GALI) on a Agarose gel, but it was impossible to do a highly resolved comparison of short fragements. 
-        To compare our reactions, we ordered a 100 nt primer (AT-rich, GC-rich), and by adjusting other parameters like time and voltage, we got relatively sharp bands with a resolution of around +/- 20 nt. 
-        Now that we have established a broad method for analyzing our fragments, we were able to study the reaction conditions of our enzyme, like cofactor dependency, preferred nucleotide, reaction time, or reaction temperature.
-        But we were not able to visualize small differences of 1-3 nucleotides, which would be important concerning the efficient and material-saving synthesis of many nucleotide transitions.
-    
+        Through research on ROTI GelStain Red and our contacts at ThermoFisher, we decided to continue our work with SYBR Gold stain, which suited our samples because of its high sensitivity even for single-stranded samples. 
+        With the new stain, it was possible to see our primers (GALI) on an agarose gel, but it was impossible to do a highly resolved comparison of short fragments. 
+        To compare our reactions, we ordered 100 nt primers (AT-rich, GC-rich), and by adjusting other parameters like time and voltage, we got relatively sharp bands with a resolution of around +/- 20 nt. 
+        Now that we had established a broad method for analyzing our fragments, we were able to study the reaction conditions of our enzyme, like cofactor dependency, preferred nucleotide, reaction time, and reaction temperature.
+        But we were not able to visualize small differences of 1-3 nucleotides, which would have been important for the efficient and material-saving synthesis of many nucleotide transitions.
+
     - var imgpath = "" + require("../assets/img/Experiments/2021-06-08_01_agar.jpg")["default"]
-    +image(1, imgpath, "2.5% Agarose in TBE with samples from 2021-06-07_table2, 90 V 52 min, SYBR Gold (20 min); M: GeneRuler 50 bp DNA Ladder; 1: P100, 1:1000; 2: P100, 1:1000; 3: P100, 1:2000; 4: P100, 1:5000; 5: P100, 1:10000; M: GeneRuler 50 bp DNA Ladder",60,0.8)
+    +image(1, imgpath, "<b> 2.5% agarose in TBE </b>, 90 V, 52 min, SYBR Gold staining; M: GeneRuler 50 bp DNA Ladder; 1: AT-rich, 100 nM, primer reference; 2: AT-rich, 100 nM, reaction; 3: AT-rich, 50 nM, reaction; 4: AT-rich, 20 nM, reaction; 5: AT-rich, 10 nM, reaction; M: GeneRuler 50 bp DNA Ladder",60,0.8)
     
     
     :markdown-it
     
-        To tackle this problem, we wanted to establish the PAA-electrophoresis. 
-        After some research, we decided to try a 15% PAA Gel with GelRed post-staining. 
+        To tackle this problem, we wanted to establish the PAA gel electrophoresis. 
+        After some research, we decided to try a 15% PAA gel with ROTI GelStain Red post-staining. 
         This method has been proven to be more difficult and time-consuming than agarose gel electrophoresis. 
-        Regarding this method, the GelRed stain also did not work. 
-        Concerning voltage and running time through trial and error, we found out that 100 V and 1 hour suited the best for our samples. 
-        After some more research and an informative meeting with Dr. Zimmermann, we performed a Silver Staining. However, this time-intensive and complicated method did not work for our samples. 
-        Due to hazardous ingredients and lengthy experiment procedure, we stopped pursuing this method. 
-        After a couple of successful Agarose gels, we tested SYBR Gold stain, which could visualize all of our products, even our 21 nt GALI primer. 
-        Now, we were able to examine differences of around 5 nt. 
-    
+        With this method, ROTI GelStain Red also did not work. 
+        Adjusting voltage and running time through trial and error, we found out that 100 V and 1 hour were the most suitable conditions for our samples. 
+        After some more research and an informative meeting with Dr. Zimmermann from the Institute of Applied Microbiology, we performed silver staining. 
+        However, this time-intensive and complicated method did not work for our samples. 
+        [//]: # (Klar war das sehr aufwendig, was auch ein Grund war, warum wir es gelassen haben, aber wir haben nie ganz herausgefunden, warum man unsere Proben nicht gut gesehen hat, das müsste mit Silberfärbung nämlich eigentlich klappen, denn SYBR Gold unterdrückt die Fluoreszenz, Silberfärbung ist eigentlich sensitiver)
+        [//]: # (Problematisch wurde es ja dann erst mit den denaturierenden Gelen und dann hatten wir uns gedacht, wenn die denaturierenden Gele nicht funktionieren, können wir ja direkt Agarose nehmen, das ist einfacher)
+        Due to hazardous ingredients and lengthy experiment procedure, we stopped pursuing the silver staining. 
+        After several successful agarose gels, we tested SYBR Gold stain, which could visualize all of our products, even our 21 nt GALI primer. 
+        Now, we were able to examine differences of approximately 5 nt.
+        Besides these great results, we stopped using the PAA gel electrophoresis because of multiple reasons.
+        First, the error rate of the method is higher and the procedure time is in comparison to the agarose gel electrophoresis.
+        Additionally, the resolution of the agarose gel electrophoresis was sufficient enough for us to study the characteristics of our enzyme.
+        For more detailed analysis we established the capillary electrophoresis and multiple sequencing methods.
+
+        [//]: # (Bin mir hier unsicher ob eine Begründung warum wir PAA nicht mehr verwendet haben rein muss. Eig sollen doch nur die engineering cycles beschrieben werden)
+        [//]: # (Hier wird nicht so ganz klar, warum wir dann doch keine PAA-Gele mehr gemacht haben.)
+        [//]: # (Es ging darum, dass das SYBR Gold die kleinen Konzentrationen, mit denen wir gearbeitet haben, auf dem PAA-Gel nicht sichbar machen konnte, aber auf der Agarose schon)
+
     - var imgpath = "" + require("../assets/img/Experiments/2021-05-12_01_inv_paa.jpg")["default"]
-    +image(2, imgpath, "15% PAA Gel resolution test with samples from 2021-05-12_table1, 100 V 60 min, SYBR Gold (20 min); M: GeneRuler UltraLowRange DNA Ladder; 1: GALIfor 1:5; 2: GALIfor 1:10; 3: GALIfor 1:15; 4: GALIfor 1:20; 5: GALIfor 1:30; 6: GALIfor 1:40.)",80,0.8)
+    +image(2, imgpath, "<b> 15% PAA gel resolution test </b> , 100 V 60 min, SYBR Gold (20 min); M: GeneRuler UltraLowRange DNA Ladder; 1: GALIfor 20 µM; 2: GALIfor 10 µM; 3: GALIfor 6.67 µM; 4: GALIfor 5 µM; 5: GALIfor 3.33 µM; 6: GALIfor 2,5 µM.)",60,0.8)
     
     :markdown-it
 
-        To analyze our samples even more in detail, we tried to use capillary electrophoresis (CE). 
-        Sebastian Palluk recommended to consult experts from the Fraunhofer IME in Aachen. 
-        After the first meeting with Dr. Muth and Mrs. Freund, we ordered our primers (AT-rich, GC-rich) with the 6FAM fluorescent modification at the 5’ end. 
-        Those primers were not suitable for our purspose.
+        To analyze our samples in even more detail, we tried using capillary electrophoresis (CE). 
+        Sebastian Palluk from Ansa Biotechnologies recommended consulting experts from Fraunhofer IME in Aachen. 
+        After the first meeting with Dr. Muth and Mrs. Freund, we ordered our primers (AT-rich, GC-rich) with the 6-FAM fluorescent modification at the 5' end. 
+        Those primers were not suitable for our purpose.
         Our first CE results showed strong background noise and also the length of the primer could not be analyzed properly, most likely due to insufficient purity of the primers. 
         To solve this problem we ordered new HPLC purified primers and also purified the samples with an ssDNA clean and concentrator kit before sending them in for analysis. 
         After those two steps, we managed to analyze our samples with a resolution of 1 nucleotide. 
         We used this technique to study the reaction rate of the TdT with different nucleotides and adapt our kinetic model.
     
     - var imgpath = "" + require("../assets/img/Experiments/2021-07-08_CE.jpg")["default"]
-    +image(3, imgpath, "Elongation of AT-rich primer with Thymin, 60 s; Peak Scanner plot, fluorescence intensity against time.",80,0.8)
+    +image(3, imgpath, "<b> CE results </b> for Elongation of AT-rich primer with Thymin, 60 s; Peak Scanner plot, fluorescence intensity against time.",80,0.8)
     
     :markdown-it
 
@@ -85,26 +97,28 @@ block article
         As a result, significantly longer strands could be amplified.
         
     - var imgpath = "" + require("../assets/img/Experiments/GC_oligo_ohne_SSBs.png")["default"]
-    +image(4, imgpath, "Inserts from the approach without SSBs. 9 clones with inserts &lt 150 bp. SeqMan Pro 15 plot.",80,0.8)
+    +image(4, imgpath, "<b> Inserts from the approach without SSBs</b>. 9 clones with inserts &lt 150 bp. SeqMan Pro 15 plot.",80,0.8)
     
     - var imgpath = "" + require("../assets/img/Experiments/GC_Oligo_mit_SSB.png")["default"]
-    +image(5, imgpath, "Inserts that were elongated with SSBs. 4 clones with inserts &gt 300 bp, A01 clone up showed an insert with 978 nucleotides added to the GC-rich primer. SeqMan Pro 15 plot.",80,0.8)
+    +image(5, imgpath, "<b> Inserts that were elongated with SSBs </b>. 4 clones with inserts &gt 300 bp, A01 clone up showed an insert with 978 nucleotides added to the GC-rich primer. SeqMan Pro 15 plot.",80,0.8)
 
     :markdown-it
     
         As a conclusion from our experiments, it can be seen that we were able to reduce the formation of secondary structures in ssDNA by using SSBs. 
         Adding them to a TdT tailing reaction in solution seems to significantly enhance the elongation capacity. 
         
+        [//]: # (Ist dir das kritisch genug :D, Wichert meinte das man ruhig euphemistischer schreiben kann. Kannst aber ruhig noch ergänzen)
         
         # Immobilization Methods
         
-        Immobilization of the primer was a key element of our project to establish cyclic synthesis with the DIP method (see also [Hardware](https://2021.igem.org/Team:Aachen/Hardware#DIPsy). 
+        Immobilization of the primer was a key element of our project to establish cyclic synthesis with the DIP method (see [Hardware](https://2021.igem.org/Team:Aachen/Hardware#DIPsy). 
         Since we had specific requirements regarding the attachment of the primer on a stick like a functional elongation, we had to work our way through three different methods until we found a suitable design. 
 
         Our first approach was the use of anchor peptides and primers with Amino C6-modification (AC6-primer) binding to a polystyrene stick. 
-        As you can see on our [Experiments-Page](https://2021.igem.org/Team:Aachen/Experiments#CyclicSynthesisandPrimerImmobilization) the anchor peptide is a fusion protein, where the primer is supposed to bind to a carboxyl functional group of acidic amino acids in the protein. 
+        As you can see on our [Experiments-Page](https://2021.igem.org/Team:Aachen/Experiments#CyclicSynthesisandPrimerImmobilization) the anchor peptide is a fusion protein, to which the primer is supposed to bind by reacting with a carboxyl functional group of acidic amino acids in the protein.         
         After designing the system, we started testing this approach in the lab (for more detailed information about the experiments see [here](https://2021.igem.org/Team:Aachen/Results#PrimerImmobilization)).
-        Tackling the first part of the process (immobilizing primers on the stick), we did an ELISA immunoassay, using Penta-His-HRP-Antibodies, which bind to a His-Tag on the anchor peptides. The bound enzyme HRP (Horseradish peroxidase) indicates a successful binding by converting a chromogen into a colored compound.
+        [//]: # (Den Satz hier drüber bitte weglassen, da wir komplett vermeiden wollen, dass es so aussehen könnte, als hätten wir die Konstrukte selbst designt. Am besten erwähnen, dass wir das komplette Fusionsprotein so bekommen haben)
+        Tackling the first part of the process (immobilizing the fusion protein we got from our instructor on the stick), we did an ELISA immunoassay, using Penta-His-HRP-Antibodies, which bind to a His-Tag on the anchor peptides. The bound enzyme HRP (Horseradish peroxidase) indicates a successful binding by converting a chromogen into a colored compound.
         Analyzing the absorbance, we found out that the peptides bind to the sticks and resist washing steps. 
         Now proceeding to the next part of the immobilization system, we needed to link the AC6-primer to the anchor peptide.
         Visualizing the conjugation with an SDS-PAGE, we realized that the process was probably unsuccessful.
@@ -121,28 +135,28 @@ block article
         However, possible conjugates and elongated conjugates in lanes 3 and 5 show the same bands as single primer reference (lane 1) and elongated primer (lane 2).
 
         Because the basic design of this immobilization method (anchor peptides binding to the stick) worked we adapted our system by using custom-made maleimide-tagged primer, which can form covalent bonds with thiol groups in cysteine. 
-        Under the assumption of different running behavior of the conjugates compared to pure primers, we tested two different maleimide-labeled primers at various ratios in gel electrophoresis. 
+        Under the assumption of different running behaviors of the conjugates compared to pure primers, we conjugated two different maleimide-labeled primers in different excesses with the fusion protein and performed gel electrophoresis. 
         
          
     - var imgpath = "" + require("../assets/img/Results/2021-08-19_01.png")["default"]
-    +image(7, imgpath, "<b>Conjugations of LCI-fusion-protein with AT-rich and GC-rich maleimide-labeled ssDNA primers and different primer excesses.</b> 2.5% Agarose with TBE, 90 V, 60 min, SYBR Gold staining. M: GeneRuler 50 bp DNA Ladder 1: GC-rich primer reference 2: AT-rich primer reference, 3: Conjugation with 12.5x GC-rich primer excess 4: Conjugation with 5x GC-rich primer excess 5: Conjugation with 2x GC-rich primer excess 6: Conjugation with 12.5x AT-rich primer excess.", 60,0.8)
+    +image(7, imgpath, "<b>Conjugations of LCI-fusion-protein with AT-rich and GC-rich maleimide-labeled ssDNA primers and different primer excesses.</b> 2.5% agarose with TBE, 90 V, 60 min, SYBR Gold staining. M: GeneRuler 50 bp DNA Ladder 1: GC-rich primer reference 2: AT-rich primer reference, 3: Conjugation with 12.5x GC-rich primer excess 4: Conjugation with 5x GC-rich primer excess 5: Conjugation with 2x GC-rich primer excess 6: Conjugation with 12.5x AT-rich primer excess.", 60,0.8)
     
     :markdown-it
         
-        As seen in figure 7, lanes 4 to 6 appeared in a bright smear. Therefore it can be concluded that the conjugation was successful
+        As seen in figure 7, lanes 4 to 6 appeared in a bright smear. Therefore it can be concluded that the conjugation was successful.
         Subsequently, to analyze the binding between primer and peptide a purification of the conjugate out of an agarose gel followed by an SDS-PAGE and western-blot was performed.
-        These experiments sadly did not succeed but because our first gel electrophoreses indicated that the conjugation might have worked, we started TdT tailing reactions.
-        Since an elongation of itself worked, but we did not know whether it was the conjugated or free excess primer, the next step was taken and immobilization of the possible conjugates on the polystyrene sticks was attempted as well as more TdT tailing reactions. 
+        These experiments sadly did not succeed, but because our first gel electrophoreses indicated that the conjugation might have worked, we started TdT tailing reactions.
+        Since an elongation worked, but we did not know whether it was the conjugated or free excess primer, the next step was taken and immobilization of the possible conjugates on the polystyrene sticks was attempted as well as more TdT tailing reactions. 
         Getting inconclusive results in the electrophoresis, we analyzed the samples further with a dot blot (immunoblot), where we investigated the presence of protein in bands that might be conjugated anchor peptides.
         The experiments showed that the conjugation was too uncertain to be used for further experiments.
 
         Turning to streptavidin-biotin-bonds as a third approach, we started using streptavidin-coated magnetic beads and biotinylated primers with a TEG (triethyleneglycol) spacer.
-        Beginning with tests regarding the immobilization of the primers per se, we successfully bound the biotinylated primer to the beads after a few experiments while altering the beads to primer ratio and implementing washing steps.
+        Beginning with tests regarding the immobilization of the primers, we successfully bound the biotinylated primer to the beads after a few experiments while altering the beads to primer ratio and implementing washing steps.
         Elution of the primer was also possible, even after binding the beads onto the magnetic rod.
         
                 
     - var imgpath = "" + require("../assets/img/Results/2021-10-05.png")["default"]
-    +image(8, imgpath, "<b>Permanent immobilization using biotin-streptavidin binding.</b> A) Magnet beads and primer were conjugated first, and the magnet stick was added afterwards. B) Magnet beads were attached to the magnet stick and primer was added afterwards. 2.5% Agarose TBE, SYBR Gold, 90V, 45 min. M: GeneRuler 50 bp DNA Ladder 1: Biotin-labelled N-Primer 2: Conjugation rest 3: Wash rest 4: Wash rest 5: Elution.",100,0.8)        
+    +image(8, imgpath, "<b>Permanent immobilization using biotin-streptavidin binding.</b> A) Magnet beads and primer were conjugated first, and the magnet stick was added afterward. B) Magnet beads were attached to the magnet stick and primer was added afterward. 2.5% agarose TBE, SYBR Gold, 90V, 45 min. M: GeneRuler 50 bp DNA Ladder 1: Biotin-labelled N-Primer 2: Conjugation rest 3: Wash rest 4: Wash rest 5: Elution.",100,0.8)        
         
     :markdown-it
         
