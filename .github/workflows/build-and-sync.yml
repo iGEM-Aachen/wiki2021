@@ -39,6 +39,16 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
     
+    - name: Add Build to Git
+      run: |
+        git pull
+        git add -A
+    - name: Commit Build
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "Successfully built the wiki" || echo "No changes to commit"
+    
     - name: iGEM WikiSync
       uses: igembitsgoa/wikisync-action@v0.2
       with:
@@ -49,7 +59,7 @@ jobs:
         IGEM_USERNAME: ${{ secrets.IGEM_USERNAME }}
         IGEM_PASSWORD: ${{ secrets.IGEM_PASSWORD }}
         
-    - name: Add Changes to Git
+    - name: Add Wikisync Changes to Git
       run: |
         git pull
         git add -A
@@ -62,7 +72,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git commit -m "Successfully built and deployed to iGEM [no-ci]" || echo "No changes to commit"
+        git commit -m "Successfully deployed to iGEM [no-ci]" || echo "No changes to commit"
 
     - name: Push Changes to Github
       uses: ad-m/github-push-action@master

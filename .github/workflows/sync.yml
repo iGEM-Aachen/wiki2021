@@ -2,8 +2,8 @@
 name: Upload existing Build to iGEM
 
 on:
-  push:
-    branches: [ main ]
+#   push:
+#     branches: [ main ]
   workflow_dispatch:
     inputs:
       logLevel:

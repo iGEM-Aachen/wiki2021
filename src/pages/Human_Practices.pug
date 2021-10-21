@@ -261,6 +261,21 @@ block article
         The photolabile groups can be detached by a laser as soon as the DNA synthesis reaction is finished.         
         He also offered us to provide those modified triphosphates for our purposes. 
         We are delighted that we had the opportunity of meeting Mr. Heckel! 
+        
+    :markdown-it
+        # Newsletter for our Sponsors
+        
+        We created newsletters for the important months of May, June, August, and September to inform our sponsors and supporters about our progress. They were written and designed by various members and summarize our progress in the specific month. 
+        
+    - var pdfpath = "" + require("../assets/documents/communication/Newsletter_May_designed.pdf")["default"]
+    a(href=pdfpath) Newsletter May
+    - var pdfpath = "" + require("../assets/documents/communication/Newsletter_June_designed.pdf")["default"]
+    a(href=pdfpath) Newsletter June
+    - var pdfpath = "" + require("../assets/documents/communication/Newsletter_August_designed.pdf")["default"]
+    a(href=pdfpath) Newsletter August
+    - var pdfpath = "" + require("../assets/documents/communication/Newsletter_September.pdf")["default"]
+    a(href=pdfpath) Newsletter September
+   
 
 prepend citations
     - var citations = [{"authors": "Yang, Z., Hutter, D., Sheng, P., Sismour, A. M., & Benner, S. A. (2006)", "doi": "https://doi.org/10.1093/nar/gkl633", "journal": "Nucleic Acids Research", "numbers": "34(21), 6095–6101", "title": "Artificially expanded genetic information system: A new base pair with an alternative hydrogen bonding pattern", "type": "article"}, {"authors": "Tauraitė, D., Jakubovska, J., Dabužinskaitė, J., Bratchikov, M., & Meškys, R. (2017)", "doi": "https://doi.org/10.3390/molecules22040672", "journal": "Molecules (Basel, Switzerland)", "numbers": "22(4)", "title": "Modified Nucleotides as Substrates of Terminal Deoxynucleotidyl Transferase", "type": "article"}]
