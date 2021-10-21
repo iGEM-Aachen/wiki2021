@@ -26,7 +26,9 @@ html(lang="en")
               p Soon, it could become too much for todays storage systems.
             .col-xl-2.col-lg-2.col-md-6.col-xs-12.align-self-center
             .col-xl-6.col-lg-6.col-md-6.col-xs-12.align-self-center
-              img(src=require("./assets/img/homepage/server.svg")["default"])
+              div
+                include ./assets/img/homepage/server_animated.svg
+              // img(src=require("./assets/img/homepage/server.svg")["default"])
       .jumbotron.home-card
         .container
           .row.d-flex.justify-content-center.tiles
@@ -101,10 +103,10 @@ html(lang="en")
       .jumbotron.home-card.home-bg-blue
         .container
           .row.d-flex.justify-content-center.tiles
-              .col-xl-3.col-lg-3.col-md-6.col-xs-12.align-self-center
-                h2 The Solution: Storing Data on DNA
+              .col-xl-4.col-lg-4.col-md-6.col-xs-12.align-self-center
+                h2.fandy The Solution:
+                h2#fandyness Storing Data on DNA
                 p With the unique properties of DNA and rapidly advancing technologies, we think that DNA data storage will replace existing solutions.
-              .col-xl-1.col-lg-1
               .col-xl-8.col-lg-8.col-md-6.col-xs-12.align-self-center
                 img(src=require("./assets/img/homepage/DNA_text.svg")["default"])
       .jumbotron.home-card.home-bg-light
@@ -112,7 +114,9 @@ html(lang="en")
           .row.d-flex.justify-content-center.tiles
             .col-xl-3.col-lg-3.col-md-6.col-xs-12.align-self-center
               a(href="https://2021.igem.org/Team:Aachen/Memes")
-                img(src=require('./assets/img/homepage/bucket.svg')['default'])
+                div
+                  include ./assets/img/homepage/bucket_animated.svg
+                  //- img(src=require('./assets/img/homepage/bucket.svg')['default'])
             .col-xl-1.col-lg-1
             .col-xl-6.col-lg-6.col-md-6.col-xs-12.align-self-center
               h2 Extremely High Storage Capacity
