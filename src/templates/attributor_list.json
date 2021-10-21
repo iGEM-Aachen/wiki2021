@@ -29,12 +29,12 @@
     {
         "category": "Experts",
         "persons": [{
-                "name": "Prof. Steven Benner, PhD.",
+                "name": "Steven Benner, Ph.D.",
                 "institution": "The Westheimer Institute of Science and Technology (ret.)",
                 "attribution": "It was an honor for us to meet Professor Benner, who is such an important person in the field of synthetic biology. He was interested in and optimistic about our ideas and particularly helped us assess the use of unnatural base pairs in our project. We are grateful he took the time to meet with us and gave us new perspectives."
             },
             {
-                "name": "Prof. George Church, PhD.",
+                "name": "George Church, Ph.D.",
                 "institution": "Wyss Institute, Harvard University",
                 "attribution": "Professor Church is the inspiration for our project. Our ideas are based on his research, and we are honored that he agreed to meet with us. He helped us with various aspects of our project and gave us unique input for our storytelling. We want to thank him for his feedback, new perspectives, and an unforgettable meeting."
             },
@@ -187,7 +187,7 @@
         "persons": [{
                 "name": "Luis Budow",
                 "institution": "on behalf of IMAVIO",
-                "attribution": "Luis produced our presentation video. We want to thank him for his commitment."
+                "attribution": "Luis produced our presentation video. He had very little time and still managed to implement our ideas. We want to thank him for his commitment."
             },
             {
                 "name": "Collective Incubator",
