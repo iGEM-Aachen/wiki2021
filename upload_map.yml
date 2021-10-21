@@ -1973,7 +1973,7 @@ assets:
 css:
   css/attributions.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/attributionsCSS?action=raw&ctype=text/css
-    md5: 7f2ad53de4e0cce98f2cd9bda3cfb359
+    md5: f1d4ddf249dcca236ca6ca023be55c1c
   css/content.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/contentCSS?action=raw&ctype=text/css
     md5: 4189431cac810dc874830fc33e680d19
@@ -2004,13 +2004,13 @@ css:
 html:
   Attributions/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Attributions
-    md5: 7cd01dc372d761576fe77fd7fe44e339
+    md5: 870e2ea01570ab41c7da58c37bb6fa75
   Attributions\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Attributions
     md5: b42d8969ab4af91f8557f92b175514f9
   Collaborations/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Collaborations
-    md5: 76a7631a562144dee7fda8a842bc5649
+    md5: 4ee864a6b00816a9afca8128018387d1
   Collaborations\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Collaborations
     md5: efcec93b38dfb54eabb4425feabcb46b
@@ -2163,7 +2163,7 @@ html:
     md5: 9ad124ff0217d48b7f4cd97dfce6df8d
   index.html:
     link_URL: https://2021.igem.org/Team:Aachen
-    md5: 7756cce7ade0451f94d6f4dfe28d82a3
+    md5: 808c82208548f60b6375035d7c981a39
 js:
   attributions.bundle.js:
     link_URL: https://2021.igem.org/Template:Aachen/attributions-bundleJS?action=raw&ctype=text/javascript
