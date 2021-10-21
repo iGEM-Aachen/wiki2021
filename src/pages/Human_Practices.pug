@@ -46,19 +46,17 @@ block article
         Digitalization is desirable, as this makes documents available to the general public on the internet.
         In conclusion, the city archive is looking for cheaper, uniform, and safe data storage.
 
-        How we integrated this information into our project can be observed at [Integrated Human Practices](https://2021.igem.org/Team:Aachen/Human_Practices#IntegratedHumanPractices).
-        
     - var imgpath = "" + require("../assets/img/Human Practices/city archive.jpg")["default"]
-    +image(2, imgpath, "City archive Aachen.", 60,0.8)
+    +image(2, imgpath, "City archive Aachen.", 60,0.8,true)
     
     - var imgpath = "" + require("../assets/img/Human Practices/Group picture.jpg")["default"]
-    +image(3, imgpath, "")    
-    
-    - var imgpath = "" + require("../assets/img/Human Practices/Old document.jpg")["default"]
-    +image(4, imgpath, "Old document which should be digitilized.", 60,0.8)
+    +image(3, imgpath, "")   
     
     - var imgpath = "" + require("../assets/img/Human Practices/discussion_city_archive.jpg")["default"]
-    +image(5, imgpath, "Conversation at the city archive in Aachen.", 60,0.8)
+    +image(4, imgpath, "")
+    
+    - var imgpath = "" + require("../assets/img/Human Practices/Old document.jpg")["default"]
+    +image(5, imgpath, "Old document which is about to be digitilized.", 60,0.8,true)
     
     :markdown-it(html)
         # Meeting with George Church
@@ -70,7 +68,6 @@ block article
         The first plans of our teams were to use a laser to control the TdT reaction in a flow cell. 
         A publication of George Church himself inspired us for this system. 
         He recommended not to use this system due to complexity and high costs and advised to focus on the immobilization of primers. 
-        Mr. Church was also able to help us with other problems in our project, which can be read about at [Integrated Human Practices](https://2021.igem.org/Team:Aachen/Human_Practices#IntegratedHumanPractices).
         
         Our discussion also focused on the content and meaning of data storage on DNA. 
         When asked what he would store on DNA, Mr. Church replied that the recreation of technology should be stored because humanity got “[…] to a point where nobody really knows how to do things from scratch”. 
@@ -95,12 +92,8 @@ block article
         A larger number of available nucleotides opens up new possibilities in coding and increases the storage capacity of the DNA. 
         A second effect is the decrease of secondary structure formation due to less equal sequences. 
         
-        Due to his many years of laboratory experience, Mr. Benner could also provide us with some additional recommendations. 
-
-        Read how we implemented these information into our project at [integrated human practices](https://2021.igem.org/Team:Aachen/Human_Practices#IntegratedHumanPractices).
-        
-       The TdT can accept unnatural nucleotides, but it has to be observed if our specific kind of TdT and the reaction buffer are suitable for that purpose, too [2](#citation2). 
-       In conclusion, we had an enriching conversation that provided valuable tips and tricks for the implementation of our project. 
+        The TdT can accept unnatural nucleotides, but it has to be observed if our specific kind of TdT and the reaction buffer are suitable for that purpose, too [2](#citation2). 
+        In conclusion, we had an enriching conversation that provided valuable tips and tricks for the implementation of our project. 
        
     - var imgpath = "" + require("../assets/img/Human Practices/meeting_benner.jpeg")["default"]
     +image(7, imgpath, "")
@@ -147,7 +140,7 @@ block article
         He then helped us establish contact with Steven Benner.
         In September, we also turned to Prof. Weinhold when we were struggling with our immobilization system. 
         He advised us to try out the streptavidin-biotin magnetic immobilization, which ended up being our preferred system. 
-        Weinhold always met us with lots of positivity and enthusiasm and motivated us throughout the competition.  
+        Mr. Weinhold always met us with lots of positivity and enthusiasm and motivated us throughout the competition.  
         
     :markdown-it
         # Meeting with Florian Kraft
@@ -155,7 +148,7 @@ block article
         Next-generation sequencing is a modern sequencing method, which enables massively parallel sequencing of numerous genes and has thus revolutionized genetic diagnostics in recent years. 
         Dr. Florian Kraft, post-doc at the Institute of Human Genetics at the Uniklinikum in Aachen, deals precisely with new sequencing techniques, especially nanopore sequencing, which is our preferrable method to analyze our synthesized sequences.
         
-        Before our meeting and towards the end of our project, we exchanged a lot of emails and asked Dr. Kraft many questions about our samples for Nanopore sequencing,  which he was always happy to answer. 
+        Before our meeting and towards the end of our project, we exchanged a lot of emails and asked Mr. Kraft many questions about our samples for Nanopore sequencing,  which he was always happy to answer. 
         During our meeting in the middle of April, he explained the requirements for Nanopore-sequencing, such as the right primer length for Nanopore sequencing. 
         He raised the issue that analyzing strands with homopolymers may be difficult because the nanopore could not detect the length of the polymer. 
         Furthermore, we assessed the problem of adding his double-stranded nanopore adapters to our single-stranded DNA. 
@@ -168,37 +161,37 @@ block article
         DNA data storage is a current topic and attracts the attention of scientists from different fields.
         We believe that it is crucial to meet and exchange ideas with people working on the same topic to drive innovation forward.
         For this reason, we met with  Prof. Dr. Dominik Heider and Prof. Dr. Anke Becker, who are both involved in the project MOSLA (Molecular Storage for Long-term Archiving), at the beginning of June. 
-        The project is designated to research of a DNA data storage. 
+        The project is designated to the research of DNA data storage. 
         Mr. Heider is a bioinformatician working on coding and especially on error correction. 
-        Mrs. Becker is working on the integration of unnatural bases in the storage code and on DNA-based cloud storages in different in vitro and in vivo formats. 
+        Mrs. Becker is working on integrating unnatural bases in the storage code and DNA-based cloud storages in different in vitro and in vivo formats. 
         
-        Through the meeting, we were able to present our projects to each other and discuss the research progress of them.
-        Even though the research group uses the phosphoramidite synthesis instead of our enzymatic DNA syntheis system, Mr. Becker could give us helpful advice for our wet lab.
-        She took notice that on a microarray excess material could block the immobilized primer.
-        Furthermore, she advised us to integrate an unnatural base pairs to increase the data density and avoid secondary structures. 
-        It was a great opportunity to discuss our project with people working on the same subject.
+        Through the meeting, we were able to present our projects to each other and discuss their research progress.
+        Even though the research group uses phosphoramidite synthesis instead of our enzymatic DNA synthesis system, Mr. Becker could give us helpful advice for our wet lab.
+        She took notice that on a microarray, excess material could block the immobilized primer.
+        Furthermore, she advised us to integrate unnatural base pairs to increase the data density and avoid secondary structures. 
+        It was an excellent opportunity to discuss our project with people working on the same subject.
 
     :markdown-it
         # Meeting with Jörn Kalinowski and Christian Rückert
          
-        In the beginning of June, we contacted Prof. Dr. Jörn Kalinowski from the Center for Biotechnology (CeBiTec) in Bielefeld, who is an expert in the field of genomics and sequencing, hoping to receive support concerning the analysis of samples via Nanopore seqeuencing. 
-        Mr. Kalinowksi joined the meeting with his lab coworker Dr. Christian Rückert, who is both an expert in sequencing and iGEM enthusiast. 
+        At the beginning of June, we contacted Prof. Dr. Jörn Kalinowski from the Center for Biotechnology (CeBiTec) in Bielefeld, an expert in genomics and sequencing, hoping to receive support concerning the analysis of samples via nanopore sequencing. 
+        Mr. Kalinowksi joined the meeting with his lab coworker Dr. Christian Rückert, an expert in sequencing and a iGEM enthusiast. 
         After listening to a presentation about our project, Mr. Kalinowski and Mr. Rückert explained the principles of nanopore sequencing to us in detail. 
-        They took notice that longer strands are preferred and strands smaller than 200 base pairs are hard to detect. 
-        Mr. Rückert then explained all the steps to us: preparing the strands with a base caller, attaching an adapter and a poly-A tail, and phosphorylating the 5' end.
-        Nanopore sequencing is an important part of our project and this informative meeting gave us a clearer idea about its usage. 
+        They noticed that longer strands are preferred, and strands smaller than 200 base pairs are hard to detect. 
+        Mr. Rückert then explained all the steps: preparing the strands with a base caller, attaching an adapter and a poly-A tail, and phosphorylating the 5' end.
+        Nanopore sequencing is an important part of our project, and this informative meeting gave us a clearer idea about its usage. 
 
 
         # Meeting with Dörte Rother, Torsten Sehl and Jan-Dirk Spöring 
         
         In June we met with Prof. Dr. Dörte Rother, Dr. Torsten Sehl and Jan-Dirk Spöring from FZ Jülich from the group of Biocatalysis. 
-        Dörte Rother is an expert in the field of enzyme immobilization and showed us possibilities which suit our purposes. 
+        Mrs. Rother Rother is an expert in enzyme immobilization and showed us possibilities that suit our purposes. 
         
-        Back then, we have not decided whether we should immobilize a biotinylated primer on a streptavidin plate, which is inspired by George Church, or use our DIP method. 
-        Prof. Rother elaborated every immobilization method with us, showing us advantages and challenges. 
-        For the case that we choose the first approach, she warned us that immobilizing the enzyme by dialysis or any other kind of membrane could be disadvantageous because it could be blocked by the material fast. 
-        For the dipping method she advised us to immobilize a biotin-labelled primer on a streptavidin-coated magnetic bead and to use a magnetic stick. 
-        A few months later this turned out to be our preferred immobilization method.
+        Back then, we have not decided whether we should immobilize a biotinylated primer on a streptavidin plate, which George Church inspires, or use our DIP method. 
+        Mrs. Rother elaborated every immobilization method with us, showing us advantages and challenges. 
+        For the case that we chose the first approach, she warned us that immobilizing the enzyme by dialysis or any other kind of membrane could be disadvantageous because the material fast could block it. 
+        For the DIP method, she advised us to immobilize a biotin-labeled primer on a streptavidin-coated magnetic bead and to use a magnetic stick. 
+        A few months later, this turned out to be our preferred immobilization method.
         She also took notice that the efficiency of the enzyme could decrease after the immobilization.
         In conclusion, we had an informative and pleasant discussion. 
         
@@ -209,12 +202,12 @@ block article
         # Meeting with Martin Zimmermann
         
         At the beginning of our project, we had severe problems with our analytics.
-        Gels did not run well, samples were not visible and many members of our team had little to no lab experience.
-        Dr. Martin Zimmermann is both Study Advisor of the Aachen Biology and Biotechnology Department and an expert in many biological fields including biological analysis methods.
-        During the whole project, we repeatedly exchanged E-Mails and Dr. Zimmermann examined our issues detailly.
+        Gels did not run well, samples were not visible, and many team members had little to no lab experience.
+        Dr. Martin Zimmermann is both a Study Advisor of the Aachen Biology and Biotechnology Department and an expert in many biological fields, including biological analysis methods.
+        During the whole project, we repeatedly exchanged E-Mails, and Mr. Zimmermann examined our issues detailly.
         
         We met with Mr. Zimmermann at the end of May. He introduced us to denaturing polyacrylamide gels and helped us establish the right analytics for our unconventional samples.
-        Among other topics, we discussed gel runtime, gel thickness, the right voltage and staining methods of our gels.
+        Among other topics, we discussed gel runtime, gel thickness, the correct voltage, and staining methods of our gels.
         To get a better resolution, Mr. Zimmermann advised us to use TBE buffer which has a higher buffer capacity.
         Furthermore, he suggested silver staining as a sustainable method to stain PAA gels and longer primers to establish better reaction conditions for our enzyme, which we implemented rapidly.
         At the end of our Meeting, Mr. Zimmermann once more drew attention to polyacrylamide.
@@ -224,34 +217,35 @@ block article
     :markdown-it
         # Meetings with Sebastian Palluk
     
-        Mr. Sebastian Palluk is co-founder and CTO of Ansa Biotechnologies, a startup developing enzymatic DNA synthesis technologies.
-        He participated in the iGEM competition himself and experienced that synthesizing DNA on your own was challenging. 
+        Dr. Sebastian Palluk is co-founder and CTO of Ansa Biotechnologies, a startup developing enzymatic DNA synthesis technologies.
+        He participated in the iGEM competition himself and experienced that synthesizing DNA on his own was challenging. 
         Now he works with a genetically modified TdT for biological applications and aims to improve the synthesis system.
         Mr. Palluk was probably one of our most important supporters. 
         We met with him three times in total and had frequent email contact during the whole project.
         
-        The first meeting started off by presenting our ideas and two approaches to encode data on DNA.
+        The first meeting started by presenting our ideas and two approaches to encode data on DNA.
         Furthermore, we discussed four different ideas to prevent the formation of secondary structures of ssDNA and the affinity of the TdT for 3'OH base modifications.
-        Mr. Palluk commented on our ideas on immobilization and briefly explained streptavidin immobilization on magnetic beads as well as sequencing techniques like Nanopore sequencing and capillary electrophoresis to view the length distribution.
+        Mr. Palluk commented on our ideas on immobilization.
+        Briefly, he explained  streptavidin immobilization on magnetic beads as well as sequencing techniques like nanopore sequencing and capillary electrophoresis to view the length distribution.
         To conclude our first meeting, Mr. Palluk gave us a great overview of many important tasks we have to tackle in the future and encouraged us to do our best for the project. 
-        He belived that our unique interdisciplinary team will create a great project, but implementing everything we planned would be harder than we thought.
+        He believed that our unique interdisciplinary team would create a great project, but implementing everything we planned would be more challenging than we thought.
 
         In our second meeting with Mr. Palluk at the beginning of May, we presented our possibilities to hinder secondary structures.
         He recommended starting our first experiments in solution with purification steps to establish our methods.
         Furthermore, he emphasized that it would be efficient to start working on the immobilization while conducting our first experiments.
         Mr. Palluk advised us to analyze the length of strands with gel electrophoresis and explained that driving PCR reaction beforehand is not necessary. 
-        Afterwards, we discussed the possibilities for sequencing our strands, where he explained that Sanger sequencing would only be possible if we would perform vector cloning beforehand.
+        Afterward, we discussed the possibilities for sequencing our strands, where he explained that Sanger sequencing would only be possible if we performed vector cloning beforehand.
 
         In our third meeting at the beginning of September, we discussed our ideas for building a hardware and explained the maleimide-cysteine binding system.
         Additionally, we examined the problem we have faced with our immobilization.
-        With our current system, we would lose lots of maleimide, which is too expensive for us. 
-        Mr. Palluk suggested using a peptide-tag to bind primers with homologous sequences and sticky-end "overhangs". 
+        With our current system, we would lose lots of maleimides, which is too expensive for us. 
+        Mr. Palluk suggested using a peptide tag to bind primers with homologous sequences and sticky-end "overhangs". 
         The TdT would bind at the overhangs and could be released by heating.
-        Together, we thought of a „plan B“ for the immobilization.
-        To create base transitions in solution we should add primer in excess, let the reaction finish until all nucleotides incorporated and add another nucleotide.
-        To put it in a nutshell, Dr. Palluk was a very important expert for us who helped create many solutions to our problem.
+        Together, we thought of a "plan B" for the immobilization.
+        To create base transitions in solution, we should add primer in excess and let the reaction finish until all nucleotides are incorporated, and add another nucleotide.
+        To put it in a nutshell, Mr. Palluk was an essential expert for us who helped create many solutions to our problem.
         Nobody knows the TdT better than he does.
-        Thank you again Mr. Palluk for answering all our questions and emails!
+        Thank you again Mr. Palluk, for answering all our questions and emails!
 
     - var imgpath = "" + require("../assets/img/Human Practices/2021-09-07_Meeting Palluk.png")["default"]
     +image(10, imgpath, "")
@@ -261,14 +255,12 @@ block article
         
         Prof. Dr. Alexander Heckel from Goethe-University in Frankfurt is an expert in photochemistry, and we met with him to discuss the usage of photolabile protecting groups.
 
-        We presented our project and ideas to Mr. Heckel and he took his time to explain us the photochemistry of this approach.
+        We presented our project and ideas to Mr. Heckel, and he took his time to explain to us the photochemistry of this approach.
         As soon as those groups are attached to a triphosphate, the bases can not form hydrogen bonds. 
         Thus, we can prevent the formation of secondary structures. 
         The photolabile groups can be detached by a laser as soon as the DNA synthesis reaction is finished.         
         He also offered us to provide those modified triphosphates for our purposes. 
-        We are really glad that we had the opportunity of meeting Mr. Heckel! 
-
-
+        We are delighted that we had the opportunity of meeting Mr. Heckel! 
 
 prepend citations
     - var citations = [{"authors": "Yang, Z., Hutter, D., Sheng, P., Sismour, A. M., & Benner, S. A. (2006)", "doi": "https://doi.org/10.1093/nar/gkl633", "journal": "Nucleic Acids Research", "numbers": "34(21), 6095–6101", "title": "Artificially expanded genetic information system: A new base pair with an alternative hydrogen bonding pattern", "type": "article"}, {"authors": "Tauraitė, D., Jakubovska, J., Dabužinskaitė, J., Bratchikov, M., & Meškys, R. (2017)", "doi": "https://doi.org/10.3390/molecules22040672", "journal": "Molecules (Basel, Switzerland)", "numbers": "22(4)", "title": "Modified Nucleotides as Substrates of Terminal Deoxynucleotidyl Transferase", "type": "article"}]
