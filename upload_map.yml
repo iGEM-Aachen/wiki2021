@@ -459,6 +459,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/4/4a/T--Aachen--img--Education--91.DeutschesGymnasiumSofia.jpg
     md5: 705103e2837cfa91506c06931c344d8f
     upload_filename: T--Aachen--img--Education--91.DeutschesGymnasiumSofia.jpg
+  assets/img/Education/don-bosco-school.png:
+    link_URL: https://2021.igem.org/wiki/images/4/4c/T--Aachen--img--Education--don-bosco-school.png
+    md5: 5916b1eba839b75d5e9e862665230595
+    upload_filename: T--Aachen--img--Education--don-bosco-school.png
   assets/img/Experiments/2021-05-12_01_inv_paa.jpg:
     link_URL: https://2021.igem.org/wiki/images/2/21/T--Aachen--img--Experiments--2021-05-12_01_inv_paa.jpg
     md5: 81cad41c175456773cbf78308d5cac5d
@@ -841,7 +845,7 @@ assets:
     upload_filename: T--Aachen--img--communication--fact_of_the_week--Post 07--Bioluminescence-06.png
   assets/img/communication/hightechforum1.jpg:
     link_URL: https://2021.igem.org/wiki/images/8/82/T--Aachen--img--communication--hightechforum1.jpg
-    md5: f8577a42802973fa9677bd3343410d0d
+    md5: 033d408b41a7c4aa6a93028363b7e861
     upload_filename: T--Aachen--img--communication--hightechforum1.jpg
   assets/img/communication/hightechforum2.jpg:
     link_URL: https://2021.igem.org/wiki/images/6/6e/T--Aachen--img--communication--hightechforum2.jpg
@@ -2125,7 +2129,7 @@ html:
     md5: 0ba5d0725c84c2dad4c72618fdb07412
   Science_Communication/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Science_Communication
-    md5: 7c5bf511164e56d40a731b3416ec4888
+    md5: b49fa960cfc992507d4da9a2df30ffca
   Software/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Software
     md5: f8511ff22b8c0fc0b4917d0b84bfe5d7
