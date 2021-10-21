@@ -14,6 +14,7 @@ html(lang="en")
       script(src="https://2021.igem.org/common/MathJax-2.5-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML")
       script
         | function resizeSidebar() {document.getElementById("contents").style.height = (document.getElementById("list").scrollHeight + 100 + "px"); }
+        | window.onresize = resizeSidebar; 
   body(
     data-spy='scroll'
     data-target='#contentnav'
@@ -39,7 +40,7 @@ html(lang="en")
                 .nav#contents
                   h5 #{title}
                   ul
-                  //- Filled automatically from js
+            //- Filled automatically from js
             .content.col-lg-9
               block content
                 article
