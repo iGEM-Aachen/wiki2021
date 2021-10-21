@@ -675,6 +675,20 @@ a.extraLinks {
     }
 }
 
+// CSS for protocol summary - details
+
+details {
+	summary {
+		&::-webkit-details-marker { display: none; }
+	}
+	> :not(summary) {
+		transform: scaleY(0);
+		transform-origin: top;
+		transition: transform 500ms;
+	}
+	&[open] > :not(summary) { transform: scaleY(1); }
+}
+
 // body.dark {
 //     header {
 //         color: white;
