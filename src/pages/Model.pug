@@ -90,7 +90,7 @@ block article
         We did parameter analysis not only to gain a deeper understanding of the reaction but also to find the ideal reaction conditions.
         Because we were facing an optimization problem for our system (Error rate, time, concentration), we wanted to find the ideal operating point for our DNA synthesis. 
         The independent parameters were enzyme- and nucleotide concentration and reaction time. 
-        The repercussions of a change of these parameters are shown in figure  5.
+        The repercussions of a change of these parameters are shown in figure  6.
         
     - var imgpath = "" + require("../assets/img/modeling Bilder/optimization.png")["default"]
     +image(6,imgpath,"Optimization problem of our system.",80)
@@ -112,7 +112,7 @@ block article
         As can be seen, the nucleotide concentration, here ATP, has a rather small influence on the velocity of the reaction, especially at longer reaction times.
         By contrast, the amount of enzyme naturally has a drastic influence on the reaction's velocity at short reaction times. With longer reaction times this effect becomes less drastic.
         Since the enzyme is the most expensive component in our system and has the biggest influence on reaction velocity, its optimized use is the top priority.
-        Based on this data, we decided that our ideal reaction conditions are at 0.4 mol/L ATP and 5 enzyme Units, following the criteria mentioned in figure 5.
+        Based on this data, we decided that our ideal reaction conditions are at 0.4 mol/L ATP and 5 enzyme Units, following the criteria mentioned in figure 6.
         While operating at these conditions an error rate of <10% can be achieved with a reaction time of about 100 seconds.
        
     
@@ -170,7 +170,8 @@ block article
         We know that not every team had this year the opportunity to do this additional step.
         If you would like to have a more detailed look into our modeling approach or apply it to your data, feel free to download our Python and MATLAB code.
     - var pdfpath = "" + require("../assets/documents/Modeling/modeling_code_igem_aachen_2021.zip")["default"]
-    a(href=pdfpath) Download
+    a(href=pdfpath) Download our Modeling Code
+        
     
     :markdown-it
     
