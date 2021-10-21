@@ -40,7 +40,7 @@ mixin image(n, url, caption, width, fontSize, center, popup)
         if width && !fontSize
             img(src=url alt=caption style="width: " + width + "%")
             if caption != ""
-                p= "Figure " + n + ": " + caption
+                p!= "<b> Figure " + n + "</b>: " + caption
         else if fontSize && width && !center
             img(src=url alt=caption style="width: " + width + "%")
             if caption != ""
@@ -57,7 +57,7 @@ mixin image(n, url, caption, width, fontSize, center, popup)
         else
             img(src=url alt=caption)
             if caption != ""
-                p= "Figure " + n + ": " + caption
+                p!= " <b> Figure " + n + "</b>: " + caption
                 
 mixin video(url, caption, width)
     .video
