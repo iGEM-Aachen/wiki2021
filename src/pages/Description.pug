@@ -10,9 +10,9 @@ block article
 
         # Selection of the Project 
         Our journey as a team in this year's iGEM competition began in January. 
-        For us to decide on a project as quickly as possible, we first did a lot of brainstorming and compiled all the ideas. 
-        In the following meetings, we decided which ideas would be feasible. Three projects emerged, which we divided among ourselves and worked out further. 
-        At the end of February, we were able to present the more mature ideas to our supervisors and received good feedback for two of these project ideas. 
+        To decide on a project as quickly as possible, we first did a lot of brainstorming and compiled all the ideas. 
+        In the following meetings, we selected which ideas would be feasible. Three projects emerged, which we divided among ourselves and worked out further. 
+        At the end of February, we were able to present the more mature ideas to our supervisors and received positve feedback for two of these project ideas. 
         The final decision was made on March 12, 2021, where we chose our project "Storagene" for this year's iGEM competition.
 
     - var videopath = "" + require("../assets/description/project_reveal_xs.mp4")["default"]
@@ -44,7 +44,7 @@ block article
         However, the TdT is uniquely capable of using a variety of divalent cations such as $Co^{2+}$, $Mn^{2+}$, $Zn^{2+}$, and $Mg^{2+}$ [4](#citation4). 
          
         Another advantage of using the TdT is that the enzyme utilizes a wide variety of nucleotide analogues such as 2′,3′-dideoxynucleotides, p-nitrophenylethyl triphosphate, p-nitrophenyl triphosphate, 2′-deoxy-L-ribonucleoside 5′-triphosphates, and dinucleoside 5′,5′-tetraphosphates [4](#citation4). 
-        This can be used for increasing the data capacity even further for DNA data storage, see [Outlook](https://2021.igem.org/Team:Aachen/Outlook#Increaseofthedatacapacity). 
+        This can be used for increasing the data capacity for DNA data storage. The idea is further elaborated in our [Outlook](https://2021.igem.org/Team:Aachen/Outlook#Increaseofthedatacapacity). 
          
         Since we wanted to incorporate nucleotides in a controlled manner, we had to interrupt the reaction in the standard TdT reactions. 
         Heat and many different metal chelators can be used for inhibiting the TdT activity, such as o-phenanthroline, EDTA, triethylene-tetramine, α:α'-bipyridyl, and cysteine [5](#citation5). 
@@ -58,7 +58,7 @@ block article
         Without synthetic DNA or RNA, almost nothing would work in the laboratory: no PCR, no adapters, no linkers and other cloning elements, no CRISPR-Cas - not to mention synthetic genes [6](#citation6). 
          
         Currently, DNA is still synthesized using decades-old chemical phosphoramidite methods, which involve expensive and harsh reactions in many time-consuming steps [3](#citation3). 
-        The synthesized DNA is usually only a few hundred nucleotides long because on the one hand, not every step is one hundred percent efficient. On the other hand, long sequences form secondary structures that interfere with further construction [6](#citation6). 
+        The synthesized DNA is usually only a few hundred nucleotides long because on the one hand, not every step is one hundred percent efficient. On the other hand, long sequences form secondary structures interfere with further construction [6](#citation6). 
         This limits the chemical synthesis as the demand for longer and larger quantities of DNA oligonucleotides increases [3](#citation3). 
          
         Church’s team developed an enzymatic DNA synthesis method for DNA data storage using the TdT and the cofactor $Co^{2+}$. 
@@ -73,7 +73,8 @@ block article
         From this, we hope to achieve as many transitions as possible since our ternary system is based on the encoding and restoring of the information saved on the DNA. 
         Thus, the information is not stored in a sequence of specific bases but in the transitions between bases. 
         Therefore, a specific synthesis is not necessary. 
-        This method permits a more accessible and robust system that even allows for the addition of proofreading features, see [Software](https://2021.igem.org/Team:Aachen/Software).
+        This method permits a more accessible and robust system that even allows for the addition of proofreading features.
+        To achieve this, we invented a special [Software](https://2021.igem.org/Team:Aachen/Software).
         
 
     :markdown-it(html)
@@ -84,18 +85,18 @@ block article
         Enzymatic synthesis eliminates the use of solvents and toxic by-products, which is why the environmental footprint can be significantly reduced. 
         In addition, only a few hundred nucleotides can be synthesized using the current method because the steps are not as efficient, and secondary structures can form. 
         Enzymatic synthesis is not limited to the addition of nucleotides to a DNA strand and can enable strand extension of thousands of bases.
-        Nevertheless, secondary structures can also form by using the enzymatic DNA synthesis. 
+        Nevertheless, secondary structure formation is possible as well when using enzymatic DNA synthesis. 
         But there are various methods to avoid them. 
         On the one hand, temperature increase and variation of the ion concentration of the cofactor can lead to a reduction of secondary structures [7](#citation7).
         One the other hand, so-called single-strand binding proteins, a hybridization with short oligonucleotides, or photolabile protection groups can be used to avoid secondary structures.
          
-        The challenges of the phosphoramidite method are to optimize it so that less solvent is used and more extended strand synthesis is possible. 
+        The challenges of the phosphoramidite method are to be optimized, so that less solvent is used and more extended strand synthesis is possible. 
         This could be done with a programmable microfluidic synthesis platform containing integrated valves, allowing individual manipulation and product removal [8](#citation8). 
         However, moving to enzymatic synthesis would make these problems disappear into thin air. Unfortunately, with enzymatic synthesis, other challenges appear.
          
         The aim is to create as many transitions as possible so that only a few identical nucleotides are incorporated one after the other to increase the data storage capacity. 
         For this purpose, standardized reaction conditions must be found since the nucleotides are incorporated differently by the TdT. 
-        For example, the nucleotide thymine is incorporated faster than the base guanine in a standard TdT reaction, see [Results](https://2021.igem.org/Team:Aachen/Results). 
+        For example, the nucleotide deoxythymidine triphosphate is incorporated faster than deoxyguanosine triphosphate in a standard TdT reaction, see [Results](https://2021.igem.org/Team:Aachen/Results). 
         In addition, reaction conditions should be chosen such that DNA strand synthesis is reproducible and all strands receive the same nucleotide sequence. 
         Furthermore, a system could be developed that synthesizes many different DNA strands on one surface to save time and costs.
          
