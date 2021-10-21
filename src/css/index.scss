@@ -110,6 +110,7 @@ article {
     position: relative;
     p {
         font-size: 1.5rem;
+        text-align: justify;
     }
     h1 {
         margin-bottom: 10rem;
@@ -209,6 +210,16 @@ article {
 
 .rocket-text {
     padding-top: 120px;
+}
+
+video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-header {
+    margin-bottom: 5rem !important;
 }
 
 .header {
