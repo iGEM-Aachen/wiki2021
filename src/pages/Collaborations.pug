@@ -6,6 +6,9 @@ block headVars
     - var requireMathJax = true
 
 block article
+
+    link(rel="stylesheet", href="src/assets/lightbox/glightbox.min.css")
+    
     :markdown-it(html)
 
        # OSU Meetup
@@ -198,22 +201,11 @@ block article
 
         If you want to try the escape room for yourself, click [here](https://docs.google.com/forms/d/e/1FAIpQLSc_gZEv_zMvtW_8McYkuCj8cnNuWPG_XhM2ep2HWWwsu9f8EQ/viewform?usp=sf_link). 
 
+    - var imgNames = [{image: require("../assets/img/Collaborations/escapeRoom1.png")["default"]},{image: require("../assets/img/Collaborations/escapeRoom2.png")["default"]}, {image: require("../assets/img/Collaborations/escapeRoom3.png")["default"]}, {image: require("../assets/img/Collaborations/escapeRoom4.png")["default"]}, {image: require("../assets/img/Collaborations/escapeRoom5.png")["default"]},]
+    - var titles = [{title: "The starter page of the escape room"},{title:"Our first riddle thematizing DNA restriction and transcription"},{title:"The second riddle dealing with PCR primer design"},{title:"Our last riddle created in analogy to the amino acid codon wheel"},{title:"The final post for announcing the collaboration on social media"}]
+    +imgCarousel(1, imgNames, "gallery",titles)
 
-    - var imgpath = "" + require("../assets/img/Collaborations/escapeRoom1.png")["default"]
-    +image(18, imgpath, "The starter page of the escape room", 80) 
 
-    - var imgpath = "" + require("../assets/img/Collaborations/escapeRoom2.png")["default"]
-    +image(19, imgpath, "Our first riddle thematizing DNA restriction and transcription", 80) 
-
-    - var imgpath = "" + require("../assets/img/Collaborations/escapeRoom3.png")["default"]
-    +image(20, imgpath, "The second riddle dealing with PCR primer design", 80) 
-
-    - var imgpath = "" + require("../assets/img/Collaborations/escapeRoom4.png")["default"]
-    +image(21, imgpath, "Our last riddle created in analogy to the amino acid codon wheel", 80) 
-
-    - var imgpath = "" + require("../assets/img/Collaborations/escapeRoom5.png")["default"]
-    +image(22, imgpath, "The final post for announcing the collaboration on social media", 60) 
-    
     :markdown-it(html)
         # Risk Assessment Webinar 
         To further deepen our understanding of safety during our iGEM journey, we participated in a Risk Assessment Webinar organized by [iGEM Team Heidelberg](https://2021.igem.org/Team:Heidelberg). 
@@ -245,3 +237,5 @@ block article
     - var imgpath = "" + require("../assets/img/Collaborations/Collab mit Heidelberg.jpg")["default"]
     +image(23, imgpath, "Risk Assessment Webinar with iGEM Heidelberg, MTU and Saint Joseph.", 60) 
     
+    script(src="src/assets/lightbox/glightbox.min.js")
+    script(src="src/assets/lightbox/gallery.js")
