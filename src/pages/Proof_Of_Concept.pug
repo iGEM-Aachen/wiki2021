@@ -55,10 +55,10 @@ block article
         # Hardware Design
         To automate our method, we developed a custom design, see [Hardware](https://2021.igem.org/Team:Aachen/Hardware). The individual reactions take place in 2 mL Eppendorf reaction tubes. 
         In order to automate the elongation and washing steps, a framework of extruded aluminum profiles and a revolver with a mobile base was designed. 
-        The revolver is used to fix the reaction vessels. Two ball bearings, between which the turret is suspended, ensure accuracy of 0.1125°. 
-        A stirring rod clamp can be attached to the wall to fix the rod magnet. The wall can be moved horizontally and vertically, which allows the magnet to be immersed in the solution. 
-        This approach was chosen because it is simple, efficient, and feasible. The process is automated by a NodeMCU, which receives commands via a common web interface. 
-        In the later course, only the DNA sequence has to be specified, and the synthesis runs without further manual steps.
+        The revolver is used to fix the reaction vessels. The stepper motor, which rotates the revolver, enables a maximum accuracy of 0.1125° through microstepping. 
+        A rod clamp can be attached to the plate to fix the rod magnet. The plate can be moved vertically, which allows the magnet to be immersed in the solution. 
+        This approach was chosen because it is simple, efficient, and feasible. The process is automated by a NodeMCU, which provides a simple web interface where the machine can be calibrated via the click of a button. 
+        In the next step, only the DNA sequence has to be specified, and the synthesis runs without further manual steps.
                 
         # Data Storage in DNA
         ## The DIP Method
