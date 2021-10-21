@@ -300,7 +300,7 @@ block article
         
         For the permanent immobilization, the streptavidin-tagged magnet beads were conjugated with biotin-labelled primers.
         After adding the magnet stick to this solution and two washing steps, the immobilized primer could be released using BXT Strep-Tactin®XT elution buffer (IBA Life Science) containing biotin.
-        To visualize our results, an agarose gel electrophoresis was performed (figure 18 A)).
+        To visualize our results, an agarose gel electrophoresis was performed (figure 18 A).
         We assume, that most of the primer was bound by magnet beads because there was no detectible DNA in the conjugation mixture left.
         The binding seems to be strong enough because there was no detectible DNA in the two wash rests.
         A controlled elution of the primers was possible, indicated by a band at primer height.
@@ -311,7 +311,7 @@ block article
     :markdown-it
         Another possibility to immobilize primers permanently, was to bind the streptavidin-tagged magnet beads to the magnet stick first and add biotin-labelled primer afterwards.
         The above mentioned experiment was repeated using the second method.
-        However, the results of this procedure showed less amounts of immobilized primer (figure 18 B)).
+        However, the results of this procedure showed less amounts of immobilized primer (figure 18 B).
         Barely no DNA was detected in the elution step.
         The primers probably did not bind to the magnet beads due to steric hindrance.
         This is indicated by a band at primer height in the conjugation mixture.
@@ -327,12 +327,12 @@ block article
         The magnetic binding was apparently not weakened by the envelope because there was no DNA detected in the immobilization rest. 
         
     - var imgpath = "" + require("../assets/img/Results/2021-10-18_01-1.png")["default"]
-    +image(19, imgpath, "<b>Non-permanent primer immobilization using biotin-streptavidin binding.</b> 2.5% Agarose TBE, SYBR Gold, 90 V, ? min. M: GeneRuler 50 bp DNA Ladder 1: Biotin-labelled N-Primer 2: Immobilization rest 3: Wash rest 4: Wash rest 5: Elution.", 60,0.8, true,true)        
+    +image(19, imgpath, "<b>Non-permanent primer immobilization using biotin-streptavidin binding.</b> 2.5% Agarose TBE, SYBR Gold, 90 V, 45 min. M: GeneRuler 50 bp DNA Ladder 1: Biotin-labelled N-Primer as reference 2: Immobilization rest 3: Wash rest 4: Wash rest 5: Elution.", 60,0.8, true,true)        
         
     :markdown-it
         As a result, the permanent immobilization was more efficient, if biotin-labelled primers are first conjugated to magnetic beads and the magnetic stick is added afterwards.
-        The non-permanent immobilization was able to safely bind the primer as well.
-        To further investigate the occurrences, TdT reactions were performed using both successful methods.
+        Using the non-permanent immobilization, binding the primer to the stick was successful as well.
+        To further investigate the occurrences, TdT reactions were performed using both methods.
         
         # 3 Cyclic Synthesis
         
@@ -340,9 +340,10 @@ block article
         Our goal was to elongate a given primer with a few nucleotides of one kind.
         In the second cycle, the next kind of nucleotide is added.
         This is repeated according to the desired sequence.
+        
         To evaluate the sequencing output, all sequenced strands were searched for the primer sequence including an error tolerance of seven nucleotides.
         Additionally, only strands containing a characteristic sequence of the reverse primer including an error tolerance of two nucleotides were selected.
-        These strands containing homonucleotides were then converted into single nucleotide strands using our [software]( https://2021.igem.org/Team:Aachen/Software).
+        These homonucleotide strands were then converted into single nucleotide strands using our [Software]( https://2021.igem.org/Team:Aachen/Software).
         The comparison of the original sequence and the encoded sequence was performed using the Needleman-Wunsch algorithm.
         
         ## 3.1 In Solution
@@ -350,7 +351,7 @@ block article
         To test that the TdT incorporates different kinds of nucleotides, a cyclic synthesis was performed in solution.
         For this experiment, the primer:nucleotide ratio was decreased to 1:500 (instead of 1:5000), and the incubation time increased to ensure complete nucleotide incorporation.
         To create transitions, new nucleotides were added to a mastermix containing the AT-rich primer.
-        This was repeated to create a sequence with the code “TCTA”.
+        This was repeated to create a sequence with the code "TCTA".
         After performing an agarose gel electrophoresis, a stepwise increase of ssDNA length could be observed (figure 20).
         This reveals, that the TdT is able to incorporate different kinds of nucleotides.
         
@@ -363,20 +364,20 @@ block article
         A longer incubation with dATP led to a longer poly-A tail which should ensure amplification through PCR which was performed afterward.
         
     - var imgpath = "" + require("../assets/img/Results/2021-10-13_01.png")["default"]
-    +image(21, imgpath, "<b>Cyclic synthesis with normal primer.</b> 2.5% Agarose TBE, SYBR Gold staining, 90 V, 47 min. M: GeneRuler 50 bp DNA Ladder 1: Normal primer 2: Elongation of normal primer with T 3: Elongation of normal primer with TC 4: Elongation of normal primer with TCT 5: Elongation of normal primer with TCTA 6: Elongation of normal primer with TCTA (dATP for 2 h).",50,0.8)
+    +image(21, imgpath, "<b>Cyclic synthesis with normal primer.</b> 2.5% Agarose TBE, SYBR Gold staining, 90 V, 47 min. M: GeneRuler 50 bp DNA Ladder 1: Normal primer as reference 2: Elongation of normal primer with T 3: Elongation of normal primer with TC 4: Elongation of normal primer with TCT 5: Elongation of normal primer with TCTA 6: Elongation of normal primer with TCTA (dATP for 2 h).",50,0.8)
         
     :markdown-it
-        However, gel electrophoresis of the stands coding "TCTA" showed, that the sample with longer poly-A tail could not be amplified (figure 22 B)).
-        This could be due to the poor attachment of the reverse primer to the sample.
+        However, gel electrophoresis of the strands coding "TCTA" showed, that the sample with longer poly-A tail could not be amplified (figure 22 B).
+        This could be due to poor attachment of the reverse primer to the sample.
         Because of these results, we tried to create shorter poly-A sequences in the following experiments.
         Gel electrophoresis after PCR with the sample with shorter poly-A tail revealed a faint band from 200 to over 1000 bp.
         This is an indication, that this PCR amplified the target ssDNA.
         
     - var imgpath = "" + require("../assets/img/Results/2021-10-13-14.png")["default"]
-    +image(22, imgpath, '<b>PCR with two different samples encoding "TCTA" with short and long poly-A, respectively.</b> A) PCR: Initial denaturation 98 °C 30 s, denaturation 98 °C 5 s, annealing 63 °C 10 s, elongation 68 °C 90 s, final elongation 72 °C 5 min. 2.5% Agarose with TBE, SYBR Gold staining, 90 V, 45 min. M: GeneRuler 50 bp DNA Ladder 1: Elongation with “TCTA” and short poly-A 2: Elongation with “TCTA” and short poly-A after B) PCR: Initial denaturation 98 °C 30 s, denaturation 98 °C 5 s, annealing 63 °C 10 s, elongation 72 °C 30 s, final elongation 72 °C 5 min. 2.5% Agarose with TBE, SYBR Gold staining, 90 V, 50 min. PCR 1: Elongation with “TCTA” and long poly-A 2: Elongation with “TCTA” and long poly-A after PCR.',60,0.8, true,true)
+    +image(22, imgpath, '<b>PCR with two different samples encoding "TCTA" with short and long poly-A, respectively.</b> A) PCR: Initial denaturation 98 °C 30 s, denaturation 98 °C 5 s, annealing 63 °C 10 s, elongation 68 °C 90 s, final elongation 72 °C 5 min. 2.5% Agarose with TBE, SYBR Gold staining, 90 V, 45 min. M: GeneRuler 50 bp DNA Ladder 1: Elongation with "TCTA" and short poly-A 2: Elongation with "TCTA" and short poly-A after B) PCR: Initial denaturation 98 °C 30 s, denaturation 98 °C 5 s, annealing 63 °C 10 s, elongation 72 °C 30 s, final elongation 72 °C 5 min. 2.5% Agarose with TBE, SYBR Gold staining, 90 V, 50 min. PCR 1: Elongation with "TCTA" and long poly-A 2: Elongation with "TCTA" and long poly-A after PCR.',60,0.8, true,true)
         
     :markdown-it
-        The Nanopore sequencing of the “TCTA” sample with shorter poly-A tail revealed that a comparatively high amount of DNA strands could be characterized (figure 23).
+        The Nanopore sequencing of the "TCTA" sample with shorter poly-A tail revealed that a comparatively high amount of DNA strands could be characterized (figure 23).
         The information could be recovered with 80.0% accuracy.
         However, the sequence could not be fully recreated because the dTTP and dCTP were incorporated irregularly.
         This leads to the conclusion, that a transition between dTTP and dCTP can not be performed in solution if both kinds of nucleotides are present unless one concentration is not extremely low. 
@@ -399,11 +400,11 @@ block article
         Because of these results, we decided to use the non-permanent immobilization for cyclic synthesis in further experiments. 
         
     - var imgpath = "" + require("../assets/img/Results/2021-10-18_01-2.png")["default"]
-    +image(24, imgpath, "<b>Elongation with permanent and non-permanent immobilization of primer.</b> 2.5% Agarose with TBE, SYBR Gold staining, 90 V, 45 min. M: GeneRuler 50 bp DNA Ladder 1: Biotin-labelled Normal primer 2: A permanent 3: A non-permanent 4: T permanent 5: T non-permanent 6: C permanent 7: C non-permanent 8: G permanent 9: G non-permanent 10: Positive control 11: Empty.",60,0.8, true,true)   
+    +image(24, imgpath, "<b>Elongation with permanent and non-permanent immobilization of primer.</b> 2.5% Agarose with TBE, SYBR Gold staining, 90 V, 45 min. M: GeneRuler 50 bp DNA Ladder 1: Biotin-labelled normal primer as reference 2: A permanent 3: A non-permanent 4: T permanent 5: T non-permanent 6: C permanent 7: C non-permanent 8: G permanent 9: G non-permanent 10: Positive control 11: Empty.",60,0.8, true,true)   
         
     :markdown-it
-        In order to incorporate transitions and thus also information into the DNA, a sequence with the code “TCTGA” was attached to the normal primer.
-        To do that, the DIP method was performed which is further explained in [experiments](Team:Aachen/Experiments - 2021.igem.org).
+        In order to incorporate transitions and thus also information into the DNA, a sequence with the code "TCTGA" was attached to the normal primer.
+        To do that, the DIP method was performed which is further explained in [Experiments](Team:Aachen/Experiments - 2021.igem.org).
         To ensure a uniform amount of incorporation of different kinds of nucleotides, the incubation time for the TdT reaction was adapted to 15 min for dTTP, 20 min for dCTP and dGTP.
         The poly-A tail was created by incubation for 10 min in excess of dATP.
         An agarose gel electrophoresis was performed from which could be observed, that strands of different length up to over 1000 nt were created (data no shown). 
@@ -411,18 +412,18 @@ block article
         The created sequence was amplified using a PCR and sequenced using Nanopore sequencing.
         After the evaluation of the results, it was found that the sequence could be recreated from the strands with comparably high accuracy.
         The original information could be recovered with 80.0% accuracy.
-        Compared to the sequence “TCTA” created in solution (see chapter 3.1), a longer strand of five transitions could be stored with the same accuracy which leads to the conclusion that an immobilized primer is more suitable for our DIP method.
+        Compared to the sequence "TCTA" created in solution (see chapter 3.1), a longer strand of five transitions could be stored with the same accuracy which leads to the conclusion that an immobilized primer is more suitable for our DIP method.
         
     - var imgpath = "" + require("../assets/img/Results/seq_table2.svg")["default"]
     +image(25, imgpath, '<b>Analysis of Nanopore sequencing of normal primer with attached sequence "TCTGA" which was attached using the DIP method.</b>',80,0.8, true,true)   
         
     :markdown-it
-        Our first attempt to encode meaningful information was to store the word “iGEM” and the number “21” into DNA.
-        We created “iGEM” by incubating the non-permanently immobilized primer in the according mastermix for 1 min.
-        The number “21” was created by incubation for 10 min per nucleotide.
+        Our first attempt to encode meaningful information was to store the word "iGEM" and the number "21" into DNA.
+        We created "iGEM" by incubating the non-permanently immobilized primer in the according mastermix for 1 min.
+        The number "21" was created by incubation for 10 min per nucleotide.
         To follow up with PCR, a poly-A tail was added by incubating the primer in a mastermix containing an excess of dATP for 20 min.
-        Performing an agarose gel electrophoresis showed, that about 100 nt were added to encode “iGEM”.
-        The DNA encoding “21” was elongated with 100 nt as well.
+        Performing an agarose gel electrophoresis showed, that about 100 nt were added to encode "iGEM".
+        The DNA encoding "21" was elongated with 100 nt as well.
         
     - var imgpath = "" + require("../assets/img/Results/seq_table3.svg")["default"]
     +image(26, imgpath, '<b>Cyclic synthesis to encode "iGEM" and "21".</b> 2.5% Agarose with TBE, SYBR Gold staining, 90 V, 45 min. M: GeneRuler 50 bp DNA Ladder 1: "iGEM" 2: PCR with "iGEM" 3: Empty 4: "21" 5: PCR with "21" 6: Empty.',60,0.8, true,true)
