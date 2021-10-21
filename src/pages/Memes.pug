@@ -7,6 +7,14 @@ block headVars
 
 
 block main
+
+    .container 
+        .content.col-large
+            article
+                h1 Meme Überschrift 
+                p
+                    | Text Text
+
     - var fs = require('fs')
     - var memenames = fs.readdirSync('src/assets/img/memes')
     
