@@ -194,6 +194,13 @@ attr-main {
     color: $igem-green;
     padding: 0 7px;
     margin-bottom: 7px;
+    a {
+        color: $igem-green;
+        &:hover {
+            color: $igem-green-dark;
+            text-decoration: none;
+        }
+    }
 }
 
 @include respond-below(lg) {
