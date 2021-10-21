@@ -44,11 +44,6 @@ function scrollRocket() {
 
     var rocket_top = -pageOffset + distanceToTop + rocket_offset;
 
-    console.log("scrollTop: " + pageOffset);
-    console.log("distanceToTop: " + distanceToTop);
-    console.log("rocket_offset: " + rocket_offset);
-    console.log("top: " + rocket_top);
-
     if (rocket_top >= 0 && rocket_top < rocket_max_margin) {
         $('#rocket').css({
             'margin-top': rocket_top
