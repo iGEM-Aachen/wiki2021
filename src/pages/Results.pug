@@ -379,13 +379,13 @@ block article
     +image(22, imgpath, '<b>PCR with two different samples encoding "TCTA" with short and long poly-A, respectively.</b> A) PCR: Initial denaturation 98 °C 30 s, denaturation 98 °C 5 s, annealing 63 °C 10 s, elongation 68 °C 90 s, final elongation 72 °C 5 min. 2.5% agarose with TBE, SYBR Gold staining, 90 V, 45 min. M: GeneRuler 50 bp DNA Ladder 1: Elongation with "TCTA" and short poly-A 2: Elongation with "TCTA" and short poly-A after PCR B) PCR: Initial denaturation 98 °C 30 s, denaturation 98 °C 5 s, annealing 63 °C 10 s, elongation 72 °C 30 s, final elongation 72 °C 5 min. 2.5% Agarose with TBE, SYBR Gold staining, 90 V, 50 min. PCR 1: Elongation with "TCTA" and long poly-A 2: Elongation with "TCTA" and long poly-A after PCR.',60,0.8, true,true)
         
     :markdown-it
-        The Nanopore sequencing of the "TCTA" sample with shorter poly-A tail revealed that a comparatively high amount of DNA strands could be characterized (figure 23).
+        Nanopore sequencing of the "TCTA" sample with shorter poly-A tail revealed that a comparatively high amount of DNA strands could be characterized (figure 23).
         The information could be recovered with 80.0% accuracy.
         However, the sequence could not be fully recreated because the dTTP and dCTP were incorporated irregularly.
         This leads to the conclusion, that a transition between dTTP and dCTP can not be performed in solution if both kinds of nucleotides are present unless one concentration is not extremely low. 
         
     - var imgpath = "" + require("../assets/img/Results/seq_table1.svg")["default"]
-    +image(23, imgpath, '<b>Analysis of Nanopore sequencing of normal primer with the sequence "TCTA" attached in solution.</b>',100,0.8, true,true)
+    +image(23, imgpath, '<b>Analysis of nanopore sequencing of normal primer with the sequence "TCTA" attached in solution.</b>',100,0.8, true,true)
         
     :markdown-it
         ## Immobilized
@@ -412,13 +412,13 @@ block article
         A poly-A tail was created by incubation for 10 min in excess of dATP.
         An agarose gel electrophoresis was performed from which could be observed, that strands of different length up to over 1000 nt were created (data not shown). 
         
-        The created sequence was amplified using PCR and sequenced with Nanopore sequencing.
+        The created sequence was amplified using PCR and sequenced with nanopore sequencing.
         After the evaluation of the results, it was found that the sequence could be recreated from the strands with comparably high accuracy.
         The original information could be recovered with 80.0% accuracy.
         Compared to the sequence "TCTA" created in solution (see figure 23), a longer strand of five transitions could be stored with the same accuracy which leads to the conclusion that an immobilized primer is more suitable for storing information.
         
     - var imgpath = "" + require("../assets/img/Results/seq_table2.svg")["default"]
-    +image(25, imgpath, '<b>Analysis of Nanopore sequencing of normal primer with attached sequence "TCTGA" which was attached using the DIP method.</b>',100,0.8, true,true)   
+    +image(25, imgpath, '<b>Analysis of nanopore sequencing of normal primer with attached sequence "TCTGA" which was attached using the DIP method.</b>',100,0.8, true,true)   
         
     :markdown-it
         Our first attempt to encode meaningful information was to store the word "iGEM" and the number "21" into DNA.
@@ -439,7 +439,7 @@ block article
         This could be caused by increased contamination as the different reaction tubes with one kind of nucleotide were used multiple times.
         
     - var imgpath = "" + require("../assets/img/Results/seq_table3.svg")["default"]
-    +image(27, imgpath, '<b>Analysis of Nanopore sequencing of normal primer with attached sequence encoding "21" which was created using the DIP method.</b> The last "A" was not part of the actual sequence but was attached for PCR.',100,0.8, true,true)       
+    +image(27, imgpath, '<b>Analysis of nanopore sequencing of normal primer with attached sequence encoding "21" which was created using the DIP method.</b> The last "A" was not part of the actual sequence but was attached for PCR.',100,0.8, true,true)       
         
     :markdown-it
         The sample encoding "iGEM" included a comparably low number of strands that included the exact primer sequence (figure 28).
@@ -450,12 +450,12 @@ block article
         Adapting the reaction conditions should therefore lead to much higher accuracy.
         
     - var imgpath = "" + require("../assets/img/Results/seq_table4.svg")["default"]
-    +image(28, imgpath, '<b>Analysis of Nanopore sequencing of normal primer with attached sequence encoding "iGEM" which was created using the DIP method.</b>',100,0.8, true,true)
+    +image(28, imgpath, '<b>Analysis of nanopore sequencing of normal primer with attached sequence encoding "iGEM" which was created using the DIP method.</b>',100,0.8, true,true)
     
     :markdown-it
         Comparing the incubation for 1 min and for 10 min, the longer incubation yielded a higher accuracy of data recovery.
         Although we performed comparatively few experiments with cyclic synthesis, the data could be recovered from DNA with up to 80% accuracy.
-        To improve the results, both PCR and the preparation of our samples for Nanopore sequencing should be investigated further.
+        To improve the results, both PCR and the preparation of our samples for nanopore sequencing should be investigated further.
         Additionally, this experiment did not consider that nucleotides are incorporated with different probabilities.
         This could be regulated by adapting the incubation time and the composition of the reaction buffer. 
         
@@ -557,7 +557,7 @@ block article
         Our results show that we could develop an enzymatic synthesis system, which is capable of storing data on single-stranded DNA.
         For this, we could define suitable reaction parameters and developed a unique non-permanent primer immobilization method based on the biotin-streptavidin interaction.
         In our first cyclic synthesis trials, we could already retrieve 80% of encoded information from short sequences.
-        This was achieved by a manual cyclic synthesis, followed by PCR amplification, Nanopore sequencing, and subsequent evaluation with our software.
+        This was achieved by a manual cyclic synthesis, followed by PCR amplification, nanopore sequencing, and subsequent evaluation with our software.
         
         # Outlook
         There are many more experiments we would have liked to perform. You can read about our further ideas [here](https://2021.igem.org/Team:Aachen/Outlook).
