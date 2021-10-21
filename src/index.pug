@@ -154,5 +154,7 @@ html(lang="en")
             .col-xl-12.col-lg-12.col-md-12.col-xs-12.align-self-center
               - var videopath = require("./assets/img/homepage/promovideo.mp4")["default"]
               +video(videopath, "", 80)
+      .jumbotron.home-card.below-rocket-card
+          +tourButton("Collaborations", "https://2021.igem.org/Team:Aachen/Collaborations")
 
     include templates/footer.pug
