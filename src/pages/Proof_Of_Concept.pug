@@ -12,43 +12,43 @@ block article
         Since the official start of the competition in April 2021, we were able to develop a method to synthesize ssDNA strands with a pre-set sequence.
         Our project covered many different aspects like the immobilization of DNA, synthesis with our [Hardware](https://2021.igem.org/Team:Aachen/Hardware) and experimental confirmation through [Modeling](https://2021.igem.org/Team:Aachen/Model) as well as encoding and decoding information in DNA with our [Software](https://2021.igem.org/Team:Aachen/Software).
         We want to demonstrate that these parts can work together, thus making our project feasible as a whole.
-        Inspired by the scientific findings of George Church [1](#citation1), we would like to present a concept that is simple, but at the same time, very efficient. 
-        Our work focuses on:
+        Inspired by the scientific findings of George Church [1](#citation1), we would like to present a concept that is simple, but at the same time, very efficient.
         
         # DNA Synthesis with TdT
-        The performance of an optimal reaction in the later course of our project required a precise characterization of our enzyme. 
+        The performance of an optimal reaction in the later course of our project required a precise characterization of our enzyme, see [Results](https://2021.igem.org/Team:Aachen/Results). 
         For basic research on TdT, the common co-factor $Co^{2+}$ was used. We investigated which nucleotides were preferentially incorporated, how far the initial strand could be elongated with a nucleotide species, and how temperature affects elongation. 
         The evaluation showed that in a 10 min reaction, strands with the nucleotides thymine, cytosine, and adenine are elongated better than strands with the nucleotide guanine. 
-        Temperature also significantly affected elongation; the strands get longer at 37 °C than at RT (Figure 1). 
+        Temperature also significantly affected elongation; the strands get longer at 37 °C than at RT (figure 1). 
         To be able to investigate whether all strands were elongated equally in a reaction, capillary electrophoresis was applied to individual approaches. 
         It was found that there were individual differences between the strands. 
         The deviation was in the range of up to 30 nt. 
         We decided on the lower incubation temperature at RT because it is easier to implement and our goal is to attach only a few nucleotides. 
         A final important point to implement the most uniform elongation possible in the further course is the primer:nucleotide ratio in the solution. 
-        At a ratio of 1:5000, strands were elongated uniformly to an approximate length of up to 1000 nt (see Fig 1 lane 8). If the ratio of primer to nucleotide was 1:500, very few nucleotides were incorporated (maximum up to 50).
+        At a ratio of 1:5000, strands were elongated uniformly to an approximate length of up to 1000 nt (see figure 1 lane 8). If the ratio of primer to nucleotide was 1:500, very few nucleotides were incorporated (maximum up to 50).
         This data was evaluated further in our model.
         
     - var imgpath = "" + require("../assets/img/Results/2021-06-23_01.png")["default"]
     +image(1, imgpath, "<b>TdT tailing reaction of an AT-rich ssDNA primer with the four standard dNTPs at RT and 37 °C for 30 min, containing $Co^{2+}$ as a cofactor.</b> 2.5% Agarose with TBE, SYBR Gold staining, 90 V, 55 min. M: GeneRuler 50 bp DNA Ladder 1: AT-rich primer reference 2: RT reaction with dATP 3: RT reaction with dTTP 4: RT reaction with dCTP 5: RT reaction with dGTP 6: AT-rich primer reference 20 nM 7: 37 °C reaction with dATP 8: 37 °C with dTTP 9: 37 °C reaction with dCTP 10: 37 °C reaction with dGTP.",100,0.8)
         
     :markdown-it
-        # Confirmation of Experimental Data through Modeling
+        # Modeling Experimental Data
         When comparing the strand length distribution calculated by our [Model](https://2021.igem.org/Team:Aachen/Model) and the one determined by capillary electrophoresis one can see that the model is relatively accurate. 
         Even though the numbers are not exactly the same, the general distribution properties were very similar. 
         The exact numbers however could be used to determine new kinetic constants and build a more accurate model, which corresponded even more to the experimental data.
+        
         Concerning the primer:nucleotide ratio, our modeling shows that it should make no difference if we incubate a longer time with a low nucleotide concentration or a shorter time with a high nucleotide concentration. 
         As shorter incubation times are more favorable for a future synthesis system because time becomes an essential factor in large-scale production, we decided on the high nucleotide concentration for our immobilization experiments. 
         This indicates that a combination of high primer:nucleotide ratio with shorter incubation time and lower temperature would be crucial for our further experiments. 
         
-        # Immobilization of the ssDNA oligo
-        For the immobilization of our ssDNA primer on magnetic beads, we decided to use the streptavidin-biotin-bond (see [Experiments]( https://2021.igem.org/Team:Aachen/Experiments#CyclicSynthesisandPrimerImmobilization).
-        As this is one of the strongest non-covalent interactions [2](#citation2) and a neodymium bar magnet was used to extract the beads, no loss of primer could be detected in the conjugation or washing steps (see [Results]( https://2021.igem.org/Team:Aachen/Results#2PrimerImmobilization)). 
-        Thus, there is a low risk of contamination between the reaction solutions.
-        Using a 100 nt primer provided the reaction with as large a surface area as possible.
+        # DNA Immobilization
+        For the immobilization of our ssDNA primer on magnetic beads, we decided to use the streptavidin-biotin-bond (see [Experiments](https://2021.igem.org/Team:Aachen/Experiments#CyclicSynthesisandPrimerImmobilization)).
+        As this is one of the strongest non-covalent interactions [2](#citation2) and a neodymium magnet stick was used to extract the beads, no loss of primer could be detected in the conjugation or washing steps (see [Results]( https://2021.igem.org/Team:Aachen/Results#2PrimerImmobilization)). 
+        Thus, there was a low risk of contamination between the reaction solutions.
+        Using a 100 nt primer prevented steric hindrance.
 
-        The bar magnets were equipped with a pipette tip as an envelope (the bottom opening of the tip was fused) to prevent permanent binding of the beads to the magnet and to be able to reuse the materials. 
+        The magnets were equipped with a pipette tip as an envelope (the bottom opening of the tip was fused) to prevent permanent binding of the beads to the magnet and to be able to reuse the materials. 
         
-        We showed that the ssDNA primers can be extracted from solution via magnetic beads and a bar magnet and that the DNA can be eluted with no significant loss after several washing steps. 
+        We showed that the ssDNA primers can be extracted from solution via magnetic beads and a magnet stick and that the DNA can be eluted with no significant loss after several washing steps. 
         It was shown that elongation is still possible in the immobilized state. 
         Furthermore, the envelope for the magnet allowed us to release the beads into the reaction solutions, which resulted in better elongation.
                 
@@ -61,13 +61,11 @@ block article
         In the later course, only the DNA sequence has to be specified, and the synthesis runs without further manual steps.
                 
         # Data Storage in DNA
-        ## The DIP-Method
-        In the DIP-Method, an immobilized ssDNA primer is dipped into a reaction solution containing the enzyme TdT and one type of nucleotide (see [Experiments](https://2021.igem.org/Team:Aachen/Experiments#CyclicSynthesisandPrimerImmobilization)). 
-        The goal is to generate a strand as long as possible with the maximum number of transitions from different nucleotides. The ratio of immobilized primer to nucleotide in solution is 1:5000 (20 nM immobilized primer to 0.1 mM nucleotide). 
-        The primer:nucleotide ratio plays a crucial role in elongation by TDT, as the enzyme also binds more nucleotides to individual primers at higher nucleotide concentrations. 
-        To better control the TdT reaction, elongation is performed at room temperature (24 °C). 
+        ## The DIP Method
+        In the DIP method, an immobilized ssDNA primer is dipped into a reaction solution containing the enzyme TdT and one type of nucleotide (see [Experiments](https://2021.igem.org/Team:Aachen/Experiments#CyclicSynthesisandPrimerImmobilization)). 
+        The goal is to generate a strand as long as possible with the maximum number of transitions from different nucleotides. 
         Since the ssDNA strands had to be double-stranded for subsequent analysis (sequencing using Sanger and Nanopore), performing a PCR is essential. 
-        To make this possible, a poly-A tail has to be present at the end of each strand for the binding of a reverse primer, so the addition of adenine is necessary at the end of each reaction.
+        To make this possible, a poly-A tail has to be present at the end of each strand for the binding of a reverse primer, so the addition of dATP is necessary at the end of the reaction.
         
         ## Retrieval of Data
         [//]: # (Hier was zur Auswertung der Sequenzierung und zur Software dahinter)
