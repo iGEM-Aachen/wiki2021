@@ -55,6 +55,22 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/9/95/T--Aachen--documents--collaborations--Presentation_Eindhoven.pdf
     md5: 5333455e6f3d1f2cc6d619c8e97d58be
     upload_filename: T--Aachen--documents--collaborations--Presentation Eindhoven.pdf
+  assets/documents/communication/Newsletter_August_designed.pdf:
+    link_URL: https://2021.igem.org/wiki/images/f/f6/T--Aachen--documents--communication--Newsletter_August_designed.pdf
+    md5: 3e6757e178ff1f460e26427e3ca2b2ba
+    upload_filename: T--Aachen--documents--communication--Newsletter_August_designed.pdf
+  assets/documents/communication/Newsletter_June_designed.pdf:
+    link_URL: https://2021.igem.org/wiki/images/0/0c/T--Aachen--documents--communication--Newsletter_June_designed.pdf
+    md5: 10437afd6872b8a89cb11ccc0276435b
+    upload_filename: T--Aachen--documents--communication--Newsletter_June_designed.pdf
+  assets/documents/communication/Newsletter_May_designed.pdf:
+    link_URL: https://2021.igem.org/wiki/images/9/90/T--Aachen--documents--communication--Newsletter_May_designed.pdf
+    md5: 9245910e553eaee3e54effe5a3bdbb49
+    upload_filename: T--Aachen--documents--communication--Newsletter_May_designed.pdf
+  assets/documents/communication/Newsletter_September.pdf:
+    link_URL: https://2021.igem.org/wiki/images/1/1c/T--Aachen--documents--communication--Newsletter_September.pdf
+    md5: e989a8728f22b69f416cdc6d6f92134e
+    upload_filename: T--Aachen--documents--communication--Newsletter_September.pdf
   assets/documents/communication/extractionKitMaterials.pdf:
     link_URL: https://2021.igem.org/wiki/images/f/f7/T--Aachen--documents--communication--extractionKitMaterials.pdf
     md5: f1aae2e7d6058aee5d6479737fde40ef
@@ -1540,7 +1556,7 @@ assets:
     upload_filename: "T--Aachen--img--portraits--Clemens K\xF6hler.jpg"
   assets/img/portraits/Daniel Mehling.jpg:
     link_URL: https://2021.igem.org/wiki/images/4/48/T--Aachen--img--portraits--Daniel_Mehling.jpg
-    md5: 5f37e81ffa34f9f23c7c61f391366ad8
+    md5: 3268d38973aa32dc6bb58faa6efe923f
     upload_filename: T--Aachen--img--portraits--Daniel Mehling.jpg
   "assets/img/portraits/Dominic K\xF6sters.jpg":
     link_URL: https://2021.igem.org/wiki/images/d/df/T--Aachen--img--portraits--Dominic_K%C3%B6sters.jpg
@@ -2042,7 +2058,7 @@ html:
     md5: 915fa1ab55e039398be0474f3a878651
   Human_Practices/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Human_Practices
-    md5: cd469ff02cf2e074371ae526bfa46da4
+    md5: ca17cc176dd48f691e302ea152f46a7e
   Human_Practices\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Human_Practices
     md5: add694d9d50cd9431dc45f7ca06eed4e
@@ -2129,7 +2145,7 @@ html:
     md5: 0ba5d0725c84c2dad4c72618fdb07412
   Science_Communication/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Science_Communication
-    md5: b181661c526974b35ae5be2e0b28e70f
+    md5: a7fc9fdacdc4ad86dcd574c3f632a1cc
   Software/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Software
     md5: b9d577cd4d79a14a4ec2cf90956b331a
