@@ -12,7 +12,7 @@ block article
         Since the official start of the competition in April 2021, we were able to develop a method to synthesize ssDNA strands with a pre-set sequence.
         Our project covered many different aspects like the immobilization of DNA, synthesis with our [Hardware](https://2021.igem.org/Team:Aachen/Hardware) and experimental confirmation through [Modeling](https://2021.igem.org/Team:Aachen/Model) as well as encoding and decoding information in DNA with our [Software](https://2021.igem.org/Team:Aachen/Software).
         We want to demonstrate that these parts can work together, thus making our project feasible as a whole.
-        Inspired by the scientific findings of George Church [1](#citation1), we would like to present a concept that is simple, but at the same time, very efficient.
+        Inspired by the scientific findings of George Church [1](#citation1), we would like to present a concept that is simple and efficient at the same time.
         
         # DNA Synthesis with TdT
         The performance of an optimal reaction in the later course of our project required a precise characterization of our enzyme, see [Results](https://2021.igem.org/Team:Aachen/Results). 
@@ -28,7 +28,7 @@ block article
         This data was evaluated further in our model.
         
     - var imgpath = "" + require("../assets/img/Results/2021-06-23_01.png")["default"]
-    +image(1, imgpath, "<b>TdT tailing reaction of an AT-rich ssDNA primer with the four standard dNTPs at RT and 37 °C for 30 min, containing $Co^{2+}$ as a cofactor.</b> 2.5% Agarose with TBE, SYBR Gold staining, 90 V, 55 min. M: GeneRuler 50 bp DNA Ladder 1: AT-rich primer reference 2: RT reaction with dATP 3: RT reaction with dTTP 4: RT reaction with dCTP 5: RT reaction with dGTP 6: AT-rich primer reference 20 nM 7: 37 °C reaction with dATP 8: 37 °C with dTTP 9: 37 °C reaction with dCTP 10: 37 °C reaction with dGTP.",100,0.8)
+    +image(1, imgpath, "<b>TdT tailing reaction of an AT-rich ssDNA primer with the four standard dNTPs at RT and 37 °C for 30 min, containing $Co^{2+}$ as a cofactor.</b> 2.5% agarose with TBE, SYBR Gold staining, 90 V, 55 min. M: GeneRuler 50 bp DNA Ladder 1: AT-rich primer reference 2: RT reaction with dATP 3: RT reaction with dTTP 4: RT reaction with dCTP 5: RT reaction with dGTP 6: AT-rich primer reference 20 nM 7: 37 °C reaction with dATP 8: 37 °C with dTTP 9: 37 °C reaction with dCTP 10: 37 °C reaction with dGTP.",100,0.8)
         
     :markdown-it
         # Modeling Experimental Data
@@ -41,12 +41,12 @@ block article
         This indicates that a combination of high primer:nucleotide ratio with shorter incubation time and lower temperature would be crucial for our further experiments. 
         
         # DNA Immobilization
-        For the immobilization of our ssDNA primer on magnetic beads, we decided to use the streptavidin-biotin-bond (see [Experiments](https://2021.igem.org/Team:Aachen/Experiments#CyclicSynthesisandPrimerImmobilization)).
-        As this is one of the strongest non-covalent interactions [2](#citation2) and a neodymium magnet stick was used to extract the beads, no loss of primer could be detected in the conjugation or washing steps (see [Results]( https://2021.igem.org/Team:Aachen/Results#2PrimerImmobilization)). 
+        For the immobilization of our ssDNA primer on magnetic beads, we decided to use the streptavidin-biotin-bond (see [Experiments](https://2021.igem.org/Team:Aachen/Experiments#CyclicSynthesisandPrimerImmobilization)), as this is one of the strongest non-covalent interactions [2](#citation2).
+        A neodymium magnet stick was used to extract the beads, no loss of primer could be detected in the conjugation or washing steps (see [Results]( https://2021.igem.org/Team:Aachen/Results#2PrimerImmobilization)). 
         Thus, there was a low risk of contamination between the reaction solutions.
         Using a 100 nt primer prevented steric hindrance.
 
-        The magnets were equipped with a pipette tip as an envelope (the bottom opening of the tip was fused) to prevent permanent binding of the beads to the magnet and to be able to reuse the materials. 
+        The magnets were equipped with a pipette tip as an envelope (the bottom opening of the tip was sealed) to prevent permanent binding of the beads to the magnet and to be able to reuse the materials. 
         
         We showed that the ssDNA primers can be extracted from solution via magnetic beads and a magnet stick and that the DNA can be eluted with no significant loss after several washing steps. 
         It was shown that elongation is still possible in the immobilized state. 
@@ -56,7 +56,7 @@ block article
         To automate our method, we developed a custom design, see [Hardware](https://2021.igem.org/Team:Aachen/Hardware). The individual reactions take place in 2 mL Eppendorf reaction tubes. 
         In order to automate the elongation and washing steps, a framework of extruded aluminum profiles and a revolver with a mobile base was designed. 
         The revolver is used to fix the reaction vessels. Two ball bearings, between which the turret is suspended, ensure accuracy of 0.1125°. 
-        A stirring rod clamp can be attached to the wall shown in the picture to fix the rod magnet. The wall can be moved horizontally and vertically, which allows the magnet to be immersed in the solution. 
+        A stirring rod clamp can be attached to the wall to fix the rod magnet. The wall can be moved horizontally and vertically, which allows the magnet to be immersed in the solution. 
         This approach was chosen because it is simple, efficient, and feasible. The process is automated by a NodeMCU, which receives commands via a common web interface. 
         In the later course, only the DNA sequence has to be specified, and the synthesis runs without further manual steps.
                 
@@ -68,9 +68,12 @@ block article
         To make this possible, a poly-A tail has to be present at the end of each strand for the binding of a reverse primer, so the addition of dATP is necessary at the end of the reaction.
         
         ## Retrieval of Data
-        [//]: # (Hier was zur Auswertung der Sequenzierung und zur Software dahinter)
+        After successfully immobilizing a primer to a magnet stick and proving that the TdT is able to incorporate different kinds of nucleotides into an immobilized primer, we were able to put our DIP method to use.
+        This enabled encoding data into DNA by creating up to five transitions with an accuracy of 80% between the original and attached sequence.
+        The fact that we were able to achieve a certain accuracy with the first attempts indicates the high potential of this method.
+        This was possible because our invented DIP method works with customized software.
 
 //- DO NOT MODIFY THIS LINE AND ANYTHING BEYOND.
 
 prepend citations
-    - var citations = [{"authors": "Lee, H., Wiegand, D. J., Griswold, K., Punthambaker, S., Chun, H., Kohman, R. E., & Church, G. M. (2020). ", "doi": "https://doi.org/10.1038/s41467-020-18681-5", "journal": "Nature Communications", "numbers": "11(1). ", "title": "Photon-directed multiplexed enzymatic DNA synthesis for molecular digital data storage.", "type": "article"}, {"authors": "Delarue, M., Boul  , J. B., Lescar, J., Expert-Bezan  on, N., Jourdan, N., Sukumar, N., ... & Papanicolaou, C. (2002). ", "doi": "https://doi.org/10.1093/emboj/21.3.427", "journal": "The EMBO Journal", "numbers": "21(3), 427-439. ", "title": "Crystal structures of a template-independent DNA polymerase: murine terminal deoxynucleotidyltransferase.", "type": "article"}]
+    - var citations = [{"authors": "Lee, H., Wiegand, D. J., Griswold, K., Punthambaker, S., Chun, H., Kohman, R. E., & Church, G. M. (2020). ", "doi": "https://doi.org/10.1038/s41467-020-18681-5", "journal": "Nature Communications", "numbers": "11(1). ", "title": "Photon-directed multiplexed enzymatic DNA synthesis for molecular digital data storage.", "type": "article"}, {"authors": "Green, N. M. (1975).", "journal": "Advances in Protein Chemistry.", "numbers": "29, 85\u2013133.", "title": "Avidin.", "type": "article", "year_published": 1975}]

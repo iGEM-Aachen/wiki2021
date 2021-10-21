@@ -4,8 +4,9 @@
 name: Build wiki and sync to iGEM
 
 on:
-  push:
-    branches: [ main ]
+#   push:
+#     branches: [ main ]
+    workflow_dispatch:
 
 jobs:
   build:
@@ -42,7 +43,7 @@ jobs:
     - name: Add Build to Git
       run: |
         git pull
-        git add -A
+        git add -f dist igem
     - name: Commit Build
       run: |
         git config --local user.email "action@github.com"
@@ -62,7 +63,7 @@ jobs:
     - name: Add Wikisync Changes to Git
       run: |
         git pull
-        git add -A
+        git add -f upload_map.yml wikisync.log dist igem
 #       run: git add upload_map.yml wikisync.log dist igem
       # It is recommended that you add the source and 
       # the build folder along with the upload map and

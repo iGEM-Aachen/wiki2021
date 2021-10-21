@@ -126,6 +126,12 @@ mixin meme(filename, caption)
             a(href=memepath class="glightbox" data-gallery="memegallery")
                 img(src=memepath alt=caption class="img-responsive")
 
+mixin imagePopup(n,url,width,data)
+    .image
+        a(href=url class="glightbox" data-glightbox=data)
+               img(src=url style="width: " + width + "%")
+    
+
 
 mixin teamlabel(type)
     .teamlabel

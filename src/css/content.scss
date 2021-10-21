@@ -52,6 +52,7 @@ body {
     background-color: $igem-dark;
 }
 
+
 /******************************
 * Main
 ******************************/
@@ -67,7 +68,9 @@ body {
         font-size: 1rem;
         text-transform: uppercase;
     }
-    #contents::-webkit-scrollbar { width: 0 !important }
+    #contents::-webkit-scrollbar {
+        width: 0 !important
+    }
     #contents {
         position: sticky;
         top: 150px;
@@ -76,12 +79,13 @@ body {
         font-weight: 500;
         height: 80vh;
         width: 20vw;
-        -ms-overflow-style: none; /* for Internet Explorer, Edge */
-        scrollbar-width: none; /* for Firefox */
-        overflow-y: scroll; 
+        -ms-overflow-style: none;
+        /* for Internet Explorer, Edge */
+        scrollbar-width: none;
+        /* for Firefox */
+        overflow-y: scroll;
         overflow-x: hidden;
         transition: none;
-        
         li {
             margin: 15px 0;
             justify-content: left;
@@ -189,7 +193,6 @@ body {
         }
         .pdflink {
             margin-left: 35px;
-            display: inline !important;
         }
         .links {
             margin-top: -20px;
@@ -631,45 +634,45 @@ footer {
  ******************************/
 
 //If a Link is not in uniform design, you can use the mixin "extralink"
-a.extraLinks{
-        color: $black;
-        position: relative;
+a.extraLinks {
+    color: $black;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 1px;
+    transition: color ease 0.3s;
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        background-color: $linkHover;
+        height: 2px;
+    }
+    &:before {
+        width: 0%;
+        left: 0;
+        bottom: 0;
+        transition: width ease 0.4s;
+    }
+    &:after {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        transition: all ease 0.6s;
+    }
+    &:hover {
         text-decoration: none;
-        display: inline-block;
-        padding: 0 1px;
-        transition: color ease 0.3s;
-        &:before,
-        &:after {
-            content: "";
-            position: absolute;
-            background-color: $linkHover;
-            height: 2px;
-        }
-        &:before {
-            width: 0%;
-            left: 0;
-            bottom: 0;
-            transition: width ease 0.4s;
-        }
-        &:after {
+        // color: $black;
+        &::before {
             width: 100%;
-            left: 0;
-            bottom: 0;
-            transition: all ease 0.6s;
         }
-        &:hover {
-            text-decoration: none;
-            // color: $black;
-            &::before {
-                width: 100%;
-            }
-            &::after {
-                left: 100%;
-                width: 0%;
-                transition: all ease 0.2s;
-            }
+        &::after {
+            left: 100%;
+            width: 0%;
+            transition: all ease 0.2s;
         }
     }
+}
 
 // body.dark {
 //     header {
