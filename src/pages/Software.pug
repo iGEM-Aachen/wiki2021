@@ -92,7 +92,31 @@ block article
         This means that the encoded data also needs to contain the information of how many bits were padded to the end.
         Due to this additional complexity, other conversions than from byte to tryte are not implemented in our software right now.
 
-        # Decoding Data from Sequenced DNA
+        # Decoding and Error Correction on Sequencing Data
 
     - var imgpath = "" + require("../assets/img/Software/decoding.svg")["default"]
-    +image(2, imgpath, "Overview of the steps to retrieve information from DNA.", 60,0.8,true)
+    +image(2, imgpath, "Overview over the steps for retrieving information from DNA.", 80)
+
+    :markdown-it
+
+        As you can see in figure 2, decoding mainly works just as encoding but backwards.
+        However, one additional step is necessary before data can be decoded.
+        From the sequencing data, we first must retrieve the original DNA sequence that was used for synthesis.
+        To do so, we must understand what happens in synthesis.
+        As discussed before, an unknown number of nucleotides is attached in each step.
+        This is due to the semi-specific approach.
+        In addition to that, various primers and other sequences are added to both ends of the encoded sequence.
+        This is partly needed for synthesis and partly for sequencing.
+
+        - mainly same as encoding but backwards
+        - additional step: recover nucleotides from homonucleotides: "error correction"
+        
+        - sequencing data: fastq file with many reads (description, sequence, quality)
+
+        1. remove primer
+        2. remove reverse primer
+        3. align/compare sequences
+          - create sequences of homonucleotides from reads
+          - assign each homonucleotide a length and average quality
+          - for each homo: sum up the length and quality of all reads to find most probable base
+          - go over as many homonucleotides as present in X % of reads
