@@ -122,7 +122,7 @@ html(lang="en")
                 | higher than the capacity of current storage technologies.
                 | With that, you could fit the information of the whole internet into an ordinary bucket.
                 | This could make many data centers obsolete.
-      .jumbotron.home-card
+      .jumbotron.home-card.home-bg-blue
         .container
           h1 What Could we Achieve with Better Storage Systems?
           .row.d-flex.justify-content-center.tiles
@@ -147,13 +147,7 @@ html(lang="en")
         .container
           h1 We Present Enzymatic DNA Synthesis for a Data Storage System
           .row.d-flex.justify-content-center.tiles
-            .col-xl-8.col-lg-8.col-md-6.col-xs-12.align-self-center
-              img(src=require('./assets/img/homepage/dna_four_colors.svg')['default'])
-      .jumbotron.home-card.below-rocket-card
-        .container
-          .row.d-flex.justify-content-center.tiles
-            .col-xl-8.col-lg-8.col-md-6.col-xs-12.align-self-center
-              h1.video-header Watch Our Promotion Video to Learn More About the Story Behind Storagene
+            .col-xl-12.col-lg-12.col-md-12.col-xs-12.align-self-center
               - var videopath = require("./assets/img/homepage/promovideo.mp4")["default"]
               +video(videopath, "", 80)
 
