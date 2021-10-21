@@ -18,13 +18,13 @@ block article
         These are some of the topics we covered in our posts:
 
     - var imgNames = [{image: require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-01.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-02.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-03.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-04.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-05.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-06.png")["default"]}]
-    +imgCarousel(1, imgNames,gallery)
+    +imgCarousel(1, imgNames,"factofTheWeek1")
 
     - var imgNames = [{image: require("../assets/img/communication/fact_of_the_week/Post 06/Genetic Code-01.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 06/Genetic Code-02.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 06/Genetic Code-03.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 06/Genetic Code-04.png")["default"]}]
-    +imgCarousel(2, imgNames,gallery)
+    +imgCarousel(2, imgNames,"factofTheWeek2")
 
     - var imgNames = [{image: require("../assets/img/communication/fact_of_the_week/Post 07/Bioluminescence-01.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 07/Bioluminescence-02.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 07/Bioluminescence-03.png")["default"]},{image: require("../assets/img/communication/fact_of_the_week/Post 07/Bioluminescence-04.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 07/Bioluminescence-05.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 07/Bioluminescence-06.png")["default"]}]
-    +imgCarousel(3, imgNames,gallery)
+    +imgCarousel(3, imgNames,"factofTheWeek3")
 
     :markdown-it
 
@@ -135,7 +135,7 @@ block article
         It was also important for us to include safety instructions such as wearing protective goggles when working with isopropyl alcohol.
         
     - var imgNames = [{image: require("../assets/img/communication/extractionKit1.jpg")["default"]}, {image: require("../assets/img/communication/extractionKit2.jpg")["default"]}, {image: require("../assets/img/communication/extractionKit3.jpg")["default"]}]
-    +imgCarousel(4, imgNames,gallery)
+    +imgCarousel(4, imgNames,"extractionKit1")
    
     - var pdfpath = "" + require("../assets/documents/communication/extractionKitMaterials.pdf")["default"]
     a(href=pdfpath) Extraction Kit Materials
@@ -145,6 +145,7 @@ block article
     p
     - var pdfpath = "" + require("../assets/documents/communication/extractionKitTeacherBackgroundInformation.pdf")["default"]
     a(href=pdfpath) Teacher instructions and Background information
+
     :markdown-it(html)
 
         We packed four customized iGEM Aachen boxes for different schools.
@@ -152,10 +153,11 @@ block article
         The other 3 boxes were sent to schools in different parts of Germany. 
         
     - var imgpath = "" + require("../assets/img/communication/extractionKit12.jpg")["default"]
-    +image(9, imgpath, "",70)
+    +image(6, imgpath, "",70)
     
     - var imgpath = "" + require("../assets/img/communication/extractionKit11.jpg")["default"]
-    +image(10, imgpath, "",70)
+    +image(7, imgpath, "",70)
+
     :markdown-it(html)
         
         A graduating class of „Domschule Schleswig“ in Schleswig, Schleswig-Holstein in northern Germany experimented together with their teacher and talked to us about the extraction in a Zoom meeting afterward.
@@ -177,26 +179,9 @@ block article
         Therefore, we had enough time to answer all their questions regarding biotechnology and DNA.
         We were happy to hear that a few students told us that we sparked their interest in synthetic biology!
 
-    - var imgpath = "" + require("../assets/img/communication/extractionKit4.jpg")["default"]
-    +image(11, imgpath, "",100)
-    
-    - var imgpath = "" + require("../assets/img/communication/extractionKit5.jpg")["default"]
-    +image(12, imgpath, "",100)
-    
-    - var imgpath = "" + require("../assets/img/communication/extractionKit6.jpg")["default"]
-    +image(13, imgpath, "",100)
-    
-    - var imgpath = "" + require("../assets/img/communication/extractionKit7.jpg")["default"]
-    +image(14, imgpath, "",100)
-    
-    - var imgpath = "" + require("../assets/img/communication/extractionKit8.jpg")["default"]
-    +image(15, imgpath, "",100)
-    
-    - var imgpath = "" + require("../assets/img/communication/extractionKit9.jpg")["default"]
-    +image(16, imgpath, "",100)
-    
-    - var imgpath = "" + require("../assets/img/communication/extractionKit10.jpg")["default"]
-    +image(17, imgpath, "",100)
+    - var imgNames = [{image: require("../assets/img/communication/extractionKit4.jpg")["default"]}, {image: require("../assets/img/communication/extractionKit5.jpg")["default"]}, {image: require("../assets/img/communication/extractionKit6.jpg")["default"]}, {image: require("../assets/img/communication/extractionKit7.jpg")["default"]}, {image: require("../assets/img/communication/extractionKit8.jpg")["default"]}, {image: require("../assets/img/communication/extractionKit9.jpg")["default"]}, {image: require("../assets/img/communication/extractionKit10.jpg")["default"]}]
+    +imgCarousel(5, imgNames,"extractionKit2")
+
     :markdown-it(html)
 
         Overall, we were delighted with our education project.
@@ -212,7 +197,7 @@ block article
         А couple of students were intrigued about the world of biotechnology and connected with Viktor for further information about the bachelor program. 
         Thus, we believe that we helped young people to find their passion and hope that one day we will work side by side on a project that may change the world.
     - var imgpath = "" + require("../assets/img/Education/91.DeutschesGymnasiumSofia.jpg")["default"]
-    +image(18, imgpath, "91. Deutsches Gymnasium Sofia.",100)
+    +image(8, imgpath, "91. Deutsches Gymnasium Sofia.",100)
 
     :markdown-it(html)
         # Science Communication Through Non-Typical Forms of Education in Greece 
