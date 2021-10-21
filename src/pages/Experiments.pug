@@ -8,35 +8,38 @@ block headVars
 block article
     :markdown-it(html)
         # Overview
-        The goals of our experiments were the following:
+        The goals for our experiments were the following:
 
-        * Characterizing the terminal transferase (TdT) reaction and showing that TdT can incorporate nucleotides to ssDNA primers
-        * Immobilizing our ssDNA primers
+        * Proving that terminal transferase (TdT) can attach nucleotides to a single-stranded primer
+        * Analysis of characteristics ond properties of our enzyme, terminal transferase (TdT)
+        * Immobilization of ssDNA primer
         * Performing a cyclic semi-specific synthesis, in which an unknown number of one nucleotide type is attached in each reaction cycle
-        * Proving that this semi-specific synthesis works and that data can be encoded and recovered in this way by sequencing the created fragments
+        * Demonstrating that this semi-specific synthesis works and that data can be encoded and recovered by sequencing the created fragments
         * Investigating the problem of secondary structures during strand elongation
 
         Read our [lab notebook](https://2021.igem.org/Team:Aachen/Notebook), [Protocols](https://2021.igem.org/Team:Aachen/Protocols) or [Results](https://2021.igem.org/Team:Aachen/Results) for further information.
 
         # TdT Tailing Reaction
-        The first step was to test whether TdT binds nucleotides to an ssDNA primer.
+        The first step was to test whether TdT attaches nucleotides to an ssDNA primer.
         A standard TdT tailing reaction was performed and verified by [gel electrophoresis](#GelElectrophoresis). 
-        To better characterize the reaction, many parameters such as incubation time and temperature as well as nucleotide, primer, cofactor, and enzyme concentration were varied.
+        To characterize the enzyme properties, multiple parameters such as incubation time and temperature as well as nucleotide, primer, cofactor, and enzyme concentration were varied.
         Different nucleotides and combinations of those were tried to reveal significant differences in incorporation speed.
-        This information was crucial for building hardware that can attach a roughly equal amount of each nucleotide, following the principle of: “As little as possible and as much as necessary“.
-        This means that the goal is to find conditions where each strand is elongated as little as possible, but with at least one nucleotide in each cycle (see [Modeling](https://2021.igem.org/Team:Aachen/Modeling)).
+
+        This information was crucial for building the hardware that can attach a roughly equal amount of each nucleotide, following the principle of: “As little as possible and as much as necessary“.
+        Thus, the goal is to find conditions where each strand is elongated as little as possible, but with at least one nucleotide in each cycle (see [modeling](https://2021.igem.org/Team:Aachen/Modeling)).
+
         For this purpose, the length distribution of the synthesized fragments was analyzed by [capillary electrophoresis](#CapillaryElectrophoresis).
         
-        Furthermore, different TdTs were tested.
-        In the first experiments, we used a recombinant TdT from NEB, but all other experiments were performed with a recombinant TdT from Thermo Fischer Scientific.
-        They use very different reaction buffers, which significantly changed the incorporation speed and nucleotide preferences of TdT.
-        All our summarized results concern the Thermo Fisher TdT.
+        Furthermore, enzymes from different manufacturers were tested.
+        In the first experiments, we used a recombinant TdT from NEB, but all other experiments were performed with a recombinant TdT from Thermo Fisher Scientific.
+        The two manufacturers use very different reaction buffers, which significantly changed the incorporation speed and nucleotide preferences of TdT.
+        We kept working with the Thermo Fisher TdT, thus all our summarized results concern the Thermo Fisher TdT.
         
         # Cyclic Synthesis and Primer Immobilization
-        A cyclic synthesis in solution was tried by just adding the next type of nucleotide to the solution after each elongation.
-        We used a higher primer concentration than in our standard reaction and increased the nucleotide concentration in each reaction step.
+        We have established a cyclic synthesis in solution by adding the next type of nucleotide after each elongation.
+        The primer concentration was higher than in the standard reaction to increase the conversion and limit the number of incorporated nucleotides. Additionally, the nucleotide concentration was increased in each reaction step to achieve the right transitions.
         
-        For the semi-specific synthesis, the TdT reaction in solution has the decisive disadvantage that the different nucleotides mix after the first few reaction cycles because there still is a nucleotide excess after each reaction step with that specific nucleotide.
+        The disadvantage of the synthesis reaction in solution is that the different nucleotides mix after the first few reaction cycles because there are excess nucleotides, which were not incorporated in the previous reaction step. 
         Hence, it is not ensured that the added nucleotide is also the incorporated nucleotide and synthesis errors accumulate.
         
         Therefore, the sample would have to be purified after each step to isolate the extended ssDNA strands and lose excess nucleotides.
@@ -45,7 +48,7 @@ block article
         Immobilizing the primers can solve this problem and is the basis for a cyclic synthesis of longer strands.
         Current techniques involve immobilization on a streptavidin-coated surface, for instance in a flowcell with different mastermixes [1](#citation1).
         For our purpose, a novel and simple method was developed: 
-        The primers were immobilized on a stick and dipped into the reaction solutions with the different nucleotides.
+        The primers were immobilized on a stick and dipped into different reaction solutions with one type of nucleotide, respectively.
         Various immobilization systems were tried:
         
         1. Primers with amino modification and anchor peptide LCI
@@ -72,7 +75,7 @@ block article
         The beads were immobilized with a rod magnet.
         
         ## The DIP Method
-        To elongate the DNA strand in a controlled manner, we used the third immobilization system with the streptavidin-coated magnetic beads and the rod magnet and developed the DIP method:
+        To elongate the ssDNA strand in a controlled manner, we used the third immobilization system with the streptavidin-coated magnetic beads and the rod magnet and developed the DIP method:
         
         Four different Eppendorf tubes containing the TdT reaction mixture and one nucleotide were prepared. 
         Another tube contained the biotinylated primer. The beads were added to the latter so that the primer could bind to them. 
@@ -82,35 +85,37 @@ block article
         After the reaction, the bar magnet was placed back into the plastic envelope, transferring the beads to a wash tube with water to lose excess nucleotides. 
         It was then dipped into the next reaction solution and the above steps were repeated until the strand reached the desired length and sequence. 
         The reaction time was varied in different experiments to find out how many nucleotides were attached.
+        Furthermore, we designed and built a [Hardware](https://2021.igem.org/Team:Aachen/Hardware) that can autonomously perform the DIP Method.
 
         # Gel Electrophoresis
-        For first sample analysis, our method of choice was the agarose gel electrophoresis because of easy handling and fast results. The final target was to sequence our self-generated DNA fragments, but sequencing methods had to be established first.
+        The final target was to sequence our self-generated DNA fragments. 
+        However, for the first sample analysis, we chose agarose gel electrophoresis due to easy handling and fast results. 
         As the first samples were generated with only one type of nucleotide, length determination was most important.
         For our samples (low concentrated very short ssDNA fragments, ~20-1000 nt), the best length analysis method (apart from [capillary electrophoresis](#CapillaryElectrophoresis)) would typically be a denaturing PAGE, which was tried but rejected because of inconsistent results and performance difficulties.
-        We lost a lot of time at the beginning of our project due to the optimization attempts, as making our DNA strands visible was the first critical step. At last, we found conditions for an agarose gel electrophoresis that enabled us to clearly see ssDNA samples (see [Engineering success]( https://2021.igem.org/Team:Aachen/Engineering)).
+        
+        At the beginning of the project we concentrated our efforts on optimizing gel electrophoresis as making our DNA strands visible was the first critical step. At last, we found conditions for an agarose gel electrophoresis that enabled us to clearly see ssDNA samples (see [engineering success]( https://2021.igem.org/Team:Aachen/Engineering)).
+
         A 2.5% agarose solution in TBE buffer was used.
         The gel was stained with SYBR gold solution for 20 min. A dsDNA ladder was used because we did not need a precise length determination.
-        These conditions were not optimal but sufficed for a first rough assessment of the samples, which would then undergo other analysis steps.
+        These conditions were suitable for a first rough assessment of the samples, which would then undergo other analysis steps.
        
         # Capillary Electrophoresis
         We had the possibility to let our samples be analyzed with a fragment analyzer at Fraunhofer Institute IME.
         This analysis method has several advantages over gel electrophoresis: Fragments from 35 bp to 500 bp can be sized to within 1 bp resolution and can be polymorphic in their lengths [2](#citation2).
-        In addition, ssDNA can be analyzed.
-        
-        So this was the perfect method to detect small differences in length and establish the length distribution for different nucleotides and conditions.
-        
-        Of course, this is no sequencing method and it cannot tell, which nucleotides are incorporated.
-        Furthermore, one needs primers labeled with a fluorescent dye to be detected by the fragment analyzer.
-        It was therefore not possible to analyze immobilized DNA because it was already labeled with the immobilization group.
-        
+        First of all, one needs primers labeled with a fluorescent dye to be detected by the fragment analyzer.
         The TdT reaction with the fluorescent-labeled primers was performed in the same way as with the unlabeled primers.
         We used primers labeled with 6-FAM.
+        In addition to that, ssDNA can be analyzed, so a PCR is not neccessary.
+        In conclusion, this was the perfect method to detect small differences in length and establish the length distribution for different nucleotides and conditions.
+        
+        However, it was not possible to analyze immobilized DNA because it was already labeled with the immobilization group.
+        Also, this is not a sequencing method and it cannot tell, which nucleotides are incorporated.
 
         # PCR
         It is difficult to sequence ssDNA strands, in particular those with polymorphic length.
-        So we wanted to develop a PCR system that would enable us to amplify polymorphic single strands with an unknown sequence and make them double-stranded in the process.
-        A standard PCR utilizes the fact that the specific sequence to be amplified is well-known.
-        Complementary PCR primers can be designed. We only know the sequence of the beginning of our strand because it belongs to our self-designed TdT reaction primer.
+        So we wanted to develop a PCR system that would enable amplification of polymorphic single strands with an unknown sequence and making them double-stranded in the process.
+        In a standard PCR the specific sequence to be amplified is well-known.
+        Complementary PCR primers can be designed. In contrast to that, we only know the sequence of the beginning of our strand because it belongs to our self-designed TdT reaction primer.
         Due to the semi-specific synthesis, however, the exact sequence of attached nucleotides is unknown.
         
         We propose a system in which the reverse primer for the PCR has a poly-T sequence.
@@ -121,7 +126,8 @@ block article
     +image(4, imgpath, "Operating principle of a PCR with a single-stranded template and poly-T reverse primer.")
 
     :markdown-it
-        Problems with this system are that the poly-T primer not only binds to the very end of, but to any poly-A sequence in the strand.
+        The problem with this system is that the poly-T primer does not only bind to the very end of the poly-A-tail, but to any poly-A sequence in the strand.
+        That results in an incomplete enlongation and amplification.
         One could avoid using dATP to elongate the strand and only use it for poly-A tailing, but this would limit the data capacity for encoding information. 
         Furthermore, the poly-T primer has a low annealing temperature, favoring unspecific PCR products [3](#citation3).
         
@@ -135,7 +141,7 @@ block article
         # Sequencing
         ## Cloning and Sanger Sequencing
         As our synthesized DNA fragments are polymorphic, Sanger sequencing did not seem to be an option at first.
-        But as it is fast, cost-effective, and easy to evaluate for short DNA fragments, we developed a system that enabled us to sequence random individual fragments out of the polymorphic batch.
+        But since it is fast, cost-effective, and easy to evaluate for short DNA fragments, we developed a system that enabled us to sequence random individual fragments out of the polymorphic batch.
         
         A PCR was performed and the product was treated as an insert for a cloning reaction.
         We used E. coli Top10 and E. coli DH10B (NEB 10-beta) and tried the GeneArt Seamless Cloning and Assembly Kit with the GeneArt pMA Vector, the Promega pGEM-T Easy Vector System, and the Invitrogen TOPO TA Cloning Kit.
@@ -164,8 +170,7 @@ block article
         Different SSB concentration were applied to TdT reactions. 
         Strands synthesized with and without SSBs were sequenced to find out if longer strands are generated with SSBs.
         
-        There are various other SSBs from different organisms with different properties. 
-        Due to a lack of time and because only few are commercially available, we did not get to try other SSBs.
+        There are various other SSBs from different organisms with different properties, which could not be tested. 
 
         ## Other Methods
         Other methods included adding short oligos to stabilize the strand by random local hybridizations and using unnatural bases.
