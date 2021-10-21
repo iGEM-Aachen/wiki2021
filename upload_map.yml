@@ -589,7 +589,7 @@ assets:
     upload_filename: T--Aachen--img--Results--2021-07-01_01.png
   assets/img/Results/2021-07-01_table.png:
     link_URL: https://2021.igem.org/wiki/images/c/ce/T--Aachen--img--Results--2021-07-01_table.png
-    md5: a3458bcadcb1beae005a57d0d45cfec9
+    md5: f4eeee1410c6947b14b1f582c6f00772
     upload_filename: T--Aachen--img--Results--2021-07-01_table.png
   assets/img/Results/2021-07-08_01.png:
     link_URL: https://2021.igem.org/wiki/images/c/c6/T--Aachen--img--Results--2021-07-08_01.png
@@ -645,7 +645,7 @@ assets:
     upload_filename: T--Aachen--img--Results--2021-10-05.png
   assets/img/Results/2021-10-13-14.png:
     link_URL: https://2021.igem.org/wiki/images/c/cf/T--Aachen--img--Results--2021-10-13-14.png
-    md5: 1d8fefabf8b80d09a8033cd7ce3aa5d9
+    md5: d95935df4b24484bf3ef4b5a936af320
     upload_filename: T--Aachen--img--Results--2021-10-13-14.png
   assets/img/Results/2021-10-13_01.png:
     link_URL: https://2021.igem.org/wiki/images/0/0d/T--Aachen--img--Results--2021-10-13_01.png
@@ -2111,7 +2111,7 @@ html:
     md5: b840e956ac31ce1bd58521f46f8543f8
   Results/index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Results
-    md5: 05133e43c4d6f98e1434d387319af0d2
+    md5: 548fa412ec1b8681854e0ee4c352bd6d
   Results\index.html:
     link_URL: https://2021.igem.org/Team:Aachen/Results
     md5: 3ae3651a7245a76f0aa61a36f1ead9cd
