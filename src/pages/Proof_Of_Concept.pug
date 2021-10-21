@@ -12,7 +12,7 @@ block article
         Since the official start of the competition in April 2021, we were able to develop a method to synthesize ssDNA strands with a pre-set sequence.
         Our project covered many different aspects like the immobilization of DNA, synthesis with our [Hardware](https://2021.igem.org/Team:Aachen/Hardware) and experimental confirmation through [Modeling](https://2021.igem.org/Team:Aachen/Model) as well as encoding and decoding information in DNA with our [Software](https://2021.igem.org/Team:Aachen/Software).
         We want to demonstrate that these parts can work together, thus making our project feasible as a whole.
-        Inspired by the scientific findings of George Church [1](#citation1), we would like to present a concept that is simple, but at the same time, very efficient.
+        Inspired by the scientific findings of George Church [1](#citation1), we would like to present a concept that is simple and efficient at the same time.
         
         # DNA Synthesis with TdT
         The performance of an optimal reaction in the later course of our project required a precise characterization of our enzyme, see [Results](https://2021.igem.org/Team:Aachen/Results). 
@@ -41,12 +41,12 @@ block article
         This indicates that a combination of high primer:nucleotide ratio with shorter incubation time and lower temperature would be crucial for our further experiments. 
         
         # DNA Immobilization
-        For the immobilization of our ssDNA primer on magnetic beads, we decided to use the streptavidin-biotin-bond (see [Experiments](https://2021.igem.org/Team:Aachen/Experiments#CyclicSynthesisandPrimerImmobilization)).
-        As this is one of the strongest non-covalent interactions [2](#citation2) and a neodymium magnet stick was used to extract the beads, no loss of primer could be detected in the conjugation or washing steps (see [Results]( https://2021.igem.org/Team:Aachen/Results#2PrimerImmobilization)). 
+        For the immobilization of our ssDNA primer on magnetic beads, we decided to use the streptavidin-biotin-bond (see [Experiments](https://2021.igem.org/Team:Aachen/Experiments#CyclicSynthesisandPrimerImmobilization)), as this is one of the strongest non-covalent interactions [2](#citation2).
+        A neodymium magnet stick was used to extract the beads, no loss of primer could be detected in the conjugation or washing steps (see [Results]( https://2021.igem.org/Team:Aachen/Results#2PrimerImmobilization)). 
         Thus, there was a low risk of contamination between the reaction solutions.
         Using a 100 nt primer prevented steric hindrance.
 
-        The magnets were equipped with a pipette tip as an envelope (the bottom opening of the tip was fused) to prevent permanent binding of the beads to the magnet and to be able to reuse the materials. 
+        The magnets were equipped with a pipette tip as an envelope (the bottom opening of the tip was sealed) to prevent permanent binding of the beads to the magnet and to be able to reuse the materials. 
         
         We showed that the ssDNA primers can be extracted from solution via magnetic beads and a magnet stick and that the DNA can be eluted with no significant loss after several washing steps. 
         It was shown that elongation is still possible in the immobilized state. 
@@ -56,7 +56,7 @@ block article
         To automate our method, we developed a custom design, see [Hardware](https://2021.igem.org/Team:Aachen/Hardware). The individual reactions take place in 2 mL Eppendorf reaction tubes. 
         In order to automate the elongation and washing steps, a framework of extruded aluminum profiles and a revolver with a mobile base was designed. 
         The revolver is used to fix the reaction vessels. Two ball bearings, between which the turret is suspended, ensure accuracy of 0.1125°. 
-        A stirring rod clamp can be attached to the wall shown in the picture to fix the rod magnet. The wall can be moved horizontally and vertically, which allows the magnet to be immersed in the solution. 
+        A stirring rod clamp can be attached to the wall to fix the rod magnet. The wall can be moved horizontally and vertically, which allows the magnet to be immersed in the solution. 
         This approach was chosen because it is simple, efficient, and feasible. The process is automated by a NodeMCU, which receives commands via a common web interface. 
         In the later course, only the DNA sequence has to be specified, and the synthesis runs without further manual steps.
                 
