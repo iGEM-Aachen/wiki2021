@@ -114,7 +114,9 @@ html(lang="en")
           .row.d-flex.justify-content-center.tiles
             .col-xl-3.col-lg-3.col-md-6.col-xs-12.align-self-center
               a(href="https://2021.igem.org/Team:Aachen/Memes")
-                img(src=require('./assets/img/homepage/bucket.svg')['default'])
+                div
+                  include ./assets/img/homepage/bucket_animated.svg
+                  //- img(src=require('./assets/img/homepage/bucket.svg')['default'])
             .col-xl-1.col-lg-1
             .col-xl-6.col-lg-6.col-md-6.col-xs-12.align-self-center
               h2 Extremely High Storage Capacity
