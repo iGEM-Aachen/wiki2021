@@ -143,7 +143,7 @@ block article
     :markdown-it
 
         Before the primer, there is an additional sequence added.
-        This is necessary for Nanopore Sequencing.
+        This is necessary for Nanopore sequencing.
         By clearing the sequences in the way described before, these are also removed automatically.
         If there is any sequence not containing one of the primers, it will be removed completely.
         This ensures that no corrupted data mess up the further steps.
@@ -171,8 +171,7 @@ block article
         Then, the first homonucleotides of all sequences are compared to find the most likely one.
         For that, the lengths and average qualities are used to find the most likely nulceotide.
         This step is repeated multiple times to recreate the whole sequence.
-        Usually, the sequences do not all have the same lengths.
-        Many sequences only contain a few homonucleotides, while some are much longer.
+        Usually, the sequences do not all have the same lengths and only contain a few homonucleotides, while some are much longer.
         
     - var imgpath = "" + require("../assets/img/Software/homonucleotide_overview.svg")["default"]
     +image(5, imgpath, "Overview of the representation of a sequence as homonucleotides")
@@ -181,7 +180,7 @@ block article
 
         To decide when to stop comparing the remaining sequences, a percentile is used.
         For example, the percentile can be 50%.
-        That means that the sequences are compared as long as at least 50 % of all sequences reach that lengths.
+        That means that the sequences are compared as long as at least 50% of all sequences reach these lengths.
         If 50 out of 100 sequences contain six homonucleotides and all others are shorter, for example, the first six homonucleotides are compared.
 
         After that step, the software saves the recreated sequence in a `fasta` file.
