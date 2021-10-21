@@ -413,7 +413,7 @@ body {
 
 .content,
 #references li {
-    a:not(.citation) {
+    a:not(.citation):not(.carousel-control-prev):not(.carousel-control-next) {
         color: $black;
         position: relative;
         text-decoration: none;
