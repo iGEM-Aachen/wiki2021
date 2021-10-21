@@ -8,23 +8,26 @@ block headVars
 block article
 
     link(rel="stylesheet", href="src/assets/lightbox/glightbox.min.css")
-    
-    :markdown-it(html)
 
-       # OSU Meetup
-       In March we joined the digital meet up of [iGEM OSU](https://2021.igem.org/Team:OhioState).
-       A lot of iGEM teams from all over the world were part of it. 
-       We discussed with the other teams where to start with their project and how to participate in the competition. 
-       In addition to that, we got to know our cooperation partners iGEM Tue, iGEM Düsseldorf, and iGEM Bonn.
-       
-    - var imgpath = "" + require("../assets/img/Collaborations/OSUMeetUp.jpg")["default"]
-    +image(1, imgpath, "Instagram story from the OSU meetup", 50) 
-    
     :markdown-it
-        
-        # Participating in Project's Emoji Insta Game
-        [iGEM Aix-Marseille](https://2021.igem.org/Team:Aix-Marseille) organized an Instagram game to describe iGEM projects with emojis.
-        We are grateful for the game because it gave a nice overview of the topics of other teams and it was fun to guess along.
+        # Online Escape Room Collaboration
+        During the corona crisis, it was hard for every team to meet up for collaborations in person.
+        Together with [iGEM Düsseldorf](https://2021.igem.org/Team:Duesseldorf), [Bonn](https://2021.igem.org/Team:Bonn), and [Kaiserslautern](https://2021.igem.org/Team:TU_Kaiserslautern) we thought of a digital activity we could work on collectively and provide for other people.
+        We came up with an online escape room: Solving riddles together and working yourselves through a story related to our projects ending at the giant jamboree! 
+        Over about 4 months, we worked out a script about a journey through the 4 cities of the participating teams.
+        We met in Discord occasionally to discuss the progress and exchange our ideas.
+        Every team contributed pictures for the storyline and 3 riddles, in which you have to apply your biological knowledge to solve them.
+        The parts were finally assembled by Annika from iGEM Bonn using Google forms.
+        Our riddles broached the issues of DNA synthesis, replication, and sequencing since we used all of these techniques during our project.
+        iGEM Bonn thematized lanthanide metal recycling, Kaiserslautern followed with a part about modular cloning and Düsseldorf finished with a few riddles about pathogen recognition in plants.
+        We had lots of fun creating the riddles and thank the other teams for the collaboration.
+        We hope that some people had fun playing the escape room! 
+
+        If you want to try the escape room for yourself, click [here](https://docs.google.com/forms/d/e/1FAIpQLSc_gZEv_zMvtW_8McYkuCj8cnNuWPG_XhM2ep2HWWwsu9f8EQ/viewform?usp=sf_link). 
+
+    - var imgNames = [{image: require("../assets/img/Collaborations/escapeRoom1.png")["default"]},{image: require("../assets/img/Collaborations/escapeRoom2.png")["default"]}, {image: require("../assets/img/Collaborations/escapeRoom3.png")["default"]}, {image: require("../assets/img/Collaborations/escapeRoom4.png")["default"]}, {image: require("../assets/img/Collaborations/escapeRoom5.png")["default"]},]
+    - var titles = [{title: "The starter page of the escape room"},{title:"Our first riddle thematizing DNA restriction and transcription"},{title:"The second riddle dealing with PCR primer design"},{title:"Our last riddle created in analogy to the amino acid codon wheel"},{title:"The final post for announcing the collaboration on social media"}]
+    +imgCarousel(1, imgNames, "gallery",titles)
     
     :markdown-it
 
@@ -35,44 +38,8 @@ block article
         We were really interested in how the attitude towards GMOs changes depending on age and education.
         
     - var imgpath = "" + require("../assets/img/Collaborations/Maastricht_all.png")["default"]
-    +image(2, imgpath, "Picture of our collaboration meeting")
-    
-    :markdown-it
+    +image(1, imgpath, "Picture of our collaboration meeting")
 
-        # iGEM Monument Challenge
-        During the summer [iGEM GO Paris Saclay](https://2021.igem.org/Team:GO_Paris-Saclay) organized the iGEM Monument Challenge.
-        We thought that it was a great idea and took part in it.
-        We showed the Karlsbrunnen, Aachen's Cathedral and the Elisenbrunnen. 
-        
-    - var imgNames = [{image: require("../assets/img/Collaborations/MonumentChallenge1.jpg")["default"]}, {image: require("../assets/img/Collaborations/MonumentChallenge2.jpg")["default"]}, {image: require("../assets/img/Collaborations/MonumentChallenge3.jpg")["default"]}]
-    +imgCarousel(1, imgNames)
-    
-    :markdown-it
-       
-        # Postcard Challenge
-        As every year [iGEM Düsseldorf](https://2021.igem.org/Team:Duesseldorf) of the Heinrich-Heine-University reached out to us offering to participate in their postcard challenge. 
-        The task was to design a synthetic biology or project-related postcard and to send copies to Düsseldorf.
-        In return, they send us postcards of the other participating teams. 
-        Our postcard shows a cartoon of the TdT enzyme with DNA.
-        The inspiration for the illustration was the TdT, which was the main enzyme of our project.
-
-    - var imgpath = "" + require("../assets/img/Collaborations/Postcard_Front.png")["default"]
-    +image(3, imgpath, "Our postcard.") 
-    
-    - var imgpath = "" + require("../assets/img/Collaborations/PostcardChallenge_all.jpeg")["default"]
-    +image(4, imgpath, "A selection of postcards.")
-    :markdown-it
-    
-        # Sustainable Development Goals (SDGs)
-        As we want to establish a sustainable DNA synthesis, we took part in two collaborations facing SDGs.
-    
-        ## Participation in iGEMxSDG Impact Challenge and Conference
-        During the competition, we were asked to give a presentation at the conference organized by [iGEM TAS_Taipei](https://2021.igem.org/Team:TAS_Taipei).
-        Through the event, we were able to help [iGEM Moscow City](https://2021.igem.org/Team:Moscow_City) to research vaccine transportation.
-        
-        ## SDG video Collaboration by iGEM Patras
-        We also submitted a video to [iGEM Patras](https://2021.igem.org/Team:Patras) which they included in their compilation about different teams and their contribution to tackle SDGs.        
-    
     :markdown-it
         
         # Science Communication Through Non-Typical Forms of Education in Greece
@@ -82,7 +49,7 @@ block article
         From our team, four members took part.
         
     - var imgpath = "" + require("../assets/img/Collaborations/Greece1.jpg")["default"]
-    +image(5, imgpath, "Group photo on the first day.")
+    +image(2, imgpath, "Group photo on the first day.")
 
     :markdown-it
 
@@ -117,9 +84,9 @@ block article
         Their goal was to educate people about the small changes that matter. 
         Thus, our team members gave out flyers with some ideas on what one could change in their everyday life to prevent worsening of the climate change.
     - var imgpath = "" + require("../assets/img/Collaborations/Greece4.jpg")["default"]
-    +image(6, imgpath, "Malte, Clemens and Viktor at the climate change protest march of Fridays For Future.") 
+    +image(3, imgpath, "Malte, Clemens and Viktor at the climate change protest march of Fridays For Future.") 
     - var imgpath = "" + require("../assets/img/Collaborations/Greece5.png")["default"]
-    +image(7, imgpath, "Science communication online event.") 
+    +image(4, imgpath, "Science communication online event.") 
 
     :markdown-it
     
@@ -128,25 +95,8 @@ block article
         This certainly fulfilled the idea of Erasmus+ to spread the love between countries and created many new international friendships. 
         Just like the magic of iGEM brings people all over the world together.
     - var imgpath = "" + require("../assets/img/Collaborations/Greece6.JPG")["default"]
-    +image(8, imgpath, "Group photo of all participating iGEM team members.")
-        
-    h1 iJET
-    div(style=" display: flex; justify-content: center; align-items: center; color: black;")
-        p(style=" width: 50%;margin-right:5vw;") iGEM is a lot more than just a science project. 
-            | It is about making the world a better place and bringing people from all over the world together. However, since the Covid-19 pandemic, this became a harder task. 
-            | That inspired
-            a(class="content" href="https://2020.igem.org/Team:TU_Darmstadt") igem Team Darmstadt 2020
-            |  to collaborate with our predecessors in a way that became pretty usual during the past year. 
-            | Together they managed to connect online with more than 25 other teams by letting the small paper plane iJET fly all over the world, compiling everything into a nice video.
-            | This years 
-            a(class="content" href="https://2021.igem.org/Team:TU_Darmstadt") iGEM Team Darmstadt
-            |  continued the tradition and sent the small paper plane on a journey again. 
-            | It flew through 33 different teams around the world including us. The product is a nice video produced by iGEM Team Darmstadt which can be seen here. 
-            | That collaboration is proof that even in those hard times we can unite together and take a moment to smile and be joyful.
-        div(style="width: 50%; height: 70%;")
-            - var videopath = "" + require("../assets/videos/iJET.mp4")["default"]
-            +video(videopath, "", 100) 
-    
+    +image(5, imgpath, "Group photo of all participating iGEM team members.")
+
     :markdown-it(html)
         
         # Rosalind Chronicles 
@@ -170,33 +120,83 @@ block article
         > In 1948 at the Medical School of the University of Pittsburgh she was awarded a professorship.
         
     - var imgpath = "" + require("../assets/img/Collaborations/rosalindChronicles1.jpg")["default"]
-    +image(9, imgpath, "The assembled Rosalind Chronicles") 
+    +image(6, imgpath, "The assembled Rosalind Chronicles") 
     - var imgpath = "" + require("../assets/img/Collaborations/rosalindChronicles2.jpg")["default"]
-    +image(10, imgpath, "The collaboration also featured pictures of the female members of all participating teams") 
+    +image(7, imgpath, "The collaboration also featured pictures of the female members of all participating teams") 
     - var imgpath = "" + require("../assets/img/Collaborations/rosalindChronicles3.png")["default"]
-    +image(11, imgpath, "Women in STEM workshop organized by iGEM Concordia, ULaval, Patras and Thessaloniki ") 
+    +image(8, imgpath, "Women in STEM workshop organized by iGEM Concordia, ULaval, Patras and Thessaloniki ") 
+
+    h1 iJET
+    div(style=" display: flex; justify-content: center; align-items: center; color: black;")
+        p(style=" width: 50%;margin-right:5vw;") iGEM is a lot more than just a science project. 
+            | It is about making the world a better place and bringing people from all over the world together. However, since the Covid-19 pandemic, this became a harder task. 
+            | That inspired
+            a(class="content" href="https://2020.igem.org/Team:TU_Darmstadt") igem Team Darmstadt 2020
+            |  to collaborate with our predecessors in a way that became pretty usual during the past year. 
+            | Together they managed to connect online with more than 25 other teams by letting the small paper plane iJET fly all over the world, compiling everything into a nice video.
+            | This years 
+            a(class="content" href="https://2021.igem.org/Team:TU_Darmstadt") iGEM Team Darmstadt
+            |  continued the tradition and sent the small paper plane on a journey again. 
+            | It flew through 33 different teams around the world including us. The product is a nice video produced by iGEM Team Darmstadt which can be seen here. 
+            | That collaboration is proof that even in those hard times we can unite together and take a moment to smile and be joyful.
+        div(style="width: 50%; height: 70%;")
+            - var videopath = "" + require("../assets/videos/iJET.mp4")["default"]
+            +video(videopath, "", 100) 
     
     :markdown-it
-        # Online Escape Room Collaboration
-        During the corona crisis, it was hard for every team to meet up for collaborations in person.
-        Together with [iGEM Düsseldorf](https://2021.igem.org/Team:Duesseldorf), [Bonn](https://2021.igem.org/Team:Bonn), and [Kaiserslautern](https://2021.igem.org/Team:TU_Kaiserslautern) we thought of a digital activity we could work on collectively and provide for other people.
-        We came up with an online escape room: Solving riddles together and working yourselves through a story related to our projects ending at the giant jamboree! 
-        Over about 4 months, we worked out a script about a journey through the 4 cities of the participating teams.
-        We met in Discord occasionally to discuss the progress and exchange our ideas.
-        Every team contributed pictures for the storyline and 3 riddles, in which you have to apply your biological knowledge to solve them.
-        The parts were finally assembled by Annika from iGEM Bonn using Google forms.
-        Our riddles broached the issues of DNA synthesis, replication, and sequencing since we used all of these techniques during our project.
-        iGEM Bonn thematized lanthanide metal recycling, Kaiserslautern followed with a part about modular cloning and Düsseldorf finished with a few riddles about pathogen recognition in plants.
-        We had lots of fun creating the riddles and thank the other teams for the collaboration.
-        We hope that some people had fun playing the escape room! 
 
-        If you want to try the escape room for yourself, click [here](https://docs.google.com/forms/d/e/1FAIpQLSc_gZEv_zMvtW_8McYkuCj8cnNuWPG_XhM2ep2HWWwsu9f8EQ/viewform?usp=sf_link). 
+        # iGEM Monument Challenge
+        During the summer [iGEM GO Paris Saclay](https://2021.igem.org/Team:GO_Paris-Saclay) organized the iGEM Monument Challenge.
+        We thought that it was a great idea and took part in it.
+        We showed the Karlsbrunnen, Aachen's Cathedral and the Elisenbrunnen. 
+        
+    - var imgNames = [{image: require("../assets/img/Collaborations/MonumentChallenge1.jpg")["default"]}, {image: require("../assets/img/Collaborations/MonumentChallenge2.jpg")["default"]}, {image: require("../assets/img/Collaborations/MonumentChallenge3.jpg")["default"]}]
+    +imgCarousel(3, imgNames)
+    
+    :markdown-it
+       
+        # Postcard Challenge
+        As every year [iGEM Düsseldorf](https://2021.igem.org/Team:Duesseldorf) of the Heinrich-Heine-University reached out to us offering to participate in their postcard challenge. 
+        The task was to design a synthetic biology or project-related postcard and to send copies to Düsseldorf.
+        In return, they send us postcards of the other participating teams. 
+        Our postcard shows a cartoon of the TdT enzyme with DNA.
+        The inspiration for the illustration was the TdT, which was the main enzyme of our project.
 
-    - var imgNames = [{image: require("../assets/img/Collaborations/escapeRoom1.png")["default"]},{image: require("../assets/img/Collaborations/escapeRoom2.png")["default"]}, {image: require("../assets/img/Collaborations/escapeRoom3.png")["default"]}, {image: require("../assets/img/Collaborations/escapeRoom4.png")["default"]}, {image: require("../assets/img/Collaborations/escapeRoom5.png")["default"]},]
-    - var titles = [{title: "The starter page of the escape room"},{title:"Our first riddle thematizing DNA restriction and transcription"},{title:"The second riddle dealing with PCR primer design"},{title:"Our last riddle created in analogy to the amino acid codon wheel"},{title:"The final post for announcing the collaboration on social media"}]
-    +imgCarousel(3, imgNames, "gallery",titles)
+    - var imgpath = "" + require("../assets/img/Collaborations/Postcard_Front.png")["default"]
+    +image(9, imgpath, "Our postcard.") 
+    
+    - var imgpath = "" + require("../assets/img/Collaborations/PostcardChallenge_all.jpeg")["default"]
+    +image(10, imgpath, "A selection of postcards.")       
 
+    :markdown-it(html)
 
+       # OSU Meetup
+       In March we joined the digital meet up of [iGEM OSU](https://2021.igem.org/Team:OhioState).
+       A lot of iGEM teams from all over the world were part of it. 
+       We discussed with the other teams where to start with their project and how to participate in the competition. 
+       In addition to that, we got to know our cooperation partners iGEM Tue, iGEM Düsseldorf, and iGEM Bonn.
+       
+    - var imgpath = "" + require("../assets/img/Collaborations/OSUMeetUp.jpg")["default"]
+    +image(11, imgpath, "Instagram story from the OSU meetup", 50) 
+
+    :markdown-it
+    
+        # Sustainable Development Goals (SDGs)
+        As we want to establish a sustainable DNA synthesis, we took part in two collaborations facing SDGs.
+    
+        ## Participation in iGEMxSDG Impact Challenge and Conference
+        During the competition, we were asked to give a presentation at the conference organized by [iGEM TAS_Taipei](https://2021.igem.org/Team:TAS_Taipei).
+        Through the event, we were able to help [iGEM Moscow City](https://2021.igem.org/Team:Moscow_City) to research vaccine transportation.
+        
+        ## SDG video Collaboration by iGEM Patras
+        We also submitted a video to [iGEM Patras](https://2021.igem.org/Team:Patras) which they included in their compilation about different teams and their contribution to tackle SDGs. 
+
+    :markdown-it
+        
+        # Participating in Project's Emoji Insta Game
+        [iGEM Aix-Marseille](https://2021.igem.org/Team:Aix-Marseille) organized an Instagram game to describe iGEM projects with emojis.
+        We are grateful for the game because it gave a nice overview of the topics of other teams and it was fun to guess along.
+    
     :markdown-it(html)
         # Risk Assessment Webinar 
         To further deepen our understanding of safety during our iGEM journey, we participated in a Risk Assessment Webinar organized by [iGEM Heidelberg](https://2021.igem.org/Team:Heidelberg). 
@@ -226,7 +226,7 @@ block article
         We are grateful to iGEM Team Heidelberg that we could join this Webinar!
         
     - var imgpath = "" + require("../assets/img/Collaborations/Collab mit Heidelberg.jpg")["default"]
-    +image(12, imgpath, "Risk Assessment Webinar with iGEM Heidelberg, MTU and Saint Joseph.", 60) 
-    
+    +image(12, imgpath, "Risk Assessment Webinar with iGEM Heidelberg, MTU and Saint Joseph.", 60)
+
     script(src="src/assets/lightbox/glightbox.min.js")
     script(src="src/assets/lightbox/gallery.js")
