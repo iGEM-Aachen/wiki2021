@@ -35,7 +35,7 @@ block article
         # Encoding Data on DNA
 
     - var imgpath = "" + require("../assets/img/Software/encoding.svg")["default"]
-    +image(1, imgpath, "Overview over the steps needed for encoding data into DNA.", 80)
+    +image(1, imgpath, "Overview of the steps required to encode data in DNA.", 60,0.8,true)
 
     :markdown-it(html)
 
@@ -68,7 +68,7 @@ block article
         Then, the software converts each byte into trits.
         
         The count of values a number can take is calculated by the formula $b^l$.
-        In this $b$ is the base of the number system, e.g., '2' for the binary system, and$^l$ is the number of digits.
+        In this $b$ is the base of the number system, e.g., $2$ for the binary system, and the superscript 1 is the number of digits.
         Since a byte consists of eight bits with two states each, every byte can have $2^8=256$ states.
         To represent the information of one byte with trits, we need enough trits to represent at least $256$ different states.
         Five trits can represent $243$ states, since $3^5=243$.
@@ -92,7 +92,7 @@ block article
         This means that the encoded data also needs to contain the information of how many bits were padded to the end.
         Due to this additional complexity, other conversions than from byte to tryte are not implemented in our software right now.
 
-        # Decoding Data from Sequencing Data
+        # Decoding Data from Sequenced DNA
 
     - var imgpath = "" + require("../assets/img/Software/decoding.svg")["default"]
-    +image(2, imgpath, "Overview over the steps for retrieving information from DNA.", 80)
+    +image(2, imgpath, "Overview of the steps to retrieve information from DNA.", 60,0.8,true)
