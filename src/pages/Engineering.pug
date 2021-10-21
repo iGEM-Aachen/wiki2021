@@ -79,36 +79,6 @@ block article
     
     :markdown-it
 
-        # Preventing secondary structures
-
-        Due to the formation of duplex secondary structures, especially with guanine, the synthesis of longer strands by the TdT is complicated. 
-        This problem often prevents the extension of all strands to more than 1000 nt. 
-        To study this context we ordered especially a GC-rich primer with a GC share of 80%.
-        Further, we designed sequences in the primer that tend to form secondary structures.
-        In order to tackle this problem, we established the use of single-stranded binding proteins [(SSBs)](https://2021.igem.org/Team:Aachen/Results#SecondaryStructures-SSBs). 
-        Through the first tests, we had to figure out which concentration of SSBs suits the best for our experiments. 
-        Too high concentrations obstruct the TdT from elongating the primer and too low concentrations showed no significant effects. 
-        After testing various concentrations and finding an optimal one we faced another problem. 
-        In order to analyze the synthesized ssDNA it was crucial to separate the SSBs from the synthesized strand.
-        Following multiple approaches, we found out that running a PCR is the best way to “separate” the DNA from the SSB [(PCR)](https://2021.igem.org/Team:Aachen/Experiments#PCR). 
-        Additionally, we could clone these PCR products and sequence them by [Sanger-Sequencing](https://2021.igem.org/Team:Aachen/Experiments#Sequencing). 
-        This method allowed us to examine the synthesized DNA strands in more detail.  
-        By adding single-stranded binding proteins from Thermo Fisher Scientific, we were able to show that SSBs can be used to partially prevent the formation of secondary structures. 
-        As a result, significantly longer strands could be amplified.
-        
-    - var imgpath = "" + require("../assets/img/Experiments/GC_oligo_ohne_SSBs.png")["default"]
-    +image(4, imgpath, "<b> Inserts from the approach without SSBs</b>. 9 clones with inserts &lt 150 bp. SeqMan Pro 15 plot.",80,0.8)
-    
-    - var imgpath = "" + require("../assets/img/Experiments/GC_Oligo_mit_SSB.png")["default"]
-    +image(5, imgpath, "<b> Inserts that were elongated with SSBs </b>. 4 clones with inserts &gt 300 bp, A01 clone up showed an insert with 978 nucleotides added to the GC-rich primer. SeqMan Pro 15 plot.",80,0.8)
-
-    :markdown-it
-    
-        As a conclusion from our experiments, it can be seen that we were able to reduce the formation of secondary structures in ssDNA by using SSBs. 
-        Adding them to a TdT tailing reaction in solution seems to significantly enhance the elongation capacity. 
-        
-        [//]: # (Ist dir das kritisch genug :D, Wichert meinte das man ruhig euphemistischer schreiben kann. Kannst aber ruhig noch ergänzen)
-        
         # Immobilization Methods
         
         Immobilization of the primer was a key element of our project to establish cyclic synthesis with the DIP method (see [Hardware](https://2021.igem.org/Team:Aachen/Hardware#DIPsy). 
@@ -172,4 +142,38 @@ block article
 
         Experiencing many obstacles during the project towards successful semi-specific cyclic synthesis, we learned that constantly re-thinking ideas and adapting previously tested methods is the key to an effective engineering process.
 
+        
+        # Preventing secondary structures
+
+        Due to the formation of duplex secondary structures, especially with guanine, the synthesis of longer strands by the TdT is complicated. 
+        This problem often prevents the extension of all strands to more than 1000 nt. 
+        To study this context we ordered especially a GC-rich primer with a GC share of 80%.
+        Further, we designed sequences in the primer that tend to form secondary structures.
+        In order to tackle this problem, we established the use of single-stranded binding proteins [(SSBs)](https://2021.igem.org/Team:Aachen/Results#SecondaryStructures-SSBs). 
+        Through the first tests, we had to figure out which concentration of SSBs suits the best for our experiments. 
+        Too high concentrations obstruct the TdT from elongating the primer and too low concentrations showed no significant effects. 
+        After testing various concentrations and finding an optimal one we faced another problem. 
+        In order to analyze the synthesized ssDNA it was crucial to separate the SSBs from the synthesized strand.
+        Following multiple approaches, we found out that running a PCR is the best way to “separate” the DNA from the SSB [(PCR)](https://2021.igem.org/Team:Aachen/Experiments#PCR). 
+        Additionally, we could clone these PCR products and sequence them by [Sanger-Sequencing](https://2021.igem.org/Team:Aachen/Experiments#Sequencing). 
+        This method allowed us to examine the synthesized DNA strands in more detail.  
+        By adding single-stranded binding proteins from Thermo Fisher Scientific, we were able to show that SSBs can be used to partially prevent the formation of secondary structures. 
+        As a result, significantly longer strands could be amplified.
+        
+    - var imgpath = "" + require("../assets/img/Experiments/GC_oligo_ohne_SSBs.png")["default"]
+    +image(4, imgpath, "<b> Inserts from the approach without SSBs</b>. 9 clones with inserts &lt 150 bp. SeqMan Pro 15 plot.",80,0.8)
+    
+    - var imgpath = "" + require("../assets/img/Experiments/GC_Oligo_mit_SSB.png")["default"]
+    +image(5, imgpath, "<b> Inserts that were elongated with SSBs </b>. 4 clones with inserts &gt 300 bp, A01 clone up showed an insert with 978 nucleotides added to the GC-rich primer. SeqMan Pro 15 plot.",80,0.8)
+
+    :markdown-it
+    
+        As a conclusion from our experiments, it can be seen that we were able to reduce the formation of secondary structures in ssDNA by using SSBs. 
+        Adding them to a TdT tailing reaction in solution seems to significantly enhance the elongation capacity. 
+        
+        [//]: # (Ist dir das kritisch genug :D, Wichert meinte das man ruhig euphemistischer schreiben kann. Kannst aber ruhig noch ergänzen)
+        
+        
+        
+        
         
