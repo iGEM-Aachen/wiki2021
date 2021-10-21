@@ -35,7 +35,7 @@ block article
         # Encoding Data on DNA
 
     - var imgpath = "" + require("../assets/img/Software/encoding.svg")["default"]
-    +image(1, imgpath, "Overview of the steps required to encode data in DNA.", 60,0.8,true)
+    +image(1, imgpath, "Overview over the steps needed for encoding data into DNA.", 60,0.8,true)
 
     :markdown-it(html)
 
@@ -92,7 +92,115 @@ block article
         This means that the encoded data also needs to contain the information of how many bits were padded to the end.
         Due to this additional complexity, other conversions than from byte to tryte are not implemented in our software right now.
 
-        # Decoding Data from Sequenced DNA
+        # Decoding and Error Correction on Sequencing Data
 
     - var imgpath = "" + require("../assets/img/Software/decoding.svg")["default"]
-    +image(2, imgpath, "Overview of the steps to retrieve information from DNA.", 60,0.8,true)
+    +image(2, imgpath, "Overview over the steps for retrieving information from DNA.", 70)
+
+    :markdown-it
+
+        As you can see in figure 2, decoding mainly works just as encoding but backwards.
+        However, one additional step is necessary before data can be decoded.
+        From the sequencing data, we first must retrieve the original DNA sequence that was used for synthesis.
+        To do so, we must understand what happens in synthesis.
+        As discussed before, an unknown number of nucleotides is attached in each step.
+        This is due to the semi-specific approach.
+        In addition to that, various primers and other sequences are added to both ends of the encoded sequence.
+        This partly happends during synthesis and partly in preparation for sequencing.
+
+    - var imgpath = "" + require("../assets/img/Software/fastq_example.jpg")["default"]
+    +image(3, imgpath, "Example of DNA sequences in a fastq file", 100)
+
+    :markdown-it
+
+        The decoding starts with a `fastq` file containing sequencing data.
+        Figure 3 shows an example of such a file.
+        Each read from sequencing is expressed by four lines.
+        While the first and third line can contain an identifier and description of the sequence, the second and fourth line are more important to us.
+        The second line contains the actual DNA sequence.
+        In line four the quality of the sequence is encoded.
+        This is important to assess how confident the sequencing was.
+        The quality is encoded in values reaching from 0x21 (33 in decimal) to 0x7E (126) and displayed as the corresponding ASCII character.
+        So a "!" marks the lowest quality, while a "~" stands for the highest quality.
+
+        ## Removing Primers and Cleaning Up Data
+
+    :markdown-it
+
+        The first step necessary for decoding is the removal of the primer since this does not contain any relevant information.
+        To do so, the software scans every sequence for a subsequence that is similar to the primer.
+        If it finds the primer in a sequence, it deletes the primer and everything prior to it from the sequence.
+        If it does not find a primer, it deletes the whole sequence from the dataset.
+        As shown in figure 4, the sequence encoding information begins right behind the primer.
+        So by removing the primer and everything before it, we know exactly that the sequence now begins with the encoding sequence.
+        After that, this step is repeated with the reverse primer.
+        The reverse primer starts directly behind the encoding sequence.
+        After removing it and everything behind it, all sequences now only contain the relevant information.
+
+    - var imgpath = "" + require("../assets/img/Software/sequence_overview.svg")["default"]
+    +image(4, imgpath, "Overview of the components of a sequence")
+
+    :markdown-it
+
+        Before the primer, there is an additional sequence added.
+        This is necessary for Nanopore sequencing.
+        By clearing the sequences in the way described before, these are also removed automatically.
+        If there is any sequence not containing one of the primers, it will be removed completely.
+        This ensures that no corrupted data mess up the further steps.
+
+        ### Finding Primer Sequences with Errors
+
+        When searching for primers in the sequences, not only perfect matches should be found.
+        In synthesis and sequencing, errors can happen in various places.
+        So all subsequences that are *very similar* to a primer should be classified as such.
+        For that classification, the levenshtein distance is used.
+        This is a very popular measure for all kinds of string comparisons.
+        It describes how many insertions, deletions, or substitutions of symbols are needed to match two strings.
+        For example, the seqeunces "ACGT" and "ACGA" have a levenshtein distance of 1, since one substitution is needed to match them.
+        In the same manner, the sequences "ACGT" and "ACGTA" also have a distance of 1, since they can be matched with one insertion in the first sequence.
+
+        ## Merging the Sequences
+
+        After all additional parts are removed from the sequences, only the relevant parts should be left.
+        Now the obvious next step would be to take a sequence, merge all homonucleotides into single nucleotides and go on with decoding.
+        However, many potential sources of error make it unlikely that every sequence contains full and correct information.
+        To compensate for that, our software compares all remaining sequences to find the most likely original sequence.
+        First, every sequence gets transformed into a sequence of homonucleotides internally.
+        Each homonucleotide holds information about the nucleotide of which it is composed, but also its length and average quality.
+        This is visualized in figure 5.
+        Then, the first homonucleotides of all sequences are compared to find the most likely one.
+        For that, the lengths and average qualities are used to find the most likely nulceotide.
+        This step is repeated multiple times to recreate the whole sequence.
+        Usually, the sequences do not all have the same lengths and only contain a few homonucleotides, while some are much longer.
+        
+    - var imgpath = "" + require("../assets/img/Software/homonucleotide_overview.svg")["default"]
+    +image(5, imgpath, "Overview of the representation of a sequence as homonucleotides")
+
+    :markdown-it
+
+        To decide when to stop comparing the remaining sequences, a percentile is used.
+        For example, the percentile can be 50%.
+        That means that the sequences are compared as long as at least 50% of all sequences reach these lengths.
+        If 50 out of 100 sequences contain six homonucleotides and all others are shorter, for example, the first six homonucleotides are compared.
+
+        After that step, the software saves the recreated sequence in a `fasta` file.
+        This is similar to the fastq file mentioned before, but does not contain a quality measure.
+        The sequence in that file can then be used to decode the original information again.
+        As said before, this works in the same manner as encoding but backwards.
+
+        # Application as Demonstration for Integrated Human Practices
+
+        As described on our [human practices page](Human_Practices#ConversationattheCityArchiveinAachen), we reached out to the city archive in Aachen to discuss potential use cases of our proposed storage solution.
+        The city archive has digitalized many historical documents like newspapers.
+        As a technology demonstration, we encoded a scan of a newspaper article from 1933.
+
+    - var imgpath = "" + require("../assets/img/Software/EchoderGegenwart_1933.png")["default"]
+    +image(6, imgpath, "Demonstration of our encoding software", 100)
+
+    :markdown-it
+
+        Figure 4 shows a clipping of the newspaper page as well as an extract from the encoded sequence.
+        With the link below, you can download the full sequence as a fasta file.
+
+    - var filepath = "" + require("../assets/img/Software/EchoderGegenwart_1933_jpg_fasta.zip")["default"]
+    +extralink("Echo der Gegenwart", filepath)
