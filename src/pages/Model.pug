@@ -38,7 +38,7 @@ block article
         In order to be able to apply this model some assumptions need to be made:
         
         * the reverse reaction does not happen
-        * the pool size of DNAn  has no influence on the reactions velocity vn
+        * the pool size of DNAn does not influence the reactions velocity vn
         * enzyme and DNA dissociate after each reaction
 
         
@@ -102,10 +102,10 @@ block article
         Because we are facing an optimization problem in our system, we need data like this to find the ideal reaction conditions.
     
     - var imgpath = "" + require("../assets/img/modeling Bilder/3D_colourmap.png")["default"]
-    +image(7,imgpath,"Percentage of strands with atleast one elongation in dependence of time and dNTP starting concentration.",80,1.1,true)
+    +image(7,imgpath,"Percentage of strands with at least one elongation in dependence of time and dNTP starting concentration.",80,1.1,true)
     
     - var imgpath = ""+require("../assets/img/modeling Bilder/enzym-abhängigkeit.png")["default"]
-    +image(8,imgpath,"Percentage of strands with atleast one elongation in dependence of time and enzyme units.",80,1.1,true)
+    +image(8,imgpath,"Percentage of strands with at least one elongation in dependence of time and enzyme units.",80,1.1,true)
     
     :markdown-it
     
@@ -136,7 +136,7 @@ block article
         Instead of using a time-dependent pool for the ATPs in the reaction equations, we just used a constant value for the ATP concentration. 
         This assumption was made because with the three-dimensional plot we found out that the starting concentration of the nucleotides barely influences the kinetics of the reaction network. 
         That makes sense considering the phenomenon of substrate saturating, which plays a key factor in enzyme kinetics. 
-        So for our examined time interval for the elongation process, we make the assumption that our system is saturated with ATP.
+        So for our examined time interval for the elongation process, we assume that our system is saturated with ATP.
        
     - var imgpath = ""+require("../assets/img/modeling Bilder/regression_of_CE-data.jpg")["default"]
     +image(9,imgpath,"Regression of the capillary electrophoresis data. Results for the first three pools (DNA0: non-elongated DNA strand, DNA1: strand which got elongated by one base pair, DNA2: strand which got elongated by two base pairs).",100,1.1,true)
