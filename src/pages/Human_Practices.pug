@@ -6,13 +6,6 @@ block headVars
     - var requireMathJax = true
     
 block article
-    :markdown-it
-        # Human Practices 
-        
-        Connecting to the world is an essential part of science. 
-        We take steps beyond the lab and communicate with the world, making science more accessible to every person regardless of their background and age. 
-        During our journey, we reached out to different people. 
-        We explained the principles of DNA data to potential users, the coworkers of the city archive in Aachen and also exchanged ideas with various experts and professors from different countries around the world. 
     
     :markdown-it
         # Integrated Human Practices    
@@ -23,13 +16,18 @@ block article
         To visualize the progress of integrating new ideas, we put together a timeline.
 
     - var imgpath = "" + require("../assets/img/Human Practices/ihp_timeline.svg")["default"]
-    +image(1, imgpath, "", 100)
+    +image(1, imgpath, "", 110,true,true)
+    :markdown-it
+        # Human Practices 
+        
+        Connecting to the world is an essential part of science. 
+        We take steps beyond the lab and communicate with the world, making science more accessible to every person regardless of their background and age. 
+        During our journey, we reached out to different people. 
+        We explained the principles of DNA data to potential users, the coworkers of the city archive in Aachen and also exchanged ideas with various experts and professors from different countries around the world. 
 
-    :markdown-it(html)
         # Conversation at the City Archive in Aachen
         
-        To put our ideas into practice, we reached out to a potential user of our DNA data storage.
-        We visited the city archive in Aachen to discuss long-term storage. 
+        To put our ideas into practice, we reached out to a potential user of our DNA data storage and visited the city archive in Aachen to discuss long-term storage. 
         Archive manager Dr. René Rohrkamp explained to us that the primary task of an archive is the disposal of information.
         Only 1-2% of the local information is stored in a city archive.
         
@@ -42,21 +40,15 @@ block article
         During our discussion, we also addressed the topic of data loss.
         Today a lot of information is clarified via email, thus it is neither signed and stamped nor stored, which is why data is lost, and a void is left. 
         
-        Also, we wanted to know if the value of a document is diminished by digital storage.
         Digitalization is desirable, as this makes documents available to the general public on the internet.
         In conclusion, the city archive is looking for cheaper, uniform, and safe data storage.
-
-    - var imgpath = "" + require("../assets/img/Human Practices/city archive.jpg")["default"]
-    +image(2, imgpath, "City archive Aachen.", 60,0.8,true)
-    
-    - var imgpath = "" + require("../assets/img/Human Practices/Group picture.jpg")["default"]
-    +image(3, imgpath, "")   
-    
-    - var imgpath = "" + require("../assets/img/Human Practices/discussion_city_archive.jpg")["default"]
-    +image(4, imgpath, "")
+        To make the first steps achieving this, we encoded a newspaper article from 1933 in our code (see [Software](https://2021.igem.org/Team:Aachen/Software)).
+        
+    - var imgNames = [{image: require("../assets/img/Human Practices/city archive.jpg")["default"]}, {image: require("../assets/img/Human Practices/Group picture.jpg")["default"]}, {image: require("../assets/img/Human Practices/discussion_city_archive.jpg")["default"]}]
+    +imgCarousel(1, imgNames,gallery)        
     
     - var imgpath = "" + require("../assets/img/Human Practices/Old document.jpg")["default"]
-    +image(5, imgpath, "Old document which is about to be digitilized.", 60,0.8,true)
+    +image(2, imgpath, "Old document which is about to be digitilized.", 60,0.8,true)
     
     :markdown-it(html)
         # Meeting with George Church
@@ -79,7 +71,7 @@ block article
         We think this was one of the most inspiring meetings we had.
         
     - var imgpath = "" + require("../assets/img/Human Practices/meeting_george_church.png")["default"]
-    +image(6, imgpath, "")        
+    +image(3, imgpath, "")        
  
     :markdown-it
         # Meeting with Steven Benner
@@ -96,7 +88,43 @@ block article
         In conclusion, we had an enriching conversation that provided valuable tips and tricks for the implementation of our project. 
        
     - var imgpath = "" + require("../assets/img/Human Practices/meeting_benner.jpeg")["default"]
-    +image(7, imgpath, "")
+    +image(4, imgpath, "")
+    
+    :markdown-it
+        # Meetings with Sebastian Palluk
+    
+        Dr. Sebastian Palluk is co-founder and CTO of Ansa Biotechnologies, a startup developing enzymatic DNA synthesis technologies.
+        He participated in the iGEM competition himself and experienced that synthesizing DNA on his own was challenging. 
+        Now he works with a genetically modified TdT for biological applications and aims to improve the synthesis system.
+        Mr. Palluk was probably one of our most important supporters. 
+        We met with him three times in total and had frequent email contact during the whole project.
+        
+        The first meeting started by presenting our ideas and two approaches to encode data on DNA.
+        Furthermore, we discussed four different ideas to prevent the formation of secondary structures of ssDNA and the affinity of the TdT for 3'OH base modifications.
+        Mr. Palluk commented on our ideas on immobilization.
+        Briefly, he explained  streptavidin immobilization on magnetic beads as well as sequencing techniques like nanopore sequencing and capillary electrophoresis to view the length distribution.
+        To conclude our first meeting, Mr. Palluk gave us a great overview of many important tasks we have to tackle in the future and encouraged us to do our best for the project. 
+        He believed that our unique interdisciplinary team would create a great project, but implementing everything we planned would be more challenging than we thought.
+
+        In our second meeting with Mr. Palluk at the beginning of May, we presented our possibilities to hinder secondary structures.
+        He recommended starting our first experiments in solution with purification steps to establish our methods.
+        Furthermore, he emphasized that it would be efficient to start working on the immobilization while conducting our first experiments.
+        Mr. Palluk advised us to analyze the length of strands with gel electrophoresis and explained that driving PCR reaction beforehand is not necessary. 
+        Afterward, we discussed the possibilities for sequencing our strands, where he explained that Sanger sequencing would only be possible if we performed vector cloning beforehand.
+
+        In our third meeting at the beginning of September, we discussed our ideas for building a hardware and explained the maleimide-cysteine binding system.
+        Additionally, we examined the problem we have faced with our immobilization.
+        With our current system, we would lose lots of maleimides, which is too expensive for us. 
+        Mr. Palluk suggested using a peptide tag to bind primers with homologous sequences and sticky-end "overhangs". 
+        The TdT would bind at the overhangs and could be released by heating.
+        Together, we thought of a "plan B" for the immobilization.
+        To create base transitions in solution, we should add primer in excess and let the reaction finish until all nucleotides are incorporated, and add another nucleotide.
+        To put it in a nutshell, Mr. Palluk was an essential expert for us who helped create many solutions to our problem.
+        Nobody knows the TdT better than he does.
+        Thank you again Mr. Palluk, for answering all our questions and emails!
+
+    - var imgpath = "" + require("../assets/img/Human Practices/2021-09-07_Meeting Palluk.png")["default"]
+    +image(5, imgpath, "")
     
     :markdown-it
         # Meetings with Jost Muth and Lena Julie Freund from the Fraunhofer IME Aachen 
@@ -123,7 +151,7 @@ block article
         Therefore, sequencing was successful at the end of the day, and we had a lot of new data for our project progress. 
         
     - var imgpath = "" + require("../assets/img/Human Practices/Max Schmidt Bild.jpg")["default"]
-    +image(8, imgpath, "")
+    +image(6, imgpath, "")
     
     :markdown-it
         # Meetings with Elmar Weinhold 
@@ -141,6 +169,36 @@ block article
         In September, we also turned to Prof. Weinhold when we were struggling with our immobilization system. 
         He advised us to try out the streptavidin-biotin magnetic immobilization, which ended up being our preferred system. 
         Mr. Weinhold always met us with lots of positivity and enthusiasm and motivated us throughout the competition.  
+        
+        
+        # Meeting with Dörte Rother, Torsten Sehl and Jan-Dirk Spöring 
+        
+        In June we met with Prof. Dr. Dörte Rother, Dr. Torsten Sehl and Jan-Dirk Spöring from FZ Jülich from the group of Biocatalysis. 
+        Mrs. Rother Rother is an expert in enzyme immobilization and showed us possibilities that suit our purposes. 
+        
+        Back then, we have not decided whether we should immobilize a biotinylated primer on a streptavidin plate, which George Church inspires, or use our DIP method. 
+        Mrs. Rother elaborated every immobilization method with us, showing us advantages and challenges. 
+        For the case that we chose the first approach, she warned us that immobilizing the enzyme by dialysis or any other kind of membrane could be disadvantageous because the material fast could block it. 
+        For the DIP method, she advised us to immobilize a biotin-labeled primer on a streptavidin-coated magnetic bead and to use a magnetic stick. 
+        A few months later, this turned out to be our preferred immobilization method.
+        She also took notice that the efficiency of the enzyme could decrease after the immobilization.
+        In conclusion, we had an informative and pleasant discussion. 
+        
+    :markdown-it
+        # Meeting with Martin Zimmermann
+        
+        At the beginning of our project, we had severe problems with our analytics.
+        Gels did not run well, samples were not visible, and many team members had little to no lab experience.
+        Dr. Martin Zimmermann is both a Study Advisor of the Aachen Biology and Biotechnology Department and an expert in many biological fields, including biological analysis methods.
+        During the whole project, we repeatedly exchanged E-Mails, and Mr. Zimmermann examined our issues detailly.
+        
+        We met with Mr. Zimmermann at the end of May. He introduced us to denaturing polyacrylamide gels and helped us establish the right analytics for our unconventional samples.
+        Among other topics, we discussed gel runtime, gel thickness, the correct voltage, and staining methods of our gels.
+        To get a better resolution, Mr. Zimmermann advised us to use TBE buffer which has a higher buffer capacity.
+        Furthermore, he suggested silver staining as a sustainable method to stain PAA gels and longer primers to establish better reaction conditions for our enzyme, which we implemented rapidly.
+        At the end of our Meeting, Mr. Zimmermann once more drew attention to polyacrylamide.
+        He advised us to be extra careful when handling the neurotoxic chemical.
+        This was included in our [Safety Guidelines](https://2021.igem.org/Team:Aachen/Safety).
         
     :markdown-it
         # Meeting with Florian Kraft
@@ -181,75 +239,10 @@ block article
         Mr. Rückert then explained all the steps: preparing the strands with a base caller, attaching an adapter and a poly-A tail, and phosphorylating the 5' end.
         Nanopore sequencing is an important part of our project, and this informative meeting gave us a clearer idea about its usage. 
 
-
-        # Meeting with Dörte Rother, Torsten Sehl and Jan-Dirk Spöring 
-        
-        In June we met with Prof. Dr. Dörte Rother, Dr. Torsten Sehl and Jan-Dirk Spöring from FZ Jülich from the group of Biocatalysis. 
-        Mrs. Rother Rother is an expert in enzyme immobilization and showed us possibilities that suit our purposes. 
-        
-        Back then, we have not decided whether we should immobilize a biotinylated primer on a streptavidin plate, which George Church inspires, or use our DIP method. 
-        Mrs. Rother elaborated every immobilization method with us, showing us advantages and challenges. 
-        For the case that we chose the first approach, she warned us that immobilizing the enzyme by dialysis or any other kind of membrane could be disadvantageous because the material fast could block it. 
-        For the DIP method, she advised us to immobilize a biotin-labeled primer on a streptavidin-coated magnetic bead and to use a magnetic stick. 
-        A few months later, this turned out to be our preferred immobilization method.
-        She also took notice that the efficiency of the enzyme could decrease after the immobilization.
-        In conclusion, we had an informative and pleasant discussion. 
         
     - var imgpath = "" + require("../assets/img/Human Practices/2021-06-11_Meeting-Rother.png")["default"]
-    +image(9, imgpath, "")
-    
-    :markdown-it
-        # Meeting with Martin Zimmermann
-        
-        At the beginning of our project, we had severe problems with our analytics.
-        Gels did not run well, samples were not visible, and many team members had little to no lab experience.
-        Dr. Martin Zimmermann is both a Study Advisor of the Aachen Biology and Biotechnology Department and an expert in many biological fields, including biological analysis methods.
-        During the whole project, we repeatedly exchanged E-Mails, and Mr. Zimmermann examined our issues detailly.
-        
-        We met with Mr. Zimmermann at the end of May. He introduced us to denaturing polyacrylamide gels and helped us establish the right analytics for our unconventional samples.
-        Among other topics, we discussed gel runtime, gel thickness, the correct voltage, and staining methods of our gels.
-        To get a better resolution, Mr. Zimmermann advised us to use TBE buffer which has a higher buffer capacity.
-        Furthermore, he suggested silver staining as a sustainable method to stain PAA gels and longer primers to establish better reaction conditions for our enzyme, which we implemented rapidly.
-        At the end of our Meeting, Mr. Zimmermann once more drew attention to polyacrylamide.
-        He advised us to be extra careful when handling the neurotoxic chemical.
-        This was included in our [Safety Guidelines](https://2021.igem.org/Team:Aachen/Safety).
+    +image(7, imgpath, "")
 
-    :markdown-it
-        # Meetings with Sebastian Palluk
-    
-        Dr. Sebastian Palluk is co-founder and CTO of Ansa Biotechnologies, a startup developing enzymatic DNA synthesis technologies.
-        He participated in the iGEM competition himself and experienced that synthesizing DNA on his own was challenging. 
-        Now he works with a genetically modified TdT for biological applications and aims to improve the synthesis system.
-        Mr. Palluk was probably one of our most important supporters. 
-        We met with him three times in total and had frequent email contact during the whole project.
-        
-        The first meeting started by presenting our ideas and two approaches to encode data on DNA.
-        Furthermore, we discussed four different ideas to prevent the formation of secondary structures of ssDNA and the affinity of the TdT for 3'OH base modifications.
-        Mr. Palluk commented on our ideas on immobilization.
-        Briefly, he explained  streptavidin immobilization on magnetic beads as well as sequencing techniques like nanopore sequencing and capillary electrophoresis to view the length distribution.
-        To conclude our first meeting, Mr. Palluk gave us a great overview of many important tasks we have to tackle in the future and encouraged us to do our best for the project. 
-        He believed that our unique interdisciplinary team would create a great project, but implementing everything we planned would be more challenging than we thought.
-
-        In our second meeting with Mr. Palluk at the beginning of May, we presented our possibilities to hinder secondary structures.
-        He recommended starting our first experiments in solution with purification steps to establish our methods.
-        Furthermore, he emphasized that it would be efficient to start working on the immobilization while conducting our first experiments.
-        Mr. Palluk advised us to analyze the length of strands with gel electrophoresis and explained that driving PCR reaction beforehand is not necessary. 
-        Afterward, we discussed the possibilities for sequencing our strands, where he explained that Sanger sequencing would only be possible if we performed vector cloning beforehand.
-
-        In our third meeting at the beginning of September, we discussed our ideas for building a hardware and explained the maleimide-cysteine binding system.
-        Additionally, we examined the problem we have faced with our immobilization.
-        With our current system, we would lose lots of maleimides, which is too expensive for us. 
-        Mr. Palluk suggested using a peptide tag to bind primers with homologous sequences and sticky-end "overhangs". 
-        The TdT would bind at the overhangs and could be released by heating.
-        Together, we thought of a "plan B" for the immobilization.
-        To create base transitions in solution, we should add primer in excess and let the reaction finish until all nucleotides are incorporated, and add another nucleotide.
-        To put it in a nutshell, Mr. Palluk was an essential expert for us who helped create many solutions to our problem.
-        Nobody knows the TdT better than he does.
-        Thank you again Mr. Palluk, for answering all our questions and emails!
-
-    - var imgpath = "" + require("../assets/img/Human Practices/2021-09-07_Meeting Palluk.png")["default"]
-    +image(10, imgpath, "")
- 
     :markdown-it
         # Meeting with Alexander Heckel 
         
@@ -269,10 +262,13 @@ block article
         
     - var pdfpath = "" + require("../assets/documents/communication/Newsletter_May_designed.pdf")["default"]
     a(href=pdfpath) Newsletter May
+    
     - var pdfpath = "" + require("../assets/documents/communication/Newsletter_June_designed.pdf")["default"]
     a(href=pdfpath) Newsletter June
+    
     - var pdfpath = "" + require("../assets/documents/communication/Newsletter_August_designed.pdf")["default"]
     a(href=pdfpath) Newsletter August
+    
     - var pdfpath = "" + require("../assets/documents/communication/Newsletter_September.pdf")["default"]
     a(href=pdfpath) Newsletter September
    
