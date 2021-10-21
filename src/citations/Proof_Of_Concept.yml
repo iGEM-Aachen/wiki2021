@@ -1,4 +1,9 @@
 # 1
 - doi: https://doi.org/10.1038/s41467-020-18681-5
 # 2
-- doi: https://doi.org/10.1016%2Fs0065-3233%2808%2960411-8
+- article:
+    authors: "Green, N. M."
+    year_published: 1975
+    title: "Avidin."
+    journal: "Advances in Protein Chemistry"
+    numbers: "29, 85–133."
