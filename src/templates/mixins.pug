@@ -45,15 +45,11 @@ mixin image(n, url, caption, width, fontSize, center, popup)
             img(src=url alt=caption style="width: " + width + "%")
             if caption != ""
                 p(style="font-size:" + fontSize + "rem; text-align:justify;" )!= "<b>Figure " + n + "</b>: " + caption
-        else if fontSize && width && center
-            img(src=url alt=caption style="width: " + width + "%")
-            if caption != ""
-                p(style="font-size:" + fontSize + "rem; text-align:center;" )!= "<b>Figure " + n + "</b>: " + caption
         else if fontSize && width && center && !popup
             img(src=url alt=caption style="width: " + width + "%")
             if caption != ""
                 p(style="font-size:" + fontSize + "rem; text-align:center" )!= "<b>Figure " + n + "</b>: " + caption
-        else if fontSize && width && !center && popup
+        else if fontSize && width && center && popup
            a(href=url class="glightbox")
                img(src=url alt=caption style="width: " + width + "%")
            if caption != ""
