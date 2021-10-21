@@ -6,6 +6,9 @@ block headVars
     - var requireMathJax = true
     
 block article
+
+    link(rel="stylesheet", href="src/assets/lightbox/glightbox.min.css")
+
     :markdown-it(html)
         
         # Fact of the week
@@ -15,21 +18,21 @@ block article
         These are some of the topics we covered in our posts:
 
     - var imgNames = [{image: require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-01.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-02.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-03.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-04.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-05.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 01/Biotech_rev3-06.png")["default"]}]
-    +imgCarousel(1, imgNames)
+    +imgCarousel(1, imgNames,gallery)
 
     - var imgNames = [{image: require("../assets/img/communication/fact_of_the_week/Post 06/Genetic Code-01.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 06/Genetic Code-02.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 06/Genetic Code-03.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 06/Genetic Code-04.png")["default"]}]
-    +imgCarousel(2, imgNames)
+    +imgCarousel(2, imgNames,gallery)
 
     - var imgNames = [{image: require("../assets/img/communication/fact_of_the_week/Post 07/Bioluminescence-01.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 07/Bioluminescence-02.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 07/Bioluminescence-03.png")["default"]},{image: require("../assets/img/communication/fact_of_the_week/Post 07/Bioluminescence-04.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 07/Bioluminescence-05.png")["default"]}, {image: require("../assets/img/communication/fact_of_the_week/Post 07/Bioluminescence-06.png")["default"]}]
-    +imgCarousel(3, imgNames)
+    +imgCarousel(3, imgNames,gallery)
 
     :markdown-it
 
         # Collaboration with iGEM Eindhoven
-        In March we wrote [iGEM TU Eindhoven](https://2021.igem.org/Team:TU_Eindhoven) a message if they would like to meet sometime. In our first meeting, we decided to cooperate in the field of science communication. 
-        At first, we collected easy experiments for younger children.
+        In March we wrote [iGEM TU Eindhoven](https://2021.igem.org/Team:TU-Eindhoven) a message if they would like to meet sometime. In our first meeting, we decided to cooperate in the field of science communication. 
         To share the knowledge, we made lesson plans and PowerPoint presentations in English, German and Dutch for each experiment. 
         We conducted them in elementary schools in both countries. 
+        
         In Germany, we paid a visit to the Don-Bosco-School in Wolsfeld and performed two experiments with a small group of students.  
         First, we briefly introduced iGEM, our team and explained what kind of project we are working on in a way that was appropriate for children. 
         Then we went straight into the first experiment and built a lava lamp using simple home remedies. 
@@ -37,6 +40,12 @@ block article
         The elementary school students were able to take all information from a presentation we created and were able to perform every step by themselves. 
         The second experiment was to separate the pigments of different felt-tip pens to demonstrate the mixture of colors. 
         Finally, we had a short discussion with the students and made sure that they learned something from the experiments. 
+        
+    - var imgpath = "" + require("../assets/img/Education/don-bosco-school.png")["default"]
+    +image(1, imgpath, "Experiments with elementary students at the Don-Bosco-School")
+    
+    :markdown-it(html)
+    
         Due to the enthusiasm of the students and on our part, as well as good experiences in the schools on the Dutch and German side, we started a call on slack to collect more school experiments. 
         The iGEM teams Bielefeld, Boku-Vienna, KU Leuven, Unizar, and Wageningen_UR send us their writings and we put them all together into one big handbook. 
         It should simplify the execution of experiments with pupils for the teacher or other iGEM teams. 
@@ -47,8 +56,9 @@ block article
     - var pdfpath = "" + require("../assets/documents/collaborations/Presentation Eindhoven.pdf")["default"]
     p and
     a(href=pdfpath) here our Presentation we used at school.
+    
     - var imgpath = "" + require("../assets/img/Collaborations/Eindhoven.png")["default"]
-    +image(1, imgpath, "Picture of the meeting with Eindhoven", 100,0.8)
+    +image(2, imgpath, "")
         
     :markdown-it
         # High-Tech Forum 2021
@@ -68,10 +78,10 @@ block article
         You can get more detailed information in the article about the [Meeting with Dominik Heider and Anke Becker](https://2021.igem.org/Team:Aachen/Human_Practices#MeetingwithDominikHeiderandAnkeBecker).
 
     - var imgpath = "" + require("../assets/img/communication/hightechforum1.jpg")["default"]
-    +image(2, imgpath, "Four members of our team attending the High-Tech-forum",100,0.8) 
+    +image(3, imgpath, "") 
 
     - var imgpath = "" + require("../assets/img/communication/hightechforum2.jpg")["default"]
-    +image(3, imgpath, "The results report stored in DNA",70,0.8) 
+    +image(4, imgpath, "The results report stored in DNA",70) 
 
     :markdown-it(html)
         # Welcome Week
@@ -88,7 +98,7 @@ block article
         Even though some readers might have already heard about this topic our approach is completely unique.
         
     - var imgpath = "" + require("../assets/img/communication/biospektrum.PNG")["default"]
-    +image(4, imgpath, "")
+    +image(5, imgpath, "")
     
     :markdown-it(html)
         Unfortunately the article is in german but we have provided an english version for you below.
@@ -124,13 +134,13 @@ block article
         It was also important for us to include safety instructions such as wearing protective goggles when working with isopropyl alcohol.
         
     - var imgpath = "" + require("../assets/img/communication/extractionKit1.jpg")["default"]
-    +image(5, imgpath, "The material list for the extraction kit.",100,0.8)
+    +image(6, imgpath, "The material list for the extraction kit.",100,0.8)
 
     - var imgpath = "" + require("../assets/img/communication/extractionKit2.jpg")["default"]
-    +image(6, imgpath, "Student instructions part 1.",100,0.8)
+    +image(7, imgpath, "Student instructions part 1.",100)
 
     - var imgpath = "" + require("../assets/img/communication/extractionKit3.jpg")["default"]
-    +image(7, imgpath, "Student instructions part 2.",100,0.8)
+    +image(8, imgpath, "Student instructions part 2.",100)
 
     - var pdfpath = "" + require("../assets/documents/communication/extractionKitMaterials.pdf")["default"]
     a(href=pdfpath) Extraction Kit Materials
@@ -147,10 +157,10 @@ block article
         The other 3 boxes were sent to schools in different parts of Germany. 
         
     - var imgpath = "" + require("../assets/img/communication/extractionKit12.jpg")["default"]
-    +image(8, imgpath, "The extraction kit in our customized iGEM Aachen box.",80,0.8)
+    +image(9, imgpath, "",70)
     
     - var imgpath = "" + require("../assets/img/communication/extractionKit11.jpg")["default"]
-    +image(9, imgpath, "Contents of the kit.",80,0.8)
+    +image(10, imgpath, "",70)
     :markdown-it(html)
         
         A graduating class of „Domschule Schleswig“ in Schleswig, Schleswig-Holstein in northern Germany experimented together with their teacher and talked to us about the extraction in a Zoom meeting afterward.
@@ -173,25 +183,25 @@ block article
         We were happy to hear that a few students told us that we sparked their interest in synthetic biology!
 
     - var imgpath = "" + require("../assets/img/communication/extractionKit4.jpg")["default"]
-    +image(10, imgpath, "Presenting iGEM to the students.",100,0.8)
+    +image(11, imgpath, "",100)
     
     - var imgpath = "" + require("../assets/img/communication/extractionKit5.jpg")["default"]
-    +image(11, imgpath, "Holding the presentation.",100,0.8)
+    +image(12, imgpath, "",100)
     
     - var imgpath = "" + require("../assets/img/communication/extractionKit6.jpg")["default"]
-    +image(12, imgpath, "Preparing the extraction.",100,0.8)
+    +image(13, imgpath, "",100)
     
     - var imgpath = "" + require("../assets/img/communication/extractionKit7.jpg")["default"]
-    +image(13, imgpath, "Filtering the strawberry solution.",100,0.8)
+    +image(14, imgpath, "",100)
     
     - var imgpath = "" + require("../assets/img/communication/extractionKit8.jpg")["default"]
-    +image(14, imgpath, "Layering the strawberry solution with isopropyl alcohol.",100,0.8)
+    +image(15, imgpath, "",100)
     
     - var imgpath = "" + require("../assets/img/communication/extractionKit9.jpg")["default"]
-    +image(15, imgpath, "Fishing for DNA.",100,0.8)
+    +image(16, imgpath, "",100)
     
     - var imgpath = "" + require("../assets/img/communication/extractionKit10.jpg")["default"]
-    +image(16, imgpath, "Clearly visible DNA threads.",100,0.8)
+    +image(17, imgpath, "",100)
     :markdown-it(html)
 
         Overall, we were delighted with our education project.
@@ -207,5 +217,8 @@ block article
         А couple of students were intrigued about the world of biotechnology and connected with Viktor for further information about the bachelor program. 
         Thus, we believe that we helped young people to find their passion and hope that one day we will work side by side on a project that may change the world.
     - var imgpath = "" + require("../assets/img/Education/91.DeutschesGymnasiumSofia.jpg")["default"]
-    +image(17, imgpath, "91. Deutsches Gymnasium Sofia.",100,0.8)
+    +image(18, imgpath, "91. Deutsches Gymnasium Sofia.",100)
     
+    script(src="src/assets/lightbox/glightbox.min.js")
+    script(src="src/assets/lightbox/gallery.js")
+        
