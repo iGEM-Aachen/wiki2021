@@ -7,6 +7,8 @@ block headVars
     
 block article
     
+    link(rel="stylesheet", href="src/assets/lightbox/glightbox.min.css")
+
     :markdown-it
         # Integrated Human Practices    
         
@@ -15,8 +17,8 @@ block article
         We were amazed by what we could achieve by broadening our horizons and implementing the gained knowledge. 
         To visualize the progress of integrating new ideas, we put together a timeline.
 
-    - var imgpath = "" + require("../assets/img/Human Practices/ihp_timeline.svg")["default"]
-    +image(1, imgpath, "", 110,true,true)
+    - var imgpath = "" + require("../assets/img/Human Practices/ihp_timeline.png")["default"]
+    +imagePopup(1,imgpath,100,"zoomable: true;")
     :markdown-it
         # Human Practices 
         
@@ -275,3 +277,6 @@ block article
 
 prepend citations
     - var citations = [{"authors": "Yang, Z., Hutter, D., Sheng, P., Sismour, A. M., & Benner, S. A. (2006)", "doi": "https://doi.org/10.1093/nar/gkl633", "journal": "Nucleic Acids Research", "numbers": "34(21), 6095–6101", "title": "Artificially expanded genetic information system: A new base pair with an alternative hydrogen bonding pattern", "type": "article"}, {"authors": "Tauraitė, D., Jakubovska, J., Dabužinskaitė, J., Bratchikov, M., & Meškys, R. (2017)", "doi": "https://doi.org/10.3390/molecules22040672", "journal": "Molecules (Basel, Switzerland)", "numbers": "22(4)", "title": "Modified Nucleotides as Substrates of Terminal Deoxynucleotidyl Transferase", "type": "article"}]
+    
+    script(src="src/assets/lightbox/glightbox.min.js")
+    script(src="src/assets/lightbox/gallery.js")
