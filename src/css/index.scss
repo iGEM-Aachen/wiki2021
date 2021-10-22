@@ -247,7 +247,9 @@ video {
         padding-right: -15px;
         padding-left: -15px;
     }
-    
+    .rocket-card{
+        margin-bottom:700px;
+    }
 }
 
 @include respond-below(sm) {
