@@ -50,6 +50,7 @@ body {
     background-image: url("../assets/img/Background_Pattern_Blank.svg");
     background-size: 100%;
     background-color: $igem-dark;
+    padding-bottom:5rem ;
 }
 
 
@@ -672,6 +673,20 @@ a.extraLinks {
             transition: all ease 0.2s;
         }
     }
+}
+
+// CSS for protocol summary - details
+
+details {
+	summary {
+		&::-webkit-details-marker { display: none; }
+	}
+	> :not(summary) {
+		transform: scaleY(0);
+		transform-origin: top;
+		transition: transform 500ms;
+	}
+	&[open] > :not(summary) { transform: scaleY(1); }
 }
 
 // body.dark {
