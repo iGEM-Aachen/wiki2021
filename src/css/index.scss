@@ -115,9 +115,6 @@ article {
     h1 {
         margin-bottom: 10rem;
     }
-    h2.fandy {
-        margin: 0;
-    }
     h2 {
         margin-bottom: 3rem;
     }
@@ -183,7 +180,7 @@ article {
 }
 
 .rocket-card {
-    padding-bottom: 400px;
+    margin-bottom: 400px;
 }
 
 .below-rocket-card {
@@ -232,7 +229,7 @@ video {
 
 .header {
     height: 70%;
-    img {
+    .video {
         margin: 50px;
         display: block;
         margin-left: auto;
@@ -241,13 +238,60 @@ video {
     }
 }
 
-@include respond-below(md) {
-    .container {
+.align-self-center{
+    margin-bottom:50px;
+}
 
+@include respond-below(xxs) {
+    .einruecken{
+        padding-right: -15px;
+        padding-left: -15px;
+    }
+    
+}
+
+@include respond-below(sm) {
+    p {
+        font-size: 1rem !important;
+    }
+    .container {
+        width: 100%;
+    }
+}
+
+@include respond-below(md) {
+    p {
+        font-size: 1.5rem !important;
+        text-align: center !important;
     }
     .header {
-        img {
-            width: 70vw;
+        h2 {
+            font-size:1.5rem;
+        }
+        .video{
+            width: 100% !important;
+            video{
+                width:100% !important;
+            }
         }
     }
 }
+
+@include respond-between(md,lg) {
+    .einruecken{
+        margin-bottom: 50px;
+        margin-right: 50px;
+    }
+    p{
+        text-align: center !important;
+    }
+}
+
+@include respond-above(lg) {
+    .einruecken{
+        margin-bottom: 50px;
+        margin-right: 50px;
+    }
+}
+
+
