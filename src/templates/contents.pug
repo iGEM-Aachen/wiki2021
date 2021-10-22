@@ -11,7 +11,7 @@ html(lang="en")
         MathJax.Hub.Config({
           tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
         });
-      script(src="https://2021.igem.org/common/MathJax-2.5-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML")
+      script(src="https://2021.igem.org/common/MathJax-2.5-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async)
       script
         | function resizeSidebar() {document.getElementById("contents").style.height = (document.getElementById("list").scrollHeight + 100 + "px"); }
         | window.onresize = resizeSidebar; 
