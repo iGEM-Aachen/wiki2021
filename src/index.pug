@@ -155,6 +155,8 @@ html(lang="en")
               - var videopath = require("./assets/img/homepage/promovideo.mp4")["default"]
               +video(videopath, "", 80)
       .jumbotron.home-card.below-rocket-card
+        .container 
+          h2 Follow Our Tour Trough the Wiki:
           +tourButton("Project Description", "https://2021.igem.org/Team:Aachen/Description")
 
     include templates/footer.pug
