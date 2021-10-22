@@ -25,7 +25,7 @@ block article
         The reason was that no suitable ssDNA marker was available for our purposes. Additionally, some results contain tailing reactions with strand length above the maximal strand length of the marker. 
         Thus, we can only make estimations about the actual ssDNA strand length, and these estimations should be viewed with care.
         
-        ## 1.1 dNTP Incorporation Preference
+        ## dNTP Incorporation Preference
         As the TdT accepts four different divalent metal cations – $Mn^{2+}$, $Mg^{2+}$, $Zn^{2+}$ and $Co^{2+}$ - as a cofactor [1](#citation1), the initial experiment involved a [standard TdT reaction](https://2021.igem.org/Team:Aachen/Protocols) with the cofactor of choice in this project, $Co^{2+}$. 
         Furthermore, the reaction was performed at room temperature (RT = 24 °C) and 37 °C to compare possible variations in maximal tail length and tail length distribution.
         
@@ -43,7 +43,7 @@ block article
         The same results were obtained in other experiments not listed in these results, verifying the incorporation preference for our reaction conditions. 
         No possible explanation could be found for the deviant behavior in our experiments and the product literature from ThermoFisher. 
         
-        ## 1.1 Nucleotide Concentration
+        ## Nucleotide Concentration
         With a reproducible gel electrophoresis method and a successful TdT reaction, the following experiments could start focussing on the effect of adjusting various reaction parameters. 
         The first parameter tested was the concentration of dNTP in the reaction mixture to identify potential effects on the reaction speed.
                 
@@ -59,7 +59,7 @@ block article
         However, we chose to continue to work with our standard concentration of 100 µM as they were sufficient for the characterizations.
         Nevertheless, this concentration may be subject to change depending on the experiment performed.
         
-        ## 1.2 Varying Primer Concentration
+        ## Varying Primer Concentration
         With the hardware approach in mind, we aimed to use low primer concentrations.
         We thought choosing a low primer concentration could save material cost and use the hardware for more cycles before replenishing the dNTPs.
         Thus, different primer concentrations were tested with dTTP as past experiments showed more easily distinguishable bands than the other dNTPs.
@@ -76,7 +76,7 @@ block article
         This experiment shows that primer concentration affects the maximal strand length, and adjusting the primer concentration may be a potent way to change strand length and size distribution.
         Nevertheless, for our established system, we stuck with a standard primer concentration of 20 nM.
         
-        ## 1.3 Varying Cofactor Concentration
+        ## Varying Cofactor Concentration
         One attempt to tweak the reaction speed was to adjust the cofactor availability by reducing its concentration.
         Since the incorporation speed of nucleotide T by far exceeds that of all other nucleotides, we performed TdT reactions with varying concentrations of the TdT reaction buffer containing the cofactor.
         As the cofactor was inherently present in the buffer, we had to adjust the buffer concentration in total and could not just alter the cofactor concentration itself, which might have unforeseen effects.
@@ -88,11 +88,11 @@ block article
         Reducing the cofactor presence results in slower incorporation of nucleotides in the tested range.
         The standard concentration of cofactor used in all experiments was 2.0 mM (lane 2) and scaled-down from that point.
         The results suggest that adjusting the cofactor availability may be a reliable way of turning down the reaction speed.
-        However, as the reaction buffer concentration was changed simultaneously, these results have to interpreted with care.
+        However, as the reaction buffer concentration was changed simultaneously, these results have to be interpreted with care.
         The reaction buffer contains components necessary for the functioning of TdT, so lowering the concentration of the reaction buffer may have additional effects on the activity of the enzyme.
         No further testing was performed due to time limitations and unavailability of reaction buffer without cofactor.
         
-        ## 1.4 Time Dependent TdT Reaction
+        ## Time Dependent TdT Reaction
         Thus far, reaction times were chosen to yield a distinguishable band from the primer reference or across samples. 
         However, the goal is to tune down the reaction to a point at which only a few bases are incorporated in each reaction. 
         With adjusting the cofactor concentration, we wanted to slow down the reaction speed. 
@@ -137,7 +137,7 @@ block article
         However, since CE requires fluorescence-labeled primers, it was incompatible with our immobilization approach and could not be used in experiments involving immobilization.
         
         # Primer Immobilization
-        ## 2 Testing the Immobilization System
+        ## Testing the Immobilization System
         In this assay, we wanted to test if we could bind an anchor peptide to a polystyrene stick as the first experiment for our immobilization system. 
         For this, we used two different anchor peptides, provided to us by the Leibniz-Institute for Interactive Materials (DWI): 
         LCI and MacHis, which are attached to a domain Z (DZ), a Cysteine (C), and a His-Tag (His) (see [Experiments]( https://2021.igem.org/Team:Aachen/Experiments)). 
@@ -164,7 +164,7 @@ block article
         This illustrates that the anchor peptides can bind almost 34 times better to the polystyrene sticks as the negative control and that they do not wash off.
         It can be said, that both anchor peptides bind to the stick with similar intensity because the absorbance does not differ significantly.
         
-        ## 2.1 Immobilization with Amino-Primer
+        ## Immobilization with Amino-Primer
         The next step was to link our Amino C6-primer (AC6-primer) to the anchor peptide. 
         We used a slightly different protein construct, also provided by our instructor (see [Experiments]( https://2021.igem.org/Team:Aachen/Experiments)). 
         For this, we used 1-Ethyl-3-(3-dimethylaminopropyl)carbodiimide (EDC) as the initializer of the linking reaction and incubated the components for 24 hours. 
@@ -202,7 +202,7 @@ block article
         The fact that we cannot see anything in lanes 6 and 7 illustrates the AC6-primer cannot bind to the polystyrene stick without the anchor peptide.
         Against expectation, there are also no bands visible in lanes 8 and 9. So, these results support the guess that the conjugation did not work.
         
-        ## 2.2 Immobilization with Maleimide-Primer
+        ## Immobilization with Maleimide-Primer
         The maleimide-cysteine-bond was more likely to work than the amino bond because it was already shown to work with maleimide-labeled proteins [3](#citation3). 
         Thus, we switched methods as soon as the maleimide-labeled oligos arrived and performed the conjugation of the oligos with the fusion protein construct LCI-DZ-C-His6 (see [Experiments](https://2021.igem.org/Team:Aachen/Experiments#CyclicSynthesisandPrimerImmobilization)). 
         The conjugation was performed with the AT-rich oligo and the GC-rich oligo and different oligo excesses were tried. 
@@ -217,7 +217,7 @@ block article
         The more oligo excess was used, the brighter the smear and the bands are because there is more DNA in the sample. 
         These results could have indicated a successful conjugation. 
         We wanted to confirm this by purifying the conjugate using the His-Tag to lose excess primer and performing an SDS-PAGE and western blot.
-        Furthermore, a TdT reaction and subsequent gel electrophoresis was performed with the purified conjugates. 
+        Furthermore, a TdT reaction and subsequent gel electrophoresis were performed with the purified conjugates. 
         This should have confirmed if the bonding of oligo and protein was successful. 
         Unfortunately, the blot did not work and we did not have enough of the samples to try again.
         
@@ -290,37 +290,37 @@ block article
         This concludes that our fusion protein was not present in the samples and the conjugation did not work well enough to be able to perform a cyclic synthesis with the immobilized primers. 
         We decided to switch to the next immobilization method. 
         
-        ## 2.3 Immobilization with Biotin-labelled Primer
+        ## Immobilization with Biotin-labeled Primer
         
-        Our third immobilization method was a combination of streptavidin-tagged magnet beads and biotin-labelled primers.
+        Our third immobilization method was a combination of streptavidin-tagged magnet beads and biotin-labeled primers.
         The magnet beads in turn are able to bind to a magnet stick.
         This construction allowed a permanent or non-permanent immobilization of primers.
         
-        ### 2.3.1 Permanent Immobilization
+        ### Permanent Immobilization
         
-        For the permanent immobilization, the streptavidin-tagged magnet beads were conjugated with biotin-labelled primers.
+        For permanent immobilization, the streptavidin-tagged magnet beads were conjugated with biotin-labeled primers.
         After adding the magnet stick to this solution and two washing steps, the immobilized primer could be released using BXT Strep-Tactin®XT elution buffer (IBA Life Science) containing biotin.
         To visualize our results, an agarose gel electrophoresis was performed (figure 18 A).
         We assume, that most of the primer was bound by magnet beads because there was no detectible DNA in the conjugation mixture left.
         The binding seems to be strong enough because there was no detectible DNA in the two wash rests.
-        This is cofirmed by the fact that biotin-streptavidin binding ist one of the strongest non-covalent interactions [4](#citation4)
+        This is confirmed by the fact that biotin-streptavidin binding is one of the strongest non-covalent interactions [4](#citation4)
         A controlled elution of the primers was possible, indicated by a band at primer height.
         
     - var imgpath = "" + require("../assets/img/Results/2021-10-05.png")["default"]
-    +image(18, imgpath, "<b>Permanent immobilization using biotin-streptavidin binding.</b> A) Magnet beads and primer were conjugated first, and the magnet stick was added afterwards. B) Magnet beads were attached to the magnet stick and primer was added afterwards. 2.5% Agarose TBE, SYBR Gold, 90V, 45 min. M: GeneRuler 50 bp DNA Ladder 1: Biotin-labelled N-Primer 2: Conjugation rest 3: Wash rest 4: Wash rest 5: Elution.",100,0.8, true,true)        
+    +image(18, imgpath, "<b>Permanent immobilization using biotin-streptavidin binding.</b> A) Magnet beads and primer were conjugated first, and the magnet stick was added afterward. B) Magnet beads were attached to the magnet stick and primer was added afterward. 2.5% Agarose TBE, SYBR Gold, 90V, 45 min. M: GeneRuler 50 bp DNA Ladder 1: Biotin-labeled N-Primer 2: Conjugation rest 3: Wash rest 4: Wash rest 5: Elution.",100,0.8, true,true)        
         
     :markdown-it
-        Another possibility to immobilize primers permanently, was to bind the streptavidin-tagged magnet beads to the magnet stick first and add biotin-labelled primer afterwards.
+        Another possibility to immobilize primers permanently was to bind the streptavidin-tagged magnet beads to the magnet stick first and add biotin-labeled primer afterward.
         The above mentioned experiment was repeated using the second method.
-        However, the results of this procedure showed less amounts of immobilized primer (figure 18 B).
-        Barely no DNA was detected in the elution step.
+        However, the results of this procedure showed fewer amounts of immobilized primer (figure 18 B).
+        Barely any DNA was detected in the elution step.
         The primers probably did not bind to the magnet beads due to steric hindrance.
         This is indicated by a band at primer height in the conjugation mixture.
         
-        ### 2.3.2 Non-permanent immobilization
+        ### Non-permanent immobilization
         
-        The non-permanent immobilization allows a release of primers into solution to avoid steric hindrance.
-        For this, biotin-labelled primers were conjugated with magnet beads.
+        The non-permanent immobilization allows a release of primers into the solution to avoid steric hindrance.
+        For this, biotin-labeled primers were conjugated with magnet beads.
         Instead of directly dipping the magnet stick into this solution, the stick was covered with a plastic envelope.
         This prevented the magnet beads to bind to the stick irreversibly.
         Another advantage is, that the stick can be reused.
@@ -331,7 +331,7 @@ block article
     +image(19, imgpath, "<b>Non-permanent primer immobilization using biotin-streptavidin binding.</b> 2.5% agarose TBE, SYBR Gold, 90 V, 45 min. M: GeneRuler 50 bp DNA Ladder 1: Biotin-labelled normal primer as reference 2: Immobilization rest 3: Wash rest 4: Wash rest 5: Elution 6: Empty.", 60,0.8, true,true)        
         
     :markdown-it
-        As a result, the permanent immobilization was more efficient, if biotin-labelled primers are first conjugated to magnetic beads and the magnetic stick is added afterwards.
+        As a result, the permanent immobilization was more efficient, if biotin-labeled primers are first conjugated to magnetic beads and the magnetic stick is added afterward.
         Using the non-permanent immobilization, binding the primer to the stick was successful as well.
         To further investigate the occurrences, TdT reactions were performed using both methods.
         
@@ -347,7 +347,7 @@ block article
         These homonucleotide strands were then converted into single nucleotide strands using our [Software]( https://2021.igem.org/Team:Aachen/Software).
         The comparison of the original sequence and the encoded sequence was performed using the Needleman-Wunsch algorithm.
         
-        ## 3 In Solution
+        ## In Solution
         
         To test that the TdT incorporates different kinds of nucleotides, a cyclic synthesis was performed in solution.
         For this experiment, the primer:nucleotide ratio was decreased to 1:500 (instead of 1:5000), and the incubation time increased to ensure complete nucleotide incorporation.
@@ -355,7 +355,7 @@ block article
         This was repeated to create a sequence with the code "TCTA".
         After performing an agarose gel electrophoresis, a stepwise increase of ssDNA length could be observed (figure 20).
         This reveals, that the TdT is able to incorporate different kinds of nucleotides into a strand.
-        Thus, we can only make estimations about the actual attached sequence as these samples were not sequenced due to a missing poly-A tail.
+        Thus, we can only make estimations about the actually attached sequence as these samples were not sequenced due to a missing poly-A tail.
         
     - var imgpath = "" + require("../assets/img/Results/2021-09-30_01.png")["default"]
     +image(20, imgpath, '<b>Cyclic synthesis with AT-rich primer to create an attached sequence encoding "TCTA".</b> 2.5% agarose with TBE, SYBR Gold staining, 90 V, 45 min. M: GeneRuler 50 bp DNA Ladder 1: Elongation with T 2: Elongation with TC 3: Elongation with TCT 4: Elongation with TCTA 5: Elongation with TCA (dATP for 1 h).',50,0.8, true,true)
@@ -369,31 +369,31 @@ block article
     +image(21, imgpath, '<b>Cyclic synthesis with normal primer to create an attached sequence encoding "TCTA".</b> 2.5% agarose TBE, SYBR Gold staining, 90 V, 47 min. M: GeneRuler 50 bp DNA Ladder 1: Normal primer as reference 2: Elongation with T 3: Elongation with TC 4: Elongation with TCT 5: Elongation with TCTA 6: Elongation with TCTA (dATP for 2 h).',50,0.8)
         
     :markdown-it
-        However, gel electrophoresis of the strands coding "TCTA" showed, that the sample with longer poly-A tail could not be amplified (figure 22 B).
+        However, gel electrophoresis of the strands coding "TCTA" showed, that the sample with a longer poly-A tail could not be amplified (figure 22 B).
         This could be due to poor attachment of the reverse primer to the sample and not yet optimized PCR conditions.
         Because of these results, we tried to create shorter poly-A sequences in the following experiments.
-        Gel electrophoresis after PCR with the sample with shorter poly-A tail revealed a faint band from 200 to over 1000 bp.
+        Gel electrophoresis after PCR with the sample with a shorter poly-A tail revealed a faint band from 200 to over 1000 bp.
         This is an indication, that this PCR amplified the target ssDNA.
         
     - var imgpath = "" + require("../assets/img/Results/2021-10-13-14.png")["default"]
     +image(22, imgpath, '<b>PCR with two different samples encoding "TCTA" with short and long poly-A, respectively.</b> A) PCR: Initial denaturation 98 °C 30 s, denaturation 98 °C 5 s, annealing 63 °C 10 s, elongation 68 °C 90 s, final elongation 72 °C 5 min. 2.5% agarose with TBE, SYBR Gold staining, 90 V, 45 min. M: GeneRuler 50 bp DNA Ladder 1: Elongation with "TCTA" and short poly-A 2: Elongation with "TCTA" and short poly-A after PCR B) PCR: Initial denaturation 98 °C 30 s, denaturation 98 °C 5 s, annealing 63 °C 10 s, elongation 72 °C 30 s, final elongation 72 °C 5 min. 2.5% Agarose with TBE, SYBR Gold staining, 90 V, 50 min. PCR 1: Elongation with "TCTA" and long poly-A 2: Elongation with "TCTA" and long poly-A after PCR.',60,0.8, true,true)
         
     :markdown-it
-        The Nanopore sequencing of the "TCTA" sample with shorter poly-A tail revealed that a comparatively high amount of DNA strands could be characterized (figure 23).
+        Nanopore sequencing of the "TCTA" sample with a shorter poly-A tail revealed that a comparatively high amount of DNA strands could be characterized (figure 23).
         The information could be recovered with 80.0% accuracy.
         However, the sequence could not be fully recreated because the dTTP and dCTP were incorporated irregularly.
         This leads to the conclusion, that a transition between dTTP and dCTP can not be performed in solution if both kinds of nucleotides are present unless one concentration is not extremely low. 
         
     - var imgpath = "" + require("../assets/img/Results/seq_table1.svg")["default"]
-    +image(23, imgpath, '<b>Analysis of Nanopore sequencing of normal primer with the sequence "TCTA" attached in solution.</b>',100,0.8, true,true)
+    +image(23, imgpath, '<b>Analysis of nanopore sequencing of normal primer with the sequence "TCTA" attached in solution.</b>',100,0.8, true,true)
         
     :markdown-it
-        ## 3.1 Immobilized
+        ## Immobilized
         
         In a first test, the elongation of an immobilized primer was tested using both permanent and non-permanent immobilization.
         The goal was to investigate the incorporation of different kinds of nucleotides.
         It is important that nuclease-free water is used as a wash solution, as other wash solutions contain monovalent cations (or other substances) that inhibit the TdT.
-        This was investigated because first results of TdT reactions including immobilization were not successful.
+        This was investigated because the first results of TdT reactions including immobilization were not successful.
         
         To test the elongation of a given primer with specific nucleotides, the immobilized primer was dipped into different reaction mixtures.
         An agarose gel electrophoresis of this experiment showed that dTTP is most likely to be attached to immobilized primers (figure 24).
@@ -412,13 +412,13 @@ block article
         A poly-A tail was created by incubation for 10 min in excess of dATP.
         An agarose gel electrophoresis was performed from which could be observed, that strands of different length up to over 1000 nt were created (data not shown). 
         
-        The created sequence was amplified using PCR and sequenced with Nanopore sequencing.
+        The created sequence was amplified using PCR and sequenced with nanopore sequencing.
         After the evaluation of the results, it was found that the sequence could be recreated from the strands with comparably high accuracy.
         The original information could be recovered with 80.0% accuracy.
-        Compared to the sequence "TCTA" created in solution (see chapter 3.1), a longer strand of five transitions could be stored with the same accuracy which leads to the conclusion that an immobilized primer is more suitable for storing information.
+        Compared to the sequence "TCTA" created in solution (see figure 23), a longer strand of five transitions could be stored with the same accuracy which leads to the conclusion that an immobilized primer is more suitable for storing information.
         
     - var imgpath = "" + require("../assets/img/Results/seq_table2.svg")["default"]
-    +image(25, imgpath, '<b>Analysis of Nanopore sequencing of normal primer with attached sequence "TCTGA" which was attached using the DIP method.</b>',100,0.8, true,true)   
+    +image(25, imgpath, '<b>Analysis of nanopore sequencing of normal primer with attached sequence "TCTGA" which was attached using the DIP method.</b>',100,0.8, true,true)   
         
     :markdown-it
         Our first attempt to encode meaningful information was to store the word "iGEM" and the number "21" into DNA.
@@ -432,35 +432,35 @@ block article
     +image(26, imgpath, '<b>Cyclic synthesis to encode "iGEM" and "21".</b> 2.5% agarose with TBE, SYBR Gold staining, 90 V, 45 min. M: GeneRuler 50 bp DNA Ladder 1: Normal primer with attached sequence encoding "iGEM" 2: PCR with sample "iGEM" 3: Empty 4: Normal primer with attached sequence encoding "21" 5: PCR with sample "21" 6: Empty.',60,0.8, true,true)
         
     :markdown-it
-        The sequence encoding “21” could be recreated from the analyzed samples with 50.0% accuracy (figure 27).
-        The average of the attached sequence missed the first incorporated nuclotides and only the partial sequence "GAG" could be stored correctly.
+        The sequence encoding "21" could be recreated from the analyzed samples with 50.0% accuracy (figure 27).
+        The average of the attached sequence missed the first incorporated nucleotides and only the partial sequence "GAG" could be stored correctly.
         The missing "A" in the beginning could be caused by an insufficient amount of nucleotide and the fact that longer strands are created in lower concentrations (see our [Modeling]( https://2021.igem.org/Team:Aachen/Model) for more information).
         Furthermore, the last nucleotides in the calculated average sequence did not show the right order.
         This could be caused by increased contamination as the different reaction tubes with one kind of nucleotide were used multiple times.
         
     - var imgpath = "" + require("../assets/img/Results/seq_table3.svg")["default"]
-    +image(27, imgpath, '<b>Analysis of Nanopore sequencing of normal primer with attached sequence encoding "21" which was created using the DIP method.</b> The last "A" was not part of the actual sequence but was attached for PCR.',100,0.8, true,true)       
+    +image(27, imgpath, '<b>Analysis of nanopore sequencing of normal primer with attached sequence encoding "21" which was created using the DIP method.</b> The last "A" was not part of the actual sequence but was attached for PCR.',100,0.8, true,true)       
         
     :markdown-it
         The sample encoding "iGEM" included a comparably low number of strands that included the exact primer sequence (figure 28).
         The accuracy of recreated information was 40.0%.
-        All in all, less nucleotides of one kind were incorporated for one transition which is a desirable number to keep the strands short enough and ensure the recovery of the original information.
+        All in all, fewer nucleotides of one kind were incorporated for one transition which is a desirable number to keep the strands short enough and ensure the recovery of the original information.
         Nevertheless, this data is not sufficient to recover the original sequence.
-        This was to be expected due to the large amount of transitions and far too short incubation time.
+        This was to be expected due to the large number of transitions and far too short incubation time.
         Adapting the reaction conditions should therefore lead to much higher accuracy.
         
     - var imgpath = "" + require("../assets/img/Results/seq_table4.svg")["default"]
-    +image(28, imgpath, '<b>Analysis of Nanopore sequencing of normal primer with attached sequence encoding "iGEM" which was created using the DIP method.</b>',100,0.8, true,true)
+    +image(28, imgpath, '<b>Analysis of nanopore sequencing of normal primer with attached sequence encoding "iGEM" which was created using the DIP method.</b>',100,0.8, true,true)
     
     :markdown-it
-        Comparing the incubation for 1 min and for 10 min, the longer incubation yielded a higher accuracy of data recovery.
+        Comparing the incubation for 1 min and 10 min, the longer incubation yielded a higher accuracy of data recovery.
         Although we performed comparatively few experiments with cyclic synthesis, the data could be recovered from DNA with up to 80% accuracy.
-        To improve the results, both PCR and the preparation of our samples for Nanopore sequencing should be investigated further.
+        To improve the results, both PCR and the preparation of our samples for nanopore sequencing should be investigated further.
         Additionally, this experiment did not consider that nucleotides are incorporated with different probabilities.
         This could be regulated by adapting the incubation time and the composition of the reaction buffer. 
         
         # Secondary Structures
-        As poor elongation with dGTP was shown (see chapter 1.1), further investigations were conducted. 
+        As poor elongation with dGTP was shown (see figure 1), further investigations were conducted. 
         Increasing the amount of enzyme used in the reaction should result in longer strands if the different reactions incubate for the same time. 
         Three different samples with dGTP and different amounts of TdT were prepared and incubated at RT for 30 min. Gel electrophoresis was performed (figure 29).
         
@@ -472,7 +472,7 @@ block article
         This is supported by the CE results in figure 6 that show almost no further elongation with dGTP after 60 seconds. 
         The need for measures that prevent secondary structure formation became apparent.
         
-        ## 4 SSBs
+        ## SSBs
         Using single-stranded DNA binding proteins (SSBs) that stabilize ssDNA in nature seemed to be a suitable solution. 
         First experiments with different SSB concentrations in a standard TdT reaction had inconclusive results; the assumption was that the SSBs bound so tightly to the strands that they did not detach after heat treatment at 70 °C, and this impacted the running characteristics of our samples. 
         Thus, we could not determine the length of the samples and tell if the reactions with SSBs yielded longer strands. 
@@ -555,9 +555,9 @@ block article
         
         # Conclusion
         Our results show that we could develop an enzymatic synthesis system, which is capable of storing data on single-stranded DNA.
-        For this, we could define suitable reaction parameters and developed a unique non-permanent primer immobilization method based on the biotin-streptavidin interaction.
+        For this, we could define suitable reaction parameters and develop a unique non-permanent primer immobilization method based on the biotin-streptavidin interaction.
         In our first cyclic synthesis trials, we could already retrieve 80% of encoded information from short sequences.
-        This was achieved by a manual cyclic synthesis, followed by PCR amplification, Nanopore sequencing, and subsequent evaluation with our software.
+        This was achieved by a manual cyclic synthesis, followed by PCR amplification, nanopore sequencing, and subsequent evaluation with our software.
         
         # Outlook
         There are many more experiments we would have liked to perform. You can read about our further ideas [here](https://2021.igem.org/Team:Aachen/Outlook).

@@ -36,19 +36,22 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-    - run: git pull
     - run: npm run build --if-present
     - run: npm test
     
     - name: Add Build to Git
       run: |
-        git pull
         git add -f dist igem
     - name: Commit Build
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git commit -m "Successfully built the wiki" || echo "No changes to commit"
+        
+    - name: Push Changes to Github
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
     
     - name: iGEM WikiSync
       uses: igembitsgoa/wikisync-action@v0.2
@@ -62,7 +65,6 @@ jobs:
         
     - name: Add Wikisync Changes to Git
       run: |
-        git pull
         git add -f upload_map.yml wikisync.log dist igem
 #       run: git add upload_map.yml wikisync.log dist igem
       # It is recommended that you add the source and 

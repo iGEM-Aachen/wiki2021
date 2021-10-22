@@ -59,7 +59,7 @@ module.exports = {
         new HTMLWebpackPlugin({
             filename: "Memes/index.html",
             template: "./src/pages/Memes.pug",
-            excludeChunks: ["index", "members", "attributions"]
+            excludeChunks: ["index","content","members", "attributions"]
         })
     ],
     module: {
