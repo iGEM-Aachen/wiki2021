@@ -263,17 +263,19 @@ block article
         
         We created newsletters for the important months of May, June, August, and September to inform our sponsors and supporters about our progress. They were written and designed by various members and summarize our progress in the specific month. 
         
-    - var pdfpath = "" + require("../assets/documents/communication/Newsletter_May_designed.pdf")["default"]
-    a(href=pdfpath) Newsletter May
-    
-    - var pdfpath = "" + require("../assets/documents/communication/Newsletter_June_designed.pdf")["default"]
-    a(href=pdfpath) Newsletter June
-    
-    - var pdfpath = "" + require("../assets/documents/communication/Newsletter_August_designed.pdf")["default"]
-    a(href=pdfpath) Newsletter August
-    
-    - var pdfpath = "" + require("../assets/documents/communication/Newsletter_September.pdf")["default"]
-    a(href=pdfpath) Newsletter September
+    ul
+        li 
+            - var pdfpath = "" + require("../assets/documents/communication/Newsletter_May_designed.pdf")["default"]
+            a(href=pdfpath) Newsletter May
+        li
+            - var pdfpath = "" + require("../assets/documents/communication/Newsletter_June_designed.pdf")["default"]
+            a(href=pdfpath) Newsletter June
+        li
+            - var pdfpath = "" + require("../assets/documents/communication/Newsletter_August_designed.pdf")["default"]
+            a(href=pdfpath) Newsletter August
+        li
+            - var pdfpath = "" + require("../assets/documents/communication/Newsletter_September.pdf")["default"]
+            a(href=pdfpath) Newsletter September
    
 
 prepend citations
