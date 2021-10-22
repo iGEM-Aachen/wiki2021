@@ -101,8 +101,8 @@ article {
 }
 
 .home-card {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
     border-radius: 0;
     margin: 0;
     background-color: $igem-dark;
@@ -114,9 +114,6 @@ article {
     }
     h1 {
         margin-bottom: 10rem;
-    }
-    h2.fandy {
-        margin: 0;
     }
     h2 {
         margin-bottom: 3rem;
@@ -144,9 +141,14 @@ article {
     .fade4 {
         transition-delay: 0.6s;
     }
+    .container {
+        max-width: 100vw;
+    }
     .line {
         width: auto;
+        max-width: 100vw;
         white-space: nowrap;
+        overflow: hidden;
         p,
         pre {
             display: inline-block;
@@ -178,7 +180,7 @@ article {
 }
 
 .rocket-card {
-    padding-bottom: 400px;
+    margin-bottom: 400px;
 }
 
 .below-rocket-card {
@@ -227,11 +229,71 @@ video {
 
 .header {
     height: 70%;
-    img {
+    .video {
         margin: 50px;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 70%
+        width: 70%;
     }
 }
+
+.align-self-center{
+    margin-bottom:50px;
+}
+
+@include respond-below(xxs) {
+    .einruecken{
+        padding-right: -15px;
+        padding-left: -15px;
+    }
+    .rocket-card{
+        margin-bottom:700px;
+    }
+}
+
+@include respond-below(sm) {
+    p {
+        font-size: 1rem !important;
+    }
+    .container {
+        width: 100%;
+    }
+}
+
+@include respond-below(md) {
+    p {
+        font-size: 1.5rem !important;
+        text-align: center !important;
+    }
+    .header {
+        h2 {
+            font-size:1.5rem;
+        }
+        .video{
+            width: 100% !important;
+            video{
+                width:100% !important;
+            }
+        }
+    }
+}
+
+@include respond-between(md,lg) {
+    .einruecken{
+        margin-bottom: 50px;
+        margin-right: 50px;
+    }
+    p{
+        text-align: center !important;
+    }
+}
+
+@include respond-above(lg) {
+    .einruecken{
+        margin-bottom: 50px;
+        margin-right: 50px;
+    }
+}
+
+
