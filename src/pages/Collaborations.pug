@@ -1,7 +1,7 @@
 extends ../templates/contents.pug
 
 block headVars
-    - var title = "Collaboration"
+    - var title = "Collaborations"
     - var tagline = "A sample page for the theme."
     - var requireMathJax = true
 
@@ -230,6 +230,9 @@ block article
         
     - var imgpath = "" + require("../assets/img/Collaborations/Collab mit Heidelberg.jpg")["default"]
     +image(12, imgpath, "")
+    
+prepend citations
+    +tourButton("Science Communication", "https://2021.igem.org/Team:Aachen/Science_Communication")
 
     script(src="src/assets/lightbox/glightbox.min.js")
     script(src="src/assets/lightbox/gallery.js")
