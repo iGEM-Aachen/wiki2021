@@ -70,8 +70,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    // display: flex;
-    // align-content: space-between;
+    
     transition: margin-right 0.5 ease-in,
                 right 1s ease-in,
                 transform 0.3s ease-in-out,
@@ -79,12 +78,23 @@ body {
 
     color: $igem-dark;
 
-    
-    .buttontext {
-        font-size: large;
-        margin-right: 10px;
-        
+    .tourButtonDescription {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+
+        .buttontext {
+            font-size: large;
+            margin-right: 10px;
+        }
+
+        //arrow
+        #arrow i .fas .fa-chevron-right {
+            margin-left: 7px;
+        }
     }
+    
     #tourrocket {
         background-image: url(../assets/img/homepage/dna_rocket.svg);
         // height: fit-content;
@@ -95,31 +105,31 @@ body {
 
 
         position: relative;
-        // top: -10px;
+        top: -10px;
         right: -40px;
         height: 100px;
         // transform: rotate(55deg);
         // margin: 0 5px 0 5px;
         transition: right 2s ease-in;
     }
-    //arrow
-    #arrow i .fas .fa-chevron-right {
-        margin-left: 7px;
-    }
+    
 
     &:hover {
-        .buttontext {
-            margin-right: 20px;
-            transition: margin-right 0.3s ease-in;
+        .tourButtonDescription {
+            .buttontext {
+                margin-right: 20px;
+                transition: margin-right 0.3s ease-in;
+            }
+            
+            a #tourbutton{
+                text-decoration: none;
+                color: inherit;
+            }
         }
+        
         #rocket {
             // right: -80px;
             transform: rotate(90deg);
         }
-        a #tourbutton{
-            text-decoration: none;
-            color: inherit;
-        }
     }
-    
 }
