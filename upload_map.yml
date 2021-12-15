@@ -343,10 +343,22 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/7/70/T--Aachen--fonts--montserrat-v14-latin--montserrat-v14-latin-regular.woff
     md5: 8102c4838f9e3d08dad644290a9cb701
     upload_filename: T--Aachen--fonts--montserrat-v14-latin--montserrat-v14-latin-regular.woff
+  assets/icons/best_hardware.svg:
+    link_URL: https://2021.igem.org/wiki/images/a/ae/T--Aachen--icons--best_hardware.svg
+    md5: 42ada21ad9cba6fdfd1f8940a2918d12
+    upload_filename: T--Aachen--icons--best_hardware.svg
+  assets/icons/goldmedal.svg:
+    link_URL: https://2021.igem.org/wiki/images/f/fb/T--Aachen--icons--goldmedal.svg
+    md5: f5f61d1ce6dc38d71f385bf96c60ebb6
+    upload_filename: T--Aachen--icons--goldmedal.svg
   assets/icons/link-solid.svg:
     link_URL: https://2021.igem.org/wiki/images/5/50/T--Aachen--icons--link-solid.svg
     md5: 6af56728888d9074aaf4d8261a3eceda
     upload_filename: T--Aachen--icons--link-solid.svg
+  assets/icons/top10.svg:
+    link_URL: https://2021.igem.org/wiki/images/9/95/T--Aachen--icons--top10.svg
+    md5: 50764e27a5caa600db0785f263ea6da7
+    upload_filename: T--Aachen--icons--top10.svg
   assets/img/Background_Pattern_Blank.svg:
     link_URL: https://2021.igem.org/wiki/images/f/fa/T--Aachen--img--Background_Pattern_Blank.svg
     md5: 35c780ca83ff7a815f20cadaa7ede3bb
@@ -2037,7 +2049,7 @@ css:
     md5: a35d56bc759c982212220bc8dad1a768
   css/index.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/indexCSS?action=raw&ctype=text/css
-    md5: f55adfdbbe09852fe9e21edf25a9ea05
+    md5: 60e10706591d1d675aca873dc15f5569
   css/members.css:
     link_URL: https://2021.igem.org/Template:Aachen/css/membersCSS?action=raw&ctype=text/css
     md5: 72fa5ceb8df069485fc4680efb7fbe36
@@ -2221,7 +2233,7 @@ html:
     md5: 9ad124ff0217d48b7f4cd97dfce6df8d
   index.html:
     link_URL: https://2021.igem.org/Team:Aachen
-    md5: d4a18dba2c445e2c1615f1578b5e50f9
+    md5: 697a4723055aad9af9f8fa989f28e60e
 js:
   attributions.bundle.js:
     link_URL: https://2021.igem.org/Template:Aachen/attributions-bundleJS?action=raw&ctype=text/javascript
