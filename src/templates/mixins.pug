@@ -191,10 +191,10 @@ mixin imgCarousel(id, items, gallery, title)
             span.carousel-control-next-icon(aria-hidden="true")
             span.sr-only= Next
 
-mixin tourButton(buttonDescription, url, rocketRessource="../assets/img/homepage/dna_rocket.svg")
+mixin tourButton(buttonDescription, url)
     .row.justify-content-center
         a(href=url)#tourButton.tourButton
             .tourButtonDescription
                 span.buttontext= buttonDescription
                 i.fas.fa-chevron-right#arrow
-            #tourrocket
+            //- #tourrocket

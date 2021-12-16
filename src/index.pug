@@ -18,6 +18,34 @@ html(lang="en")
                     source(src=videopath type="video/mp4")
                     span Your browser does not support the video tag. :(
             h2 Using DNA for Digital Long-Term Data Storage
+      .jumbotron.home-card.home-bg-blue
+        .container
+          .row.d-flex.justify-content-center.tiles
+              .col-xl-6.col-lg-6.col-md-6.col-xs-12.align-self-center
+                h1 What We Achieved
+                p As in previous years, the Aachen iGEM team was again very successful.
+          .row.d-flex.justify-content-center.tiles
+              .col-xl-4.col-lg-4.col-md-4.col-xs-12.align-self-center
+                a(href="https://2021.igem.org/Team:Aachen/Hardware")
+                  img(src=require("./assets/icons/best_hardware.svg")["default"]).price_icon
+                h2 Best Hardware
+              .col-xl-4.col-lg-4.col-md-4.col-xs-12.align-self-center
+                img(src=require("./assets/icons/goldmedal.svg")["default"]).price_icon
+                h2 Gold Medal
+              .col-xl-4.col-lg-4.col-md-4.col-xs-12.align-self-center
+                img(src=require("./assets/icons/top10.svg")["default"]).price_icon
+                h2 Top 10
+          .row.d-flex.justify-content-center.tiles
+              .col-xl-8.col-lg-8.col-md-8.col-xs-12.align-self-center
+                h2 Besides that, we were nominated for the following prices:
+                p.center
+                  span.m-3 Track Award Foundational Advance
+                  span.m-3 Best Presentation
+                  span.m-3 Best Wiki
+                p.center
+                  a.extraLinks.m-3(href="https://2021.igem.org/Team:Aachen/Human_Practices#IntegratedHumanPractices") Best Integrated Human Practices
+                  a.extraLinks.m-3(href="https://2021.igem.org/Team:Aachen/Software") Best Software Tool
+                  a.extraLinks.m-3(href="https://2021.igem.org/Team:Aachen/Model") Best Model
       .jumbotron.home-card.home-bg-light
         .container
           .row.d-flex.justify-content-center.tiles
@@ -25,9 +53,7 @@ html(lang="en")
               h2 Humanity Produces Enormous Amounts of Data
               p Soon, it could become too much for todays storage systems.
             .col-xl-6.col-lg-6.col-md-6.col-xs-12.align-self-center
-              div
-                include ./assets/img/homepage/server_animated.svg
-              // img(src=require("./assets/img/homepage/server.svg")["default"])
+              include ./assets/img/homepage/server_animated.svg
       .jumbotron.home-card
         .container
           .row.d-flex.justify-content-center.tiles
@@ -112,9 +138,7 @@ html(lang="en")
           .row.d-flex.justify-content-center.tiles
             .col-xl-3.col-lg-3.col-md-6.col-xs-12.align-self-center
               a(href="https://2021.igem.org/Team:Aachen/Memes")
-                div
-                  include ./assets/img/homepage/bucket_animated.svg
-                  //- img(src=require('./assets/img/homepage/bucket.svg')['default'])
+                include ./assets/img/homepage/bucket_animated.svg
             .col-xl-1.col-lg-1
             .col-xl-6.col-lg-6.col-md-6.col-xs-12.align-self-center
               h2 Extremely High Storage Capacity
@@ -126,7 +150,7 @@ html(lang="en")
                 | This could make many data centers obsolete.
       .jumbotron.home-card.home-bg-blue
         .container
-          h1 What Could we Achieve with Better Storage Systems?
+          h1.mb-5 What Could we Achieve with Better Storage Systems?
           .row.d-flex.justify-content-center.tiles
             .col-xl-4.col-lg-4.col-md-6.col-xs-12.align-self-center
               h2 Bring Artificial Intelligence to the Next Level
@@ -135,8 +159,7 @@ html(lang="en")
                 | With a larger storage capacity, the development of better systems can be accelerated.
             .col-xl-2.col-lg-2
             .col-xl-6.col-lg-6.col-md-6.col-xs-12.align-self-center
-              div
-                include ./assets/img/homepage/artificial_intelligence.svg
+              include ./assets/img/homepage/artificial_intelligence.svg
       .jumbotron.home-card.rocket-card
         .container
           .row.d-flex.justify-content-center#rocket-container
@@ -147,7 +170,7 @@ html(lang="en")
               p If humanity one day becomes an interplanetary species, it will be necessary to bring lots of information to space. Since weight is always a huge concern in space, DNA would be an ideal choice as a storage medium for this.
       .jumbotron.home-card.below-rocket-card
         .container
-          h1 We Present Enzymatic DNA Synthesis for a Data Storage System
+          h1.mb-5 We Present Enzymatic DNA Synthesis for a Data Storage System
           .row.d-flex.justify-content-center.tiles
             .col-xl-12.col-lg-12.col-md-12.col-xs-12.align-self-center
               - var videopath = require("./assets/img/homepage/promovideo.mp4")["default"]

@@ -4,6 +4,7 @@ body {
     background-color: $igem-dark;
 }
 
+$linkHover: #18bc9c;
 
 /******************************
  * Header
@@ -113,7 +114,7 @@ article {
         text-align: justify;
     }
     h1 {
-        margin-bottom: 10rem;
+        // margin-bottom: 10rem;
     }
     h2 {
         margin-bottom: 3rem;
@@ -160,6 +161,14 @@ article {
     .highlight {
         font-size: 2rem;
         color: $igem-green;
+    }
+    .price_icon {
+        width: 35%;
+        margin: auto;
+        display: block;
+    }
+    .center {
+        text-align: center;
     }
 }
 
@@ -238,17 +247,58 @@ video {
     }
 }
 
-.align-self-center{
-    margin-bottom:50px;
+.align-self-center {
+    margin-bottom: 50px;
+}
+
+a.extraLinks {
+    font-size: 1.5rem;
+    color: $igem-straw-brown;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 1px;
+    transition: color ease 0.3s;
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        background-color: $linkHover;
+        height: 2px;
+    }
+    &:before {
+        width: 0%;
+        left: 0;
+        bottom: 0;
+        transition: width ease 0.4s;
+    }
+    &:after {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        transition: all ease 0.6s;
+    }
+    &:hover {
+        text-decoration: none;
+        // color: $black;
+        &::before {
+            width: 100%;
+        }
+        &::after {
+            left: 100%;
+            width: 0%;
+            transition: all ease 0.2s;
+        }
+    }
 }
 
 @include respond-below(xxs) {
-    .einruecken{
+    .einruecken {
         padding-right: -15px;
         padding-left: -15px;
     }
-    .rocket-card{
-        margin-bottom:700px;
+    .rocket-card {
+        margin-bottom: 700px;
     }
 }
 
@@ -268,32 +318,30 @@ video {
     }
     .header {
         h2 {
-            font-size:1.5rem;
+            font-size: 1.5rem;
         }
-        .video{
+        .video {
             width: 100% !important;
-            video{
-                width:100% !important;
+            video {
+                width: 100% !important;
             }
         }
     }
 }
 
-@include respond-between(md,lg) {
-    .einruecken{
+@include respond-between(md, lg) {
+    .einruecken {
         margin-bottom: 50px;
         margin-right: 50px;
     }
-    p{
+    p {
         text-align: center !important;
     }
 }
 
 @include respond-above(lg) {
-    .einruecken{
+    .einruecken {
         margin-bottom: 50px;
         margin-right: 50px;
     }
 }
-
-
