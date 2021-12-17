@@ -61,15 +61,11 @@ body {
 }
 
 .tourButton {
-    background-color: $igem-green;
-    border-radius: 10px;
-    height: 50px;
-    // width: 600px;
-    padding: 20px;
-    margin: 50px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     
     transition: margin-right 0.5 ease-in,
                 right 1s ease-in,
@@ -78,11 +74,22 @@ body {
 
     color: $igem-dark;
 
-    .tourButtonDescription {
+    a {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: inherit;
+        flex-direction: row;
+
+
+
+        background-color: $igem-green;
+        border-radius: 10px;
+        height: 50px;
+        // width: 600px;
+        padding: 0px 20px 0px 20px;
+        margin: 50px;
+
+        color: $igem-dark;
 
         .buttontext {
             font-size: large;
@@ -95,41 +102,53 @@ body {
         }
     }
     
+    
     #tourrocket {
-        background-image: url(../assets/img/homepage/dna_rocket.svg);
+        // background-image: url(../assets/img/homepage/dna_rocket.svg);
         height: fit-content;
-        min-height: 500px;
-        background-repeat: no-repeat;
-        background-size: 50px;
+        min-height: 100px;
+        // background-repeat: no-repeat;
+        // background-size: 50px;
         // background-position: center top;
 
 
         position: relative;
         top: -10px;
-        right: -40px;
-        height: 100px;
-        // transform: rotate(55deg);
+        right: 0px;
+        height: 20px;
+        transform: rotate(55deg);
         // margin: 0 5px 0 5px;
         transition: right 2s ease-in;
     }
     
 
     &:hover {
-        .tourButtonDescription {
-            .buttontext {
-                margin-right: 20px;
-                transition: margin-right 0.3s ease-in;
-            }
             
-            a #tourbutton{
-                text-decoration: none;
-                color: inherit;
+            
+        a {
+            // text-decoration: none;
+            // color: $igem-straw-brown;
+
+            .buttontext {
+                // margin-right: 20px;
+                // transition: margin-right 0.3s ease-in;
             }
         }
         
         #tourrocket {
-            // right: -80px;
-            transform: rotate(90deg);
+            animation: moveToRight 1s ease-in forwards;
+        }
+    }
+
+    @keyframes moveToRight {
+        0% {
+            
+            right: -10px;
+        }
+        100% {
+            top: -200px;
+            right: -800px;
+            transform: rotate(90deg); 
         }
     }
 }
