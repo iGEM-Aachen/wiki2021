@@ -193,7 +193,8 @@ mixin imgCarousel(id, items, gallery, title)
 
 mixin tourButton(buttonDescription, url)
     .row.justify-content-center
-        a(href=url)#tourButton.tourButton
-            span.buttontext!=buttonDescription
-            i.fas.fa-chevron-right#arrow
-        #tourrocket
+        .tourbutton
+            a(href=url).buttoncontent
+                span.buttontext!=buttonDescription
+                i.fas.fa-chevron-right#arrow
+            img(src="https://2021.igem.org/wiki/images/c/c8/T--Aachen--img--homepage--dna_rocket.svg")#tourrocket
