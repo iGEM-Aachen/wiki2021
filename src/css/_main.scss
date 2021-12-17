@@ -97,8 +97,8 @@ body {
     
     #tourrocket {
         background-image: url(../assets/img/homepage/dna_rocket.svg);
-        // height: fit-content;
-        // min-height: 500px;
+        height: fit-content;
+        min-height: 500px;
         background-repeat: no-repeat;
         background-size: 50px;
         // background-position: center top;
@@ -127,7 +127,7 @@ body {
             }
         }
         
-        #rocket {
+        #tourrocket {
             // right: -80px;
             transform: rotate(90deg);
         }
