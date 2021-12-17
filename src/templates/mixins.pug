@@ -194,7 +194,6 @@ mixin imgCarousel(id, items, gallery, title)
 mixin tourButton(buttonDescription, url)
     .row.justify-content-center
         a(href=url)#tourButton.tourButton
-            .tourButtonDescription
-                span.buttontext!=buttonDescription
-                i.fas.fa-chevron-right#arrow
-            //- #tourrocket
+            span.buttontext!=buttonDescription
+            i.fas.fa-chevron-right#arrow
+        #tourrocket
