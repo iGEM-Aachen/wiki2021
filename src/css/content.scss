@@ -417,7 +417,7 @@ body {
 
 .content,
 #references li {
-    a:not(.citation):not(.carousel-control-prev):not(.carousel-control-next):not(.glightbox):not(.tourbutton) {
+    a:not(.citation):not(.carousel-control-prev):not(.carousel-control-next):not(.glightbox):not(.tourbutton):not(.buttoncontent) {
         color: $black;
         position: relative;
         text-decoration: none;
