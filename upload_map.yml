@@ -2237,7 +2237,7 @@ html:
     md5: 9ad124ff0217d48b7f4cd97dfce6df8d
   index.html:
     link_URL: https://2021.igem.org/Team:Aachen
-    md5: 95e926d233ed26a52db35207c16827c6
+    md5: 5f376677922fc6b3e3eb65bef75221f4
 js:
   attributions.bundle.js:
     link_URL: https://2021.igem.org/Template:Aachen/attributions-bundleJS?action=raw&ctype=text/javascript
